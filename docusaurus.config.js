@@ -53,7 +53,6 @@ const config = {
           },
         ],
       },
-      footer: false,
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
