@@ -16,6 +16,7 @@ const config = {
   organizationName: 'Auxilor', // Usually your GitHub org/user name.
   projectName: 'auxilor.github.io', // Usually your repo name.
   trailingSlash: false,
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
