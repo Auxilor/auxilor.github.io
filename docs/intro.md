@@ -1,3 +1,7 @@
+---
+slug: /
+---
+
 # Docs
 
 cool
