@@ -31,25 +31,11 @@ This is an effect that gives you a 10% chance to spawn 10 soul particles in the 
 
 For example, you can specify the chance to be dependent on your y level: as in `chance: 100 -%player_y%` - permanent effects will evaluate the expression on activation, and triggered effects will evaluate it on each trigger. Make sure you only use placeholders with numeric values, as you will get an error otherwise.
 
-## The sections
+## The Sections
 
 **id**: The effect ID. A list of ID's and their corresponding arguments can be found [here](https://plugins.auxilor.io/effects/all-effects)
-**args**: The arguments. All (triggerable) effects have the following optional arguments:
-- **chance**: The chance of this effect activating (defaults to 100) as a percentage
-- **cooldown**: The cooldown between effect activation (defaults to 0) in seconds
-- **every**: Specify the effect to activate every x triggers (defaults to always) 
-- **cost**: The cost required to use or activate this effect (defaults to 0) Requires Vault
-- **send_cooldown_message**: If the cooldown message should be sent (defaults to true)
-- **self_as_victim**: If the player should me marked as the victim, useful to damage the player, strike them with lightning, etc
-- **mana_cost**: The mana cost required to use or activate this effect (defaults to 0) *Requires Aurelium Skills*
-- **delay**: The amount of ticks to wait before executing the effect
-- **filters_before_mutation**: If filters should be checked on un-mutated data, rather than mutated data (defaults to false)
-- **point_cost**: The point cost required to use or activate this effect, looks like this in config:
-```yaml
-point_cost:
-    cost: 100 * %player_y%
-    type: g_souls
-```
+
+**args**: The arguments. All (triggerable) effects have optional arguments (see below)
 
 **triggers**: The list of triggers that activate this effect. If the effect is permanent (see next page) then this section is not applicable
 
@@ -58,6 +44,67 @@ point_cost:
 **conditions**: As well as each effect holder (eg Talisman, Reforge, Enchant) having its own conditions, you can specify a list of effect-specific conditions that work in exactly the same way
 
 **mutators**: Mutate the data sent to the effect: you can change parameters such as the victim, the location, et cetera. A mutator, like an effect or condition, consists of an ID and arguments.
+
+## Optional Arguments
+
+#### `chance`
+The chance of this effect activating, as a percentage. (defaults to 100)
+```yaml
+args:
+  chance: 50
+```
+
+#### `cooldown`
+The cooldown between effect activations, in seconds. (defaults to 0)
+```yaml
+args:
+  cooldown: 10
+  send_cooldown_message: true # If the cooldown message should be sent
+```
+
+#### `cost`
+The cost required to use or activate this effect. **Requires Vault.** (defaults to 0)
+```yaml
+args:
+  cost: 200
+```
+
+#### `every`
+Specify the effect to activate every x times. (defaults to always)
+```yaml
+args:
+  every: 3
+```
+
+#### `mana_cost`
+The mana cost required to use or activate this effect. **Requires Aurelium Skills.** (defaults to 0)
+```yaml
+args:
+  mana_cost: 10
+```
+
+#### `delay`
+The amount of ticks to wait before executing the effect. (defaults to 0)
+```yaml
+args:
+  delay: 20
+```
+
+#### `filters_before_mutation`
+By default, filters are ran after mutation - set this to true if filters should be ran on the un-mutated data. (defaults to false)
+```yaml
+args:
+  filters_before_mutation: true
+```
+
+#### `point_cost`
+-The point cost required to use or activate this effect, looks like this in config:
+```yaml
+args:
+  point_cost:
+      cost: 100 * %player_y%
+      type: g_souls
+```
 
 ## Effect Chains
 Effect chains are groups of effects that can be executed together. This is very useful if you want to create a chance-based effect with several components: chance is calculated independently on each trigger, so without chains, particles and messages could send when the effects don't activate, and vice-versa.
