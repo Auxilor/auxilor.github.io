@@ -31,7 +31,7 @@ https://github.com/Auxilor/EcoEnchants/releases
 
 My extensions are located in the base source code, so have a look how I do it!
 
-[GitHub](https://github.com/Auxilor/EcoEnchants/tree/master/eco-extensions
+[GitHub](https://github.com/Auxilor/EcoEnchants/tree/master/eco-extensions)
 
 You can find extensions made by me and others on Polymart:
 
