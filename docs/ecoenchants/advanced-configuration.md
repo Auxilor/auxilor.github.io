@@ -79,10 +79,10 @@ Here is a list of requirements currently available:
 
 | Requirement              | Description                                                                                                                                                      | Format                                         |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| has-permission           | If a player has a permission                                                                                                                                     | has-permission:<permission>                    |
-| placeholder-equals       | If a placeholder for a player equals a certain value. NOTE: placeholder should include % signs                                                                   | placeholder-equals:<placeholder>:<value>       | 
-| placeholder-greater-than | If a placeholder for a player should be greater than or equal to a certain value. NOTE: placeholder should include % signs - only numeric placeholders supported | placeholder-greater-than:<placeholder>:<value> |
-| placeholder-less-than    | If a placeholder for a player should be less than a certain value. NOTE: placeholder should include % signs - only numeric placeholders supported                | placeholder-less-than:<placeholder>:<value>    |
+| has-permission           | If a player has a permission                                                                                                                                     | has-permission:{permission}                    |
+| placeholder-equals       | If a placeholder for a player equals a certain value. NOTE: placeholder should include % signs                                                                   | placeholder-equals:{placeholder}:%value%       | 
+| placeholder-greater-than | If a placeholder for a player should be greater than or equal to a certain value. NOTE: placeholder should include % signs - only numeric placeholders supported | placeholder-greater-than:{placeholder}:%value% |
+| placeholder-less-than    | If a placeholder for a player should be less than a certain value. NOTE: placeholder should include % signs - only numeric placeholders supported                | placeholder-less-than:{placeholder}:%value%    |
 
 #### Lore
 
