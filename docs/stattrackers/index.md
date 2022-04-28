@@ -1,5 +1,5 @@
 ---
-title: "StatTrackers?"
+title: "StatTrackers"
 ---
 
 ## What are Stat Trackers?

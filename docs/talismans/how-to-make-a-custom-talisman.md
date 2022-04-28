@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Default config
 The default talismans.yml can be found here: 
 
-[GitHub](<https://github.com/Auxilor/Talismans/blob/master/eco-core/core-plugin/src/main/resources/talismans.yml>)
+[GitHub](https://github.com/Auxilor/Talismans/blob/master/eco-core/core-plugin/src/main/resources/talismans.yml)
 
 ### Breakdown of talismans.yml
 
@@ -71,4 +71,4 @@ It's an array of talisman configs - and you can add and remove configs as you pl
 
 **conditions / effects**: The core of the weapon is dictated by conditions and effects. Learn more here:
 
-[Configuring an Effect](<https://plugins.auxilor.io/all-plugins/configuring-an-effect>)
+[Configuring an Effect](https://plugins.auxilor.io/all-plugins/configuring-an-effect)
