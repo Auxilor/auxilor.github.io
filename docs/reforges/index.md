@@ -4,7 +4,7 @@ title: "Reforges"
 
 ## What are Reforges?
 
-Reforges are modifers that are applied to your item with the reforge menu! If you've ever played Hypixel Skyblock, the system is very similar. You just open the menu with /reforge (or set up an NPC to run /reforges open <player>) and you're sorted. It's a great addition to the item metagame on your server, and feels like a fluent addition to the base game.
+Reforges are modifers that are applied to your item with the reforge menu! If you've ever played Hypixel Skyblock, the system is very similar. You just open the menu with /reforge (or set up an NPC to run /reforges open %player%) and you're sorted. It's a great addition to the item metagame on your server, and feels like a fluent addition to the base game.
 
 ## Why this plugin?
 
