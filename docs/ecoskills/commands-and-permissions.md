@@ -3,13 +3,13 @@ title: "Commands and Permissions"
 sidebar_position: 1
 ---
 
-## `/skills, /stats (Open the main menu)`
+## `/skills, /stats` (Open the main menu)
 Permission: `ecoskills.command.skills`
 
-## `/skills top (View the leaderboard)`
+## `/skills top` (View the leaderboard)
 Permission: `ecoskills.command.top`
 
-## `/ecoskills give (Give a player xp or stat levels)`
+## `/ecoskills give` (Give a player xp or stat levels)
 Permission: `ecoskills.command.give`
 
 General Usage: `/ecoskills give <player> <skill / stat> <xp / levels>`

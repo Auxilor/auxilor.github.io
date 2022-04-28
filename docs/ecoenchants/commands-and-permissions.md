@@ -3,19 +3,19 @@ title: "Commands and Permissions"
 sidebar_position: 1
 ---
 
-## `/give and /enchant (Give a player an enchantment)`
+## `/give and /enchant` (Give a player an enchantment)
 
 Because of how it's made, EcoEnchants doesn't need to have it's own commands for these. Why reinvent the wheel? Instead, it supports Essentials and CMI's `/give` and `/enchant` commands (as well as working in things like kits) - you don't have to do things the 'EcoEnchants way', just do it exactly like you already would.
 
-## `/ecoenchants giverandombook (Give a player a random book)`
+## `/ecoenchants giverandombook` (Give a player a random book)
 Permission: `ecoenchants.command.giverandombook`
 
 Usage: `/ecoenchants giverandombook <player> [rarity / type]`
 
-## `/enchantinfo (Get information (description, max level, conflicts, etc) about an enchant)`
+## `/enchantinfo` (Get information (description, max level, conflicts, etc) about an enchant)
 Permission: `ecoenchants.command.enchantinfo`
 
-## `/ecoenchants giverandombook (Give a player a random book)`
+## `/ecoenchants giverandombook` (Give a player a random book)
 Permission: `ecoenchants.command.randomenchant`
 
 Usage: `/ecoenchants randomenchant [player] [rarity / type]`
