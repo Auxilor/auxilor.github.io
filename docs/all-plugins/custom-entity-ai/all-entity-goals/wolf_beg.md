@@ -1,6 +1,6 @@
 # `minecraft:wolf_beg`
 
-Stroll randomly while avoiding water
+Allows a wolf to beg
 
 # Example Config
 ```yaml
