@@ -1,5 +1,5 @@
 ---
-title: "Talismans?"
+title: "Talismans"
 ---
 
 ## What are Talismans and why do I want them?

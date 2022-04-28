@@ -9,9 +9,7 @@ Like all my plugins, Talismans is open-source and available on JitPack.
 
 The source code can be found here:
 
-[GitHub](<https://github.com/Auxilor/Talismans>)
-
-###### The Source Code
+[GitHub](https://github.com/Auxilor/Talismans)
 
 ### Using Talismans in your plugin
 
