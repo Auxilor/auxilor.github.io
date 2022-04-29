@@ -190,7 +190,7 @@ sidebar_position: 4
 
 ## Understanding all the sections
 
-**name:** The name of the set
+**id:** The name of the set
 
 **conditions:** All the conditions required for the sets effects to activate.
 
