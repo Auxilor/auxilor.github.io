@@ -18,9 +18,7 @@ const config = {
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
 
-  plugins: [
-    '@aldridged/docusaurus-plugin-lunr'
-  ],
+  plugins: [require.resolve('docusaurus-lunr-search')],
 
   presets: [
     [
