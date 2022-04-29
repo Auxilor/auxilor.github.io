@@ -26,7 +26,6 @@ This list only includes the base custom enchants, not the extra ones you make yo
 | Ascend                 | Levitates you into the air                                               | Spell    | Swords                 | 2        |
 | Ash Artifact           | Creates basalt deltas particles (1.16+)                                  | Artifact | Artifact Items         | 1        |
 | Atmospheric            | Increases trident damage when you are in air                             | Normal   | Tridents               | 3        |
-| Aversion               | Prevents angering endermen by looking at them                            | Normal   | Helmets                | 1        |
 | Backstab               | Increases damage when behind opponent                                    | Normal   | Swords + Axes          | 3        |
 | Beheading              | Chance of getting player or mob head                                     | Normal   | Swords + Axes          | 3        |
 | Bladed                 | Trident deals extreme additional damage                                  | Special  | Tridents               | 5        |
@@ -149,7 +148,6 @@ This list only includes the base custom enchants, not the extra ones you make yo
 | Lumberjack             | Instantly cut down entire trees                                          | Normal   | Axes                   | 6        |
 | Magic Artifact         | Creates magic particles                                                  | Artifact | Artifact Items         | 1        |
 | Magma Artifact         | Creates lava pop particles                                               | Artifact | Artifact Items         | 1        |
-| Magma Walker           | Turns lava beneath the player into obsidian                              | Normal   | Boots                  | 2        |
 | Magnetic               | Items and XP go towards you                                              | Normal   | Boots                  | 4        |
 | Marking                | Increases subsequent damage dealt to opponent                            | Normal   | Bows + Crossbows       | 4        |
 | Marksman               | Removes arrow drop                                                       | Normal   | Bows + Crossbows       | 1        |
