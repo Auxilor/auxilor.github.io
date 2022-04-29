@@ -34,6 +34,9 @@ It's a big array of objects, each element in the list being a booster. You can a
       args:
         multiplier: 2
   conditions: []
+  commands:
+    activation: []
+    expiry: []
   messages:
     activation:
       - ""
@@ -74,7 +77,9 @@ It's a big array of objects, each element in the list being a booster. You can a
 
 **duration:** How long the booster lasts for, in ticks: 72000 ticks is 1 hour
 
-**messages:** The messages that are broadcast when a reforge activates/deactivates.
+**commands:** The commands that will be dispatched when a booster activates/deactivates. You can use %player% as a placeholder.
+
+**messages:** The messages that are broadcast when a reforge activates/deactivates. You can use %player% as a placeholder.
 
 **gui:** Config for how the booster looks in gui: the item, the lore, the name, et cetera.
 
