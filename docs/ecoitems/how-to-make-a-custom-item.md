@@ -111,6 +111,8 @@ Item config is the config for the weapon's item as shown in game.
 
 **recipe:** The crafting recipe for the item.
 
+** custom-model-data:** To add a custom model data just add the setting  custom-model-data: under the material config. For example if we want to change the look of a diamond with the Custom Model Data of 2, we will check that the material in the config is set to diamond and add custom-model-data:2 under the material config. The Custom Model Data Resource Pack should already be added to the server. 
+
 ## Fuels
 
 Fuels are consumables that are required in order to use some weapons. A reaper scythe, for example, has reaper souls as its fuel. A typical fuel config looks like this:
