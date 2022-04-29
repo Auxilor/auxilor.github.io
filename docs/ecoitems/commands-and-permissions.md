@@ -3,7 +3,7 @@ title: "Commands and Permissions"
 sidebar_position: 1
 ---
 
-## `/ecoitems give (Give players items)`
+## `/ecoitems give` (Give players items)
 Permission: `ecoitems.commands.give`
 
 General Usage: `/ecoitemsgive <player> <item> [amount]`

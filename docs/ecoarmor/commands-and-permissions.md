@@ -23,7 +23,6 @@ Or, if you want to give a player a full set of default young armor, you would do
 `/ecoarmor give <player> crystal:<tier> [amount]`
 
 ### Giving an Advancement Shard
-
 `/ecoarmor give <player> shard:<set> [amount]`
 
 ## `/ecoarmor reload (Reload Config)`
