@@ -1,6 +1,6 @@
 ---
 title: "Rewards"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## How to configure a reward
@@ -45,6 +45,7 @@ Example reward config:
 **max-wins:** The max amount of times a given player can win the reward, perfect for single-use rewards like giving particle effects. Set to -1 to disable
 
 **display:**
+
 * **name:** The name of the reward
 * **item:** The item to be shown in animations and previews
 * **lore:** The lore of the item
