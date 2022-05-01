@@ -22,10 +22,6 @@ Stats are the base values that lie at the core of EcoSkills. Think of them like 
 
 In config.yml, you can configure what each level of a stat signifies (eg what 1 strength applies to in practise)
 
-## Skils
-
-**???????**
-
 ## Effects
 
 Effects are the special passive abilities given to a player. They are levelled up by levelling skills.
