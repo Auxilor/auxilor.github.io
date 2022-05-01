@@ -17,6 +17,7 @@ Stats are the base values that lie at the core of EcoSkills. Think of them like 
 | Wisdom      | Increases experience gained         |
 | Health      | Increases max health                |
 | Ferocity    | Chance to hit twice                 |
+| Attack Speed | Increases your attack speed        |
 
 ## Stat Config
 
