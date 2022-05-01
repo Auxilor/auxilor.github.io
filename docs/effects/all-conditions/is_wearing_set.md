@@ -7,5 +7,5 @@ Requires a player to have wear a certain EcoArmor set
 ```yaml
 - id: is_wearing_set
   args:
-    set: id # The EcoArmor set ID
+    set: reaper # The EcoArmor set ID
 ```
