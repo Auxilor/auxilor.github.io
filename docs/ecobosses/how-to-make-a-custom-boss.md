@@ -199,7 +199,7 @@ The functionality of a boss is dictated by the effects it has. Effects are appli
 
 See this page for how to configure effects:
 
-[Configuring an Effect](https://plugins.auxilor.io/all-plugins/configuring-an-effect)
+[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
 
 Because effects are applied to players, and assuming you want to negatively affect players near a boss, you will want to set `self_as_victim: true` under args: in the effects, which will mark the player as the victim, useful in order to damage nearby players, strike them with lightning, give them potion effects, et cetera.
 

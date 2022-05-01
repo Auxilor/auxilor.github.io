@@ -65,10 +65,10 @@ It's an array of talisman configs - and you can add and remove configs as you pl
 
 **item**: The item of the talisman. Allows for extensive options, click here for more
 
-**craftable**: If the weapon should be craftable
+**craftable**: If the talisman should be craftable
 
-**recipe**: The crafting recipe for the item.
+**recipe**: The crafting recipe for the talisman.
 
-**conditions / effects**: The core of the weapon is dictated by conditions and effects. Learn more here:
+**conditions / effects**: The core of the talisman is dictated by conditions and effects. Learn more here:
 
-[Configuring an Effect](https://plugins.auxilor.io/all-plugins/configuring-an-effect)
+[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)

@@ -89,11 +89,7 @@ It's 3 arrays of weapon, fuel, and recipe configs - and you can add and remove c
 
 **conditions / effects:** The core of the weapon is dictated by conditions and effects. Learn more here:
 
-[Configuring an Effect](https://plugins.auxilor.io/all-plugins/configuring-an-effect)
-
-A list of all effects, conditions, and more can be found here:
-
-[All Effects](https://plugins.auxilor.io/all-plugins/configuring-an-effect/all-effects)
+[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
 
 ## Item Config
 

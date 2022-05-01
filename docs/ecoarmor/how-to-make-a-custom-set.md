@@ -192,19 +192,9 @@ sidebar_position: 4
 
 **id:** The name of the set
 
-**conditions:** All the conditions required for the sets effects to activate.
+**conditions:** A condition is made up of an ID and arguments. Learn more here
 
-In config, conditions look like this:
-```yaml
-"conditions": [
-  {
-    "id": "above-health-percent",
-    "args": 50
-  }
-],
-```
-
-A condition is made up of an ID and arguments.
+[Configuring a Condition](https://plugins.auxilor.io/effects/all-conditions)
 
 **effects:** All the effects that are given to the player wearing a full set of armor.
 
@@ -214,7 +204,7 @@ A player is given **only** the advanced effects if wearing advanced armor.
 
 Learn how to configure effects here:
 
-[Configuring an Effect](https://plugins.auxilor.io/all-plugins/configuring-an-effect)
+[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
 
 **advancedLore** is lore tacked onto the end of the regular lore of advanced items.
 
