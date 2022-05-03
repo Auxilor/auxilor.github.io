@@ -89,4 +89,4 @@ Effects are the actual functionality of the booster, and conditions are requirem
 
 See this page for how to configure effects:
 
-[Configuring an Effect](https://plugins.auxilor.io/all-plugins/configuring-an-effect)
+[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)

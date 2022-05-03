@@ -98,20 +98,10 @@ Effects are the actual functionality of the reforge.
 
 See this page for how to configure effects:
 
-[Configuring an Effect](https://plugins.auxilor.io/all-plugins/configuring-an-effect)
+[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
 
 ## Conditions
 
 Conditions are requirements that must be met in order for the reforge to activate its effects. In config, conditions look like this:
 
-```yaml
-id: above_hunger_percent
-args:
-  percent: 50
-```
-
-A condition consists of an ID and named options, **percent** in this case.
-
-Condition IDs and their corresponding options can be found here:
-
-[All Effects](https://plugins.auxilor.io/all-plugins/configuring-an-effect/all-effects)
+[Configuring a Condition](https://plugins.auxilor.io/effects/all-conditions)

@@ -77,4 +77,4 @@ The rest is the same as any other enchantment, explained in previous pages
 
 Each level has its own effects/conditions, and you can configure them the same way as other plugins of mine: read the guide on how to understand the effect system here:
 
-[Configuring an Effect](https://plugins.auxilor.io/all-plugins/configuring-an-effect)
+[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
