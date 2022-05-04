@@ -21,6 +21,7 @@ Example reward config:
     display:
       name: "&a$1000"
       item: paper 1 unbreaking:1 hide_enchants
+      dont-keep-lore: false # Optional, set to true to only show custom lore
       lore:
         - "&fDisplay Chance: &a%chance%%"
         - "&fActual Chance: &a%actual_chance%%"
