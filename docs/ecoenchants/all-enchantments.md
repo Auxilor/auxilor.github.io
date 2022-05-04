@@ -98,8 +98,7 @@ This list only includes the base custom enchants, not the extra ones you make yo
 | Fire Artifact          | Creates fire particles                                                   | Artifact | Artifact Items         | 1        |
 | First Strike           | Increases damage dealt when entity is on max health                      | Normal   | Swords                 | 5        |
 | Flinch                 | Chance to blind your attacker                                            | Normal   | Shields                | 6        |
-| Force                  | Massively increases arrow damage                                         | Special  | Bows                   | 8        |
-| Forcefield             | Damages all nearby monsters                                              | Normal   | Armor                  | 2        |
+| Force                  | Massively increases arrow damage                                         | Special  | Bows                   | 4        |
 | Forcefield             | Damages all nearby monsters                                              | Normal   | Armor                  | 2        |
 | Freerunner             | Chance to ignore fall damage                                             | Normal   | Boots                  | 6        |
 | Frenzy                 | Gives strength after killing an entity                                   | Special  | Swords                 | 3        |
