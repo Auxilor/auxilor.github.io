@@ -44,7 +44,7 @@ This list only includes the base custom enchants, not the extra ones you make yo
 | Cleave                 | Damage all entities around attacked entity                               | Normal   | Axes                   | 8        |
 | Clouds Artifact        | Creates cloud particles                                                  | Artifact | Artifact Items         | 1        |
 | Collateral             | Arrows can go through entities                                           | Normal   | Bows                   | 4        |
-| Conclude               | Chace to instantly kill entities on low health                           | Normal   | Tridents               | 5        |
+| Conclude               | Chance to instantly kill entities on low health                          | Normal   | Tridents               | 5        |
 | Confusion              | Chance to shuffle your opponents hotbar                                  | Special  | Swords                 | 4        |
 | Copper Artifact        | Creates copper particles                                                 | Artifact | Artifact Items         | 1        |
 | Corrosive              | Damages your opponents armor                                             | Normal   | Bows + Crossbows       | 2        |
@@ -195,7 +195,7 @@ This list only includes the base custom enchants, not the extra ones you make yo
 | Settle                 | Increases damage against creepers                                        | Normal   | Bows                   | 5        |
 | Shockwave              | Damages entities that arrows fly near                                    | Normal   | Bows                   | 3        |
 | Shot Assist            | Deal more damage with arrows while wearing                               | Normal   | Armor                  | 6        |
-| Sickenin               | Chance of nauseating your opponen                                        | Norma    | Bows + Crossbow        | 2        |
+| Sickenin               | Chance of nauseating your opponent                                       | Norma    | Bows + Crossbow        | 2        |
 | Skulk Artifact         | Creates skulk vibration particles                                        | Artifact | Artifact Items         | 1        |
 | Slaughter              | Increases damage against passive mobs                                    | Normal   | Bows                   | 5        |
 | Slicing                | Damages entities when flown through                                      | Normal   | Elytra                 | 8        |
