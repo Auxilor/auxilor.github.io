@@ -100,7 +100,6 @@ This list only includes the base custom enchants, not the extra ones you make yo
 | Flinch                 | Chance to blind your attacker                                            | Normal   | Shields                | 6        |
 | Force                  | Massively increases arrow damage                                         | Special  | Bows                   | 4        |
 | Forcefield             | Damages all nearby monsters                                              | Normal   | Armor                  | 2        |
-| Forcefield             | Damages all nearby monsters                                              | Normal   | Armor                  | 2        |
 | Freerunner             | Chance to ignore fall damage                                             | Normal   | Boots                  | 6        |
 | Frenzy                 | Gives strength after killing an entity                                   | Special  | Swords                 | 3        |
 | Frozen                 | Chance to give your attacker slowness                                    | Normal   | Armor                  | 6        |
