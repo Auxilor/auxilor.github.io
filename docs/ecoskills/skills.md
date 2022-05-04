@@ -66,6 +66,8 @@ level-commands:
 
 This means that when you reach level 10 in this skill, the command to give you 5000 will be executed. The placeholder %player% will be replaced with the player's name. You can add multiple commands for a level by having multiple entries for that level.
 
+If you don't specify a level, the command will apply to all levels.
+
 ## Messages and GUI
 
 By default, players are sent a message when they level up a skill

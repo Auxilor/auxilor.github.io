@@ -18,8 +18,6 @@ const config = {
   trailingSlash: false,
   deploymentBranch: 'gh-pages',
 
-  plugins: [require.resolve('docusaurus-lunr-search')],
-
   presets: [
     [
       'classic',
@@ -57,6 +55,12 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      algolia: {
+        apiKey: 'f04c51915432c1fada99e882da164ecc',
+        indexName: 'auxilor',
+        appId: 'MZ2URUJP31', // Optional, if you run the DocSearch crawler on your own
+        algoliaOptions: {} // Optional, if provided by Algolia
       },
     }),
 };
