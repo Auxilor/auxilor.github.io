@@ -56,3 +56,6 @@ item:
 sellPrice: 7500
 slot: 27
 ```
+
+## Custom Items
+Sometimes custom item IDs are namespaced. In order to make this work, you have to specify them like `itemsadder:namespace__key`, where two underscores denote where the `:` would normally go
