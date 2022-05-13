@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom enchant"
+title: "How to make a custom effect"
 sidebar_position: 5
 ---
 
