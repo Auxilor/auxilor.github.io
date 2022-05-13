@@ -1,6 +1,6 @@
 ---
 title: "PlaceholderAPI"
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 | Placeholder                               | Description                                                                              |
