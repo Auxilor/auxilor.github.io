@@ -1,6 +1,6 @@
 ---
 title: "PlaceholderAPI"
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 | Placeholder                               | Description                                                                              |
@@ -12,6 +12,7 @@ sidebar_position: 6
 | `%ecoskills_<stat>_name%`                 | Get the formatted name (icon and color) of any stat. Used internally for configuration   |
 | `%ecoskills_<stat>_base%`                 | Get the base level that a player has for any stat (before modifiers are applied)         |
 | `%ecoskills_<stat>_bonus%`                | Get the bonus levels that a player has for any stat (from modifiers)                     |
+| `%ecoskills_<stat>_description%`          | Get the description that a player would be shown for any stat                            |
 | `%ecoskills_<skill>_percentage_progress%` | Shows the percentage progress until the next skill level                                 |
 | `%ecoskills_<skill>_current_xp%`          | Shows the current skill XP                                                               |
 | `%ecoskills_<skill>_required_xp%`         | Shows the skill XP required for the next level                                           |
