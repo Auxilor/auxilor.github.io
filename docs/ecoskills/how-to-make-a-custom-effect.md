@@ -21,7 +21,6 @@ It's an array of effect configs - and you can add and remove configs as you plea
 
 ```yaml
 - id: gold_touch # The ID of the effect, to be used in skills
-  max-level: 100 # The max obtainable level of the effect - this is required in order to generate the correct number of levels
   placeholder: "%level%" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
   description: "&a%placeholder%%&8 chance to get $50 every time you mine a block" # The description to be shown in lore and messages
 
@@ -39,8 +38,6 @@ It's an array of effect configs - and you can add and remove configs as you plea
 ## Understanding all the sections
 
 **id**: The id of the effect (lowercase only!)
-
-**max-level**: The max level of the effect, this should be the maximum level that a player could ever have; EcoSkills needs to generate the correct amount of levels.
 
 **placeholder**: The formula to calculate the placeholder shown in the description; you can use mathematical operations, e.g. `%level% / 50`
 
