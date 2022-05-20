@@ -17,6 +17,7 @@ Plays a particle animation
     particle: soul # The particle to spawn (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
     particle-amount: 1 # The amount of particles to spawn on each point
     tick-multiplier: 1 # (Optional) increases the speed of the animation by some multiplier
+    victim-as-entity: false # (Optional) instead of the player location, use the victim location
     animation: ground_spiral # The ID of the animation
     particle_args: # Arguments for the animation
       scalar: 1.618
