@@ -65,6 +65,9 @@ sidebar_position: 4
     name: "&4Slayer Helmet"
     advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19>&4 Slayer Helmet"
     effectiveDurability: 768
+    effects: []
+    advancedEffects: []
+    conditions: []
     lore:
       - "&4&lSLAYER SET BONUS"
       - "&8» &4Deal 50% more damage to bosses"
@@ -91,6 +94,9 @@ sidebar_position: 4
     name: "&4Slayer Chestplate"
     advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19>&4 Slayer Chestplate"
     effectiveDurability: 1024
+    effects: []
+    advancedEffects: []
+    conditions: []
     lore:
       - "&4&lSLAYER SET BONUS"
       - "&8» &4Deal 50% more damage to bosses"
@@ -116,6 +122,9 @@ sidebar_position: 4
     name: "&4Slayer Elytra"
     advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19> &4Slayer Elytra"
     effectiveDurability: 1024
+    effects: []
+    advancedEffects: []
+    conditions: []
     lore:
       - "&4&lSLAYER SET BONUS"
       - "&8» &4Deal 50% more damage to bosses"
@@ -141,6 +150,9 @@ sidebar_position: 4
     name: "&4Slayer Leggings"
     advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19>&4 Slayer Leggings"
     effectiveDurability: 1024
+    effects: []
+    advancedEffects: []
+    conditions: []
     lore:
       - "&4&lSLAYER SET BONUS"
       - "&8» &4Deal 50% more damage to bosses"
@@ -166,6 +178,9 @@ sidebar_position: 4
     name: "&4Slayer Boots"
     advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19>&4 Slayer Boots"
     effectiveDurability: 1024
+    effects: []
+    advancedEffects: []
+    conditions: []
     lore:
       - "&4&lSLAYER SET BONUS"
       - "&8» &4Deal 50% more damage to bosses"
@@ -218,6 +233,9 @@ helmet:
       name: "&5Angelic Helmet"
       advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19>&5 Angelic Helmet"
       effectiveDurability: 768
+      effects: []
+      advancedEffects: []
+      conditions: []
       lore:
         - "&5&lANGELIC SET BONUS"
         - "&8» &dGain 10 more hearts"
@@ -250,3 +268,5 @@ item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dX
 [You can find skull textures here](https://minecraft-heads.com/)
 
 **effectiveDurability** is the durability of the item. Since the item's actual durability cannot be modified, this will act similar to unbreaking, by increasing the amount of durability damage taken before losing any durability.
+
+You can also add piece-specific effects/conditions to have single armor pieces have their own effects that don't require the whole set
