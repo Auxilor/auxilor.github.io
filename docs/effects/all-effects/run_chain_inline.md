@@ -7,6 +7,7 @@ Execute an effect chain inline, rather than specifiying the ID
 ```yaml
 - id: run_chain_inline
   args:
+    run-type: normal # Optional, sets how the chain is ran, see the 'configuring an effect' page
     chain: # The chain to run
       effects:
         - id: teleport
