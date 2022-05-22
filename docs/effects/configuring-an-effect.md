@@ -174,3 +174,24 @@ triggers:
 Inline chains also support custom arguments, just like regular chains.
 
 Effects in chains run isolated, so applying a mutator to one effect in the chain will apply it only to that effect - however, you can specify a mutator to the parent effect (`run_chain` or `run_chain_inline`) which will be applied to all effects in the chain. The same works for delays, e.g. if an effect in a chain has a delay of 2, it won't hold up other effects down the chain.
+
+Effect chains also support several run types:
+- **normal**: All effects in the chain will be ran, one after another
+- **cycle**: Only one effect will be ran, and it cycles through each effect each time the chain is ran
+
+To specify the run type, add the `run-type` argument into config:
+
+```
+id: run_chain_inline
+args:
+  run-type: cycle
+  chain:
+    - effects:
+        - <effect 1>
+        - <effect 2>
+        - <effect 3>
+triggers:
+  - alt_click
+```
+
+So in this example, effect 1 will be ran the first time, next time effect 2, then effect 3, then back to effect 1 (and so on)
