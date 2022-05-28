@@ -178,6 +178,7 @@ Effects in chains run isolated, so applying a mutator to one effect in the chain
 Effect chains also support several run types:
 - **normal**: All effects in the chain will be ran, one after another
 - **cycle**: Only one effect will be ran, and it cycles through each effect each time the chain is ran
+- **random**: Only one effect will be ran, chosen at random on each execution
 
 To specify the run type, add the `run-type` argument into config:
 
