@@ -8,6 +8,11 @@ Permission: `talismans.command.give`
 
 Usage: `/talismans give <player> <talisman> <level>`
 
+## `/talismans bag (Open the talisman bag)`
+Permission: `talismans.command.bag`
+
+Usage: `/talismans bag <player>`
+
 ### Crafting Permissions
 All talismans have an ID used by permissions and config files.
 This is the key, and looks like `archery_1`, `strength_2`, `alchemy_3`
