@@ -28,3 +28,8 @@ All talismans are allowed to be crafted by default, with the permission `talisma
 If you only want a player to have x amount of talismans in use at once, then do `talismans.limit.<amount>`, eg `talismans.limit.5` would allow 5 talismans to work at once.
 
 The player can still have as many talismans in their inventory as they want, but they won't work after a certain number have been read.
+
+### Set the talisman bag size for a player
+
+You can set the player's bag size with do `talismans.bagsize.<size>`, eg `talismans.bagsize.8` would allow 8 talismans in the talisman bag.
+By default, players have a bag size of 54 (the limit)
