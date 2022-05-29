@@ -3,9 +3,10 @@ title: "Talismans"
 ---
 
 ## What are Talismans and why do I want them?
-Most importantly, EcoArmor isn't built for the sole purpose of PvP. Of course, you can use EcoArmor on a PvP-centric server, it will work perfectly - however it has a more generalized featureset. Perfect for Survival, MMORPG, Skyblock, Towny - anything you want, EcoArmor will work perfectly for. Empower your armor sets with better effects for all situations, make sets only work under certain conditions - bring a whole metagame to your armor.
+Talismans are items that give players passive buffs while they're in the inventory, ender chest, or shulker box of a player. They can be crafted or given with commands or in crates, and you can make your own levels for any talisman. Use custom textures, crafting recipes, names, descriptions - anything that you want to configure, you can. Make your own talismans with a powerful effect and condition system to make talismans perfect for exactly how your server runs.
 
-Also - EcoArmor is completely customizable to anything you want. You can make your own Armor Sets and Upgrades in config, and with a little coding knowledge, create your own effects and conditions too. The sky's the limit!
+## Is there a Talisman Bag?
+Yes! There's a talisman bag that lets you set the size per-player, it works exactly how you'd want and expect it to - you don't have to use it, but it's enabled by default.
 
 ## Check out our partners! (Click to visit)
 
