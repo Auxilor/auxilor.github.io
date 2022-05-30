@@ -2,6 +2,7 @@
 
 Requires a player to have wear a certain EcoArmor set
 
+**Requires EcoArmor**
 
 # Example Config
 ```yaml
