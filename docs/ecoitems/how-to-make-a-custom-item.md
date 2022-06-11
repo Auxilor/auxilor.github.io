@@ -67,6 +67,7 @@ It's 3 arrays of weapon, fuel, and recipe configs - and you can add and remove c
       - "&4❣ &cMust be on full health for bonus"
       - "&4❣ &cConsumes <g:#870000>Reaper Souls</g:#7a2828>"
     craftable: true
+    craftingPermission: eco.testperm
     recipe:
       - nether_star
       - netherite_sword
@@ -104,6 +105,8 @@ Item config is the config for the weapon's item as shown in game.
 **lore:** The lore of the item
 
 **craftable:** If the weapon should be craftable
+
+**craftingPermission:** Required permission to craft the item
 
 **recipe:** The crafting recipe for the item.
 
