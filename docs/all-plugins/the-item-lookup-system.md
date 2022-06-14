@@ -24,9 +24,10 @@ recipe:
 This looks completely meaningless, but it's actually really simple. A crafting recipe is shown as a list of 9 strings, the first three being the top row (left to right), the second three being the middle row (left to right), and the last three being the last row (left to right).
 
 ## Keys Explained
-In each string is the key for an item. A key looks one of two ways:
+In each string is the key for an item. A key looks one of three ways:
 - A vanilla minecraft material: (eg `golden_apple`)
 - An item from another plugin: (eg `ecoitems:packmaster_tear`)
+- An exact item NBT tag: (eg `{id:"stone",Count:3,tag:{Name:"your name"}}`)
 
 You may also have noticed the `?` in some of the items. This means 'try to use the first item, but if it doesn't exist, use the second item' You can chain these together, but they're actually only useful for me to provide integrations in default configs without breaking things for people who don't use all my plugins together.
 
