@@ -35,6 +35,8 @@ You can also use `||` to group two items together. This means 'allow the the fir
 
 You can specify the amount of any item by having a space and then a number (the stack size). For example: `string 64` would mean a full stack of string.
 
+When using exact item NBT, you can't use `?`. `||`, or other modifiers.
+
 ## Modifiers
 Items can have modifiers applied to them in the key. For example, lets say you're configuring the GUI for EcoSkills. You want it to be a player head with a texture, but you're not sure how to do that, because it looks like you have to just specify a material. Actually, in all of my plugins, wherever it asks for a material, it's actually doing a lookup. You can specify any of the following modifiers to it:
 - **Enchantments:** You specify an enchantment by adding `<enchantment>:<level>` to the key, and you can chain these together
