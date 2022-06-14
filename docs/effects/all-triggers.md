@@ -42,3 +42,4 @@ Triggered effects require a trigger, permanent effects do not support triggers a
 | `bite` | Get a fish to bite on your rod |
 | `cast_rod` | Cast a fishing line |
 | `static_%interval%` | Run every x ticks, eg `static_20` would run every second | 
+| `consume` | Consume an item |
