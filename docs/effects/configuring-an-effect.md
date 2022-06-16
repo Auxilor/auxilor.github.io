@@ -97,6 +97,13 @@ args:
   filters_before_mutation: true
 ```
 
+#### `disable_antigrief_check`
+By default, the antigrief plugins on your server are checked. Set this to true to disable that. (defaults to false)
+```yaml
+args:
+  disable_antigrief_check: true
+```
+
 #### `point_cost`
 -The point cost required to use or activate this effect, looks like this in config:
 ```yaml
