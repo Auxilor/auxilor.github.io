@@ -1,6 +1,6 @@
 # `is_night`
 
-Requires a player to be at night
+Requires night
 
 # Example Config
 ```yaml
