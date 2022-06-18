@@ -1,10 +1,12 @@
-# `has_permission`
+# `wearing_boots`
 
-Requires a player to have a certain permission
+Requires a player to have an item as their boots
 
 # Example Config
 ```yaml
-- id: has_permission
+- id: wearing_boots
   args:
-    permission: "ecomc.rank.mvp" # The required permission
+    items: # The list of allowed items
+      - diamond_boots protection:4
+      - netherite_boots protection:3 
 ```

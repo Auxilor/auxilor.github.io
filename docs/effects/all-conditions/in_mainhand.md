@@ -1,10 +1,12 @@
-# `has_permission`
+# `in_mainhand`
 
-Requires a player to have a certain permission
+Requires a player to have an item in their main hand
 
 # Example Config
 ```yaml
-- id: has_permission
+- id: in_mainhand
   args:
-    permission: "ecomc.rank.mvp" # The required permission
+    items: # The list of allowed items
+      - diamond_sword sharpness:4
+      - netherite_sword sharpness:3 
 ```

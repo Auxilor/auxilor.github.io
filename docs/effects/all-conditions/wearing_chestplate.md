@@ -1,10 +1,12 @@
-# `has_permission`
+# `wearing_chestplate`
 
-Requires a player to have a certain permission
+Requires a player to have an item as their chestplate
 
 # Example Config
 ```yaml
-- id: has_permission
+- id: wearing_chestplate
   args:
-    permission: "ecomc.rank.mvp" # The required permission
+    items: # The list of allowed items
+      - diamond_chestplate protection:4
+      - netherite_chestplate protection:3 
 ```

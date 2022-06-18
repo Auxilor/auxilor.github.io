@@ -1,10 +1,12 @@
-# `has_permission`
+# `wearing_leggings`
 
-Requires a player to have a certain permission
+Requires a player to have an item as their leggings
 
 # Example Config
 ```yaml
-- id: has_permission
+- id: wearing_leggings
   args:
-    permission: "ecomc.rank.mvp" # The required permission
+    items: # The list of allowed items
+      - diamond_leggings protection:4
+      - netherite_leggings protection:3 
 ```
