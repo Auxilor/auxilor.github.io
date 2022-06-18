@@ -43,3 +43,5 @@ Triggered effects require a trigger, permanent effects do not support triggers a
 | `cast_rod` | Cast a fishing line |
 | `static_%interval%` | Run every x ticks, eg `static_20` would run every second | 
 | `consume` | Consume an item |
+| `gain_pet_xp` | Gain pet experience points **Requires EcoPets** |
+| `level_up_pet` | Level up a pet **Requires EcoPets** |
