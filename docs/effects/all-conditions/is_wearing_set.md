@@ -1,6 +1,6 @@
 # `is_wearing_set`
 
-Requires a player to wear a certain EcoArmor set
+Requires a player to be wearing a certain EcoArmor set
 
 **Requires EcoArmor**
 
