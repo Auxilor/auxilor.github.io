@@ -28,6 +28,13 @@ General Usage: `/ecocrates giveall <crate> [virtual/physical] [amount]`
 
 For example, to give everyone 2 virtual ancient keys, you would do `/ecocrates giveall ancient virtual 2`
 
+## `/crates take` (Takes a key from a player)
+Permission: `ecocrates.command.take`
+
+General Usage: `/ecocrates take <player> <crate> [virtual/physical] [amount]`
+
+For example, to take from a player 2 physical mythic keys, you would do `/ecocrates take <player> mythic physical 2`
+
 ## `/crate keys` (View your keys)
 Permission: `ecocrates.command.keys`
 
