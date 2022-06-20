@@ -53,3 +53,4 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `toggle_sneak` | Triggered when chainging the sneak state | 1 |
 | `toggle_sprint` | Triggered when chainging the sprint state | 1 |
 | `trident_attack` | Triggered on injuring an entity with a thrown trident | The damage dealt |
+| `win_raid` | Triggered when a player wins a raid | The level of bad omen |
