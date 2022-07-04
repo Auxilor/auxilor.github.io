@@ -1,4 +1,4 @@
-within_radius_of# `has_potion_effect`
+# `has_potion_effect`
 
 Requires a player to have a potion effect active
 

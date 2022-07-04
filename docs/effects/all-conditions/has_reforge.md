@@ -1,6 +1,6 @@
 # `has_reforge`
 
-Requires a player to have a certain refprge active
+Requires a player to have a certain reforge active
 
 **Requires Reforges**
 
