@@ -1,13 +1,14 @@
-# `spawn_particle`
+# `spawn_potion_cloud`
 #### Triggered Effect
 
-Spawns a particle
+Spawns a potion cloud
 
 # Example Config
 ```yaml
-- id: spawn_particle
+- id: spawn_potion_cloud
   args:
-    particle: heart # The particle to spawn (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)
-    amount: 10 # The amount of particles to spawn
+    effect: blindness # The effect to give (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
+    level: 1 # The level to give
+    duration: 80 # The duration of the effect (in ticks)
   ...other config (eg triggers, filters, mutators, etc)
 ```
