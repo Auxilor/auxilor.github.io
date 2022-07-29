@@ -13,5 +13,6 @@ Mines a square radius around a block, but only one block deep
     check_hardness: true # If only blocks with the same (or lower) hardness than the mined block can be broken
     disable_on_sneak: true # If the effect shouldn't activate while sneaking
     whitelist: [] # The only blocks allowed to mine - Remove if you don't want this
+    no_corners: false # If the corners shouldn't be broken (plus-sign shape) - Defaults to false
   ...other config (eg triggers, filters, mutators, etc)
 ```
