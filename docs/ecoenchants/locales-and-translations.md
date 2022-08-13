@@ -38,7 +38,7 @@ If you have a translation, send it to me on discord and I will happily add it!
 
 | Language              | Token      | Author               |
 |-----------------------|------------|----------------------|
-| Spanish               | dexenudepi | JreenCorp            |
-| Chinese (Traditional) | babavikine | YinYue               |
-| French                | viyeqopufe | Bananasmoothii       |
-| Lithuanian            | ximupatiqa | FableVania, Glalieon |
+| Spanish               | omiyafojit | JreenCorp            |
+| Chinese (Traditional) | topeyomugo | YinYue               |
+| French                | acutejeduw | Bananasmoothii       |
+| Lithuanian            | jukiwiyevo | FableVania, Glalieon |
