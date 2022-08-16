@@ -50,7 +50,7 @@ effects:
       - id: has_permission
         args:
           permission: "ecomc.rank.mvp"
-        not-met-effects;
+        not-met-effects:
           - id: send_message
             args:
               message: "&cYou need &bMVP&c rank to use &7Crystal Finder&c, buy it at &astore.ecomc.net&c!"
