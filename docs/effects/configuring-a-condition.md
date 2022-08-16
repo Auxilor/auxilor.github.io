@@ -33,3 +33,29 @@ If this condition is for a plugin for items (EcoEnchants, EcoItems, Reforges, Ta
       - "&cBuy it at &astore.ecomc.net"
 ```
 
+## Not met Effects
+
+If your condition is effect-specific (i.e. in the `conditions: []` section of an effect rather than on the main holder conditions), you can specify not-met-effects.
+
+These are effects ran when the condition is not met but a player tries to activate the effect (invoke the trigger).
+
+In config, they look like this:
+
+```yaml
+effects:
+  - id: give_money
+    args:
+      amount: 100
+    conditions:
+      - id: has_permission
+        args:
+          permission: "ecomc.rank.mvp"
+        not-met-effects;
+          - id: send_message
+            args:
+              message: "&cYou need &bMVP&c rank to use &7Crystal Finder&c, buy it at &astore.ecomc.net&c!"
+    triggers:
+      - break_block
+```
+
+So here, MVP players would get $100 for breaking a block, whereas non-MVP players would be told to buy the rank to get the perk when they try to break a block. This functions as an alternative to not-met-lines.
