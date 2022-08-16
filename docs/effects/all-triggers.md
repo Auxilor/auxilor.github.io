@@ -1,6 +1,6 @@
 ---
 title: "All Triggers"
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect is active
