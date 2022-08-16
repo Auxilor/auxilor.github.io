@@ -1,6 +1,6 @@
 ---
 title: "The Points System"
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 Points are similar to currencies, however they exist purely as a way to keep track of something in a player. For example, lets say you want the player to have to used an item a certain amount of times in order to use another one - you would be able to keep track of this with a point.
