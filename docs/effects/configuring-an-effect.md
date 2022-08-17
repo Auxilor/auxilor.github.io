@@ -162,7 +162,6 @@ args:
     ... add whichever arguments you use in your chain
 ```
 
-
 If you don't want to re-use chains, or if you prefer having them specified directly under the effect, you can use the `run_chain_inline` effect instead, like this:
 
 ```yaml
@@ -202,4 +201,25 @@ triggers:
   - alt_click
 ```
 
-So in this example, effect 1 will be ran the first time, next time effect 2, then effect 3, then back to effect 1 (and so on)
+So in this example, effect 1 will be ran the first time, next time effect 2, then effect 3, then back to effect 1 (and so on).
+
+## Shorthand inline chains
+
+It can be feel quite cumbersome to have a lot of inline chains filling up your configs. To fix this, there's a shorthand syntax:
+
+```
+triggers:
+  - alt_click
+effects:
+  - <effect 1>
+  - <effect 2>
+  - <effect 3>
+args:
+  run-type: random
+  chance: 30
+... filters, mutators, etc
+```
+
+This is an alternative way of configuring your effects; you don't specify a top-level effect ID, instead you specify a list of effects to be called. This can be thought of as being more trigger-centric; multiple triggers to multiple effects straight away, no worrying about the underlying inline chain.
+
+These work exactly like inline chains (they are inline chains), so everything is still supported; run-type, custom arguments, et cetera.
