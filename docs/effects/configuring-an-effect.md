@@ -31,6 +31,8 @@ This is an effect that gives you a 10% chance to spawn 10 soul particles in the 
 
 For example, you can specify the chance to be dependent on your y level: as in `chance: 100 -%player_y%` - permanent effects will evaluate the expression on activation, and triggered effects will evaluate it on each trigger. Make sure you only use placeholders with numeric values, as you will get an error otherwise.
 
+There is also a placeholder that represents the value passed by the trigger (e.g. the amount of damage dealt; see [here](https://plugins.auxilor.io/effects/all-triggers)). It can be referenced with `%trigger_value%`, `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, and `%t%`, depending on what level of shorthand you prefer.
+
 ## The Sections
 
 **id**: The effect ID. A list of ID's and their corresponding arguments can be found [here](https://plugins.auxilor.io/effects/all-effects)
