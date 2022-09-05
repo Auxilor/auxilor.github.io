@@ -14,5 +14,6 @@ Mines a square radius around a block, but only one block deep
     disable_on_sneak: true # If the effect shouldn't activate while sneaking
     whitelist: [] # The only blocks allowed to mine - Remove if you don't want this
     no_corners: false # If the corners shouldn't be broken (plus-sign shape) - Defaults to false
+    prevent_trigger: true # Optional, if the mine_block trigger should not be called from this
   ...other config (eg triggers, filters, mutators, etc)
 ```
