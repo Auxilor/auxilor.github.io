@@ -1,4 +1,4 @@
-# `onMaxHealth`
+# `above_health_percent`
 
 If the victim must be above a certain percentage of their health 
 

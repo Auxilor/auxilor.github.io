@@ -1,4 +1,4 @@
-# `onlyBosses`
+# `only_bosses`
 
 If the entity must be a boss (supports vanilla bosses and EcoBosses)
 

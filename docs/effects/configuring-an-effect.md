@@ -42,12 +42,14 @@ There are also extra placeholders passed in that you can use:
 
 `%victim_max_health%`: The victim's max health
 
+If the victim is a player, you can supply any placeholder prefixed with `victim_` (e.g. `%victim_player_y%`) as well.
+
 ## The Sections
 
 **id**: The effect ID. A list of ID's and their corresponding arguments can be found [here](https://plugins.auxilor.io/effects/all-effects)
 
 **args**: The arguments. All (triggerable) effects have optional arguments (see below)
-
+git add
 **triggers**: The list of triggers that activate this effect. If the effect is permanent (see next page) then this section is not applicable
 
 **filters**: The list of filters against arguments created by the trigger, ie mine_block will provide blocks to be filtered, melee_attack will provide entities to be filtered.

@@ -1,4 +1,4 @@
-# `onMaxHealth`
+# `on_max_health`
 
 If the victim must be on max health
 

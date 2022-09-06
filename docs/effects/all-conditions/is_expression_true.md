@@ -1,10 +1,10 @@
-# `in_world`
+# `is_expression_true`
 
-Requires a player to be in a certain world
+Requires a certain expression to be true
 
 # Example Config
 ```yaml
-- id: in_world
+- id: is_expression_true
   args:
-    world: the_end # The world name
+    expression: "%level% > 3"
 ```
