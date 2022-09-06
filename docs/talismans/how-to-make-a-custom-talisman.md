@@ -4,25 +4,14 @@ sidebar_position: 2
 ---
 
 ## Default config
-The default talismans.yml can be found here: 
+The default configs can be found here:
 
-[GitHub](https://github.com/Auxilor/Talismans/blob/master/eco-core/core-plugin/src/main/resources/talismans.yml)
+[GitHub](https://github.com/Auxilor/Talismans/blob/master/eco-core/core-plugin/src/main/resources/talismans/)
 
-### Breakdown of talismans.yml
+## How to add bosses
+Talismans are each config files placed in the `/talismans/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-talismans.yml is where the configs for all talismans are. It may initially seem daunting however it is very easy to configure and make your own talismans.
-
-Simply, talismans.yml looks like this:
-
-```yaml
-talismans:
-- <talisman 1>
-- <talisman 2>
-```
-
-It's an array of talisman configs - and you can add and remove configs as you please.
-
-### Typical Talisman Config
+### Example Talisman Config
 
 ```yaml
 - id: archery_2

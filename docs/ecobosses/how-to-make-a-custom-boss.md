@@ -4,23 +4,14 @@ sidebar_position: 2
 ---
 
 ## Default config
-The default ecobosses.yml can be found here:
+The default configs can be found here:
 
-[GitHub](https://github.com/Auxilor/EcoBosses/blob/master/eco-core/core-plugin/src/main/resources/ecobosses.yml)
+[GitHub](https://github.com/Auxilor/EcoBosses/blob/master/eco-core/core-plugin/src/main/resources/bosses/)
 
-## Breakdown of ecobosses.yml
-ecobosses.yml is where the configs for all bosses are. It may initially seem daunting however it is very easy to configure and make your own bosses.
+## How to add bosses
+Bosses are each config files placed in the `/bosses/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-Simply, ecobosses.yml looks like this:
-```yaml
-bosses:
-  - <boss 1>
-  - <boss 2>
-```
-
-It's a big array of objects, each element in the list being a boss. You can add and remove bosses by creating and removing elements from the list.
-
-## Typical Boss Config
+## Example Boss Config
 
 ```yaml
 id: steel_golem

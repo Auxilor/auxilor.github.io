@@ -3,25 +3,13 @@ title: "How to make a custom reforge"
 sidebar_position: 3
 ---
 
-## Default Config
+## Default config
+The default configs can be found here:
 
-The default reforges.yml can be found here: 
+[GitHub](https://github.com/Auxilor/Reforges/blob/master/eco-core/core-plugin/src/main/resources/reforges/)
 
-[GitHub](https://github.com/Auxilor/Reforges/blob/master/eco-core/core-plugin/src/main/resources/reforges.yml)
-
-## Breakdown of reforges.yml
-
-reforges.yml is where the configs for all reforges are. It may initially seem daunting however it is very easy to configure and make your own reforges.
-
-Simply, reforges.yml looks like this:
-
-```yaml
-reforges:
-  - <reforge 1>
-  - <reforge 2>
-```
-
-It's a big array of objects, each element in the list being a reforge. You can add and remove reforges by creating and removing elements from the list.
+## How to add reforges
+Reforges are each config files placed in the `/reforges/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
 ## Typical Reforge Config
 

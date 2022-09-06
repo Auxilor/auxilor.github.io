@@ -4,13 +4,14 @@ sidebar_position: 1
 ---
 
 ## Example Effect Config
+
 ```yaml
 id: spawn_particle
 args:
   amount: 10
   chance: 25
   particle: soul
-triggers: 
+triggers:
   - mine_block
 filters:
   blocks:
@@ -27,11 +28,19 @@ mutators:
 
 This is an effect that gives you a 10% chance to spawn 10 soul particles in the middle of a block of diamond ore or ancient debris when it's mined
 
+## Placeholders
+
 **Any numeric value (integer, decimal) can be a mathematical expression involving placeholders!**
 
-For example, you can specify the chance to be dependent on your y level: as in `chance: 100 -%player_y%` - permanent effects will evaluate the expression on activation, and triggered effects will evaluate it on each trigger. Make sure you only use placeholders with numeric values, as you will get an error otherwise.
+For example, you can specify the chance to be dependent on your y level: as in `chance: 100 - %player_y%` - permanent effects will evaluate the expression on activation, and triggered effects will evaluate it on each trigger. Make sure you only use placeholders with numeric values, as you will get weird behaviour otherwise.
 
-There is also a placeholder that represents the value passed by the trigger (e.g. the amount of damage dealt; see [here](https://plugins.auxilor.io/effects/all-triggers)). It can be referenced with `%trigger_value%`, `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, and `%t%`, depending on what level of shorthand you prefer.
+There are also extra placeholders passed in that you can use:
+
+`%trigger_value%`, `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, and `%t%`: The value passed by the trigger (e.g. the amount of damage dealt; see [here](https://plugins.auxilor.io/effects/all-triggers)).
+
+`%victim_health%`: The victim's health
+
+`%victim_max_health%`: The victim's max health
 
 ## The Sections
 
@@ -50,14 +59,18 @@ There is also a placeholder that represents the value passed by the trigger (e.g
 ## Optional Arguments
 
 #### `chance`
+
 The chance of this effect activating, as a percentage. (defaults to 100)
+
 ```yaml
 args:
   chance: 50
 ```
 
 #### `cooldown`
+
 The cooldown between effect activations, in seconds. (defaults to 0)
+
 ```yaml
 args:
   cooldown: 10
@@ -65,57 +78,72 @@ args:
 ```
 
 #### `cost`
+
 The cost required to use or activate this effect. **Requires Vault.** (defaults to 0)
+
 ```yaml
 args:
   cost: 200
 ```
 
 #### `every`
+
 Specify the effect to activate every x times. (defaults to always)
+
 ```yaml
 args:
   every: 3
 ```
 
 #### `mana_cost`
+
 The mana cost required to use or activate this effect. **Requires Aurelium Skills.** (defaults to 0)
+
 ```yaml
 args:
   mana_cost: 10
 ```
 
 #### `delay`
+
 The amount of ticks to wait before executing the effect. (defaults to 0)
+
 ```yaml
 args:
   delay: 20
 ```
 
 #### `filters_before_mutation`
+
 By default, filters are ran after mutation - set this to true if filters should be ran on the un-mutated data. (defaults to false)
+
 ```yaml
 args:
   filters_before_mutation: true
 ```
 
 #### `disable_antigrief_check`
+
 By default, the antigrief plugins on your server are checked. Set this to true to disable that. (defaults to false)
+
 ```yaml
 args:
   disable_antigrief_check: true
 ```
 
 #### `point_cost`
+
 -The point cost required to use or activate this effect, looks like this in config:
+
 ```yaml
 args:
   point_cost:
-      cost: 100 * %player_y%
-      type: g_souls
+    cost: 100 * %player_y%
+    type: g_souls
 ```
 
 ## Effect Chains
+
 Effect chains are groups of effects that can be executed together. This is very useful if you want to create a chance-based effect with several components: chance is calculated independently on each trigger, so without chains, particles and messages could send when the effects don't activate, and vice-versa.
 
 Effect chains are also useful to re-use more complex logic, via custom arguments that you can specify.
@@ -142,7 +170,7 @@ args:
   chance: 50 * (%player_health% / 20) # Example to demonstrate placeholders in config
   cooldown: 2
   chain: <chain id>
-triggers: 
+triggers:
   - melee_attack
   - bow_attack
   - trident_attack
@@ -150,7 +178,7 @@ filters:
   entities:
     - zombie
     - creeper charged
-    - skeleton 
+    - skeleton
 ```
 
 Custom arguments can be specified like this:
@@ -184,6 +212,7 @@ Inline chains also support custom arguments, just like regular chains.
 Effects in chains run isolated, so applying a mutator to one effect in the chain will apply it only to that effect - however, you can specify a mutator to the parent effect (`run_chain` or `run_chain_inline`) which will be applied to all effects in the chain. The same works for delays, e.g. if an effect in a chain has a delay of 2, it won't hold up other effects down the chain.
 
 Effect chains also support several run types:
+
 - **normal**: All effects in the chain will be ran, one after another
 - **cycle**: Only one effect will be ran, and it cycles through each effect each time the chain is ran
 - **random**: Only one effect will be ran, chosen at random on each execution

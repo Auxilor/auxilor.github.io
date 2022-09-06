@@ -4,21 +4,17 @@ sidebar_position: 2
 ---
 
 ## Default config
+The default configs can be found here:
 
-The default items.yml can be found here: 
+[GitHub](https://github.com/Auxilor/EcoBosses/blob/master/eco-core/core-plugin/src/main/resources/bosses/)
 
-[GitHib](https://github.com/Auxilor/EcoItems/blob/master/eco-core/core-plugin/src/main/resources/items.yml)
+## How to add items
+Items are each config files placed in the `/items/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-## Breakdown of items.yml
-
-items.yml is where the configs for all items are. It may initially seem daunting however it is very easy to configure and make your own items.
-
-Simply, items.yml looks like this:
+## How to add Fuels and Recipes
+Fuels and recipes go in items.yml. Simply, items.yml looks like this:
 
 ```yaml
-weapons:
-  - <weapon 1>
-  - <weapon 2>
 fuels:
   - <fuel 1>
   - <fuel 2>
@@ -27,57 +23,59 @@ recipes:
   - <recipe 2>
 ```
 
-It's 3 arrays of weapon, fuel, and recipe configs - and you can add and remove configs as you please.
+It's 2 arrays of fuel, and recipe configs - and you can add and remove configs as you please.
 
 ## Typical Item Config
 
 ```yaml
-- id: reaper_scythe
-  baseDamage: 12
-  baseAttackSpeed: 2.0
-  effects:
-    - id: bleed
-      args:
-        damage: 2
-        amount: 5
-        interval: 10
-        chance: 25
-      triggers:
-        - melee_attack
-  conditions:
-    - id: above_health_percent
-      args:
-        percent: 98
-    - id: has_fuel
-      args:
-        fuel: reaper_soul
-  fuels:
-    - reaper_soul
-  item:
-    item: netherite_sword hide_attributes
-    effectiveDurability: 3182
-    displayName: "<g:#870000>Reaper Scythe</g:#7a2828>"
-    lore:
-      - "&7Damage: &c12❤"
-      - "&7Attack Speed: &c2.0"
-      - ""
-      - "<g:#870000>&lREAPER SCYTHE BONUS</g:#7a2828>"
-      - "&8» &#87000025% chance to bleed enemies"
-      - ""
-      - "&4❣ &cMust be on full health for bonus"
-      - "&4❣ &cConsumes <g:#870000>Reaper Souls</g:#7a2828>"
-    craftable: true
-    craftingPermission: eco.testperm
-    recipe:
-      - nether_star
-      - netherite_sword
-      - nether_star
-      - netherite_sword
-      - golden_hoe
-      - netherite_sword
-      - nether_star
-      - netherite_sword
-      - nether_star
+item:
+  item: netherite_sword hide_attributes
+  effectiveDurability: 3182
+  displayName: "<g:#870000>Reaper Scythe</g:#7a2828>"
+  lore:
+    - "&7Damage: &c12❤"
+    - "&7Attack Speed: &c2.0"
+    - ""
+    - "<g:#870000>&lREAPER SCYTHE BONUS</g:#7a2828>"
+    - "&8» &#87000025% chance to bleed enemies"
+    - ""
+    - "&4❣ &cMust be on full health for bonus"
+    - "&4❣ &cConsumes <g:#870000>Reaper Souls</g:#7a2828>"
+  craftable: true
+  craftingPermission: eco.testperm
+  recipe:
+    - nether_star
+    - netherite_sword
+    - nether_star
+    - netherite_sword
+    - golden_hoe
+    - netherite_sword
+    - nether_star
+    - netherite_sword
+    - nether_star
+
+baseDamage: 12
+baseAttackSpeed: 2.0
+
+effects:
+  - id: bleed
+    args:
+      damage: 2
+      amount: 5
+      interval: 10
+      chance: 25
+    triggers:
+      - melee_attack
+conditions:
+  - id: above_health_percent
+    args:
+      percent: 98
+  - id: has_fuel
+    args:
+      fuel: reaper_soul
+      
+fuels:
+  - reaper_soul
 ```
 
 ## Understanding all the sections

@@ -6,7 +6,7 @@ The list of [damage causes](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/
 # Example Config
 ```yaml
 filters:
-  damageCause:
+  damage_cause:
     - poison
     - wither
 ```

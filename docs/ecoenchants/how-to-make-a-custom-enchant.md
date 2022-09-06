@@ -1,80 +1,45 @@
 ---
-title: "How to make a custom enchant"
+title: "How to make an enchant"
 sidebar_position: 8
 ---
 
-## Breakdown of customenchants.yml
+## Config Layout
 
-customenchants.yml is where the configs for all of your own custom enchants are. It may initially seem daunting however it is very easy to configure and make your own enchants.
+Each enchantment has it's own config file. They are stored in `/enchants/<id>.yml` so for example Telekinesis would be stored in `/enchants/telekinesis.yml`
 
-Simply, customenchants.yml looks like this:
+If you want to add or remove enchantments, just create or delete config files. These config files can be placed anywhere in the `/enchants/` folder, including in subfolders.
 
-```yaml
-enchants:
-  - <enchant 1>
-  - <enchant 2>
-```
 
-It's an array of enchant configs - and you can add and remove configs as you please.
-
-## Typical Enchantment Config
+## Example Enchantment Config
 
 ```yaml
-- id: escape
-  type: normal
-  name: "Escape"
-  description: Gain a short burst of speed after taking damage
+display-name: "Example" # The name of the enchantment in-game
+description: "Gives a &a%placeholder%%&8 bonus to damage" # The description of the enchantment
+placeholder: "%level% * 20" # The placeholder to show in the enchantment description
+type: normal # The enchantment type, from types.yml
 
-  obtaining:
-    table: true
-    villager: true
-    loot: true
-    rarity: epic
+targets: # The items that the enchantment can be applied to, see targets.yml
+  - sword
+conflicts: # The enchantments that conflict with this
+  - sharpness
+rarity: common # The rarity of the enchantment, see rarity.yml
+max-level: 4 # The max level of the enchantment
 
-  general-config:
-    flags: [ ]
-    targets:
-      - boots
-    grindstoneable: true
-    disabled-in-worlds: [ ]
-    requirements:
-      list: [ ]
-      not-met-lore: [ ]
-    conflicts: [ ]
+tradeable: true # If the enchantment can be obtained from villagers
+discoverable: true # If the enchantment can generate naturally in chests
+enchantable: true # If the enchantment can be obtained from enchanting tables
 
-  levels:
-    - effects:
-        - id: potion_effect
-          args:
-            effect: speed
-            level: 1
-            duration: 30
-            apply_to_player: true
-          triggers:
-            - take_damage
-      conditions: [ ]
-    - effects:
-        - id: potion_effect
-          args:
-            effect: speed
-            level: 2
-            duration: 30
-            apply_to_player: true
-          triggers:
-            - take_damage
-      conditions: [ ]
+# The effects of the enchantment (i.e. the functionality)
+# See here: https://plugins.auxilor.io/effects/configuring-an-effect
+# Use %level% as a placeholder for the enchantment level
+effects:
+  - id: damage_multiplier
+    args:
+      multiplier: 1 + 0.2 * %level%
+    triggers:
+      - melee_attack
+
+# The conditions required to use the enchantment,
+# you can use %level% as a placeholder here too
+conditions: [ ]
 ```
-
-## Understanding all the sections
-
-**id**: The id of the enchant (lowercase only!)
-
-**type**: The type of the enchant (normal, special, etc)
-
-The rest is the same as any other enchantment, explained in previous pages
-
-## Configuring Levels
-
-Each level has its own effects/conditions, and you can configure them the same way as other plugins of mine: read the guide on how to understand the effect system here:
-
-[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)

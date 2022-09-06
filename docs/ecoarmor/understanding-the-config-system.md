@@ -3,25 +3,13 @@ title: "Understanding the config system"
 sidebar_position: 3
 ---
 
-## Default Config
+## Default config
+The default configs can be found here:
 
-The default ecoarmor.yml (Sets and Tiers) can be found here:
+[GitHub](https://github.com/Auxilor/EcoBosses/blob/master/eco-core/core-plugin/src/main/resources/)
 
-[ecoarmor.yml](https://github.com/Auxilor/EcoArmor/blob/master/eco-core/core-plugin/src/main/resources/ecoarmor.yml)
+## How to add sets
+Sets are each config files placed in the `/sets/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-## Breakdown of ecoarmor.yml
-
-ecoarmor.yml is where the configs for all sets and tiers are. It may initially seem daunting however it is very easy to configure and make your own sets and tiers.
-
-Simply, ecoarmor.yml looks like this:
-
-```yaml
-sets:
-  - <set 1>
-  - <set 2>
-tiers:
-  - <tier 1>
-  - <tier 2>
-```
-
-There are two arrays of objects, one being all the tiers, and another being all the sets. You can add and remove sets and tiers by creating and removing elements from the array.
+## How to add tiers
+Tiers work in the same way, but use the `/tiers/` folder instead.

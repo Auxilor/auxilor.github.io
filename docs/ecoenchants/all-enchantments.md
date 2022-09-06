@@ -3,13 +3,11 @@ title: "All enchantments"
 sidebar_position: 3
 ---
 
-## Sidenote
+# This list is for 8.x.x and prior versions of EcoEnchants.
 
-The items that an enchantment can be applied to is configurable, to a certain extent. You can change targets, however the general type should have to be the same. For example, a sword enchantment would work on any melee attack, but it wouldn't work if you set it to use a bow, trident, or armor piece. However, any armor enchant will work on any armor piece.
+The 9.0.0 betas do not include these enchantments by default (you can add them manually if you want)
 
-The listed names are the default display names. Once again, these can be completely customized and translated to your liking.
-
-This list only includes the base custom enchants, not the extra ones you make yourself in customenchants.yml
+This list will be updated once 9.0.0 is fully released
 
 | Enchantment            | Description                                                              | Type     | Items                  | Max. lvl |
 | ---------------------- | ------------------------------------------------------------------------ | -------- | ---------------------- | -------- |
