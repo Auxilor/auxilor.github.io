@@ -1,13 +1,13 @@
-# `skill`
+# `pet`
 
-Require a certain skill
+Require a certain pet
 
-**Requires EcoSkills**
+**Requires EcoPets**
 
 # Example Config
 ```yaml
 filters:
-  skill:
-    - combat
-    - mining
+  pet:
+    - vampire
+    - sea_serpent
 ```

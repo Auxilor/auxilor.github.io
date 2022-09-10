@@ -54,6 +54,9 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `toggle_sprint` | Triggered when chainging the sprint state | 1 |
 | `trident_attack` | Triggered on injuring an entity with a thrown trident | The damage dealt |
 | `win_raid` | Triggered when a player wins a raid | The level of bad omen |
-| `jobs_level_up` | Triggered when levelling up a job **Requires Jobs** | The new level |
+| `jobs_level_up` | Triggered when levelling up a job **Requires Jobs Reborn** | The new level |
 | `brew` | Triggered when brewing a potion in a brewing stand | 1 |
 | `smelt` | Triggered when smelting an item in a furnace | 1 |
+| `place_block` | Triggered when placing a block | 1 |
+| `level_up_job` | Triggered when levelling up a job **Requires EcoJobs** | The new level |
+| `gain_job_xp` | Triggered when gaining job experience points **Requires EcoJobs** | The experience gained |

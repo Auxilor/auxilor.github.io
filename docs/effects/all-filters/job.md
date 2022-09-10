@@ -1,13 +1,13 @@
-# `skill`
+# `job`
 
-Require a certain skill
+Require a certain job
 
-**Requires EcoSkills**
+**Requires EcoJobs**
 
 # Example Config
 ```yaml
 filters:
-  skill:
-    - combat
-    - mining
+  job:
+    - miner
+    - builder
 ```

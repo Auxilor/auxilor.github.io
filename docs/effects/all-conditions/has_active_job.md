@@ -1,12 +1,12 @@
-# `has_active_pet`
+# `has_active_job`
 
-Requires a player to have a pet active
+Requires a player to have a job active
 
-**Requires EcoPets**
+**Requires EcoJobs**
 
 # Example Config
 ```yaml
-- id: has_active_pet
+- id: has_active_job
   args:
-    pet: dragon # The pet ID
+    job: builder # The job ID
 ```

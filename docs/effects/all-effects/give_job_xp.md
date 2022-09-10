@@ -1,15 +1,15 @@
-# `give_pet_xp`
+# `give_job_xp`
 #### Triggered Effect
 
-Gives experience points for a certain pet
+Gives experience points for a certain job
 
-**Requires EcoPets**
+**Requires EcoJobs**
 
 # Example Config
 ```yaml
-- id: give_pet_xp
+- id: give_job_xp
   args:
     amount: 100 # The amount of xp to give
-    pet: ghost_wolf # The pet to give the xp for
+    job: miner # The job to give the xp for
   ...other config (eg triggers, filters, mutators, etc)
 ```

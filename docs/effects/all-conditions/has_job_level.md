@@ -1,13 +1,13 @@
-# `has_pet_level`
+# `has_job_level`
 
-Requires a player to have a certain pet level
+Requires a player to have a certain job level
 
-**Requires EcoPets**
+**Requires EcoJobs**
 
 # Example Config
 ```yaml
-- id: has_pet_level
+- id: has_job_level
   args:
-    pet: black_cat # The pet ID
+    job: miner # The job ID
     level: 30 # The minimum level
 ```

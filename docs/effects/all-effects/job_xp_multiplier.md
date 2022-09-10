@@ -1,16 +1,16 @@
-# `pet_xp_multiplier`
+# `job_xp_multiplier`
 #### Permanent Effect
 
-Multiplies pet xp gain
+Multiplies job xp gain
 
-**Requires EcoPets**
+**Requires EcoJobs**
 
 # Example Config
 ```yaml
-- id: pet_xp_multiplier
+- id: job_xp_multiplier
   args:
     multiplier: 1.5 # The experience multiplier
-    pets: # The list of pets to multiply xp for. If removed, it will multiply all pets.
-      - tiger
-      - golem 
+    jobs: # The list of jobs to multiply xp for. If removed, it will multiply all jobs.
+      - miner
+      - builder 
 ```
