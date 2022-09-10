@@ -3,7 +3,7 @@ title: "Commands and Permissions"
 sidebar_position: 1
 ---
 
-## `/ecojobs unlock` (Unlock a pet)
+## `/ecojobs unlock` (Unlock a job)
 Permission: `ecojobs.command.unlock`
 
 Usage: `/ecojobs unlock <player> <job>`
@@ -18,5 +18,5 @@ Permission: `ecojobs.command.givexp`
 
 Usage: `/ecojobs givexp <player> <job> <amount>`
 
-## `/jobs` (Open the pets menu)
+## `/jobs` (Open the jobs menu)
 Permission: `ecojobs.command.jobs`
