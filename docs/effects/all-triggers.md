@@ -14,6 +14,11 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `block_item_drop` | Triggered when a mined block drops loot | 1 |
 | `bow_attack` | Triggered when shooting an entity with a bow and arrow (or crossbow) | The damage dealt |
 | `cast_rod` | Triggered when casting a fishing line | 1 |
+| `catch_entity` | Triggered when hooking onto an entity with a fishing rod | 1 |
+| `catch_fish` | Triggered when catching a fish | 1 |
+| `catch_fish_fail` | Triggered when failing to catch a fish | 1 |
+| `hook_in_ground` | Triggered when a fishing rod hook hits the ground | 1 |
+| `reel_in` | Triggered when reeling in a fishing rod | 1 |
 | `consume` | Triggered on item consumption | 1 |
 | `craft` | Triggered when crafting an item | 1 |
 | `damage_item` | Triggered when damaging an item | The damage |
