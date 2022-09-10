@@ -154,7 +154,7 @@ spawn-egg:
 
 **level-xp-requirements:** The XP requirements for each level
 
-**xp-gain-methods:** The way the booster can be levelled. Each ID is a trigger - triggers give values such as damage dealt (with attack triggers), distance moved (with the move trigger), et cetera. Other triggers with no obvious value give an output of 1.
+**xp-gain-methods:** The way the pet can be levelled. Each ID is a trigger - triggers give values such as damage dealt (with attack triggers), distance moved (with the move trigger), et cetera. Other triggers with no obvious value give an output of 1.
 
 **level-placeholders:** Custom placeholders for messages / lore
 
@@ -174,7 +174,7 @@ spawn-egg:
 
 ### Effects + Conditions
 
-Effects are the actual functionality of the booster, and conditions are requirements that a player must meet for the booster to activate for them - so you can make it so a booster only works for a certain type of player, ie only players that have above a certain amount of playtime, or those that only have below a certain balance.
+Effects are the actual functionality of the pet, and conditions are requirements that a player must meet for the pet to activate for them - so you can make it so a pet only works for a certain type of player, ie only players that have above a certain amount of playtime, or those that only have below a certain balance.
 
 See this page for how to configure effects:
 
