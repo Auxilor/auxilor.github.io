@@ -11,7 +11,7 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | --- | --- | --- |
 | `alt_click` | Triggered when using Right Click on most items, Left Click on those that have a default right click functionality | 1 |
 | `bite` | Triggered when a fish bites on your rod | 1 |
-| `block_item_drop` | Triggered when a mined block drops loot | 1 |
+| `block_item_drop` | Triggered when a mined block drops loot | The amount of items dropped |
 | `bow_attack` | Triggered when shooting an entity with a bow and arrow (or crossbow) | The damage dealt |
 | `cast_rod` | Triggered when casting a fishing line | 1 |
 | `catch_entity` | Triggered when hooking onto an entity with a fishing rod | 1 |
@@ -25,7 +25,7 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `death` | Triggered on death from any sources | 1 |
 | `enchant_item` | Triggered when ehcnahting an item | The xp cost |
 | `enchant_%type%l` | Triggered when enchanting an item with a certain type of enchantment **Requires EcoEnchants** | The xp cost |
-| `entity_item_drop` | Triggered when a killed entity drops loot | 1 |
+| `entity_item_drop` | Triggered when a killed entity drops loot | The amount of items dropped |
 | `fall_damage` | Triggered when taking fall damage | The damage taken |
 | `gain_hunger` | Triggered when gaining hunger points | The hunger gained |
 | `gain_pet_xp` | Triggered when gaining pet experience points **Requires EcoPets** | The experience gained |
