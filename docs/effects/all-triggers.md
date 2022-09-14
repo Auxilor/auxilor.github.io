@@ -69,3 +69,4 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `join_job` | Triggered when joining a job **Requires EcoJobs** | The job level |
 | `leave_job` | Triggered when leaving a job **Requires EcoJobs** | The job level |
 | `sell_item` | Triggered when selling an item in a shop | The price |
+| `headshot` | Triggered when hitting an enemy with a projectile in the head | The damage dealt |
