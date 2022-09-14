@@ -42,6 +42,10 @@ There are also extra placeholders passed in that you can use:
 
 `%victim_max_health%`: The victim's max health
 
+`%distance%`: The distance between the player and the victim
+
+`%victim_level%`: The victim's level **Requires LevelledMobs**
+
 If the victim is a player, you can supply any placeholder prefixed with `victim_` (e.g. `%victim_player_y%`) as well.
 
 ## The Sections
