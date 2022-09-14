@@ -21,6 +21,7 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - RPGHorses
 - CrashClaim
 - CombatLogX
+- FabledSkyblock
 
 ## Anticheat
 - AAC
@@ -40,6 +41,7 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - ExecutableItems
 - CustomCrafting
 - MythicMobs
+- Scyther
 
 ## Shop
 - ShopGUIPlus
@@ -59,3 +61,4 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - mcMMO
 - MultiverseInventories
 - Essentials
+- CustomCrafting
