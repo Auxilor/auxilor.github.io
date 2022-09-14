@@ -65,3 +65,7 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `place_block` | Triggered when placing a block | 1 |
 | `level_up_job` | Triggered when levelling up a job **Requires EcoJobs** | The new level |
 | `gain_job_xp` | Triggered when gaining job experience points **Requires EcoJobs** | The experience gained |
+| `breed` | Triggered when breeding entities together | The experience received |
+| `join_job` | Triggered when joining a job **Requires EcoJobs** | The job level |
+| `leave_job` | Triggered when leaving a job **Requires EcoJobs** | The job level |
+| `sell_item` | Triggered when selling an item in a shop | The price |
