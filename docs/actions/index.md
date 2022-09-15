@@ -2,12 +2,11 @@
 title: "Actions"
 ---
 
-## What is Actions?
+## What are Actions?
 
-Jobs are methods by which players earn money, experience, items, or anything else you want. You can level them up to increase their rewards, put certain jobs behind paywalls if you want, unlock jobs through gameplay, or anything else!
+Actions are mini-scripts that let you add and tweak things on your server. From anything as small as little server automations, like losing coins on death or making netherite hoes autosell crops, to something bigger like entire custom currencies that integrate in other plugins, random server events, or anything you want!
 
-You can make your own jobs right in config without any coding knowledge required. Every single aspect of the plugin is completely customisable for you to play with - if you think a job that does something should exist, you can make it in minutes.
-
+Instead of paying a developer to write a custom plugin to add small things to your server, you can just make them right in actions with no coding knowledge required! Anything you want to add, you can - your creativity is the only limit.
 
 ## Check out our partners! (Click to visit)
 
