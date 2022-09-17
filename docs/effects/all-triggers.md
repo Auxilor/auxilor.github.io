@@ -72,3 +72,8 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `headshot` | Triggered when hitting an enemy with a projectile in the head | The damage dealt |
 | `scyther_auto_collect` | Triggered when autocollecting crops with a scyther hoe **Requires Scyther** | 1 |
 | `scyther_auto_sell` | Triggered when autoselling crops with a scyther hoe **Requires Scyther** | 1 |
+| `join` | Triggered when joining the server | 1 |
+| `leave` | Triggered when leaving the server | 1 |
+| `respawn` | Triggered when respawning | 1 |
+| `level_up_xp` | Triggered when levelling up XP | The new level |
+| `change_world` | Triggered when changing world | 1 |
