@@ -77,3 +77,9 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `respawn` | Triggered when respawning | 1 |
 | `level_up_xp` | Triggered when levelling up XP | The new level |
 | `change_world` | Triggered when changing world | 1 |
+| `change_armor` | Triggered when changing armor | 1 |
+| `hold_item` | Triggered when changing your held item | 1 |
+| `send_message` | Triggered when sending a message* | 1 |
+| `send_message_async` | Triggered when sending a message asynchronously* | 1 |
+
+* `send_message_async` supports cancelling the event, however may cause bugs with other effects. If you're not cancelling the event, go with `send_message` instead.
