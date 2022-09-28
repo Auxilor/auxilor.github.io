@@ -20,3 +20,13 @@ Usage: `/ecojobs givexp <player> <job> <amount>`
 
 ## `/jobs` (Open the jobs menu)
 Permission: `ecojobs.command.jobs`
+
+## `/jobs join` (Join a job)
+Permission: `ecojobs.command.join`
+
+Usage: `/jobs join <job>`
+
+## `/jobs leave` (Leave a job)
+Permission: `ecojobs.command.leave`
+
+Usage: `/jobs leave`
