@@ -1,12 +1,12 @@
-# `damage_multiplier`
+# `add_damage`
 #### Triggered Effect
 
-Multiplies incoming or outgoing damage from any incoming damage trigger
+Adds incoming or outgoing damage from any damage trigger
 
 # Example Config
 ```yaml
-- id: damage_multiplier
+- id: add_damage
   args:
-    multiplier: 0.5 # The multiplier
+    damage: 2 # The damage to add (or subtract)
   ...other config (eg triggers, filters, mutators, etc)
 ```

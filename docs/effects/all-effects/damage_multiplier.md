@@ -1,7 +1,7 @@
 # `damage_multiplier`
 #### Triggered Effect
 
-Multiplies incoming or outgoing damage from any incoming damage trigger
+Multiplies incoming or outgoing damage from any damage trigger
 
 # Example Config
 ```yaml
