@@ -19,6 +19,8 @@ id: steel_golem
 # View an explanation for this system here: https://plugins.auxilor.io/all-plugins/the-entity-lookup-system
 mob: iron_golem attack-damage:90 movement-speed:1.5 follow-range:16 health:1200
 # Supported placeholders: %health%, %time% (formats as minutes:seconds, eg 1:56)
+modelEngineId: "tiger" # (Optional) If you have Model Engine, specify the ID here.
+
 displayName: "&8Steel Golem &7| &c%health%♥ &7| &e%time%"
 influence: 40 # The distance at which effects will be applied to players
 customai: # Custom mob AI using the entity goal system.
