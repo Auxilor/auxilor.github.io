@@ -3,7 +3,7 @@ title: Custom GUI Slots
 sidebar_position: 5
 ---
 
-## What are custom GUI slots
+## What are custom GUI slots?
 
 When configuring a GUI in a plugin, you might stumble accross this:
 
