@@ -14,41 +14,58 @@ Bosses are each config files placed in the `/bosses/` folder, and you can add or
 ## Example Boss Config
 
 ```yaml
-id: steel_golem
 # A base mob and modifiers
 # View an explanation for this system here: https://plugins.auxilor.io/all-plugins/the-entity-lookup-system
 mob: iron_golem attack-damage:90 movement-speed:1.5 follow-range:16 health:1200
-# Supported placeholders: %health%, %time% (formats as minutes:seconds, eg 1:56)
-modelEngineId: "tiger" # (Optional) If you have Model Engine, specify the ID here.
 
-displayName: "&8Steel Golem &7| &c%health%♥ &7| &e%time%"
+# If you're using model engine, you can specify the ID and animation here. You can also specify these in the mob with the lookup system.
+model-engine-id: ""
+model-engine-animation: ""
+
+# Supported placeholders: %health%, %time% (formats as minutes:seconds, eg 1:56)
+display-name: "&8Steel Golem &7| &c%health%♥ &7| &e%time%"
+
 influence: 40 # The distance at which effects will be applied to players
-customai: # Custom mob AI using the entity goal system.
+
+custom-ai: # Custom mob AI using the entity goal system.
   enabled: false # If custom AI should be enabled, this will override the vanilla mob behaviour.
   target-goals: [ ] # How the boss decides who to attack, if the target mode isn't being used.
   ai-goals: [ ] # How the boss should behave.
-effects: [ ] # Effects are done from the player's perspective: to treat the player as the victim, use the self_as_victim option in args
-conditions: [ ] # Conditions to apply effects to players; useful if you don't want to affect low-level players
-lifespan: 120 # The lifespan of the boss before it despawns, in seconds. Set to a massive number to disable.
-defence:
-  preventMounts: true # If the boss shouldn't be able to get into boats, minecarts, etc
-  explosionImmune: true # If the boss should be immune to explosions
-  fireImmune: true # If the boss should be immune to fire damage
-  drowningImmune: true # If the boss should be immune to drowning damage
-  suffocationImmune: true # If the boss should be immune to suffocation
 
-  meleeDamageMultiplier: 0.8 # Incoming melee damage will be multiplied by this value. Set to 0 to render immune against melee
-  projectileDamageMultiplier: 0.2 # Same as melee multiplier, but for projectiles
+effects: # Effects are done from the player's perspective: to treat the player as the victim, use the self_as_victim option in args
+  - id: run_chain
+    args:
+      chain: blind
+      self_as_victim: true
+      chance: 20
+    triggers:
+      - static_20
+
+conditions: [ ] # Conditions to apply effects to players; useful if you don't want to affect low-level players
+
+lifespan: 120 # The lifespan of the boss before it despawns, in seconds. Set to a massive number to disable.
+
+defence:
+  prevent-mounts: true # If the boss shouldn't be able to get into boats, minecarts, etc
+  explosion-immune: true # If the boss should be immune to explosions
+  fire-immune: true # If the boss should be immune to fire damage
+  drowning-immune: true # If the boss should be immune to drowning damage
+  suffocation-immune: true # If the boss should be immune to suffocation
+
+  melee-damage-multiplier: 0.8 # Incoming melee damage will be multiplied by this value. Set to 0 to render immune against melee
+  projectile-damage-multiplier: 0.2 # Same as melee multiplier, but for projectiles
 
   teleportation: # Teleport every x ticks in order to avoid being caged in obsidian or similar
     enabled: true # If the boss should teleport
     interval: 100 # Ticks between teleportation attempts
     range: 20 # The range that the boss should check for safe teleportation blocks.
+
 rewards:
   xp: # Experience will be randomly generated between these values
     minimum: 30000
     maximum: 60000
-  topDamagerCommands:
+
+  top-damager-commands:
     # You can specify as many ranks as you want (adding 4, 5, etc)
     # You can use %player% as a placeholder for the player name
     1:
@@ -57,28 +74,33 @@ rewards:
           - eco give %player% 10000
     2: [ ]
     3: [ ]
-  nearbyPlayerCommands:
+
+  nearby-player-commands:
     # Commands to be executed for all players near the boss death location
     radius: 10
     # Uses the same syntax as top damager commands (chance and a list of commands, can use %player%)
     commands: [ ]
+
   # You can specify as many drops as you want, and group several drops together under one chance
   drops:
     - chance: 100
       items:
         - diamond_sword unbreaking:1 name:"Example Sword"
+
 target:
   # How the boss should choose which player to attack, choices are:
   # highest_health, lowest_health, closest, random
   mode: highest_health
   # The distance to scan for players
   range: 40
-bossBar:
+
+boss-bar:
   # If the boss should have a boss bar
   enabled: true
   color: white # Options: blue, green, pink, purple, red, white, yellow
   style: progress # Options: progress, notched_20, notched_12, notched_10, notched_6
   radius: 120 # The distance from the boss where the boss bar is visible
+
 spawn:
   # A list of conditions required for a player to be able to spawn a boss, useful to set
   # minimum skill levels, etc
@@ -97,10 +119,11 @@ spawn:
     top: netherite_block
     middle: iron_block
     bottom: magma_block
-    notInWorlds: [ ] # If spawn totems should be disallowed in certain worlds, specify them here
+    not-in-worlds: [ ] # If spawn totems should be disallowed in certain worlds, specify them here
   egg:
     enabled: true # If the boss should have a spawn egg
-    item: evoker_spawn_egg unbreaking:1 hide_enchants name:"&8Steel Golem&f Spawn Egg"
+    item: evoker_spawn_egg unbreaking:1 hide_enchants
+    name: "&8Steel Golem&f Spawn Egg"
     lore:
       - ""
       - "&8&oPlace on the ground to"
@@ -116,6 +139,15 @@ spawn:
       - iron_block
       - netherite_block
       - iron_block
+
+commands:
+  # For each category, you can add as many commands as you want, which will be executed by
+  # console. Supported placeholders are the same as for messages (see below)
+  spawn: [ ]
+  kill: [ ]
+  despawn: [ ]
+  injure: [ ]
+
 messages:
   # For each category, you can add as many messages as you want, each with their own radius.
   # Radius is the distance from the boss where the player will be sent the message
