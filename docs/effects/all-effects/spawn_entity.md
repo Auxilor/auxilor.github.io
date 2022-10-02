@@ -1,16 +1,12 @@
-# `spawn_mobs`
+# `spawn_entity`
 #### Triggered Effect
 
-Spawns mobs to help you
+Spawns an entity
 
 # Example Config
 ```yaml
-- id: spawn_mobs
+- id: spawn_entity
   args:
-    amount: 4 # The amount of mobs to spawn
-    ticks_to_live: 120 # The amount of ticks the mobs should live for
-    health: 5 # The mob health
-    range: 10 # The range around the location for mobs to spawn
     entity: cave_spider speed:100 # The mob to spawn, takes a lookup string
   ...other config (eg triggers, filters, mutators, etc)
 ```

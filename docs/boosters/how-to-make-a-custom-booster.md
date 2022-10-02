@@ -79,7 +79,7 @@ It's a big array of objects, each element in the list being a booster. You can a
 
 **commands:** The commands that will be dispatched when a booster activates/deactivates. You can use %player% as a placeholder.
 
-**messages:** The messages that are broadcast when a reforge activates/deactivates. You can use %player% as a placeholder.
+**messages:** The messages that are broadcast when a booster activates/deactivates. You can use %player% as a placeholder.
 
 **gui:** Config for how the booster looks in gui: the item, the lore, the name, et cetera.
 
