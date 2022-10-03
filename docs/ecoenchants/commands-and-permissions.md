@@ -10,6 +10,13 @@ Because of how it's made, EcoEnchants doesn't need to have it's own commands for
 ## `/enchantinfo` (Get information (description, max level, conflicts, etc) about an enchant)
 Permission: `ecoenchants.command.enchantinfo`
 
+## `/giverandombook` (Give a player a random book)
+Permission: `ecoenchants.command.giverandombook`
+
+General Usage: `/ecoenchants giverandombook <player> [type/rarity] [minimum level] [maximum level]`
+
+For example, to give someone a random special book between level 2 and 3, you would do `/ecoenchants giverandombook %player% special 2 3`
+
 ## Enchantment Permissions
 
 Want to make an enchantment only available through an enchanting table for certain players?
