@@ -10,7 +10,10 @@ Because of how it's made, EcoEnchants doesn't need to have it's own commands for
 ## `/enchantinfo` (Get information (description, max level, conflicts, etc) about an enchant)
 Permission: `ecoenchants.command.enchantinfo`
 
-## `/giverandombook` (Give a player a random book)
+## `/ecoenchants gui` (View all enchantments that can be applied on any item)
+Permission: `ecoenchants.command.gui`
+
+## `/ecoenchants giverandombook` (Give a player a random book)
 Permission: `ecoenchants.command.giverandombook`
 
 General Usage: `/ecoenchants giverandombook <player> [type/rarity] [minimum level] [maximum level]`
