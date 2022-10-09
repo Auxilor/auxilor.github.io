@@ -81,3 +81,4 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `hold_item` | Triggered when changing your held item | 1 |
 | `send_message` | Triggered when sending a message | 1 |
 | `pick_up_item` | Triggered when picking up an item | The amount of items |
+| `drop_item` | Triggered when dropping an item | The amount of items |

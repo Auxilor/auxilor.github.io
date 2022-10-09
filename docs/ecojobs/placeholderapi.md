@@ -12,3 +12,4 @@ sidebar_position: 3
 | `%ecojobs_<id>_required_xp%`         | Shows the job XP required for the next job                                            |
 | `%ecojobs_job%`                      | Shows the name of the active job, or an empty string                                  |
 | `%ecojobs_job_id%`                   | Shows the id of the active job, or an empty string                                    |
+| `%ecojobs_job_level%`                   | Shows the level of the active job, or an empty string                                    |
