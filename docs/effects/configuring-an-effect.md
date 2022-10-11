@@ -225,7 +225,7 @@ Effect chains also support several run types:
 
 To specify the run type, add the `run-type` argument into config:
 
-```
+```yml
 id: run_chain_inline
 args:
   run-type: cycle
@@ -244,16 +244,17 @@ So in this example, effect 1 will be ran the first time, next time effect 2, the
 
 It can be feel quite cumbersome to have a lot of inline chains filling up your configs. To fix this, there's a shorthand syntax:
 
-```
-triggers:
-  - alt_click
+```yml
 effects:
-  - <effect 1>
-  - <effect 2>
-  - <effect 3>
-args:
-  run-type: random
-  chance: 30
+  - triggers:
+      - alt_click
+    effects:
+      - <effect 1>
+      - <effect 2>
+      - <effect 3>
+    args:
+      run-type: random
+      chance: 30
 ... filters, mutators, etc
 ```
 
