@@ -14,7 +14,7 @@ The points system allows the value of any points you track to be read as a place
 
 `%<EcoPlugin, any of them>_points_<Point Name>%`
 
-So for the g_souls example, the valid placeholders would be
+So for the g_souls example, valid placeholders would be
 
 `%ecoitems_points_g_souls%` or `%ecoenchants_points_g_souls%`
 

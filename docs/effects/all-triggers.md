@@ -23,8 +23,8 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `craft` | Triggered when crafting an item | 1 |
 | `damage_item` | Triggered when damaging an item | The damage |
 | `death` | Triggered on death from any sources | 1 |
-| `enchant_item` | Triggered when ehcnahting an item | The xp cost |
-| `enchant_%type%l` | Triggered when enchanting an item with a certain type of enchantment **Requires EcoEnchants** | The xp cost |
+| `enchant_item` | Triggered when enchanting an item | The xp cost |
+| `enchant_%type%` | Triggered when enchanting an item with a certain type of enchantment **Requires EcoEnchants** | The xp cost |
 | `entity_item_drop` | Triggered when a killed entity drops loot | The amount of items dropped |
 | `fall_damage` | Triggered when taking fall damage | The damage taken |
 | `gain_hunger` | Triggered when gaining hunger points | The hunger gained |
