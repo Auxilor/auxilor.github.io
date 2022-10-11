@@ -26,7 +26,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/Auxilor/docs/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/Auxilor/auxilor.github.io/tree/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
