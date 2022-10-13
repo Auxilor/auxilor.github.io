@@ -27,3 +27,15 @@ Or, if you want to give a player a full set of default young armor, you would do
 
 ## `/ecoarmor reload (Reload Config)`
 Permission: `ecoarmor.command.reload`
+
+## `/ecoarmor import` (Import an armor set from [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecoarmor.command.import`
+
+General Usage: `/ecoarmor import <id>`
+
+Find armor sets on [lrcdb](https://lrcdb.auxilor.io/)
+
+## `/ecoarmor export` (Export an armor set to [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecoarmor.command.export`
+
+General Usage: `/ecoarmor export <id>`

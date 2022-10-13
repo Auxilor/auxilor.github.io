@@ -30,3 +30,15 @@ Usage: `/jobs join <job>`
 Permission: `ecojobs.command.leave`
 
 Usage: `/jobs leave`
+
+## `/ecojobs import` (Import a job from [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecojobs.command.import`
+
+General Usage: `/ecojobs import <id>`
+
+Find jobs on [lrcdb](https://lrcdb.auxilor.io/)
+
+## `/ecojobs export` (Export a job to [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecojobs.command.export`
+
+General Usage: `/ecojobs export <id>`

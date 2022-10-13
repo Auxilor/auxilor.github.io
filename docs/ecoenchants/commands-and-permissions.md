@@ -20,6 +20,18 @@ General Usage: `/ecoenchants giverandombook <player> [type/rarity] [minimum leve
 
 For example, to give someone a random special book between level 2 and 3, you would do `/ecoenchants giverandombook %player% special 2 3`
 
+## `/ecoenchants import` (Import an enchant from [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecoenchants.command.import`
+
+General Usage: `/ecoenchants import <id>`
+
+Find enchants on [lrcdb](https://lrcdb.auxilor.io/)
+
+## `/ecoenchants export` (Export an enchant to [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecoenchants.command.export`
+
+General Usage: `/ecoenchants export <id>`
+
 ## Enchantment Permissions
 
 Want to make an enchantment only available through an enchanting table for certain players?
