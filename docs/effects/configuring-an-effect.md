@@ -48,6 +48,8 @@ There are also extra placeholders passed in that you can use:
 
 If the victim is a player, you can supply any placeholder prefixed with `victim_` (e.g. `%victim_player_y%`) as well.
 
+`%hits%`: The amount of times the player has hit the victim
+
 ## The Sections
 
 **id**: The effect ID. A list of ID's and their corresponding arguments can be found [here](https://plugins.auxilor.io/effects/all-effects)
