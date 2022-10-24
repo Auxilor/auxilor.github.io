@@ -141,13 +141,30 @@ args:
 
 #### `point_cost`
 
--The point cost required to use or activate this effect, looks like this in config:
+The point cost required to use or activate this effect, looks like this in config:
 
 ```yaml
 args:
   point_cost:
     cost: 100 * %player_y%
     type: g_souls
+```
+
+#### `price`
+
+The price required to use or activate this effect.
+
+This supports all known prices: supports money, items, points, second currencies, etc.
+Read more about the system here: https://plugins.auxilor.io/all-plugins/prices
+
+Looks like this in config:
+
+```yaml
+args:
+  price:
+    value: 100 * %player_y%
+    type: crystals
+    display: "&b%value% Crystals ❖"
 ```
 
 ## Effect Chains
