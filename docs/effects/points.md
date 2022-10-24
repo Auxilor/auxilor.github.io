@@ -8,3 +8,5 @@ Points are similar to currencies, however they exist purely as a way to keep tra
 You can have as many different points as you want, the plugins will keep track of them automatically. Points are shared between plugins, too - so if you make a point in EcoItems, then you can use it in EcoPets, EcoJobs, etc.
 
 A point can hold any numeric value, including negatives and decimals, but of course how you decide to use them is completely up to you.
+
+There are placeholders for points, or course: they look like `%<plugin>_points_<point>%`, such as `%actions_points_tiredness%`
