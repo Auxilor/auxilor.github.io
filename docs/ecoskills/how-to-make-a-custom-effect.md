@@ -3,36 +3,34 @@ title: "How to make a custom effect"
 sidebar_position: 5
 ---
 
-## Breakdown of customeffects.yml
+## Default config
+The default configs can be found here:
 
-customeffects.yml is where the configs for all of your own custom skill effects are. It may initially seem daunting however it is very easy to configure and make your own effects.
+[GitHub](https://github.com/Auxilor/EcoSkills/blob/master/eco-core/core-plugin/src/main/resources/customeffects/)
 
-Simply, customeffects.yml looks like this:
+## How to add custom effects
+Custom effects are each config files placed in the `/customeffects/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+
+### Example Custom Effect Config
 
 ```yaml
+placeholder: "%level% / 50" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
+description: "&a%placeholder%%&8 chance to get $50 every time you mine a block" # The description to be shown in lore and messages
+
+# The effects of the effect (i.e. the functionality)
+# See here: https://plugins.auxilor.io/effects/configuring-an-effect
+# Use %level% as a placeholder for the effect level
 effects:
-  - <effect 1>
-  - <effect 2>
-```
+  - id: give_money
+    args:
+      chance: "%level% / 50"
+      amount: 50
+    triggers:
+      - mine_block
 
-It's an array of effect configs - and you can add and remove configs as you please.
-
-## Typical Custom Effect Config
-
-```yaml
-- id: gold_touch # The ID of the effect, to be used in skills
-  placeholder: "%level%" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
-  description: "&a%placeholder%%&8 chance to get $50 every time you mine a block" # The description to be shown in lore and messages
-
-  effects:
-    - id: give_money
-      args:
-        chance: "%level%"
-        amount: 50
-      triggers:
-        - mine_block
-
-  conditions: [ ]
+# The conditions required for the effect to activate,
+# you can use %level% as a placeholder here too
+conditions: [ ]
 ```
 
 ## Understanding all the sections

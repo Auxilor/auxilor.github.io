@@ -3,9 +3,9 @@ title: "Skills"
 sidebar_position: 3
 ---
 
-Skills are the means by which effects and stats are upgraded. They are levelled up by completing tasks:
+Skills are the means by which effects and stats are upgraded. They are levelled up by completing tasks.
 
-![The farming skil](https://1192817931-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXwJPPRqRpT7b0ZXxU13J%2Fuploads%2Fw6PcDlcTWC9ee3tK3L1g%2FScreenshot%202021-08-21%20at%2017.55.51.png?alt=media&token=f8373e2d-b2c8-444e-a434-d92f9015cfb8)
+The default skills are:
 
 | Skill       | Task                                  |
 |-------------|---------------------------------------|
@@ -18,6 +18,8 @@ Skills are the means by which effects and stats are upgraded. They are levelled 
 | Alchemy     | Brew potions to earn Alchemy XP       |
 | Armory      | Take damage to earn Armory XP         |
 | Exploration | Move and fall to earn Exploration XP  |
+
+However, you can also [create your own](https://plugins.auxilor.io/ecoskills/how-to-make-a-custom-skill)!
 
 ## Levelling Up
 
