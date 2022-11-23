@@ -48,6 +48,8 @@ There are also extra placeholders passed in that you can use:
 
 If the victim is a player, you can supply any placeholder prefixed with `victim_` (e.g. `%victim_player_y%`) as well.
 
+`%hits%`: The amount of times the player has hit the victim
+
 ## The Sections
 
 **id**: The effect ID. A list of ID's and their corresponding arguments can be found [here](https://plugins.auxilor.io/effects/all-effects)
@@ -139,13 +141,30 @@ args:
 
 #### `point_cost`
 
--The point cost required to use or activate this effect, looks like this in config:
+The point cost required to use or activate this effect, looks like this in config:
 
 ```yaml
 args:
   point_cost:
     cost: 100 * %player_y%
     type: g_souls
+```
+
+#### `price`
+
+The price required to use or activate this effect.
+
+This supports all known prices: supports money, items, points, second currencies, etc.
+Read more about the system here: https://plugins.auxilor.io/all-plugins/prices
+
+Looks like this in config:
+
+```yaml
+args:
+  price:
+    value: 100 * %player_y%
+    type: crystals
+    display: "&b%value% Crystals ❖"
 ```
 
 ## Effect Chains

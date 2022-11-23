@@ -15,6 +15,12 @@ Jobs are each config files placed in the `/jobs/` folder, and you can add or rem
 ## Typical Job Config
 
 ```yaml
+# The ID of the job is the name of the .yml file,
+# for example miner.yml has the ID of miner
+# You can place jobs anywhere in this folder,
+# including in subfolders if you want to organize your job configs
+# _example.yml is not loaded.
+
 # The display name of the job
 name: "&6Miner"
 
@@ -23,6 +29,32 @@ description: "&8&oLevel up by mining blocks"
 
 # If the job should be unlocked by default
 unlocked-by-default: true
+
+# If job progress should be reset when quitting
+reset-on-quit: false
+
+# The price to join this job (set to 0 to disable)
+# Read here for more: https://plugins.auxilor.io/all-plugins/prices
+join-price:
+  value: 0
+  type: coins
+  display: "&a$%value%"
+
+# Lore shown when clicking on the job icon to join it
+# Reference with %join_lore%
+join-lore: []
+
+# The price to leave this job (set to 0 to disable)
+# Read here for more: https://plugins.auxilor.io/all-plugins/prices
+leave-price:
+  value: 20000
+  type: coins
+  display: "&a$%value%"
+
+# Lore shown on the confirm leave button
+# Reference with %leave_lore%
+leave-lore:
+  - " &8» This will cost %leave_price%"
 
 # The xp requirements for each job level - add new levels by adding more to this list
 level-xp-requirements:

@@ -35,3 +35,15 @@ Usage: `/pets activate <pet>`
 Permission: `ecopets.command.deactivate`
 
 Usage: `/pets deactivate`
+
+## `/ecopets import` (Import a pet from [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecopets.command.import`
+
+General Usage: `/ecopets import <id>`
+
+Find pets on [lrcdb](https://lrcdb.auxilor.io/)
+
+## `/ecopets export` (Export a pet to [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecopets.command.export`
+
+General Usage: `/ecopets export <id>`

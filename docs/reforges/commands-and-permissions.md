@@ -21,3 +21,15 @@ For example, to give a player 2 Lavish reforge stones: `/reforges give <player> 
 Permission: `reforges.command.apply`
 
 General usage: `/reforges apply <reforge> [player]`
+
+## `/reforges import` (Import a reforge from [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `reforges.command.import`
+
+General Usage: `/reforges import <id>`
+
+Find reforges on [lrcdb](https://lrcdb.auxilor.io/)
+
+## `/reforges export` (Export a reforge to [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `reforges.command.export`
+
+General Usage: `/reforges export <id>`

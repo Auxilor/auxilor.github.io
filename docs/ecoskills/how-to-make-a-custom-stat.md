@@ -3,46 +3,45 @@ title: "How to make a custom stat"
 sidebar_position: 6
 ---
 
-## Breakdown of customstats.yml
+## Default config
+The default configs can be found here:
 
-customstats.yml is where the configs for all of your own custom stats are. It may initially seem daunting however it is very easy to configure and make your own stats.
+[GitHub](https://github.com/Auxilor/EcoSkills/blob/master/eco-core/core-plugin/src/main/resources/customstats/)
 
-Simply, customstats.yml looks like this:
+## How to add custom stats
+Custom stats are each config files placed in the `/customstats/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-```yaml
-stats:
-  - <stat 1>
-  - <stat 2>
-```
-
-It's an array of stat configs - and you can add and remove configs as you please.
-
-## Typical Custom Stat Config
+### Example Custom Stat Config
 
 ```yaml
-- id: saturation # The ID of the stat, to be used in skills
-  name: "&#f5aa42🍖 Saturation" # The name of the stat, shown to players
-  placeholder: "%level% / 3" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
-  description: "&8Lose &a%placeholder%%&8 less hunger" # The description to be shown in lore and messages
+name: "&#f5aa42🍖 Saturation" # The name of the stat, shown to players
+placeholder: "%level% / 3" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
+description: "&8Lose &a%placeholder%%&8 less hunger" # The description to be shown in lore and messages
 
-  stats-gui:
-    enabled: false
-    position:
-      row: 5
-      column: 5
-    item:
-      item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDMzZGRiOTJjYjZiM2E3OTI4MGI4YmRjZWQ4OTc2YWVhYjEzYTRiZmZlYWVmMmQ0NmQ4MjhiZDkxZGVlMGYzZSJ9fX0=
-      name: "%stat%"
-      lore:
-        - "&fLevel: &a%level%"
-        - "&8&o%description%"
+# Options for the stat in the GUI
+stats-gui:
+  enabled: false # If the stat should show up in the GUI
+  position:
+    row: 5
+    column: 5
+  item:
+    item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDMzZGRiOTJjYjZiM2E3OTI4MGI4YmRjZWQ4OTc2YWVhYjEzYTRiZmZlYWVmMmQ0NmQ4MjhiZDkxZGVlMGYzZSJ9fX0=
+    name: "%stat%"
+    lore:
+      - "&fLevel: &a%level%"
+      - "&8&o%description%"
 
-  effects:
-    - id: hunger_multiplier
-      args:
-        multiplier: "1 - (%level% / 300)"
+# The effects of the stat (i.e. the functionality)
+# See here: https://plugins.auxilor.io/effects/configuring-an-effect
+# Use %level% as a placeholder for the stat level
+effects:
+  - id: hunger_multiplier
+    args:
+      multiplier: "1 - (%level% / 300)"
 
-  conditions: [ ]
+# The conditions required for the effects to activate,
+# you can use %level% as a placeholder here too
+conditions: [ ]
 ```
 
 ## Understanding all the sections

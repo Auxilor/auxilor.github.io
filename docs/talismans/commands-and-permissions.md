@@ -13,6 +13,18 @@ Permission: `talismans.command.bag`
 
 Usage: `/talismans bag <player>`
 
+## `/talismans import` (Import a talisman from [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `talismans.command.import`
+
+General Usage: `/talismans import <id>`
+
+Find talismans on [lrcdb](https://lrcdb.auxilor.io/)
+
+## `/talismans export` (Export a talisman to [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `talismans.command.export`
+
+General Usage: `/talismans export <id>`
+
 ### Crafting Permissions
 All talismans have an ID used by permissions and config files.
 This is the key, and looks like `archery_1`, `strength_2`, `alchemy_3`
