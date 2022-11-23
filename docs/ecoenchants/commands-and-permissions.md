@@ -32,6 +32,14 @@ Permission: `ecoenchants.command.export`
 
 General Usage: `/ecoenchants export <id>`
 
+## `/ecoenchants toggledescriptions` (Let players toggle enchantment descriptions)
+Permission: `ecoenchants.command.toggledescriptions`
+
+General Usage: `/ecoenchants toggledescriptions`
+
+Let players decide whether they want to see enchantment descriptions or not.
+This command only works when enchantment descriptions are enabled in the config.
+
 ## Enchantment Permissions
 
 Want to make an enchantment only available through an enchanting table for certain players?
