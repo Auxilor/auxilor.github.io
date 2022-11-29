@@ -23,6 +23,7 @@ custom-slots:
   - row: 6 
     column: 9
     item: ecoitems:skill_gui_item 
+    lore: []
     left-click:
       - console:op %player% # Commands can start with console: to be ran by console, and use %player% as a placeholder.
       - spawn # If you don't specify, then the command will be ran by the player.
