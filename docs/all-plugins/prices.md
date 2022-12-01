@@ -4,7 +4,9 @@ sidebar_position: 6
 ---
 
 ## What are Prices?
-Lots of servers have lots of different types of economies. Maybe you have a standard vault economy, maybe you have an item-based economy, maybe you're using [points](https://plugins.auxilor.io/effects/points), or something else entirely.
+
+Lots of servers have lots of different types of economies. Maybe you have a standard vault economy, maybe you have an
+item-based economy, maybe you're using [points](https://plugins.auxilor.io/effects/points), or something else entirely.
 
 To simplify this, there's a unified way to handle all of this: the price system.
 
@@ -18,8 +20,10 @@ To simplify this, there's a unified way to handle all of this: the price system.
 
 [points](https://plugins.auxilor.io/effects/points) work as types, such as `souls`
 
-And for item-based economies, you can pass in an [item lookup string](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) as the type to take items.
+You can also use custom currencies from plugins like EcoBits and UltraEconomy.
 
+And for item-based economies, you can pass in
+an [item lookup string](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) as the type to take items.
 
 ## Config Examples
 
@@ -34,12 +38,12 @@ price:
 price:
   value: 16
   type: ecoitems:shiny_diamond
-  display: "&a16 &fShiny Diamonds"
+  display: "%value% &fShiny Diamonds"
 ```
 
 ```yaml
 price:
   value: 5000
   type: xp
-  display: "&e5000 XP"
+  display: "&e%value% XP"
 ```
