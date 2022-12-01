@@ -1,5 +1,5 @@
 ---
-title: "EcoSohp"
+title: "EcoShop"
 ---
 
 ## What is EcoShop?
