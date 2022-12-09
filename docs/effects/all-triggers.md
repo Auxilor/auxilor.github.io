@@ -83,3 +83,5 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `pick_up_item` | Triggered when picking up an item | The amount of items |
 | `drop_item` | Triggered when dropping an item | The amount of items |
 | `entity_target` | Triggered when an entity targets the player | 1 |
+| `enter_bed` | Triggered when entering a bed | 1 |
+| `leave_bed` | Triggered when leaving a bed | 1 |
