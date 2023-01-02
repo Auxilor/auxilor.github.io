@@ -72,3 +72,4 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `headshot` | Triggered when hitting an enemy with a projectile in the head | The damage dealt |
 | `scyther_auto_collect` | Triggered when autocollecting crops with a scyther hoe **Requires Scyther** | 1 |
 | `scyther_auto_sell` | Triggered when autoselling crops with a scyther hoe **Requires Scyther** | 1 |
+| `villager_trade` | Triggered when trading with a villager **Requires Paper** | The experience the villager gains |
