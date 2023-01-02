@@ -41,6 +41,7 @@ Entities can have modifiers applied to them in the key. For example, lets say yo
 - `feet` Set the boots
 - `hand` Set the held item
 - `off_hand` Set the held item in the offhand
+- `model-engine` Set the Model Engine ID and animation (for ID do `model-engine:id`, for ID and animation do `model-engine:id,animation`)
 
 You simply chain the modifiers together, for example:
-`phantom size:5 follow-range:25 speed:2 health:200 name:"&4Deadly Phantom"`
+`phantom size:5 follow-range:25 speed:2 health:200 name:"&4Deadly Phantom" model-engine:dragon,flap`

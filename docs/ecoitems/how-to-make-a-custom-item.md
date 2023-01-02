@@ -11,26 +11,14 @@ The default configs can be found here:
 ## How to add items
 Items are each config files placed in the `/items/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-## How to add Fuels and Recipes
-Fuels and recipes go in items.yml. Simply, items.yml looks like this:
-
-```yaml
-fuels:
-  - <fuel 1>
-  - <fuel 2>
-recipes:
-  - <recipe 1>
-  - <recipe 2>
-```
-
-It's 2 arrays of fuel, and recipe configs - and you can add and remove configs as you please.
+## How to add recipes
+Recipes work the same - they are each config files placed in the `/recipes/` folder, and you can add or remove them as you please. There's also an example config called `_example.yml` to help you out!
 
 ## Typical Item Config
 
 ```yaml
 item:
   item: netherite_sword hide_attributes
-  effectiveDurability: 3182
   displayName: "<g:#870000>Reaper Scythe</g:#7a2828>"
   lore:
     - "&7Damage: &c12❤"
@@ -42,7 +30,6 @@ item:
     - "&4❣ &cMust be on full health for bonus"
     - "&4❣ &cConsumes <g:#870000>Reaper Souls</g:#7a2828>"
   craftable: true
-  craftingPermission: eco.testperm
   recipe:
     - nether_star
     - netherite_sword
@@ -58,24 +45,26 @@ baseDamage: 12
 baseAttackSpeed: 2.0
 
 effects:
-  - id: bleed
-    args:
-      damage: 2
-      amount: 5
-      interval: 10
-      chance: 25
+  - effects:
+      - id: bleed
+        args:
+          damage: 2
+          amount: 5
+          interval: 10
+          chance: 25
+      - id: remove_item
+        args:
+          item: ecoitems:reaper_soul
     triggers:
       - melee_attack
+
 conditions:
   - id: above_health_percent
     args:
       percent: 98
-  - id: has_fuel
+  - id: has_item
     args:
-      fuel: reaper_soul
-      
-fuels:
-  - reaper_soul
+      item: ecoitems:reaper_soul
 ```
 
 ## Understanding all the sections
@@ -110,49 +99,8 @@ Item config is the config for the weapon's item as shown in game.
 
 **custom-model-data:** To add a custom model data just add the setting  custom-model-data: under the material config. For example if we want to change the look of a diamond with the Custom Model Data of 2, we will check that the material in the config is set to diamond and add custom-model-data:2 under the material config. The Custom Model Data Resource Pack should already be added to the server. 
 
-## Fuels
+## Footnote for this item
 
-Fuels are consumables that are required in order to use some weapons. A reaper scythe, for example, has reaper souls as its fuel. A typical fuel config looks like this:
+This item has a consumable that's required in order to use it. Here, the player needs to have reaper souls to use it.
 
-```yaml
-  - id: reaper_soul
-    item:
-      item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc3NGU1ZWYzZDhiY2RlOWVhMjFjMzRiODQ4MjdkMzQ1MzFlNjhmMTExNTEwZjMzODMwNTVlY2FhNzRiZWJjYyJ9fX0=
-      displayName: "<g:#870000>Reaper Soul</g:#7a2828>"
-      lore:
-        - "&7Fuel for the <g:#870000>Reaper Scythe</g:#7a2828>"
-        - "&7Consumed while using the weapon"
-      craftable: true
-      recipe:
-        - ""
-        - gold_ingot
-        - ""
-        - ""
-        - iron_ingot
-        - ""
-        - soul_soil
-        - soul_sand
-        - soul_soil
-      recipeGiveAmount: 4
-```
-
-**id:** The ID of the fuel
-
-The item config is the same as for weapons, with the extra recipeGiveAmount option, which specifies how many of the fuel are given from crafting.
-
-You can make a weapon require a fuel with the has_fuel condition:
-
-```yaml
-- id: has_fuel
-  args:
-    fuel: reaper_soul
-```
-
-And set the weapon to consume a fuel on each use by adding the fuel to the fuels list in the weapon config:
-
-```yaml
-fuels:
-    - reaper_soul    
-```
-
-If you add multiple fuels, EcoWeapons will first try to consume the one at the top of the list, then the second, then the third, etc
+Here, using the `has_item` condition and the `remove_item` effect, using the reaper scythe will consume reaper souls from your inventory and not activate effects if you don't have any.

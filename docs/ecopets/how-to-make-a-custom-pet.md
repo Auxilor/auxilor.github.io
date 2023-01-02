@@ -126,6 +126,7 @@ conditions: [ ]
 # The texture of the pet entity in game
 # If you're using modelengine, use modelengine:id as the texture
 entity-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA5NWZjYzFlM2Q3Y2JkMzUwZjE5YjM4OTQ5OGFiOGJiOTZjNjVhZDE4NWQzNDU5MjA2N2E3ZDAzM2FjNDhkZSJ9fX0="
+modelengine-animation: "fly" # If you're using ModelEngine, you can specify an animation here; you can leave this out if you're not.
 
 # The icon in GUIs
 icon: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA5NWZjYzFlM2Q3Y2JkMzUwZjE5YjM4OTQ5OGFiOGJiOTZjNjVhZDE4NWQzNDU5MjA2N2E3ZDAzM2FjNDhkZSJ9fX0=
@@ -167,6 +168,8 @@ spawn-egg:
 **level-commands:** Commands to be executed on levelup 
 
 **entity-texture:** The texture of the pet that follows you around. Use `modelengine:<id>` if you're using Model Engine
+
+**modelengine-animation:** If you're using Model Engine, you can supply an animation here
 
 **icon:** The GUI icon
 

@@ -72,4 +72,20 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `headshot` | Triggered when hitting an enemy with a projectile in the head | The damage dealt |
 | `scyther_auto_collect` | Triggered when autocollecting crops with a scyther hoe **Requires Scyther** | 1 |
 | `scyther_auto_sell` | Triggered when autoselling crops with a scyther hoe **Requires Scyther** | 1 |
+<<<<<<< HEAD
 | `villager_trade` | Triggered when trading with a villager **Requires Paper** | The experience the villager gains |
+=======
+| `join` | Triggered when joining the server | 1 |
+| `leave` | Triggered when leaving the server | 1 |
+| `respawn` | Triggered when respawning | 1 |
+| `level_up_xp` | Triggered when levelling up XP | The new level |
+| `change_world` | Triggered when changing world | 1 |
+| `change_armor` | Triggered when changing armor | 1 |
+| `hold_item` | Triggered when changing your held item | 1 |
+| `send_message` | Triggered when sending a message | 1 |
+| `pick_up_item` | Triggered when picking up an item | The amount of items |
+| `drop_item` | Triggered when dropping an item | The amount of items |
+| `entity_target` | Triggered when an entity targets the player | 1 |
+| `enter_bed` | Triggered when entering a bed | 1 |
+| `leave_bed` | Triggered when leaving a bed | 1 |
+>>>>>>> a944c2241a931417c6bd287fdc5dbfb918346ebf

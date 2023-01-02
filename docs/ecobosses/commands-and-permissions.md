@@ -16,3 +16,15 @@ If you're spawning a boss as a player, you can leave out the coordinates and wor
 
 ## `/ecobosses killall` (Kill all bosses)
 Permission: `ecobosses.command.killall`
+
+## `/ecobosses import` (Import a boss from [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecobosses.command.import`
+
+General Usage: `/ecobosses import <id>`
+
+Find enchants on [lrcdb](https://lrcdb.auxilor.io/)
+
+## `/ecobosses export` (Export a boss to [lrcdb](https://lrcdb.auxilor.io/))
+Permission: `ecobosses.command.export`
+
+General Usage: `/ecobosses export <id>`
