@@ -1,9 +1,9 @@
-# `feather_step`
+# `flight`
 #### Permanent Effect
 
-Prevents trampling crops
+Grants flight
 
 # Example Config
 ```yaml
-- id: feather_step
+- id: flight
 ```

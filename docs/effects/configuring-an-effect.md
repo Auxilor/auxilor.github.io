@@ -82,7 +82,8 @@ The cooldown between effect activations, in seconds. (defaults to 0)
 ```yaml
 args:
   cooldown: 10
-  send_cooldown_message: true # If the cooldown message should be sent
+  send_cooldown_message: true # (Optional) If the cooldown message should be sent
+  cooldown_message: "Custom cooldown message with %seconds% left" # (Optional) a custom cooldown message
 ```
 
 #### `cost`
