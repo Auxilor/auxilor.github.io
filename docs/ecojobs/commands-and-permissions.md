@@ -42,3 +42,6 @@ Find jobs on [lrcdb](https://lrcdb.auxilor.io/)
 Permission: `ecojobs.command.export`
 
 General Usage: `/ecojobs export <id>`
+
+If you want to create an EXP multiplier to all player and all jobs:
+Permission: `ecojobs.xpmultiplier.<x>` Use 50percent, double, triple or quadruple instead of <x>
