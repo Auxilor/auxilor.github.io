@@ -16,3 +16,4 @@ sidebar_position: 8
 | `%ecoskills_<skill>_percentage_progress%` | Shows the percentage progress until the next skill level                                 |
 | `%ecoskills_<skill>_current_xp%`          | Shows the current skill XP                                                               |
 | `%ecoskills_<skill>_required_xp%`         | Shows the skill XP required for the next level                                           |
+| `%ecoskills.xpmultiplier.<x>%`            | Boost the gained exp for all skills by a multiplier                                      |
