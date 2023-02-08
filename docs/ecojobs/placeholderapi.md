@@ -15,3 +15,4 @@ sidebar_position: 3
 | `%ecojobs_job_id%`                   | Shows the id of the active job, or an empty string                                    |
 | `%ecojobs_job_level%`                | Shows the level of the active job, or an empty string                                 |
 | `%ecojobs_total_job_level%`          | Shows the level of all jobs combined                                                  |
+| `%ecojobs.xpmultiplier.<x>%`         | Boost the gained exp for all jobs by a multiplier                                     |
