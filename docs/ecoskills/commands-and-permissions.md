@@ -20,3 +20,6 @@ For example, to give a player 30 strength, you would do `/ecoskills give <player
 Permission: `ecoskills.command.reset`
 
 General Usage: `/ecoskills reset <player>`
+
+If you want to create an EXP multiplier to all player and skills:
+Permission: `ecoskills.xpmultiplier.<x>` Use 50percent, double, triple or quadruple instead of <x>
