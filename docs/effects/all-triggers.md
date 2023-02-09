@@ -86,3 +86,6 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `enter_bed` | Triggered when entering a bed | 1 |
 | `leave_bed` | Triggered when leaving a bed | 1 |
 | `villager_trade` | Triggered when trading with a villager **Requires Paper** | The experience the villager gains |
+| `fill_bucket` | Triggered when filling a bucket | 1 |
+| `empty_bucket` | Triggered when emptying a bucket | 1 |
+| `shear_entity` | Triggered when shearing an entity | 1 |
