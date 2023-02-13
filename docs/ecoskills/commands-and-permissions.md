@@ -21,5 +21,8 @@ Permission: `ecoskills.command.reset`
 
 General Usage: `/ecoskills reset <player>`
 
-If you want to create an EXP multiplier to all player and skills:
+## `ecoskills.xpmultiplier.<x>` (Give a player an xp multiplier)
+
 Permission: `ecoskills.xpmultiplier.<x>` Use 50percent, double, triple or quadruple instead of <x>
+
+
