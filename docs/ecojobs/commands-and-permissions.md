@@ -43,5 +43,6 @@ Permission: `ecojobs.command.export`
 
 General Usage: `/ecojobs export <id>`
 
-If you want to create an EXP multiplier to all player and all jobs:
+## `ecojobs.xpmultiplier.<x>` (give a player a xp multiplier)
+
 Permission: `ecojobs.xpmultiplier.<x>` Use 50percent, double, triple or quadruple instead of <x>
