@@ -9,4 +9,9 @@ You can have as many different points as you want, the plugins will keep track o
 
 A point can hold any numeric value, including negatives and decimals, but of course how you decide to use them is completely up to you.
 
-There are placeholders for points, or course: they look like `%<plugin>_points_<point>%`, such as `%actions_points_tiredness%`
+## Placeholders
+You can get the value of a point with the following placeholder:
+
+`%<plugin>_points_<point>%`
+
+You can use any plugin with the effects system, so for example `%ecobosses_points_souls%` is the same as `%ecoitems_points_souls%`
