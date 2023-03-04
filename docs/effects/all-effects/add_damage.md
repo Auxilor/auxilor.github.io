@@ -1,7 +1,7 @@
 # `add_damage`
 #### Triggered Effect
 
-Adds incoming or outgoing damage from any damage trigger
+Adds incoming or outgoing damage from any damage trigger (except `damage_item`)
 
 # Example Config
 ```yaml
