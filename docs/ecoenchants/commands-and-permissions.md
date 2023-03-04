@@ -7,6 +7,11 @@ sidebar_position: 1
 
 Because of how it's made, EcoEnchants doesn't need to have it's own commands for these. Why reinvent the wheel? Instead, it supports Essentials and CMI's `/give` and `/enchant` commands (as well as working in things like kits) - you don't have to do things the 'EcoEnchants way', just do it exactly like you already would.
 
+ - Vanilla example: `/give <playerSelector> enchanted_book{StoredEnchantments:[{id:<enchantment_name>,lvl:<lvl>}]} <count>`
+   - If essentials is installed, begin with `/minecraft:give ...`
+ - [Essentials example](https://wiki.ess3.net/wiki/Item_Meta#Examples): `/give <playerSelector> enchanted_book <count> <enchantment_name>:<lvl>`
+ - [CMI example](https://github.com/Zrips/CMI/issues/3468#issuecomment-641297452): `/cmi give <playerSelector> enchanted_book e <enchantment_name>:<lvl> <count>`
+
 ## `/enchantinfo` (Get information (description, max level, conflicts, etc) about an enchant)
 Permission: `ecoenchants.command.enchantinfo`
 
