@@ -89,3 +89,5 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `fill_bucket` | Triggered when filling a bucket | 1 |
 | `empty_bucket` | Triggered when emptying a bucket | 1 |
 | `shear_entity` | Triggered when shearing an entity | 1 |
+| `enable` | Triggered when an item / enchant / etc enables | 1 |
+| `disable` | Triggered when an item / enchant / etc disables | 1 |
