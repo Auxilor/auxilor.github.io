@@ -18,6 +18,8 @@ To simplify this, there's a unified way to handle all of this: the price system.
 
 `l`, `levels`, `xplevels`, `explevels`: Experience levels
 
+`p_points`, `player_points`: Points from the plugin PlayerPoints
+
 [points](https://plugins.auxilor.io/effects/points) work as types, such as `souls`
 
 You can also use custom currencies from plugins like EcoBits and UltraEconomy.
