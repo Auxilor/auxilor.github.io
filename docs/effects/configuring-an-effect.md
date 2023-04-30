@@ -245,7 +245,7 @@ effects:
 triggers:
     - mine_block
 args:
-    every: 3
+    every: 3test
 ```
 
 Inline chains also support custom arguments, just like regular chains.
