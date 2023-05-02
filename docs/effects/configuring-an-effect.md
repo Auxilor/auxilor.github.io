@@ -56,6 +56,14 @@ If the victim is a player, you can supply any placeholder prefixed with `victim_
 
 `%text%`, `%string%`, and `%message%`: The message text from the trigger, for example a chat message
 
+`%location_x`, `%loc_x`, and `%x%`: The x-coordinate of the location
+
+`%location_y`, `%loc_y`, and `%y%`: The y-coordinate of the location
+
+`%location_z`, `%loc_z`, and `%z%`: The z-coordinate of the location
+
+`%location_world`, `%loc_w`, and `%world%`: The world name of the location
+
 ## The Sections
 
 **id**: The effect ID. A list of ID's and their corresponding arguments can be
