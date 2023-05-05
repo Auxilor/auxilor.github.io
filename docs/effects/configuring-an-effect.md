@@ -56,13 +56,19 @@ If the victim is a player, you can supply any placeholder prefixed with `victim_
 
 `%text%`, `%string%`, and `%message%`: The message text from the trigger, for example a chat message
 
-`%location_x`, `%loc_x`, and `%x%`: The x-coordinate of the location
+`%location_x%`, `%loc_x%`, and `%x%`: The x-coordinate of the location
 
-`%location_y`, `%loc_y`, and `%y%`: The y-coordinate of the location
+`%location_block_x%`, `%loc_b_x%`, `%block_x%`, and `%bx%`: The block x-coordinate of the location
 
-`%location_z`, `%loc_z`, and `%z%`: The z-coordinate of the location
+`%location_y%`, `%loc_y%`, and `%y%`: The y-coordinate of the location
 
-`%location_world`, `%loc_w`, and `%world%`: The world name of the location
+`%location_block_y%`, `%loc_b_y%`, `%block_y%`, and `%by%`: The block y-coordinate of the location
+
+`%location_z%`, `%loc_z%`, and `%z%`: The z-coordinate of the location
+
+`%location_block_z%`, `%loc_b_z%`, `%block_z%`, and `%bz%`: The block z-coordinate of the location
+
+`%location_world%`, `%loc_w%`, and `%world%`: The world name of the location
 
 ## The Sections
 
