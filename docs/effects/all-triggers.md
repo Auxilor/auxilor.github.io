@@ -93,3 +93,4 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `enable`               | Triggered when an item / enchant / etc enables                                                                    | 1                                 |
 | `disable`              | Triggered when an item / enchant / etc disables                                                                   | 1                                 |
 | `teleport`             | Triggered when teleporting                                                                                        | 1                                 |
+| `run_command`          | Triggered when running a command                                                                                  | 1                                 |
