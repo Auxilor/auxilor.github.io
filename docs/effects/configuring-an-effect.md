@@ -138,6 +138,15 @@ args:
     mana_cost: 10
 ```
 
+#### `<magic>_cost`
+
+The magic cost (e.g. mana) required to use or activate this effect. **Requires EcoSkills.** (defaults to 0)
+
+```yaml
+args:
+    mana_cost: 10
+```
+
 #### `delay`
 
 The amount of ticks to wait before executing the effect. (defaults to 0)
