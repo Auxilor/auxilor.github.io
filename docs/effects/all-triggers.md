@@ -16,7 +16,7 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `bow_attack`           | Triggered when shooting an entity with a bow and arrow (or crossbow)                                              | The damage dealt                  |
 | `cast_rod`             | Triggered when casting a fishing line                                                                             | 1                                 |
 | `catch_entity`         | Triggered when hooking onto an entity with a fishing rod                                                          | 1                                 |
-| `catch_fish`           | Triggered when catching a fish                                                                                    | 1                                 |
+| `catch_fish`           | Triggered when catching a fish                                                                                    | The experience dropped            |
 | `catch_fish_fail`      | Triggered when failing to catch a fish                                                                            | 1                                 |
 | `hook_in_ground`       | Triggered when a fishing rod hook hits the ground                                                                 | 1                                 |
 | `reel_in`              | Triggered when reeling in a fishing rod                                                                           | 1                                 |
@@ -62,6 +62,7 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `win_raid`             | Triggered when a player wins a raid                                                                               | The level of bad omen             |
 | `jobs_level_up`        | Triggered when levelling up a job **Requires Jobs Reborn**                                                        | The new level                     |
 | `brew`                 | Triggered when brewing a potion in a brewing stand                                                                | 1                                 |
+| `brew_ingredient`      | Same as `brew`, but passes the ingredient as the item                                                             | 1                                 |
 | `smelt`                | Triggered when smelting an item in a furnace                                                                      | 1                                 |
 | `place_block`          | Triggered when placing a block                                                                                    | 1                                 |
 | `level_up_job`         | Triggered when levelling up a job **Requires EcoJobs**                                                            | The new level                     |
