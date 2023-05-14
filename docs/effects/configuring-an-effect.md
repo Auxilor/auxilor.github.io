@@ -306,3 +306,10 @@ effects straight away, no worrying about the underlying inline chain.
 
 These work exactly like inline chains (they are inline chains), so everything is still supported; run-type, custom
 arguments, et cetera.
+
+## Load Weight
+
+All configs are loaded alphabetically by default. However, if you have a config that depends on
+another one, for example an EcoItems item thats crafted with another EcoItems item, you can add
+`load-weight: <weight>`. All configs have a default load weight of 100, and it's loaded in ascending
+order, so a config with a load weight of 10 is loaded before a load weight of 20.
