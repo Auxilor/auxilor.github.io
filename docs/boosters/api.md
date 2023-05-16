@@ -5,25 +5,20 @@ sidebar_position: 4
 
 ## Source Code
 
-Like all my plugins, Boosters is open-source and available on JitPack.
+The source code can be found [here](https://github.com/Auxilor/Boosters):
 
-The source code can be found here:
+## API
 
-[GitHub](https://github.com/Auxilor/Boosters)
+Add this to your build.gradle.kts:
 
-### Using Boosters in your plugin
-
-Add Boosters to your build.gradle like this:
-
-```groovy
+```kts
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven("https://repo.auxilor.io/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly 'com.willfp:Boosters:VERSION'
+    compileOnly("com.willfp:Boosters:<version>")
 }
 ```
 
-The latest version available on JitPack can be found here:
-https://github.com/Auxilor/Boosters/releases
+The latest version available on the repo can be found [here](https://github.com/Auxilor/Boosters/tags)
