@@ -1,15 +1,11 @@
 ---
 title: "Effects"
-sidebar_position: 4
+sidebar_position: 3
 ---
 
-## What are effects?
+Effects are special abilities given to a player. They are levelled up by levelling skills.
 
-![The effects for alchemy by default](https://1192817931-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXwJPPRqRpT7b0ZXxU13J%2Fuploads%2FXbHpU4TWtqhHm3YKDr0a%2FScreenshot%202021-08-21%20at%2018.29.41.png?alt=media&token=dc41836b-8a89-461d-b2fe-c7d204643230)
-
-Effects are the special abilities given to a player. They are levelled up by levelling skills.
-
-## All Effects
+## The Default Effects
 
 | Name                | Description                                                                |
 |---------------------|----------------------------------------------------------------------------|
@@ -39,3 +35,38 @@ Effects are the special abilities given to a player. They are levelled up by lev
 | Overcompensation    | Chance to get given back lapis after enchanting                            |
 | Magnetic Rod        | Increases fishing speed                                                    |
 | Master Lumberjack   | Increases chance to get extra drops from trees                             |
+
+## Default configs
+
+The default configs can be found here:
+
+[GitHub](https://github.com/Auxilor/EcoSkills/blob/master/eco-core/core-plugin/src/main/resources/effects/)
+
+## `_example.yml`
+
+```yaml
+# The ID of the effect is the name of the .yml file,
+# for example gold_touch.yml has the ID of gold_touch
+# You can place effects anywhere in this folder,
+# including in subfolders if you want to organize your effect configs
+# _example.yml is not loaded.
+
+name: "Midas Touch" # The name of the effect, shown to players
+placeholder: "%level% / 50" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
+description: "&a%placeholder%%&8 chance to get $50 every time you mine a block" # The description to be shown in lore and messages
+
+# The effects of the effect (i.e. the functionality)
+# See here: https://plugins.auxilor.io/effects/configuring-an-effect
+# Use %level% as a placeholder for the effect level
+effects:
+    - id: give_money
+      args:
+          chance: "%level% / 50"
+          amount: 50
+      triggers:
+          - mine_block
+
+# The conditions required for the effect to activate,
+# you can use %level% as a placeholder here too
+conditions: [ ]
+```
