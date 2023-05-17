@@ -225,4 +225,9 @@ xp-gain-methods:
         - granite
         - andesite
         - cobblestone
+
+
+# Conditions that must be met to gain XP. While you can add conditions to xp
+# gain methods, if you have many this can be annoying, so this is global.
+conditions: [ ]
 ```
