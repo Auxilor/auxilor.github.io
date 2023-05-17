@@ -1,4 +1,4 @@
-# `drop_random_item`
+# `drop_random_item_for_player`
 #### Triggered Effect
 
 Drops a random item at a location for a player (to support Telekinesis)
