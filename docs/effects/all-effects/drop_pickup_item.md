@@ -4,6 +4,8 @@
 
 Drops an item that runs a chain on pickup
 
+**Requires Paper**
+
 # Example Config
 
 ```yaml
