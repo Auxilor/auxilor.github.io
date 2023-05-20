@@ -18,7 +18,9 @@ To simplify this, there's a unified way to handle all of this: the price system.
 
 `l`, `levels`, `xplevels`, `explevels`: Experience levels
 
-[points](https://plugins.auxilor.io/effects/points) work as types, such as `souls`
+[Points](https://plugins.auxilor.io/effects/points) work as types, such as `souls`
+
+[Magic Types](https://plugins.auxilor.io/ecoskills/magic) work as types, such as `magic`
 
 You can also use custom currencies from plugins like EcoBits and UltraEconomy.
 
@@ -30,7 +32,7 @@ an [item lookup string](https://plugins.auxilor.io/all-plugins/the-item-lookup-s
 ```yaml
 price:
   value: 100 * %player_y%
-  type: crystals
+  type: crystals # EcoBits currency
   display: "&b%value% Crystals ❖"
 ```
 
@@ -46,4 +48,11 @@ price:
   value: 5000
   type: xp
   display: "&e%value% XP"
+```
+
+```yaml
+price:
+  value: 10
+  type: mana # EcoSkills magic
+  display: "&b%value% Mana"
 ```
