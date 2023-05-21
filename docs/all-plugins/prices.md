@@ -27,32 +27,54 @@ You can also use custom currencies from plugins like EcoBits and UltraEconomy.
 And for item-based economies, you can pass in
 an [item lookup string](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) as the type to take items.
 
+## Display Names
+
+You can specify display names for each price individually, however this might be quite
+cumbersome, especially if you use prices in lots of places.
+
+So, instead of configuring your price like this:
+
+```yaml
+price:
+    value: 100 * %player_y%
+    type: crystals # EcoBits currency
+    display: "&b%value% Crystals ❖"
+```
+
+You can add the following to `/plugins/eco/lang.yml`:
+
+```yaml
+price-display:
+    - type: crystals
+      display: "&b%value% Crystals ❖"
+```
+
+This will override any per-price formatting, which should make your life much easier to achieve consistency
+between different prices.
+
 ## Config Examples
 
 ```yaml
 price:
-  value: 100 * %player_y%
-  type: crystals # EcoBits currency
-  display: "&b%value% Crystals ❖"
+    value: 100 * %player_y%
+    type: crystals # EcoBits currency
 ```
 
 ```yaml
 price:
-  value: 16
-  type: ecoitems:shiny_diamond
-  display: "%value% &fShiny Diamonds"
+    value: 16
+    type: ecoitems:shiny_diamond
+    display: "%value% &fShiny Diamonds" # Uses local display
 ```
 
 ```yaml
 price:
-  value: 5000
-  type: xp
-  display: "&e%value% XP"
+    value: 5000
+    type: xp
 ```
 
 ```yaml
 price:
-  value: 10
-  type: mana # EcoSkills magic
-  display: "&b%value% Mana"
+    value: 10
+    type: mana # EcoSkills magic
 ```
