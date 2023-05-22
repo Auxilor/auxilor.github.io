@@ -98,3 +98,4 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `click_entity`         | Triggered when right-clicking on an entity                                                                        | 1                                 |
 | `enter_region`         | Triggered when entering a region **Requires WorldGuard**                                                          | 1                                 |
 | `leave_region`         | Triggered when leaving a region **Requires WorldGuard**                                                           | 1                                 |
+| `level_up_item`        | Triggered when levelling up an item **Requires Item Points extension**                                            | The new item level                |

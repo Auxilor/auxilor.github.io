@@ -24,3 +24,8 @@ You can get the value of a point with the following placeholder:
 There are also global points, which belong to the server rather than to the player.
 
 You can get the value of these with `%libreforge_global_points_<point>%`
+
+## Item Points
+
+There are also item points, which belong to items - these work in a unique way and require an extension
+to be installed. Read more about them [here](https://plugins.auxilor.io/effects/item-points/item_points)!
