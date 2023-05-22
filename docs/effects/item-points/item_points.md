@@ -10,7 +10,7 @@ Just like regular points, you can create as many as you want, and they can hold 
 
 ## Installation
 
-Item Points is available on [Spigot (Coming Soon)](), [Polymart](), or [BuiltByBit (Coming Soon)]()!
+Item Points will be available soon on Spigot, Polymart, and BuiltByBit.
 
 Item Points is installed differently to a regular plugin - instead of being added to `/plugins/`, it's added
 to `/plugins/libreforge/extensions/`. Once it's installed, its config files are automatically placed into
