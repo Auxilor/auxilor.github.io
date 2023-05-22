@@ -65,3 +65,30 @@ You can get the value of a point with the following placeholders:
 `%libreforge_item_progress_<level>%`: The current progress towards levelling up, as a percentage
 
 You can also put `_numeral` on the end of any placeholder to get the value as a roman numeral.
+
+## Example EcoItems item
+
+Assuming you have an item level called `example`, here's an example EcoItems item that uses item levels:
+
+```yaml
+item:
+    item: diamond_pickaxe hide_attributes unbreakable efficiency:5 blast_mining:3
+    display-name: "&eLevellable Pickaxe &8- &6%libreforge_item_level_example_numeral%"
+    lore:
+        - "&fCurrently on level &a%libreforge_item_level_example%"
+        - "&fXP: &a%libreforge_item_xp_example%&8/&a%libreforge_item_xp_required_example% &f(&a%libreforge_item_progress_example%%&f)"
+    craftable: false
+    recipe: [ ]
+
+slot: mainhand
+
+effects:
+    - id: level_item
+      args:
+          id: example
+          xp: "%v%"
+      triggers:
+          - mine_block
+
+conditions: [ ]
+```
