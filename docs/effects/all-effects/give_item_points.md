@@ -3,8 +3,6 @@
 
 Add / subtract item points
 
-**Requires Item Points extension**
-
 # Example Config
 ```yaml
 - id: give_item_points

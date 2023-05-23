@@ -27,5 +27,7 @@ You can get the value of these with `%libreforge_global_points_<point>%`
 
 ## Item Points
 
-There are also item points, which belong to items - these work in a unique way and require an extension
-to be installed. Read more about them [here](https://plugins.auxilor.io/effects/item-points/item_points)!
+Item Points exist too - instead of belonging to the player or the server, they belong to items.
+
+You can get the value of these with `%libreforge_item_points_<point>%`
+    

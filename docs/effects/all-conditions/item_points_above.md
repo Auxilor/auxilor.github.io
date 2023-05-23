@@ -2,8 +2,6 @@
 
 Requires an item to have a certain amount of points
 
-**Requires Item Points extension**
-
 # Example Config
 ```yaml
 - id: item_points_above

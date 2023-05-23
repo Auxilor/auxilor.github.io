@@ -2,8 +2,6 @@
 
 Requires an item to be below a certain level
 
-**Requires Item Points extension**
-
 # Example Config
 ```yaml
 - id: item_level_below

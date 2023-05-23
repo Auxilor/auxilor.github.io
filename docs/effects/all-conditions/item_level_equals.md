@@ -2,8 +2,6 @@
 
 Requires an item to be on a certain level
 
-**Requires Item Points extension**
-
 # Example Config
 ```yaml
 - id: item_level_equals

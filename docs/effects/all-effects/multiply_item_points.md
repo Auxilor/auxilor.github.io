@@ -3,8 +3,6 @@
 
 Multiply item points
 
-**Requires Item Points extension**
-
 # Example Config
 ```yaml
 - id: multiply_item_points

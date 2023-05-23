@@ -3,8 +3,6 @@
 
 Gain item XP for a certain level
 
-**Requires Item Points extension**
-
 # Example Config
 ```yaml
 - id: level_item
