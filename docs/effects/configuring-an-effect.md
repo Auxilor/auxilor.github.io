@@ -203,6 +203,17 @@ args:
         display: "&b%value% Crystals ❖"
 ```
 
+#### `weight`
+
+The weight (chance) of this effect firing if the chain is ran randomly.
+
+Chance is calculated as `<weight of element> / <sum of all weights>`
+
+```yaml
+args:
+    weight: 10
+```
+
 ## Effect Chains
 
 Effect chains are groups of effects that can be executed together. This is very useful if you want to create a
