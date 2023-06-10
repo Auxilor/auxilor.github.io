@@ -1,29 +1,24 @@
 ---
 title: "API"
-sidebar_position: 9
+sidebar_position: 7
 ---
 
 ## Source Code
 
-Like all my plugins, EcoSkills is open-source and available on JitPack.
+The source code can be found [here](https://github.com/Auxilor/EcoSkills):
 
-The source code can be found here:
+## API
 
-[GitHub](https://github.com/Auxilor/EcoSkills)
+Add this to your build.gradle.kts:
 
-### Using EcoSkills in your plugin
-
-Add EcoSkills to your build.gradle like this:
-
-```groovy
+```kts
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven("https://repo.auxilor.io/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly 'com.willfp:EcoSkills:VERSION'
+    compileOnly("com.willfp:EcoSkills:<version>")
 }
 ```
 
-The latest version available on JitPack can be found here:
-https://github.com/Auxilor/EcoSkills/releases
+The latest version available on the repo can be found [here](https://github.com/Auxilor/EcoSkills/tags)

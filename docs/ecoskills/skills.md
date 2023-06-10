@@ -1,115 +1,233 @@
 ---
 title: "Skills"
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-Skills are the means by which effects and stats are upgraded. They are levelled up by completing tasks.
+Skills are levelled up by completing certain tasks, and grant effects, stats, and other bonuses
+when levelling up.
 
-The default skills are:
+## The Default Skills
 
-| Skill       | Task                                  |
-|-------------|---------------------------------------|
-| Mining      | Break blocks to earn Mining XP        |
-| Combat      | Kill mobs to earn Combat XP           |
-| Enchanting  | Enchant items to earn Enchanting XP   |
-| Farming     | Harvest crops to earn Farming XP      |
-| Woodcutting | Cut down trees to earn Woodcutting XP |
-| Fishing     | Fish to earn Fishing XP               |
-| Alchemy     | Brew potions to earn Alchemy XP       |
-| Armory      | Take damage to earn Armory XP         |
-| Exploration | Move and fall to earn Exploration XP  |
+| Skill       | Task                      |
+|-------------|---------------------------|
+| Mining      | Break blocks to earn XP   |
+| Combat      | Kill mobs to earn XP      |
+| Enchanting  | Enchant items to earn XP  |
+| Farming     | Harvest crops to earn XP  |
+| Woodcutting | Cut down trees to earn XP |
+| Fishing     | Fish to earn XP           |
+| Alchemy     | Brew potions to earn XP   |
+| Armory      | Take damage to earn XP    |
+| Exploration | Move to earn XP           |
 
-However, you can also [create your own](https://plugins.auxilor.io/ecoskills/how-to-make-a-custom-skill)!
 
-## Levelling Up
+## Default configs
 
-Skills require experience in order to level up. The experience requirement is completely configurable, but by default it ships the same as Hypixel Skyblock: Level 1 requires 50 XP and level 50 requires 4,000,000.
+The default configs can be found here:
 
-Every skill has a max level. This is also completely configurable, but is 50 for all skills by default.
+[GitHub](https://github.com/Auxilor/EcoSkills/blob/master/eco-core/core-plugin/src/main/resources/skills/)
 
-Levelling up a skill will level up whichever stats and effects are configured for it: you can make any skill level up any stat and/or effect
-
-Take alchemy for example:
+## `_example.yml`
 
 ```yaml
-level-up-rewards:
-  - "crit_chance::2"
-  - "wisdom::1"
-  - "potionmaster::1"
-  - "efficient_brewing::1:10:100"
-  - "mystic_resilience::1"
-```
+# The ID of the skill is the name of the .yml file,
+# for example mining.yml has the ID of mining
+# You can place skills anywhere in this folder,
+# including in subfolders if you want to organize your skill configs
+# _example.yml is not loaded.
 
-This means that every time the player levels up alchemy, they will gain **2 Crit Chance, 1 Wisdom, 1 Level of Potionmaster, 1 Level of Mystic Resilience, and between level 10 and 100 (above max), 1 level of Efficient Brewing**
+# The name and description, shown to players.
+name: Mining
+description: Break blocks to earn XP
 
-The config for each reward can look one of two ways:
+# Options for the GUI
+gui:
+  enabled: true # (Optional) If this skill should be shown in the GUI
 
-Simply: `id::number` This would make any stat or effect level up by the specified amount
+  icon: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIxYzI2OGVmZWM4ZDdkODhhMWNiODhjMmJmYTA5N2ZhNTcwMzc5NDIyOTlmN2QyMDIxNTlmYzkzY2QzMDM2ZCJ9fX0=
 
-More complexly, in the case of Efficient Brewing here, `id::number:min:max`
+  lore:
+    - "&fImproves Stats:"
+    - "&8» &r%ecoskills_defense_name%"
+    - "&8» &r%ecoskills_ferocity_name%"
+    - "&f"
+    - "&fEffects:"
+    - "&8» &r&6Versatile Tools %ecoskills_versatile_tools_numeral%"
+    - "   %ecoskills_versatile_tools_description%"
+    - "&8» &r&6Spelunking %ecoskills_spelunking_numeral%"
+    - "   %ecoskills_spelunking_description%"
+    - "&8» &r&6Dynamic Mining %ecoskills_dynamic_mining_numeral%"
+    - "   %ecoskills_dynamic_mining_description%"
 
-This would make any stat or effect level up by the specified amount, **but only between the minimum and maximum bound of the skill.** So here, above alchemy level 10, but before alchemy level 100, efficient brewing will be levelled up.
+  position:
+    row: 3
+    column: 3
 
-You can use this to vary rewards depending on level.
 
-For example, you could make the player get 1 strength up to level 15, and 2 strength above that, which would look like this:
+# There are two ways to specify level XP requirements:
+#  1. A formula to calculate for infinite levels
+#  2. A list of XP requirements for each level
 
-```yaml
-- "strength::1:1:14"
-- "strength::2:15:100"
-```
+# Formula
+# xp-formula: (2 ^ %level%) * 25
+# max-level: 100 # (Optional) The max level, if not specified, there is no max level
 
-There are also level up commands, which are a lot simpler:
+# List
+xp-requirements:
+  - 50
+  - 125
+  - 200
+  - 300
+  - 500
+  - 750
+  - 1000
+  - 1500
+  - 2000
+  - 3500
+  - 5000
+  - 7500
+  - 10000
+  - 15000
+  - 20000
+  - 30000
+  - 50000
+  - 75000
+  - 100000
+  - 200000
+  - 300000
+  - 400000
+  - 500000
+  - 600000
+  - 700000
+  - 800000
+  - 900000
+  - 1000000
+  - 1100000
+  - 1200000
+  - 1300000
+  - 1400000
+  - 1500000
+  - 1600000
+  - 1700000
+  - 1800000
+  - 1900000
+  - 2000000
+  - 2100000
+  - 2200000
+  - 2300000
+  - 2400000
+  - 2500000
+  - 2600000
+  - 2750000
+  - 2900000
+  - 3100000
+  - 3400000
+  - 3700000
+  - 4000000
+  - 5000000
 
-```yaml
-level-commands:
-  - "10:eco give %player% 5000"
-```
 
-This means that when you reach level 10 in this skill, the command to give you 5000 will be executed. The placeholder %player% will be replaced with the player's name. You can add multiple commands for a level by having multiple entries for that level.
+# The rewards given on level up
+# You specify a reward (either a stat or an effect),
+# the number of levels to give it, and optionally
+# a start and end level, which are inclusive.
 
-If you don't specify a level, the command will apply to all levels.
+# An example reward config:
+# - reward: strength
+#   levels: 1
+#   start-level: 10
+#   end-level: 20
 
-## Messages and GUI
+rewards:
+  - reward: defense
+    levels: 2
 
-By default, players are sent a message when they level up a skill
+  - reward: ferocity
+    levels: 1
+    start-level: 15
 
-This is configurable on a by-skill and also on an overall basis. The overall message can be found in config.yml, but I'll focus on the skill-specific part here:
+  - reward: versatile_tools
+    levels: 1
 
-```yaml
-rewards-messages:
+  - reward: spelunking
+    levels: 1
+    start-level: 10
+
+  - reward: dynamic_mining
+    levels: 1
+
+
+# Effects to run when an item levels up
+# %level% is the level the item leveled up to.
+# If you want to restrict this to certain levels, you can use
+# require: %level% == 20, or require: %level% < 50, etc.
+level-up-effects:
+  - id: give_money
+    args:
+      amount: 1000 * %level%
+
+
+# Custom placeholders to be used in descriptions,
+# Don't add % to the IDs, this is done automatically
+# The value takes a %level% placeholder and is a mathematical expression
+placeholders:
+  money: "%level% * 0.4"
+  blocks: "ceil(10 - %level% / 10)"
+
+
+# The chat messages to send on level up,
+# and the lore that will be shown with %rewards% in the GUI
+
+# The number dictates the minimum level for this text to show for
+# Adding new levels will override this text on those levels or above
+reward-messages:
   1:
-    - " &8» &r&f+2 %ecoskills_crit_chance_name%"
-    - " &8» &r&f+1 %ecoskills_wisdom_name%"
-    - " &8» &r&6Potionmaster %ecoskills_potionmaster_numeral%"
-    - " &8» &r&6Mystic Resilience %ecoskills_mystic_resilience_numeral%"
+    - " &8» &r&f+2 %ecoskills_defense_name%"
+    - " &8» &r&6Versatile Tools %ecoskills_versatile_tools_numeral%"
+    - "    %ecoskills_versatile_tools_description%"
+    - " &8» &r&6Dynamic Mining %ecoskills_dynamic_mining_numeral%"
+    - "    %ecoskills_dynamic_mining_description%"
   10:
-    - " &8» &r&f+2 %ecoskills_crit_chance_name%"
-    - " &8» &r&f+1 %ecoskills_wisdom_name%"
-    - " &8» &r&6Potionmaster %ecoskills_potionmaster_numeral%"
-    - " &8» &r&6Efficient Brewing %ecoskills_efficient_brewing_numeral%"
-    - " &8» &r&6Mystic Resilience %ecoskills_mystic_resilience_numeral%"
-```
+    - " &8» &r&f+2 %ecoskills_defense_name%"
+    - " &8» &r&6Versatile Tools %ecoskills_versatile_tools_numeral%"
+    - "    %ecoskills_versatile_tools_description%"
+    - " &8» &r&6Spelunking %ecoskills_spelunking_numeral%"
+    - "    %ecoskills_spelunking_description%"
+    - " &8» &r&6Dynamic Mining %ecoskills_dynamic_mining_numeral%"
+    - "    %ecoskills_dynamic_mining_description%"
+  15:
+    - " &8» &r&f+2 %ecoskills_defense_name%"
+    - " &8» &r&f+1 %ecoskills_ferocity_name%"
+    - " &8» &r&6Versatile Tools %ecoskills_versatile_tools_numeral%"
+    - "    %ecoskills_versatile_tools_description%"
+    - " &8» &r&6Spelunking %ecoskills_spelunking_numeral%"
+    - "    %ecoskills_spelunking_description%"
+    - " &8» &r&6Dynamic Mining %ecoskills_dynamic_mining_numeral%"
+    - "    %ecoskills_dynamic_mining_description%"
 
-What this means, is that at level 1 and above (between 1 and 9 here), the first set of messages are sent, and at level 10 and above, the second set are sent. You can set new groups at any level you want in order to make it line up with rewards at different levels.
 
-The same applies to GUI lore:
+# An XP Gain method takes a trigger, a multiplier, conditions, and filters.
+# The multiplier takes the value produced by the trigger and multiplies it
+# by some value to calculate the experience that should be given
+xp-gain-methods:
+  - trigger: break_block
+    multiplier: 0.5
+    filters:
+      blocks:
+        - netherrack
 
-![The GUI progression item](https://1192817931-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXwJPPRqRpT7b0ZXxU13J%2Fuploads%2FvjUByWUJWIBW9EuFjvb5%2FScreenshot%202021-08-21%20at%2018.26.35.png?alt=media&token=ec17aadd-99cd-424d-97b0-4033cb79ade9)
+  - trigger: break_block
+    multiplier: 1
+    filters:
+      blocks:
+        - stone
+        - diorite
+        - granite
+        - andesite
+        - cobblestone
 
-Which can be formatted in much the same way:
 
-```yaml
-rewards-gui-lore:
-  1:
-    - " &8» &r&f+2 %ecoskills_crit_chance_name%"
-    - " &8» &r&f+1 %ecoskills_wisdom_name%"
-    - " &8» &r&6Potionmaster %ecoskills_potionmaster_numeral%"
-    - " &8» &r&6Mystic Resilience %ecoskills_mystic_resilience_numeral%"
-  10:
-    - " &8» &r&f+2 %ecoskills_crit_chance_name%"
-    - " &8» &r&f+1 %ecoskills_wisdom_name%"
-    - " &8» &r&6Potionmaster %ecoskills_potionmaster_numeral%"
-    - " &8» &r&6Efficient Brewing %ecoskills_efficient_brewing_numeral%"
-    - " &8» &r&6Mystic Resilience %ecoskills_mystic_resilience_numeral%"
+# Conditions that must be met to gain XP. While you can add conditions to xp
+# gain methods, if you have many this can be annoying, so this is global.
+conditions: [ ]
 ```

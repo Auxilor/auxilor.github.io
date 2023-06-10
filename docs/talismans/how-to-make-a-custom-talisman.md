@@ -8,7 +8,7 @@ The default configs can be found here:
 
 [GitHub](https://github.com/Auxilor/Talismans/blob/master/eco-core/core-plugin/src/main/resources/talismans/)
 
-## How to add bosses
+## How to add talismans
 Talismans are each config files placed in the `/talismans/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
 ### Example Talisman Config

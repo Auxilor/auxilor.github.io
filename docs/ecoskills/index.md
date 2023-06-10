@@ -4,13 +4,17 @@ title: "EcoSkills"
 
 ## What is EcoSkills?
 
-EcoSkills allows for an RPG-like experience on your server: with skill levelling, special effects / abilities, MMO stats, brand new mechanics, and more complex competition! It's been inspired by Hypixel Skyblock, if you're familiar with that.
+EcoSkills allows for an RPG-like experience on your server: with skill levelling, special effects / abilities, MMO
+stats, magic types like Mana, brand new mechanics, and more complex competition! It's been inspired by Hypixel Skyblock,
+if you're familiar with that.
 
 It works on bungee / velocity with MySQL!
 
 ## What sets EcoSkills apart from other skill plugins?
 
-EcoSkills is the most configurable skills plugin available today. Literally every part of the plugin can be customized to suit your liking. The Skill GUI - redesign it if you want to. The Levelling - set it up exactly how you want. The skills, stats, effects - balance them to fit your server's meta perfectly. If you've ever felt limited by a skills plugin before, that ends today.
+EcoSkills is the most configurable skills plugin ever released. You can create your own skills, stats, effects, magic
+types, you can redesign every GUI, change literally every aspect of anything that exists in the default config.
+It's also completely Plug-and-Play, so if you don't want to configure everything, you don't have to!
 
 ## Check out our partners! (Click to visit)
 

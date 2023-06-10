@@ -5,25 +5,20 @@ sidebar_position: 4
 
 ## Source Code
 
-Like all my plugins, EcoPets is open-source and available on JitPack.
+The source code can be found [here](https://github.com/Auxilor/EcoPets):
 
-The source code can be found here:
+## API
 
-[GitHub](https://github.com/Auxilor/EcoPets)
+Add this to your build.gradle.kts:
 
-### Using EcoPets in your plugin
-
-Add EcoPets to your build.gradle like this:
-
-```groovy
+```kts
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven("https://repo.auxilor.io/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly 'com.willfp:EcoPets:VERSION'
+    compileOnly("com.willfp:EcoPets:<version>")
 }
 ```
 
-The latest version available on JitPack can be found here:
-https://github.com/Auxilor/EcoPets/releases
+The latest version available on the repo can be found [here](https://github.com/Auxilor/EcoPets/tags)

@@ -1,6 +1,6 @@
 ---
 title: "PlaceholderAPI"
-sidebar_position: 8
+sidebar_position: 6
 ---
 
 | Placeholder                               | Description                                                                              |
@@ -9,6 +9,10 @@ sidebar_position: 8
 | `%ecoskills_total_skill_level%`           | The total skill level for a player: all skill levels added together                      |
 | `%ecoskills_<id>%`                        | Get the level that a player has for any given effect, stat, or skill                     |
 | `%ecoskills_<id>_numeral%`                | Get the level that a player has for any given effect, stat, or skill, as a roman numeral |
+| `%ecoskills_<effect>_name%`               | Get the formatted name (icon and color) of any effect. Used internally for configuration |
+| `%ecoskills_<effect>_base%`               | Get the formatted name (icon and color) of any effect. Used internally for configuration |
+| `%ecoskills_<effect>_bonus%`              | Get the formatted name (icon and color) of any effect. Used internally for configuration |
+| `%ecoskills_<effect>_description%`        | Get the formatted name (icon and color) of any effect. Used internally for configuration |
 | `%ecoskills_<stat>_name%`                 | Get the formatted name (icon and color) of any stat. Used internally for configuration   |
 | `%ecoskills_<stat>_base%`                 | Get the base level that a player has for any stat (before modifiers are applied)         |
 | `%ecoskills_<stat>_bonus%`                | Get the bonus levels that a player has for any stat (from modifiers)                     |

@@ -5,24 +5,20 @@ sidebar_position: 4
 
 ## Source Code
 
-Like all my plugins, Reforges is open-source and available on JitPack.
+The source code can be found [here](https://github.com/Auxilor/Reforges):
 
-The source code can be found here:
+## API
 
-[GitHub](https://github.com/Auxilor/Reforges)
+Add this to your build.gradle.kts:
 
-### Using Reforges in your plugin
-
-Add Reforges to your build.gradle like this:
-```groovy
+```kts
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven("https://repo.auxilor.io/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly 'com.willfp:Reforges:VERSION'
+    compileOnly("com.willfp:Reforges:<version>")
 }
 ```
 
-The latest version available on JitPack can be found here:
-https://github.com/Auxilor/Reforges/releases
+The latest version available on the repo can be found [here](https://github.com/Auxilor/Reforges/tags)

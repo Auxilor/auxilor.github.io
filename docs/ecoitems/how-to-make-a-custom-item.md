@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Default config
 The default configs can be found here:
 
-[GitHub](https://github.com/Auxilor/EcoBosses/blob/master/eco-core/core-plugin/src/main/resources/bosses/)
+[GitHub](https://github.com/Auxilor/EcoItems/blob/master/eco-core/core-plugin/src/main/resources/items/)
 
 ## How to add items
 Items are each config files placed in the `/items/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
@@ -14,93 +14,65 @@ Items are each config files placed in the `/items/` folder, and you can add or r
 ## How to add recipes
 Recipes work the same - they are each config files placed in the `/recipes/` folder, and you can add or remove them as you please. There's also an example config called `_example.yml` to help you out!
 
-## Typical Item Config
+## Example Item Config
 
 ```yaml
+# The ID of the item is the name of the .yml file,
+# for example hardened_netherite_sword.yml has the ID of hardened_netherite_sword
+# You can place items anywhere in this folder,
+# including in subfolders if you want to organize your item configs
+# _example.yml is not loaded.
+
 item:
-  item: netherite_sword hide_attributes
-  displayName: "<g:#870000>Reaper Scythe</g:#7a2828>"
-  lore:
+  item: iron_sword hide_attributes # The item in-game: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  display-name: "<g:#f953c6>Mithril Sword</g:#b91d73>" # The display name of the item
+  lore: # The item lore
     - "&7Damage: &c12❤"
-    - "&7Attack Speed: &c2.0"
+    - "&7Attack Speed: &c1.5"
     - ""
-    - "<g:#870000>&lREAPER SCYTHE BONUS</g:#7a2828>"
-    - "&8» &#87000025% chance to bleed enemies"
+    - "<g:#f953c6>MITHRIL BONUS</g:#b91d73>"
+    - "&8» &#f953c6Deal 50% more damage in the nether"
+  craftable: true # If the item can be crafted
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
     - ""
-    - "&4❣ &cMust be on full health for bonus"
-    - "&4❣ &cConsumes <g:#870000>Reaper Souls</g:#7a2828>"
-  craftable: true
-  recipe:
-    - nether_star
-    - netherite_sword
-    - nether_star
-    - netherite_sword
-    - golden_hoe
-    - netherite_sword
-    - nether_star
-    - netherite_sword
-    - nether_star
+    - ecoitems:mithril 2
+    - ""
+    - ""
+    - ecoitems:mithril 2
+    - ""
+    - ""
+    - stick
+    - ""
+  recipe-give-amount: 1 # Optional, set the amount of items to give in the recipe
 
-baseDamage: 12
-baseAttackSpeed: 2.0
+  # The actual item durability isn't set (because it can't be changed), but instead
+  # this scales how quickly the item wears to act as if it had this durability.
+  # For example, let's say the actual durability is 350, but you set this to 700,
+  # it will wear at half the normal rate.
 
+  effective-durability: 1024 # Optional, set the durability
+
+# The slot the item has to be in to activate its effects.
+# Can be mainhand, offhand, hands, helmet, chestplate, leggings, boots, or any.
+# Use to choose weather this is a weapon, tool, armor piece, charm, etc.
+# If you don't specify this, it will default to mainhand.
+slot: mainhand
+
+base-damage: 12 # (Optional) The item base damage
+base-attack-speed: 1.5 # (Optional) The item base attack speed
+
+# The effects of the item (i.e. the functionality)
+# See here: https://plugins.auxilor.io/effects/configuring-an-effect
 effects:
-  - effects:
-      - id: bleed
-        args:
-          damage: 2
-          amount: 5
-          interval: 10
-          chance: 25
-      - id: remove_item
-        args:
-          item: ecoitems:reaper_soul
+  - id: damage_multiplier
+    args:
+      multiplier: 1.5
     triggers:
       - melee_attack
 
+# The conditions required for the effects to activate
 conditions:
-  - id: above_health_percent
+  - id: in_world
     args:
-      percent: 98
-  - id: has_item
-    args:
-      item: ecoitems:reaper_soul
+    world: world_the_nether
 ```
-
-## Understanding all the sections
-
-**id:** The id of the weapon
-
-**baseAttackSpeed:** The attack speed of the weapon: swords in vanilla minecraft have 1.6 attack speed
-
-**baseDamage:** The base damage of the weapon: a netherite sword deals 8 attack damage by default
-
-**conditions / effects:** The core of the weapon is dictated by conditions and effects. Learn more here:
-
-[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
-
-## Item Config
-
-Item config is the config for the weapon's item as shown in game.
-
-**item:** The actual item type. Allows for extensive options, [click here](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) for more
-
-**effectiveDurability:** The durability of the item: durability is hardcoded so this functions like unbreaking and changes the rate at which durability decreases.
-
-**displayName:** The display name of the item
-
-**lore:** The lore of the item
-
-**craftable:** If the weapon should be craftable
-
-**craftingPermission:** Required permission to craft the item
-
-**recipe:** The crafting recipe for the item.
-
-**custom-model-data:** To add a custom model data just add the setting  custom-model-data: under the material config. For example if we want to change the look of a diamond with the Custom Model Data of 2, we will check that the material in the config is set to diamond and add custom-model-data:2 under the material config. The Custom Model Data Resource Pack should already be added to the server. 
-
-## Footnote for this item
-
-This item has a consumable that's required in order to use it. Here, the player needs to have reaper souls to use it.
-
-Here, using the `has_item` condition and the `remove_item` effect, using the reaper scythe will consume reaper souls from your inventory and not activate effects if you don't have any.
