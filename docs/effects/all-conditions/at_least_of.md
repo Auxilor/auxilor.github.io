@@ -4,7 +4,7 @@ Requires a leat a certain mount of a certain list of conditions to be met
 
 # Example Config
 ```yaml
-- id: any_of
+- id: at_least_of
   args:
     conditions: # The list of conditions
       - id: is_sprinting
