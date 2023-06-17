@@ -56,6 +56,20 @@ If the victim is a player, you can supply any placeholder prefixed with `victim_
 
 `%text%`, `%string%`, and `%message%`: The message text from the trigger, for example a chat message
 
+`%location_x%`, `%loc_x%`, and `%x%`: The x-coordinate of the location
+
+`%location_block_x%`, `%loc_b_x%`, `%block_x%`, and `%bx%`: The block x-coordinate of the location
+
+`%location_y%`, `%loc_y%`, and `%y%`: The y-coordinate of the location
+
+`%location_block_y%`, `%loc_b_y%`, `%block_y%`, and `%by%`: The block y-coordinate of the location
+
+`%location_z%`, `%loc_z%`, and `%z%`: The z-coordinate of the location
+
+`%location_block_z%`, `%loc_b_z%`, `%block_z%`, and `%bz%`: The block z-coordinate of the location
+
+`%location_world%`, `%loc_w%`, and `%world%`: The world name of the location
+
 ## The Sections
 
 **id**: The effect ID. A list of ID's and their corresponding arguments can be
@@ -124,6 +138,15 @@ args:
     mana_cost: 10
 ```
 
+#### `<magic>_cost`
+
+The magic cost (e.g. mana) required to use or activate this effect. **Requires EcoSkills.** (defaults to 0)
+
+```yaml
+args:
+    mana_cost: 10
+```
+
 #### `delay`
 
 The amount of ticks to wait before executing the effect. (defaults to 0)
@@ -178,6 +201,17 @@ args:
         value: 100 * %player_y%
         type: crystals
         display: "&b%value% Crystals ❖"
+```
+
+#### `weight`
+
+The weight (chance) of this effect firing if the chain is ran randomly.
+
+Chance is calculated as `<weight of element> / <sum of all weights>`
+
+```yaml
+args:
+    weight: 10
 ```
 
 ## Effect Chains
@@ -283,3 +317,10 @@ effects straight away, no worrying about the underlying inline chain.
 
 These work exactly like inline chains (they are inline chains), so everything is still supported; run-type, custom
 arguments, et cetera.
+
+## Load Weight
+
+All configs are loaded alphabetically by default. However, if you have a config that depends on
+another one, for example an EcoItems item thats crafted with another EcoItems item, you can add
+`load-weight: <weight>`. All configs have a default load weight of 100, and it's loaded in ascending
+order, so a config with a load weight of 10 is loaded before a load weight of 20.

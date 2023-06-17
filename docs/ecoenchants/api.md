@@ -5,34 +5,20 @@ sidebar_position: 9
 
 ## Source Code
 
-Like all my plugins, EcoEnchants is open-source and available on JitPack.
+The source code can be found [here](https://github.com/Auxilor/EcoEnchants):
 
-The source code can be found here:
+## API
 
-[GitHub](https://github.com/Auxilor/EcoEnchants)
+Add this to your build.gradle.kts:
 
-### Using EcoEnchants in your plugin
-
-Add EcoEnchants to your build.gradle like this:
-```groovy
+```kts
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven("https://repo.auxilor.io/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly 'com.willfp:EcoEnchants:VERSION'
+    compileOnly("com.willfp:EcoEnchants:<version>")
 }
 ```
 
-The latest version available on JitPack can be found here:
-https://github.com/Auxilor/EcoEnchants/releases
-
-## Want to create your own enchantments?
-
-My extensions are located in the base source code, so have a look how I do it!
-
-[GitHub](https://github.com/Auxilor/EcoEnchants/tree/master/eco-extensions)
-
-You can find extensions made by me and others on Polymart:
-
-[EcoEnchants on Auxilor Polymart](https://auxilor.polymart.org/resources/ecoenchants)
+The latest version available on the repo can be found [here](https://github.com/Auxilor/EcoEnchants/tags)

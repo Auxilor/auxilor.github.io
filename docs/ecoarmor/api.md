@@ -5,25 +5,20 @@ sidebar_position: 6
 
 ## Source Code
 
-Like all my plugins, EcoArmor is open-source and available on JitPack.
+The source code can be found [here](https://github.com/Auxilor/EcoArmor):
 
-The source code can be found here:
+## API
 
-[GitHub](https://github.com/Auxilor/EcoArmor)
+Add this to your build.gradle.kts:
 
-### Using EcoArmor in your plugin
-
-Add EcoArmor to your build.gradle like this:
-
-```groovy
+```kts
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven("https://repo.auxilor.io/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly 'com.willfp:EcoArmor:VERSION'
+    compileOnly("com.willfp:EcoArmor:<version>")
 }
 ```
 
-The latest version available on JitPack can be found here:
-https://github.com/Auxilor/EcoArmor/releases
+The latest version available on the repo can be found [here](https://github.com/Auxilor/EcoArmor/tags)

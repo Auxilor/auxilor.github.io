@@ -5,25 +5,20 @@ sidebar_position: 5
 
 ## Source Code
 
-Like all my plugins, EcoShop is open-source and available on JitPack.
+The source code can be found [here](https://github.com/Auxilor/EcoShop):
 
-The source code can be found here:
+## API
 
-[GitHub](https://github.com/EcoShop/Actions)
+Add this to your build.gradle.kts:
 
-### Using EcoShop in your plugin
-
-Add EcoShop to your build.gradle like this:
-
-```groovy
+```kts
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven("https://repo.auxilor.io/repository/maven-public/")
 }
 
 dependencies {
-    compileOnly 'com.willfp:EcoShop:VERSION'
+    compileOnly("com.willfp:EcoShop:<version>")
 }
 ```
 
-The latest version available on JitPack can be found here:
-https://github.com/Auxilor/EcoShop/releases
+The latest version available on the repo can be found [here](https://github.com/Auxilor/EcoShop/tags)
