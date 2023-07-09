@@ -9,7 +9,7 @@ is active
 Triggered effects also produce a value, which is used in EcoPets for levelling.
 
 | ID                     | Description                                                                                                       | Value Provided                    |
-|------------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------- |
 | `alt_click`            | Triggered when using Right Click on most items, Left Click on those that have a default right click functionality | 1                                 |
 | `bite`                 | Triggered when a fish bites on your rod                                                                           | 1                                 |
 | `block_item_drop`      | Triggered when a mined block drops loot                                                                           | The amount of items dropped       |
@@ -99,3 +99,4 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `enter_region`         | Triggered when entering a region **Requires WorldGuard**                                                          | 1                                 |
 | `leave_region`         | Triggered when leaving a region **Requires WorldGuard**                                                           | 1                                 |
 | `level_up_item`        | Triggered when levelling up an item                                                                               | The new item level                |
+| `tame_animal`          | Triggered when taming an animal                                                                                   | 1                                 |
