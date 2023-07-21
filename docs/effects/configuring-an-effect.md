@@ -268,6 +268,8 @@ args:
         ... add whichever arguments you use in your chain
 ```
 
+## Inline Chains
+
 If you don't want to re-use chains, or if you prefer having them specified directly under the effect, you can specify
 effects like this instead:
 
@@ -313,7 +315,7 @@ effects:
 
 This is an alternative way of configuring your effects; you don't specify a top-level effect ID, instead you specify a
 list of effects to be called. This can be thought of as being more trigger-centric; multiple triggers to multiple
-effects straight away, no worrying about the underlying inline chain.
+effects straight away, no worrying about the underlying chain.
 
 These work exactly like inline chains (they are inline chains), so everything is still supported; run-type, custom
 arguments, et cetera.
