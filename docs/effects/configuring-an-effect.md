@@ -214,6 +214,14 @@ args:
     weight: 10
 ```
 
+
+#### `run_order`
+
+The order the effect should run in. This can be `start`, `early`, `normal`, `late`, or `end`.
+
+Effects have default run orders to prevent bugs, but this option allows for overriding them, for example to make `add_damage` run
+before `damage_multiplier`.
+
 ## Effect Chains
 
 Effect chains are groups of effects that can be executed together. This is very useful if you want to create a
