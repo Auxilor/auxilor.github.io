@@ -105,3 +105,5 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `complete_task`        | Triggered when completing a task **Requires EcoQuests**                                                           | 1                                 |
 | `gain_task_xp`         | Triggered when gaining task XP **Requires EcoQuests**                                                             | The experience gained             |
 | `start_quest`          | Triggered when starting a quest **Requires EcoQuests**                                                            | 1                                 |
+| `left_click_npc`       | Triggered when left-clicking an NPC **Requires Citizens**                                                         | 1                                 |
+| `right_click_npc`      | Triggered when right-clicking an NPC **Requires Citizens**                                                        | 1                                 |
