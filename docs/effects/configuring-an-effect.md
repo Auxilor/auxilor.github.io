@@ -214,13 +214,18 @@ args:
     weight: 10
 ```
 
-
 #### `run_order`
 
 The order the effect should run in. This can be `start`, `early`, `normal`, `late`, or `end`.
 
-Effects have default run orders to prevent bugs, but this option allows for overriding them, for example to make `add_damage` run
-before `damage_multiplier`.
+Effects have default run orders (used to make effects work together properly), but this option allows for overriding them,
+for example to make `add_damage` (defaults to `late`) run before `damage_multiplier` (defaults to `normal`).
+
+```yaml
+args:
+    run-order: early
+```
+
 
 ## Effect Chains
 

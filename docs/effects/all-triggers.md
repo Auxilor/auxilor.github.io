@@ -101,3 +101,7 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `leave_region`         | Triggered when leaving a region **Requires WorldGuard**                                                           | 1                                 |
 | `level_up_item`        | Triggered when levelling up an item                                                                               | The new item level                |
 | `tame_animal`          | Triggered when taming an animal                                                                                   | 1                                 |
+| `complete_quest`       | Triggered when completing a quest **Requires EcoQuests**                                                          | 1                                 |
+| `complete_task`        | Triggered when completing a task **Requires EcoQuests**                                                           | 1                                 |
+| `gain_task_xp`         | Triggered when gaining task XP **Requires EcoQuests**                                                             | The experience gained             |
+| `start_quest`          | Triggered when starting a quest **Requires EcoQuests**                                                            | 1                                 |
