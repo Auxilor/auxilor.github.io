@@ -226,6 +226,19 @@ args:
     run-order: early
 ```
 
+#### `custom_<id>`
+
+
+Use a [custom effect argument](https://plugins.auxilor.io/effects/custom-arguments).
+
+```yaml
+args:
+  custom_<id>:
+    <arg 1>: <value>
+    <arg 2>: <value>
+    ... etc
+```
+
 
 ## Effect Chains
 
