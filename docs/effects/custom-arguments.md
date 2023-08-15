@@ -1,6 +1,6 @@
 ---
 title: "Custom Arguments"
-sidebar_position: 19
+sidebar_position: 10
 ---
 
 You can create custom effect arguments to reuse common logic between
@@ -34,7 +34,7 @@ if-met:
       amount: "- %amount%"
   - id: send_message
     args:
-      message: "-50 %ecoskills_mana_name% &f(%reason%)"
+      message: "-%amount% %ecoskills_mana_name% &f(%reason%)"
 
 # Effects to run if the condition is not met
 if-not-met: [ ]
