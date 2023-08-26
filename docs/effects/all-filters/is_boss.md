@@ -1,9 +1,9 @@
-# `only_bosses`
+# `is_boss`
 
 If the entity must be a boss (supports vanilla bosses and EcoBosses)
 
 # Example Config
 ```yaml
 filters:
-  only_bosses: true
+  is_boss: true
 ```
