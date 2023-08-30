@@ -56,6 +56,8 @@ level-up-effects:
 
 You can get the value of a point with the following placeholders:
 
+`%libreforge_item_points_<type>%`: The amount of points
+
 `%libreforge_item_xp_<level>%`: The current XP
 
 `%libreforge_item_level_<level>%`: The current level
@@ -63,6 +65,8 @@ You can get the value of a point with the following placeholders:
 `%libreforge_item_xp_required_<level>%`: The XP required to level up
 
 `%libreforge_item_progress_<level>%`: The current progress towards levelling up, as a percentage
+
+`%libreforge_item_data_<key>%`: The data value
 
 You can also put `_numeral` on the end of any placeholder to get the value as a roman numeral.
 

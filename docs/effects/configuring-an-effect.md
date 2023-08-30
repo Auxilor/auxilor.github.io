@@ -42,6 +42,10 @@ There are also extra placeholders passed in that you can use:
 `%trigger_value%`, `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, and `%t%`: The value passed by the trigger (
 e.g. the amount of damage dealt; see [here](https://plugins.auxilor.io/effects/all-triggers)).
 
+`%player%`: The player's name
+
+`%player_uuid%`: The player's UUID
+
 `%victim_health%`: The victim's health
 
 `%victim_max_health%`: The victim's max health
