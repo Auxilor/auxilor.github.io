@@ -1,18 +1,21 @@
 # `aoe`
+
 #### Triggered Effect
 
 Runs effects for all entities within an area of effect (aoe)
 
 ## List of Shapes
-| ID | Description |Args |
-| --- | --- | --- |
-| `cone` | A cone in front of the player (think sweeping edge) | `radius` The radius of the cone (distance in front) <br /> `angle` The angle of the cone |
-| `circle` | A circle around the player | `radius` The radius of the circle |
-| `offset_circle` | A circle around a point in front of the player | `radius` The radius of the circle <br /> `offset` The amount of blocks in front |
-| `scan_in_front` | Scan for entities in the direction you're looking at and affect the first ones found | `radius` The radius of the scan <br /> `max_distance` The maximum distance to scan |
 
+| ID              | Description                                                                        | Args                                                                                                                                                                                                     |
+| --------------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cone`          | A cone in front of the player (think sweeping edge)                                | `radius` The radius of the cone (distance in front) <br /> `angle` The angle of the cone                                                                                                                 |
+| `circle`        | A circle around the player                                                         | `radius` The radius of the circle                                                                                                                                                                        |
+| `offset_circle` | A circle around a point in front of the player                                     | `radius` The radius of the circle <br /> `offset` The amount of blocks in front                                                                                                                          |
+| `scan_in_front` | Scan for entities in the direction you're looking, and affect the first ones found | `radius` The radius of the scan <br /> `max_distance` The maximum distance to scan                                                                                                                       |
+| `beam`          | A beam in the direction you're looking                                             | `radius` The radius of the beam <br /> `distance` The length of the beam <br /> `pierce_blocks` If the beam should pass through blocks <br /> `pierce_entities` If the beam should pass through entities |
 
 # Example Config
+
 ```yaml
 - id: aoe
   args:
