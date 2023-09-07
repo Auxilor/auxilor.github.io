@@ -71,6 +71,7 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `join_job`             | Triggered when joining a job **Requires EcoJobs**                                                                 | The job level                     |
 | `leave_job`            | Triggered when leaving a job **Requires EcoJobs**                                                                 | The job level                     |
 | `sell_item`            | Triggered when selling an item in a shop                                                                          | The price                         |
+| `buy_item`             | Triggered when buying an item in a shop **Requires EcoShop**                                                      | The price                         |
 | `headshot`             | Triggered when hitting an enemy with a projectile in the head                                                     | The damage dealt                  |
 | `scyther_auto_collect` | Triggered when autocollecting crops with a scyther hoe **Requires Scyther**                                       | 1                                 |
 | `scyther_auto_sell`    | Triggered when autoselling crops with a scyther hoe **Requires Scyther**                                          | 1                                 |
