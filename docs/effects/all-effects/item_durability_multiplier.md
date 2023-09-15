@@ -1,5 +1,5 @@
 # `item_durability_multiplier`
-#### Permanent Effect
+#### Triggered Effect
 
 Multiplies item durability (only works if holders are items, e.g. in EcoEnchants, EcoItems, etc.)
 
@@ -10,4 +10,5 @@ Item durability cannot actually be changed, so this functions like unbreaking wh
 - id: item_durability_multiplier
   args:
     multiplier: 1.5 # The multiplier for the durability
+  ...other config (eg triggers, filters, mutators, etc)
 ```
