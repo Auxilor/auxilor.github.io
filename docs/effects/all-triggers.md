@@ -108,3 +108,4 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `start_quest`          | Triggered when starting a quest **Requires EcoQuests**                                                            | 1                                 |
 | `left_click_npc`       | Triggered when left-clicking an NPC **Requires Citizens**                                                         | 1                                 |
 | `right_click_npc`      | Triggered when right-clicking an NPC **Requires Citizens**                                                        | 1                                 |
+| `regen_magic`      | Triggered when regenerating magic **Requires EcoSkills**                                                        | 1                                 |
