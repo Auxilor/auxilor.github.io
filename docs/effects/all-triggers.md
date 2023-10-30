@@ -9,7 +9,7 @@ is active
 Triggered effects also produce a value, which is used in EcoPets for levelling.
 
 | ID                     | Description                                                                                                       | Value Provided                    |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+|------------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | `alt_click`            | Triggered when using Right Click on most items, Left Click on those that have a default right click functionality | 1                                 |
 | `bite`                 | Triggered when a fish bites on your rod                                                                           | 1                                 |
 | `block_item_drop`      | Triggered when a mined block drops loot                                                                           | The amount of items dropped       |
@@ -63,7 +63,7 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `jobs_level_up`        | Triggered when levelling up a job **Requires Jobs Reborn**                                                        | The new level                     |
 | `brew`                 | Triggered when brewing a potion in a brewing stand                                                                | 1                                 |
 | `brew_ingredient`      | Same as `brew`, but passes the ingredient as the item                                                             | 1                                 |
-| `smelt`                | Triggered when smelting an item in a furnace                                                                      | 1                                 |
+| `smelt`                | Triggered when smelting an item in a furnace                                                                      | The amount of items smelted       |
 | `place_block`          | Triggered when placing a block                                                                                    | 1                                 |
 | `level_up_job`         | Triggered when levelling up a job **Requires EcoJobs**                                                            | The new level                     |
 | `gain_job_xp`          | Triggered when gaining job experience points **Requires EcoJobs**                                                 | The experience gained             |
@@ -108,4 +108,4 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `start_quest`          | Triggered when starting a quest **Requires EcoQuests**                                                            | 1                                 |
 | `left_click_npc`       | Triggered when left-clicking an NPC **Requires Citizens**                                                         | 1                                 |
 | `right_click_npc`      | Triggered when right-clicking an NPC **Requires Citizens**                                                        | 1                                 |
-| `regen_magic`      | Triggered when regenerating magic **Requires EcoSkills**                                                        | 1                                 |
+| `regen_magic`          | Triggered when regenerating magic **Requires EcoSkills**                                                          | 1                                 |
