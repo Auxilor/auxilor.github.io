@@ -113,6 +113,10 @@ args:
     cooldown: 10
     send_cooldown_message: true # (Optional) If the cooldown message should be sent
     cooldown_message: "Custom cooldown message with %seconds% left" # (Optional) a custom cooldown message
+    cooldown_effects: # (Optional) Effects to run if on cooldown
+      - id: send_message
+        args:
+          message: "You are on cooldown! Try again in &a%seconds%&r seconds."
 ```
 
 #### `cost`
