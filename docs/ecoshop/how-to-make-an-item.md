@@ -67,7 +67,7 @@ giving the player a real item. It's really common now in servers to have multipl
 setups and move things like ranks to be done from in-game shops, so let's see how you can
 do that with EcoShop.
 
-Of course, you can't sell an
+Of course, you can't sell a command, so they're buy-only.
 
 ```yaml
 id: iron_rank
@@ -131,6 +131,39 @@ where bottom lore is shown under things like the buy price, quick buy options, e
 
 `gui.show-quick-buy-sell`: By default, quick buy / quick sell lore is shown on items. If you don't
 want that for this item, you can disable it here.
+
+### Effect Items
+
+Instead of just using commands, EcoShop also has full access to the
+[effects system](https://plugins.auxilor.io/effects/configuring-an-effect), so you can run
+effects when a player buys an item, or even just put effects themselves in the shop.
+
+Like commands, these are unsellable.
+
+```yaml
+id: my_effect_item
+
+effects: [ ]
+
+buy:
+  value: 65
+  type: crystals
+  display: "&b%value% Crystals ❖"
+
+gui:
+  display:
+    item: nether_star
+    lore:
+      - "&fBuy me to do something cool!"
+  column: 6 # The column.
+  row: 3 # The row.
+  page: 2 # The page.
+
+  show-quick-buy-sell: false
+```
+
+`effects`: These are the effects that are ran when the player buys the item. Read
+[here](https://plugins.auxilor.io/effects/configuring-an-effect) to learn more!
 
 ### Extra Options
 
