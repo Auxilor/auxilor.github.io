@@ -89,6 +89,8 @@ alt-buy:
   type: crystals
   display: "&b%value% Crystals ❖"
 
+  conditions: [ ]
+
 gui:
   display:
     item: diamond_chestplate
@@ -114,9 +116,10 @@ gets a lot better than that - you can do **math** with this too. For example, `%
 would be totally allowed too. That's obviously a pretty weird price, but it's possible.
 
 `buy.require`: This is a mathematical expression that has to be met in order to be allowed to
-buy this item. For example, you could do `%player_xp% >= 300`, or hook into actions and use
-[condition placeholders](https://plugins.auxilor.io/actions/placeholderapi) to make full use of
-the entire [condition system](https://plugins.auxilor.io/effects/configuring-a-condition)
+buy this item. For example, you could do `%player_xp% >= 300`
+
+`buy.conditions`: Conditions that have to be met in order to buy this item, read
+[here](https://plugins.auxilor.io/effects/configuring-a-condition) for more information!
 
 `buy.limit`: The maximum amount of times a player can buy this item.
 
