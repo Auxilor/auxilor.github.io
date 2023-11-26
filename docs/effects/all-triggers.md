@@ -119,3 +119,5 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `entity_death`                  | Triggered when an entity takesdies                                                                                | 1                                             |
 | `entity_spawn`                  | Triggered when an entity spawns                                                                                   | 1                                             |
 | `entity_teleport`               | Triggered when an entity teleports                                                                                | 1                                             |
+| `complete_advancement`          | Triggered when completing an advancement                                                                          | 1                                             |
+| `smith_item`                    | Triggered when smithing an item in a smithing table                                                               | 1                                             |
