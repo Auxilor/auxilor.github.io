@@ -47,7 +47,7 @@ Items can have modifiers applied to them in the key. For example, lets say you'r
 - **Unbreakable:** You can make an item unbreakable by having the word `unbreakable` in the flags
 - **Custom Model Data:** You can specify custom model data with `custom-model-data:<id>`
 
-So, lets say you have an EcoBosses boss, and you want it to drop a rare custom weapon with extra modifiers already applied. Without the Item Lookup system, this wouldn't be possible, but thanks to it, you can just do this: `ecoitems:enlightened_blade razor:4 unbreaking:3 criticals:2 fire_aspect:2 reforge:mighty unbreakable hide_attributes custom-model-data:2`
+So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weapon with extra modifiers already applied. Without the Item Lookup system, this wouldn't be possible, but thanks to it, you can just do this: `ecoitems:enlightened_blade razor:4 unbreaking:3 criticals:2 fire_aspect:2 reforge:mighty unbreakable hide_attributes custom-model-data:2`
 
 ## Using items in ShopGUIPlus
 If you want to use a lookup item in ShopGUIPlus, just do it like this:

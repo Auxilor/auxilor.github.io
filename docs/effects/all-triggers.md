@@ -36,7 +36,6 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `item_break`                    | Triggered when breaking any item in your inventory (durability)                                                   | 1                                             |
 | `jump`                          | Triggered when Jumping (pressing space)                                                                           | 1                                             |
 | `kill`                          | Triggered when a player kills a player or entity                                                                  | The victim's max health                       |
-| `kill_boss`                     | Triggered when killing a boss **Requires EcoBosses**                                                              | The bosses max health                         |
 | `level_up_pet`                  | Triggered when levelling up a pet **Requires EcoPets**                                                            | The new level                                 |
 | `level_up_skill`                | Triggered when levelling up **Requires EcoSkills**                                                                | The new level                                 |
 | `lose_hunger`                   | Triggered when losing hunger                                                                                      | The hunger lost                               |
@@ -49,7 +48,6 @@ Triggered effects also produce a value, which is used in EcoPets for levelling.
 | `projectile_hit`                | Triggered when hitting a block or an entity with a projectile (arrow, trident, splash potion, egg, snowball)      | 1                                             |
 | `projectile_launch`             | Triggered when launching a projectile (arrow, trident, splash potion, egg, snowball)                              | 1                                             |
 | `shield_block`                  | Triggered when blocking an attack with a shield                                                                   | The damage blocked                            |
-| `spawn_boss`                    | Triggered when spawning a boss **Requires EcoBosses**                                                             | 1                                             |
 | `static_%interval%`             | Run every x ticks, eg `static_20` would run every second                                                          | 1                                             |
 | `global_static_%interval%`      | Run every x ticks for the server, eg `global_static_20` would run every second                                    | 1                                             |
 | `swap_hands`                    | Triggered when swapping items in hands (F by default)                                                             | 1                                             |
