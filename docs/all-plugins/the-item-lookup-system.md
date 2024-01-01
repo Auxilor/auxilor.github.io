@@ -46,6 +46,7 @@ Items can have modifiers applied to them in the key. For example, lets say you'r
 - **Item Flags:** You can specify flags for the item to have, by dropping in any of [these values](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemFlag.html) (not case sensitive) 
 - **Unbreakable:** You can make an item unbreakable by having the word `unbreakable` in the flags
 - **Custom Model Data:** You can specify custom model data with `custom-model-data:<id>`
+- **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
 
 So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weapon with extra modifiers already applied. Without the Item Lookup system, this wouldn't be possible, but thanks to it, you can just do this: `ecoitems:enlightened_blade razor:4 unbreaking:3 criticals:2 fire_aspect:2 reforge:mighty unbreakable hide_attributes custom-model-data:2`
 

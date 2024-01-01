@@ -164,6 +164,22 @@ args:
     delay: 20
 ```
 
+#### `repeat`
+
+Specify the effect to activate repeadetly. If the effect has a delay, it will delay between each repeat.
+If the effect has any mutators, they will run again for each repeat.
+
+This provides new placeholders: `%repeat_times%`, `%repeat_start%`, `%repeat_increment%`, and `%repeat_count%`.
+
+```yaml
+args:
+    repeat:
+        times: 5 # How many times the effect should be repeated
+        start: -10 # The initial value of the %repeat_count% placeholder
+        increment: 10 # How much the count should be increased (or decreased) by on each repeat
+    every: 3
+```
+
 #### `filters_before_mutation`
 
 By default, filters are ran after mutation - set this to true if filters should be ran on the un-mutated data. (defaults
