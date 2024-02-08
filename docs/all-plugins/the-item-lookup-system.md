@@ -48,20 +48,23 @@ Items can have modifiers applied to them in the key. For example, lets say you'r
 - **Unbreakable:** You can make an item unbreakable by having the word `unbreakable` in the flags
 - **Custom Model Data:** You can specify custom model data with `custom-model-data:<id>`
 - **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
+- **Spawner Entity:** You can specify the spawner entity with `entity:<id>`
 
 So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weapon with extra modifiers already applied. Without the Item Lookup system, this wouldn't be possible, but thanks to it, you can just do this: `ecoitems:enlightened_blade razor:4 unbreaking:3 criticals:2 fire_aspect:2 reforge:mighty unbreakable hide_attributes custom-model-data:2`
 
 ## Using items from my other plugins
 You can use items from my other plugins anywhere using The Item Lookup system.
-- **EcoItems:** `ecoitems:<id>`
-- **Talismans:** `talismans:<id>`
-- **EcoMobs:** `ecomobs:<id>_spawn_egg`
-- **EcoPets:** `ecopets:<id>_spawn_egg`
-- **StatTrackers:** `stattrackers:<id>`
-- **EcoCrates:** `ecocrates:<crate>_key`
-- **Reforges:** `reforges:stone_<id>`
-- **EcoArmor:** `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`)
-    `ecoarmor:shard_<set>` `ecoarmor:upgrade_crystal_<id>`
+
+| Plugin           | Item Lookup Key                                                                                                     |
+|------------------|---------------------------------------------------------------------------------------------------------------------|
+| **EcoItems**     | `ecoitems:<id>`                                                                                                     |
+| **Talismans**    | `talismans:<id>`                                                                                                    |
+| **EcoMobs**      | `ecomobs:<id>_spawn_egg`                                                                                            |
+| **EcoPets**      | `ecopets:<id>_spawn_egg`                                                                                            |
+| **StatTrackers** | `stattrackers:<id>`                                                                                                 |
+| **EcoCrates**    | `ecocrates:<crate>_key`                                                                                             |
+| **Reforges**     | `reforges:stone_<id>`                                                                                               |
+| **EcoArmor**     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:upgrade_crystal_<id>` |
 
 ## Using items in ShopGUIPlus
 If you want to use a lookup item in ShopGUIPlus, just do it like this:
