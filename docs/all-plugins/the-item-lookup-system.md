@@ -91,4 +91,6 @@ items:
   my_helmet:
     display_name: '&9Custom Helmet'
 ```
+
 To use custom items from ItemBridge, you can use `itembridge:saved__<id>`. If it's an item from a supported plugin, it's `itembridge:<prefix>__<id>`
+
