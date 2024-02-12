@@ -1,6 +1,6 @@
 ---
 title: "All enchantments"
-sidebar_position: 3
+sidebar_position: 5
 ---
 
 A list of all enchantments can be found [here](https://lrcdb.auxilor.io/)

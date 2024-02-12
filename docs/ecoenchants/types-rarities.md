@@ -1,6 +1,6 @@
 ---
-title: "The Gameplay"
-sidebar_position: 2
+title: "Types, Rarities and Targets"
+sidebar_position: 3
 ---
 
 ## Types
