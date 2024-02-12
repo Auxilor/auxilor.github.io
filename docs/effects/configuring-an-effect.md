@@ -137,6 +137,14 @@ args:
     every: 3
 ```
 
+#### `require`
+
+Require an expression to be true for the effect to run.
+
+```yaml
+args:
+    require: '%ecobits_crystals% > 4'
+```
 #### `mana_cost`
 
 The mana cost required to use or activate this effect. **Requires Aurelium Skills.** (defaults to 0)
@@ -166,7 +174,7 @@ args:
 
 #### `repeat`
 
-Specify the effect to activate repeadetly. If the effect has a delay, it will delay between each repeat.
+Specify the effect to activate repeatedly. If the effect has a delay, it will delay between each repeat.
 If the effect has any mutators, they will run again for each repeat.
 
 This provides new placeholders: `%repeat_times%`, `%repeat_start%`, `%repeat_increment%`, and `%repeat_count%`.
