@@ -1,6 +1,6 @@
 ---
 title: "How to make an enchant"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## Config Layout
