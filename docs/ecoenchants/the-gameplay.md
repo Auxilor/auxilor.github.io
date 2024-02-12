@@ -37,7 +37,7 @@ Some enchantment types (special by default) are set up with a bias to make it ex
 
 Targets are the items that can be enchanted by any given enchantment. These are things like melee weapons, tools, armor pieces, elytra, fishing rods, etc. You can create your own targets (for example if you want diamond and netherite items to have exclusive enchantments) and edit and delete as many targets as you want.
 
-Check out target.yml here:
+Check out targets.yml here:
 
-[GitHub](https://github.com/Auxilor/EcoEnchants/blob/master/eco-core/core-plugin/src/main/resources/target.yml)
+[GitHub](https://github.com/Auxilor/EcoEnchants/blob/master/eco-core/core-plugin/src/main/resources/targets.yml)
 
