@@ -25,7 +25,7 @@ default --> iron --> diamond --> netherite --> manyullyn
 ancient --> mythic
 ```
 
-The main progression goes from default -> manuyullyn, with optional branches. Cobalt and osmium are more tanky, in other words you move slower but deal more damage and take less damage, and exotic makes you more vulnerable however you move faster.
+The main progression goes from default -> manyullyn, with optional branches. Cobalt and osmium are more tanky, in other words you move slower but deal more damage and take less damage, and exotic makes you more vulnerable however you move faster.
 
 Ancient and Mythic aren't craftable by default and exist more as a special tier, perfect for crates or drops from bosses.
 

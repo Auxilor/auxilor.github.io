@@ -82,7 +82,7 @@ xp-gain-methods:
 
 # Custom placeholders to be used in descriptions,
 # Don't add % to the IDs, this is done automatically
-# The value takes a %level% placeholder and is a mathetmatical expression
+# The value takes a %level% placeholder and is a mathematical expression
 level-placeholders:
   - id: "damage_multiplier"
     value: "%level%"

@@ -31,7 +31,7 @@ Permission: `ecopets.command.activate`
 
 Usage: `/pets activate <pet>`
 
-## `/pets deactivate` (Dectivate a pet)
+## `/pets deactivate` (Deactivate a pet)
 Permission: `ecopets.command.deactivate`
 
 Usage: `/pets deactivate`

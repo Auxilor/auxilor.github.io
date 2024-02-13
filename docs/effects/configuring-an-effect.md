@@ -381,6 +381,6 @@ arguments, et cetera.
 ## Load Weight
 
 All configs are loaded alphabetically by default. However, if you have a config that depends on
-another one, for example an EcoItems item thats crafted with another EcoItems item, you can add
+another one, for example an EcoItems item that's crafted with another EcoItems item, you can add
 `load-weight: <weight>`. All configs have a default load weight of 100, and it's loaded in ascending
 order, so a config with a load weight of 10 is loaded before a load weight of 20.

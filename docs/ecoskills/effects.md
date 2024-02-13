@@ -15,7 +15,7 @@ Effects are special abilities given to a player. They are levelled up by levelli
 | Serrated Strikes    | Increases chance to cause your opponent to bleed, damaging them repeatedly |
 | Seamless Movement   | Increases chance to ignore fall damage                                     |
 | Potionmaster        | Brewed potions last longer                                                 |
-| Shamanism           | Increases the speed at which you regain helath                             |
+| Shamanism           | Increases the speed at which you regain health                             |
 | Craftsmanship       | Take less durability damage on axes                                        |
 | Second Chance       | Chance to instantly fix items on low durability                            |
 | Efficient Brewing   | Decreases the time taken to brew potions                                   |
@@ -30,7 +30,7 @@ Effects are special abilities given to a player. They are levelled up by levelli
 | Strong Impact       | Small chance to deal 3x damage                                             |
 | Endangering         | Chance to remove your opponents invulnerability frame                      |
 | Spelunking          | Chance to get extra drops from ores                                        |
-| Dynamic MIning      | Chance to get a short burst of Haste III while mining                      |
+| Dynamic Mining      | Chance to get a short burst of Haste III while mining                      |
 | Reimbursement       | Chance to get given back xp levels after enchanting an item                |
 | Overcompensation    | Chance to get given back lapis after enchanting                            |
 | Magnetic Rod        | Increases fishing speed                                                    |

@@ -16,7 +16,7 @@ If you want to add or remove enchantments, just create or delete config files. T
 display-name: "Example" # The name of the enchantment in-game
 description: "Gives a &a%placeholder%%&8 bonus to damage" # The description of the enchantment
 placeholder: "%level% * 20" # The placeholder to show in the enchantment description
-placeholders: # [Optional] You can also create multiple placeholders to ushow in the enchantment description
+placeholders: # [Optional] You can also create multiple placeholders to show in the enchantment description
   example: "%level% * 800"
 type: normal # The enchantment type, from types.yml
 

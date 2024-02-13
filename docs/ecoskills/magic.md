@@ -3,7 +3,7 @@ title: "Magic"
 sidebar_position: 5
 ---
 
-Magics are an optional feature in EcoSkills that provide the ability to create naturally regnerating
+Magics are an optional feature in EcoSkills that provide the ability to create naturally regenerating
 amounts of things like Mana, which can then be used in other plugins, for example in EcoItems items,
 or EcoEnchants enchantments.
 
