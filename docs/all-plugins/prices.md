@@ -18,7 +18,9 @@ To simplify this, there's a unified way to handle all of this: the price system.
 
 `l`, `levels`, `xplevels`, `explevels`: Experience levels
 
-[Points](https://plugins.auxilor.io/effects/points) work as types, such as `souls`
+`p_points`, `player_points`: PlayerPoints points (third-party plugin)
+
+[points](https://plugins.auxilor.io/effects/points) work as types, such as `souls`
 
 [Magic Types](https://plugins.auxilor.io/ecoskills/magic) work as types, such as `magic`
 
