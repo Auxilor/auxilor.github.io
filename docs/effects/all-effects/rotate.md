@@ -4,7 +4,7 @@
 Spin around
 
 # Example Config
-```rotate
+```yaml
 - id: rotate
   args:
     angle: 180 # The angle to rotate / spin (in degrees)

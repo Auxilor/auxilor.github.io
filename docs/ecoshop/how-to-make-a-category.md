@@ -7,7 +7,7 @@ sidebar_position: 3
 
 Categories are how shops are organized. Items are sold / bought in categories, they're
 the actual 'shop' part. In the example config, you will have seen how shops can either
-be a portal to a bunch of categories, or alteratively just directlylink to a category.
+be a portal to a bunch of categories, or alternatively just directly link to a category.
 
 ## Default config
 

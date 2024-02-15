@@ -4,7 +4,7 @@ Requires an item to have a certain data value present on it
 
 # Example Config
 ```yaml
-- id: item_data_equals
+- id: has_item_data
   args:
     key: owner # The data key
 ```

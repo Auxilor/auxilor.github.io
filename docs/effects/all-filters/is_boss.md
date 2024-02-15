@@ -1,6 +1,6 @@
 # `is_boss`
 
-If the entity must be a boss (supports vanilla bosses and EcoBosses)
+If the entity must be a boss
 
 # Example Config
 ```yaml

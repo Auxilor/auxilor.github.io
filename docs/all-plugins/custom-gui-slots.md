@@ -5,7 +5,7 @@ sidebar_position: 7
 
 ## What are custom GUI slots?
 
-When configuring a GUI in a plugin, you might stumble accross this:
+When configuring a GUI in a plugin, you might stumble across this:
 
 ```yaml
 # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots

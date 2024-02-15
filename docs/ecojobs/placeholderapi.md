@@ -15,3 +15,4 @@ sidebar_position: 3
 | `%ecojobs_total_job_level%`          | Shows the level of all jobs combined                   |
 | `%ecojobs_limit%`                    | Shows the max amount of jobs a player can join at once |
 | `%ecojobs_in_jobs%`                  | Shows the amount of jobs a player is currently in      |
+| `%ecojobs_top_<id>_<position[0-9]>_<name/amount>%` | Leaderboard placeholder for job level                 |

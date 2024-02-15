@@ -20,3 +20,4 @@ sidebar_position: 6
 | `%ecoskills_<skill>_percentage_progress%` | Shows the percentage progress until the next skill level                                 |
 | `%ecoskills_<skill>_current_xp%`          | Shows the current skill XP                                                               |
 | `%ecoskills_<skill>_required_xp%`         | Shows the skill XP required for the next level                                           |
+| `%ecoskills_top_<id>_<position[0-9]>_<name/amount>%` | Leaderboard placeholder for skill level                                                  |

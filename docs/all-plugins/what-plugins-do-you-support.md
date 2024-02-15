@@ -22,6 +22,8 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - CrashClaim
 - CombatLogX
 - FabledSkyblock
+- HuskClaims
+- HuskTowns
 
 ## Anticheat
 - AAC
@@ -43,6 +45,7 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - MythicMobs
 - Scyther
 - Denizen
+- ItemBridge
 
 ## Shop
 - ShopGUIPlus
@@ -57,6 +60,10 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 
 ## Economy
 - Vault
+
+## Custom Terrain
+- Terra
+- TerraformGenerator
 
 ## Misc
 - mcMMO

@@ -1,6 +1,6 @@
 # `items`
 
-The list of items where if the drops contain the item then the effect can activate
+Requires the item(s) provided to be in a certain set of items
 
 # Example Config
 ```yaml

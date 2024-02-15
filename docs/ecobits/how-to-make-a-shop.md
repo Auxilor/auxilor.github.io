@@ -12,8 +12,7 @@ The default configs can be found here:
 ## How to add currencies
 
 EcoBits lets you make as many currencies as you want, and you make each one by adding a new
-entry to the `currencies` list. Simply add and remove currencies as you please to add and
-remore currencies.
+entry to the `currencies` list. Simply add and remove currencies as you please.
 
 ## Example Currency Config
 

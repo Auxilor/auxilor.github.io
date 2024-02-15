@@ -8,6 +8,6 @@ Requires a player to be within a certain radius of an entity
   args:
     entities: # The list of entities
       - zombie
-      - ecobosses:illusioner
+      - ecomobs:illusioner
     radius: 25 # The radius
 ```
