@@ -15,10 +15,6 @@ Permission: `ecobits.command.pay`
 
 Permission: `ecobits.command.balance`
 
-## `/<currency> balance` (Get your balance)
-
-Permission: `ecobits.command.balance`
-
 ## `/<currency> get` (Get the balance of another player)
 
 Permission: `ecobits.command.get`

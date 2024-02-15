@@ -47,7 +47,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `entity_catch_fire_from_entity` | Triggered when an entity catches fire from an entity                                                              | 1                                             |
 | `entity_damage_by_entity`       | Triggered when an entity takes damage from another entity                                                         | The damage taken                              |
 | `entity_damage`                 | Triggered when an entity takes damage                                                                             | The damage taken                              |
-| `entity_death`                  | Triggered when an entity takesdies                                                                                | 1                                             |
+| `entity_death`                  | Triggered when an entity dies                                                                                     | 1                                             |
 | `entity_item_drop`              | Triggered when a killed entity drops loot                                                                         | The amount of items dropped                   |
 | `entity_spawn`                  | Triggered when an entity spawns                                                                                   | 1                                             |
 | `entity_target`                 | Triggered when an entity targets another entity                                                                   | 1                                             |
@@ -109,14 +109,14 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `start_quest`                   | Triggered when starting a quest **Requires EcoQuests**                                                            | 1                                             |
 | `static_%interval%`             | Run every x ticks, eg `static_20` would run every second                                                          | 1                                             |
 | `swap_hands`                    | Triggered when swapping items in hands (F by default)                                                             | 1                                             |
-| `swing`                         | Triggered when swining an item, hand or weapon **Requires Paper**                                                 | 1                                             |
+| `swing`                         | Triggered when swinging an item, hand or weapon **Requires Paper**                                                | 1                                             |
 | `take_damage`                   | Triggered when taking damage from any source                                                                      | The damage taken                              |
 | `take_entity_damage`            | Triggered when taking damage from an entity or player                                                             | The damage taken                              |
 | `tame_animal`                   | Triggered when taming an animal                                                                                   | 1                                             |
 | `teleport`                      | Triggered when teleporting                                                                                        | 1                                             |
-| `toggle_flight`                 | Triggered when chainging the flight state                                                                         | 1                                             |
-| `toggle_sneak`                  | Triggered when chainging the sneak state                                                                          | 1                                             |
-| `toggle_sprint`                 | Triggered when chainging the sprint state                                                                         | 1                                             |
+| `toggle_flight`                 | Triggered when changing the flight state                                                                          | 1                                             |
+| `toggle_sneak`                  | Triggered when changing the sneak state                                                                           | 1                                             |
+| `toggle_sprint`                 | Triggered when changing the sprint state                                                                          | 1                                             |
 | `trident_attack`                | Triggered on injuring an entity with a thrown trident                                                             | The damage dealt                              |
 | `villager_trade`                | Triggered when trading with a villager **Requires Paper**                                                         | The experience the villager gains             |
 | `win_raid`                      | Triggered when a player wins a raid                                                                               | The level of bad omen                         |

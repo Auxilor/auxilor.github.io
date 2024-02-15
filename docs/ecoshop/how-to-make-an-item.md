@@ -72,7 +72,7 @@ Of course, you can't sell a command, so they're buy-only.
 ```yaml
 id: iron_rank
 
-command: #I Changed the commands: to command: because it doesnt work with an "s"
+command: # I Changed the commands: to command: because it doesn't work with an "s"
   - lp user %player% parent set iron
 
 buy:

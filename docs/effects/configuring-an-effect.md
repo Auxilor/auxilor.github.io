@@ -137,6 +137,14 @@ args:
     every: 3
 ```
 
+#### `require`
+
+Require an expression to be true for the effect to run.
+
+```yaml
+args:
+    require: '%ecobits_crystals% > 4'
+```
 #### `mana_cost`
 
 The mana cost required to use or activate this effect. **Requires Aurelium Skills.** (defaults to 0)
@@ -166,7 +174,7 @@ args:
 
 #### `repeat`
 
-Specify the effect to activate repeadetly. If the effect has a delay, it will delay between each repeat.
+Specify the effect to activate repeatedly. If the effect has a delay, it will delay between each repeat.
 If the effect has any mutators, they will run again for each repeat.
 
 This provides new placeholders: `%repeat_times%`, `%repeat_start%`, `%repeat_increment%`, and `%repeat_count%`.
@@ -373,6 +381,6 @@ arguments, et cetera.
 ## Load Weight
 
 All configs are loaded alphabetically by default. However, if you have a config that depends on
-another one, for example an EcoItems item thats crafted with another EcoItems item, you can add
+another one, for example an EcoItems item that's crafted with another EcoItems item, you can add
 `load-weight: <weight>`. All configs have a default load weight of 100, and it's loaded in ascending
 order, so a config with a load weight of 10 is loaded before a load weight of 20.

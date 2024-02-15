@@ -10,4 +10,4 @@ sidebar_position: 3
 | `%ecobits_<id>_formatted%`                         | The formatted amount of the currency a player has                     |
 | `%ecobits_<id>_max%`                               | The maximum amount of the currency defined in config.yml              |
 | `%ecobits_<id>_name%`                              | The name of the currency as specified in config.yml                   |
-| `%ecobits_top_<id>_<position[0-9]>_<name/amount>%` | Allows you to display rankings in the amount of currency players have |
+| `%ecobits_top_<id>_<position[0-9]>_<name/amount>%` | Leaderboard placeholder for currency amounts             |

@@ -1,6 +1,6 @@
 # `at_least_of`
 
-Requires a leat a certain mount of a certain list of conditions to be met
+Requires at least a certain mount of a certain list of conditions to be met
 
 # Example Config
 ```yaml
