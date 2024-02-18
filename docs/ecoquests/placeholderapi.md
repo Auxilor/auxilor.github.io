@@ -24,3 +24,14 @@ sidebar_position: 4
 | `%ecoquests_quest_<quest>_task_<task>_xp%`          | The XP the player has for the task                          |
 | `%ecoquests_quest_<quest>_task_<task>_description%` | The description of the task                                 |
 | `%ecoquests_quest_<quest>_task_<task>_completed%`   | If the player has completed the task (true / false)         |
+
+### Task-Amount Placeholders
+These placeholders are dependent on the amount of tasks in the quest, they return the info on the active tasks.
+
+| Placeholder                                                               | Description                                                           |
+|---------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| `%ecoquests_quest_<quest>_task_<task_number[0-9]>_required_xp%`           | The XP required to complete the [numbered] active task                |
+| `%ecoquests_quest_<quest>_task_<task_number[0-9]>_xp%`                    | The XP the player has for the [numbered] active task                  |
+| `%ecoquests_quest_<quest>_task_<task_number[0-9]>_completed%`             | If the player has completed the [numbered] active task (true / false) |
+| `%ecoquests_quest_<quest>_task_<task_number[0-9]>_description%`           | The description of the [numbered] active task                         |
+| `%ecoquests_quest_<quest>_task_<task_number[0-9]>_completed_description%` | The description (including completion) of the [numbered] active task  |
