@@ -1,6 +1,6 @@
 ---
 title: "Custom Arguments"
-sidebar_position: 10
+sidebar_position: 11
 ---
 
 You can create custom effect arguments to reuse common logic between

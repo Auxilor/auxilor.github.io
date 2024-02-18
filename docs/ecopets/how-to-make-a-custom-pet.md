@@ -155,7 +155,7 @@ spawn-egg:
 
 **level-xp-requirements:** The XP requirements for each level
 
-**xp-gain-methods:** The way the pet can be levelled. Each ID is a trigger - triggers give values such as damage dealt (with attack triggers), distance moved (with the move trigger), et cetera. Other triggers with no obvious value give an output of 1.
+**xp-gain-methods:** The way the pet can be levelled. Each ID is a trigger - triggers give values such as damage dealt (with attack triggers), distance moved (with the move trigger), etc.. Other triggers with no obvious value give an output of 1.
 
 **level-placeholders:** Custom placeholders for messages / lore
 

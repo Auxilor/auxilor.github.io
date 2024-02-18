@@ -1,6 +1,6 @@
 ---
 title: "Item Levels"
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 Item Levels work similarly to item points, but instead of being set directly, they're levelled up by gaining XP.

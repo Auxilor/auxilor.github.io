@@ -1,6 +1,6 @@
 ---
 title: "The Points System"
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 Points are similar to currencies, however they exist purely as a way to keep track of something in a player. For
