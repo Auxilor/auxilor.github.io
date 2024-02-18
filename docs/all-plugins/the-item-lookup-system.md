@@ -25,9 +25,9 @@ This looks completely meaningless, but it's actually really simple. A crafting r
 
 ## Keys Explained
 In each string is the key for an item. A key looks one of three ways:
-- A vanilla minecraft material: (eg `golden_apple`)
-- An item from another plugin: (eg `ecoitems:packmaster_tear`)
-- An exact item NBT tag: (eg `{id:"stone",Count:3,tag:{Name:"your name"}}`)
+- A vanilla minecraft material: (e.g. `golden_apple`)
+- An item from another plugin: (e.g. `ecoitems:packmaster_tear`)
+- An exact item NBT tag: (e.g. `{id:"stone",Count:3,tag:{Name:"your name"}}`)
 
 You may also have noticed the `?` in some of the items. This means 'try to use the first item, but if it doesn't exist, use the second item' You can chain these together, but they're actually only useful for me to provide integrations in default configs without breaking things for people who don't use all my plugins together.
 
@@ -41,7 +41,7 @@ When using exact item NBT, you can't use `?`. `||`, or other modifiers.
 Items can have modifiers applied to them in the key. For example, lets say you're configuring the GUI for EcoSkills. You want it to be a player head with a texture, but you're not sure how to do that, because it looks like you have to just specify a material. Actually, in all of my plugins, wherever it asks for a material, it's actually doing a lookup. You can specify any of the following modifiers to it:
 - **Enchantments:** You specify an enchantment by adding `<enchantment>:<level>` to the key, and you can chain these together
 - **Skull Texture:** If the material is a player head, you can specify the texture with `texture:<base64>`. A list of skulls and textures can be found [here](https://minecraft-heads.com/).
-- **Player Head:** If the material is a player head, you can specify a player using `head:<name>`. You can also use placeholders, eg: `head:%player%`
+- **Player Head:** If the material is a player head, you can specify a player using `head:<name>`. You can also use placeholders, e.g. `head:%player%`
 - **Reforge:** If you have reforges installed, you can specify the reforge by adding `reforge:<id>` to the key.
 - **Name:** You can specify the display name of an item with `name:<name>`. You can have multiple words by surrounding the name with quotes: `name:"Long Name"`
 - **Item Flags:** You can specify flags for the item to have, by dropping in any of [these values](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemFlag.html) (not case sensitive) 

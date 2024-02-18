@@ -43,7 +43,7 @@ The example effect: 10% chance to spawn 10 soul particles in the centre of a dia
 
 **filters**: The list of filters to be applied on the trigger. (e.g. `blocks` filter on `mine_block` trigger, or `entities` filter on `melee_attack` trigger.)
 
-**conditions**: As well as each effect holder (eg Talisman, Reforge, Enchant) having its own conditions, you can specify
+**conditions**: As well as each effect holder (e.g. Talisman, Reforge, Enchant) having its own conditions, you can specify
 a list of effect-specific conditions that work in exactly the same way
 
 **mutators**: Mutate the data sent to the effect: you can change parameters such as the victim, the location, etc.
@@ -224,8 +224,8 @@ you only use placeholders with numeric values, as you will get weird behaviour o
 
 There are also extra placeholders passed in that you can use:
 
-`%trigger_value%`, `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, and `%t%`: The value passed by the trigger (
-e.g. the amount of damage dealt; see [here](https://plugins.auxilor.io/effects/all-triggers)).
+`%trigger_value%`, `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, and `%t%`: The value passed by the trigger 
+(e.g. the amount of damage dealt; see [here](https://plugins.auxilor.io/effects/all-triggers)).
 
 `%player%`: The player's name
 
@@ -258,115 +258,6 @@ If the victim is a player, you can supply any placeholder prefixed with `victim_
 `%location_block_z%`, `%loc_b_z%`, `%block_z%`, and `%bz%`: The block z-coordinate of the location
 
 `%location_world%`, `%loc_w%`, and `%world%`: The world name of the location
-
-
-
-
-## Effect Chains
-
-Effect chains are groups of effects that can be executed together. This is very useful if you want to create a
-chance-based effect with several components: chance is calculated independently on each trigger, so without chains,
-particles and messages could send when the effects don't activate, and vice-versa.
-
-Effect chains are also useful to re-use more complex logic, via custom arguments that you can specify.
-These work like regular placeholders, and you reference them in your chains with `%<id>%`, for example `%size%` if you
-had a size argument.
-
-You can create a chain in config, under the 'chains' section - which should look like this:
-
-```yaml
-chains:
-    - id: <chain id>
-      effects:
-          - <effect 1>
-          - <effect 2>
-          - <effect 3>
-```
-
-**Effects in chains do not need to specify triggers as they are triggered by the run_chain effect**
-
-You can add or remove as many chains as you want. Then, if you want to call a chain, use the `run_chain` effect, like
-this:
-
-```yaml
-id: run_chain
-args:
-    chance: 50 * (%player_health% / 20) # Example to demonstrate placeholders in config
-    cooldown: 2
-    chain: <chain id>
-triggers:
-    - melee_attack
-    - bow_attack
-    - trident_attack
-filters:
-    entities:
-        - zombie
-        - creeper charged
-        - skeleton
-```
-
-Custom arguments can be specified like this:
-
-```yaml
-id: run_chain
-args:
-    chain: <chain id>
-    chain_args:
-        strength: %player_y% * 100 # You can put anything you want, doesn't only have to be numbers - you can use strings too!
-        ... add whichever arguments you use in your chain
-```
-
-## Inline Chains
-
-If you don't want to re-use chains, or if you prefer having them specified directly under the effect, you can specify
-effects like this instead:
-
-```yaml
-effects:
-    - <effect 1>
-    - <effect 2>
-    - <effect 3>
-triggers:
-    - mine_block
-args:
-    every: 3
-```
-
-Inline chains also support custom arguments, just like regular chains.
-
-Effects in chains run isolated, so applying a mutator to one effect in the chain will apply it only to that effect -
-however, you can specify a mutator to the parent effect which will be applied to all
-effects in the chain. The same works for delays, e.g. if an effect in a chain has a delay of 2, it won't hold up other
-effects down the chain.
-
-Effect chains also support several run types:
-
-- **normal**: All effects in the chain will be ran, one after another
-- **cycle**: Only one effect will be ran, and it cycles through each effect each time the chain is ran
-- **random**: Only one effect will be ran, chosen at random on each execution
-
-To specify the run type, add the `run-type` argument into config:
-
-```yml
-effects:
-    - triggers:
-          - alt_click
-      effects:
-          - <effect 1>
-          - <effect 2>
-          - <effect 3>
-      args:
-          run-type: random
-          chance: 30
-... filters, mutators, etc
-```
-
-This is an alternative way of configuring your effects; you don't specify a top-level effect ID, instead you specify a
-list of effects to be called. This can be thought of as being more trigger-centric; multiple triggers to multiple
-effects straight away, no worrying about the underlying chain.
-
-These work exactly like inline chains (they are inline chains), so everything is still supported; run-type, custom
-arguments, etc.
 
 ## Load Weight
 
