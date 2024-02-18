@@ -46,7 +46,7 @@ The example effect: 10% chance to spawn 10 soul particles in the centre of a dia
 **conditions**: As well as each effect holder (eg Talisman, Reforge, Enchant) having its own conditions, you can specify
 a list of effect-specific conditions that work in exactly the same way
 
-**mutators**: Mutate the data sent to the effect: you can change parameters such as the victim, the location, etc..
+**mutators**: Mutate the data sent to the effect: you can change parameters such as the victim, the location, etc.
 A mutator, like an effect or condition, consists of an ID and arguments.
 
 ## Optional Arguments
@@ -366,7 +366,7 @@ list of effects to be called. This can be thought of as being more trigger-centr
 effects straight away, no worrying about the underlying chain.
 
 These work exactly like inline chains (they are inline chains), so everything is still supported; run-type, custom
-arguments, etc..
+arguments, etc.
 
 ## Load Weight
 
