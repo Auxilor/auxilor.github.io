@@ -31,7 +31,7 @@ effects:
         args:
           y: 10
 ```
-The example effect: 10% chance to spawn 10 soul particles in the centre of a diamond ore when its mined and the player is below Y level 10.
+The example effect: 25% chance to spawn 10 soul particles in the centre of a diamond ore when its mined and the player is below Y level 10.
 
 ## Understanding The Sections
 
