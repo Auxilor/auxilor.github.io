@@ -43,7 +43,7 @@ Let's break down each section:
 to use a unique ID for every item in all of your shops.
 
 `item`: This is the actual item we're selling. It supports custom items, enchantments,
-custom names, amounts, reforges, et cetera - read
+custom names, amounts, reforges, etc. - read
 more [here](https://plugins.auxilor.io/all-plugins/the-item-lookup-system)
 
 `buy`: If you want to make your item purchasable, this is where you specify the buy price.

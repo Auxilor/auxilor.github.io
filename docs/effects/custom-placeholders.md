@@ -1,6 +1,6 @@
 ---
 title: "Custom Placeholders"
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 You can create custom placeholders to reuse mathematical expressions or to have global

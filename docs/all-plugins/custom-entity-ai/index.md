@@ -16,5 +16,5 @@ A goal consists of a key, a priority, and some arguments (options) - for example
     speed: 0.6
     canBeScared: false
 ```
-Priorities are calculated in descending order, so 0 is the top priority, et cetera.
+Priorities are calculated in descending order, so 0 is the top priority, etc.
 All items use item lookup strings, as do all entities, so you can use custom items and entities in your goals.

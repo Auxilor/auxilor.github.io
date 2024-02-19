@@ -68,7 +68,7 @@ gui:
 
 **messages:** The messages that are broadcast when a booster activates/deactivates. You can use %player% as a placeholder.
 
-**gui:** Config for how the booster looks in gui: the item, the lore, the name, et cetera.
+**gui:** Config for how the booster looks in gui: the item, the lore, the name, etc..
 
 ### Effects + Conditions
 

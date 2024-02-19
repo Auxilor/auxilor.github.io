@@ -1,6 +1,6 @@
 ---
 title: "Configuring a Condition"
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 Like effects, mutators, and entity goals, conditions consist of an ID and arguments.
