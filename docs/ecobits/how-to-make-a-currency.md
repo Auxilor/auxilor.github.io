@@ -5,9 +5,7 @@ sidebar_position: 2
 
 ## Default config
 
-The default configs can be found here:
-
-[GitHub](https://github.com/Auxilor/EcoBits/blob/master/eco-core/core-plugin/src/main/resources/config.yml)
+The default configs can be found [here](https://github.com/Auxilor/EcoBits/blob/master/eco-core/core-plugin/src/main/resources/config.yml).
 
 ## How to add currencies
 
@@ -32,3 +30,8 @@ currencies:
           - crystals
           - ecocrystals
 ```
+
+## Using EcoBits currencies
+
+You can use your EcoBits anywhere within effects using the [Price](https://plugins.auxilor.io/all-plugins/prices) system.
+By setting your EcoBits currency as your Vault currency you can use your currency in other plugins too. Other plugins can also interact with EcoBits using the [placeholders](https://plugins.auxilor.io/ecobits/placeholderapi) and [commands](https://plugins.auxilor.io/ecobits/commands-and-permissions).

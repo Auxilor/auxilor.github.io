@@ -3,12 +3,15 @@ title: "How to make an enchant"
 sidebar_position: 3
 ---
 
-## Config Layout
+## Default config
+The default configs can be found [here](https://github.com/Auxilor/EcoEnchants/tree/master/eco-core/core-plugin/src/main/resources/enchants).
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
-Each enchantment has its own config file, they are stored in `/enchants/<id>.yml` so for example Telekinesis would be stored in `/enchants/telekinesis.yml`
+## How to add enchantments
+Each enchant is its own config file, placed in the `/enchants/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-If you want to add or remove enchantments, just create or delete config files. These config files can be placed anywhere in the `/enchants/` folder, including in subfolders.
-
+The ID of the enchantment is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+ID's must be lowercase letters, numbers, and underscores only.
 
 ## Example Enchantment Config
 
@@ -47,8 +50,6 @@ conditions: [ ]
 ```
 
 ## Understanding all the sections
-**id:** The ID of the enchantment. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
-ID's must be lowercase letters, numbers, and underscores only.
 
 **display-name:** The name of the enchantment, displayed in the item lore.
 
@@ -72,10 +73,14 @@ ID's must be lowercase letters, numbers, and underscores only.
 
 **enchantable:** If the enchantment can be obtained from enchanting tables.
 
-### Effects + Conditions
+### Effects
 
-Effects are the actual functionality of the job, and conditions are requirements that a player must meet for the job to activate for them - so you can make it so a job only works for a certain type of player, ie only players that have above a certain amount of playtime, or those that only have below a certain balance.
+The effects section is the core functionality of the enchants. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchantment is active.
 
-See this page for how to configure effects:
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
-[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+### Internal Placeholders
+
+`%level%` Returns the level of the custom enchantment. Useful for creating enchantments that get stronger as the level increases.

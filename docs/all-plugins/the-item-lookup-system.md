@@ -25,7 +25,7 @@ This looks completely meaningless, but it's actually really simple. A crafting r
 
 ## Keys Explained
 In each string is the key for an item. A key looks one of three ways:
-- A vanilla minecraft material: (e.g. `golden_apple`)
+- A vanilla minecraft material ID: (e.g. `golden_apple`)
 - An item from another plugin: (e.g. `ecoitems:packmaster_tear`)
 - An exact item NBT tag: (e.g. `{id:"stone",Count:3,tag:{Name:"your name"}}`)
 
@@ -49,6 +49,7 @@ Items can have modifiers applied to them in the key. For example, lets say you'r
 - **Custom Model Data:** You can specify custom model data with `custom-model-data:<id>`
 - **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
 - **Spawner Entity:** You can specify the spawner entity with `entity:<id>`
+- **Leather Armor Color:** You can specify the leather armor color with `color:#hex`, e.g. `color:#303030`
 
 So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weapon with extra modifiers already applied. Without the Item Lookup system, this wouldn't be possible, but thanks to it, you can just do this: `ecoitems:enlightened_blade razor:4 unbreaking:3 criticals:2 fire_aspect:2 reforge:mighty unbreakable hide_attributes custom-model-data:2`
 

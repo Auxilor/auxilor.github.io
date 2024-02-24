@@ -9,7 +9,7 @@ At the core of EcoArmor are the sets. A player must be wearing a full set of any
 
 Armor pieces themselves have 2 distinct upgrades / properties:
 
-### Tiers
+## Tiers
 
 Tiers are attribute modifiers given to each individual piece in the set. These can be different for all armor pieces and will apply to the player even if they're not wearing the full set. This modifies things like the armor value (shown in the hotbar), the armor protection, movement speed, etc.
 
@@ -18,9 +18,9 @@ Tiers are modified using **Upgrade Crystals**. Of course, you can rename this ho
 The default tier tree looks like this:
 
 ```yaml
-                                              /-> exotic
+                                            /-> exotic
 default --> iron --> diamond --> netherite --> manyullyn
-          \-> cobalt --> osmium
+         \-> cobalt --> osmium
 
 ancient --> mythic
 ```
@@ -31,7 +31,7 @@ Ancient and Mythic aren't craftable by default and exist more as a special tier,
 
 You can make your own progression in config, this exists purely as an example.
 
-### Advancement
+## Advancement
 
 Advancement is an upgrade that must be applied to all items in the set before the bonus effects kick in. These can be more powerful versions of the base effects, or entirely new effects and potion effects altogether. For example, in the default config, **Reaper Armor** gives 1.25x attack damage, whereas **Advanced Reaper Armor** gives 1.5x attack damage and a 10% incoming damage reduction bonus.
 
