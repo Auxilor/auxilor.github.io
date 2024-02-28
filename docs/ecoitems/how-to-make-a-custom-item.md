@@ -79,7 +79,7 @@ conditions:
 
 **display-name:** The item name in-game.
 
-**lore:** the item lore shown in-game. Set to `lore: []` to remove all lore lines.
+**lore:** The item lore shown in-game. Set to `lore: []` to remove all lore lines.
 
 **craftable:** If the item should be craftable (true/false).
 
@@ -97,7 +97,7 @@ conditions:
 
 **base-attack-speed:** the item base attack speed. You can find the vanilla attack speed values on the [Minecraft Wiki](https://minecraft.wiki/w/Damage#Dealing_damage).
 
-### Effects
+### Effects & Conditions
 
 The effects section is the core functionality of the EcoItem. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchantment is active.
 

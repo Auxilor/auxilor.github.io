@@ -88,7 +88,7 @@ gui:
 
 **position:** The position in the `/boosters` GUI.
 
-### Effects
+### Effects & Conditions
 
 The effects section is the core functionality of the Booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchantment is active.
 

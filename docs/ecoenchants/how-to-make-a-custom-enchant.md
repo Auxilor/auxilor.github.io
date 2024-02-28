@@ -73,7 +73,7 @@ conditions: [ ]
 
 **enchantable:** If the enchantment can be obtained from enchanting tables.
 
-### Effects
+### Effects & Conditions
 
 The effects section is the core functionality of the enchants. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchantment is active.
 

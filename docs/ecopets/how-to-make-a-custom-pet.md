@@ -175,7 +175,7 @@ spawn-egg:
 
 **spawn-egg:** Config for the spawn egg
 
-### Effects + Conditions
+### Effects & Conditions
 
 Effects are the actual functionality of the pet, and conditions are requirements that a player must meet for the pet to activate for them - so you can make it so a pet only works for a certain type of player, ie only players that have above a certain amount of playtime, or those that only have below a certain balance.
 

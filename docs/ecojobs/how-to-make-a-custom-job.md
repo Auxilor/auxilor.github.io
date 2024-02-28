@@ -205,7 +205,7 @@ icon: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dX
 
 **icon:** The GUI icon
 
-### Effects + Conditions
+### Effects & Conditions
 
 Effects are the actual functionality of the job, and conditions are requirements that a player must meet for the job to activate for them - so you can make it so a job only works for a certain type of player, ie only players that have above a certain amount of playtime, or those that only have below a certain balance.
 
