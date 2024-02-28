@@ -78,7 +78,7 @@ gui:
 
 **messages:** Broadcast messages to be sent when the Booster is activated or expires.
 
-### GUI:
+#### GUI:
 
 **item:** The item shown in the `/boosters` GUI, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 

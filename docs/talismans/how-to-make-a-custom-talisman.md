@@ -13,7 +13,7 @@ Each talisman is its own config file, placed in the `/talismans/` folder, and yo
 The ID of the Talisman is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
-### Example Talisman Config
+## Example Talisman Config
 
 ```yaml
 name: "&aArchery Talisman I" # The display name of the talisman
@@ -48,7 +48,7 @@ effects:
 conditions: []
 ```
 
-### Understanding all the sections
+## Understanding all the sections
 
 **name**: The item name in-game.
 
