@@ -28,6 +28,8 @@ sidebar_position: 4
 ### Task-Amount Placeholders
 These placeholders are dependent on the amount of tasks in the quest, they return the info on the active tasks.
 
+Example: `task-amount: 1` You would use `%ecoquests_quest_<quest>_task_1_required_xp%` to see XP required for the 1st task.
+
 | Placeholder                                                               | Description                                                           |
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | `%ecoquests_quest_<quest>_task_<task_number[0-9]>_required_xp%`           | The XP required to complete the [numbered] active task                |

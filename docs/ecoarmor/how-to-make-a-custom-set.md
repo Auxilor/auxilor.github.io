@@ -317,7 +317,7 @@ advancedLore: # Lore to be added to the armor piece when it has been advanced.
 
 ### Effects / AdvancedEffects
 
-The effects section is the core functionality of the Armor Set. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchantment is active.
+The effects section is the core functionality of the Armor Set. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the full set is worn.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
@@ -433,7 +433,7 @@ helmet:
 
 ### Effects / AdvancedEffects
 
-The effects section is the core functionality of the Armor Set. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchantment is active.
+The effects section is the core functionality of the Armor Set. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the armor piece is worn.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 

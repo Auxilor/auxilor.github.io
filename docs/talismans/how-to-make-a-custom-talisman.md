@@ -64,7 +64,7 @@ conditions: []
 
 ### Effects & Conditions
 
-The effects section is the core functionality of the EcoItem. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchantment is active.
+The effects section is the core functionality of the Talisman. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the talisman is active.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 

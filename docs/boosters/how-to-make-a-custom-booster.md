@@ -78,7 +78,7 @@ gui:
 
 **messages:** Broadcast messages to be sent when the Booster is activated or expires.
 
-#### GUI:
+#### GUI
 
 **item:** The item shown in the `/boosters` GUI, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 
@@ -90,7 +90,7 @@ gui:
 
 ### Effects & Conditions
 
-The effects section is the core functionality of the Booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchantment is active.
+The effects section is the core functionality of the Booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is active.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
