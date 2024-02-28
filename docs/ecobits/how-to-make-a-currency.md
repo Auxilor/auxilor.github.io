@@ -14,8 +14,6 @@ entry to the `currencies` list. Simply add and remove currencies as you please.
 
 ## Example Currency Config
 
-EcoBits comes with an example currency:
-
 ```yaml
 currencies:
     - id: crystals # The ID of the currency.
@@ -30,6 +28,27 @@ currencies:
           - crystals
           - ecocrystals
 ```
+
+## Understanding all the sections
+
+**id:** The ID of the currency. This is what you use in commands, [[prices]] and placeholders.
+ID's must be lowercase letters, numbers, and underscores only.
+
+**name:** The name of the currency.
+
+**default:** The default balance
+
+**max:** The maximum balance, set to -1 if no max.
+
+**payable:** If players should be able to use /ecobits pay to pay other players
+
+**decimal:**  If decimal amounts are allowed
+
+**vault:** If this currency should be registered with Vault
+
+**local:** If this currency should not sync between servers
+
+**commands:** A list of commands for this currency (for paying, balance, etc.)
 
 ## Using EcoBits currencies
 
