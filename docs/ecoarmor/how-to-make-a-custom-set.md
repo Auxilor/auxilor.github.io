@@ -78,9 +78,11 @@ shard:
     - prismarine_shard
     - ecoarmor:set_reaper_helmet
     - prismarine_shard
+     
     - ecoarmor:set_reaper_chestplate
     - nether_star
     - ecoarmor:set_reaper_leggings
+     
     - prismarine_shard
     - ecoarmor:set_reaper_boots
     - prismarine_shard
@@ -102,9 +104,11 @@ helmet:
     - ecoitems:armor_core ? air
     - nether_star
     - ecoitems:armor_core ? air
+     
     - nether_star
     - netherite_helmet
     - nether_star
+     
     - air
     - nether_star
     - air
@@ -142,9 +146,11 @@ chestplate:
     - ecoitems:armor_core ? air
     - nether_star
     - ecoitems:armor_core ? air
+     
     - nether_star
     - netherite_chestplate
     - nether_star
+     
     - air
     - nether_star
     - air
@@ -171,9 +177,11 @@ elytra:
     - ecoitems:armor_core ? air
     - nether_star
     - ecoitems:armor_core ? air
+     
     - nether_star
     - elytra
     - nether_star
+     
     - air
     - nether_star
     - air
@@ -200,9 +208,11 @@ leggings:
     - ecoitems:armor_core ? air
     - nether_star
     - ecoitems:armor_core ? air
+     
     - nether_star
     - netherite_leggings
     - nether_star
+     
     - air
     - nether_star
     - air
@@ -229,9 +239,11 @@ boots:
     - ecoitems:armor_core ? air
     - nether_star
     - ecoitems:armor_core ? air
+     
     - nether_star
     - netherite_boots
     - nether_star
+      
     - air
     - nether_star
     - air
@@ -327,9 +339,11 @@ shard:
     - prismarine_shard
     - ecoarmor:set_reaper_helmet
     - prismarine_shard
+     
     - ecoarmor:set_reaper_chestplate
     - nether_star
     - ecoarmor:set_reaper_leggings
+     
     - prismarine_shard
     - ecoarmor:set_reaper_boots
     - prismarine_shard
@@ -371,9 +385,11 @@ helmet:
     - ecoitems:armor_core ? air
     - nether_star
     - ecoitems:armor_core ? air
+     
     - nether_star
     - netherite_helmet
     - nether_star
+     
     - air
     - nether_star
     - air

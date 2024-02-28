@@ -13,9 +13,11 @@ recipe:
     - ""
     - "ecoitems:toughened_string 8 ? string 64"
     - ""
+    
     - ""
     - "netherite_chestplate || diamond_chestplate"
     - ""
+    
     - "ecoitems:arachnid_oculus ? nether_star 2"
     - ""
     - "ecoitems:arachnid_oculus ? nether_star 2"
