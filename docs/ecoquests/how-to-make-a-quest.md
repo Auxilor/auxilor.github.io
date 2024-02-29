@@ -106,7 +106,7 @@ tasks:
 
 **always:** If the quest should always appear in /quests, even when not started
 
-**item:** The item to show in /quests, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+**item:** The item to show in /quests, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system)
 
 ### Effects
 
