@@ -248,20 +248,3 @@ For more advanced users or setups, you can configure chains in this section to s
 ### Internal Placeholders
 
 `%level%` The level of the skill, as an integer.
-
-## Using Skills in Effects
-
-### Skill Effects
-
-You can give Skill XP using the `give_skill_xp` effect
-You can give Skill XP naturally incl. multipliers using the `give_skill_xp_naturally` effect.
-You can multiply Skill XP gain using the `skill_xp_multiplier` effect.
-
-### Skill Conditions
-
-Check if a player has a certain skill level using the `has_skill_level` condition.
-
-### Skill Triggers
-
-`gain_skill_xp` - Triggered when gaining skill experience points **Requires EcoSkills**.
-`level_up_skill` - Triggered when levelling up **Requires EcoSkills**.

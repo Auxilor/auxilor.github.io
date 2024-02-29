@@ -58,19 +58,3 @@ For more advanced users or setups, you can configure chains in this section to s
 
 `%xp%` The amount of XP the player has in this task
 `%required-xp` The amount of XP required to complete this task
-
-## Using Tasks in Effects
-
-### Task Effects
-
-You can give Task XP incl. multipliers using the `gain_task_xp` effect.
-You can give Task XP using the `give_task_xp` effect.
-
-### Task Conditions
-
-Check if a player has completed a specific task using the `has_completed_task` condition.
-
-### Task Triggers
-
-`gain_task_xp` - Triggered when gaining task XP **Requires EcoQuests**.
-`complete_task` - Triggered when completing a task **Requires EcoQuests**.

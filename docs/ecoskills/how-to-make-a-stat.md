@@ -78,17 +78,3 @@ You can configure effects, conditions, filters, and mutators in this section to 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
-
-## Using Stats in Effects:
-### Stat Effects
-
-You can add stat levels using the `add_stat` effect.
-You can add stat levels for a limited time using the `add_stat_temporarily` effect.
-You can multiply stat levels using the `multiply_stat` effect.
-You can multiply stat levels for a limited time using the `multiply_stat_temporarily` effect.
-
-### Stat Conditions
-
-Check if a player has above stat level using the `stat_above` condition.
-Check if a player has below stat level using the `stat_below` condition.
-Check is a player's stat level is equal to a value using the `stat_equals` condition.

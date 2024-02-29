@@ -438,9 +438,3 @@ The effects section is the core functionality of the Armor Set. You can configur
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
-
-## Using EcoArmor in Effects
-
-### EcoArmor Conditions:
-
-You can check if a player is wearing an EcoArmor set using the `is_wearing_set` condition.

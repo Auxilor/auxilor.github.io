@@ -71,18 +71,3 @@ args:
     type: mana
     display: "&#40ffe6%value% 🌊 Mana"
 ```
-
-### Magic Effects
-
-You can give and take a player's magic using the `give_magic` effect.
-You can increase and decrease the magic regeneration rate using the `magic_regen_multiplier` effect.
-You can multiply the amount of magic that a player has using the `multiply_magic` effect.
-
-### Magic Conditions
-
-Check if a player's magic is above a value using the `above_magic` condition.
-Check if a player's magic is below a value using the `below_magic` condition.
-
-### Magic Triggers
-
-`regen_magic` - Triggered when regenerating magic **Requires EcoSkills***.
