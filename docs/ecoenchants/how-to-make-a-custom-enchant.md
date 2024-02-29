@@ -84,3 +84,9 @@ For more advanced users or setups, you can configure chains in this section to s
 ### Internal Placeholders
 
 `%level%` Returns the level of the custom enchantment. Useful for creating enchantments that get stronger as the level increases.
+
+## Using EcoEnchants in Effects
+
+### EcoEnchant Triggers
+
+`enchant_<type>` - Triggered when enchanting an item with a certain type of enchantment **Requires EcoEnchants**.

@@ -99,3 +99,9 @@ For more advanced users or setups, you can configure chains in this section to s
 ### Internal Placeholders
 
 `%amount%` Internal placeholder that returns the amount of the booster the player has.
+
+## Using Boosters in Effects
+
+### Booster Conditions:
+
+You can check if a booster is active using the `is_booster_active` condition.

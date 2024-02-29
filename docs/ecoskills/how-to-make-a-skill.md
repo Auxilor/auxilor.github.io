@@ -254,7 +254,7 @@ For more advanced users or setups, you can configure chains in this section to s
 ### Skill Effects
 
 You can give Skill XP using the `give_skill_xp` effect
-You can give Skill XP naturally (multipliers/messages) using the `give_skill_xp_naturally` effect.
+You can give Skill XP naturally incl. multipliers using the `give_skill_xp_naturally` effect.
 You can multiply Skill XP gain using the `skill_xp_multiplier` effect.
 
 ### Skill Conditions

@@ -115,3 +115,20 @@ The quest rewards uses the effects system. You can configure effects, conditions
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+## Using Quests in Effects
+
+### Quest Effects
+
+You can multiply Quest XP gain using the `quest_xp_multiplier` effect.
+You can start quests using the `start_quest` effect.
+
+### Quest Conditions
+
+Check if a player has completed a specific quest using the `has_completed_quest` condition.
+Check if a player has a specific quest active using the `has_quest_active` condition.
+
+### Quest Triggers
+
+`start_quest` - Triggered when starting a quest **Requires EcoQuests**.
+`complete_quest` - Triggered when completing a quest **Requires EcoQuests**.

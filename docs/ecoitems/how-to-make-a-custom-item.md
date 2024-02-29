@@ -140,3 +140,9 @@ permission: "ecoitems.craft.enchanted_emerald_block_craft" # (Optional) The perm
 
 **permission:** (Optional) The permission required to craft the recipe.
 
+
+## Using EcoItems in Effects
+
+### EcoItems Conditions
+
+Check if a player has a EcoItem using the `has_ecoitem` condition.

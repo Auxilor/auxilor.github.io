@@ -70,3 +70,8 @@ Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
+## Using Talismans in Effects
+
+### Talisman Conditions
+
+Check if a player has a talisman using the `has_talisman` condition.

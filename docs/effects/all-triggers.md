@@ -38,7 +38,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `drop_item`                     | Triggered when dropping an item                                                                                   | The amount of items                           |
 | `empty_bucket`                  | Triggered when emptying a bucket                                                                                  | 1                                             |
 | `enable`                        | Triggered when an item / enchant / etc enables                                                                    | 1                                             |
-| `enchant_%type%`                | Triggered when enchanting an item with a certain type of enchantment **Requires EcoEnchants**                     | The xp cost                                   |
+| `enchant_<type>`                | Triggered when enchanting an item with a certain type of enchantment **Requires EcoEnchants**                     | The xp cost                                   |
 | `enchant_item`                  | Triggered when enchanting an item                                                                                 | The xp cost                                   |
 | `enter_bed`                     | Triggered when entering a bed                                                                                     | 1                                             |
 | `enter_region`                  | Triggered when entering a region **Requires WorldGuard**                                                          | 1                                             |
