@@ -165,12 +165,12 @@ reward-messages:
     - " &8» &r&6%ecoskills_dynamic_mining_name% %ecoskills_dynamic_mining_numeral%"
     - "    %ecoskills_dynamic_mining_description%"
 
-# An XP Gain method takes a trigger, a multiplier, conditions, and filters.
-# The multiplier takes the value produced by the trigger and multiplies it
-# by some value to calculate the experience that should be given
+# An XP gain method takes a trigger, a multiplier, conditions, and filters.
+# The 'multiplier' takes the value produced by the trigger and multiplies it
+# Alternatively, you can use 'value' to count a specific number and not a multiplier
 xp-gain-methods:
   - trigger: break_block
-    multiplier: 0.5
+    multiplier: 0.5 # You can also use "value" here (see above comment)
     filters:
       blocks:
         - netherrack
