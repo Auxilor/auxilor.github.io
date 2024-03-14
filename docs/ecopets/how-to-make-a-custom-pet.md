@@ -167,4 +167,6 @@ For more advanced users or setups, you can configure chains in this section to s
 
 ### Internal Placeholders
 
-`%level%` The level of the pet, as an integer.
+| Placeholder | Value                                                       |
+| ----------- | ----------------------------------------------------------- |
+| `%level%`   | The player's pet level. Useful for creating scaling effects |

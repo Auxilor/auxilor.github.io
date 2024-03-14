@@ -56,5 +56,7 @@ For more advanced users or setups, you can configure chains in this section to s
 
 ### Internal Placeholders
 
-`%xp%` The amount of XP the player has in this task
-`%required-xp` The amount of XP required to complete this task
+| Placeholder     | Value                                          |
+| --------------- | ---------------------------------------------- |
+| `%xp%`          | The amount of XP the player has for the task   |
+| `%required-xp%` | The amount of XP required to complete the task |

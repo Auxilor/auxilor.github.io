@@ -98,4 +98,6 @@ For more advanced users or setups, you can configure chains in this section to s
 
 ### Internal Placeholders
 
-`%amount%` Internal placeholder that returns the amount of the booster the player has.
+| Placeholder | Value                                    |
+| ----------- | ---------------------------------------- |
+| `%amount%`  | The amount of the booster the player has |

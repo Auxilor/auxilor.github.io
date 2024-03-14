@@ -247,4 +247,6 @@ For more advanced users or setups, you can configure chains in this section to s
 
 ### Internal Placeholders
 
-`%level%` The level of the skill, as an integer.
+| Placeholder | Value                                                         |
+| ----------- | ------------------------------------------------------------- |
+| `%level%`   | The player's skill level. Useful for creating scaling effects |
