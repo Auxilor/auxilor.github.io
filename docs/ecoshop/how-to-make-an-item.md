@@ -3,156 +3,118 @@ title: "How to make an item"
 sidebar_position: 4
 ---
 
-## What are items?
+## Items
+Items are everything that can be bought or sold in the shop. They can be real items or commands, single-purchase, limited purchase, buy only, sell only, both, they can be bought with 2 different currency types - the point is, there's a lot of options to wrap your head around.
 
-Items are everything that can be bought or sold in the shop. They can be real items or
-commands, single-purchase, limited purchase, buy only, sell only, both, they can be bought
-with 2 different currency types - the point is, there's a lot of options to wrap your head around.
-
-## How do I make one?
+These items go into your category config, read here for more into: [[how-to-make-a-category|How to make a Category]]
+## How to add items
 
 ### Simple buy-sell item
 
-Let's start with a really simple shop item - if you're making a standard buy-sell shop, this
-is what most of your items will look like:
+Let's start with a really simple shop item - if you're making a standard buy-sell shop, this is what most of your items will look like:
 
 ```yaml
 id: cooked_mutton
 item: cooked_mutton
-
 buy:
   type: coins
   value: 20
   display: $%value%
   amount: 32
-
 sell:
   type: coins
   value: 10
   display: $%value%
-
 gui:
   column: 4
   row: 1
   page: 1
 ```
 
-Let's break down each section:
+#### Understanding all the sections
 
 `id`: This is the internal ID of the item. Players don't see this, but it's important
-to use a unique ID for every item in all of your shops.
+to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
-`item`: This is the actual item we're selling. It supports custom items, enchantments,
-custom names, amounts, reforges, etc. - read
-more [here](https://plugins.auxilor.io/all-plugins/the-item-lookup-system)
+`item`: This is the actual item we're selling, read here for more info: [[the-item-lookup-system|Item Lookup System]].
+##### Buy (Optional)
 
-`buy`: If you want to make your item purchasable, this is where you specify the buy price.
-Read more about prices [here](https://plugins.auxilor.io/all-plugins/prices), they're important
-to understand when making items.
+**type/value/display:** This is standard configuration of prices, read here for more info: [[prices|Price]]. Prices are configured per-item.
 
-`buy.amount`: This is an optional feature where you specify the default amount of items
-to buy with quick-buy, and the default amount of items when opening the buy amount selection
-menu. You still specify the value of only one item - this is just to give a default purchase
-quantity.
+**amount:** (Optional) The amount of items to be bought at once. Defaults to 1.
+##### Sell
 
-`sell`: This works the same as buy, except now it's the sell price.
+**type/value/display:** This is standard configuration of prices, read here for more info: [[prices|Price]]. Prices are configured per-item.
+##### GUI
 
-`gui`: These are options for how the item will show in the category. Row is top to bottom,
-column is left to right, and pages are self-explanatory.
+**row/column/page:** The location of this item in the shop
 
 ### Command Items
 
-Sometimes you want to run a command when a player buys an item rather than (or as well as)
-giving the player a real item. It's really common now in servers to have multiple currency
-setups and move things like ranks to be done from in-game shops, so let's see how you can
-do that with EcoShop.
+Sometimes you want to run a command when a player buys an item, such as giving permissions/ranks/items from other plugins not currently supported in [[the-item-lookup-system|Item Lookup System]].
 
 Of course, you can't sell a command, so they're buy-only.
 
 ```yaml
 id: iron_rank
-
-command: # I Changed the commands: to command: because it doesn't work with an "s"
+command:
   - lp user %player% parent set iron
-
 buy:
   value: "%ecomc_iron_price%"
   type: crystals
   display: "&b%value% Crystals ❖"
-
-  require: "%actions_iron_buy_is_met%"
-
   limit: 1
-
-alt-buy:
-  value: "%ecomc_iron_crystal_price%"
-  type: crystals
-  display: "&b%value% Crystals ❖"
-
-  conditions: [ ]
-
 gui:
   display:
-    item: diamond_chestplate
+    item: diamond_chestplate name:"&aIron Rank"
     lore:
       - "&fBuy &7&lIRON&r&f rank to get"
       - "&fthe following benefits:"
       - " &8»&f &eExample Perk"
-    bottom-lore:
+    bottom-lore: # You can also add lore to be put under other lore (e.g. price, quick buy/sell info, etc.)
+      - ""
       - "&e&oLeft click to buy with money,"
       - "&e&oRight click to buy with &bCrystals ❖&e&o!"
   column: 5 # The column.
   row: 3 # The row.
   page: 2 # The page.
-
-  show-quick-buy-sell: false
 ```
 
-`commands`: These are the commands to run when the player buys the item. You can use `%player%` and
-`%amount%` as placeholders.
+#### Understanding all the sections
 
-`buy.value`: You can use placeholders in values! Any PlaceholderAPI placeholder is allowed. And it
-gets a lot better than that - you can do **math** with this too. For example, `%player_y% * 100 - cos(%player_x%)`
-would be totally allowed too. That's obviously a pretty weird price, but it's possible.
+`id`: This is the internal ID of the item. Players don't see this, but it's important
+to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
-`buy.require`: This is a mathematical expression that has to be met in order to be allowed to
-buy this item. For example, you could do `%player_xp% >= 300`
+`command`: This is the command to be run when a player buys this item. You can use `%player%` and `%amount%` as placeholders.
+##### Buy
 
-`buy.conditions`: Conditions that have to be met in order to buy this item, read
-[here](https://plugins.auxilor.io/effects/configuring-a-condition) for more information!
+**type/value/display:** This is standard configuration of prices, read here for more info: [[prices|Price]]. Prices are configured per-item.
 
-`buy.limit`: The maximum amount of times a player can buy this item.
+**limit:** (Optional) The max amount of times a player can buy this item.
+##### GUI
 
-`alt-buy`: This is a secondary buying option that you can right-click the item to use. Let's say
-you have a dual currency system, you can make left-click cost money and right-click cost crystals,
-or you can make left-click cost gold ingots and right-click cost emeralds.
+**display.item:** This is the item shown in the GUI, read here for more info: [[the-item-lookup-system|Item Lookup System]].
 
-`gui.display`: This is the item that's shown to players in the shop. Commands don't have any
-item to automatically show, so you have to specify one. You can also specify a custom display item
-if you're selling items, but it's not necessary. You can optionally specify lore and bottom lore too,
-where bottom lore is shown under things like the buy price, quick buy options, etc.
+**display.lore:** This is the lore shown on the item.
 
-`gui.show-quick-buy-sell`: By default, quick buy / quick sell lore is shown on items. If you don't
-want that for this item, you can disable it here.
+**display.bottom-lore:** Lore shown under other lore, such as displaying prices.
+
+**row/column/page:** The location of this item in the shop
 
 ### Effect Items
 
 Instead of just using commands, EcoShop also has full access to the
-[effects system](https://plugins.auxilor.io/effects/configuring-an-effect), so you can run
-effects when a player buys an item, or even just put effects themselves in the shop.
+[effects system](https://plugins.auxilor.io/effects/configuring-an-effect), so you can run effects when a player buys an item, or even just put effects themselves in the shop.
 
 Like commands, these are unsellable.
 
 ```yaml
 id: my_effect_item
-
 effects: [ ]
-
 buy:
   value: 65
   type: crystals
   display: "&b%value% Crystals ❖"
-
 gui:
   display:
     item: nether_star
@@ -161,14 +123,164 @@ gui:
   column: 6 # The column.
   row: 3 # The row.
   page: 2 # The page.
-
   show-quick-buy-sell: false
 ```
 
-`effects`: These are the effects that are ran when the player buys the item. Read
-[here](https://plugins.auxilor.io/effects/configuring-an-effect) to learn more!
+#### Understanding all the sections
 
-### Extra Options
+`id`: This is the internal ID of the item. Players don't see this, but it's important
+to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
-There's some extra options that aren't shown in the above examples. If you want to explore all
-the possible options, they're showcased in the [example category](https://github.com/Auxilor/EcoShop/blob/main/eco-core/core-plugin/src/main/resources/categories/_example.yml)
+`effects`: These are the effects that are ran when the player buys the item. Read here for more info: [[configuring-an-effect|Configuring an Effect]]. **Only Triggered Effects**.
+##### Buy
+
+**type/value/display:** This is standard configuration of prices, read here for more info: [[prices|Price]]. Prices are configured per-item.
+
+**limit:** (Optional) The max amount of times a player can buy this item.
+##### GUI
+
+**display.item:** This is the item shown in the GUI, read here for more info: [[the-item-lookup-system|Item Lookup System]].
+
+**row/column/page:** The location of this item in the shop
+
+## Alt-Buy
+
+EcoShop supports buying items with multiple currencies using the `alt-buy` options. All the options that work with `buy` also apply to `alt-buy`. These are configured the same way, using the [[prices|price]] system.
+
+```yaml
+    alt-buy:
+      value: 65
+      type: crystals
+      display: "&b%value%❖"
+```
+
+## Optional Arguments
+
+### Buy
+
+#### `require`
+
+A mathematical expression that must be met to buy this item.
+
+```yaml
+buy:
+  require: "%player_xp% >= 300"
+```
+
+#### `conditions`
+
+Any conditions that must be met to buy the item. Read here for more info: [[configuring-a-condition|Configuring a Condition]].
+
+```yaml
+buy:
+  conditions:
+	- id: has_permission
+	  args:
+		permission: group.iron
+```
+
+#### `limit`
+
+The max times a player can buy this item.
+
+```yaml
+buy:
+  limit: 1
+```
+
+#### `global-limit`
+
+The max times all players can buy this item.
+
+```yaml
+buy:
+  global-limit: 1
+```
+
+#### `max-at-once`
+
+The max amount of this item a player can buy at once. (Removes the multi-buy GUI).
+
+```yaml
+buy:
+  max-at-once: 1
+```
+
+#### `amount`
+
+The amount of items to be bought at once.
+
+```yaml
+buy:
+  amount: 32
+```
+
+#### `buy-message`
+
+A message to be sent to the player when this item is bought.
+
+```yaml
+buy:
+. buy-message:
+    - "&6Thanks for buying this specific item"
+```
+
+### Sell
+
+#### `require`
+
+A mathematical expression that must be met to buy this item.
+
+```yaml
+buy:
+  require: "%player_xp% >= 300"
+```
+#### `conditions`
+
+Any conditions that must be met to sell the item. Read here for more info: [[configuring-a-condition|Configuring a Condition]].
+
+```yaml
+sell:
+  conditions:
+	- id: has_permission
+	  args:
+		permission: group.iron
+```
+
+#### `sell-message`
+
+A message to be sent to the player when this item is sold.
+
+```yaml
+sell:
+. sell-message:
+    - "&6Thanks for buying this specific item"
+```
+
+#### `sell-command`
+
+Commands to be run when the player sells this item.
+
+```yaml
+sell:
+. sell-command:
+    - "lp user parent set top.seller"
+```
+
+### GUI
+#### `show-quick-buy-sell`
+
+By default, quick buy/sell lore is shown, disable it using `show-quick-buy-sell`
+
+```yaml
+sell:
+. show-quick-buy-sell: false
+```
+
+## Internal Placeholders
+
+| Placeholder      | Value                                                       |
+| ---------------- | ----------------------------------------------------------- |
+| `%amount%`       | The amount of items the player bought                       |
+| `%value%`        | The buy/sell value, to use in price display                 |
+| `%value_commas%` | The comma separated buy/sell value, to use in price display |

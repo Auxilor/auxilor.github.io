@@ -108,7 +108,7 @@ tasks:
 
 **item:** The item to show in /quests, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system)
 
-### Effects
+### Effects & Conditions
 
 The quest rewards uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the quest is started or as rewards.
 

@@ -46,7 +46,7 @@ on-complete:
 
 **on-complete:** Effects to be run when the task is completed (Supports triggered effects). See [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
 
-### Effects
+### Effects & Conditions
 
 The task rewards uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the quest is started or as rewards.
 
@@ -54,7 +54,7 @@ Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
-### Internal Placeholders
+## Internal Placeholders
 
 | Placeholder     | Value                                          |
 | --------------- | ---------------------------------------------- |

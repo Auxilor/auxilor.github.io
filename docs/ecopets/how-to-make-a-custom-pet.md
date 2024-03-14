@@ -150,11 +150,17 @@ xp-requirements:
 ### Spawn Egg
 
 **enabled:** If the skill should show in /pets.
+
 **icon:** The item to show in /pets, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+
 **name:** The name of the spawn egg in-game.
+
 **lore:** The lore to show in /pets when hovering the icon. 
+
 **craftable:** If the item should be craftable (true/false).
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes).
+
 **recipe-permission:** (Optional) The permission required to craft the recipe.
 
 ### Effects & Conditions
@@ -165,7 +171,7 @@ Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
-### Internal Placeholders
+## Internal Placeholders
 
 | Placeholder | Value                                                       |
 | ----------- | ----------------------------------------------------------- |
