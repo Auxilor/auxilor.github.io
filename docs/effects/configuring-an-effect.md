@@ -167,7 +167,7 @@ args:
 The price required to use or activate this effect.
 
 This supports all known prices: supports money, items, points, second currencies, etc.
-Read more about the system here: https://plugins.auxilor.io/all-plugins/prices
+Read more about the system here: [Prices](https://plugins.auxilor.io/all-plugins/prices)
 
 Looks like this in config:
 

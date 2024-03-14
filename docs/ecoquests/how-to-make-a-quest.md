@@ -13,7 +13,7 @@ Each quest is its own config file, placed in the `/quests/` folder, and you can 
 The ID of the Quest is the file name. This is what you use in commands and placeholders.
 ID's must be lowercase letters, numbers, and underscores only.
 
-Quests are made up of specific [[how-to-make-a-task|tasks]], and when all tasks are completed the quest will complete, giving the player rewards!
+Quests are made up of specific [tasks](https://plugins.auxilor.io/ecoquests/how-to-make-a-task), and when all tasks are completed the quest will complete, giving the player rewards!
 
 ## Example Quest Config
 
@@ -96,7 +96,7 @@ tasks:
 
 **start-effects:** Effects to be run when the quest is started (Supports triggered effects). See [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
 
-**start-conditions:** Conditions that must be met for the quest to start. See [[configuring-a-condition|Configuring a Condition]].
+**start-conditions:** Conditions that must be met for the quest to start. See [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
 
 **auto-start:** If the quest should start automatically when the conditions are met.
 

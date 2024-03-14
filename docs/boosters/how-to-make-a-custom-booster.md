@@ -10,9 +10,9 @@ You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io
 
 ## Config Layout
 
-Each action has its own config file, placed in the `/boosters/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+Each booster has its own config file, placed in the `/boosters/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-The ID of the Booster is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+The ID of the booster is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
 ### Example Booster Config

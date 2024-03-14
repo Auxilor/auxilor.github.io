@@ -13,7 +13,7 @@ Each task is its own config file, placed in the `/tasks/` folder, and you can ad
 The ID of the Task is the file name. This is what you use in quests and placeholders.
 ID's must be lowercase letters, numbers, and underscores only.
 
-Tasks are the goals that players must complete in order to complete [[how-to-make-a-quest|quests]].
+Tasks are the goals that players must complete in order to complete [quests](https://plugins.auxilor.io/ecoquests/how-to-make-a-quest).
 
 ## Example Task Config
 

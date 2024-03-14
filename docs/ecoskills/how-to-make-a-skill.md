@@ -211,7 +211,7 @@ xp-requirements:
 **xp-formula:** A formula to calculate XP requirements for each level.
 **max-level:** The maximum level for the skill (Optional).
 
-**rewards:** The rewards given on level up - must be [[how-to-make-a-stat]] or [[effects]]. See below for more info.
+**rewards:** The rewards given on level up - must be [stats](https://plugins.auxilor.io/ecoskills/how-to-make-a-stat) or [effects](https://plugins.auxilor.io/ecoskills/how-to-make-an-effect). See below for more info.
 
 **level-up-effects:** Effects to run when the skill is levelled up (Supports triggered effects). See [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect).
 
@@ -221,20 +221,26 @@ xp-requirements:
 
 **xp-gain-methods:** The trigger, multiplier/value, conditions and filters that will award skill XP.
 
-**conditions:** Global conditions that must be met to gain skill XP. See [[configuring-a-condition|Configuring a Condition]].
+**conditions:** Global conditions that must be met to gain skill XP. See [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
 
 ### GUI
 
 **enabled:** If the skill should show in /skills.
+
 **icon:** The item to show in /skills, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+
 **lore:** The lore to show in /skills when hovering the icon. 
+
 **position:** The location of the icon in /skills, using row and column numbers.
 
 ### Rewards
 
-**reward:** The ID of the [[how-to-make-a-stat]] or [[effects]].
+**reward:** The ID of the [stat](https://plugins.auxilor.io/ecoskills/how-to-make-a-stat) or [effect](https://plugins.auxilor.io/ecoskills/how-to-make-an-effect).
+
 **levels:** The amount of levels to give the stat or effect.
+
 **start-level:** (Optional) The skill level to start giving the stat or effect (inclusive).
+
 **end-level:** (Optional) The skill level to stop giving the stat or effect (inclusive).
 
 ### Effects & Conditions

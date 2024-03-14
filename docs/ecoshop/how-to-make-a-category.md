@@ -5,7 +5,7 @@ sidebar_position: 3
 
 ## Categories
 
-Categories are how shops are organised. Items are sold / bought in categories, they're the actual 'shop' part. In the [[how-to-make-a-shop|How to make a Shop]] section, you will have seen how shops can either be a portal to a bunch of categories, or alternatively just directly link to a category.
+Categories are how shops are organised. Items are sold / bought in categories, they're the actual 'shop' part. In the [How to make a Shop](https://plugins.auxilor.io/ecoshop/how-to-make-a-shop) section, you will have seen how shops can either be a portal to a bunch of categories, or alternatively just directly link to a category.
 
 ## Default config
 The default configs can be found [here](https://github.com/Auxilor/EcoShop/blob/main/eco-core/core-plugin/src/main/resources/categories).
@@ -101,10 +101,10 @@ items:
 
 To configure a pattern and mask, read here for more info: 
 
-**custom-slots:** Any non-shop items for the GUI (eg. info items), read here for more info: [[custom-gui-slots|Custom GUI Slots]].
+**custom-slots:** Any non-shop items for the GUI (eg. info items), read here for more info: [Custom GUI Slots](https://plugins.auxilor.io/all-plugins/custom-gui-slots).
 
 ### Items
 
 This section is where you put any items that you are buying and/or selling in this category.
 
-Read here for more info on creating your shop items: [[how-to-make-an-item|How to make an Item]].
+Read here for more info on creating your shop items: [How to make an Item](how-to-make-an-item).

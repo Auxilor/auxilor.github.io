@@ -6,7 +6,8 @@ sidebar_position: 4
 ## Items
 Items are everything that can be bought or sold in the shop. They can be real items or commands, single-purchase, limited purchase, buy only, sell only, both, they can be bought with 2 different currency types - the point is, there's a lot of options to wrap your head around.
 
-These items go into your category config, read here for more into: [[how-to-make-a-category|How to make a Category]]
+These items go into your category config, read here for more into: [categories](https://plugins.auxilor.io/ecoshop/how-to-make-a-category).
+
 ## How to add items
 
 ### Simple buy-sell item
@@ -33,25 +34,25 @@ gui:
 
 #### Understanding all the sections
 
-`id`: This is the internal ID of the item. Players don't see this, but it's important
+**id:** This is the internal ID of the item. Players don't see this, but it's important
 to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
-`item`: This is the actual item we're selling, read here for more info: [[the-item-lookup-system|Item Lookup System]].
+**item:** This is the actual item we're selling, read here for more info: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
 ##### Buy (Optional)
 
-**type/value/display:** This is standard configuration of prices, read here for more info: [[prices|Price]]. Prices are configured per-item.
+**type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
 
 **amount:** (Optional) The amount of items to be bought at once. Defaults to 1.
 ##### Sell
 
-**type/value/display:** This is standard configuration of prices, read here for more info: [[prices|Price]]. Prices are configured per-item.
+**type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
 ##### GUI
 
 **row/column/page:** The location of this item in the shop
 
 ### Command Items
 
-Sometimes you want to run a command when a player buys an item, such as giving permissions/ranks/items from other plugins not currently supported in [[the-item-lookup-system|Item Lookup System]].
+Sometimes you want to run a command when a player buys an item, such as giving permissions/ranks/items from other plugins not currently supported in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
 
 Of course, you can't sell a command, so they're buy-only.
 
@@ -82,18 +83,18 @@ gui:
 
 #### Understanding all the sections
 
-`id`: This is the internal ID of the item. Players don't see this, but it's important
+**id:** This is the internal ID of the item. Players don't see this, but it's important
 to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
-`command`: This is the command to be run when a player buys this item. You can use `%player%` and `%amount%` as placeholders.
+**command:** This is the command to be run when a player buys this item. You can use `%player%` and `%amount%` as placeholders.
 ##### Buy
 
-**type/value/display:** This is standard configuration of prices, read here for more info: [[prices|Price]]. Prices are configured per-item.
+**type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
 
 **limit:** (Optional) The max amount of times a player can buy this item.
 ##### GUI
 
-**display.item:** This is the item shown in the GUI, read here for more info: [[the-item-lookup-system|Item Lookup System]].
+**display.item:** This is the item shown in the GUI, read here for more info: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
 
 **display.lore:** This is the lore shown on the item.
 
@@ -128,24 +129,24 @@ gui:
 
 #### Understanding all the sections
 
-`id`: This is the internal ID of the item. Players don't see this, but it's important
+**id:** This is the internal ID of the item. Players don't see this, but it's important
 to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
-`effects`: These are the effects that are ran when the player buys the item. Read here for more info: [[configuring-an-effect|Configuring an Effect]]. **Only Triggered Effects**.
+**effects:** These are the effects that are ran when the player buys the item. Read here for more info: [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect). **Only Triggered Effects**.
 ##### Buy
 
-**type/value/display:** This is standard configuration of prices, read here for more info: [[prices|Price]]. Prices are configured per-item.
+**type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
 
 **limit:** (Optional) The max amount of times a player can buy this item.
 ##### GUI
 
-**display.item:** This is the item shown in the GUI, read here for more info: [[the-item-lookup-system|Item Lookup System]].
+**display.item:** This is the item shown in the GUI, read here for more info: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
 
 **row/column/page:** The location of this item in the shop
 
 ## Alt-Buy
 
-EcoShop supports buying items with multiple currencies using the `alt-buy` options. All the options that work with `buy` also apply to `alt-buy`. These are configured the same way, using the [[prices|price]] system.
+EcoShop supports buying items with multiple currencies using the `alt-buy` options. All the options that work with `buy` also apply to `alt-buy`. These are configured the same way, using the [price](https://plugins.auxilor.io/all-plugins/prices) system.
 
 ```yaml
     alt-buy:
@@ -169,7 +170,7 @@ buy:
 
 #### `conditions`
 
-Any conditions that must be met to buy the item. Read here for more info: [[configuring-a-condition|Configuring a Condition]].
+Any conditions that must be met to buy the item. Read here for more info: [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
 
 ```yaml
 buy:
@@ -237,7 +238,7 @@ buy:
 ```
 #### `conditions`
 
-Any conditions that must be met to sell the item. Read here for more info: [[configuring-a-condition|Configuring a Condition]].
+Any conditions that must be met to sell the item. Read here for more info: [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
 
 ```yaml
 sell:

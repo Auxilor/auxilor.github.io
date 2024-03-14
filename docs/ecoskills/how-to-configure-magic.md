@@ -42,7 +42,7 @@ join-on-full: true
 **join-on-full:** If the player's magic should be full when they join the server (true/false).
 
 ## Using Magic in Effects
-You can use your magic in other plugins by utilizing the [[prices|price]] system.
+You can use your magic in other plugins by utilising the [price](https://plugins.auxilor.io/all-plugins/prices) system.
 
 ### Optional Effect Arguments
 You can use optional effect arguments to use magic in your effects: 
@@ -60,7 +60,7 @@ args:
 The price required to use or activate this effect.
 
 This supports all known prices: supports money, items, points, second currencies, etc.
-Read more about the system here: https://plugins.auxilor.io/all-plugins/prices
+Read more about the system here: [Prices](https://plugins.auxilor.io/all-plugins/prices)
 
 Looks like this in config:
 
