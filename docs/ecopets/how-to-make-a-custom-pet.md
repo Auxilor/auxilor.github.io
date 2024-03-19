@@ -173,6 +173,7 @@ For more advanced users or setups, you can configure chains in this section to s
 
 ## Internal Placeholders
 
-| Placeholder | Value                                                       |
-| ----------- | ----------------------------------------------------------- |
-| `%level%`   | The player's pet level. Useful for creating scaling effects |
+| Placeholder       | Value                                                       |
+| ----------------- | ----------------------------------------------------------- |
+| `%level%`         | The player's pet level. Useful for creating scaling effects |
+| `%level_numeral%` | The player's pet level shown in Roman Numerals              |
