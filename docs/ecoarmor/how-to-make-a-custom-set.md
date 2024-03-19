@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom set"
+title: How to make a Armor Set
 sidebar_position: 2
 ---
 

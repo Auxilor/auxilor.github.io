@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom job"
+title: How to make a Job
 sidebar_position: 1
 ---
 

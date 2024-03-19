@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom reforge"
+title: How to make a Reforge
 sidebar_position: 2
 ---
 
@@ -82,7 +82,7 @@ on-reforge-effects: [ ]
 **targets:** The items this reforge can be applied to, from [targets.yml](https://github.com/Auxilor/Reforges/blob/master/eco-core/core-plugin/src/main/resources/target.yml).
 
 **price:** The price to apply the reforge, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices)
-### Stone
+### Reforge Stone
 
 **enabled:** If a reforge stone is required for this reforge (true/false).
 

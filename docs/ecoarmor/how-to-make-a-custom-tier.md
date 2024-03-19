@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom tier"
+title: How to make a Tier
 sidebar_position: 3
 ---
 

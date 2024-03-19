@@ -1,5 +1,5 @@
 ---
-title: "How to make a crate"
+title: How to make a Crate
 sidebar_position: 1
 ---
 

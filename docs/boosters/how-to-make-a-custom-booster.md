@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom booster"
+title: How to make a Booster
 sidebar_position: 1
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom Talisman"
+title: How to make a Talisman
 sidebar_position: 1
 ---
 

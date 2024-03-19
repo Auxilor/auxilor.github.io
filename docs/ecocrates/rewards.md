@@ -1,5 +1,5 @@
 ---
-title: "Rewards"
+title: How to configure Rewards
 sidebar_position: 2
 ---
 

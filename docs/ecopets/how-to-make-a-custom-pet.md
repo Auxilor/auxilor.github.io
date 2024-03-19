@@ -1,5 +1,5 @@
 ---
-title: How to make a custom Pet
+title: How to make a Pet
 sidebar_position: 1
 ---
 

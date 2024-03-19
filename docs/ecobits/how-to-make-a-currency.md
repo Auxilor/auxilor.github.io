@@ -1,5 +1,5 @@
 ---
-title: "How to make a currency"
+title: How to make a Currency
 sidebar_position: 1
 ---
 

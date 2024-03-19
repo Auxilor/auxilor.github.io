@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom item"
+title: How to make an Item
 sidebar_position: 1
 ---
 

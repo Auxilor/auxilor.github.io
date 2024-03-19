@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom mob"
+title: How to make a Mob
 sidebar_position: 1
 ---
 
