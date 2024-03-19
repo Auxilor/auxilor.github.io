@@ -1,6 +1,6 @@
 ---
 title: "Commands and Permissions"
-sidebar_position: 1
+sidebar_position: 4
 ---
 
 ## `/ecopets give` (Give a pet)

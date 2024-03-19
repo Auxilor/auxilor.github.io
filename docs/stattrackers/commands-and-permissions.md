@@ -1,6 +1,6 @@
 ---
 title: "Commands and Permissions"
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ## `/stattrackers give (Give a StatTracker)`

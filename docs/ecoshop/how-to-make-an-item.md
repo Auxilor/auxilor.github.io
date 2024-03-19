@@ -1,6 +1,6 @@
 ---
 title: "How to make an item"
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 ## Items
@@ -32,21 +32,21 @@ Let's start with a really simple shop item - if you're making a standard buy-sel
     page: 1
 ```
 
-#### Understanding all the sections
+### Understanding all the sections
 
 **id:** This is the internal ID of the item. Players don't see this, but it's important
 to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
 **item:** This is the actual item we're selling, read here for more info: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
-##### Buy (Optional)
+#### Buy (Optional)
 
 **type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
 
 **amount:** (Optional) The amount of items to be bought at once. Defaults to 1.
-##### Sell
+#### Sell
 
 **type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
-##### GUI
+#### GUI
 
 **row/column/page:** The location of this item in the shop
 
@@ -81,18 +81,18 @@ Of course, you can't sell a command, so they're buy-only.
     page: 2 # The page.
 ```
 
-#### Understanding all the sections
+### Understanding all the sections
 
 **id:** This is the internal ID of the item. Players don't see this, but it's important
 to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
 **command:** This is the command to be run when a player buys this item. You can use `%player%` and `%amount%` as placeholders.
-##### Buy
+#### Buy
 
 **type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
 
 **limit:** (Optional) The max amount of times a player can buy this item.
-##### GUI
+#### GUI
 
 **display.item:** This is the item shown in the GUI, read here for more info: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
 
@@ -128,18 +128,18 @@ Like commands, these are unsellable.
     show-quick-buy-sell: false
 ```
 
-#### Understanding all the sections
+### Understanding all the sections
 
 **id:** This is the internal ID of the item. Players don't see this, but it's important
 to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
 **effects:** These are the effects that are ran when the player buys the item. Read here for more info: [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect). **Only Triggered Effects**.
-##### Buy
+#### Buy
 
 **type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
 
 **limit:** (Optional) The max amount of times a player can buy this item.
-##### GUI
+#### GUI
 
 **display.item:** This is the item shown in the GUI, read here for more info: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
 

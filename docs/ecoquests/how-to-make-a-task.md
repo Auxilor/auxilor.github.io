@@ -1,9 +1,9 @@
 ---
 title: How to make a Task
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoQuests/tree/master/eco-core/core-plugin/src/main/resources/tasks).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 

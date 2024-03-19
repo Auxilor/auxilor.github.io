@@ -1,9 +1,9 @@
 ---
 title: "How to make a custom tier"
-sidebar_position: 5
+sidebar_position: 3
 ---
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoArmor/tree/master/eco-core/core-plugin/src/main/resources/tiers).
 
 ## How to add tiers

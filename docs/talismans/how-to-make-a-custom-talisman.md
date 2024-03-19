@@ -1,9 +1,9 @@
 ---
 title: "How to make a custom Talisman"
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/Talismans/tree/master/eco-core/core-plugin/src/main/resources/talismans).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 

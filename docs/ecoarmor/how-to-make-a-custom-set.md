@@ -1,9 +1,9 @@
 ---
 title: "How to make a custom set"
-sidebar_position: 4
+sidebar_position: 2
 ---
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoArmor/tree/master/eco-core/core-plugin/src/main/resources/sets).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 

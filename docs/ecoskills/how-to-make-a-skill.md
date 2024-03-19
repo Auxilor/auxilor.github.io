@@ -1,13 +1,13 @@
 ---
 title: How to make a Skill
-sidebar_position: 4
+sidebar_position: 1
 ---
 
 ## Skills
 Skills are levelled up by completing certain tasks, and give effects, stats, and other bonuses
 when levelling up.
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoSkills/tree/master/eco-core/core-plugin/src/main/resources/skills).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 

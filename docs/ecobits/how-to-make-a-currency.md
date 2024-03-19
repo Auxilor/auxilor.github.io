@@ -1,9 +1,9 @@
 ---
 title: "How to make a currency"
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-## Default config
+## Default configs
 
 The default configs can be found [here](https://github.com/Auxilor/EcoBits/blob/master/eco-core/core-plugin/src/main/resources/config.yml).
 

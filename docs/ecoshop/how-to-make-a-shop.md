@@ -1,11 +1,11 @@
 ---
 title: "How to make a shop"
-sidebar_position: 2
+sidebar_position: 1
 ---
 ## Shops
 Creating shops is easy if you follow the the basic rules: A shop requires [categories](https://plugins.auxilor.io/ecoshop/how-to-make-a-category), and categories require [items](https://plugins.auxilor.io/ecoshop/how-to-make-an-item).
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoShop/blob/main/eco-core/core-plugin/src/main/resources/shops).
 
 ## How to add shops

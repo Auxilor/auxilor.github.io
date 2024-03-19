@@ -1,13 +1,13 @@
 ---
 title: "How to make a category"
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 ## Categories
 
 Categories are how shops are organised. Items are sold / bought in categories, they're the actual 'shop' part. In the [How to make a Shop](https://plugins.auxilor.io/ecoshop/how-to-make-a-shop) section, you will have seen how shops can either be a portal to a bunch of categories, or alternatively just directly link to a category.
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoShop/blob/main/eco-core/core-plugin/src/main/resources/categories).
 
 ## How to add shops

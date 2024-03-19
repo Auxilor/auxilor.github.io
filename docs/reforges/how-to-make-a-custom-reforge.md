@@ -1,14 +1,14 @@
 ---
 title: "How to make a custom reforge"
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/Reforges/tree/master/eco-core/core-plugin/src/main/resources/reforges).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
 ## How to add reforges
-Each regorge is its own config file, placed in the `/reforges/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+Each reforge is its own config file, placed in the `/reforges/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
 The ID of the reforge is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.

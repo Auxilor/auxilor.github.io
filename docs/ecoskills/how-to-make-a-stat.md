@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Stats
 Stats are the base values that lie at the core of EcoSkills. Think of them like attributes in vanilla, but they're shown to the player.
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoSkills/tree/master/eco-core/core-plugin/src/main/resources/stats).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 

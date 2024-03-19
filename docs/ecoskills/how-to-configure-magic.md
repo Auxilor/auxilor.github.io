@@ -1,13 +1,13 @@
 ---
 title: How to configure Magic
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 ## Magic
 Magic is an optional feature in EcoSkills that provide the ability to create naturally regenerating
 amounts of things like Mana, which can then be used in other plugins, for example in EcoItems or EcoEnchants.
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoSkills/tree/master/eco-core/core-plugin/src/main/resources/skills).
 
 ## How to add magic types
