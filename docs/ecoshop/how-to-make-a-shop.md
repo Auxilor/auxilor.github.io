@@ -125,7 +125,7 @@ There are two methods to add [categories](https://plugins.auxilor.io/ecoshop/how
 **rows:** How many rows are in the shop GUI.
 ##### Pages
 
-To configure a pattern and mask, read here for more info: 
+To configure a pattern and mask, read here for more info: [Pages](https://plugins.auxilor.io/all-plugins/pages)
 ##### Categories
 
 **id:** The ID of the category (eg. `example.yml` has an ID of `example`)

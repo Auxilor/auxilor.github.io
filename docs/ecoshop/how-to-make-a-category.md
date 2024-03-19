@@ -99,7 +99,7 @@ items:
 
 ##### Pages
 
-To configure a pattern and mask, read here for more info: 
+To configure a pattern and mask, read here for more info: [Pages](https://plugins.auxilor.io/all-plugins/pages)
 
 **custom-slots:** Any non-shop items for the GUI (eg. info items), read here for more info: [Custom GUI Slots](https://plugins.auxilor.io/all-plugins/custom-gui-slots).
 
