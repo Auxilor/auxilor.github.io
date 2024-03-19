@@ -15,21 +15,21 @@ These items go into your category config, read here for more into: [categories](
 Let's start with a really simple shop item - if you're making a standard buy-sell shop, this is what most of your items will look like:
 
 ```yaml
-id: cooked_mutton
-item: cooked_mutton
-buy:
-  type: coins
-  value: 20
-  display: $%value%
-  amount: 32
-sell:
-  type: coins
-  value: 10
-  display: $%value%
-gui:
-  column: 4
-  row: 1
-  page: 1
+- id: cooked_mutton
+  item: cooked_mutton
+  buy:
+    type: coins
+    value: 20
+    display: $%value%
+    amount: 32
+  sell:
+    type: coins
+    value: 10
+    display: $%value%
+  gui:
+    column: 4
+    row: 1
+    page: 1
 ```
 
 #### Understanding all the sections
@@ -57,28 +57,28 @@ Sometimes you want to run a command when a player buys an item, such as giving p
 Of course, you can't sell a command, so they're buy-only.
 
 ```yaml
-id: iron_rank
-command:
-  - lp user %player% parent set iron
-buy:
-  value: "%ecomc_iron_price%"
-  type: crystals
-  display: "&b%value% Crystals ❖"
-  limit: 1
-gui:
-  display:
-    item: diamond_chestplate name:"&aIron Rank"
-    lore:
-      - "&fBuy &7&lIRON&r&f rank to get"
-      - "&fthe following benefits:"
-      - " &8»&f &eExample Perk"
-    bottom-lore: # You can also add lore to be put under other lore (e.g. price, quick buy/sell info, etc.)
-      - ""
-      - "&e&oLeft click to buy with money,"
-      - "&e&oRight click to buy with &bCrystals ❖&e&o!"
-  column: 5 # The column.
-  row: 3 # The row.
-  page: 2 # The page.
+- id: iron_rank
+  command:
+    - lp user %player% parent set iron
+  buy:
+    value: "%ecomc_iron_price%"
+    type: crystals
+    display: "&b%value% Crystals ❖"
+	limit: 1
+  gui:
+    display:
+      item: diamond_chestplate name:"&aIron Rank"
+      lore:
+        - "&fBuy &7&lIRON&r&f rank to get"
+        - "&fthe following benefits:"
+        - " &8»&f &eExample Perk"
+      bottom-lore: # You can also add lore to be put under other lore (e.g. price, quick buy/sell info, etc.)
+        - ""
+        - "&e&oLeft click to buy with money,"
+        - "&e&oRight click to buy with &bCrystals ❖&e&o!"
+    column: 5 # The column.
+    row: 3 # The row.
+    page: 2 # The page.
 ```
 
 #### Understanding all the sections
@@ -110,21 +110,22 @@ Instead of just using commands, EcoShop also has full access to the
 Like commands, these are unsellable.
 
 ```yaml
-id: my_effect_item
-effects: [ ]
-buy:
-  value: 65
-  type: crystals
-  display: "&b%value% Crystals ❖"
-gui:
-  display:
-    item: nether_star
-    lore:
-      - "&fBuy me to do something cool!"
-  column: 6 # The column.
-  row: 3 # The row.
-  page: 2 # The page.
-  show-quick-buy-sell: false
+- id: my_effect_item
+  effects: [ ]
+  buy:
+    value: 65
+    type: crystals
+    display: "&b%value% Crystals ❖"
+    global-limit: 5
+  gui:
+    display:
+      item: nether_star
+      lore:
+        - "&fBuy me to do something cool!"
+    column: 6 # The column.
+    row: 3 # The row.
+    page: 2 # The page.
+    show-quick-buy-sell: false
 ```
 
 #### Understanding all the sections
@@ -285,3 +286,7 @@ sell:
 | `%amount%`       | The amount of items the player bought                       |
 | `%value%`        | The buy/sell value, to use in price display                 |
 | `%value_commas%` | The comma separated buy/sell value, to use in price display |
+| `%playerlimit%`  | The per-player purchase limit for the item                  |
+| `%playerbuys%`   | The amount of times the player has bought this item         |
+| `%globallimit%`  | The global purchase limit for the item                      |
+| `%globalbuys%`   | The amount of times the item has been bought globally       |

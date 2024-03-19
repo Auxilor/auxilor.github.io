@@ -67,43 +67,59 @@ custom-ai:
   # How the mob should behave.
   entity-goals: [ ]
 
-# Effects are done from the player's perspective: to treat the player as the victim,
-# either use self_as_victim in args, or use player_as_victim in mutators.
+# Some effects are ran from the perspective of the entity, and others from the perspective
+# of the player - each section is marked with which perspective it is run from.
+
 # You can use display name placeholders in effects
 # You can also use top damager placeholders:
 # %top_damager_<place>_name%, %top_damager_<place>_damage%, %top_damager_<place>_display%
 effects:
+  # Effects that are active all the time
+  # Ran from the perspective of the entity
+  permanent-effects: [ ]
+
   # Effects ran when the mob spawns
+  # Ran from the perspective of the entity
   spawn: [ ]
 
   # Effects ran when the mob despawns
+  # Ran from the perspective of the entity
   despawn: [ ]
 
   # Effects ran when the player interacts with the mob
+  # Ran from the perspective of the player
   interact: [ ]
 
   # Effects ran when the player melee attacks the mob
+  # Ran from the perspective of the player
   melee-attack: [ ]
 
   # Effects ran when the player does a ranged attack on the mob
+  # Ran from the perspective of the player
   ranged-attack: [ ]
 
   # Effects ran when the player attacks the mob
+  # Ran from the perspective of the player
   any-attack: [ ]
 
   # Effects ran when the mob takes damage
+  # Ran from the perspective of the entity
   take-damage: [ ]
 
   # Effects ran when the player is damaged by the mob
+  # Ran from the perspective of the player
   damage-player: [ ]
 
   # Effects ran when the player is killed by the mob
+  # Ran from the perspective of the player
   kill-player: [ ]
 
   # Effects ran when the mob dies
+  # Ran from the perspective of the entity
   death: [ ]
 
   # Effects ran when the mob is killed by the player
+  # Ran from the perspective of the player
   kill: [ ]
 
 defence:
@@ -287,9 +303,12 @@ A list of damage causes can be found here: [Damage Causes](https://hub.spigotmc.
 
 ## Internal Placeholders
 
-| Placeholder        | Value                                                     |
-| ------------------ | --------------------------------------------------------- |
-| `%health%`         | The current health of the mob.                            |
-| `%max_health%`     | The max health of the mob.                                |
-| `%health_percent%` | The percentage of health the mob has.                     |
-| `%time%`           | The time left before the mob despawns (`minutes:seconds`) |
+| Placeholder                     | Value                                                     |
+| ------------------------------- | --------------------------------------------------------- |
+| `%health%`                      | The current health of the mob.                            |
+| `%max_health%`                  | The max health of the mob.                                |
+| `%health_percent%`              | The percentage of health the mob has.                     |
+| `%time%`                        | The time left before the mob despawns (`minutes:seconds`) |
+| `%top_damager_<place>_name%`    | The name of the [0-9] top damager                         |
+| `%top_damager_<place>_damage%`  | The damage dealt by the [0-9] top damager                 |
+| `%top_damager_<place>_display%` | The ranking of the [0-9] top damager                      |
