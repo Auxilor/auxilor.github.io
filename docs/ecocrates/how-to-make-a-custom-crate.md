@@ -2,16 +2,17 @@
 title: "How to make a custom crate"
 sidebar_position: 2
 ---
+
 ## Default config
-
-The default configs can be found here:
-
-[GitHub](https://github.com/Auxilor/EcoCrates/blob/master/eco-core/core-plugin/src/main/resources/crates/)
+The default configs can be found [here](https://github.com/Auxilor/EcoCrates/tree/master/eco-core/core-plugin/src/main/resources/crates).
 
 ## How to add crates
-Crates are each config files placed in the `/crates/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+Each crate is its own config file, placed in the `/mobs/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-## Typical Crate Config
+The ID of the crate is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+ID's must be lowercase letters, numbers, and underscores only.
+
+## Example Crate Config
 
 ```yaml
 name: "Demo Crate" # The display name of the crate
@@ -161,214 +162,201 @@ rewards: # The rewards to give, configure in rewards.yml
 
 ## Understanding all the sections
 
-**id:** The ID of the crate. This is what you use in commands - ID's must be lowercase letters, numbers, and underscores only.
-
-**name:** The name of the booster, shown to the player.
+**name:** The name of the crate, shown to the player.
 
 **roll:** The [Roll](https://plugins.auxilor.io/ecocrates/animationsandrolls#list-of-rolls) type for this crate
 
 **can-reroll:** Enable/disable reroll feature for this crate.
-
-**preview:** Config for the preview GUI of this crate.
-
-**key:** Config for the key item of this crate.
-
-&nbsp;&nbsp;**item:** The [Items Lookup](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) string for the key item.
-
-&nbsp;&nbsp;**lore:** The lore of a key item.
-
-&nbsp;&nbsp;**is-custom-item** If the key should be the exact item provided, rather than using it as a base for it's own key item - enable this to have custom items as your keys, for example ecoitems:fuschium_shard would be the key, so all Fuschium Shards would open the crate
-
-**keygui:** Config for the [/crate keys](https://plugins.auxilor.io/ecocrates/commands-and-permissions#crate-keys-view-your-keys) appearance of this crate.
-
-**pay-to-open:** Config for opening this crate for money.
-
-&nbsp;&nbsp;**enabled:** Enable/Disable pay-to-open feature for this crate (true/false).
-&nbsp;&nbsp;**price:** The price to open this crate (works only if enabled: is set to true).
-
-**placed:** Config for the placed version of this crate.
-
-**open:** Config for the actions on crate open.
-
-**finish:** Config for the actions on crate finish opening.
-
-**rewards:** A list of [Rewards](https://plugins.auxilor.io/ecocrates/rewards) that this crate should give.
-
-## Preview Config
+### Preview
 
 ```yaml
-preview: # The preview GUI, when left-clicking a crate or using /crates preview
-    title: Demo Crate # The GUI title
-    rows: 6 # The amount of rows for the gui, between 1 and 6
-    mask: # Filler items for decoration
-      items: # Add as many items as you want
-        - gray_stained_glass_pane # Item 1
-        - black_stained_glass_pane # Item 2
-      pattern:
-        - "222222222"
-        - "211010112"
-        - "201010102"
-        - "201010102"
-        - "201111102"
-        - "222222222"
-    rewards: # Where to put rewards in the GUI
-      - id: diamond_sword # The reward ID
-        row: 3 # The row
-        column: 2 # The column
-      - id: stack_of_emeralds
-        row: 4
-        column: 2
-      - id: bedrock
-        row: 3
-        column: 2
-      - id: 1000_coins
-        row: 5
-        column: 2
+preview:
+  title: Demo Crate
+  rows: 6
+  forwards-arrow:
+    item: arrow name:"&fNext Page"
+    row: 6
+    column: 6
+  backwards-arrow:
+    item: arrow name:"&fPrevious Page"
+    row: 6
+    column: 4
+  pages:
+    - page: 1
+      mask:
+        items:
+          - gray_stained_glass_pane
+          - black_stained_glass_pane
+        pattern:
+          - "222222222"
+          - "211111112"
+          - "211011112"
+          - "211110112"
+          - "211111112"
+          - "222222222"
+      rewards:
+        - id: diamond_sword # The reward ID
+          row: 3
+          column: 4
+        - id: stack_of_emeralds
+          row: 4
+          column: 6
 ```
 
 **title:** The title of preview GUI.
 
 **rows:** The amount of rows in the preview GUI (1-6).
+##### Pages
 
-**mask:** The section of a GUI mask.
+To configure a pattern and mask, read here for more info: [Pages](https://plugins.auxilor.io/all-plugins/pages)
+##### Rewards
+Where you set where crate rewards are placed in the preview GUI.
 
-**items:** A list if [Items Lookup](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) strings.
+**id:** The ID of a [Reward](https://plugins.auxilor.io/ecocrates/rewards).
 
-**pattern:** A numeric pattern, where each number refferes to the item from the items section (0 for air).
-
-**rewards:** A place where you set where crate rewards are placed in the preview GUI.
-
-**id:** The id of a [Reward](https://plugins.auxilor.io/ecocrates/rewards).
-
-**row:** The row of the GUI.
-
-**column:** The column of the GUI.
-
-## Key GUI config
+**row/column:** The location of this item in the crate
+### Key
 
 ```yaml
-keygui: # Options for showing up in /crate keys
-    enabled: true # If the crate should be in the key gui
-    item: tripwire_hook unbreaking:1 hide_enchants name:"Demo Crate" # The item in the gui
-    lore: # The GUI lore
+key:
+  item: tripwire_hook unbreaking:1 hide_enchants name:"&aDemo Crate Key"
+  lore:
+    - "&fUse this key to open"
+    - "&fthe <g:#56ab2f>Demo Crate</g:#a8e063>"
+  use-custom-item: false
+```
+
+**item:** This is the item shown in the GUI, read here for more info: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
+
+**lore:** The item lore shown in-game. Set to `lore: []` to remove all lore lines.
+
+**is-custom-item** If the key should be the exact item provided, rather than using it as a base for it's own key item - enable this to have custom items as your keys, for example `ecoitems:fuschium_shard` would be the key, so **all** Fuschium Shards would open the crate.
+
+### Key GUI
+
+```yaml
+keygui:
+  enabled: true
+  item: tripwire_hook unbreaking:1 hide_enchants name:"Demo Crate"
+  lore:
     - "<g:#56ab2f>Demo Crate</g:#a8e063>"
     - "&fYou have %keys% keys"
     - "&fGet more at &astore.example.net"
-    row: 2 # The position in the gui
-    column: 3
-    right-click-previews: true # If right click opens the preview
-    left-click-opens: true # If left click open the crate virtually
-    shift-left-click-messsage: # The messages to send on shift-left-click
+  row: 2
+  column: 3
+  right-click-previews: true
+  left-click-opens: true
+  shift-left-click-messsage:
     - "Buy a Demo Crate key here! &astore.example.net"
 ```
 
-**enabled:** Enable/Disable showing this crate in [/crate keys](https://plugins.auxilor.io/ecocrates/commands-and-permissions#crate-keys-view-your-keys) (true/false)
+**enabled:** If the crate should be in [/crate keys](https://plugins.auxilor.io/ecocrates/commands-and-permissions#crate-keys-view-your-keys) (true/false).
 
-**item:** The [Items Lookup](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) string for the GUI item.
+**item:** This is the item shown in the GUI, read here for more info: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
 
-**lore:** The lore of the GUI item.
+**lore:** The item lore shown in-game. Set to `lore: []` to remove all lore lines.
 
-**row:** The row position in the GUI.
+**row/column:** The location of this item in the GUI.
 
-**column:** The row column in the GUI.
+**right-click-previews:** If right click opens up crate preview (true/false).
 
-**right-click-previews:** If right-clicking the item in the key GUI should open this crate preview (true/false).
+**left-click-opens:** If left click should open the crate (true/false).
 
-**left-click-opens:** If left-clicking the item in the key GUI should open this crate virtually (true/false).
+**shift-left-click-message:** A message to be sent on shift-left-click.
 
-**shift-left-click-messsage:** A list of messages sent to the player when he shift-left-clicks the item in the key GUI.
+### Pay To Open
 
-## Placed Crate config
+**enabled:** Enable/Disable pay-to-open feature for this crate (true/false).
+
+**price:** The price to open this crate (works only if enabled: is set to true).
+
+### Placed
 
 ```yaml
-placed: # Options for physically placed crates
-    random-reward: # The random reward hologram, shows an item
-      enabled: true # If the random reward should be shown
-      height: 1.5 # The height above the crate at which to show the reward
-      delay: 30 # The ticks between showing a new item
-      name: "&fYou could win:" # The text above the item
-    particles: # The particle effects around the crate, add as many as you want
-      - particle: flame # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
-        animation: spiral # spiral, double_spiral, circle, or twirl
-    hologram: # The text hologram, requires a hologram plugin to be installed
-      height: 1.5 # The height above the crate
-      ticks: 200 # The total ticks to cycle all frames
-      frames:
-        - tick: 0 # The starting tick to show this frame
-          lines:
-              - "<g:#56ab2f>&lDEMO CRATE</g:#a8e063>"
-              - "&b&lLeft Click to Preview"
-              - '&a&lRight click to Open'
-          - tick: 100
-            lines:
-              - "<g:#56ab2f>&lDEMO CRATE</g:#a8e063>"
-              - "&a&lLeft Click to Preview"
-              - '&b&lRight click to Open'
+placed:
+  random-reward:
+    enabled: true
+    height: 1.5
+    delay: 30
+    name: "&fYou could win:"
+  particles:
+    - particle: flame
+      animation: spiral
+  hologram:
+    height: 1.5
+    ticks: 200
+    frames:
+      - tick: 0
+        lines:
+          - "<g:#56ab2f>&lDEMO CRATE</g:#a8e063>"
+          - "&b&lLeft Click to Preview"
+          - '&a&lRight click to Open'
+      - tick: 100
+        lines:
+          - "<g:#56ab2f>&lDEMO CRATE</g:#a8e063>"
+          - "&a&lLeft Click to Preview"
+          - '&b&lRight click to Open'
 ```
+#### random-reward
 
-**random-reward:** Options for a random reward appearing above the placed physical crate.
+**enabled:** If a random item shows in the hologram.
 
-&nbsp;&nbsp;**enabled:** Enable/Disable random reward displaying for this crate (true/false).
+**height:** The height above the crate to show the rewards.
 
-&nbsp;&nbsp;**height:** The Y offset for the reward item from the crate block.
+**delay:** The ticks between changing the displayed item.
 
-&nbsp;&nbsp;**delay:** Ticks between changing the displayed reward.
+**name:** The text shown above the display item.
+#### particles
 
-&nbsp;&nbsp;**name:** The text displayed above the random reward item.
+**particle:** The particle, read here for more info: [Particles](https://plugins.auxilor.io/all-plugins/the-particle-lookup-system).
 
-**particles:** A list o particle effects around the placed crate.
+**animation:** The particle animation (`spiral`, `double_spiral`, `circle`, or `twirl`).
 
-&nbsp;&nbsp;**particle:** The [Particle](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html) name.
+#### hologram
 
-&nbsp;&nbsp;**animation:** The Animation name (spiral, double_spiral, circle, or twirl).
+**height:** The Y offset for the hologram from the crate block.
 
-**hologram:** The text hologram above the crate. Requires a [Hologram](https://plugins.auxilor.io/all-plugins/what-plugins-do-you-support#hologram) plugin to be installed.
+**ticks:** The total ticks in the hologram animation.
+##### frames
 
-&nbsp;&nbsp;**height:** The Y offset for the hologram from the crate block.
+**tick:** The starting tick for this frame to be shown.
 
-&nbsp;&nbsp;**ticks:** The total ticks in the hologram animation.
+**lines:** A list of hologram text lines on this frame.
 
-&nbsp;&nbsp;**frames:** A list of frames for the hologram animation.
-
-&nbsp;&nbsp;&nbsp;&nbsp;**tick:** The starting tick for this frame to be shown.
-
-&nbsp;&nbsp;&nbsp;&nbsp;**lines:** A list of hologram text lines on this frame.
-
-## Opening/Finish opening crate effects config
+### Opening/Finish opening crate effects config
 
 ```yaml
-open: # Effects when opening the crate, before rewards are given - right when the player clicks
-    messages: # The messages to send the player
+open:
+    messages:
       - "Good luck!"
-    broadcasts: # The messages to send to everyone
+    broadcasts:
       - "%player%&f is opening the Demo Crate!"
-    commands: [ ] # Commands to execute, use %player% as a placeholder
-    sounds: # The sounds to play
-      - sound: entity_villager_yes # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
-        volume: 10 # Essentially the distance at which the sound should be heard
-        pitch: 1 # Between 0.5 and 2
+    commands: [ ]
+    sounds:
+      - sound: entity_villager_yes
+        volume: 10
+        pitch: 1 
 
-finish: # Effects once the crate rewards have been given
-    messages: # The messages to send the player
+finish:
+    messages:
       - "You won %reward%&f!"
-    broadcasts: # The messages to send to everyone
+    broadcasts:
       - "%player%&f won %reward%&f from the Demo Crate!"
-    commands: [ ] # Commands to execute, use %player% as a placeholder
-    fireworks: # The fireworks to launch, add as many as you want
-      - power: 2 # The duration of the firework, set to 0 for instant explosion
-        type: ball_large # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FireworkEffect.Type.html
-        colors: # Any hex colors
+    commands: [ ]
+    fireworks:
+      - power: 2
+        type: ball_large
           - 00ffff
           - 00ff00
-        fade-colors: # Any hex colors
+        fade-colors:
           - ffffff
           - 999999
         trail: true
         flicker: true
-    sounds: # The sounds to play, ad ass many as you want
-      - sound: entity_generic_explode # https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
-        volume: 10 # Essentially the distance at which the sound should be heard
-        pitch: 1 # Between 0.5 and 2
+    sounds:
+      - sound: entity_generic_explode
+        volume: 10 
+        pitch: 1
 ```
 
 **messages:** A list of messages sent to the player when he starts/finishes opening the crate.
@@ -376,25 +364,40 @@ finish: # Effects once the crate rewards have been given
 **broadcasts:** A list of messages sent to the whole server when a player starts/finishes opening the crate.
 
 **commands:** A list of commands to be executed when a player starts/finishes opening the crate (%player% for a player name)
+#### Fireworks:
 
-**fireworks:** A list of fireworks to be launched when a player finishes opening the crate.
+**power:** The duration of the firework, set to 0 for instant explosion.
 
-&nbsp;&nbsp;**power:** The duration of the firework, set to 0 for instant explosion.
+**type:** The [Firework Effect Type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FireworkEffect.Type.html).
 
-&nbsp;&nbsp;**type:** The [Firework Effect Type](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FireworkEffect.Type.html).
+**colors:** A list of the firework colors (any HEX color of `#ffffff` format).
 
-&nbsp;&nbsp;**colors:** A list of the firework colors (any HEX color of ffffff format).
+**fade-colors:** A list of the firework fade colors (any HEX color of `#ffffff` format).
 
-&nbsp;&nbsp;**fade-colors:** A list of the firework fade colors (any HEX color of ffffff format).
+**trail** Enable/Disable the trail for this firework (true/false).
 
-&nbsp;&nbsp;**trail** Enable/Disable the trail for this firework (true/false).
+**flicker** Enable/Disable the flicker for this firework (true/false).
 
-&nbsp;&nbsp;**flicker** Enable/Disable the flicker for this firework (true/false).
+#### Sounds
 
-**sounds:** A list of sounds to be played when a player starts/finishes opening the crate.
+**sound:** The [Sound Name](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html).
 
-&nbsp;&nbsp;**sound:** The [Sound Name](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html).
+**volume:** Essentially the distance at which the sound should be heard.
 
-&nbsp;&nbsp;**volume:** Essentially the distance at which the sound should be heard.
+**pitch:** The pitch for that sound (between 0.5 and 2).
 
-&nbsp;&nbsp;**pitch:** The pitch for that sound (between 0.5 and 2).
+### Rewards
+A list of rewards winnable in the crate.
+
+```yaml
+rewards:
+  - diamond_sword
+```
+## Internal Placeholders
+
+| Placeholder | Value                                                     |
+| ----------- | --------------------------------------------------------- |
+| `%keys%`    | The amount of virtual keys for this crate the player has. |
+| `%reward%`  | The display name of the reward.                           |
+| `%player%`  | The player who won the reward.                            |
+

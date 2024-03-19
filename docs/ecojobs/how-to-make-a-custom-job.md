@@ -4,34 +4,22 @@ sidebar_position: 2
 ---
 
 ## Default config
-
-The default configs can be found here:
-
-[GitHub](https://github.com/Auxilor/EcoJobs/blob/master/eco-core/core-plugin/src/main/resources/jobs/)
+The default configs can be found [here](https://github.com/Auxilor/EcoJobs/tree/master/eco-core/core-plugin/src/main/resources/jobs).
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
 ## How to add jobs
-Jobs are each config files placed in the `/jobs/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+Each job is its own config file, placed in the `/jobs/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-## Typical Job Config
+The ID of the Job is the file name. This is what you use in commands, effects and placeholders.
+ID's must be lowercase letters, numbers, and underscores only.
+
+## Example Job Config
 
 ```yaml
-# The ID of the job is the name of the .yml file,
-# for example miner.yml has the ID of miner
-# You can place jobs anywhere in this folder,
-# including in subfolders if you want to organize your job configs
-# _example.yml is not loaded.
-
-# The display name of the job
-name: "&6Miner"
-
-# The description of the job
-description: "&8&oLevel up by mining blocks"
-
-# If the job should be unlocked by default
-unlocked-by-default: true
-
-# If job progress should be reset when quitting
-reset-on-quit: false
+name: "&6Miner" # The display name of the job
+description: "&8&oLevel up by mining blocks" # The description of the job
+unlocked-by-default: true # If the job should be unlocked by default
+reset-on-quit: false # If job progress should be reset when quitting
 
 # The price to join this job (set to 0 to disable)
 # Read here for more: https://plugins.auxilor.io/all-plugins/prices
@@ -72,48 +60,13 @@ level-xp-requirements:
   - 740
   - 890
   - 1000
-  - 1300
-  - 1500
-  - 1900
-  - 2200
-  - 2700
-  - 3200
-  - 3800
-  - 4600
-  - 5500
-  - 6600
-  - 7900
-  - 9500
-  - 11500
-  - 14000
-  - 17000
-  - 19000
-  - 24000
-  - 29000
-  - 34000
-  - 41000
-  - 50000
-  - 60000
-  - 70000
-  - 85000
-  - 100000
-  - 120000
-  - 150000
-  - 180000
-  - 210000
-  - 250000
-  - 300000
-  - 360000
-  - 440000
-  - 580000
-  - 750000
 
-# An XP Gain method takes a trigger, a multiplier, conditions, and filters.
-# The multiplier takes the value produced by the trigger and multiplies it
-# by some value to calculate the experience that should be given
+# An XP gain method takes a trigger, a multiplier, conditions, and filters.
+# The 'multiplier' takes the value produced by the trigger and multiplies it
+# Alternatively, you can use 'value' to count a specific number and not a multiplier
 xp-gain-methods:
   - trigger: mine_block
-    multiplier: 0.5
+    multiplier: 0.5 # You can also use "value" here (see above comment)
     conditions: [ ]
     filters:
       items:
@@ -153,7 +106,9 @@ level-up-messages:
 # Commands to be sent on levelup, can be formatted two ways:
 # level:command (e.g. 10:eco give %player% 1000), which would execute that command for level 10
 # command (e.g. eco give %player% 5000), which would execute that command for all levels
-level-commands: [ ]
+level-commands:
+	- 1:eco give %player% 1000 # Runs the command at level 1
+	- eco give %player% 1000 # Runs the command at every level up
 
 # The effects for the job, has %level% as a placeholder
 effects:
@@ -176,39 +131,51 @@ effects:
 conditions: [ ]
 
 # The icon in GUIs
-icon: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU3MDVjZjg2NGRmMmMxODJlMzJjNDg2YjcxNDdjYmY3ODJhMGFhM2RmOGE2ZDYxNDUzOTM5MGJmODRmYjE1ZCJ9fX0=
+icon: player_head texture:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU3MDVjZjg2NGRmMmMxODJlMzJjNDg2YjcxNDdjYmY3ODJhMGFhM2RmOGE2ZDYxNDUzOTM5MGJmODRmYjE1ZCJ9fX0="
 ```
 
 ## Understanding all the sections
 
-**id:** The ID of the job. This is what you use in commands - ID's must be lowercase letters, numbers, and underscores only.
+**name:** The name of the job in-game.
 
-**name:** The name of the job, shown to the player.
+**description:** The description of the job.
 
-**description:** The description of the job, helpful to show how it's levelled.
+**join/leave-price:** The cost of joining or leaving the job.
 
-**unlocked-by-default:** If the job should be available to all players by default, or if they should have to unlock it.
+**join/leave-lore:** The lore shown to the player when they join or leave a job.
 
-**level-xp-requirements:** The XP requirements for each level
+**level-xp-requirements:** A list of XP requirements for each level.
+```yaml
+xp-requirements:
+  - 50
+  - 125
+  - 200
+```
 
-**xp-gain-methods:** The way the job can be levelled. Each ID is a trigger - triggers give values such as damage dealt (with attack triggers), distance moved (with the move trigger), etc.. Other triggers with no obvious value give an output of 1.
+**xp-gain-methods:** The trigger, multiplier/value, conditions and filters that will award job XP.
 
-**level-placeholders:** Custom placeholders for messages / lore
+**level-placeholders:** Custom placeholders to be used in descriptions.
 
-**effects-description:** Job specific effect descriptions
+**effects-description:** Job specific effect descriptions.
 
-**rewards-description:** Job specific reward descriptions
+**rewards-description:** Job specific reward descriptions.
 
-**level-up-messages:** Job specific level up messages
+**level-up-messages:** Job specific level up messages.
 
-**level-commands:** Commands to be executed on levelup 
+**level-commands:** Commands to be executed when levelling the job.
 
-**icon:** The GUI icon
+**icon:** The item to show in /jobs, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 
-### Effects + Conditions
+### Effects & Conditions
 
-Effects are the actual functionality of the job, and conditions are requirements that a player must meet for the job to activate for them - so you can make it so a job only works for a certain type of player, ie only players that have above a certain amount of playtime, or those that only have below a certain balance.
+You can configure effects, conditions, filters, and mutators in this section to run when the job is levelled up.
 
-See this page for how to configure effects:
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
-[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+## Internal Placeholders
+
+| Placeholder | Value                                                       |
+| ----------- | ----------------------------------------------------------- |
+| `%level%`   | The player's Job level. Useful for creating scaling effects |

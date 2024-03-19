@@ -4,60 +4,68 @@ sidebar_position: 2
 ---
 
 ## Default config
-The default configs can be found here:
-
-[GitHub](https://github.com/Auxilor/Talismans/blob/master/eco-core/core-plugin/src/main/resources/talismans/)
+The default configs can be found [here](https://github.com/Auxilor/Talismans/tree/master/eco-core/core-plugin/src/main/resources/talismans).
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
 ## How to add talismans
-Talismans are each config files placed in the `/talismans/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+Each talisman is its own config file, placed in the `/talismans/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-### Example Talisman Config
+The ID of the Talisman is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+ID's must be lowercase letters, numbers, and underscores only.
+
+## Example Talisman Config
 
 ```yaml
-- id: archery_2
-  name: "&eArchery Talisman II"
-  description:
-    - "&8Deal 20% more damage with bows"
-  higherLevelOf: archery_1
-  item: "player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzgzODVhNWE0Njk4MjFiOGIzM2U0N2E1YjVjNDJhZWE1OTY2MzQ2NTQ2OTM4OGExYTRkNGU1MjNlNWE4ZGRkMiJ9fX0="
-  craftable: true
-  recipe:
-    - talismans:archery_1
-    - talismans:archery_1
-    - talismans:archery_1
+name: "&aArchery Talisman I" # The display name of the talisman
+description: # The item lore
+  - "&8Deal 10% more damage with bows"
+higherLevelOf: [] # If the Talisman is higher level of another Talisman - Useful for only having the highest level Talisman active
+item: player_head texture:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDBmOGRmYTVlZmM3NTYzMGNlMGRmNDBhNDliOGY1OWJjMjIyMTRkZTk3ZTNmYjQ0YjNjNTZlOGE5YzhhNTZiNiJ9fX0=" # The item in-game: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+craftable: true # If the item can be crafted
+recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  - bow
+  - crossbow
+  - bow
+     
+  - crossbow
+  - ecoitems:talisman_core_1 ? ender_eye
+  - crossbow
+     
+  - bow
+  - crossbow
+  - bow
 
-    - talismans:archery_1
-    - ecoitems:talisman_core_2 ? heart_of_the_sea
-    - talismans:archery_1
+# The effects of the item (i.e. the functionality)
+# See here: https://plugins.auxilor.io/effects/configuring-an-effect
+effects:
+  - id: damage_multiplier
+    args:
+      multiplier: 1.1
+    triggers:
+      - bow_attack
 
-    - talismans:archery_1
-    - talismans:archery_1
-    - talismans:archery_1
-  effects:
-    - id: "damage_multiplier"
-      args:
-        multiplier: 1.2
-      triggers:
-        - bow_attack
-  conditions: []
+# The conditions required for the effects to activate
+conditions: []
 ```
 
-### Understanding all the sections
+## Understanding all the sections
 
-**id**: The id of the talisman
+**name**: The item name in-game.
 
-**name**: The display name of the talisman
-
-**description**: The description of the talisman
+**description**: The item lore shown in-game. Set to `description: []` to remove all lore lines.
 
 **higherLevelOf**: If the talisman is a higher level of another talisman, specify it here - used if you set only the highest level talisman to activate
 
-**item**: The item of the talisman. Allows for extensive options, click here for more
+**item:** The base item, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 
-**craftable**: If the talisman should be craftable
+**craftable:** If the talisman should be craftable (true/false).
 
-**recipe**: The crafting recipe for the talisman.
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
 
-**conditions / effects**: The core of the talisman is dictated by conditions and effects. Learn more here:
+### Effects & Conditions
 
-[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
+The effects section is the core functionality of the Talisman. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the talisman is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.

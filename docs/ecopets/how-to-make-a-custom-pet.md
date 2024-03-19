@@ -1,25 +1,23 @@
 ---
-title: "How to make a custom pet"
+title: How to make a custom Pet
 sidebar_position: 2
 ---
 
 ## Default config
-
-The default configs can be found here:
-
-[GitHub](https://github.com/Auxilor/EcoPets/blob/master/eco-core/core-plugin/src/main/resources/pets/)
+The default configs can be found [here](https://github.com/Auxilor/EcoPets/tree/master/eco-core/core-plugin/src/main/resources/pets).
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
 ## How to add pets
-Pets are each config files placed in the `/pets/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+Each pet is its own config file, placed in the `/pets/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-## Typical Pet Config
+The ID of the Pet is the file name. This is what you use in commands, effects and placeholders.
+ID's must be lowercase letters, numbers, and underscores only.
+
+## Example Pet Config
 
 ```yaml
-# The display name of the pet
-name: "&6Tiger"
-
-# The description of the pet
-description: "&8&oLevel up by dealing melee damage"
+name: "&6Tiger" # The display name of the pet
+description: "&8&oLevel up by dealing melee damage" # The description of the pet
 
 # The xp requirements for each pet level - add new levels by adding more to this list
 level-xp-requirements:
@@ -42,47 +40,18 @@ level-xp-requirements:
   - 50000
   - 75000
   - 100000
-  - 200000
-  - 300000
-  - 400000
-  - 500000
-  - 600000
-  - 700000
-  - 800000
-  - 900000
-  - 1000000
-  - 1100000
-  - 1200000
-  - 1300000
-  - 1400000
-  - 1500000
-  - 1600000
-  - 1700000
-  - 1800000
-  - 1900000
-  - 2000000
-  - 2100000
-  - 2200000
-  - 2300000
-  - 2400000
-  - 2500000
-  - 2600000
-  - 2750000
-  - 2900000
-  - 3100000
-  - 3400000
-  - 3700000
 
-# An XP Gain method takes a trigger as the ID and a multiplier
-# The multiplier takes the value produced by the trigger and multiplies it
-# by some value to calculate the experience that should be given
+# An XP gain method takes a trigger, a multiplier, conditions, and filters.
+# The 'multiplier' takes the value produced by the trigger and multiplies it
+# Alternatively, you can use 'value' to count a specific number and not a multiplier
 xp-gain-methods:
   - id: melee_attack
-    multiplier: 0.5
+    multiplier: 0.5 # You can also use "value" here (see above comment)
+    conditions: [ ] # You can add a list of conditions that must be met on xp gain
 
 # Custom placeholders to be used in descriptions,
 # Don't add % to the IDs, this is done automatically
-# The value takes a %level% placeholder and is a mathematical expression
+# The value takes a %level% placeholder and is a mathetmatical expression
 level-placeholders:
   - id: "damage_multiplier"
     value: "%level%"
@@ -110,7 +79,9 @@ level-up-messages:
 # Commands to be sent on levelup, can be formatted two ways:
 # level:command (e.g. 10:eco give %player% 1000), which would execute that command for level 10
 # command (e.g. eco give %player% 5000), which would execute that command for all levels
-level-commands: [ ]
+level-commands:
+	- 1:eco give %player% 1000 # Runs the command at level 1
+	- eco give %player% 1000 # Runs the command at every level up
 
 # The effects for the pet, has %level% as a placeholder
 effects:
@@ -126,7 +97,6 @@ conditions: [ ]
 # The texture of the pet entity in game
 # If you're using modelengine, use modelengine:id as the texture
 entity-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA5NWZjYzFlM2Q3Y2JkMzUwZjE5YjM4OTQ5OGFiOGJiOTZjNjVhZDE4NWQzNDU5MjA2N2E3ZDAzM2FjNDhkZSJ9fX0="
-modelengine-animation: "fly" # If you're using ModelEngine, you can specify an animation here; you can leave this out if you're not.
 
 # The icon in GUIs
 icon: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTA5NWZjYzFlM2Q3Y2JkMzUwZjE5YjM4OTQ5OGFiOGJiOTZjNjVhZDE4NWQzNDU5MjA2N2E3ZDAzM2FjNDhkZSJ9fX0=
@@ -135,7 +105,7 @@ icon: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dX
 spawn-egg:
   enabled: true # If the pet should have a spawn egg
   item: blaze_spawn_egg unbreaking:1 hide_enchants
-  name: "&6Tiger&f Spawn Egg"
+  name: "&6Tiger&f Pet Spawn Egg"
   lore:
     - ""
     - "&8&oPlace on the ground to"
@@ -147,38 +117,62 @@ spawn-egg:
 
 ## Understanding all the sections
 
-**id:** The ID of the pet. This is what you use in commands - ID's must be lowercase letters, numbers, and underscores only.
+**name:** The name of the pet in-game.
 
-**name:** The name of the pet, shown to the player.
+**description:** The description of the pet.
 
-**description:** The description of the pet, helpful to show how it's levelled.
+**level-xp-requirements:** A list of XP requirements for each level.
+```yaml
+xp-requirements:
+  - 50
+  - 125
+  - 200
+```
 
-**level-xp-requirements:** The XP requirements for each level
+**xp-gain-methods:** The trigger, multiplier/value, conditions and filters that will award pet XP.
 
-**xp-gain-methods:** The way the pet can be levelled. Each ID is a trigger - triggers give values such as damage dealt (with attack triggers), distance moved (with the move trigger), etc. Other triggers with no obvious value give an output of 1.
+**level-placeholders:** Custom placeholders to be used in descriptions.
 
-**level-placeholders:** Custom placeholders for messages / lore
+**effects-description:** Pet specific effect descriptions.
 
-**effects-description:** Pet specific effect descriptions
+**rewards-description:** Pet specific reward descriptions.
 
-**rewards-description:** Pet specific reward descriptions
+**level-up-messages:** Pet specific level up messages.
 
-**level-up-messages:** Pet specific level up messages
-
-**level-commands:** Commands to be executed on levelup 
+**level-commands:** Commands to be executed when levelling the pet.
 
 **entity-texture:** The texture of the pet that follows you around. Use `modelengine:<id>` if you're using Model Engine
 
 **modelengine-animation:** If you're using Model Engine, you can supply an animation here
 
-**icon:** The GUI icon
+**icon:** The item to show in /pets, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 
-**spawn-egg:** Config for the spawn egg
+### Spawn Egg
 
-### Effects + Conditions
+**enabled:** If the skill should show in /pets.
 
-Effects are the actual functionality of the pet, and conditions are requirements that a player must meet for the pet to activate for them - so you can make it so a pet only works for a certain type of player, ie only players that have above a certain amount of playtime, or those that only have below a certain balance.
+**icon:** The item to show in /pets, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 
-See this page for how to configure effects:
+**name:** The name of the spawn egg in-game.
 
-[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
+**lore:** The lore to show in /pets when hovering the icon. 
+
+**craftable:** If the item should be craftable (true/false).
+
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes).
+
+**recipe-permission:** (Optional) The permission required to craft the recipe.
+
+### Effects & Conditions
+
+You can configure effects, conditions, filters, and mutators in this section to run whilst this pet is  active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+## Internal Placeholders
+
+| Placeholder | Value                                                       |
+| ----------- | ----------------------------------------------------------- |
+| `%level%`   | The player's pet level. Useful for creating scaling effects |

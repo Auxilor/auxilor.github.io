@@ -3,42 +3,54 @@ title: "How to make a custom booster"
 sidebar_position: 2
 ---
 
-## Default config
-The default configs can be found here:
+## Default Configs
 
-[GitHub](https://github.com/Auxilor/Boosters/blob/master/eco-core/core-plugin/src/main/resources/boosters/)
+The default configs can be found [here](https://github.com/Auxilor/Boosters/tree/master/eco-core/core-plugin/src/main/resources/boosters).
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
-## How to add boosters
-Boosters are each config files placed in the `/boosters/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+## Config Layout
+
+Each booster has its own config file, placed in the `/boosters/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+
+The ID of the booster is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+ID's must be lowercase letters, numbers, and underscores only.
 
 ### Example Booster Config
 
 ```yaml
-name: "2x Sell Multiplier"
-duration: 72000
+name: "2x Sell Multiplier" # The display name of the Booster.
+duration: 72000 # The duration (in ticks) of the Booster. (e.g. 6000 = 5 minutes)
+
+# The effects whilst the Booster is active (i.e. the functionality)
+# See here: https://plugins.auxilor.io/effects/configuring-an-effect
 effects:
   - id: sell_multiplier
     args:
       multiplier: 2
+      
+# The conditions required for the effects to activate
 conditions: [ ]
+
 commands:
-  activation: [ ]
-  expiry: [ ]
+  activation: [ ] # Commands to run when the booster is activated.
+  expiry: [ ] # Commands to run when the booster expires.
+  
 messages:
-  activation:
+  activation: # Broadcast message when the booster is activated.
     - ""
     - " %player%&f has activated a &a2x Sell Multiplier Booster&f!"
     - " &fThis booster will last an hour, be sure to thank them!"
     - ""
-  expiry:
+  expiry: # Broadcast message when the booster expires.
     - ""
     - " &fThe &a2x Sell Multiplier Booster&f has ended"
     - " &fGet another one here: &ahttps://store.ecomc.net/package/756888"
     - ""
+    - 
 gui:
-  item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBhN2I5NGM0ZTU4MWI2OTkxNTlkNDg4NDZlYzA5MTM5MjUwNjIzN2M4OWE5N2M5MzI0OGEwZDhhYmM5MTZkNSJ9fX0=
-  name: "&d2x Sell Multiplier"
-  lore:
+  item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBhN2I5NGM0ZTU4MWI2OTkxNTlkNDg4NDZlYzA5MTM5MjUwNjIzN2M4OWE5N2M5MzI0OGEwZDhhYmM5MTZkNSJ9fX0= # The GUI item: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  name: "&d2x Sell Multiplier" # The name of the Booster in the GUI.
+  lore: # The lore of the Booster in the GUI.
     - ""
     - "&fGives everyone online a"
     - "&a2x Sell Multiplier"
@@ -52,28 +64,40 @@ gui:
     - "&e&oClick to activate!"
     - ""
   position:
-    row: 2
-    column: 5
+    row: 2 # 1-6
+    column: 5 # 1-9
 ```
 
 ## Understanding all the sections
 
-**id:** The ID of the booster. This is what you use in commands - ID's must be lowercase letters, numbers, and underscores only.
+**name:** The name of the booster.
 
-**name:** The name of the booster, shown to the player.
+**duration:** The duration of the Booster (in ticks).
 
-**duration:** How long the booster lasts for, in ticks: 72000 ticks is 1 hour
+**commands:** Commands to be run when the Booster is activated or expires.
 
-**commands:** The commands that will be dispatched when a booster activates/deactivates. You can use %player% as a placeholder.
+**messages:** Broadcast messages to be sent when the Booster is activated or expires.
 
-**messages:** The messages that are broadcast when a booster activates/deactivates. You can use %player% as a placeholder.
+#### GUI
 
-**gui:** Config for how the booster looks in gui: the item, the lore, the name, etc..
+**item:** The item shown in the `/boosters` GUI, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 
-### Effects + Conditions
+**name:** The name shown in the `/boosters` GUI.
 
-Effects are the actual functionality of the booster, and conditions are requirements that a player must meet for the booster to activate for them - so you can make it so a booster only works for a certain type of player, ie only players that have above a certain amount of playtime, or those that only have below a certain balance.
+**lore:** The lore shown in the `/boosters` GUI.
 
-See this page for how to configure effects:
+**position:** The position in the `/boosters` GUI.
 
-[Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
+### Effects & Conditions
+
+The effects section is the core functionality of the Booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+## Internal Placeholders
+
+| Placeholder | Value                                    |
+| ----------- | ---------------------------------------- |
+| `%amount%`  | The amount of the booster the player has |
