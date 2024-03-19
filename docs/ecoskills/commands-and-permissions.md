@@ -33,6 +33,13 @@ General Usage: `/ecoskills recount <player>`
 
 ### XP multiplier permission
 
-Permission: `ecoskills.xpmultiplier.<value>`
+Permission: `ecoskills.xpmultiplier.<%increase>`
 
-General Usage: `ecoskills.xpmultiplier.2` would give 2x skill XP to anyone with the permission.
+General Usage: `ecoskills.xpmultiplier.200` would give 200% more skill XP (3x) to anyone with the permission. The backend math is `1 + (<%increase> / 100)` so 
+
+Permission: `ecoskills.xpmultiplier.50percent
+Permission: `ecoskills.xpmultiplier.double`
+Permission: `ecoskills.xpmultiplier.triple`
+Permission: `ecoskills.xpmultiplier.quadruple`
+
+General Usage: `ecoskills.xpmultiplier.50percent` would give 50% more skill XP (1.5x)
