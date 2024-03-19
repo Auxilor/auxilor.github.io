@@ -1,5 +1,5 @@
 ---
-title: "How to make an enchant"
+title: How to make an Enchant
 sidebar_position: 2
 ---
 

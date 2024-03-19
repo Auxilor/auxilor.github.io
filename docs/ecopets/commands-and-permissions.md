@@ -47,3 +47,16 @@ Find pets on [lrcdb](https://lrcdb.auxilor.io/)
 Permission: `ecopets.command.export`
 
 General Usage: `/ecopets export <id>`
+
+### XP multiplier permission
+
+Permission: `ecopets.xpmultiplier.<%increase>`
+
+General Usage: `ecopets.xpmultiplier.200` would give 200% more skill XP (3x) to anyone with the permission. The backend math is `1 + (<%increase> / 100)` so 
+
+Permission: `ecopets.xpmultiplier.50percent
+Permission: `ecopets.xpmultiplier.double`
+Permission: `ecopets.xpmultiplier.triple`
+Permission: `ecopets.xpmultiplier.quadruple`
+
+General Usage: `ecopets.xpmultiplier.50percent` would give 50% more skill XP (1.5x)

@@ -54,3 +54,16 @@ General Usage: `/ecojobs export <id>`
 ## `ecojobs.limit.<limit>`
 
 Sets the limit for the max amount of jobs the player can join at once
+
+### XP multiplier permission
+
+Permission: `ecojobs.xpmultiplier.<%increase>`
+
+General Usage: `ecojobs.xpmultiplier.200` would give 200% more skill XP (3x) to anyone with the permission. The backend math is `1 + (<%increase> / 100)` so 
+
+Permission: `ecojobs.xpmultiplier.50percent
+Permission: `ecojobs.xpmultiplier.double`
+Permission: `ecojobs.xpmultiplier.triple`
+Permission: `ecojobs.xpmultiplier.quadruple`
+
+General Usage: `ecojobs.xpmultiplier.50percent` would give 50% more skill XP (1.5x)

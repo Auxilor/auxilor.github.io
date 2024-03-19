@@ -1,5 +1,5 @@
 ---
-title: "How to make a shop"
+title: How to make a Shop
 sidebar_position: 1
 ---
 ## Shops

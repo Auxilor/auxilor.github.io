@@ -1,5 +1,5 @@
 ---
-title: "How to make a category"
+title: How to make a Category
 sidebar_position: 2
 ---
 

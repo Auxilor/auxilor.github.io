@@ -1,5 +1,5 @@
 ---
-title: "How to make a custom action"
+title: How to make Actions
 sidebar_position: 1
 ---
 
