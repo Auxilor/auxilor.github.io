@@ -1,5 +1,5 @@
 ---
-title: "Mob Categories"
+title: How to make mob categories
 sidebar_position: 3
 ---
 

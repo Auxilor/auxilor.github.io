@@ -1,6 +1,6 @@
 ---
 title: Custom GUI Slots
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 ## What are custom GUI slots?
@@ -12,7 +12,7 @@ When configuring a GUI in a plugin, you might stumble across this:
 custom-slots: []
 ```
 
-This means you can add custom items (with commands) to your GUIs for that extra layer of customisability.
+This means you can add custom items (with commands) to your GUIs for that extra layer of customizability.
 
 ## How to make a custom GUI slot
 
@@ -32,7 +32,7 @@ custom-slots:
     shift-right-click: []
 ```
 
-If you have no right click / shift left click / etc commands to add, you can omit the sections, like this:
+If you have no right click / shift left click / etc.. commands to add, you can omit the sections, like this:
 
 ```yaml
 custom-slots:

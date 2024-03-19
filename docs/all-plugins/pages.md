@@ -1,6 +1,6 @@
 ---
 title: GUI Pages
-sidebar_position: 1
+sidebar_position: 7
 ---
 
 ## Custom Pages

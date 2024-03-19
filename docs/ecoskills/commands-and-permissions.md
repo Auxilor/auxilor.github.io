@@ -30,3 +30,9 @@ General Usage: `/ecoskills reset <player>`
 Permission: `ecoskills.command.recount`
 
 General Usage: `/ecoskills recount <player>`
+
+### XP multiplier permission
+
+Permission: `ecoskills.xpmultiplier.<value>`
+
+General Usage: `ecoskills.xpmultiplier.2` would give 2x skill XP to anyone with the permission.
