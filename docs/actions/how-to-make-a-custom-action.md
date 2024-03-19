@@ -1,6 +1,6 @@
 ---
 title: "How to make a custom action"
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 ## Default Configs
@@ -8,7 +8,7 @@ sidebar_position: 2
 The default configs can be found [here](https://github.com/Auxilor/Actions/blob/master/eco-core/core-plugin/src/main/resources/actions/).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
-## Config Layout
+## How to add actions
 
 Each action has its own config file, placed in the `/actions/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 

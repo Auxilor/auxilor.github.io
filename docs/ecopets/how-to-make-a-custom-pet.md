@@ -1,9 +1,9 @@
 ---
 title: How to make a custom Pet
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoPets/tree/master/eco-core/core-plugin/src/main/resources/pets).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 

@@ -1,6 +1,6 @@
 ---
 title: "Commands and Permissions"
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 ## `/actions reload` (Reload the plugin)

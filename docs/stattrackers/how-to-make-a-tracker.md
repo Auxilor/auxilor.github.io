@@ -1,9 +1,9 @@
 ---
 title: "How to make a Stat Tracker"
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/StatTrackers/tree/master/eco-core/core-plugin/src/main/resources/stats).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
@@ -63,7 +63,7 @@ tracker:
 
 **counters:** The trigger, multiplier/value, conditions and filters to be tracked
 
-### Tracker Item:
+### Tracker Item
 
 **item:** The base item, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 

@@ -1,6 +1,6 @@
 ---
 title: "Migrating/Converting from other crate plugins"
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 Want to start using EcoCrates but do not have much time to convert all your configs from the old crate plugin?

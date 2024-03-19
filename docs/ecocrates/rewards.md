@@ -1,9 +1,9 @@
 ---
 title: "Rewards"
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-## Default config
+## Default configs
 The default reward config can be found [here](https://github.com/Auxilor/EcoCrates/blob/master/eco-core/core-plugin/src/main/resources/rewards.yml).
 
 ## How to configure rewards

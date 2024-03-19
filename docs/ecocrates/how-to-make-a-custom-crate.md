@@ -1,9 +1,9 @@
 ---
-title: "How to make a custom crate"
-sidebar_position: 2
+title: "How to make a crate"
+sidebar_position: 1
 ---
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoCrates/tree/master/eco-core/core-plugin/src/main/resources/crates).
 
 ## How to add crates

@@ -6,7 +6,7 @@ sidebar_position: 3
 ## Effects
 Effects are special abilities given to a player. They are levelled up by levelling skills.
 
-## Default config
+## Default configs
 The default configs can be found [here](https://github.com/Auxilor/EcoSkills/tree/master/eco-core/core-plugin/src/main/resources/effects).
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 

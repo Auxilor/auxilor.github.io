@@ -1,6 +1,6 @@
 ---
 title: How to make mob categories
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 ## What are categories?
@@ -8,6 +8,10 @@ sidebar_position: 3
 In EcoMobs, each mob belongs to a category, which control things like spawning behavior.
 
 For example, you might have a category for common mobs, one for rare mobs, one for nether bosses, etc.
+
+## Default configs
+The default configs can be found [here](https://github.com/Auxilor/EcoMobs/tree/master/eco-core/core-plugin/src/main/resources/mobs).
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
 ## How to add categories
 Each category is its own config file, placed in the `/categories/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
