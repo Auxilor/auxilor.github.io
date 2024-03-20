@@ -118,6 +118,7 @@ rewards:
 
   - reward: dynamic_mining
     levels: 1
+    every: 1
 
 # Effects to run when an item levels up
 # %level% is the level the item leveled up to.
@@ -209,11 +210,19 @@ xp-requirements:
 ```
 
 **xp-formula:** A formula to calculate XP requirements for each level.
+
 **max-level:** The maximum level for the skill (Optional).
 
 **rewards:** The rewards given on level up - must be [stats](https://plugins.auxilor.io/ecoskills/how-to-make-a-stat) or [effects](https://plugins.auxilor.io/ecoskills/how-to-make-an-effect). See below for more info.
 
-**level-up-effects:** Effects to run when the skill is levelled up (Supports triggered effects). See [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect).
+**level-up-effects:** Effects to run when the skill is levelled up (Supports triggered effects). See [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect). You can use a `require` argument here for level requirements, for example:
+```yaml
+level-up-effects:
+  - id: run_command
+    args:
+      command: "give %player% diamond 1"
+      require: "%level% < 10"
+```
 
 **placeholders:** Custom placeholders to be used in descriptions.
 
@@ -242,6 +251,8 @@ xp-requirements:
 **start-level:** (Optional) The skill level to start giving the stat or effect (inclusive).
 
 **end-level:** (Optional) The skill level to stop giving the stat or effect (inclusive).
+
+**every:** (Optional) If the stat or effect should be given every x levels.
 
 ### Effects & Conditions
 
