@@ -85,15 +85,18 @@ slot: 27
 
 ## Custom Items
 Sometimes custom item IDs are namespaced. In order to make this work, you have to specify them like `itemsadder:namespace__key`, where two underscores denote where the `:` would normally go
-
-Example: `itemsadder:my_items__my_helmet`
+### ItemsAdder
 ```yaml
+# ItemsAdder configuration
 info:
   namespace: my_items
 items:
   my_helmet:
     display_name: '&9Custom Helmet'
 ```
-
+Using this in the Item Lookup System would look like: `itemsadder:my_items__my_helmet`.
+### Oxaren
+To use custom items from Oxaren, you can use `oxaren:<id>`.
+### ItemBridge
 To use custom items from ItemBridge, you can use `itembridge:saved__<id>`. If it's an item from a supported plugin, it's `itembridge:<prefix>__<id>`
 
