@@ -154,7 +154,7 @@ slots:
 
 **rows:** The amount of rows in the GUI.
 
-**forwards/backwards-arrow:** The item and location of the navigation arrows.
+**forwards/backwards-arrow:** The item and location of the navigation arrows. You can disable this by setting **enabled: false**.
 ##### Pages
 
 To configure a pattern and mask, read here for more info: [Pages](https://plugins.auxilor.io/all-plugins/pages)
