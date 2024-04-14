@@ -61,7 +61,7 @@ effects:
 So here, MVP players would get $100 for breaking a block, whereas non-MVP players would be told to buy the rank to get the perk when they try to break a block. This functions as an alternative to not-met-lines.
 ## Victim Conditions
 
-You can also check if the victim (player/entity) meets the conditions before running the effects by using the `victim_conditions` filter, [here](plugins.auxilor.io/effects/all-filters/victim_conditions). You can combine these with usual conditions to create intricate effects with comprehensive lists of criteria to be met.
+You can also check if the victim (player/entity) meets the conditions before running the effects by using the `victim_conditions` filter, [here](https://plugins.auxilor.io/effects/all-filters/victim_conditions). You can combine these with usual conditions to create intricate effects with comprehensive lists of criteria to be met.
 
 In config, they look like this:
 
