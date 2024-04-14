@@ -1,4 +1,4 @@
-# `has_pet
+# `has_pet`
 
 Requires a player to have a certain pet
 
