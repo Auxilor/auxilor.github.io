@@ -1,6 +1,6 @@
 # `envoy_type`
 
-The list of envoy types  that the effect should activate against
+The list of envoy types that the effect should activate against
 
 **Requires AxEnvoy**
 

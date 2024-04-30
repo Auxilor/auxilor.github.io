@@ -95,6 +95,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `projectile_launch`             | Triggered when launching a projectile (arrow, trident, splash potion, egg, snowball)                              | 1                                             |
 | `reel_in`                       | Triggered when reeling in a fishing rod                                                                           | 1                                             |
 | `regen_magic`                   | Triggered when regenerating magic **Requires EcoSkills**                                                          | 1                                             |
+| `register_vote`                 | Triggered when a player votes for your server **Requires NuVotifier**                                             | 1                                             |
 | `respawn`                       | Triggered when respawning                                                                                         | 1                                             |
 | `right_click_npc`               | Triggered when right-clicking an NPC **Requires Citizens**                                                        | 1                                             |
 | `run_command`                   | Triggered when running a command                                                                                  | 1                                             |
