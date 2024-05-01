@@ -65,8 +65,12 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - Terra
 - TerraformGenerator
 
-## Misc
+## Skills
 - mcMMO
+- Aurelium Skills (v1)
+- AuraSkills (v2)
+
+## Misc
 - MultiverseInventories
 - Essentials
 - CustomCrafting
