@@ -70,7 +70,7 @@ You can use items from my other plugins anywhere using The Item Lookup system.
 | EcoArmor     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:upgrade_crystal_<id>` |
 
 ## Using items in MythicMobs
-If you want to use a lookup item in MythicMobs, just do it like this: `eco{type=<lookup_key>}`, e.g. `eco{(}type=ecoitems:<id>}`
+If you want to use a lookup item in MythicMobs, just do it like this: `eco{type=<lookup_key>}`, e.g. `eco{type=ecoitems:<id>}`
 
 ## Using items in ShopGUIPlus
 If you want to use a lookup item in ShopGUIPlus, just do it like this:
