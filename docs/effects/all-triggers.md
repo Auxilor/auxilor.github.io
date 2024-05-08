@@ -31,7 +31,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `complete_quest`                | Triggered when completing a quest **Requires EcoQuests**                                                          | 1                                             |
 | `complete_task`                 | Triggered when completing a task **Requires EcoQuests**                                                           | 1                                             |
 | `consume`                       | Triggered on item consumption                                                                                     | 1                                             |
-| `craft`                         | Triggered when crafting an item                                                                                   | 1                                             |
+| `craft`                         | Triggered when crafting an item                                                                                   | The amount of items crafted                   |
 | `damage_item`                   | Triggered when damaging an item                                                                                   | The damage                                    |
 | `death`                         | Triggered on death from any sources                                                                               | 1                                             |
 | `disable`                       | Triggered when an item / enchant / etc disables                                                                   | 1                                             |
