@@ -10,4 +10,5 @@ Requires a player to be within a certain radius of an entity
       - zombie
       - ecomobs:illusioner
     radius: 25 # The radius
+    amount: 5 # (Optional) The amount of listed entities
 ```
