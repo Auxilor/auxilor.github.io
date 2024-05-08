@@ -95,8 +95,8 @@ items:
     display_name: '&9Custom Helmet'
 ```
 Using this in the Item Lookup System would look like: `itemsadder:my_items__my_helmet`.
-### Oxaren
-To use custom items from Oxaren, you can use `oxaren:<id>`.
+### Oraxen
+To use custom items from Oraxen, you can use `oraxen:<id>`.
 ### ItemBridge
 To use custom items from ItemBridge, you can use `itembridge:saved__<id>`. If it's an item from a supported plugin, it's `itembridge:<prefix>__<id>`
 
