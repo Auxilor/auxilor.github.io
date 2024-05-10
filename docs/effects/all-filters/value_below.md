@@ -1,4 +1,4 @@
-# `value_above`
+# `value_below`
 
 Require the trigger value to be less than a certain amount
 
