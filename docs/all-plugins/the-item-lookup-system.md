@@ -70,7 +70,7 @@ You can use items from my other plugins anywhere using The Item Lookup system.
 | EcoArmor     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:upgrade_crystal_<id>` |
 
 ## Using items in MythicMobs
-If you want to use a lookup item in MythicMobs, just do it like this: `eco{type=<lookup_key>}`, e.g. `eco{(}type=ecoitems:<id>}`
+If you want to use a lookup item in MythicMobs, just do it like this: `eco{type=<lookup_key>}`, e.g. `eco{type=ecoitems:<id>}`
 
 ## Using items in ShopGUIPlus
 If you want to use a lookup item in ShopGUIPlus, just do it like this:
@@ -95,8 +95,8 @@ items:
     display_name: '&9Custom Helmet'
 ```
 Using this in the Item Lookup System would look like: `itemsadder:my_items__my_helmet`.
-### Oxaren
-To use custom items from Oxaren, you can use `oxaren:<id>`.
+### Oraxen
+To use custom items from Oraxen, you can use `oraxen:<id>`.
 ### ItemBridge
 To use custom items from ItemBridge, you can use `itembridge:saved__<id>`. If it's an item from a supported plugin, it's `itembridge:<prefix>__<id>`
 

@@ -10,19 +10,19 @@ Triggered effects also produce a value, which can be referenced with [their plac
 and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 
 | ID                              | Description                                                                                                       | Value Provided                                |
-|---------------------------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | `alt_click`                     | Triggered when using Right Click on most items, Left Click on those that have a default right click functionality | 1                                             |
 | `bite`                          | Triggered when a fish bites on your rod                                                                           | 1                                             |
 | `block_item_drop`               | Triggered when a mined block drops loot                                                                           | The amount of items dropped                   |
 | `bow_attack`                    | Triggered when shooting an entity with a bow and arrow (or crossbow)                                              | The damage dealt                              |
 | `breed`                         | Triggered when breeding entities together                                                                         | The experience received                       |
-| `brew_ingredient`               | Same as `brew`, but passes the ingredient as the item                                                             | 1                                             |
 | `brew`                          | Triggered when brewing a potion in a brewing stand                                                                | 1                                             |
+| `brew_ingredient`               | Same as `brew`, but passes the ingredient as the item                                                             | 1                                             |
 | `buy_item`                      | Triggered when buying an item in a shop **Requires EcoShop**                                                      | The price                                     |
 | `cast_rod`                      | Triggered when casting a fishing line                                                                             | 1                                             |
 | `catch_entity`                  | Triggered when hooking onto an entity with a fishing rod                                                          | 1                                             |
-| `catch_fish_fail`               | Triggered when failing to catch a fish                                                                            | 1                                             |
 | `catch_fish`                    | Triggered when catching a fish                                                                                    | The experience dropped                        |
+| `catch_fish_fail`               | Triggered when failing to catch a fish                                                                            | 1                                             |
 | `change_armor`                  | Triggered when changing armor                                                                                     | 1                                             |
 | `change_world`                  | Triggered when changing world                                                                                     | 1                                             |
 | `click_block`                   | Triggered when right-clicking on a block                                                                          | 1                                             |
@@ -31,7 +31,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `complete_quest`                | Triggered when completing a quest **Requires EcoQuests**                                                          | 1                                             |
 | `complete_task`                 | Triggered when completing a task **Requires EcoQuests**                                                           | 1                                             |
 | `consume`                       | Triggered on item consumption                                                                                     | 1                                             |
-| `craft`                         | Triggered when crafting an item                                                                                   | 1                                             |
+| `craft`                         | Triggered when crafting an item                                                                                   | The amount of items crafted                   |
 | `damage_item`                   | Triggered when damaging an item                                                                                   | The damage                                    |
 | `death`                         | Triggered on death from any sources                                                                               | 1                                             |
 | `disable`                       | Triggered when an item / enchant / etc disables                                                                   | 1                                             |
@@ -45,8 +45,8 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `entity_break_door`             | Triggered when an entity breaks a door                                                                            | 1                                             |
 | `entity_catch_fire_from_block`  | Triggered when an entity catches fire from a block                                                                | 1                                             |
 | `entity_catch_fire_from_entity` | Triggered when an entity catches fire from an entity                                                              | 1                                             |
-| `entity_damage_by_entity`       | Triggered when an entity takes damage from another entity                                                         | The damage taken                              |
 | `entity_damage`                 | Triggered when an entity takes damage                                                                             | The damage taken                              |
+| `entity_damage_by_entity`       | Triggered when an entity takes damage from another entity                                                         | The damage taken                              |
 | `entity_death`                  | Triggered when an entity dies                                                                                     | 1                                             |
 | `entity_item_drop`              | Triggered when a killed entity drops loot                                                                         | The amount of items dropped                   |
 | `entity_spawn`                  | Triggered when an entity spawns                                                                                   | 1                                             |
@@ -67,14 +67,14 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `hook_in_ground`                | Triggered when a fishing rod hook hits the ground                                                                 | 1                                             |
 | `item_break`                    | Triggered when breaking any item in your inventory (durability)                                                   | 1                                             |
 | `jobs_level_up`                 | Triggered when levelling up a job **Requires Jobs Reborn**                                                        | The new level                                 |
-| `join_job`                      | Triggered when joining a job **Requires EcoJobs**                                                                 | The job level                                 |
 | `join`                          | Triggered when joining the server                                                                                 | 1                                             |
+| `join_job`                      | Triggered when joining a job **Requires EcoJobs**                                                                 | The job level                                 |
 | `jump`                          | Triggered when Jumping (pressing space)                                                                           | 1                                             |
 | `kill`                          | Triggered when a player kills a player or entity                                                                  | The victim's max health                       |
+| `leave`                         | Triggered when leaving the server                                                                                 | 1                                             |
 | `leave_bed`                     | Triggered when leaving a bed                                                                                      | 1                                             |
 | `leave_job`                     | Triggered when leaving a job **Requires EcoJobs**                                                                 | The job level                                 |
 | `leave_region`                  | Triggered when leaving a region **Requires WorldGuard**                                                           | 1                                             |
-| `leave`                         | Triggered when leaving the server                                                                                 | 1                                             |
 | `left_click_npc`                | Triggered when left-clicking an NPC **Requires Citizens**                                                         | 1                                             |
 | `level_up_item`                 | Triggered when levelling up an item                                                                               | The new item level                            |
 | `level_up_job`                  | Triggered when levelling up a job **Requires EcoJobs**                                                            | The new level                                 |
@@ -84,8 +84,8 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `lose_hunger`                   | Triggered when losing hunger                                                                                      | The hunger lost                               |
 | `lose_potion_effect`            | Triggered when losing a potion effect                                                                             | 1                                             |
 | `melee_attack`                  | Triggered when injuring an entity with a melee attack                                                             | The damage dealt                              |
-| `mine_block_progress`           | Triggered when damaging a block                                                                                   | 1                                             |
 | `mine_block`                    | Triggered when mining a block                                                                                     | 1                                             |
+| `mine_block_progress`           | Triggered when damaging a block                                                                                   | 1                                             |
 | `move`                          | Triggered on all movement: looking around, walking                                                                | The distance moved                            |
 | `pick_up_item`                  | Triggered when picking up an item                                                                                 | The amount of items                           |
 | `place_block`                   | Triggered when placing a block                                                                                    | 1                                             |
