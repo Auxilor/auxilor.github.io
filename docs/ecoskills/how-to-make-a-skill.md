@@ -120,14 +120,22 @@ rewards:
     levels: 1
     every: 1
 
-# Effects to run when an item levels up
-# %level% is the level the item leveled up to.
+# Effects to run when the skill levels up
+# %level% is the level the skill leveled up to.
 # If you want to restrict this to certain levels, you can use
 # require: %level% = 20, or require: %level% < 50, etc.
+# If you want a reward to run every x levels, you can use
+# every: 1, or every: 12, etc
 level-up-effects:
   - id: give_money
     args:
       amount: 1000 * %level%
+  - id: give_item
+	args:
+	  items:
+	    - diamond
+	  every: 5 # Gives the reward every 5 levels
+	  require: %level% = 5 # Requires level 5 before receiving rewards
 
 # Custom placeholders to be used in descriptions,
 # Don't add % to the IDs, this is done automatically
