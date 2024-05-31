@@ -75,3 +75,4 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - Essentials
 - CustomCrafting
 - Model Engine
+- AxEnvoy
