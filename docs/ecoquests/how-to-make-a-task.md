@@ -24,11 +24,13 @@ description: "&fBreak stone blocks (&a%xp%&8/&a%required-xp%&f)" # The descripti
 # The 'multiplier' takes the value produced by the trigger and multiplies it
 # Alternatively, you can use 'value' to count a specific number and not a multiplier
 xp-gain-methods:
-  - trigger: mine_block # See list of triggers: https://plugins.auxilor.io/effects/all-triggers
-    multiplier: 1 # You can also use "value" here (see above comment)
-    filters: # (Optional) Example of using filters in tasks
+  - trigger: mine_block
+    multiplier: 0.5 # You can also use "value" here (see above comment)
+    args: # (Optional)
+	  chance: 50
+    filters: # (Optional)
       blocks:
-        - stone
+        - netherrack
 
 # An optional list of effects to run when a player completes the task
 # Read here: https://plugins.auxilor.io/effects/configuring-an-effect

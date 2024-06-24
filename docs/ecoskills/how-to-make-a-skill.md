@@ -174,17 +174,19 @@ reward-messages:
     - " &8» &r&6%ecoskills_dynamic_mining_name% %ecoskills_dynamic_mining_numeral%"
     - "    %ecoskills_dynamic_mining_description%"
 
-# An XP gain method takes a trigger, a multiplier, conditions, and filters.
+# An XP gain method takes a trigger, a multiplier, conditions, args and filters.
 # The 'multiplier' takes the value produced by the trigger and multiplies it
 # Alternatively, you can use 'value' to count a specific number and not a multiplier
 xp-gain-methods:
-  - trigger: break_block
+  - trigger: mine_block
     multiplier: 0.5 # You can also use "value" here (see above comment)
-    filters:
+    args: # (Optional)
+	  chance: 50
+    filters: # (Optional)
       blocks:
         - netherrack
 
-  - trigger: break_block
+  - trigger: mine_block
     multiplier: 1
     filters:
       blocks:
@@ -236,7 +238,7 @@ level-up-effects:
 
 **reward-messages:** Messages to send in chat on level up.
 
-**xp-gain-methods:** The trigger, multiplier/value, conditions and filters that will award skill XP.
+**xp-gain-methods:** The trigger, multiplier/value, conditions, args and filters that will award skill XP.
 
 **conditions:** Global conditions that must be met to gain skill XP. See [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
 
