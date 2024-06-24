@@ -117,6 +117,6 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `toggle_flight`                 | Triggered when changing the flight state                                                                          | 1                                             |
 | `toggle_sneak`                  | Triggered when changing the sneak state                                                                           | 1                                             |
 | `toggle_sprint`                 | Triggered when changing the sprint state                                                                          | 1                                             |
-| `trident_attack`                | Triggered on injuring an entity with a thrown trident                                                             | The damage dealt                              |
+| `trident_attack`                | Triggered on injuring an entity with a thrown trident **Requires Paper**                                          | The damage dealt                              |
 | `villager_trade`                | Triggered when trading with a villager **Requires Paper**                                                         | The experience the villager gains             |
 | `win_raid`                      | Triggered when a player wins a raid                                                                               | The level of bad omen                         |
