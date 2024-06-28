@@ -6,5 +6,5 @@ Requires the player to be above a certain xp level
 ```yaml
 - id: above_xp_level
   args:
-    levels: 100 # The minimum XP level
+    level: 100 # The minimum XP level
 ```
