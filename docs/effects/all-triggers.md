@@ -27,6 +27,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `change_world`                  | Triggered when changing world                                                                                     | 1                                             |
 | `click_block`                   | Triggered when right-clicking on a block                                                                          | 1                                             |
 | `click_entity`                  | Triggered when right-clicking on an entity                                                                        | 1                                             |
+| `collect_envoy`                 | Triggered when collecting an envoy crate **Requires AxEnvoy**                                                     | 1                                             |
 | `complete_advancement`          | Triggered when completing an advancement                                                                          | 1                                             |
 | `complete_quest`                | Triggered when completing a quest **Requires EcoQuests**                                                          | 1                                             |
 | `complete_task`                 | Triggered when completing a task **Requires EcoQuests**                                                           | 1                                             |
