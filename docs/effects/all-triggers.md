@@ -27,11 +27,12 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `change_world`                  | Triggered when changing world                                                                                     | 1                                             |
 | `click_block`                   | Triggered when right-clicking on a block                                                                          | 1                                             |
 | `click_entity`                  | Triggered when right-clicking on an entity                                                                        | 1                                             |
+| `collect_envoy`                 | Triggered when collecting an envoy crate **Requires AxEnvoy**                                                     | 1                                             |
 | `complete_advancement`          | Triggered when completing an advancement                                                                          | 1                                             |
 | `complete_quest`                | Triggered when completing a quest **Requires EcoQuests**                                                          | 1                                             |
 | `complete_task`                 | Triggered when completing a task **Requires EcoQuests**                                                           | 1                                             |
 | `consume`                       | Triggered on item consumption                                                                                     | 1                                             |
-| `craft`                         | Triggered when crafting an item                                                                                   | 1                                             |
+| `craft`                         | Triggered when crafting an item                                                                                   | The amount of items crafted                   |
 | `damage_item`                   | Triggered when damaging an item                                                                                   | The damage                                    |
 | `death`                         | Triggered on death from any sources                                                                               | 1                                             |
 | `disable`                       | Triggered when an item / enchant / etc disables                                                                   | 1                                             |
@@ -118,6 +119,6 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `toggle_flight`                 | Triggered when changing the flight state                                                                          | 1                                             |
 | `toggle_sneak`                  | Triggered when changing the sneak state                                                                           | 1                                             |
 | `toggle_sprint`                 | Triggered when changing the sprint state                                                                          | 1                                             |
-| `trident_attack`                | Triggered on injuring an entity with a thrown trident                                                             | The damage dealt                              |
+| `trident_attack`                | Triggered on injuring an entity with a thrown trident **Requires Paper**                                          | The damage dealt                              |
 | `villager_trade`                | Triggered when trading with a villager **Requires Paper**                                                         | The experience the villager gains             |
 | `win_raid`                      | Triggered when a player wins a raid                                                                               | The level of bad omen                         |

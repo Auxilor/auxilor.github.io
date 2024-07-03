@@ -67,6 +67,7 @@ The cooldown between effect activations, in seconds. (defaults to 0)
 ```yaml
 args:
   cooldown: 10
+  cooldown_group: magic_abilities # (Optional) The cooldown group, if not specified the cooldown will be for this effect only
   send_cooldown_message: true # (Optional) If the cooldown message should be sent
   cooldown_message: "Custom cooldown message with %seconds% left" # (Optional) a custom cooldown message
   cooldown_effects: # (Optional) Effects to run if on cooldown

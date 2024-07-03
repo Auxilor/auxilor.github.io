@@ -120,14 +120,22 @@ rewards:
     levels: 1
     every: 1
 
-# Effects to run when an item levels up
-# %level% is the level the item leveled up to.
+# Effects to run when the skill levels up
+# %level% is the level the skill leveled up to.
 # If you want to restrict this to certain levels, you can use
 # require: %level% = 20, or require: %level% < 50, etc.
+# If you want a reward to run every x levels, you can use
+# every: 1, or every: 12, etc
 level-up-effects:
   - id: give_money
     args:
       amount: 1000 * %level%
+  - id: give_item
+	args:
+	  items:
+	    - diamond
+	  every: 5 # Gives the reward every 5 levels
+	  require: %level% = 5 # Requires level 5 before receiving rewards
 
 # Custom placeholders to be used in descriptions,
 # Don't add % to the IDs, this is done automatically
@@ -166,17 +174,19 @@ reward-messages:
     - " &8» &r&6%ecoskills_dynamic_mining_name% %ecoskills_dynamic_mining_numeral%"
     - "    %ecoskills_dynamic_mining_description%"
 
-# An XP gain method takes a trigger, a multiplier, conditions, and filters.
+# An XP gain method takes a trigger, a multiplier, conditions, args and filters.
 # The 'multiplier' takes the value produced by the trigger and multiplies it
 # Alternatively, you can use 'value' to count a specific number and not a multiplier
 xp-gain-methods:
-  - trigger: break_block
+  - trigger: mine_block
     multiplier: 0.5 # You can also use "value" here (see above comment)
-    filters:
+    args: # (Optional)
+	  chance: 50
+    filters: # (Optional)
       blocks:
         - netherrack
 
-  - trigger: break_block
+  - trigger: mine_block
     multiplier: 1
     filters:
       blocks:
@@ -228,7 +238,7 @@ level-up-effects:
 
 **reward-messages:** Messages to send in chat on level up.
 
-**xp-gain-methods:** The trigger, multiplier/value, conditions and filters that will award skill XP.
+**xp-gain-methods:** The trigger, multiplier/value, conditions, args and filters that will award skill XP.
 
 **conditions:** Global conditions that must be met to gain skill XP. See [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
 
