@@ -66,6 +66,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `heal`                          | Triggered when regaining health                                                                                   | The health regained                           |
 | `hold_item`                     | Triggered when changing your held item                                                                            | 1                                             |
 | `hook_in_ground`                | Triggered when a fishing rod hook hits the ground                                                                 | 1                                             |
+| `inscribe`                      | Triggered when inscribing a scroll **Requires EcoScrolls**                                                        | 1                                             |
 | `item_break`                    | Triggered when breaking any item in your inventory (durability)                                                   | 1                                             |
 | `jobs_level_up`                 | Triggered when levelling up a job **Requires Jobs Reborn**                                                        | The new level                                 |
 | `join`                          | Triggered when joining the server                                                                                 | 1                                             |
@@ -120,7 +121,6 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `toggle_sneak`                  | Triggered when changing the sneak state                                                                           | 1                                             |
 | `toggle_sprint`                 | Triggered when changing the sprint state                                                                          | 1                                             |
 | `trident_attack`                | Triggered on injuring an entity with a thrown trident **Requires Paper**                                          | The damage dealt                              |
+| `try_inscribe`                  | Triggered when attempting to inscribe a scroll **Requires EcoScrolls**                                            | 1                                             |
 | `villager_trade`                | Triggered when trading with a villager **Requires Paper**                                                         | The experience the villager gains             |
 | `win_raid`                      | Triggered when a player wins a raid                                                                               | The level of bad omen                         |
-| `inscribe`                      | Triggered when inscribing a scroll **Requires EcoScrolls**                                                        | 1                                             |
-| `try_inscribe`                  | Triggered when attempting to inscribe a scroll **Requires EcoScrolls**                                            | 1                                             |
