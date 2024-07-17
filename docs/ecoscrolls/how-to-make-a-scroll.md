@@ -16,29 +16,87 @@ ID's must be lowercase letters, numbers, and underscores only.
 ## Example Scroll Config
 
 ```yaml
-name: "&6Example Scroll" # The name of the scroll
-lore: # The lore added to items when inscribed with the scroll
-  - ""
-  - "&7This item has been inscribed with"
-  - "&6Example Scroll"
+# The ID of the scroll is the name of the .yml file,
+# for example coins_on_kill.yml has the ID of coins_on_kill
+# You can place scrolls anywhere in this folder,
+# including in subfolders if you want to organize your scroll configs
+# _example.yml is not loaded.
 
-targets: # The items that the scroll can be applied to, see targets.yml
+# The name of the scroll
+name: "&6Example Scroll"
+
+# The max level of the scroll
+max-level: 1
+
+# The amount of times the scroll can be used
+max-uses: 1
+
+# Options for the physical scroll item
+item:
+  item: paper glint
+
+  # Name and lore can use %uses%, %max_uses%, and %uses_left% placeholders
+  name: "&6&lExample Scroll"
+  lore:
+      - "&7This is an example scroll."
+      - "&7It does nothing."
+
+  # Options for crafting, read here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  craftable: false
+  recipe: [ ]
+
+# Options for inscribing items with the scroll
+inscription:
+  # The conditions required to inscribe the item
+  # not-met-effects will run if someone tries to inscribe the item without meeting the conditions
+  conditions: [ ]
+
+  # The effects that will be run when the item is inscribed
+  # If your scroll works by modifying the item (e.g. adding enchantments, changing durability),
+  # then put those effects here.
+  effects: [ ]
+
+  # Read https://plugins.auxilor.io/all-plugins/prices
+  # The price to inscribe the item
+  price:
+    value: 100
+    type: coins
+    display: "&e%value% coins"
+
+  # The formula to multiply the price depending on the level.
+  # The %level% placeholder is the *current* level of the scroll
+  price-level-multiplier: "1 + %level% * 0.5"
+
+  # If the scroll can be applied to items via drag-and-drop
+  drag-and-drop: true
+
+  # If the scroll can be applied to items via the inscription table
+  inscription-table: true
+
+# The items that the scroll can be applied to, see targets.yml
+targets:
   - sword
-conflicts: [ ] # The conflicts that the scroll has with other scrolls
+
+# The conflicts that the scroll has with other scrolls
+conflicts: [ ]
 
 # The scroll(s) that must be applied to the item before this scroll can be applied
 requirements:
   - scroll: my_requirement_scroll # The scroll to require
     level: 2 # The level required (optional)
+
 # If inscribing this scroll should remove the required scrolls
 remove-requirements: false
 
-max-level: 1 # The max level of the scroll
-max-uses: 1 # The amount of times the scroll can be used
+# The lore added to items when inscribed with the scroll
+lore:
+  - ""
+  - "&7This item has been inscribed with"
+  - "&6Example Scroll"
 
 # Item placeholders for dynamic lore in plugins like EcoItems
-# The placeholder is %ecoscrolls_scroll_<scroll>_<placeholder>%, e.g.
-# %ecoscrolls_scoll_example_bonus%
+# The placeholder is %ecoscrolls_scroll_<scroll>:<placeholder>%, e.g.
+# %ecoscrolls_scroll_example:bonus%
 placeholders:
   bonus: "%level% * 2"
 
@@ -55,38 +113,6 @@ effects:
 # The conditions for the scroll to work
 conditions: [ ]
 
-# Options for the physical scroll item
-item:
-  item: paper glint
-  # Name and lore can use %uses%, %max_uses%, and %uses_left% placeholders
-  name: "&6&lExample Scroll"
-  lore:
-    - "&7This is an example scroll."
-    - "&7It does nothing."
-  craftable: false
-  recipe: [ ]
-
-# Options for inscribing items with the scroll
-inscription:
-  # The conditions required to inscribe the item
-  # not-met-effects will run if someone tries to inscribe the item without meeting the conditions
-  conditions: [ ]
-
-  # The effects that will be run when the item is inscribed
-  effects: [ ]
-
-  # Read https://plugins.auxilor.io/all-plugins/prices
-  # The price to inscribe the ite
-  price:
-    value: 100
-    type: coins
-    display: "&e%value% coins"
-
-  # The formula to multiply the price depending on the level.
-  # The %level% placeholder is the *current* level of the scroll
-  price-level-multiplier: "1 + %level% * 0.5"
-  drag-and-drop: true # If the scroll can be applied to items via drag-and-drop
-  inscription-table: true # If the scroll can be applied to items via the inscription table
 ```
 
 ## Understanding all the sections
