@@ -16,6 +16,12 @@ ID's must be lowercase letters, numbers, and underscores only.
 ## Example Scroll Config
 
 ```yaml
+# The ID of the scroll is the name of the .yml file,
+# for example coins_on_kill.yml has the ID of coins_on_kill
+# You can place scrolls anywhere in this folder,
+# including in subfolders if you want to organize your scroll configs
+# _example.yml is not loaded.
+
 name: "&6Example Scroll" # The name of the scroll
 lore: # The lore added to items when inscribed with the scroll
   - ""
