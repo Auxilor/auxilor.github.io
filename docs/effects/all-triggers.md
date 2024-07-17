@@ -122,3 +122,5 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `trident_attack`                | Triggered on injuring an entity with a thrown trident **Requires Paper**                                          | The damage dealt                              |
 | `villager_trade`                | Triggered when trading with a villager **Requires Paper**                                                         | The experience the villager gains             |
 | `win_raid`                      | Triggered when a player wins a raid                                                                               | The level of bad omen                         |
+| `inscribe`                      | Triggered when inscribing a scroll **Requires EcoScrolls**                                                        | 1                                             |
+| `try_inscribe`                  | Triggered when attempting to inscribe a scroll **Requires EcoScrolls**                                            | 1                                             |
