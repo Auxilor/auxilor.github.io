@@ -122,10 +122,6 @@ requirements:
 
 **placeholders:** Dynamic custom placeholders to show in the lore of other items (`%ecoscrolls_scroll_<scroll>_<placeholder>%`).
 
-**effects:** Effects for the scroll to give. See [Effects & Conditions](https://plugins.auxilor.io/ecoscrolls/how-to-make-a-custom-scrollt#effects--conditions)
-
-**conditions:** Conditions for the scroll to work. See [Effects & Conditions](https://plugins.auxilor.io/ecoscrolls/how-to-make-a-custom-scrollt#effects--conditions)
-
 ### Effects & Conditions
 
 The effects section is the core functionality of the EcoScroll. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the inscribed item is held or used.
