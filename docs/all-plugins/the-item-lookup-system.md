@@ -65,16 +65,17 @@ So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weap
 ## Using items from my other plugins
 You can use items from my other plugins anywhere using The Item Lookup system.
 
-| Plugin           | Item Lookup Key                                                                                                     |
-|------------------|---------------------------------------------------------------------------------------------------------------------|
-| EcoItems       | `ecoitems:<id>`                                                                                                     |
-| Talismans      | `talismans:<id>`                                                                                                    |
-| EcoMobs        | `ecomobs:<id>_spawn_egg`                                                                                            |
-| EcoPets      | `ecopets:<id>_spawn_egg`                                                                                            |
-| StatTrackers | `stattrackers:<id>`                                                                                                 |
-| EcoCrates    | `ecocrates:<crate>_key`                                                                                             |
-| Reforges     | `reforges:stone_<id>`                                                                                               |
+| Plugin       | Item Lookup Key                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------- |
 | EcoArmor     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:upgrade_crystal_<id>` |
+| EcoCrates    | `ecocrates:<crate>_key`                                                                                             |
+| EcoItems     | `ecoitems:<id>`                                                                                                     |
+| EcoMobs      | `ecomobs:<id>_spawn_egg`                                                                                            |
+| EcoPets      | `ecopets:<id>_spawn_egg`                                                                                            |
+| EcoScrolls   | `ecoscrolls:scroll_<id>`                                                                                            |
+| Reforges     | `reforges:stone_<id>`                                                                                               |
+| StatTrackers | `stattrackers:<id>`                                                                                                 |
+| Talismans    | `talismans:<id>`                                                                                                    |
 
 ## Using items in MythicMobs
 If you want to use a lookup item in MythicMobs, just do it like this: `eco{type=<lookup_key>}`, e.g. `eco{type=ecoitems:<id>}`
