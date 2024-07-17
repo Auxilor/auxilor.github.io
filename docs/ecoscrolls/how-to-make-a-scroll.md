@@ -28,17 +28,16 @@ conflicts: [ ] # The conflicts that the scroll has with other scrolls
 
 # The scroll(s) that must be applied to the item before this scroll can be applied
 requirements:
-  - scroll: my_requirement_scroll # The scroll to require
+  - scroll: my_requirement_scroll # The ID of scroll to require
     level: 2 # The level required (optional)
-# If inscribing this scroll should remove the required scrolls
-remove-requirements: false
+remove-requirements: false # If inscribing this scroll should remove the required scrolls
 
 max-level: 1 # The max level of the scroll
 max-uses: 1 # The amount of times the scroll can be used
 
 # Item placeholders for dynamic lore in plugins like EcoItems
-# The placeholder is %ecoscrolls_scroll_<scroll>_<placeholder>%, e.g.
-# %ecoscrolls_scoll_example_bonus%
+# The placeholder is %ecoscrolls_scroll_<scroll>:<placeholder>%, e.g.
+# %ecoscrolls_scroll_example:bonus%
 placeholders:
   bonus: "%level% * 2"
 
@@ -68,15 +67,11 @@ item:
 
 # Options for inscribing items with the scroll
 inscription:
-  # The conditions required to inscribe the item
-  # not-met-effects will run if someone tries to inscribe the item without meeting the conditions
-  conditions: [ ]
-
-  # The effects that will be run when the item is inscribed
-  effects: [ ]
+  inscription-table: true # If the scroll can be applied to items via the inscription table
+  drag-and-drop: true # If the scroll can be applied to items via drag-and-drop
 
   # Read https://plugins.auxilor.io/all-plugins/prices
-  # The price to inscribe the ite
+  # The price to inscribe the item
   price:
     value: 100
     type: coins
@@ -85,8 +80,15 @@ inscription:
   # The formula to multiply the price depending on the level.
   # The %level% placeholder is the *current* level of the scroll
   price-level-multiplier: "1 + %level% * 0.5"
-  drag-and-drop: true # If the scroll can be applied to items via drag-and-drop
-  inscription-table: true # If the scroll can be applied to items via the inscription table
+
+  # The conditions required to inscribe the item
+  # not-met-effects will run if someone tries to inscribe the item without meeting the conditions
+  conditions: [ ]
+
+  # The effects that will be run when the item is inscribed
+  # If your scroll works by modifying the item (e.g. adding enchantments, changing durability),
+  # then put those effects here.
+  effects: [ ]
 ```
 
 ## Understanding all the sections
