@@ -112,7 +112,6 @@ effects:
 # Read https://plugins.auxilor.io/effects/configuring-a-condition
 # The conditions for the scroll to work
 conditions: [ ]
-
 ```
 
 ## Understanding all the sections
