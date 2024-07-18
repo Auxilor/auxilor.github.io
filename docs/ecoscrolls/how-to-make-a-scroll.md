@@ -22,77 +22,24 @@ ID's must be lowercase letters, numbers, and underscores only.
 # including in subfolders if you want to organize your scroll configs
 # _example.yml is not loaded.
 
-# The name of the scroll
-name: "&6Example Scroll"
-
-# The max level of the scroll
-max-level: 1
-
-# The amount of times the scroll can be used
-max-uses: 1
-
-# Options for the physical scroll item
-item:
-  item: paper glint
-
-  # Name and lore can use %uses%, %max_uses%, and %uses_left% placeholders
-  name: "&6&lExample Scroll"
-  lore:
-      - "&7This is an example scroll."
-      - "&7It does nothing."
-
-  # Options for crafting, read here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
-  craftable: false
-  recipe: [ ]
-
-# Options for inscribing items with the scroll
-inscription:
-  # The conditions required to inscribe the item
-  # not-met-effects will run if someone tries to inscribe the item without meeting the conditions
-  conditions: [ ]
-
-  # The effects that will be run when the item is inscribed
-  # If your scroll works by modifying the item (e.g. adding enchantments, changing durability),
-  # then put those effects here.
-  effects: [ ]
-
-  # Read https://plugins.auxilor.io/all-plugins/prices
-  # The price to inscribe the item
-  price:
-    value: 100
-    type: coins
-    display: "&e%value% coins"
-
-  # The formula to multiply the price depending on the level.
-  # The %level% placeholder is the *current* level of the scroll
-  price-level-multiplier: "1 + %level% * 0.5"
-
-  # If the scroll can be applied to items via drag-and-drop
-  drag-and-drop: true
-
-  # If the scroll can be applied to items via the inscription table
-  inscription-table: true
-
-# The items that the scroll can be applied to, see targets.yml
-targets:
-  - sword
-
-# The conflicts that the scroll has with other scrolls
-conflicts: [ ]
-
-# The scroll(s) that must be applied to the item before this scroll can be applied
-requirements:
-  - scroll: my_requirement_scroll # The scroll to require
-    level: 2 # The level required (optional)
-
-# If inscribing this scroll should remove the required scrolls
-remove-requirements: false
-
-# The lore added to items when inscribed with the scroll
-lore:
+name: "&6Example Scroll" # The name of the scroll
+lore: # The lore added to items when inscribed with the scroll
   - ""
   - "&7This item has been inscribed with"
   - "&6Example Scroll"
+
+targets: # The items that the scroll can be applied to, see targets.yml
+  - sword
+conflicts: [ ] # The conflicts that the scroll has with other scrolls
+
+# The scroll(s) that must be applied to the item before this scroll can be applied
+requirements:
+  - scroll: my_requirement_scroll # The ID of scroll to require
+    level: 2 # The level required (optional)
+remove-requirements: false # If inscribing this scroll should remove the required scrolls
+
+max-level: 1 # The max level of the scroll
+max-uses: 1 # The amount of times the scroll can be used
 
 # Item placeholders for dynamic lore in plugins like EcoItems
 # The placeholder is %ecoscrolls_scroll_<scroll>:<placeholder>%, e.g.
@@ -112,6 +59,45 @@ effects:
 # Read https://plugins.auxilor.io/effects/configuring-a-condition
 # The conditions for the scroll to work
 conditions: [ ]
+<<<<<<< HEAD
+=======
+
+# Options for the physical scroll item
+item:
+  item: paper glint
+  # Name and lore can use %uses%, %max_uses%, and %uses_left% placeholders
+  name: "&6&lExample Scroll"
+  lore:
+    - "&7This is an example scroll."
+    - "&7It does nothing."
+  craftable: false
+  recipe: [ ]
+
+# Options for inscribing items with the scroll
+inscription:
+  inscription-table: true # If the scroll can be applied to items via the inscription table
+  drag-and-drop: true # If the scroll can be applied to items via drag-and-drop
+
+  # Read https://plugins.auxilor.io/all-plugins/prices
+  # The price to inscribe the item
+  price:
+    value: 100
+    type: coins
+    display: "&e%value% coins"
+
+  # The formula to multiply the price depending on the level.
+  # The %level% placeholder is the *current* level of the scroll
+  price-level-multiplier: "1 + %level% * 0.5"
+
+  # The conditions required to inscribe the item
+  # not-met-effects will run if someone tries to inscribe the item without meeting the conditions
+  conditions: [ ]
+
+  # The effects that will be run when the item is inscribed
+  # If your scroll works by modifying the item (e.g. adding enchantments, changing durability),
+  # then put those effects here.
+  effects: [ ]
+>>>>>>> 7a16d72b6530077840c1c0cee3e0c348ff31636d
 ```
 
 ## Understanding all the sections
@@ -138,10 +124,6 @@ requirements:
 **max-uses:** The amount of times the scroll can be applied.
 
 **placeholders:** Dynamic custom placeholders to show in the lore of other items (`%ecoscrolls_scroll_<scroll>_<placeholder>%`).
-
-**effects:** Effects for the scroll to give. See [Effects & Conditions](https://plugins.auxilor.io/ecoscrolls/how-to-make-a-custom-scrollt#effects--conditions)
-
-**conditions:** Conditions for the scroll to work. See [Effects & Conditions](https://plugins.auxilor.io/ecoscrolls/how-to-make-a-custom-scrollt#effects--conditions)
 
 ### Effects & Conditions
 
