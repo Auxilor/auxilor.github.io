@@ -13,7 +13,7 @@ Permission: `ecoscrolls.command.inscribedirect`
 
 General Usage: `/ecoscrolls inscribe <player> <scroll> [level]` or `/ecoquests inscribe <scroll> [level]`
 
-## `/ecoquests give (Gives a scroll)`
+## `/ecoscrolls give (Gives a scroll)`
 
 Permission: `ecoscrolls.command.give`
 
