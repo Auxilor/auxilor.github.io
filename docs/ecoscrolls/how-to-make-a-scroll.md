@@ -59,6 +59,8 @@ effects:
 # Read https://plugins.auxilor.io/effects/configuring-a-condition
 # The conditions for the scroll to work
 conditions: [ ]
+<<<<<<< HEAD
+=======
 
 # Options for the physical scroll item
 item:
@@ -95,6 +97,7 @@ inscription:
   # If your scroll works by modifying the item (e.g. adding enchantments, changing durability),
   # then put those effects here.
   effects: [ ]
+>>>>>>> 7a16d72b6530077840c1c0cee3e0c348ff31636d
 ```
 
 ## Understanding all the sections
