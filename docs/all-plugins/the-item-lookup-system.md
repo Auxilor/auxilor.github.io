@@ -5,8 +5,7 @@ sidebar_position: 3
 
 ## What is the Item Lookup System?
 
-The item lookup system is how items are loaded from configs. It's designed to be extremely flexible and intuitive, allowing you to use custom items, stacks, enchantments, etc. wherever you want, without having to worry about
-what plugin they're from.
+The item lookup system is how items are loaded from configs. It's designed to be extremely flexible and intuitive, allowing you to use custom items, stacks, enchantments, etc. wherever you want, without having to worry about what plugin they're from.
 
 ## Crafting Recipes
 
@@ -39,7 +38,7 @@ In each string is the key for an item. A key looks one of a few ways
 - An exact item NBT tag: (e.g. `{id:"stone",Count:3,tag:{Name:"your name"}}`)
 - An item tag: (e.g. `#talismans:talisman` or `#items_axes`)
 
-#### Vanilla Materials
+### Vanilla Materials
 
 By default, a vanilla material (e.g. `diamond_pickaxe`) will not accept custom items with the same material. For example, if you have an EcoItems item with `diamond_pickaxe` as its base material,
 then that item will not be recognised as a `diamond_pickaxe`.
@@ -47,9 +46,18 @@ then that item will not be recognised as a `diamond_pickaxe`.
 If you want custom items to be accepted, place a `*` at the start, so `"diamond_pickaxe"` becomes `"*diamond_pickaxe"`. Outside of crafting recipes, most plugins use `*` items in their
 default configs for performance reasons.
 
-#### Item Tags
+### Item Tags
 
-Item tags are groups of items. A list of vanilla tags can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Tag.html), and you can use them with `#tag`, e.g. `#signs`.
+Item tags are groups of items. A list of vanilla tags can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Tag.html), and you can use them with `#tag`, e.g. `#signs`. These are especially useful in filters and recipes where you may use the same lists of items in different places.
+
+You can create your own tags in [tags.yml](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#item-tags) too, use `libreforge:#<tag_id>` to reference these.
+```yaml
+tags:
+  - id: example_tag # The ID, used in the item-lookup-system.
+    items: # The item's contained in the tag.
+      - "netherite_sword"
+      - "diamond_sword"
+```
 
 A list of custom item tags can be found later in this page.
 
@@ -75,10 +83,10 @@ Items can  have modifiers applied to them. For example, lets say you're configur
 - **Custom Model Data:** You can specify custom model data with `custom_model_data:<id>`
 - **Spawner Entity:** You can specify the spawner entity with `entity:<id>`
 - **Leather Armor Color:** You can specify the leather armor color with `color:#hex`, e.g. `color:#303030`
-
-These modifiers are only available on Paper 1.21+:
-
 - **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
+
+These modifiers are only available on **Paper 1.21+**:
+
 - **Fire Resistance:** You can make an item fire resistant with `fire_resistant`
 - **Enchantment Glint:** You can give an enchantment glint with `glint`
 - **Item Name:** You can set the item name (different to display name) with `item_name:<name>`
