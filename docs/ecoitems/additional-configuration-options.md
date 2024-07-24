@@ -1,6 +1,6 @@
 ---
 title: Additional Configuration Options
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 ## How to add additional recipes

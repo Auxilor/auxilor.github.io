@@ -1,6 +1,6 @@
 ---
 title: Commands and Permissions
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 ## `/ecoitems give` (Give players items)
