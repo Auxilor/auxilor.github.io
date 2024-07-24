@@ -83,10 +83,10 @@ Items can  have modifiers applied to them. For example, lets say you're configur
 - **Custom Model Data:** You can specify custom model data with `custom_model_data:<id>`
 - **Spawner Entity:** You can specify the spawner entity with `entity:<id>`
 - **Leather Armor Color:** You can specify the leather armor color with `color:#hex`, e.g. `color:#303030`
-- **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
 
 These modifiers are only available on **Paper 1.21+**:
 
+- **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
 - **Fire Resistance:** You can make an item fire resistant with `fire_resistant`
 - **Enchantment Glint:** You can give an enchantment glint with `glint`
 - **Item Name:** You can set the item name (different to display name) with `item_name:<name>`
