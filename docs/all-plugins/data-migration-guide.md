@@ -21,7 +21,9 @@ If you use the same database on multiple servers, follow these steps:
 
 6) Wait for migration to complete. The server will restart automatically once migration is done.
 
-7) Turn your other servers back on.
+7) Remove `-Ddisable.watchdog=true` from startup flags.
+
+8) Turn your other servers back on.
 
 ## For Single Servers
 
@@ -35,3 +37,4 @@ If your server is not on a network, follow these steps:
 
 4) Start the server and wait for migration to complete. The server will restart automatically once migration is done.
 
+5) Remove `-Ddisable.watchdog=true` from startup flags.
