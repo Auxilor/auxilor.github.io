@@ -1,6 +1,6 @@
 ---
 title: Data Migration Guide
-sidebar_position: 9
+sidebar_position: 10
 ---
 
 This is a guide for changing data handler (e.g. yaml -> mysql), or for updating eco from a version before 6.74.0.

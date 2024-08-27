@@ -1,7 +1,7 @@
 # `spawn_potion_cloud`
 #### Triggered Effect
 
-Spawns a potion cloud
+Spawns a [potion](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html) cloud
 
 # Example Config
 ```yaml
