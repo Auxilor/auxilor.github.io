@@ -1,7 +1,7 @@
 # `spawn_mobs`
 #### Triggered Effect
 
-Spawns mobs to help you
+Spawns [mobs](https://plugins.auxilor.io/all-plugins/the-entity-lookup-system) to help you
 
 # Example Config
 ```yaml

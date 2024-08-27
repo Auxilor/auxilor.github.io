@@ -1,7 +1,7 @@
 # `potion_effect`
 #### Triggered Effect
 
-Gives a potion effect
+Gives a [potion](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html) effect
 
 # Example Config
 ```yaml

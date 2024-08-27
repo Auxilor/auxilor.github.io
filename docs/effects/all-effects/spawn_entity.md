@@ -1,7 +1,7 @@
 # `spawn_entity`
 #### Triggered Effect
 
-Spawns an entity
+Spawns an [entity](https://plugins.auxilor.io/all-plugins/the-entity-lookup-system)
 
 # Example Config
 ```yaml

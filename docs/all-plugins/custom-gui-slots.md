@@ -1,6 +1,6 @@
 ---
 title: Custom GUI Slots
-sidebar_position: 8
+sidebar_position: 9
 ---
 
 ## What are custom GUI slots?

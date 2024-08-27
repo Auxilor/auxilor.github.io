@@ -1,7 +1,7 @@
 # `shoot`
 #### Triggered Effect
 
-Shoots a projectile
+Shoots a [projectile](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Projectile.html)
 
 # Example Config
 ```yaml
