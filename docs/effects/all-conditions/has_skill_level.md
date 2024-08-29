@@ -2,7 +2,7 @@
 
 Requires a player to have a certain skill level
 
-**Requires EcoSkills**
+**Requires EcoSkills or AuraSkills**
 
 # Example Config
 ```yaml
