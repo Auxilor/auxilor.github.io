@@ -6,7 +6,7 @@ Requires a placeholder to contain a certain value
 ```yaml
 - id: placeholder_contains
   args:
-    placeholder: '%ecocrates_ancient_opens%' # The permission, including %
+    placeholder: '%ecocrates_ancient_opens%' # The placeholder, including %
     value: "test" # The value the placeholder should contain
     ignore_case: true # If the case should be ignored (optional)
 ```
