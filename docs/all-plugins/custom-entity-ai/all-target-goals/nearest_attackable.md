@@ -14,5 +14,5 @@ Allows an entity to attack the closest target within a given subset of specific 
     checkVisibility: true # If visibility should be checked
     checkCanNavigate: true # If navigation should be checked
     reciprocalChance: 5 # 1 in reciprocal chance (eg 1 in 20) of not activating on any given tick
-    targetFilter: "" # The filter for targets to match (entity lookup string)
+    targetFilter: "" # (Optional, remove if empty) The filter for targets to match (entity lookup string)
 ```

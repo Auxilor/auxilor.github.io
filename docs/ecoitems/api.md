@@ -1,6 +1,6 @@
 ---
-title: "API"
-sidebar_position: 4
+title: API
+sidebar_position: 6
 ---
 
 ## Source Code

@@ -1,6 +1,6 @@
 # `is_submerged`
 
-Requires a player to be fully submerged
+Requires a player to be fully submerged in liquid
 
 # Example Config
 ```yaml

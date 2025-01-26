@@ -41,13 +41,6 @@ item:
     - ""
   recipe-give-amount: 1 # Optional, set the amount of items to give in the recipe
 
-  # The actual item durability isn't set (because it can't be changed), but instead
-  # this scales how quickly the item wears to act as if it had this durability.
-  # For example, let's say the actual durability is 350, but you set this to 700,
-  # it will wear at half the normal rate.
-
-  effective-durability: 1024 # Optional, set the durability
-
 # The slot the item has to be in to activate its effects.
 # The options for slot are mainhand, offhand, hands, helmet, chestplate,
 # leggings, boots, armor, any, a number from 0-40 (to specify an exact slot),
@@ -58,6 +51,9 @@ slot: mainhand
 
 base-damage: 12 # (Optional) The item base damage
 base-attack-speed: 1.5 # (Optional) The item base attack speed
+
+# (Optional) The rarity of the item
+rarity: rare
 
 # The effects of the item (i.e. the functionality)
 # See here: https://plugins.auxilor.io/effects/configuring-an-effect
@@ -87,17 +83,17 @@ conditions:
 
 **crafting-permission:** (Optional) The permission required to craft the recipe.
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes). You can create additional recipes, read here for more: [How to add additional recipes](https://plugins.auxilor.io/ecoitems/additional-configuration-options#how-to-add-additonal-recipes).
 
 **recipe-give-amount:** The amount of items to give when crafted.
-
-**effective-durability:** The scaled durability of the item.
 
 **slot:** The slot for the effects to be active in.
 
 **base-damage:** The item base damage. You can find vanilla damage values on the [Minecraft Wiki](https://minecraft.wiki/w/Damage#Dealing_damage).
 
 **base-attack-speed:** the item base attack speed. You can find the vanilla attack speed values on the [Minecraft Wiki](https://minecraft.wiki/w/Damage#Dealing_damage).
+
+**rarity:** The rarity of the item, read here for more: [Rarities](https://plugins.auxilor.io/ecoitems/additional-configuration-options#how-to-add-rarities).
 
 ### Effects & Conditions
 
@@ -107,35 +103,3 @@ Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
-
-## How to add additional recipes
-Recipes work the same - they are each config files placed in the `/recipes/` folder, and you can add or remove them as you please. There's also an example config called `_example.yml` to help you out!
-
-The ID of the recipe is the file name. This currently doesn't have a function but make sure it is unique.
-ID's must be lowercase letters, numbers, and underscores only.
-
-## Example Recipe Config
-```yaml
-result: ecoitems:enchanted_emerald 9 # The item to give, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
-
-recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
-  - ""
-  - emerald_block 32
-  - ""
-  - emerald_block 32
-  - emerald_block 32
-  - emerald_block 32
-  - ""
-  - emerald_block 32
-  - ""
-
-permission: "ecoitems.craft.enchanted_emerald_block_craft" # (Optional) The permission required to craft this recipe.
-```
-
-## Understanding all the sections
-
-**result:** The item(s) being crafted, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
-
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
-
-**permission:** (Optional) The permission required to craft the recipe.

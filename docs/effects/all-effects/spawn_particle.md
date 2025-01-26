@@ -1,7 +1,7 @@
 # `spawn_particle`
 #### Triggered Effect
 
-Spawns a particle
+Spawns a [particle](https://plugins.auxilor.io/all-plugins/the-particle-lookup-system)
 
 # Example Config
 ```yaml

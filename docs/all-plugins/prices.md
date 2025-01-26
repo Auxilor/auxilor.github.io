@@ -1,6 +1,6 @@
 ---
 title: Prices
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 ## What are Prices?
@@ -9,7 +9,7 @@ Lots of servers have lots of different types of economies. Maybe you have a stan
 item-based economy, maybe you're using [points](https://plugins.auxilor.io/effects/points), or something else entirely.
 
 To simplify this, there's a unified way to handle all of this: the price system.
-
+For price values, you can use [math](https://plugins.auxilor.io/all-plugins/math) to create adaptive/versatile pricing systems.
 ## Types
 
 `$`, `coins`: Standard economy, this is what you'll use if you have an economy plugin installed
@@ -54,6 +54,7 @@ price-display:
 This will override any per-price formatting, which should make your life much easier to achieve consistency
 between different prices.
 
+You can display prices in two ways, using `%value%` which will return the number unformatted (e.g.  `$1234567.89`), or you can use `%value_commas%` to format the price with commas (e.g. `$1,234,567.89`).
 ## Config Examples
 
 ```yaml
