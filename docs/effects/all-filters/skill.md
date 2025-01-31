@@ -2,7 +2,7 @@
 
 Require a certain skill
 
-**Requires EcoSkills**
+**Requires EcoSkills or McMMO**
 
 # Example Config
 ```yaml
