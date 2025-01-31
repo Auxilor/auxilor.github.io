@@ -104,7 +104,7 @@ args:
 ```
 #### `mana_cost`
 
-The mana cost required to use or activate this effect. **Requires Aurelium Skills.** (defaults to 0)
+The mana cost required to use or activate this effect. **Requires AuraSkills.** (defaults to 0)
 
 ```yaml
 args:

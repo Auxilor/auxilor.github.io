@@ -1,13 +1,13 @@
-# `skill_xp_multiplier`
+# `mcmmo_xp_multiplier`
 #### Permanent Effect
 
-Multiplies skill xp gain
+Multiplies mcMMO skill xp gain
 
-**Requires EcoSkills / AuraSkills*
+**Requires mcMMO**
 
 # Example Config
 ```yaml
-- id: skill_xp_multiplier
+- id: mcmmo_xp_multiplier
   args:
     multiplier: 1.5 # The experience multiplier
     skills: # The list of skills to multiply xp for. If removed, it will multiply all skills.

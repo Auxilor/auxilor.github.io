@@ -66,7 +66,7 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - TerraformGenerator
 
 ## Skills
-- mcMMO
+- McMMO
 - Aurelium Skills (v1)
 - AuraSkills (v2)
 
