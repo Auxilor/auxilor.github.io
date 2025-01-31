@@ -78,7 +78,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `leave_bed`                     | Triggered when leaving a bed                                                                                      | 1                                             |
 | `leave_job`                     | Triggered when leaving a job **Requires EcoJobs**                                                                 | The job level                                 |
 | `leave_region`                  | Triggered when leaving a region **Requires WorldGuard**                                                           | 1                                             |
-| `left_click_npc`                | Triggered when left-clicking an NPC **Requires Citizens**                                                         | 1                                             |
+| `left_click_npc`                | Triggered when left-clicking an NPC **Requires Citizens \|\| FancyNpcs**                                                           | 1                                             |
 | `level_down_mcmmo`              | Triggered when levelling down McMMO skill **Requires McMMO**                                                      | The new level                                 |
 | `level_up_item`                 | Triggered when levelling up an item                                                                               | The new item level                            |
 | `level_up_job`                  | Triggered when levelling up a job **Requires EcoJobs**                                                            | The new level                                 |
@@ -103,7 +103,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `regen_magic`                   | Triggered when regenerating magic **Requires EcoSkills**                                                          | 1                                             |
 | `register_vote`                 | Triggered when a player votes for the server **Requires NuVotifier**                                              | 1                                             |
 | `respawn`                       | Triggered when respawning                                                                                         | 1                                             |
-| `right_click_npc`               | Triggered when right-clicking an NPC **Requires Citizens**                                                        | 1                                             |
+| `right_click_npc`               | Triggered when right-clicking an NPC **Requires Citizens \|\| FancyNpcs**                                         | 1                                             |
 | `run_command`                   | Triggered when running a command                                                                                  | 1                                             |
 | `scyther_auto_collect`          | Triggered when autocollecting crops with a scyther hoe **Requires Scyther**                                       | 1                                             |
 | `scyther_auto_sell`             | Triggered when autoselling crops with a scyther hoe **Requires Scyther**                                          | 1                                             |
