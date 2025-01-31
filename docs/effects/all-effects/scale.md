@@ -1,12 +1,12 @@
-# `scale_multiplier`
+# `scale`
 #### Permanent Effect
 
-Multiplies sneaking speed
+Multiplies scale
 
 **Requires 1.21+**
 # Example Config
 ```yaml
-- id: scale_multiplier
+- id: scale
   args:
     multiplier: 1.5 # The multiplier for scale
 ```
