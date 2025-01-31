@@ -70,6 +70,10 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - Aurelium Skills (v1)
 - AuraSkills (v2)
 
+## NPCs
+- Citizens
+- FancyNpcs
+
 ## Misc
 - MultiverseInventories
 - Essentials

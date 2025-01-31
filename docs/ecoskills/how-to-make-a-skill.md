@@ -100,6 +100,7 @@ xp-requirements:
 #   levels: 1
 #   start-level: 10
 #   end-level: 20
+#   every: 2
 
 rewards:
   - reward: defense
@@ -118,7 +119,7 @@ rewards:
 
   - reward: dynamic_mining
     levels: 1
-    every: 1
+    every: 2
 
 # Effects to run when the skill levels up
 # %level% is the level the skill leveled up to.
