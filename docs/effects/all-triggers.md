@@ -57,6 +57,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `fill_bucket`                   | Triggered when filling a bucket                                                                                   | 1                                             |
 | `gain_hunger`                   | Triggered when gaining hunger points                                                                              | The hunger gained                             |
 | `gain_job_xp`                   | Triggered when gaining job experience points **Requires EcoJobs**                                                 | The experience gained                         |
+| `gain_mcmmo_xp`                 | Triggered when gaining McMMO xp **Requires McMMO**                                                                | The xp gained                                 |
 | `gain_pet_xp`                   | Triggered when gaining pet experience points **Requires EcoPets**                                                 | The experience gained                         |
 | `gain_skill_xp`                 | Triggered when gaining skill experience points **Requires EcoSkills**                                             | The experience gained                         |
 | `gain_task_xp`                  | Triggered when gaining task XP **Requires EcoQuests**                                                             | The experience gained                         |
@@ -77,14 +78,18 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `leave_bed`                     | Triggered when leaving a bed                                                                                      | 1                                             |
 | `leave_job`                     | Triggered when leaving a job **Requires EcoJobs**                                                                 | The job level                                 |
 | `leave_region`                  | Triggered when leaving a region **Requires WorldGuard**                                                           | 1                                             |
-| `left_click_npc`                | Triggered when left-clicking an NPC **Requires Citizens \|\| FancyNpcs**                                          | 1                                             |
+| `left_click_npc`                | Triggered when left-clicking an NPC **Requires Citizens \|\| FancyNpcs**                                                           | 1                                             |
+| `level_down_mcmmo`              | Triggered when levelling down McMMO skill **Requires McMMO**                                                      | The new level                                 |
 | `level_up_item`                 | Triggered when levelling up an item                                                                               | The new item level                            |
 | `level_up_job`                  | Triggered when levelling up a job **Requires EcoJobs**                                                            | The new level                                 |
+| `level_up_mcmmo`                | Triggered when levelling up McMMO skill **Requires McMMO**                                                        | The new level                                 |
 | `level_up_pet`                  | Triggered when levelling up a pet **Requires EcoPets**                                                            | The new level                                 |
 | `level_up_skill`                | Triggered when levelling up **Requires EcoSkills**                                                                | The new level                                 |
 | `level_up_xp`                   | Triggered when levelling up XP                                                                                    | The new level                                 |
 | `lose_hunger`                   | Triggered when losing hunger                                                                                      | The hunger lost                               |
 | `lose_potion_effect`            | Triggered when losing a potion effect                                                                             | 1                                             |
+| `mcmmo_ability_activate`        | Triggered when an McMMO ability is activated **Requires McMMO**                                                   | 1                                             |
+| `mcmmo_ability_deactivate`      | Triggered when an McMMO ability is deactivated **Requires McMMO**                                                 | 1                                             |
 | `melee_attack`                  | Triggered when injuring an entity with a melee attack                                                             | The damage dealt                              |
 | `mine_block`                    | Triggered when mining a block                                                                                     | 1                                             |
 | `mine_block_progress`           | Triggered when damaging a block                                                                                   | 1                                             |
