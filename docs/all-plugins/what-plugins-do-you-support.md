@@ -60,6 +60,7 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 
 ## Economy
 - Vault
+- Flare Mobcoins
 
 ## Custom Terrain
 - Terra

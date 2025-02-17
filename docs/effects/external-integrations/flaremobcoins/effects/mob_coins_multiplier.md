@@ -3,7 +3,7 @@
 
 Multiplies mob coin drops
 
-**Requires TMMobCoins**
+**Requires Flare Mobcoins**
 
 # Example Config
 ```yaml
