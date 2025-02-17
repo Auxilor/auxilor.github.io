@@ -1,6 +1,6 @@
 # `above_global_points`
 
-Requires the server to have a certain amount of points
+Requires the server to have a certain amount of points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)
 
 # Example Config
 ```yaml
