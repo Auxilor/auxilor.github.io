@@ -140,9 +140,21 @@ slot: 27
 
 Sometimes custom item IDs are namespaced. In order to make this work, you have to specify them like `plugin:namespace__key`, where **two underscores** denote where the `:` would normally go.
 
-| Plugin     | Item Lookup Key                                                                                                                                               |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ItemsAdder | `itemsadder:<namespace>__<key>`, eg. `itemsadder:crystal_pack__alumite_pickaxe`, where `crystal_pack` is the namespace, and `alumite_pickaxe` is the item ID. |
-| Oraxen     | `oraxen:<id>`, eg: `oraxen:alumite_pickaxe`                                                                                                                   |
-| ItemBridge | `itembridge:saved__<id>` for items you've saved within ItemBridge. You can use `itembridge:<prefix>__<id>` for plugin items supported in ItemBridge.          |
+| Plugin     | Item Lookup Key                                                                                                                                      |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ItemsAdder | `itemsadder:<namespace>__<key>`, example below.                                                                                                      |
+| Oraxen     | `oraxen:<id>`, eg: `oraxen:alumite_pickaxe`                                                                                                          |
+| ItemBridge | `itembridge:saved__<id>` for items you've saved within ItemBridge. You can use `itembridge:<prefix>__<id>` for plugin items supported in ItemBridge. |
 
+### ItemsAdder
+
+```yaml
+# ItemsAdder configuration
+info:
+  namespace: my_items
+items:
+  my_helmet:
+    display_name: "&9Custom Helmet"
+```
+
+ItemsAdder items are namespaced, so for example, the above would be `itemsadder:crystal_pack__alumite_pickaxe`, where `crystal_pack` is the namespace, and `alumite_pickaxe` is the item ID.
