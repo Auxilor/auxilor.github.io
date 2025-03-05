@@ -3,7 +3,7 @@
 
 Multiplies skill xp gain
 
-**Requires EcoSkills / Aurelium Skills**
+**Requires EcoSkills / AuraSkills*
 
 # Example Config
 ```yaml

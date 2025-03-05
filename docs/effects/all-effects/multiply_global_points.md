@@ -1,7 +1,7 @@
 # `multiply_global_points`
 #### Triggered Effect
 
-Multiply global points (check the points wiki page if you don't know what these are)
+Multiply global points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)
 
 # Example Config
 ```yaml
