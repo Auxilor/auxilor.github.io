@@ -32,34 +32,55 @@ join-price:
 # Reference with %join_lore%
 join-lore: []
 
+# A list of effects to run when the player joins the job.
+# Read https://plugins.auxilor.io/effects/configuring-an-effect
+join-effects:
+  - id: broadcast
+    args:
+      message: "&8» &a%player% &8joined the &6Miner &8job!"
+
 # The price to leave this job (set to 0 to disable)
 # Read here for more: https://plugins.auxilor.io/all-plugins/prices
 leave-price:
   value: 20000
   type: coins
   display: "&a$%value%"
+  
+# A list of effects to run when the player leaves the job.
+# Read https://plugins.auxilor.io/effects/configuring-an-effect
+leave-effects:
+  - id: send_message
+    args:
+      message: "&8» &8You left the &6Miner &8job!"
 
 # Lore shown on the confirm leave button
 # Reference with %leave_lore%
 leave-lore:
   - " &8» This will cost %leave_price%"
 
-# The xp requirements for each job level - add new levels by adding more to this list
-level-xp-requirements:
-  - 100
-  - 120
-  - 150
-  - 180
-  - 210
-  - 250
-  - 300
-  - 360
-  - 430
-  - 520
-  - 620
-  - 740
-  - 890
-  - 1000
+# There are two ways to specify level XP requirements:  
+# 1. A formula to calculate for infinite levels  
+# 2. A list of XP requirements for each level  
+  
+# Formula  
+# xp-formula: (2 ^ %level%) * 25  
+# max-level: 100 # (Optional) The max level, if not specified, there is no max level  
+  
+# List  
+xp-requirements:  
+- 50  
+- 125  
+- 200  
+- 300  
+- 500  
+- 750  
+- 1000  
+- 1500  
+- 2000  
+- 3500  
+- 5000  
+- 7500  
+- 10000
 
 # An XP gain method takes a trigger, a multiplier, conditions, and filters.
 # The 'multiplier' takes the value produced by the trigger and multiplies it
@@ -103,12 +124,19 @@ level-up-messages:
   1:
     - "&8» &8Earn &a$%money%&8 for each &a%blocks%&8 blocks mined"
 
-# Commands to be sent on levelup, can be formatted two ways:
-# level:command (e.g. 10:eco give %player% 1000), which would execute that command for level 10
-# command (e.g. eco give %player% 5000), which would execute that command for all levels
-level-commands:
-	- 1:eco give %player% 1000 # Runs the command at level 1
-	- eco give %player% 1000 # Runs the command at every level up
+# Effects to run when the job levels up  
+# %level% is the level the job leveled up to.  
+# If you want to restrict this to certain levels, you can use  
+# require: %level% = 20, or require: %level% < 50, etc.  
+# If you want a reward to run every x levels, you can use  
+# every: 1, or every: 12, etc  
+level-up-effects:  
+  - id: give_item  
+    args:  
+      items:  
+        - diamond  
+      every: 5 # Gives the reward every 5 levels  
+      require: "%level% = 5" # Requires level 5 before receiving rewards
 
 # The effects for the job, has %level% as a placeholder
 effects:

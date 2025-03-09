@@ -15,6 +15,8 @@ Permission: `ecojobs.command.reset`
 
 Usage: `/ecojobs reset <player> <job>`
 
+You can also use `all` within the command to reset all players, all jobs, or both.
+
 ## `/ecojobs givexp` (Give xp to a job)
 
 Permission: `ecojobs.command.givexp`
