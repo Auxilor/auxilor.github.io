@@ -4,14 +4,10 @@ sidebar_position: 2
 ---
 ## Effect Chains
 ### What is an Effect Chain?
-Effect chains are groups of effects that can be executed together. This is very useful if you want to create a
-chance-based effect with several components: chance is calculated independently on each trigger, so without chains,
-particles and messages could send when the effects don't activate, and vice-versa.
+Effect chains are groups of effects that can be executed together. This is very useful if you want to create a chance-based effect with several components: chance is calculated independently on each trigger, so without chains, particles and messages could send when the effects don't activate, and vice-versa.
 
-Effects in chains run isolated, so applying a mutator to one effect in the chain will apply it only to that effect -
-however, you can specify a mutator to the parent effect which will be applied to all
-effects in the chain. The same works for delays, e.g. if an effect in a chain has a delay of 2, it won't hold up other
-effects down the chain.
+Effects in chains run isolated, so applying a mutator to one effect in the chain will apply it only to that effect - however, you can specify a mutator to the parent effect which will be applied to all
+effects in the chain. The same works for delays, e.g. if an effect in a chain has a delay of 2, it won't hold up other effects down the chain.
 
 Effect chains are also useful to re-use more complex logic, via custom arguments that you can specify.
 These work like regular placeholders, and you reference them in your chains with `%<id>%`, for example `%size%` if you
@@ -23,9 +19,7 @@ One of the ways to create chains is in "chains.yml" in "/plugins/libreforge". Th
 
 Chains created here are universally accessible. You can use them in Enchants, Skills, Jobs or any other effect holders.
 
-
 You don't need to specify triggers in your chain, these are handled by the `run_chain` effect (see below).
-
 ### The Basic Layout
 ```yaml
 chains:
@@ -60,6 +54,7 @@ You can add or remove as many chains as you want. Then, if you want to call a ch
 this:
 
 ### Calling Your Chain
+
 ```yaml
 id: run_chain
 args:
@@ -88,9 +83,7 @@ args:
 
 ## Inline Chains
 
-If you don't want to re-use chains, or if you prefer having them specified directly under the effect, you can specify
-effects inline instead.
-
+If you don't want to re-use chains, or if you prefer having them specified directly under the effect, you can specify effects inline instead.
 ### The Basic Layout
 ```yaml
 effects:
@@ -132,8 +125,8 @@ effects:
 ```
 
 Inline chains also support custom arguments, just like regular chains.
-
 ## Run Types
+
 Effect chains also support several run types:
 
 - **normal**: All effects in the chain will be ran, sequentially, one after another
@@ -142,7 +135,7 @@ Effect chains also support several run types:
 
 To specify the run type, add the `run-type` argument into config:
 
-```yml
+```yaml
 effects:
   - triggers:
       - alt_click
@@ -151,11 +144,32 @@ effects:
       - <effect 2>
       - <effect 3>
     args:
-      run-type: random
+      run-type: random # The run-type from above
       chance: 30
 ... filters, mutators, etc
 ```
 
-This is an alternative way of configuring your effects; you don't specify a top-level effect ID, instead you specify a
-list of effects to be called. This can be thought of as being more trigger-centric; multiple triggers to multiple
-effects straight away, no worrying about the underlying chain.
+### Weighted Random Chains
+
+Sometimes you may want certain chain effects to occur more frequently. Such as higher chance of a Iron Ingot being dropped, and a lower chance for a Diamond.
+
+To do this, you must specify a weight within your chain effects:
+
+```yaml
+effects:
+  - triggers:
+      - mine_block
+    args:
+      run-type: random
+    effects:
+      - id: drop_item
+        args:
+          item: diamond
+        weight: 10 # The chance of this effect being run within a random chain
+      - id: drop_item
+        args:
+          item: iron_ingot
+        weight: 60
+```
+
+Weight is calculated as `<weight of element> / <sum of all weights>`.
