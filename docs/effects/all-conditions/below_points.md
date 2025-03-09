@@ -1,6 +1,6 @@
 # `below_points`
 
-Requires a player to have a below amount of points
+Requires a player to have a below amount of points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)
 
 # Example Config
 ```yaml

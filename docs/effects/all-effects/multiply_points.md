@@ -1,7 +1,7 @@
 # `multiply_points`
 #### Triggered Effect
 
-Multiply points (check the points wiki page if you don't know what these are)
+Multiply points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)
 
 # Example Config
 ```yaml

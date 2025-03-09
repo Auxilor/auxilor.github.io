@@ -14,3 +14,5 @@ Multiplies drops (requires a drop trigger)
     multiplier: 2 # The drop multiplier (Option 2)
   ...other config (eg triggers, filters, mutators, etc)
 ```
+
+If you're experiencing drops not being multiplied, you may need to change the anti-duplication settings in [config.yml](https://github.com/Auxilor/libreforge/blob/master/core/common/src/main/resources/config.yml) and add blocks to the whitelist.
