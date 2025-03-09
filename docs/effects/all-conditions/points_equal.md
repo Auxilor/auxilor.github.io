@@ -1,6 +1,6 @@
 # `points_equal`
 
-Requires a player to have a exactly a certain amount of points
+Requires a player to have a exactly a certain amount of points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)
 
 # Example Config
 ```yaml

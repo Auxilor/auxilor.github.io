@@ -12,6 +12,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | ID                              | Description                                                                                                       | Value Provided                                |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | `alt_click`                     | Triggered when using Right Click on most items, Left Click on those that have a default right click functionality | 1                                             |
+| `beacon_effect`                 | Triggered when a player gains effects from a beacon **Requires Paper**                                            | 1                                             |
 | `bite`                          | Triggered when a fish bites on your rod                                                                           | 1                                             |
 | `block_item_drop`               | Triggered when a mined block drops loot                                                                           | The amount of items dropped                   |
 | `bow_attack`                    | Triggered when shooting an entity with a bow and arrow (or crossbow)                                              | The damage dealt                              |
@@ -37,6 +38,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `death`                         | Triggered on death from any sources                                                                               | 1                                             |
 | `disable`                       | Triggered when an item / enchant / etc disables                                                                   | 1                                             |
 | `drop_item`                     | Triggered when dropping an item                                                                                   | The amount of items                           |
+| `elytra_boost`                  | Triggered when a player boosts an elytra **Requires Paper**                                                       | 1                                             |
 | `empty_bucket`                  | Triggered when emptying a bucket                                                                                  | 1                                             |
 | `enable`                        | Triggered when an item / enchant / etc enables                                                                    | 1                                             |
 | `enchant_<type>`                | Triggered when enchanting an item with a certain type of enchantment **Requires EcoEnchants**                     | The xp cost                                   |
@@ -78,7 +80,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `leave_bed`                     | Triggered when leaving a bed                                                                                      | 1                                             |
 | `leave_job`                     | Triggered when leaving a job **Requires EcoJobs**                                                                 | The job level                                 |
 | `leave_region`                  | Triggered when leaving a region **Requires WorldGuard**                                                           | 1                                             |
-| `left_click_npc`                | Triggered when left-clicking an NPC **Requires Citizens \|\| FancyNpcs**                                                           | 1                                             |
+| `left_click_npc`                | Triggered when left-clicking an NPC **Requires Citizens \|\| FancyNpcs**                                          | 1                                             |
 | `level_down_mcmmo`              | Triggered when levelling down McMMO skill **Requires McMMO**                                                      | The new level                                 |
 | `level_up_item`                 | Triggered when levelling up an item                                                                               | The new item level                            |
 | `level_up_job`                  | Triggered when levelling up a job **Requires EcoJobs**                                                            | The new level                                 |

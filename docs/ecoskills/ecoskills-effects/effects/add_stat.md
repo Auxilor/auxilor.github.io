@@ -3,7 +3,7 @@
 
 Adds a value to a specific stat
 
-**Requires EcoSkills / Aurelium Skills**
+**Requires EcoSkills / AuraSkills**
 
 # Example Config
 ```yaml
