@@ -180,17 +180,6 @@ args:
     display: "&b%value% Crystals ❖"
 ```
 
-#### `weight`
-
-The weight (chance) of this effect firing if the chain is ran randomly.
-
-Chance is calculated as `<weight of element> / <sum of all weights>`
-
-```yaml
-args:
-  weight: 10
-```
-
 #### `run_order`
 
 The order the effect should run in. This can be `start`, `early`, `normal`, `late`, or `end`.
