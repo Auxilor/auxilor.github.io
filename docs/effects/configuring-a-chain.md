@@ -165,7 +165,7 @@ effects:
       - id: drop_item
         args:
           item: diamond
-        weight: 10
+        weight: 10 # The chance of this effect being run within a random chain
       - id: drop_item
         args:
           item: iron_ingot
