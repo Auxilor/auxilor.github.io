@@ -25,6 +25,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `catch_fish`                    | Triggered when catching a fish                                                                                    | The experience dropped                        |
 | `catch_fish_fail`               | Triggered when failing to catch a fish                                                                            | 1                                             |
 | `change_armor`                  | Triggered when changing armor                                                                                     | 1                                             |
+| `change_chunk`                  | Triggered when changing chunk                                                                                     | 1                                             |
 | `change_world`                  | Triggered when changing world                                                                                     | 1                                             |
 | `click_block`                   | Triggered when right-clicking on a block                                                                          | 1                                             |
 | `click_entity`                  | Triggered when right-clicking on an entity                                                                        | 1                                             |
@@ -36,6 +37,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `craft`                         | Triggered when crafting an item                                                                                   | The amount of items crafted                   |
 | `damage_item`                   | Triggered when damaging an item                                                                                   | The damage                                    |
 | `death`                         | Triggered on death from any sources                                                                               | 1                                             |
+| `deploy_elytra`                 | Triggered when the player starts elytra gliding                                                                   | 1                                             |
 | `disable`                       | Triggered when an item / enchant / etc disables                                                                   | 1                                             |
 | `drop_item`                     | Triggered when dropping an item                                                                                   | The amount of items                           |
 | `elytra_boost`                  | Triggered when a player boosts an elytra **Requires Paper**                                                       | 1                                             |
@@ -76,6 +78,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `join_job`                      | Triggered when joining a job **Requires EcoJobs**                                                                 | The job level                                 |
 | `jump`                          | Triggered when Jumping (pressing space)                                                                           | 1                                             |
 | `kill`                          | Triggered when a player kills a player or entity                                                                  | The victim's max health                       |
+| `leash_entity`                  | Triggered when leashing an entity                                                                                 | 1                                             |
 | `leave`                         | Triggered when leaving the server                                                                                 | 1                                             |
 | `leave_bed`                     | Triggered when leaving a bed                                                                                      | 1                                             |
 | `leave_job`                     | Triggered when leaving a job **Requires EcoJobs**                                                                 | The job level                                 |
