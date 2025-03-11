@@ -2,10 +2,10 @@
 
 Move the location to where you or the victim are looking
 
-# Example Config
-```yaml
-- id: location_to_cursor
-  args:
-    target: block # The target location (either block or entity)
-    start: player # Where to raytrace from (either player or victim)
-```
+> [!example]
+> ```yaml
+> - id: location_to_cursor
+>   args:
+>     target: block # The target location (either block or entity)
+>     start: player # Where to raytrace from (either player or victim)
+> ```
