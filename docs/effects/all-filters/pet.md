@@ -2,12 +2,12 @@
 
 Require a certain pet
 
-**Requires EcoPets**
+> [!warning] Requires EcoPets
 
-# Example Config
-```yaml
-filters:
-  pet:
-    - vampire
-    - sea_serpent
-```
+> [!example]
+> ```yaml
+> filters:
+>   pet:
+>     - vampire
+>     - sea_serpent
+> ```

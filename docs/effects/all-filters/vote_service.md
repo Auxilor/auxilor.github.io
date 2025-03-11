@@ -2,11 +2,11 @@
 
 The list of vote services that the effect should activate on
 
-**Requires NuVotifier**
+> [!warning] Requires NuVotifier
 
-# Example Config
-```yaml
-filters:
-  vote_service:
-    - Craftlist.org # The ServiceSite from your vote plugin
-```
+> [!example]
+> ```yaml
+> filters:
+>   vote_service:
+>     - Craftlist.org # The ServiceSite from your vote plugin
+> ```

@@ -2,12 +2,12 @@
 
 Require a certain scroll
 
-**Requires EcoScrolls**
+> [!warning] Requires EcoScrolls
 
-# Example Config
-```yaml
-filters:
-  scroll:
-    - lava
-    - ultimate
-```
+> [!example]
+> ```yaml
+> filters:
+>   scroll:
+>     - lava
+>     - ultimate
+> ```

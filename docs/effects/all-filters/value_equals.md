@@ -2,8 +2,8 @@
 
 Require the trigger value to equal a certain value
 
-# Example Config
-```yaml
-filters:
-  value_equals: 3
-```
+> [!example]
+> ```yaml
+> filters:
+>   value_equals: 3
+> ```

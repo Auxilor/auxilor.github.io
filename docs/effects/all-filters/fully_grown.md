@@ -2,8 +2,8 @@
 
 Require the block to be fully grown
 
-# Example Config
-```yaml
-filters:
-  fully_grown: true
-```
+> [!example]
+> ```yaml
+> filters:
+>   fully_grown: true
+> ```
