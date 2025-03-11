@@ -1,14 +1,15 @@
 # `play_sound`
-#### Triggered Effect
 
-Plays a sound to the player
+Plays a [sound](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.htm) to the player
 
-# Example Config
-```yaml
-- id: play_sound
-  args:
-    sound: entity_wolf_growl # The sound to play (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html)
-    pitch: 0.7 # The pitch of the sound (0.5 - 2)
-    volume: 10 # The volume of the sound
-  ...other config (eg triggers, filters, mutators, etc)
-```
+> [!danger] Triggered Effect
+
+> [!example]
+> ```yaml
+> - id: play_sound
+>   args:
+>     sound: entity_wolf_growl # The sound to play
+>     pitch: 0.7 # The pitch of the sound (0.5 - 2)
+>     volume: 10 # The volume of the sound
+>   ...other config (eg triggers, filters, mutators, etc)
+> ```

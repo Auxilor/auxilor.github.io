@@ -1,14 +1,15 @@
 # `make_skill_crit`
-#### Triggered Effect
 
 Deal a crit hit
 
-**Requires EcoSkills**
+> [!danger] Triggered Effect
 
-# Example Config
-```yaml
-- id: make_skill_crit
-  args:
-    multiplier: 1.5 # Multiplies attack damage as a crit
-  ...other config (eg triggers, filters, mutators, etc)
-```
+> [!warning] Requires EcoSkills
+
+> [!example]
+> ```yaml
+> - id: make_skill_crit
+>   args:
+>     multiplier: 1.5 # Multiplies attack damage as a crit
+>   ...other config (eg triggers, filters, mutators, etc)
+> ```

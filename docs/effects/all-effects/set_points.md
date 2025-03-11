@@ -1,13 +1,14 @@
 # `set_points`
-#### Triggered Effect
 
-Set points (check the points wiki page if you don't know what these are)
+Set points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)
 
-# Example Config
-```yaml
-- id: set_points
-  args:
-    type: g_souls # The point to set
-    amount: 0 # The amount to set it to
-  ...other config (eg triggers, filters, mutators, etc)
-```
+> [!danger] Triggered Effect
+
+> [!example]
+> ```yaml
+> - id: set_points
+>   args:
+>     type: g_souls # The point to set
+>     amount: 0 # The amount to set it to
+>   ...other config (eg triggers, filters, mutators, etc)
+> ```

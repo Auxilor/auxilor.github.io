@@ -1,9 +1,10 @@
 # `flight`
-#### Permanent Effect
 
 Grants flight
 
-# Example Config
-```yaml
-- id: flight
-```
+> [!hint] Permanent Effect
+
+> [!example]
+> ```yaml
+> - id: flight
+> ```

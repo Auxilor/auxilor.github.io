@@ -1,12 +1,14 @@
 # `scale`
-#### Permanent Effect
 
 Multiplies scale
 
-**Requires 1.21+**
-# Example Config
-```yaml
-- id: scale
-  args:
-    multiplier: 1.5 # The multiplier for scale
-```
+> [!hint] Permanent Effect
+
+> [!warning] Requires 1.21+
+
+> [!example]
+> ```yaml
+> - id: scale
+>   args:
+>     multiplier: 1.5 # The multiplier for scale
+> ```

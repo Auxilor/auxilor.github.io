@@ -1,13 +1,14 @@
 # `mining_efficiency`
-#### Permanent Effect
 
 Adds mining efficiency (mining speed when using the correct tool)
 
-**Requires 1.21+**
+> [!hint] Permanent Effect
 
-# Example Config
-```yaml
-- id: mining_efficiency
-  args:
-    amount: 5 # The extra mining efficiency
-```
+> [!warning] Requires 1.21+
+
+> [!example]
+> ```yaml
+> - id: mining_efficiency
+>   args:
+>     amount: 5 # The extra mining efficiency
+> ```
