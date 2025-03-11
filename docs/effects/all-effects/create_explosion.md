@@ -4,8 +4,9 @@ Creates an explosion
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: create_explosion
 >   args:
 >     power: 1 # The power of the explosion

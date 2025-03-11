@@ -6,8 +6,9 @@ Increase the max durability of an item
 
 > [!warning] Requires 1.21+
 
-> [!example]
->```yaml
+> [!Example]
+> ```yaml
+> effects:
 >- id: add_durability
 >   args:
 >     durability: 100 # The durability to add (or subtract)

@@ -4,8 +4,9 @@ Add / subtract points (check the [points](https://plugins.auxilor.io/effects/poi
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_points
 >   args:
 >     type: g_souls # The point to add/subtract

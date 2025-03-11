@@ -4,8 +4,9 @@ Extinguish the player
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: extinguish
 >   ...other config (eg triggers, filters, mutators, etc)
 > ```

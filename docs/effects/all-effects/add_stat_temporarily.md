@@ -6,8 +6,9 @@ Adds a value to a specific stat
 
 > [!warning] Requires EcoSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: add_stat_temporarily
 >   args:
 >     stat: strength # The name of the stat

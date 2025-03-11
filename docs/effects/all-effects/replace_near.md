@@ -4,8 +4,9 @@ Replaces nearby blocks with other blocks
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: replace_near
 >   args:
 >     radius: 5 # The horizontal radius to replace
@@ -20,8 +21,9 @@ Replaces nearby blocks with other blocks
 >   ...other config (eg triggers, filters, mutators, etc)
 > ```
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: replace_near
 >   args:
 >     radius: 5 # The horizontal radius to replace

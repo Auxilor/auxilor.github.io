@@ -4,8 +4,9 @@ Get pulled to a location
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: pull_to_location
 >   args:
 >     velocity: 1.5 # The speed at which to be pulled (magnitude of the velocity vector)

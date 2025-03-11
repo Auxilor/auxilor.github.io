@@ -6,7 +6,8 @@ This will not make them keep their XP! Use [`keep_level`](https://plugins.auxilo
 
 > [!hint] Permanent Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: keep_inventory
 > ```

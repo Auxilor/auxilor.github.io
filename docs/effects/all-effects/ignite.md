@@ -4,8 +4,9 @@ Lights the victim on fire
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: ignite
 >   args:
 >     damage_per_tick: 8 # The amount of damage to deal per fire tick

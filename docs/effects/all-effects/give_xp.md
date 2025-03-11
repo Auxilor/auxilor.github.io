@@ -4,8 +4,9 @@ Gives experience points
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_xp
 >   args:
 >     amount: 100 # The amount of xp to give

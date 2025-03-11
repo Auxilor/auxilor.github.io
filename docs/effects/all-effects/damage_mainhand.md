@@ -4,8 +4,9 @@ Damage a victim's mainhand item
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: damage_mainhand
 >   args:
 >     damage: 1 # The amount of damage to deal

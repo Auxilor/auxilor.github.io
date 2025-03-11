@@ -4,8 +4,9 @@ Mines a square radius around a block, but only one block deep
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: mine_radius_one_deep
 >   args:
 >     radius: 1 # The radius around the center block: 1 = 3x3x1, 2 = 5x5x1, etc

@@ -4,8 +4,9 @@ Makes nearby monsters in a certain radius attack the victim
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: swarm
 >   args:
 >     radius: 20 # The radius to swarm from

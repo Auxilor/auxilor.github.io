@@ -4,8 +4,9 @@ Spawns a [potion](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/Pot
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: spawn_potion_cloud
 >   args:
 >     effect: blindness # The effect to give (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)

@@ -4,8 +4,9 @@ Removes a boss bar
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: remove_boss_bar
 >   args:
 >     id: my_boss_bar # The ID of the boss bar to remove

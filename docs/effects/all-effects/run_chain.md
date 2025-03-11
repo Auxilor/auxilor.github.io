@@ -4,8 +4,9 @@ Execute an effect chain
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: run_chain
 >   args:
 >     run-type: normal # Optional, sets how the chain is ran, see the 'configuring an effect' page

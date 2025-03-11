@@ -4,8 +4,9 @@ Creates a boss bar and shows it to the player
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: create_boss_bar
 >   args:
 >     id: my_boss_bar # The ID of the boss bar

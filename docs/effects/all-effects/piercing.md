@@ -4,8 +4,9 @@ Makes projectiles pass through other entities (collaterals), like the Piercing e
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: piercing
 >   args:
 >       level: 3 # The piercing level, i.e. the amount of entities that the projectile should go through

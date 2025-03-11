@@ -6,8 +6,9 @@ Gains experience points for a task in a quest, including multipliers.
 
 > [!warning] Requires EcoQuests
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: gain_task_xp
 >   args:
 >     quest: magic_miner # The quest ID

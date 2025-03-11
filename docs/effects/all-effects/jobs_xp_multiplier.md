@@ -6,8 +6,9 @@ Multiplies XP gain from jobs
 
 > [!warning] Requires Jobs Reborn
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: jobs_xp_multiplier
 >   args:
 >     multiplier: 1.5 # The experience multiplier

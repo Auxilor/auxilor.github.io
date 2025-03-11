@@ -6,8 +6,9 @@ Gives experience points for a task in a quest, excluding multipliers.
 
 > [!warning] Requires EcoQuests
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_task_xp
 >   args:
 >     quest: magic_miner # The quest ID

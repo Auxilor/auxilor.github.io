@@ -4,8 +4,9 @@ Teleports to the ground
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: teleport_to_ground
 >   ...other config (eg triggers, filters, mutators, etc)
 > ```

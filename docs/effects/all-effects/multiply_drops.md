@@ -4,8 +4,9 @@ Multiplies drops (**requires a drop trigger**)
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: multiply_drops
 >   args:
 >     on_items: # (Optional) The drops to multiply

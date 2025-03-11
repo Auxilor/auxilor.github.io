@@ -4,8 +4,9 @@ Strikes lightning on a victim
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: smite
 >   args:
 >     damage: 5 # The damage to deal

@@ -4,8 +4,9 @@ Creates a hologram temporarily (Requires a hologram plugin to be installed)
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: create_hologram
 >   args:
 >       text: # The text in the hologram

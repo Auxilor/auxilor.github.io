@@ -4,8 +4,9 @@ Add / subtract global points (check the [points](https://plugins.auxilor.io/effe
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_global_points
 >   args:
 >     type: item_stock # The point to add/subtract

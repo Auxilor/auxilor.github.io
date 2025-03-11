@@ -6,8 +6,9 @@ Starts a quest for the player
 
 > [!warning] Requires EcoQuests
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: start_quest
 >   args:
 >     quest: meet_the_village # The quest ID

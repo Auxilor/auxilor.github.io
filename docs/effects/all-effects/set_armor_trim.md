@@ -4,8 +4,9 @@ Sets item armor trim
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: set_armor_trim
 >   args:
 >     pattern: rib # The pattern

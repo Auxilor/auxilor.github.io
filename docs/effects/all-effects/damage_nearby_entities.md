@@ -4,8 +4,9 @@ Damage entities near a location
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: damage_nearby_entities
 >   args:
 >     damage: 2 # The amount of damage to deal

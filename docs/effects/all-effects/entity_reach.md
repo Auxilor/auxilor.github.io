@@ -6,8 +6,9 @@ Adds reach for interacting with entities
 
 > [!warning] Requires 1.21+
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: entity_reach
 >   args:
 >     reach: 1 # The extra entity reach

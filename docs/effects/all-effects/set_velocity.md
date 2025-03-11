@@ -4,8 +4,9 @@ Sets your velocity
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: set_velocity
 >   args:
 >     x: 0.2

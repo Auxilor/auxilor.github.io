@@ -9,8 +9,9 @@ This effect **always** runs at the **end** of the run-order. This allows you to 
 > [!warning]
 > This effect can lead to dealing big damage, in most cases you probably only want to use [`damage_multiplier`](https://plugins.auxilor.io/effects/all-effects/damage_multiplier)
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: total_damage_multiplier
 >   args:
 >     multiplier: 0.5 # The multiplier

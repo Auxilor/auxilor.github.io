@@ -6,8 +6,9 @@ Multiplies sneaking speed
 
 > [!warning] Requires 1.21+
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: sneaking_speed_multiplier
 >   args:
 >     multiplier: 2 # The multiplier for sneaking speed

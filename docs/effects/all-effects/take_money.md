@@ -6,8 +6,9 @@ Takes money from the player
 
 > [!warning] Requires Vault Economy
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: take_money
 >   args:
 >     amount: 1000 # The amount of money to take

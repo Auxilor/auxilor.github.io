@@ -4,8 +4,9 @@ Drops a random item at a location, with weighting for different items
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: drop_weighted_random_item
 >   args:
 >     items: # The list of items to choose from

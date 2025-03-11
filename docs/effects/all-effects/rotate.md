@@ -4,8 +4,9 @@ Spin around
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: rotate
 >   args:
 >     angle: 180 # The angle to rotate / spin (in degrees)

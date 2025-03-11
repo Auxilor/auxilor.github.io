@@ -4,8 +4,9 @@ Add / subtract item points (check the [points](https://plugins.auxilor.io/effect
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_item_points
 >   args:
 >     type: point_name # The point to add/subtract

@@ -6,8 +6,9 @@ Deal a crit hit
 
 > [!warning] Requires EcoSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: make_skill_crit
 >   args:
 >     multiplier: 1.5 # Multiplies attack damage as a crit

@@ -6,8 +6,9 @@ Add / subtract global points (check the [points](https://plugins.auxilor.io/effe
 
 > [!warning] Requires 1.21+
 
-> [!example]
->```yaml
+> [!Example]
+> ```yaml
+> effects:
 >- id: add_global_points
   args:
 >     type: g_souls # The point to add/subtract

@@ -6,8 +6,9 @@ Multiplies magic regeneration
 
 > [!warning] Requires EcoSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: magic_regen_multiplier
 >   args:
 >     multiplier: 1.5 # The regen multiplier

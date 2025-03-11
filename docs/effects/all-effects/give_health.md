@@ -4,8 +4,9 @@ Gives the player health
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_health
 >   args:
 >     amount: 2 # The amount of health to give/take (allows negative values)

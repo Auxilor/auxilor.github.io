@@ -8,6 +8,7 @@ Adds a value to a specific stat
 
 > [!Example]
 > ```yaml
+> effects:
 > - id: add_stat
 >   args:
 >     stat: strength # The name of the stat

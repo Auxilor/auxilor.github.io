@@ -6,8 +6,9 @@ Gives a player money
 
 > [!warning] Requires Vault Economy
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_money
 >   args:
 >     amount: 1000 # The amount of money to give

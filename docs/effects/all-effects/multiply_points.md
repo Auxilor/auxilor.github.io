@@ -4,8 +4,9 @@ Multiply points (check the [points](https://plugins.auxilor.io/effects/points) w
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: multiply_points
 >   args:
 >     type: g_souls # The point to multiply

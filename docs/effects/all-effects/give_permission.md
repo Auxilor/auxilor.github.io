@@ -6,8 +6,9 @@ Gives a permission while active
 
 > [!warning] Requires Vault
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_permission
 >   args:
 >     permission: ecocrates.reroll.mythic # The permission to give

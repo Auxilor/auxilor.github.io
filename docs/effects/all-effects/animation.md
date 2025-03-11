@@ -4,8 +4,9 @@ Plays an animation
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: animation
 >   args:
 >     animation: spin_item # The ID of the animation

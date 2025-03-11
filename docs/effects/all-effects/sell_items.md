@@ -4,8 +4,9 @@ Sells dropped items / item from trigger
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: sell_items
 >   args:
 >     multiplier: 0.5 # The price multiplier

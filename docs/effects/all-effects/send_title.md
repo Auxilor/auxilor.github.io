@@ -4,8 +4,9 @@ Send a title/subtitle to the player
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: send_title
 >   args:
 >     title: "&aCongratulations %player%!" # The title

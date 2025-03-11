@@ -6,8 +6,9 @@ Item durability cannot actually be changed, so this functions like unbreaking wh
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: item_durability_multiplier
 >   args:
 >     multiplier: 1.5 # The multiplier for the durability

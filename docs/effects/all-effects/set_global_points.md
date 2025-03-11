@@ -4,8 +4,9 @@ Set global points (check the [points](https://plugins.auxilor.io/effects/points)
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: set_global_points
 >   args:
 >     type: global_stock # The point to set

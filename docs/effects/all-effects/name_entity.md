@@ -4,8 +4,9 @@ Set the display name of an entity
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: name_entity
 >   args:
 >     name: "&cTagged!" # The name to set

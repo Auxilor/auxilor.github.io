@@ -6,8 +6,9 @@ Multiplies pet xp gain
 
 > [!warning] Requires EcoPets
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: pet_xp_multiplier
 >   args:
 >     multiplier: 1.5 # The experience multiplier

@@ -4,8 +4,9 @@ Shoots an arrow
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: shoot_arrow
 >   args:
 >     inherit_velocity: true # If velocity should be inherited from the trigger (ie if you want to make a tripleshot effect)

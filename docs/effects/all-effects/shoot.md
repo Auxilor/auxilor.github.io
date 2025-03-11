@@ -4,8 +4,9 @@ Shoots a [projectile](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: shoot
 >   args:
 >     inherit_velocity: true # If velocity should be inherited from the trigger (ie if you want to make a tripleshot effect)

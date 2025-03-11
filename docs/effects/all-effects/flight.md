@@ -4,7 +4,8 @@ Grants flight
 
 > [!hint] Permanent Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: flight
 > ```

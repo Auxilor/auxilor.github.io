@@ -4,8 +4,9 @@ Automatically replants crops
 
 > [!hint] Permanent Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: replant_crops
 >   args:
 >     consume_seeds: true # If seeds should be used when replanting crops

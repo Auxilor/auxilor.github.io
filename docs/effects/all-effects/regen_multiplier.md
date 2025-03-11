@@ -4,8 +4,9 @@ Multiplies regen speed
 
 > [!hint] Permanent Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: regen_multiplier
 >   args:
 >     multiplier: 2 # The multiplier for regeneration speed

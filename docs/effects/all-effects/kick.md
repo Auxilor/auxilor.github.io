@@ -4,8 +4,9 @@ Kicks the player
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: kick
 >   args:
 >     message: "&cYou have been kicked!" # The message to send

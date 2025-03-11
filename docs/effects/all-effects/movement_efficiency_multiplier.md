@@ -6,8 +6,9 @@ Multiplies movement speed through difficult terrain
 
 > [!warning] Requires 1.21+
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: movement_efficiency_multiplier
 >   args:
 >     multiplier: 1.5 # The multiplier for movement efficiency

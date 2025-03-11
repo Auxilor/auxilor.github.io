@@ -6,8 +6,9 @@ Multiplies mob coin drops
 
 > [!warning] Requires Flare Mobcoins
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: mob_coins_multiplier
 >   args:
 >     multiplier: 1.5 # The multiplier

@@ -4,8 +4,9 @@ Damages the item
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: damage_item
 >   args:
 >     damage: 2 # The durability to damage

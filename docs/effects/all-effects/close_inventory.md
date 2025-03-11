@@ -4,8 +4,9 @@ Closes the player's inventory
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: close_inventory
 >   ...other config (eg triggers, filters, mutators, etc)
 > ```

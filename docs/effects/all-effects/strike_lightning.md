@@ -4,8 +4,9 @@ Strikes lightning at a point
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: strike_lightning
 >   args:
 >     amount: 5 # The amount of lightning strikes

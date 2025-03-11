@@ -4,8 +4,9 @@ Multiplies incoming or outgoing damage from any damage trigger
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: damage_multiplier
 >   args:
 >     multiplier: 0.5 # The multiplier

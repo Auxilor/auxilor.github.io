@@ -4,8 +4,9 @@ Pay a [price](https://plugins.auxilor.io/all-plugins/prices)
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: pay_price
 >   args:
 >     value: 1000 # The value of the price

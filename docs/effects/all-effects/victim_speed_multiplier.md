@@ -4,8 +4,9 @@ Temporarily multiplies victim movement speed
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: victim_speed_multiplier
 >   args:
 >     multiplier: 1.5 # The multiplier for movement speed

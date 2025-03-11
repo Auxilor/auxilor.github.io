@@ -6,8 +6,9 @@ Multiplies a stat by a specific value
 
 > [!warning] Requires EcoSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: multiply_stat_temporarily
 >   args:
 >     stat: strength # The name of the stat

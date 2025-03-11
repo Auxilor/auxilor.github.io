@@ -4,8 +4,9 @@ Gain item XP for a certain level
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: level_item
 >   args:
 >     id: mining_progress # The level ID

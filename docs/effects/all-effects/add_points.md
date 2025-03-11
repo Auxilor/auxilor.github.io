@@ -6,6 +6,7 @@ Add / subtract points (check the [points](https://plugins.auxilor.io/effects/poi
 
 > [!Example]
 > ```yaml
+> effects:
 > - id: add_points
 >   args:
 >     type: g_souls # The point to add/subtract

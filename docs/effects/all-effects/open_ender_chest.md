@@ -4,8 +4,9 @@ Opens the player's ender chest
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: open_ender_chest
 > ...other config (eg triggers, filters, mutators, etc)
 > ```

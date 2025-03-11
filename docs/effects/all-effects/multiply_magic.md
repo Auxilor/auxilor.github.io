@@ -6,8 +6,9 @@ Multiply magic
 
 > [!warning] Requires EcoSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: multiply_magic
 >   args:
 >     type: magic # The magic type to multiply

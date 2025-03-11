@@ -4,8 +4,9 @@ Damage a victim's armor
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: damage_armor
 >   args:
 >     damage: 1 # The amount of damage to deal

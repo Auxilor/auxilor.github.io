@@ -4,8 +4,9 @@ Sends the player a message
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: send_message
 >   args:
 >     message: "&cYou have been blinded!" # The message to send

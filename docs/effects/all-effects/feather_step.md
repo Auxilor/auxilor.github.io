@@ -4,7 +4,8 @@ Prevents trampling crops
 
 > [!hint] Permanent Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: feather_step
 > ```

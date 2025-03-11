@@ -4,8 +4,9 @@ Spawns a [particle](https://plugins.auxilor.io/all-plugins/the-particle-lookup-s
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: spawn_particle
 >   args:
 >     particle: heart # The particle to spawn (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)

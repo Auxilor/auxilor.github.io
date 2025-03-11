@@ -4,8 +4,9 @@ Call a custom trigger
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: trigger_custom
 >   args:
 >     trigger: example # The custom trigger ID: use in other effects like custom_id (i.e. custom_example here)

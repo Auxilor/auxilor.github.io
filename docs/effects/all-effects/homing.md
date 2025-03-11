@@ -4,8 +4,9 @@ Makes projectiles hone in onto entities (homing arrows / tridents)
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: homing
 >   args:
 >       distance: 10 # The distance to hone in from

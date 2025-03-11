@@ -10,6 +10,7 @@ You can create custom holders temporarily and give them on a trigger, for exampl
 
 > [!Example]
 > ```yaml
+> effects:
 > - id: add_holder_to_victim
 >   args:
 >     effects: 

@@ -4,8 +4,9 @@ Opens a crafting table for the player
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: open_crafting
 > ...other config (eg triggers, filters, mutators, etc)
 > ```

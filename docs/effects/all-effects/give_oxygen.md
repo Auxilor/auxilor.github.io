@@ -4,8 +4,9 @@ Give a player oxygen
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_oxygen
 >   args:
 >     amount: 1 # The amount of oxygen to give (supports negative values)

@@ -4,8 +4,9 @@ Sets the player's saturation
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: set_saturation
 >   args:
 >     amount: 10.0 # The saturation level to set

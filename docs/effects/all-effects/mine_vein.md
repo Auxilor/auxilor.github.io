@@ -4,8 +4,9 @@ Mines a vein of blocks
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: mine_vein
 >   args:
 >     limit: 10 # The maximum amount of blocks to mine

@@ -4,8 +4,9 @@ Runs effects for all players on the server
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: all_players
 >   args:
 >     effects: # The effects to run for each player

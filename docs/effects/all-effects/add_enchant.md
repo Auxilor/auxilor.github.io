@@ -4,8 +4,9 @@ Adds an enchant to the item
 
 > [!danger] Triggered Effect
 
-> [!example]
->```yaml
+> [!Example]
+> ```yaml
+> effects:
 >- id: add_enchant
   args:
 >     enchant: razor # The ID of the enchant

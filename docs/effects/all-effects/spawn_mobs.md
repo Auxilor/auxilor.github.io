@@ -4,8 +4,9 @@ Spawns [mobs](https://plugins.auxilor.io/all-plugins/the-entity-lookup-system) t
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: spawn_mobs
 >   args:
 >     amount: 4 # The amount of mobs to spawn

@@ -6,8 +6,9 @@ Multiplies underwater mining speed
 
 > [!warning] Requires 1.21+
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: underwater_mining_speed_multiplier
 >   args:
 >     multiplier: 2 # The multiplier for underwater mining speed

@@ -4,8 +4,9 @@ Spawns a ring of arrows around a location
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: arrow_ring
 >   args:
 >     amount: 12 # The amount of arrows to spawn

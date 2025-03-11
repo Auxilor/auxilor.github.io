@@ -4,8 +4,9 @@ Gives a player an item
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_item
 >   args:
 >     item: "diamond_sword razor:5" # The item to give

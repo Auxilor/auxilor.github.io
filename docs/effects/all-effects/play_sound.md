@@ -4,8 +4,9 @@ Plays a [sound](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.htm) t
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: play_sound
 >   args:
 >     sound: entity_wolf_growl # The sound to play

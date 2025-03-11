@@ -6,8 +6,9 @@ Adds reach for interacting with blocks
 
 > [!warning] Requires 1.21+
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: block_reach
 >   args:
 >     reach: 1 # The extra block reach

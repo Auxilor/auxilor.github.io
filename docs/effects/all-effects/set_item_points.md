@@ -4,8 +4,9 @@ Set item points (check the [points](https://plugins.auxilor.io/effects/points) w
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: set_item_points
 >   args:
 >     type: blocks_broken # The point to set

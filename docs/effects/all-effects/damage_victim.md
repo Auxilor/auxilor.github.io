@@ -4,8 +4,9 @@ Damage the victim
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: damage_victim
 >   args:
 >     damage: 10.4 # The damage to deal

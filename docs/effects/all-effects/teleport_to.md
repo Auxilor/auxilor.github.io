@@ -4,8 +4,9 @@ Teleport a player to a specific location
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: teleport_to
 >   args:
 >     world: world_nether # The world name

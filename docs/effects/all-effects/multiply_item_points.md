@@ -4,8 +4,9 @@ Multiply item points (check the [points](https://plugins.auxilor.io/effects/poin
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: multiply_item_points
 >   args:
 >     type: point_name # The point to multiply

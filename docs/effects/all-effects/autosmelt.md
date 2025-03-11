@@ -4,8 +4,9 @@ Autosmelts drops (requires a drop trigger)
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: autosmelt
 >   args:
 >     drop_xp: true # If the furnace xp should be dropped

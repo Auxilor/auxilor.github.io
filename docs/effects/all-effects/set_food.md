@@ -4,8 +4,9 @@ Sets the player's food
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: set_food
 >   args:
 >     amount: 1 # The food level to set

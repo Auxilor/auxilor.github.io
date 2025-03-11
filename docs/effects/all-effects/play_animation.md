@@ -6,8 +6,9 @@ Plays a Model Engine animation (The entity must have a custom model active)
 
 > [!warning] Requires Model Engine
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: play_animation
 >   args:
 >     animation: strike # The name of the animation

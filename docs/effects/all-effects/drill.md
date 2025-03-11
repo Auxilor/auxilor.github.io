@@ -4,8 +4,9 @@ Mine blocks behind the initial mined block
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: drill
 >   args:
 >     amount: 4 # The amount of blocks to mine

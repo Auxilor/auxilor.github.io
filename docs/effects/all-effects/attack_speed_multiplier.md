@@ -4,8 +4,9 @@ Multiplies attack speed
 
 > [!hint] Permanent Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: attack_speed_multiplier
 >   args:
 >     multiplier: 1.5 # The multiplier for the attack speed

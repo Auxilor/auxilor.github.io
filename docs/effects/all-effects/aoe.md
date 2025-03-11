@@ -4,8 +4,9 @@ Runs effects for all entities within an area of effect (aoe)
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: aoe
 >   args:
 >       effects: # The effects to run for each entity

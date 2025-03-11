@@ -4,8 +4,9 @@ Multiplies critical (falling) hit damage
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: crit_multiplier
 >   args:
 >     multiplier: 3 # The multiplier

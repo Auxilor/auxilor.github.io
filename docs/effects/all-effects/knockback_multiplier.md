@@ -4,8 +4,9 @@ Multiplies attack knockback
 
 > [!hint] Permanent Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: knockback_multiplier
 >   args:
 >     multiplier: 2 # The multiplier for attack knockback

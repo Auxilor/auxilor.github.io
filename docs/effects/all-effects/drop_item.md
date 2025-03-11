@@ -4,8 +4,9 @@ Drops an item at a location
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: drop_item
 >   args:
 >     item: "diamond_sword first_strike:6" # The item to give

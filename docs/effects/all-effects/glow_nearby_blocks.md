@@ -4,8 +4,9 @@ Make nearby blocks of a certain type glow a certain color
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: glow_nearby_blocks
 >   args:
 >     radius: 10 # The radius, in blocks

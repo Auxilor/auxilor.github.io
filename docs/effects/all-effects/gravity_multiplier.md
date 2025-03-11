@@ -6,8 +6,9 @@ Multiplies gravity
 
 > [!warning] Requires 1.21+
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: gravity_multiplier
 >   args:
 >     multiplier: 0.5 # The multiplier for gravity

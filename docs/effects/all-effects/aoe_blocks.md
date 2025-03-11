@@ -5,8 +5,9 @@ Runs effects for all blocks within an area of effect
 > [!danger] Triggered Effect
 # Example Config
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: aoe
 >   args:
 >     effects: # The effects to run for each block

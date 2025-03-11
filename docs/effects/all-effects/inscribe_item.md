@@ -6,8 +6,9 @@ Inscribes an item with a scroll
 
 > [!warning] Requires EcoScrolls
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: inscribe_item
 >   args:
 >     scroll: hot_potato_book # The scroll ID

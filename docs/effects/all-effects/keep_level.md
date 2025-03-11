@@ -4,7 +4,8 @@ Makes the player keep their XP level on death
 
 > [!hint] Permanent Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: keep_level
 > ```

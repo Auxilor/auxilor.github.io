@@ -6,8 +6,9 @@ Multiplies scale
 
 > [!warning] Requires 1.21+
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: scale
 >   args:
 >     multiplier: 1.5 # The multiplier for scale

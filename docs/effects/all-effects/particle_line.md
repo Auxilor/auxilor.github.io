@@ -4,8 +4,9 @@ Spawns a line of particles between you and the target location
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: particle_line
 >   args:
 >     particle: heart # The particle to spawn (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html)

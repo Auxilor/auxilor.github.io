@@ -4,8 +4,9 @@ Strips a mob's AI temporarily
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: strip_ai
 >   args:
 >     duration: 60 # The amount of ticks to strip AI for

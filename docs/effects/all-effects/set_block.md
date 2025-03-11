@@ -4,8 +4,9 @@ Set a block
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: set_block
 >   args:
 >     block: diamond_ore # The block to set to

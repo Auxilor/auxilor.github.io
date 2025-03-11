@@ -4,8 +4,9 @@ Remove item data
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: remove_item_data
 >   args:
 >     key: owner # The key to remove

@@ -4,8 +4,9 @@ Gives a [potion](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/Poti
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: potion_effect
 >   args:
 >     effect: blindness # The effect to give (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)

@@ -8,6 +8,7 @@ A holder is anything with effects and conditions, in plugins typically a Talisma
 
 > [!Example]
 > ```yaml
+> effects:
 > - id: add_permanent_holder_in_radius
 >   args:
 >     effects: 

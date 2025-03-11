@@ -4,8 +4,9 @@ Makes your victim bleed, damaging them repeatedly
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: bleed
 >   args:
 >     damage: 5 # The damage to deal on each bleed tick

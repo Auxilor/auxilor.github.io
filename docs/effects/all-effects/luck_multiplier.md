@@ -4,8 +4,9 @@ Multiplies luck
 
 > [!hint] Permanent Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: luck_multiplier
 >   args:
 >     multiplier: 1.5 # The multiplier for the luck attribute

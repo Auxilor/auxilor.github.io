@@ -4,8 +4,9 @@ Multiply global points (check the [points](https://plugins.auxilor.io/effects/po
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: multiply_global_points
 >   args:
 >     type: item_stock # The point to multiply

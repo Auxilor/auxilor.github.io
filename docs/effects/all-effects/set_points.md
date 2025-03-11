@@ -4,8 +4,9 @@ Set points (check the [points](https://plugins.auxilor.io/effects/points) wiki p
 
 > [!danger] Triggered Effect
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: set_points
 >   args:
 >     type: g_souls # The point to set
