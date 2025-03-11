@@ -2,7 +2,8 @@
 
 Requires a player to be on fire
 
-# Example Config
-```yaml
-- id: on_fire
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: on_fire
+> ```

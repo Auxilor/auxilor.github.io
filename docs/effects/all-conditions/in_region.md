@@ -2,13 +2,14 @@
 
 Requires a player to be in a certain region
 
-**Requires WorldGuard**
+> [!warning] Requires WorldGuard
 
-# Example Config
-```yaml
-- id: in_region
-  args:
-    region: # The list of regions to allow
-      - spawn
-      - arena
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: in_region
+>   args:
+>     region: # The list of regions to allow
+>       - spawn
+>       - arena
+> ```

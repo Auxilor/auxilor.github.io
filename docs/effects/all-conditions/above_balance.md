@@ -2,11 +2,12 @@
 
 Requires a player to have a certain amount of money
 
-**Requires Vault**
+> [!warning] Requires Vault
 
-# Example Config
-```yaml
-- id: above_balance
-  args:
-    balance: 150000.50 # The minimum amount of money
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: above_balance
+>   args:
+> 	balance: 150000.50 # The minimum amount of money
+> ```

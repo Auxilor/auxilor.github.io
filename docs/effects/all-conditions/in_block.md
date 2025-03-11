@@ -2,7 +2,8 @@
 
 Requires a player to be in a block
 
-# Example Config
-```yaml
-- id: in_block
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: in_block
+> ```

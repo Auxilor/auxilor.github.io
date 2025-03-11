@@ -2,11 +2,12 @@
 
 Requires a player to have a certain pet
 
-**Requires EcoPets**
+> [!warning] Requires EcoPets
 
-# Example Config
-```yaml
-- id: has_pet
-  args:
-    pet: black_cat # The pet ID
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: has_pet
+>   args:
+>     pet: black_cat # The pet ID
+> ```

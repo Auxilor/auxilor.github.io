@@ -2,7 +2,8 @@
 
 Requires a player to be on the ground
 
-# Example Config
-```yaml
-- id: on_ground
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: on_ground
+> ```
