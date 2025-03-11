@@ -6,8 +6,9 @@ Multiplies quest xp gain
 
 > [!warning] Requires EcoQuests
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: quest_xp_multiplier
 >   args:
 >     multiplier: 1.5 # The experience multiplier

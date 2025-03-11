@@ -6,8 +6,9 @@ Multiplies all stats by a specific value
 
 > [!warning] Requires EcoSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: multiply_all_stats
 >   args:
 >     multiplier: 0.75 # The amount to multiply the stats by

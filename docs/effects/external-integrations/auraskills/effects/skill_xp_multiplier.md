@@ -6,8 +6,9 @@ Multiplies skill xp gain
 
 > [!warning] Requires EcoSkills / AuraSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: skill_xp_multiplier
 >   args:
 >     multiplier: 1.5 # The experience multiplier

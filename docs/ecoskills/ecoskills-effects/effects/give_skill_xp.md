@@ -6,8 +6,9 @@ Gives experience points for a certain skill
 
 > [!warning] Requires EcoSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_skill_xp
 >   args:
 >     amount: 100 # The amount of xp to give

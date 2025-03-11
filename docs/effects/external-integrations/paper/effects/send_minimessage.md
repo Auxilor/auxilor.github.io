@@ -6,8 +6,9 @@ Sends the player a minimessage message, supports clickable components, etc.
 
 > [!warning] Requires Paper
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: send_minimessage
 >   args:
 >     message: "<red>You have been blinded!" # The message to send

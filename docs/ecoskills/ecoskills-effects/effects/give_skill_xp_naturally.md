@@ -7,8 +7,9 @@ This will send a message to a player and will include multipliers.
 
 > [!warning] Requires EcoSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_skill_xp_naturally
 >   args:
 >     amount: 100 # The amount of xp to give

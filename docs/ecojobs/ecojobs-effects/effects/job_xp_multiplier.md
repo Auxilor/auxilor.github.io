@@ -6,8 +6,9 @@ Multiplies job XP gain
 
 > [!warning] Requires EcoJobs
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: job_xp_multiplier
 >   args:
 >     multiplier: 1.5 # The experience multiplier

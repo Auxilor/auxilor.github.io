@@ -6,8 +6,9 @@ Drops an item that runs a chain on pickup
 
 > [!warning] Requires Paper
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: drop_pickup_item
 >   args:
 >       item: diamond # The item texture, cannot actually be picked up

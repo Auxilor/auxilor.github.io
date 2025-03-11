@@ -6,8 +6,9 @@ Add / subtract magic
 
 > [!warning] Requires EcoSkills
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_magic
 >   args:
 >     type: mana # The point to add/subtract

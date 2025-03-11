@@ -6,8 +6,9 @@ Multiplies money gain from jobs
 
 > [!warning] Requires Jobs Reborn
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: jobs_money_multiplier
 >   args:
 >     multiplier: 1.5 # The money multiplier

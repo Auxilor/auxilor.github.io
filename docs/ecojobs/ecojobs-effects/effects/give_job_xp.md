@@ -6,8 +6,9 @@ Gives experience points for a certain job
 
 > [!warning] Requires EcoJobs
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_job_xp
 >   args:
 >     amount: 100 # The amount of xp to give

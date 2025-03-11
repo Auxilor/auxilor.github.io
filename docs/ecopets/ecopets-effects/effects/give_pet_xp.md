@@ -6,8 +6,9 @@ Gives experience points for a certain pet
 
 > [!warning] Requires EcoPets
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: give_pet_xp
 >   args:
 >     amount: 100 # The amount of xp to give

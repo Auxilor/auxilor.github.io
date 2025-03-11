@@ -6,8 +6,9 @@ Multiplies mcMMO skill xp gain
 
 > [!warning] Requires mcMMO
 
-> [!example]
+> [!Example]
 > ```yaml
+> effects:
 > - id: mcmmo_xp_multiplier
 >   args:
 >     multiplier: 1.5 # The experience multiplier
