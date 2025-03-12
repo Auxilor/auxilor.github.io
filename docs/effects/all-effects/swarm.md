@@ -1,16 +1,16 @@
 # `swarm`
 
-#### Triggered Effect
-
 Makes nearby monsters in a certain radius attack the victim
 
-# Example Config
+> [!danger] Triggered Effect
 
-```yaml
-- id: swarm
-  args:
-    radius: 20 # The radius to swarm from
-    entities: # (Optional) The list of entities to anger
-      - zombie 
-  ...other config (eg triggers, filters, mutators, etc)
-```
+> [!Example]
+> ```yaml
+> effects:
+> - id: swarm
+>   args:
+>     radius: 20 # The radius to swarm from
+>     entities: # (Optional) The list of entities to anger
+>       - zombie 
+>   ...other config (eg triggers, filters, mutators, etc)
+> ```

@@ -2,11 +2,12 @@
 
 Requires a player to be wearing a certain EcoArmor set
 
-**Requires EcoArmor**
+> [!warning] Requires EcoArmor
 
-# Example Config
-```yaml
-- id: is_wearing_set
-  args:
-    set: reaper # The EcoArmor set ID
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: is_wearing_set
+>   args:
+>     set: reaper # The EcoArmor set ID
+> ```

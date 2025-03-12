@@ -2,11 +2,11 @@
 
 Require a certain task
 
-**Requires EcoQuests**
+> [!warning] Requires EcoQuests
 
-# Example Config
-```yaml
-filters:
-  task:
-    - meet_jeff
-```
+> [!example]
+> ```yaml
+> filters:
+>   task:
+>     - meet_jeff
+> ```

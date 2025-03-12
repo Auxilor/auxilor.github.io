@@ -2,11 +2,12 @@
 
 Requires a player to have a certain talisman active
 
-**Requires Talismans**
+> [!warning] Requires Talismans
 
-# Example Config
-```yaml
-- id: has_talisman
-  args:
-    talisman: attack_speed_2 # The talisman ID
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: has_talisman
+>   args:
+>     talisman: attack_speed_2 # The talisman ID
+> ```

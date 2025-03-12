@@ -1,16 +1,18 @@
 # `mcmmo_xp_multiplier`
-#### Permanent Effect
 
 Multiplies mcMMO skill xp gain
 
-**Requires mcMMO**
+> [!hint] Permanent Effect
 
-# Example Config
-```yaml
-- id: mcmmo_xp_multiplier
-  args:
-    multiplier: 1.5 # The experience multiplier
-    skills: # The list of skills to multiply xp for. If removed, it will multiply all skills.
-      - mining
-      - combat 
-```
+> [!warning] Requires mcMMO
+
+> [!Example]
+> ```yaml
+> effects:
+> - id: mcmmo_xp_multiplier
+>   args:
+>     multiplier: 1.5 # The experience multiplier
+>     skills: # The list of skills to multiply xp for. If removed, it will multiply all skills.
+>       - mining
+>       - combat 
+> ```

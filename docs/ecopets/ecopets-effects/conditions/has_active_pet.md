@@ -1,12 +1,11 @@
 # `has_active_pet`
 
-Requires a player to have a pet active
+Requires EcoPets
 
-**Requires EcoPets**
-
-# Example Config
-```yaml
-- id: has_active_pet
-  args:
-    pet: dragon # The pet ID
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: has_active_pet
+>   args:
+>     pet: dragon # The pet ID
+> ```

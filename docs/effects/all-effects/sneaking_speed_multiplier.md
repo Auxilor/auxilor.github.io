@@ -1,13 +1,15 @@
 # `sneaking_speed_multiplier`
-#### Permanent Effect
 
 Multiplies sneaking speed
 
-**Requires 1.21+**
+> [!hint] Permanent Effect
 
-# Example Config
-```yaml
-- id: sneaking_speed_multiplier
-  args:
-    multiplier: 2 # The multiplier for sneaking speed
-```
+> [!warning] Requires 1.21+
+
+> [!Example]
+> ```yaml
+> effects:
+> - id: sneaking_speed_multiplier
+>   args:
+>     multiplier: 2 # The multiplier for sneaking speed
+> ```

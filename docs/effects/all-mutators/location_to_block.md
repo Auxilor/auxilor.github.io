@@ -2,7 +2,7 @@
 
 Move the location to the block's location
 
-# Example Config
-```yaml
-- id: location_to_block
-```
+> [!example]
+> ```yaml
+> - id: location_to_block
+> ```

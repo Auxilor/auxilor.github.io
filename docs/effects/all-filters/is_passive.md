@@ -2,8 +2,8 @@
 
 If the entity must be passive
 
-# Example Config
-```yaml
-filters:
-  is_passive: true
-```
+> [!example]
+> ```yaml
+> filters:
+>   is_passive: true
+> ```

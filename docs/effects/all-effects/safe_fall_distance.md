@@ -1,13 +1,15 @@
 # `safe_fall_distance`
-#### Permanent Effect
 
 Increases/decreases the distance you can fall without taking damage
 
-**Requires 1.21+**
+> [!hint] Permanent Effect
 
-# Example Config
-```yaml
-- id: safe_fall_distance
-  args:
-    distance: 10.5 # The extra distance
-```
+> [!warning] Requires 1.21+
+
+> [!Example]
+> ```yaml
+> effects:
+> - id: safe_fall_distance
+>   args:
+>     distance: 10.5 # The extra distance
+> ```

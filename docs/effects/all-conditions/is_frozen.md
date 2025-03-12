@@ -2,7 +2,8 @@
 
 Requires a player to be frozen
 
-# Example Config
-```yaml
-- id: is_frozen
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: is_frozen
+> ```

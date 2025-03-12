@@ -1,12 +1,12 @@
 # `open_ender_chest`
 
-#### Triggered Effect
-
 Opens the player's ender chest
 
-# Example Config
+> [!danger] Triggered Effect
 
-```yaml
-- id: open_ender_chest
-...other config (eg triggers, filters, mutators, etc)
-```
+> [!Example]
+> ```yaml
+> effects:
+> - id: open_ender_chest
+> ...other config (eg triggers, filters, mutators, etc)
+> ```

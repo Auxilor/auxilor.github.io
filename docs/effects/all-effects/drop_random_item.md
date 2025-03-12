@@ -1,14 +1,16 @@
 # `drop_random_item`
-#### Triggered Effect
 
 Drops a random item at a location
 
-# Example Config
-```yaml
-- id: drop_random_item
-  args:
-    items: # The list of items to choose from
-      - diamond
-      - ancient_debris
-  ...other config (eg triggers, filters, mutators, etc)
-```
+> [!danger] Triggered Effect
+
+> [!Example]
+> ```yaml
+> effects:
+> - id: drop_random_item
+>   args:
+>     items: # The list of items to choose from
+>       - diamond
+>       - ancient_debris
+>   ...other config (eg triggers, filters, mutators, etc)
+> ```

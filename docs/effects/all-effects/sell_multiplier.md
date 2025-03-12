@@ -1,13 +1,15 @@
 # `sell_multiplier`
-#### Permanent Effect
 
 Multiplies money gained from selling items
 
-**Supports ShopGUIPlus, DeluxeSellwands, EconomyShopGUI, zShop**
+> [!hint] Permanent Effect
 
-# Example Config
-```yaml
-- id: sell_multiplier
-  args:
-    multiplier: 1.05 # The sell multiplier
-```
+> [!warning] Supports ShopGUIPlus, DeluxeSellwands, EconomyShopGUI, zShop
+
+> [!Example]
+> ```yaml
+> effects:
+> - id: sell_multiplier
+>   args:
+>     multiplier: 1.05 # The sell multiplier
+> ```

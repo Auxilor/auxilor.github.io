@@ -1,13 +1,15 @@
 # `add_enchant`
-#### Triggered Effect
 
 Adds an enchant to the item
 
-# Example Config
-```yaml
-- id: add_enchant
+> [!danger] Triggered Effect
+
+> [!Example]
+> ```yaml
+> effects:
+>- id: add_enchant
   args:
-    enchant: razor # The ID of the enchant
-    level: 2 # The level of the enchant
-  ...other config (eg triggers, filters, mutators, etc)
-```
+>     enchant: razor # The ID of the enchant
+>     level: 2 # The level of the enchant
+>  ...other config (eg triggers, filters, mutators, etc)
+  

@@ -2,8 +2,8 @@
 
 Defend a village
 
-# Example Config
-```yaml
-- key: minecraft:defend_village
-  priority: 0
-```
+> [!example]
+> ```yaml
+> - key: minecraft:defend_village
+>   priority: 0
+> ```

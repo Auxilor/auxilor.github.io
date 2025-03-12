@@ -2,7 +2,8 @@
 
 Requires a player to be falling
 
-# Example Config
-```yaml
-- id: is_falling
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: is_falling
+> ```

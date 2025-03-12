@@ -2,11 +2,11 @@
 
 Require a certain region
 
-**Requires WorldGuard**
+> [!warning] Requires WorldGuard
 
-# Example Config
-```yaml
-filters:
-  region:
-    - spawn
-```
+> [!example]
+> ```yaml
+> filters:
+>   region:
+>     - spawn
+> ```

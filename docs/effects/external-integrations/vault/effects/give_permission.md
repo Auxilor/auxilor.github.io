@@ -1,13 +1,15 @@
 # `give_permission`
-#### Permanent Effect
 
 Gives a permission while active
 
-**Requires Vault**
+> [!hint] Permanent Effect
 
-# Example Config
-```yaml
-- id: give_permission
-  args:
-    permission: ecocrates.reroll.mythic # The permission to give
-```
+> [!warning] Requires Vault
+
+> [!Example]
+> ```yaml
+> effects:
+> - id: give_permission
+>   args:
+>     permission: ecocrates.reroll.mythic # The permission to give
+> ```

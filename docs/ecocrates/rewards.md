@@ -9,27 +9,26 @@ The default reward config can be found [here](https://github.com/Auxilor/EcoCrat
 ## How to configure rewards
 Each reward goes into the `rewards.yml` file. From here you reference each one in your crates using the ID of the reward.
 
-## Example Reward Config
-
-```yaml
-  - id: 1000_coins
-    commands:
-      - "eco give %player% 1000"
-    items: [ ]
-    messages: [ ]
-    max-wins: -1
-    weight:
-      permission-multipliers: false
-      actual: 10
-      display: 25
-    display:
-      name: "&a$1000"
-      item: paper 1 unbreaking:1 hide_enchants
-      dont-keep-lore: false
-      lore:
-        - "&fDisplay Chance: &a%chance%%"
-        - "&fActual Chance: &a%actual_chance%%"
-```
+> [!example]
+> ```yaml
+>   - id: 1000_coins
+>     commands:
+>       - "eco give %player% 1000"
+>     items: [ ]
+>     messages: [ ]
+>     max-wins: -1
+>     weight:
+>       permission-multipliers: false
+>       actual: 10
+>       display: 25
+>     display:
+>       name: "&a$1000"
+>       item: paper 1 unbreaking:1 hide_enchants
+>       dont-keep-lore: false
+>       lore:
+>         - "&fDisplay Chance: &a%chance%%"
+>         - "&fActual Chance: &a%actual_chance%%"
+> ```
 
 ## Understanding all the sections
 

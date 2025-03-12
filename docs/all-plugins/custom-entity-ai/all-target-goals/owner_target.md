@@ -2,8 +2,8 @@
 
 Target the owner's target. Can only be applied to tameable mobs
 
-# Example Config
-```yaml
-- key: minecraft:owner_target
-  priority: 0
-```
+> [!example]
+> ```yaml
+> - key: minecraft:owner_target
+>   priority: 0
+> ```

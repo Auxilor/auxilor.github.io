@@ -2,7 +2,7 @@
 
 Move the location to the player's location
 
-# Example Config
-```yaml
-- id: location_to_player
-```
+> [!example]
+> ```yaml
+> - id: location_to_player
+> ```

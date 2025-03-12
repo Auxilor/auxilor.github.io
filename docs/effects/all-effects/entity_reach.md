@@ -1,13 +1,15 @@
 # `entity_reach`
-#### Permanent Effect
 
 Adds reach for interacting with entities
 
-**Requires 1.21+**
+> [!hint] Permanent Effect
 
-# Example Config
-```yaml
-- id: entity_reach
-  args:
-    reach: 1 # The extra entity reach
-```
+> [!warning] Requires 1.21+
+
+> [!Example]
+> ```yaml
+> effects:
+> - id: entity_reach
+>   args:
+>     reach: 1 # The extra entity reach
+> ```

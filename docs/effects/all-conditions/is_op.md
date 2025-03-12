@@ -2,7 +2,8 @@
 
 Requires a player to be an operator
 
-# Example Config
-```yaml
-- id: is_op
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: is_op
+> ```

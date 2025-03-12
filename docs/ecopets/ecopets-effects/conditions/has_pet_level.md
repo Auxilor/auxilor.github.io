@@ -2,12 +2,13 @@
 
 Requires a player to have a certain pet level
 
-**Requires EcoPets**
+> [!warning] Requires EcoPets
 
-# Example Config
-```yaml
-- id: has_pet_level
-  args:
-    pet: black_cat # The pet ID
-    level: 30 # The minimum level
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: has_pet_level
+>   args:
+>     pet: black_cat # The pet ID
+>     level: 30 # The minimum level
+> ```

@@ -2,11 +2,12 @@
 
 Requires a player to have a certain EcoItem active
 
-**Requires EcoItems**
+> [!warning] Requires EcoItems
 
-# Example Config
-```yaml
-- id: has_ecoitem
-  args:
-    item: reaper_scythe # The item ID
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: has_ecoitem
+>   args:
+>     item: reaper_scythe # The item ID
+> ```

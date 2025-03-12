@@ -29,33 +29,32 @@ Each stat is its own config file, placed in the `/stats/` folder, and you can ad
 The ID of the Stat is the file name. This is what you use in commands, effects and placeholders.
 ID's must be lowercase letters, numbers, and underscores only.
 
-## Example Stat Config
-
-```yaml
-name: "&#f5aa42🍖 Saturation" # The name of the stat, shown to players
-placeholder: "%level% / 3" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
-description: "&8Lose &a%placeholder%%&8 less hunger" # The description to be shown in lore and messages
-
-# Options for the stat in the GUI
-gui:
-  enabled: false # (Optional) If the stat should show up in the GUI
-  icon: player_head texture:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDMzZGRiOTJjYjZiM2E3OTI4MGI4YmRjZWQ4OTc2YWVhYjEzYTRiZmZlYWVmMmQ0NmQ4MjhiZDkxZGVlMGYzZSJ9fX0="
-  position:
-    row: 5
-    column: 5
-
-# The effects of the stat (i.e. the functionality)
-# See here: https://plugins.auxilor.io/effects/configuring-an-effect
-# Use %level% as a placeholder for the stat level
-effects:
-  - id: hunger_multiplier
-    args:
-      multiplier: "1 - (%level% / 300)"
-
-# The conditions required for the effects to activate,
-# you can use %level% as a placeholder here too
-conditions: [ ]
-```
+> [!example]
+> ```yaml
+> name: "&#f5aa42🍖 Saturation" # The name of the stat, shown to players
+> placeholder: "%level% / 3" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
+> description: "&8Lose &a%placeholder%%&8 less hunger" # The description to be shown in lore and messages
+> 
+> # Options for the stat in the GUI
+> gui:
+>   enabled: false # (Optional) If the stat should show up in the GUI
+>   icon: player_head texture:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDMzZGRiOTJjYjZiM2E3OTI4MGI4YmRjZWQ4OTc2YWVhYjEzYTRiZmZlYWVmMmQ0NmQ4MjhiZDkxZGVlMGYzZSJ9fX0="
+>   position:
+>     row: 5
+>     column: 5
+> 
+> # The effects of the stat (i.e. the functionality)
+> # See here: https://plugins.auxilor.io/effects/configuring-an-effect
+> # Use %level% as a placeholder for the stat level
+> effects:
+>   - id: hunger_multiplier
+>     args:
+>       multiplier: "1 - (%level% / 300)"
+> 
+> # The conditions required for the effects to activate,
+> # you can use %level% as a placeholder here too
+> conditions: [ ]
+> ```
 
 ## Understanding all the sections
 

@@ -1,16 +1,18 @@
 # `add_stat_temporarily`
-#### Triggered Effect
 
 Adds a value to a specific stat
 
-**Requires EcoSkills**
+> [!danger] Triggered Effect
 
-# Example Config
-```yaml
-- id: add_stat_temporarily
-  args:
-    stat: strength # The name of the stat
-    amount: 10 # The amount to add (or subtract, allows negative values)
-    duration: 20 # The duration (in ticks)
-  ...other config (eg triggers, filters, mutators, etc)
-```
+> [!warning] Requires EcoSkills
+
+> [!Example]
+> ```yaml
+> effects:
+> - id: add_stat_temporarily
+>   args:
+>     stat: strength # The name of the stat
+>     amount: 10 # The amount to add (or subtract, allows negative values)
+>     duration: 20 # The duration (in ticks)
+>   ...other config (eg triggers, filters, mutators, etc)
+> ```

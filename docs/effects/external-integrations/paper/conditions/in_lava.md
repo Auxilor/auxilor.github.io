@@ -2,9 +2,10 @@
 
 Requires a player to be in lava
 
-**Requires Paper**
+> [!warning] Requires Paper
 
-# Example Config
-```yaml
-- id: in_lava
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: in_lava
+> ```

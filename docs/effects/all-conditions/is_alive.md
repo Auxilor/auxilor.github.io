@@ -2,7 +2,8 @@
 
 Requires the player to be alive
 
-# Example Config
-```yaml
-- id: is_alive
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: is_alive
+> ```

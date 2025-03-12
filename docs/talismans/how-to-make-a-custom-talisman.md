@@ -13,40 +13,39 @@ Each talisman is its own config file, placed in the `/talismans/` folder, and yo
 The ID of the Talisman is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
-## Example Talisman Config
-
-```yaml
-name: "&aArchery Talisman I" # The display name of the talisman
-description: # The item lore
-  - "&8Deal 10% more damage with bows"
-higherLevelOf: [] # If the Talisman is higher level of another Talisman - Useful for only having the highest level Talisman active
-item: player_head texture:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDBmOGRmYTVlZmM3NTYzMGNlMGRmNDBhNDliOGY1OWJjMjIyMTRkZTk3ZTNmYjQ0YjNjNTZlOGE5YzhhNTZiNiJ9fX0=" # The item in-game: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
-craftable: true # If the item can be crafted
-recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
-  - bow
-  - crossbow
-  - bow
-     
-  - crossbow
-  - ecoitems:talisman_core_1 ? ender_eye
-  - crossbow
-     
-  - bow
-  - crossbow
-  - bow
-
-# The effects of the item (i.e. the functionality)
-# See here: https://plugins.auxilor.io/effects/configuring-an-effect
-effects:
-  - id: damage_multiplier
-    args:
-      multiplier: 1.1
-    triggers:
-      - bow_attack
-
-# The conditions required for the effects to activate
-conditions: []
-```
+> [!example]
+> ```yaml
+> name: "&aArchery Talisman I" # The display name of the talisman
+> description: # The item lore
+>   - "&8Deal 10% more damage with bows"
+> higherLevelOf: [] # If the Talisman is higher level of another Talisman - Useful for only having the highest level Talisman active
+> item: player_head texture:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDBmOGRmYTVlZmM3NTYzMGNlMGRmNDBhNDliOGY1OWJjMjIyMTRkZTk3ZTNmYjQ0YjNjNTZlOGE5YzhhNTZiNiJ9fX0=" # The item in-game: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+> craftable: true # If the item can be crafted
+> recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+>   - bow
+>   - crossbow
+>   - bow
+>      
+>   - crossbow
+>   - ecoitems:talisman_core_1 ? ender_eye
+>   - crossbow
+>      
+>   - bow
+>   - crossbow
+>   - bow
+> 
+> # The effects of the item (i.e. the functionality)
+> # See here: https://plugins.auxilor.io/effects/configuring-an-effect
+> effects:
+>   - id: damage_multiplier
+>     args:
+>       multiplier: 1.1
+>     triggers:
+>       - bow_attack
+> 
+> # The conditions required for the effects to activate
+> conditions: []
+> ```
 
 ## Understanding all the sections
 

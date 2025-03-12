@@ -2,7 +2,8 @@
 
 Requires a player to be swimming
 
-# Example Config
-```yaml
-- id: is_swimming
-```
+> [!example]
+> ```yaml
+> conditions:
+> - id: is_swimming
+> ```

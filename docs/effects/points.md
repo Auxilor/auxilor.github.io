@@ -11,11 +11,14 @@ A point can hold any numeric value, including negatives and decimals, but of cou
 
 ## Point Types
 
-| Point Type    | Placeholder                          | Description                                                                                                                                                                                                                                         |
-| ------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Points        | `%libreforge_points_<point>%`        | A general point that can be used to keep track of something per-player. (e.g. times jumped, zombies killed, etc.) You can also use this points within [Prices](https://plugins.auxilor.io/all-plugins/prices), to easily create cost based systems. |
-| Global Points | `%libreforge_global_points_<point>%` | A general point that keeps track of something globally/server-wide for all players. (e.g. zombies killed by all players.)                                                                                                                           |
-| Item Points   | `%libreforge_item_points_<point>%`   | A point that is tied to a specific item and tracks data on the item. Useful for making tools with custom durability's or per-item stats (e.g zombies killed using this sword.)                                                                      |
+> [!help] List of Point Types
+> 
+> | Point Type    | Placeholder                          | Description                                                                                                                                                                                                                                         |
+> | ------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+> | Points        | `%libreforge_points_<point>%`        | A general point that can be used to keep track of something per-player. (e.g. times jumped, zombies killed, etc.) You can also use this points within [Prices](https://plugins.auxilor.io/all-plugins/prices), to easily create cost based systems. |
+> | Global Points | `%libreforge_global_points_<point>%` | A general point that keeps track of something globally/server-wide for all players. (e.g. zombies killed by all players.)                                                                                                                           |
+> | Item Points   | `%libreforge_item_points_<point>%`   | A point that is tied to a specific item and tracks data on the item. Useful for making tools with custom durability's or per-item stats (e.g zombies killed using this sword.)                                                                      |
+> 
 
 ## Commands
 ## `/libreforge points set/give/get/take`
@@ -46,5 +49,4 @@ Points are seamlessly integrated into the effects system. Below, you'll find a l
 | `item_points_above`      | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/item_points_above)   |
 | `item_points_below`      | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/item_points_below)   |
 | `item_points_equal`      | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/item_points_equal)   |
-
 
