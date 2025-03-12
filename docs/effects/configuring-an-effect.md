@@ -34,21 +34,20 @@ The main difference is that all Triggered effects require a [trigger](https://pl
 
 The example effect: 25% chance to spawn 10 soul particles in the centre of a diamond ore when its mined and the player is below Y level 10.
 
-> [!warning] Understanding The Sections
-> 
-> **id**: The ID of the effect. You can find all the effects under "All Effects" on the sidebar.
-> 
-> **args**: The args for the effect (from the effect page). There are additional optional args that you can put here (see below).
-> 
-> **triggers**: The list of [triggers](https://plugins.auxilor.io/effects/all-triggers) that activate this effect. (This does not apply on permanent effects).
-> 
-> **filters**: The list of filters to be applied on the trigger. (e.g. `blocks` filter on `mine_block` trigger, or `entities` filter on `melee_attack` trigger.)
-> 
-> **conditions**: As well as each effect holder (e.g. Talisman, Reforge, Enchant) having its own conditions, you can specify
-> a list of effect-specific conditions that work in exactly the same way
-> 
-> **mutators**: Mutate the data sent to the effect: you can change parameters such as the victim, the location, etc.
-> A mutator, like an effect or condition, consists of an ID and arguments.
+
+**id**: The ID of the effect. You can find all the effects under "All Effects" on the sidebar.
+
+**args**: The args for the effect (from the effect page). There are additional optional args that you can put here (see below).
+
+**triggers**: The list of [triggers](https://plugins.auxilor.io/effects/all-triggers) that activate this effect. (This does not apply on permanent effects).
+
+**filters**: The list of filters to be applied on the trigger. (e.g. `blocks` filter on `mine_block` trigger, or `entities` filter on `melee_attack` trigger.)
+
+**conditions**: As well as each effect holder (e.g. Talisman, Reforge, Enchant) having its own conditions, you can specify
+a list of effect-specific conditions that work in exactly the same way
+
+**mutators**: Mutate the data sent to the effect: you can change parameters such as the victim, the location, etc.
+A mutator, like an effect or condition, consists of an ID and arguments.
 
 ## Optional Arguments
 

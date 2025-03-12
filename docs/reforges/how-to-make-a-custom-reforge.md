@@ -13,65 +13,64 @@ Each reforge is its own config file, placed in the `/reforges/` folder, and you 
 The ID of the reforge is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
-## Example Reforge Config
-
-```yaml
-name: "<gradient:#AAFFA9>Dynamic</gradient:#11FFBD>" # The display name for the reforge
-description: # The lore to add to an item with this reforge:
-- "&a+5% &fDamage"
-- "&a+10% &fCrit Damage"
-targets: # The targets that this reforge can be applied to
-- melee
-
-price: # (Optional) The price required to apply this reforge, overrides the default reforge price
-  value: 100000
-  type: coins # See here: https://plugins.auxilor.io/all-plugins/prices
-  display: "&6$%value%"
-
-# Options for the reforge stone
-stone:
-  enabled: true # If this reforge requires the use of a reforge stone
-  name: "<gradient:#AAFFA9>Dynamic</gradient:#11FFBD>&f Reforge Stone" # The display name of the stone
-  lore: # The lore of the stone
-  - "&7Place on the right of the"
-  - "&7reforge menu to apply the"
-  - "<gradient:#AAFFA9>Dynamic</gradient:#11FFBD>&7 reforge!"
-  item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM0YTY1YzY4OWIyZDM2NDA5MTAwYTYwYzJhYjhkM2QwYTY3Y2U5NGVlYTNjMWY3YWM5NzRmZDg5MzU2OGI1ZCJ9fX0=
-  craftable: true # If the reforge stone should be craftable
-
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
-    - ""
-    - ecoitems:blank_reforge_stone ? air
-    - ""
-  
-    - iron_block
-    - daylight_sensor
-    - iron_block
-  
-    - ""
-    - phantom_membrane
-    - ""
-
-# The effects of the reforge (i.e. the functionality)
-# See here: https://plugins.auxilor.io/effects/configuring-an-effect
-effects:
-  - id: damage_multiplier
-    args:
-      multiplier: 1.05
-    triggers:
-    - melee_attack
-  - id: crit_multiplier
-    args:
-      multiplier: 1.1
-    triggers:
-    - melee_attack
-
-# The conditions required to use the reforge
-conditions: [ ]
-
-# Effects to run when the reforge is applied to an item.
-on-reforge-effects: [ ]
-```
+> [!example]
+> ```yaml
+> name: "<gradient:#AAFFA9>Dynamic</gradient:#11FFBD>" # The display name for the reforge
+> description: # The lore to add to an item with this reforge:
+> - "&a+5% &fDamage"
+> - "&a+10% &fCrit Damage"
+> targets: # The targets that this reforge can be applied to
+> - melee
+> 
+> price: # (Optional) The price required to apply this reforge, overrides the default reforge price
+>   value: 100000
+>   type: coins # See here: https://plugins.auxilor.io/all-plugins/prices
+>   display: "&6$%value%"
+> 
+> # Options for the reforge stone
+> stone:
+>   enabled: true # If this reforge requires the use of a reforge stone
+>   name: "<gradient:#AAFFA9>Dynamic</gradient:#11FFBD>&f Reforge Stone" # The display name of the stone
+>   lore: # The lore of the stone
+>   - "&7Place on the right of the"
+>   - "&7reforge menu to apply the"
+>   - "<gradient:#AAFFA9>Dynamic</gradient:#11FFBD>&7 reforge!"
+>   item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM0YTY1YzY4OWIyZDM2NDA5MTAwYTYwYzJhYjhkM2QwYTY3Y2U5NGVlYTNjMWY3YWM5NzRmZDg5MzU2OGI1ZCJ9fX0=
+>   craftable: true # If the reforge stone should be craftable
+> 
+>   recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+>     - ""
+>     - ecoitems:blank_reforge_stone ? air
+>     - ""
+>   
+>     - iron_block
+>     - daylight_sensor
+>     - iron_block
+>   
+>     - ""
+>     - phantom_membrane
+>     - ""
+> 
+> # The effects of the reforge (i.e. the functionality)
+> # See here: https://plugins.auxilor.io/effects/configuring-an-effect
+> effects:
+>   - id: damage_multiplier
+>     args:
+>       multiplier: 1.05
+>     triggers:
+>     - melee_attack
+>   - id: crit_multiplier
+>     args:
+>       multiplier: 1.1
+>     triggers:
+>     - melee_attack
+> 
+> # The conditions required to use the reforge
+> conditions: [ ]
+> 
+> # Effects to run when the reforge is applied to an item.
+> on-reforge-effects: [ ]
+> ```
 
 ## Understanding all the sections
 

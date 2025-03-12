@@ -30,24 +30,23 @@ To change global points, pass `global` as the player name.
 ## Effects System
 Points are seamlessly integrated into the effects system. Below, you'll find a list of all available effects and conditions.
 
-> [!help] Effects System Integration
-> | Effect                   | Type      | Link                                                                          |
-> | ------------------------ | --------- | ----------------------------------------------------------------------------- |
-> | `add_global_points`      | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/add_global_points)      |
-> | `add_points`             | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/add_points)             |
-> | `give_global_points`     | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/give_global_points)     |
-> | `give_item_points`       | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/give_item_points)       |
-> | `give_points`            | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/give_points)            |
-> | `multiply_global_points` | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/multiply_global_points) |
-> | `multiply_item_points`   | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/multiply_item_points)   |
-> | `multiply_points`        | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/multiply_points)        |
-> | `above_global_points`    | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/above_global_points) |
-> | `below_global_points`    | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/below_global_points) |
-> | `global_points_equal`    | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/global_points_equal) |
-> | `above_points`           | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/above_points)        |
-> | `below_points`           | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/below_points)        |
-> | `points_equal`           | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/points_equal)        |
-> | `item_points_above`      | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/item_points_above)   |
-> | `item_points_below`      | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/item_points_below)   |
-> | `item_points_equal`      | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/item_points_equal)   |
-> 
+| Effect                   | Type      | Link                                                                          |
+| ------------------------ | --------- | ----------------------------------------------------------------------------- |
+| `add_global_points`      | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/add_global_points)      |
+| `add_points`             | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/add_points)             |
+| `give_global_points`     | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/give_global_points)     |
+| `give_item_points`       | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/give_item_points)       |
+| `give_points`            | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/give_points)            |
+| `multiply_global_points` | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/multiply_global_points) |
+| `multiply_item_points`   | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/multiply_item_points)   |
+| `multiply_points`        | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/multiply_points)        |
+| `above_global_points`    | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/above_global_points) |
+| `below_global_points`    | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/below_global_points) |
+| `global_points_equal`    | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/global_points_equal) |
+| `above_points`           | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/above_points)        |
+| `below_points`           | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/below_points)        |
+| `points_equal`           | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/points_equal)        |
+| `item_points_above`      | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/item_points_above)   |
+| `item_points_below`      | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/item_points_below)   |
+| `item_points_equal`      | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/item_points_equal)   |
+

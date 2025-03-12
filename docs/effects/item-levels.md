@@ -55,7 +55,7 @@ There's an example config called `_example.yml` to help you out!
 
 You can get the value of a point with the following placeholders:
 
-> [!help] List of Placeholders
+> [!help] List of Placeholers
 > 
 > | Placeholder                            | Description                                                |
 > | -------------------------------------- | ---------------------------------------------------------- |

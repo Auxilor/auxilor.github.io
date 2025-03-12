@@ -15,30 +15,29 @@ ID's must be lowercase letters, numbers, and underscores only.
 
 Tasks are the goals that players must complete in order to complete [quests](https://plugins.auxilor.io/ecoquests/how-to-make-a-quest).
 
-## Example Task Config
-
-```yaml
-description: "&fBreak stone blocks (&a%xp%&8/&a%required-xp%&f)" # The description of the task.
-
-# An XP gain method takes a trigger, a multiplier, conditions, and filters.
-# The 'multiplier' takes the value produced by the trigger and multiplies it
-# Alternatively, you can use 'value' to count a specific number and not a multiplier
-xp-gain-methods:
-  - trigger: mine_block
-    multiplier: 0.5 # You can also use "value" here (see above comment)
-    args: # (Optional)
-	  chance: 50
-    filters: # (Optional)
-      blocks:
-        - netherrack
-
-# An optional list of effects to run when a player completes the task
-# Read here: https://plugins.auxilor.io/effects/configuring-an-effect
-on-complete:
-  - id: send_message
-    args:
-      message: "Task Completed!"
-```
+> [!example]
+> ```yaml
+> description: "&fBreak stone blocks (&a%xp%&8/&a%required-xp%&f)" # The description of the task.
+> 
+> # An XP gain method takes a trigger, a multiplier, conditions, and filters.
+> # The 'multiplier' takes the value produced by the trigger and multiplies it
+> # Alternatively, you can use 'value' to count a specific number and not a multiplier
+> xp-gain-methods:
+>   - trigger: mine_block
+>     multiplier: 0.5 # You can also use "value" here (see above comment)
+>     args: # (Optional)
+> 	  chance: 50
+>     filters: # (Optional)
+>       blocks:
+>         - netherrack
+> 
+> # An optional list of effects to run when a player completes the task
+> # Read here: https://plugins.auxilor.io/effects/configuring-an-effect
+> on-complete:
+>   - id: send_message
+>     args:
+>       message: "Task Completed!"
+> ```
 
 ## Understanding all the sections
 
