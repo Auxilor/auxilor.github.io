@@ -2,8 +2,8 @@
 
 Allows an entity to eat grass
 
-# Example Config
-```yaml
-- key: minecraft:eat_grass
-  priority: 0
-```
+> [!example]
+> ```yaml
+> - key: minecraft:eat_grass
+>   priority: 0
+> ```
