@@ -2,8 +2,8 @@
 
 Allows an entity to follow boats in water
 
-> [!example]
-> ```yaml
-> - key: minecraft:follow_boats
->   priority: 0
-> ```
+# Example Config
+```yaml
+- key: minecraft:follow_boats
+  priority: 0
+```

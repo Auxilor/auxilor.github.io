@@ -1,15 +1,13 @@
 # `block_reach`
+#### Permanent Effect
 
 Adds reach for interacting with blocks
 
-> [!hint] Permanent Effect
+**Requires 1.21+**
 
-> [!warning] Requires 1.21+
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: block_reach
->   args:
->     reach: 1 # The extra block reach
-> ```
+# Example Config
+```yaml
+- id: block_reach
+  args:
+    reach: 1 # The extra block reach
+```

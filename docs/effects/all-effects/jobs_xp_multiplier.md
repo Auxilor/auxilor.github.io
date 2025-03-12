@@ -1,18 +1,16 @@
 # `jobs_xp_multiplier`
+#### Permanent Effect
 
-Multiplies XP gain from jobs
+Multiplies xp gain from jobs
 
-> [!hint] Permanent Effect
+**Requires Jobs Reborn**
 
-> [!warning] Requires Jobs Reborn
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: jobs_xp_multiplier
->   args:
->     multiplier: 1.5 # The experience multiplier
->     jobs: # The list of jobs to multiply xp for. If removed, it will multiply all jobs.
->       - miner
->       - fisherman
-> ```
+# Example Config
+```yaml
+- id: jobs_xp_multiplier
+  args:
+    multiplier: 1.5 # The experience multiplier
+    jobs: # The list of jobs to multiply xp for. If removed, it will multiply all jobs.
+      - miner
+      - fisherman
+```

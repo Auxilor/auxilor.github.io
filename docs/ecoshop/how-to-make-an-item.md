@@ -14,24 +14,23 @@ These items go into your category config, read here for more into: [categories](
 
 Let's start with a really simple shop item - if you're making a standard buy-sell shop, this is what most of your items will look like:
 
-> [!example]
-> ```yaml
-> - id: cooked_mutton
->   item: cooked_mutton
->   buy:
->     type: coins
->     value: 20
->     display: $%value%
->     amount: 32
->   sell:
->     type: coins
->     value: 10
->     display: $%value%
->   gui:
->     column: 4
->     row: 1
->     page: 1
-> ```
+```yaml
+- id: cooked_mutton
+  item: cooked_mutton
+  buy:
+    type: coins
+    value: 20
+    display: $%value%
+    amount: 32
+  sell:
+    type: coins
+    value: 10
+    display: $%value%
+  gui:
+    column: 4
+    row: 1
+    page: 1
+```
 
 ### Understanding all the sections
 
@@ -57,31 +56,30 @@ Sometimes you want to run a command when a player buys an item, such as giving p
 
 Of course, you can't sell a command, so they're buy-only.
 
-> [!example]
-> ```yaml
-> - id: iron_rank
->   command:
->     - lp user %player% parent set iron
->   buy:
->     value: "%ecomc_iron_price%"
->     type: crystals
->     display: "&b%value% Crystals ❖"
-> 	limit: 1
->   gui:
->     display:
->       item: diamond_chestplate name:"&aIron Rank"
->       lore:
->         - "&fBuy &7&lIRON&r&f rank to get"
->         - "&fthe following benefits:"
->         - " &8»&f &eExample Perk"
->       bottom-lore: # You can also add lore to be put under other lore (e.g. price, quick buy/sell info, etc.)
->         - ""
->         - "&e&oLeft click to buy with money,"
->         - "&e&oRight click to buy with &bCrystals ❖&e&o!"
->     column: 5 # The column.
->     row: 3 # The row.
->     page: 2 # The page.
-> ```
+```yaml
+- id: iron_rank
+  command:
+    - lp user %player% parent set iron
+  buy:
+    value: "%ecomc_iron_price%"
+    type: crystals
+    display: "&b%value% Crystals ❖"
+	limit: 1
+  gui:
+    display:
+      item: diamond_chestplate name:"&aIron Rank"
+      lore:
+        - "&fBuy &7&lIRON&r&f rank to get"
+        - "&fthe following benefits:"
+        - " &8»&f &eExample Perk"
+      bottom-lore: # You can also add lore to be put under other lore (e.g. price, quick buy/sell info, etc.)
+        - ""
+        - "&e&oLeft click to buy with money,"
+        - "&e&oRight click to buy with &bCrystals ❖&e&o!"
+    column: 5 # The column.
+    row: 3 # The row.
+    page: 2 # The page.
+```
 
 ### Understanding all the sections
 
@@ -111,25 +109,24 @@ Instead of just using commands, EcoShop also has full access to the
 
 Like commands, these are unsellable.
 
-> [!example]
-> ```yaml
-> - id: my_effect_item
->   effects: [ ]
->   buy:
->     value: 65
->     type: crystals
->     display: "&b%value% Crystals ❖"
->     global-limit: 5
->   gui:
->     display:
->       item: nether_star
->       lore:
->         - "&fBuy me to do something cool!"
->     column: 6 # The column.
->     row: 3 # The row.
->     page: 2 # The page.
->     show-quick-buy-sell: false
-> ```
+```yaml
+- id: my_effect_item
+  effects: [ ]
+  buy:
+    value: 65
+    type: crystals
+    display: "&b%value% Crystals ❖"
+    global-limit: 5
+  gui:
+    display:
+      item: nether_star
+      lore:
+        - "&fBuy me to do something cool!"
+    column: 6 # The column.
+    row: 3 # The row.
+    page: 2 # The page.
+    show-quick-buy-sell: false
+```
 
 ### Understanding all the sections
 
@@ -152,113 +149,135 @@ to use a unique ID for every item in all of your shops. This is used in commands
 
 EcoShop supports buying items with multiple currencies using the `alt-buy` options. All the options that work with `buy` also apply to `alt-buy`. These are configured the same way, using the [price](https://plugins.auxilor.io/all-plugins/prices) system.
 
-> [!example]
-> ```yaml
->     alt-buy:
->       value: 65
->       type: crystals
->       display: "&b%value%❖"
-> ```
+```yaml
+    alt-buy:
+      value: 65
+      type: crystals
+      display: "&b%value%❖"
+```
 
 ## Optional Arguments
 
 ### Buy
 
-> [!info] `require`
-> A mathematical expression that must be met to buy this item.
-> ```yaml
-> buy:
->   require: "%player_xp% >= 300"
-> ```
+#### `require`
 
-> [!info] `conditions`
-> Any conditions that must be met to buy the item. Read here for more info: [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
-> ```yaml
-> buy:
->   conditions:
-> 	- id: has_permission
-> 	  args:
-> 		permission: group.iron
-> ```
+A mathematical expression that must be met to buy this item.
 
-> [!info] `limit`
-> The max times a player can buy this item.
-> ```yaml
-> buy:
->   limit: 1
-> ```
+```yaml
+buy:
+  require: "%player_xp% >= 300"
+```
 
-> [!info] `global-limit`
-> The max times all players can buy this item.
-> ```yaml
-> buy:
->   global-limit: 1
-> ```
+#### `conditions`
 
-> [!info] `max-at-once`
-> The max amount of this item a player can buy at once. (Removes the multi-buy GUI).
-> ```yaml
-> buy:
->   max-at-once: 1
-> ```
+Any conditions that must be met to buy the item. Read here for more info: [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
 
-> [!info] `amount`
-> The amount of items to be bought at once.
-> ```yaml
-> buy:
->   amount: 32
-> ```
+```yaml
+buy:
+  conditions:
+	- id: has_permission
+	  args:
+		permission: group.iron
+```
 
-> [!info] `buy-message`
-> A message to be sent to the player when this item is bought.
-> ```yaml
-> buy:
-> . buy-message:
->     - "&6Thanks for buying this specific item"
-> ```
+#### `limit`
+
+The max times a player can buy this item.
+
+```yaml
+buy:
+  limit: 1
+```
+
+#### `global-limit`
+
+The max times all players can buy this item.
+
+```yaml
+buy:
+  global-limit: 1
+```
+
+#### `max-at-once`
+
+The max amount of this item a player can buy at once. (Removes the multi-buy GUI).
+
+```yaml
+buy:
+  max-at-once: 1
+```
+
+#### `amount`
+
+The amount of items to be bought at once.
+
+```yaml
+buy:
+  amount: 32
+```
+
+#### `buy-message`
+
+A message to be sent to the player when this item is bought.
+
+```yaml
+buy:
+. buy-message:
+    - "&6Thanks for buying this specific item"
+```
 
 ### Sell
 
-> [!info] `require`
-> A mathematical expression that must be met to sell this item.
-> ```yaml
-> buy:
->   require: "%player_xp% >= 300"
-> ```
+#### `require`
 
-> [!info] `conditions`
-> Any conditions that must be met to sell the item. Read here for more info: [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
-> ```yaml
-> buy:
->   conditions:
-> 	- id: has_permission
-> 	  args:
-> 		permission: group.iron
-> ```
+A mathematical expression that must be met to buy this item.
 
-> [!info] `sell-message`
-> A message to be sent to the player when this item is sold.
-> ```yaml
-> sell:
-> . sell-message:
->     - "&6Thanks for selling this specific item"
-> ```
+```yaml
+buy:
+  require: "%player_xp% >= 300"
+```
+#### `conditions`
 
-> [!info] `sell-command`
-> Commands to be run when the player sells this item.
-> ```yaml
-> sell:
-> . sell-command:
->     - "lp user parent set top.seller"
-> ```
+Any conditions that must be met to sell the item. Read here for more info: [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
+
+```yaml
+sell:
+  conditions:
+	- id: has_permission
+	  args:
+		permission: group.iron
+```
+
+#### `sell-message`
+
+A message to be sent to the player when this item is sold.
+
+```yaml
+sell:
+. sell-message:
+    - "&6Thanks for buying this specific item"
+```
+
+#### `sell-command`
+
+Commands to be run when the player sells this item.
+
+```yaml
+sell:
+. sell-command:
+    - "lp user parent set top.seller"
+```
+
 ### GUI
+#### `show-quick-buy-sell`
 
-> [!info] `show-quick-buy-sell`
-> By default, quick buy/sell lore is shown, disable it using `show-quick-buy-sell`
-> ```yaml
-> gui:
->   show-quick-buy-sell: false
-> ```
+By default, quick buy/sell lore is shown, disable it using `show-quick-buy-sell`
+
+```yaml
+sell:
+. show-quick-buy-sell: false
+```
 
 ## Internal Placeholders
 

@@ -2,8 +2,7 @@
 
 Requires a player to be in water
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: in_water
-> ```
+# Example Config
+```yaml
+- id: in_water
+```

@@ -1,16 +1,14 @@
 # `take_money`
+#### Triggered Effect
 
 Takes money from the player
 
-> [!danger] Triggered Effect
+**Requires Vault economy**
 
-> [!warning] Requires Vault Economy
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: take_money
->   args:
->     amount: 1000 # The amount of money to take
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+# Example Config
+```yaml
+- id: take_money
+  args:
+    amount: 1000 # The amount of money to take
+  ...other config (eg triggers, filters, mutators, etc)
+```

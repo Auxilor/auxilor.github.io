@@ -1,16 +1,13 @@
 # `set_armor_trim`
+#### Triggered Effect
 
 Sets item armor trim
 
-> [!danger] Triggered Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: set_armor_trim
->   args:
->     pattern: rib # The pattern
->     material: amethyst # The material
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
-
+# Example Config
+```yaml
+- id: set_armor_trim
+  args:
+    pattern: rib # The pattern
+    material: amethyst # The material
+  ...other config (eg triggers, filters, mutators, etc)
+```

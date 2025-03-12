@@ -2,8 +2,7 @@
 
 Requires a player to be swimming
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: is_swimming
-> ```
+# Example Config
+```yaml
+- id: is_swimming
+```

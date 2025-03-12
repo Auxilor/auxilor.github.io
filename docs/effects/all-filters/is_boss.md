@@ -2,8 +2,8 @@
 
 If the entity must be a boss
 
-> [!example]
-> ```yaml
-> filters:
->   is_boss: true
-> ```
+# Example Config
+```yaml
+filters:
+  is_boss: true
+```

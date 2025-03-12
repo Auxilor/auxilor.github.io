@@ -1,12 +1,10 @@
 # `close_inventory`
+#### Triggered Effect
 
 Closes the player's inventory
 
-> [!danger] Triggered Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: close_inventory
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+# Example Config
+```yaml
+- id: close_inventory
+  ...other config (eg triggers, filters, mutators, etc)
+```

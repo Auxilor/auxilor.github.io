@@ -18,106 +18,106 @@ ID's must be lowercase letters, numbers, and underscores only.
 
 One category can be in as many shops as you want! EcoShop is smart, it knows what shop you opened the category from, so any sounds / broadcasts from the shop you came from will work even if 2 shops share the same category.
 
-> [!example]
-> ```yaml
-> item: diamond_sword name:"&fExample Category" # The item shown in the shop.  
-> lore: [ ] # The lore of the item shown in the shop.  
-> # permission: ecoshop.category.permission1 # (Optional) The permission required to access/use the category.  
->   
-> # Options for the category GUI.  
-> gui:  
->   rows: 6 # The amount of rows to have (1-6).  
->   title: "Demo Category" # The title of the GUI.  
->   
->   # Navigation options, hidden if on the first/last page.  
->   forwards-arrow:  
->     item: arrow name:"&fNext Page"  
->     row: 6  
->     column: 6  
->   backwards-arrow:  
->     item: arrow name:"&fPrevious Page"  
->     row: 6  
->     column: 4  
->   
->   # Add as many pages as you want by appending to this list  
->   pages:  
->     - page: 1  
->       mask:  
->         items: # The background material  
->           - gray_stained_glass_pane  
->           - black_stained_glass_pane  
->         pattern: # 0 for empty, 1 for the first item, 2 for the second item, etc  
->           - "222222222"  
->           - "211111112"  
->           - "211111112"  
->           - "211111112"  
->           - "211111112"  
->           - "222222222"  
->   
->       # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots  
->       custom-slots: [ ]  
->   
-> # The items for your players to buy or sell, read here for more info: https://plugins.auxilor.io/ecoshop/how-to-make-an-item  
-> items:  
->   - id: cooked_mutton  
->     item: cooked_mutton  
->     buy:  
->       type: coins  
->       value: 20  
->       display: $%value%  
->       amount: 32  
->     sell:  
->       type: coins  
->       value: 10  
->       display: $%value%  
->     gui:  
->       column: 4  
->       row: 3  
->       page: 1  
->   
->   - id: iron_rank  
->     command:  
->       - lp user %player% parent set iron  
->     buy:  
->       value: "%ecomc_iron_price%"  
->       type: crystals  
->       display: "&b%value% Crystals ❖"  
->       limit: 1 # (Optional) The max amount of times each player can buy this item, defaults to infinite.  
->       ## Placeholders: %playerlimit% (Displays player purchase limit) %playerbuys% (Displays amount bought by player).
->     gui:  
->       display:  
->         item: diamond_chestplate name:"&aIron Rank"  
->         lore:  
->           - "&fBuy &7&lIRON&r&f rank to get"  
->           - "&fthe following benefits:"  
->           - " &8»&f &eExample Perk"  
->         bottom-lore: # You can also add lore to be put under other lore (e.g. price, quick buy/sell info, etc.)  
->           - ""  
->           - "&e&oLeft click to buy with money,"  
->           - "&e&oRight click to buy with &bCrystals ❖&e&o!"  
->       column: 5 # The column.  
->       row: 3 # The row.  
->       page: 1 # The page.  
->   
->   - id: my_effect_item  
->     effects: [ ]  
->     buy:  
->       value: 65  
->       type: crystals  
->       display: "&b%value% Crystals ❖"  
->       global-limit: 5 # (Optional) The max amount of this item that can be bought by all players, defaults to infinite.  
->       ## Placeholders: %globallimit% (Displays global purchase limit) %globalbuys% (Displays amount bought globally).    
->     gui:  
->       display:  
->         item: nether_star  
->         lore:  
->           - "&fBuy me to do something cool!"  
->       column: 6 # The column.  
->       row: 3 # The row.  
->       page: 1 # The page.  
->       show-quick-buy-sell: false
-> ```
-> 
+## Example Category Config
+
+```yaml
+item: diamond_sword name:"&fExample Category" # The item shown in the shop.  
+lore: [ ] # The lore of the item shown in the shop.  
+# permission: ecoshop.category.permission1 # (Optional) The permission required to access/use the category.  
+  
+# Options for the category GUI.  
+gui:  
+  rows: 6 # The amount of rows to have (1-6).  
+  title: "Demo Category" # The title of the GUI.  
+  
+  # Navigation options, hidden if on the first/last page.  
+  forwards-arrow:  
+    item: arrow name:"&fNext Page"  
+    row: 6  
+    column: 6  
+  backwards-arrow:  
+    item: arrow name:"&fPrevious Page"  
+    row: 6  
+    column: 4  
+  
+  # Add as many pages as you want by appending to this list  
+  pages:  
+    - page: 1  
+      mask:  
+        items: # The background material  
+          - gray_stained_glass_pane  
+          - black_stained_glass_pane  
+        pattern: # 0 for empty, 1 for the first item, 2 for the second item, etc  
+          - "222222222"  
+          - "211111112"  
+          - "211111112"  
+          - "211111112"  
+          - "211111112"  
+          - "222222222"  
+  
+      # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots  
+      custom-slots: [ ]  
+  
+# The items for your players to buy or sell, read here for more info: https://plugins.auxilor.io/ecoshop/how-to-make-an-item  
+items:  
+  - id: cooked_mutton  
+    item: cooked_mutton  
+    buy:  
+      type: coins  
+      value: 20  
+      display: $%value%  
+      amount: 32  
+    sell:  
+      type: coins  
+      value: 10  
+      display: $%value%  
+    gui:  
+      column: 4  
+      row: 3  
+      page: 1  
+  
+  - id: iron_rank  
+    command:  
+      - lp user %player% parent set iron  
+    buy:  
+      value: "%ecomc_iron_price%"  
+      type: crystals  
+      display: "&b%value% Crystals ❖"  
+      limit: 1 # (Optional) The max amount of times each player can buy this item, defaults to infinite.  
+      ## Placeholders: %playerlimit% (Displays player purchase limit) %playerbuys% (Displays amount bought by player).
+    gui:  
+      display:  
+        item: diamond_chestplate name:"&aIron Rank"  
+        lore:  
+          - "&fBuy &7&lIRON&r&f rank to get"  
+          - "&fthe following benefits:"  
+          - " &8»&f &eExample Perk"  
+        bottom-lore: # You can also add lore to be put under other lore (e.g. price, quick buy/sell info, etc.)  
+          - ""  
+          - "&e&oLeft click to buy with money,"  
+          - "&e&oRight click to buy with &bCrystals ❖&e&o!"  
+      column: 5 # The column.  
+      row: 3 # The row.  
+      page: 1 # The page.  
+  
+  - id: my_effect_item  
+    effects: [ ]  
+    buy:  
+      value: 65  
+      type: crystals  
+      display: "&b%value% Crystals ❖"  
+      global-limit: 5 # (Optional) The max amount of this item that can be bought by all players, defaults to infinite.  
+      ## Placeholders: %globallimit% (Displays global purchase limit) %globalbuys% (Displays amount bought globally).    
+    gui:  
+      display:  
+        item: nether_star  
+        lore:  
+          - "&fBuy me to do something cool!"  
+      column: 6 # The column.  
+      row: 3 # The row.  
+      page: 1 # The page.  
+      show-quick-buy-sell: false
+```
 
 ## Understanding all the sections
 

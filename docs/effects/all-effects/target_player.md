@@ -1,12 +1,12 @@
 # `target_player`
 
+#### Triggered Effect
+
 Makes the victim target the player (requires the victim to be a monster)
 
-> [!danger] Triggered Effect
+# Example Config
 
-> [!Example]
-> ```yaml
-> effects:
-> - id: target_player
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+```yaml
+- id: target_player
+  ...other config (eg triggers, filters, mutators, etc)
+```

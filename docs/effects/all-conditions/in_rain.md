@@ -2,10 +2,9 @@
 
 Requires a player to be in rain
 
-> [!warning] Requires Paper
+**Requires Paper**
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: in_rain
-> ```
+# Example Config
+```yaml
+- id: in_rain
+```

@@ -2,10 +2,9 @@
 
 Requires a player to be in specified gamemode
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: in_gamemode
->   args:
->     gamemode: survival
-> ```
+# Example Config
+```yaml
+- id: in_gamemode
+  args:
+    gamemode: survival
+```

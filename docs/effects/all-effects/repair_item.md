@@ -1,14 +1,12 @@
 # `repair_item`
+#### Triggered Effect
 
 Repairs the item
 
-> [!danger] Triggered Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: repair_item
->   args:
->     damage: 2 # The durability to repair
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+# Example Config
+```yaml
+- id: repair_item
+  args:
+    damage: 2 # The durability to repair
+  ...other config (eg triggers, filters, mutators, etc)
+```

@@ -1,16 +1,16 @@
 # `inscribe_item`
 
+#### Triggered Effect
+
 Inscribes an item with a scroll
 
-> [!danger] Triggered Effect
+**Requires EcoScrolls**
 
-> [!warning] Requires EcoScrolls
+# Example Config
 
-> [!Example]
-> ```yaml
-> effects:
-> - id: inscribe_item
->   args:
->     scroll: hot_potato_book # The scroll ID
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+```yaml
+- id: inscribe_item
+  args:
+    scroll: hot_potato_book # The scroll ID
+  ...other config (eg triggers, filters, mutators, etc)
+```

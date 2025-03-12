@@ -2,11 +2,11 @@
 
 Require a certain region
 
-> [!warning] Requires WorldGuard
+**Requires WorldGuard**
 
-> [!example]
-> ```yaml
-> filters:
->   region:
->     - spawn
-> ```
+# Example Config
+```yaml
+filters:
+  region:
+    - spawn
+```

@@ -1,16 +1,14 @@
 # `add_stat`
+#### Permanent Effect
 
 Adds a value to a specific stat
 
-> [!hint] Permanent Effect
+**Requires EcoSkills / AuraSkills**
 
-> [!Warning] Requires EcoSkills / AuraSkills
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: add_stat
->   args:
->     stat: strength # The name of the stat
->     amount: 10 # The amount to add (or subtract, allows negative values)
-> ```
+# Example Config
+```yaml
+- id: add_stat
+  args:
+    stat: strength # The name of the stat
+    amount: 10 # The amount to add (or subtract, allows negative values)
+```

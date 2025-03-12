@@ -2,8 +2,7 @@
 
 Requires a player to be sneaking
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: is_sneaking
-> ```
+# Example Config
+```yaml
+- id: is_sneaking
+```

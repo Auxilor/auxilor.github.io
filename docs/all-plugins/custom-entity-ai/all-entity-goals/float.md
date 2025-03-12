@@ -2,8 +2,8 @@
 
 Allows an entity to float in water
 
-> [!example]
-> ```yaml
-> - key: minecraft:float
->   priority: 0
-> ```
+# Example Config
+```yaml
+- key: minecraft:float
+  priority: 0
+```

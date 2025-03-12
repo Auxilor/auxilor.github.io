@@ -2,8 +2,8 @@
 
 Allows an entity to breathe air
 
-> [!example]
-> ```yaml
-> - key: minecraft:breathe_air
->   priority: 0
-> ```
+# Example Config
+```yaml
+- key: minecraft:breathe_air
+  priority: 0
+```

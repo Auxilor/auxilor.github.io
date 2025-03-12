@@ -2,12 +2,12 @@
 
 Require a certain quest
 
-> [!warning] Requires EcoQuests
+**Requires EcoQuests**
 
-> [!example]
-> ```yaml
-> filters:
->   quest:
->     - leave_island
->     - meet_the_village
-> ```
+# Example Config
+```yaml
+filters:
+  quest:
+    - leave_island
+    - meet_the_village
+```

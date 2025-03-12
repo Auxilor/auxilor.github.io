@@ -2,8 +2,7 @@
 
 Requires a player to be flying
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: is_flying
-> ```
+# Example Config
+```yaml
+- id: is_flying
+```

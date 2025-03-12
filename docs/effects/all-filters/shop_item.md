@@ -2,12 +2,12 @@
 
 Require a certain shop item
 
-> [!warning] Requires EcoShop
+**Requires EcoShop**
 
-> [!example]
-> ```yaml
-> filters:
->   shop_item:
->     - iron_rank
->     - gold_rank
-> ```
+# Example Config
+```yaml
+filters:
+  shop_item:
+    - iron_rank
+    - gold_rank
+```

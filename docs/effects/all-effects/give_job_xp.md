@@ -1,17 +1,15 @@
 # `give_job_xp`
+#### Triggered Effect
 
 Gives experience points for a certain job
 
-> [!danger] Triggered Effect
+**Requires EcoJobs**
 
-> [!warning] Requires EcoJobs
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: give_job_xp
->   args:
->     amount: 100 # The amount of xp to give
->     job: miner # The job to give the xp for
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+# Example Config
+```yaml
+- id: give_job_xp
+  args:
+    amount: 100 # The amount of xp to give
+    job: miner # The job to give the xp for
+  ...other config (eg triggers, filters, mutators, etc)
+```

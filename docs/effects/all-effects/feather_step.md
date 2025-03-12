@@ -1,11 +1,9 @@
 # `feather_step`
+#### Permanent Effect
 
 Prevents trampling crops
 
-> [!hint] Permanent Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: feather_step
-> ```
+# Example Config
+```yaml
+- id: feather_step
+```

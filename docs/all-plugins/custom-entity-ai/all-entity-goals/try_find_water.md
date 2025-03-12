@@ -2,8 +2,8 @@
 
 Allows an entity to move to water when on land
 
-> [!example]
-> ```yaml
-> - key: minecraft:try_find_water
->   priority: 0
-> ```
+# Example Config
+```yaml
+- key: minecraft:try_find_water
+  priority: 0
+```

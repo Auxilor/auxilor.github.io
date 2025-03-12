@@ -2,10 +2,9 @@
 
 Requires a certain expression to be true
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: is_expression_true
->   args:
->     expression: "%level% > 3"
-> ```
+# Example Config
+```yaml
+- id: is_expression_true
+  args:
+    expression: "%level% > 3"
+```

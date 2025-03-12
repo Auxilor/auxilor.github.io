@@ -1,13 +1,11 @@
 # `movement_speed_multiplier`
+#### Permanent Effect
 
 Multiplies movement speed
 
-> [!hint] Permanent Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: movement_speed_multiplier
->   args:
->     multiplier: 1.5 # The multiplier for movement speed
-> ```
+# Example Config
+```yaml
+- id: movement_speed_multiplier
+  args:
+    multiplier: 1.5 # The multiplier for movement speed
+```

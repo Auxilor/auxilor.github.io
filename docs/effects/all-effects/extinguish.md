@@ -1,12 +1,10 @@
 # `extinguish`
+#### Triggered Effect
 
 Extinguish the player
 
-> [!danger] Triggered Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: extinguish
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+# Example Config
+```yaml
+- id: extinguish
+  ...other config (eg triggers, filters, mutators, etc)
+```

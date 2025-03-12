@@ -2,7 +2,7 @@
 
 Move the location to the projectile's location
 
-> [!example]
-> ```yaml
-> - id: location_to_projectile
-> ```
+# Example Config
+```yaml
+- id: location_to_projectile
+```

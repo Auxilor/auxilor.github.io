@@ -2,7 +2,7 @@
 
 Set the victim to be whoever dispatched (triggered) the effect.
 
-> [!example]
-> ```yaml
-> - id: dispatcher_as_victim
-> ```
+# Example Config
+```yaml
+- id: dispatcher_as_victim
+```

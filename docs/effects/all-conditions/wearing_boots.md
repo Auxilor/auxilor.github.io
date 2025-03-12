@@ -2,12 +2,11 @@
 
 Requires a player to have an item as their boots
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: wearing_boots
->   args:
->     items: # The list of allowed items
->       - diamond_boots protection:4
->       - netherite_boots protection:3 
-> ```
+# Example Config
+```yaml
+- id: wearing_boots
+  args:
+    items: # The list of allowed items
+      - diamond_boots protection:4
+      - netherite_boots protection:3 
+```

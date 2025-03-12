@@ -15,33 +15,34 @@ Each action has its own config file, placed in the `/actions/` folder, and you c
 The ID of the Action is the file name. This is what you use in [placeholders](https://plugins.auxilor.io/actions/placeholderapi).
 ID's must be lowercase letters, numbers, and underscores only.
 
-> [!example]
-> ```yaml
-> # If the action should be enabled
-> enabled: true
-> 
-> # Read https://plugins.auxilor.io/effects/configuring-an-effect
-> # The effects for the action
-> effects:
->   - id: give_money
->     args:
->       amount: "0.25 * %victim_max_health%"
->     triggers:
->       - kill
->     filters:
->       not_entities:
->         - player
-> 
-> # Read https://plugins.auxilor.io/effects/configuring-a-condition
-> # The conditions for the action to work
-> conditions: [ ]
-> ```
+## Example Action Config
 
+```yaml
+# If the action should be enabled
+enabled: true
+
+# Read https://plugins.auxilor.io/effects/configuring-an-effect
+# The effects for the action
+effects:
+  - id: give_money
+    args:
+      amount: "0.25 * %victim_max_health%"
+    triggers:
+      - kill
+    filters:
+      not_entities:
+        - player
+
+# Read https://plugins.auxilor.io/effects/configuring-a-condition
+# The conditions for the action to work
+conditions: [ ]
+```
 The example effect: Pay players for killing non-player entities at a rate of $0.25 per health point.
 
-> [!help] Understanding The Sections
-> 
-> **enabled:** If the action is enabled.
+## Understanding all the sections
+
+**enabled:** If the action is enabled.
+
 ### Effects & Conditions
 
 The effects section is the core functionality of the action. You can configure effects, conditions, filters, mutators and triggers in this section to run globally or individually.
