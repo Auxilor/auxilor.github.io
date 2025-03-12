@@ -2,8 +2,7 @@
 
 Requires a player to be on fire
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: on_fire
-> ```
+# Example Config
+```yaml
+- id: on_fire
+```

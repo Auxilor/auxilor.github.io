@@ -2,7 +2,7 @@
 
 Move the location to the victim's location
 
-> [!example]
-> ```yaml
-> - id: location_to_victim
-> ```
+# Example Config
+```yaml
+- id: location_to_victim
+```

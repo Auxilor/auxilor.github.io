@@ -2,8 +2,7 @@
 
 Requires night
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: is_night
-> ```
+# Example Config
+```yaml
+- id: is_night
+```

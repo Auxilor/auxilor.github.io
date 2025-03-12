@@ -38,22 +38,20 @@ cumbersome, especially if you use prices in lots of places.
 
 So, instead of configuring your price like this:
 
-> [!example]
-> ```yaml
-> price:
->     value: 100 * %player_y%
->     type: crystals # EcoBits currency
->     display: "&b%value% Crystals ❖"
-> ```
+```yaml
+price:
+    value: 100 * %player_y%
+    type: crystals # EcoBits currency
+    display: "&b%value% Crystals ❖"
+```
 
 You can add the following to `/plugins/eco/lang.yml`:
 
-> [!example]
-> ```yaml
-> price-display:
->     - type: crystals
->       display: "&b%value% Crystals ❖"
-> ```
+```yaml
+price-display:
+    - type: crystals
+      display: "&b%value% Crystals ❖"
+```
 
 This will override any per-price formatting, which should make your life much easier to achieve consistency
 between different prices.
@@ -61,31 +59,27 @@ between different prices.
 You can display prices in two ways, using `%value%` which will return the number unformatted (e.g.  `$1234567.89`), or you can use `%value_commas%` to format the price with commas (e.g. `$1,234,567.89`).
 ## Config Examples
 
-> [!example]
-> ```yaml
-> price:
->     value: 100 * %player_y%
->     type: crystals # EcoBits currency
-> ```
+```yaml
+price:
+    value: 100 * %player_y%
+    type: crystals # EcoBits currency
+```
 
-> [!example]
-> ```yaml
-> price:
->     value: 16
->     type: ecoitems:shiny_diamond
->     display: "%value% &fShiny Diamonds" # Uses local display
-> ```
+```yaml
+price:
+    value: 16
+    type: ecoitems:shiny_diamond
+    display: "%value% &fShiny Diamonds" # Uses local display
+```
 
-> [!example]
-> ```yaml
-> price:
->     value: 5000
->     type: xp
-> ```
+```yaml
+price:
+    value: 5000
+    type: xp
+```
 
-> [!example]
-> ```yaml
-> price:
->     value: 10
->     type: mana # EcoSkills magic
-> ```
+```yaml
+price:
+    value: 10
+    type: mana # EcoSkills magic
+```

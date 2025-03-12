@@ -1,15 +1,13 @@
 # `underwater_mining_speed_multiplier`
+#### Permanent Effect
 
 Multiplies underwater mining speed
 
-> [!hint] Permanent Effect
+**Requires 1.21+**
 
-> [!warning] Requires 1.21+
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: underwater_mining_speed_multiplier
->   args:
->     multiplier: 2 # The multiplier for underwater mining speed
-> ```
+# Example Config
+```yaml
+- id: underwater_mining_speed_multiplier
+  args:
+    multiplier: 2 # The multiplier for underwater mining speed
+```

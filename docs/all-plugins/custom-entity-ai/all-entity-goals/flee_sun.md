@@ -2,10 +2,10 @@
 
 Will make an entity actively avoid sunlight
 
-> [!example]
-> ```yaml
-> - key: minecraft:flee_sun
->   priority: 0
->   args:
->     speed: 2 # The speed at which to flee
-> ```
+# Example Config
+```yaml
+- key: minecraft:flee_sun
+  priority: 0
+  args:
+    speed: 2 # The speed at which to flee
+```

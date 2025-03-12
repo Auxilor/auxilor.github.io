@@ -13,46 +13,47 @@ Each stat tracker is its own config file, placed in the `/stats/` folder, and yo
 The ID of the Stat Tracker is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
-> [!example]
-> ```yaml
-> # The lore added to items with this tracker
-> display: "&bExample Tracker: %value%"
-> 
-> # The items that the tracker can be applied to, see targets.yml
-> applicable-to:
->   - trident
-> 
-> # A counter takes a trigger, a multiplier, conditions, and filters.
-> # The 'multiplier' takes the value produced by the trigger and multiplies it
-> # Alternatively, you can use 'value' to count a specific number and not a multiplier
-> counters:
->   - trigger: trident_attack # See list of triggers: https://plugins.auxilor.io/effects/all-triggers
->     multiplier: 1 # You can also use "value" here (see above comment)
-> 	conditions: # (Optional) Example of using conditions in counters
-> 	  - id: in_water
-> 
-> # Options for the physical tracker item
-> tracker:
->   item: compass # The item in-game: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
->   name: "&eTracker - Damage Dealt" # The display name of the tracker
->   lore: # The item lore
->     - "&8Drop this onto an item with /stattrackers"
->     - "&8to display the amount of damage dealt with Tridents"
->     - "&8whilst in water"
->   craftable: true # If the tracker can be crafted
->   recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
->     - iron_sword
->     - iron_sword
->     - iron_sword
->       
->     - iron_sword
->     - compass
->     - iron_sword
->       
->     - iron_sword
->     - iron_sword
->     - iron_sword
-> ```
+## Example Tracker Config
+
+```yaml
+# The lore added to items with this tracker
+display: "&bExample Tracker: %value%"
+
+# The items that the tracker can be applied to, see targets.yml
+applicable-to:
+  - trident
+
+# A counter takes a trigger, a multiplier, conditions, and filters.
+# The 'multiplier' takes the value produced by the trigger and multiplies it
+# Alternatively, you can use 'value' to count a specific number and not a multiplier
+counters:
+  - trigger: trident_attack # See list of triggers: https://plugins.auxilor.io/effects/all-triggers
+    multiplier: 1 # You can also use "value" here (see above comment)
+	conditions: # (Optional) Example of using conditions in counters
+	  - id: in_water
+
+# Options for the physical tracker item
+tracker:
+  item: compass # The item in-game: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  name: "&eTracker - Damage Dealt" # The display name of the tracker
+  lore: # The item lore
+    - "&8Drop this onto an item with /stattrackers"
+    - "&8to display the amount of damage dealt with Tridents"
+    - "&8whilst in water"
+  craftable: true # If the tracker can be crafted
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+    - iron_sword
+    - iron_sword
+    - iron_sword
+      
+    - iron_sword
+    - compass
+    - iron_sword
+      
+    - iron_sword
+    - iron_sword
+    - iron_sword
+```
 
 ### Understanding all the sections
 

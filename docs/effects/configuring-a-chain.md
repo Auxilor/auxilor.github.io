@@ -2,7 +2,7 @@
 title: Configuring an Effect Chain
 sidebar_position: 2
 ---
-## Configuring Effect Chains
+## Effect Chains
 ### What is an Effect Chain?
 Effect chains are groups of effects that can be executed together. This is very useful if you want to create a chance-based effect with several components: chance is calculated independently on each trigger, so without chains, particles and messages could send when the effects don't activate, and vice-versa.
 
@@ -21,120 +21,110 @@ Chains created here are universally accessible. You can use them in Enchants, Sk
 
 You don't need to specify triggers in your chain, these are handled by the `run_chain` effect (see below).
 ### The Basic Layout
-
-> [!example]
-> ```yaml
-> chains:
->   - id: <chain id>
->     effects:
->       - <effect 1>
->       - <effect 2>
->       - <effect 3>
-> ```
-
+```yaml
+chains:
+  - id: <chain id>
+    effects:
+      - <effect 1>
+      - <effect 2>
+      - <effect 3>
+```
 ### Chain Config Example
-> [!example] 
-> ```yaml
->   - id: mining_effect
->     effects:
->       - id: play_sound
->         args:
->           sound: BLOCK_AMETHYST_CLUSTER_BREAK
->           pitch: 0.7
->           volume: 10
->       - id: spawn_particle
->         args:
->           particle: soul
->           amount: 10
->         mutators:
->           - id: translate_location
->             args:
->               add_x: 0.5
->               add_y: 0.5
->               add_z: 0.5
-> ```
+```yaml
+  - id: mining_effect
+    effects:
+      - id: play_sound
+        args:
+          sound: BLOCK_AMETHYST_CLUSTER_BREAK
+          pitch: 0.7
+          volume: 10
+      - id: spawn_particle
+        args:
+          particle: soul
+          amount: 10
+        mutators:
+          - id: translate_location
+            args:
+              add_x: 0.5
+              add_y: 0.5
+              add_z: 0.5
+```
 
-You can add or remove as many chains as you want. Then, if you want to call a chain, use the `run_chain` effect, like this:
+You can add or remove as many chains as you want. Then, if you want to call a chain, use the `run_chain` effect, like
+this:
 
 ### Calling Your Chain
 
-> [!example]
-> ```yaml
-> effects:
-> - id: run_chain
->   args:
->     chain: mining_effect # The ID of the chain
->     chance: 50 * (%player_health% / 20) # Example to demonstrate placeholders in config
->     cooldown: 2
->   triggers:
->     - mine_block
->   filters:
->     blocks:
->       - diamond_ore
->       - emerald_ore
->       - ancient_debris
-> ```
+```yaml
+id: run_chain
+args:
+  chain: mining_effect # The ID of the chain
+  chance: 50 * (%player_health% / 20) # Example to demonstrate placeholders in config
+  cooldown: 2
+triggers:
+  - mine_block
+filters:
+  blocks:
+    - diamond_ore
+    - emerald_ore
+    - ancient_debris
+```
 
 Custom arguments can be specified like this:
 
-> [!example]
-> ```yaml
-> - id: run_chain
->   args:
->     chain: <chain id>  # Replace <chain id> with the actual chain ID
->     chain_args:
->       strength: %player_y% * 100  # You can put anything you want, doesn't only have to be numbers - you can use strings too!
->       # Add whichever arguments you use in your chain
-> ```
+```yaml
+id: run_chain
+args:
+  chain: <chain id>
+  chain_args:
+    strength: %player_y% * 100 # You can put anything you want, doesn't only have to be numbers - you can use strings too!
+    ... add whichever arguments you use in your chain
+```
 
 ## Inline Chains
 
 If you don't want to re-use chains, or if you prefer having them specified directly under the effect, you can specify effects inline instead.
-
 ### The Basic Layout
-> [!Example]
-> ```yaml
-> effects:
->   - <effect 1>
->   - <effect 2>
->   - <effect 3>
-> triggers:
->   - mine_block
-> args:
->   every: 3 # You can use Optional Args here: https://plugins.auxilor.io/effects/configuring-an-effect#optional-arguments
-> ```
+```yaml
+effects:
+  - <effect 1>
+  - <effect 2>
+  - <effect 3>
+triggers:
+  - mine_block
+args:
+  every: 3 # You can use Optional Args here: https://plugins.auxilor.io/effects/configuring-an-effect#optional-arguments
+```
 
 ### Example Inline Chain
-> [!Example]
-> ```yaml
-> effects:
->   - triggers:
->       - mine_block
->     filters:
->       blocks:
->         - diamond_ore
->         - emerald_ore
->         - ancient_debris
->     effects:
->       - id: play_sound
->         args:
->           sound: BLOCK_AMETHYST_CLUSTER_BREAK
->           pitch: 0.7
->           volume: 10
->       - id: spawn_particle
->         args:
->           particle: soul
->           amount: 10
->         mutators:
->           - id: translate_location
->             args:
->               add_x: 0.5
->               add_y: 0.5
->               add_z: 0.5
-> ```
-> 
-> Inline chains also support custom arguments, just like regular chains.
+```yaml
+effects:
+  - triggers:
+      - mine_block
+    filters:
+      blocks:
+        - diamond_ore
+        - emerald_ore
+        - ancient_debris
+    effects:
+      - id: play_sound
+        args:
+          sound: BLOCK_AMETHYST_CLUSTER_BREAK
+          pitch: 0.7
+          volume: 10
+      - id: spawn_particle
+        args:
+          particle: soul
+          amount: 10
+        mutators:
+          - id: translate_location
+            args:
+              add_x: 0.5
+              add_y: 0.5
+              add_z: 0.5
+```
 
+Inline chains also support custom arguments, just like regular chains.
 ## Run Types
 
 Effect chains also support several run types:
@@ -145,20 +135,19 @@ Effect chains also support several run types:
 
 To specify the run type, add the `run-type` argument into config:
 
-> [!example]
-> ```yaml
-> effects:
->   - triggers:
->       - alt_click
->     effects:
->       - <effect 1>
->       - <effect 2>
->       - <effect 3>
->     args:
->       run-type: random # The run-type from above
->       chance: 30
-> ... filters, mutators, etc
-> ```
+```yaml
+effects:
+  - triggers:
+      - alt_click
+    effects:
+      - <effect 1>
+      - <effect 2>
+      - <effect 3>
+    args:
+      run-type: random # The run-type from above
+      chance: 30
+... filters, mutators, etc
+```
 
 ### Weighted Random Chains
 
@@ -166,22 +155,21 @@ Sometimes you may want certain chain effects to occur more frequently. Such as h
 
 To do this, you must specify a weight within your chain effects:
 
-> [!example]
-> ```yaml
-> effects:
->   - triggers:
->       - mine_block
->     args:
->       run-type: random
->     effects:
->       - id: drop_item
->         args:
->           item: diamond
->         weight: 10 # The chance of this effect being run within a random chain
->       - id: drop_item
->         args:
->           item: iron_ingot
->         weight: 60
-> ```
+```yaml
+effects:
+  - triggers:
+      - mine_block
+    args:
+      run-type: random
+    effects:
+      - id: drop_item
+        args:
+          item: diamond
+        weight: 10 # The chance of this effect being run within a random chain
+      - id: drop_item
+        args:
+          item: iron_ingot
+        weight: 60
+```
 
 Weight is calculated as `<weight of element> / <sum of all weights>`.

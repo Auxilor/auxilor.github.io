@@ -1,15 +1,13 @@
 # `movement_efficiency_multiplier`
+#### Permanent Effect
 
 Multiplies movement speed through difficult terrain
 
-> [!hint] Permanent Effect
+**Requires 1.21+**
 
-> [!warning] Requires 1.21+
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: movement_efficiency_multiplier
->   args:
->     multiplier: 1.5 # The multiplier for movement efficiency
-> ```
+# Example Config
+```yaml
+- id: movement_efficiency_multiplier
+  args:
+    multiplier: 1.5 # The multiplier for movement efficiency
+```

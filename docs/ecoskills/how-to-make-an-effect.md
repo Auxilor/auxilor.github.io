@@ -46,27 +46,29 @@ Each effect is its own config file, placed in the `/effects/` folder, and you ca
 The ID of the Effect is the file name. This is what you use in commands, effects and placeholders.
 ID's must be lowercase letters, numbers, and underscores only.
 
-> [!example]
-> ```yaml
-> name: "Midas Touch" # The name of the effect, shown to players
-> placeholder: "%level% / 50" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
-> description: "&a%placeholder%%&8 chance to get $50 every time you mine a block" # The description to be shown in lore and messages
-> 
-> # The effects of the effect (i.e. the functionality)
-> # See here: https://plugins.auxilor.io/effects/configuring-an-effect
-> # Use %level% as a placeholder for the effect level
-> effects:
->   - id: give_money
->     args:
->       chance: "%level% / 50"
->       amount: 50
->     triggers:
->       - mine_block
-> 
-> # The conditions required for the effect to activate,
-> # you can use %level% as a placeholder here too
-> conditions: [ ]
-> ```
+
+## Example Effect Config
+
+```yaml
+name: "Midas Touch" # The name of the effect, shown to players
+placeholder: "%level% / 50" # The placeholder to be shown in the description, you can use expressions - eg %level% * 2
+description: "&a%placeholder%%&8 chance to get $50 every time you mine a block" # The description to be shown in lore and messages
+
+# The effects of the effect (i.e. the functionality)
+# See here: https://plugins.auxilor.io/effects/configuring-an-effect
+# Use %level% as a placeholder for the effect level
+effects:
+  - id: give_money
+    args:
+      chance: "%level% / 50"
+      amount: 50
+    triggers:
+      - mine_block
+
+# The conditions required for the effect to activate,
+# you can use %level% as a placeholder here too
+conditions: [ ]
+```
 
 ## Understanding all the sections
 

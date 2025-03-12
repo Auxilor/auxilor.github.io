@@ -2,10 +2,10 @@
 
 Allows an entity to open doors
 
-> [!example]
-> ```yaml
-> - key: minecraft:open_doors
->   priority: 0
->   args:
->     delayClosing: true # If door closing should be delayed
-> ```
+# Example Config
+```yaml
+- key: minecraft:open_doors
+  priority: 0
+  args:
+    delayClosing: true # If door closing should be delayed
+```

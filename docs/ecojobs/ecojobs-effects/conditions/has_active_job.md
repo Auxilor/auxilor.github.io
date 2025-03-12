@@ -2,12 +2,11 @@
 
 Requires a player to have a job active
 
-> [!warning] Requires EcoJobs
+**Requires EcoJobs**
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: has_active_job
->   args:
->     job: builder # The job ID
-> ```
+# Example Config
+```yaml
+- id: has_active_job
+  args:
+    job: builder # The job ID
+```

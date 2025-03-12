@@ -21,18 +21,17 @@ The first item in the list will represent `1` in the pattern, the second item in
 
 ## Example Page Config
 
-> [!example]
-> ```yaml
->     - page: 1
->       mask:
->         items: # The order of items to display
->           - gray_stained_glass_pane # The 1st Item
->           - black_stained_glass_pane # The 2nd Item
->         pattern: 
->           - "222222222"
->           - "211111112"
->           - "222222222"
-> ```
+```yaml
+    - page: 1
+      mask:
+        items: # The order of items to display
+          - gray_stained_glass_pane # The 1st Item
+          - black_stained_glass_pane # The 2nd Item
+        pattern: 
+          - "222222222"
+          - "211111112"
+          - "222222222"
+```
 
 This example has a surrounding layer of `gray_stained_glass_pane` and a center strip of `black_stained_glass_pane`.
 

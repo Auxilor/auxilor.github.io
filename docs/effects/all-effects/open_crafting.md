@@ -1,12 +1,12 @@
 # `open_crafting`
 
+#### Triggered Effect
+
 Opens a crafting table for the player
 
-> [!danger] Triggered Effect
+# Example Config
 
-> [!Example]
-> ```yaml
-> effects:
-> - id: open_crafting
-> ...other config (eg triggers, filters, mutators, etc)
-> ```
+```yaml
+- id: open_crafting
+...other config (eg triggers, filters, mutators, etc)
+```

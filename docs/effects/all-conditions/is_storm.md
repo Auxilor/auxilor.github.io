@@ -2,8 +2,7 @@
 
 Requires a player to be in a storm
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: is_storm
-> ```
+# Example Config
+```yaml
+- id: is_storm
+```

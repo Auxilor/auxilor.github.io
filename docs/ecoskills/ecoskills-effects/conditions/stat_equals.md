@@ -2,13 +2,13 @@
 
 Requires a player to have exactly a certain stat level
 
-> [!warning] Requires EcoSkills
+**Requires EcoSkills**
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: stat_equals
->   args:
->       stat: speed # The stat ID
->       level: 0 # The minimum level
-> ```
+# Example Config
+
+```yaml
+- id: stat_equals
+  args:
+      stat: speed # The stat ID
+      level: 0 # The minimum level
+```

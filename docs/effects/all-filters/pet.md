@@ -2,12 +2,12 @@
 
 Require a certain pet
 
-> [!warning] Requires EcoPets
+**Requires EcoPets**
 
-> [!example]
-> ```yaml
-> filters:
->   pet:
->     - vampire
->     - sea_serpent
-> ```
+# Example Config
+```yaml
+filters:
+  pet:
+    - vampire
+    - sea_serpent
+```

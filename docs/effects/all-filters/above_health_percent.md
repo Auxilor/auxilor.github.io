@@ -2,8 +2,8 @@
 
 If the victim must be above a certain percentage of their health 
 
-> [!example]
-> ```yaml
-> filters:
->   above_health_percent: 50
-> ```
+# Example Config
+```yaml
+filters:
+  above_health_percent: 50
+```

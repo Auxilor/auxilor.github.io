@@ -1,17 +1,15 @@
 # `multiply_magic`
+#### Triggered Effect
 
 Multiply magic
 
-> [!danger] Triggered Effect
+**Requires EcoSkills**
 
-> [!warning] Requires EcoSkills
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: multiply_magic
->   args:
->     type: magic # The magic type to multiply
->     multiplier: 0.5 # The amount to multiply it by
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+# Example Config
+```yaml
+- id: multiply_magic
+  args:
+    type: magic # The magic type to multiply
+    multiplier: 0.5 # The amount to multiply it by
+  ...other config (eg triggers, filters, mutators, etc)
+```

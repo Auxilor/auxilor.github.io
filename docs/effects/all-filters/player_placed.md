@@ -2,8 +2,8 @@
 
 If the block must be (or must not be) placed by a player
 
-> [!example]
-> ```yaml
-> filters:
->   player_placed: false
-> ```
+# Example Config
+```yaml
+filters:
+  player_placed: false
+```

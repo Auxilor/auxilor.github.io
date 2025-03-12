@@ -2,7 +2,7 @@
 
 Move the location to the drop location
 
-> [!example]
-> ```yaml
-> - id: location_to_drop
-> ```
+# Example Config
+```yaml
+- id: location_to_drop
+```

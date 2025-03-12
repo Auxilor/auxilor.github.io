@@ -2,10 +2,10 @@
 
 Require the victim to have a certain name
 
-> [!example]
-> ```yaml
-> filters:
->   victim_name: 
->     - ExampleUsername12
->     - AmongSus
-> ```
+# Example Config
+```yaml
+filters:
+  victim_name: 
+    - ExampleUsername12
+    - AmongSus
+```

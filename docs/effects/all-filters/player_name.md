@@ -2,10 +2,10 @@
 
 Require the player to have a certain name, useful to whitelist admins/etc
 
-> [!example]
-> ```yaml
-> filters:
->   player_name: 
->     - Auxilor
->     - Jpuf
-> ```
+# Example Config
+```yaml
+filters:
+  player_name: 
+    - Auxilor
+    - Jpuf
+```

@@ -1,15 +1,13 @@
 # `gravity_multiplier`
+#### Permanent Effect
 
 Multiplies gravity
 
-> [!hint] Permanent Effect
+**Requires 1.21+**
 
-> [!warning] Requires 1.21+
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: gravity_multiplier
->   args:
->     multiplier: 0.5 # The multiplier for gravity
-> ```
+# Example Config
+```yaml
+- id: gravity_multiplier
+  args:
+    multiplier: 0.5 # The multiplier for gravity
+```

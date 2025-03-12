@@ -2,12 +2,11 @@
 
 Requires a player to have a certain reforge active
 
-> [!warning] Requires Reforges
+**Requires Reforges**
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: has_reforge
->   args:
->     reforge: shiny # The reforge ID
-> ```
+# Example Config
+```yaml
+- id: has_reforge
+  args:
+    reforge: shiny # The reforge ID
+```

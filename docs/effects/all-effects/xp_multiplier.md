@@ -1,13 +1,11 @@
 # `xp_multiplier`
+#### Permanent Effect
 
 Multiplies incoming xp gain
 
-> [!hint] Permanent Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: xp_multiplier
->   args:
->     multiplier: 2.05 # The xp multiplier
-> ```
+# Example Config
+```yaml
+- id: xp_multiplier
+  args:
+    multiplier: 2.05 # The xp multiplier
+```

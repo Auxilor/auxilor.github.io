@@ -2,12 +2,11 @@
 
 Requires a player to have a certain scroll active
 
-> [!warning] Requires EcoScrolls
+**Requires EcoScrolls**
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: has_scroll
->   args:
->     scroll: lava_scroll # The scroll
-> ```
+# Example Config
+```yaml
+- id: has_scroll
+  args:
+    scroll: lava_scroll # The scroll
+```

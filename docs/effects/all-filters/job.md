@@ -2,12 +2,12 @@
 
 Require a certain job
 
-> [!warning] Requires EcoJobs
+**Requires EcoJobs**
 
-> [!example]
-> ```yaml
-> filters:
->   job:
->     - miner
->     - builder
-> ```
+# Example Config
+```yaml
+filters:
+  job:
+    - miner
+    - builder
+```

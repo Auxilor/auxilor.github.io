@@ -1,16 +1,16 @@
 # `start_quest`
 
+#### Triggered Effect
+
 Starts a quest for the player
 
-> [!danger] Triggered Effect
+**Requires EcoQuests**
 
-> [!warning] Requires EcoQuests
+# Example Config
 
-> [!Example]
-> ```yaml
-> effects:
-> - id: start_quest
->   args:
->     quest: meet_the_village # The quest ID
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+```yaml
+- id: start_quest
+  args:
+    quest: meet_the_village # The quest ID
+  ...other config (eg triggers, filters, mutators, etc)
+```

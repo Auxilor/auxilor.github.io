@@ -1,14 +1,12 @@
 # `damage_item`
+#### Triggered Effect
 
 Damages the item
 
-> [!danger] Triggered Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: damage_item
->   args:
->     damage: 2 # The durability to damage
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+# Example Config
+```yaml
+- id: damage_item
+  args:
+    damage: 2 # The durability to damage
+  ...other config (eg triggers, filters, mutators, etc)
+```

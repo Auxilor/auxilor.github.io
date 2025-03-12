@@ -11,21 +11,20 @@ The item lookup system is how items are loaded from configs. It's designed to be
 
 Crafting recipes in eco plugins often look something like this:
 
-> [!example]
-> ```yaml
-> recipe:
->   - ""
->   - "ecoitems:toughened_string 8 ? string 64"
->   - ""
-> 
->   - ""
->   - "netherite_chestplate || diamond_chestplate"
->   - ""
-> 
->   - "ecoitems:arachnid_oculus ? nether_star 2"
->   - ""
->   - "ecoitems:arachnid_oculus ? nether_star 2"
-> ```
+```yaml
+recipe:
+  - ""
+  - "ecoitems:toughened_string 8 ? string 64"
+  - ""
+
+  - ""
+  - "netherite_chestplate || diamond_chestplate"
+  - ""
+
+  - "ecoitems:arachnid_oculus ? nether_star 2"
+  - ""
+  - "ecoitems:arachnid_oculus ? nether_star 2"
+```
 
 While it may look meaningless, this system is straightforward once you understand how it works. A crafting recipe is written as a list of 9 strings, the first three being the top row (left to right),
 the second three being the middle row (left to right), and the last three being the last row (left to right).
@@ -52,15 +51,13 @@ default configs for performance reasons.
 Item tags are groups of items. A list of vanilla tags can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Tag.html), and you can use them with `#tag`, e.g. `#signs`. These are especially useful in filters and recipes where you may use the same lists of items in different places.
 
 You can create your own tags in [tags.yml](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#item-tags) too, use `libreforge:#<tag_id>` to reference these.
-
-> [!example]
-> ```yaml
-> tags:
->   - id: example_tag # The ID, used in the item-lookup-system.
->     items: # The item's contained in the tag.
->       - "netherite_sword"
->       - "diamond_sword"
-> ```
+```yaml
+tags:
+  - id: example_tag # The ID, used in the item-lookup-system.
+    items: # The item's contained in the tag.
+      - "netherite_sword"
+      - "diamond_sword"
+```
 
 A list of custom item tags can be found later in this page.
 
@@ -100,33 +97,27 @@ So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weap
 
 ## Using items in eco plugins
 
-> [!help] Item Lookup for eco plugins
-> 
-> | Plugin       | Item Lookup Key                                                                                                     |
-> | ------------ | ------------------------------------------------------------------------------------------------------------------- |
-> | EcoArmor     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:upgrade_crystal_<id>` |
-> | EcoCrates    | `ecocrates:<crate>_key`                                                                                             |
-> | EcoItems     | `ecoitems:<id>`                                                                                                     |
-> | EcoMobs      | `ecomobs:<id>_spawn_egg`                                                                                            |
-> | EcoPets      | `ecopets:<id>_spawn_egg`                                                                                            |
-> | EcoScrolls   | `ecoscrolls:scroll_<id>`                                                                                            |
-> | Reforges     | `reforges:stone_<id>`                                                                                               |
-> | StatTrackers | `stattrackers:<id>`                                                                                                 |
-> | Talismans    | `talismans:<id>`                                                                                                    |
-> 
+| Plugin       | Item Lookup Key                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| EcoArmor     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:upgrade_crystal_<id>` |
+| EcoCrates    | `ecocrates:<crate>_key`                                                                                             |
+| EcoItems     | `ecoitems:<id>`                                                                                                     |
+| EcoMobs      | `ecomobs:<id>_spawn_egg`                                                                                            |
+| EcoPets      | `ecopets:<id>_spawn_egg`                                                                                            |
+| EcoScrolls   | `ecoscrolls:scroll_<id>`                                                                                            |
+| Reforges     | `reforges:stone_<id>`                                                                                               |
+| StatTrackers | `stattrackers:<id>`                                                                                                 |
+| Talismans    | `talismans:<id>`                                                                                                    |
 
 ## Using item tags in eco plugins
 
-> [!help] List of eco plugin tags
-> 
-> | Plugin     | Item Tag              | Description                     |
-> | ---------- | --------------------- | ------------------------------- |
-> | EcoItems   | `#ecoitems:item`      | Any EcoItems item               |
-> | EcoScrolls | `#ecoscrolls:scroll`  | Any EcoScrolls scroll           |
-> | Reforges   | `#reforges:stone`     | Any reforge stone               |
-> | Reforges   | `#reforges:reforged`  | Any item with a reforge present |
-> | Talismans  | `#talismans:talisman` | Any talisman                    |
-> 
+| Plugin     | Item Tag              | Description                     |
+| ---------- | --------------------- | ------------------------------- |
+| EcoItems   | `#ecoitems:item`      | Any EcoItems item               |
+| EcoScrolls | `#ecoscrolls:scroll`  | Any EcoScrolls scroll           |
+| Reforges   | `#reforges:stone`     | Any reforge stone               |
+| Reforges   | `#reforges:reforged`  | Any item with a reforge present |
+| Talismans  | `#talismans:talisman` | Any talisman                    |
 
 ## Using items in MythicMobs
 
@@ -136,15 +127,14 @@ If you want to use a lookup item in MythicMobs, just do it like this: `eco{type=
 
 If you want to use a lookup item in ShopGUIPlus, just do it like this:
 
-> [!example]
-> ```yaml
-> type: item
-> item:
->   eco: "ecoitems:holy_flesh"
->   quantity: 1
-> sellPrice: 7500
-> slot: 27
-> ```
+```yaml
+type: item
+item:
+  eco: "ecoitems:holy_flesh"
+  quantity: 1
+sellPrice: 7500
+slot: 27
+```
 
 ## Using items from third-party plugins
 
@@ -155,16 +145,16 @@ Sometimes custom item IDs are namespaced. In order to make this work, you have t
 | ItemsAdder | `itemsadder:<namespace>__<key>`, example below.                                                                                                      |
 | Oraxen     | `oraxen:<id>`, eg: `oraxen:alumite_pickaxe`                                                                                                          |
 | ItemBridge | `itembridge:saved__<id>` for items you've saved within ItemBridge. You can use `itembridge:<prefix>__<id>` for plugin items supported in ItemBridge. |
+
 ### ItemsAdder
 
-> [!example]
-> ```yaml
-> # ItemsAdder configuration
-> info:
->   namespace: my_items
-> items:
->   my_helmet:
->     display_name: "&9Custom Helmet"
-> ```
+```yaml
+# ItemsAdder configuration
+info:
+  namespace: my_items
+items:
+  my_helmet:
+    display_name: "&9Custom Helmet"
+```
 
 ItemsAdder items are namespaced, so for example, the above would be `itemsadder:crystal_pack__alumite_pickaxe`, where `crystal_pack` is the namespace, and `alumite_pickaxe` is the item ID.

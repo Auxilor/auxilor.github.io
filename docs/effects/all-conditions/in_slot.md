@@ -7,21 +7,18 @@ This is useful if you want one holder to have different effects depending on the
 The options for slot are mainhand, offhand, hands, helmet, chestplate,
 leggings, boots, armor, any, or a number from 0-40 (to specify an exact slot).
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: in_slot
->   args:
->     slot: mainhand # The slot
-> ```
+# Example Configs
+```yaml
+- id: in_slot
+  args:
+    slot: mainhand # The slot
+```
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: in_slot
->   args:
->     slots: # You can also provide a list of slots
->       - mainhand
->       - 6
->       - helmet
-> ```
+```yaml
+- id: in_slot
+  args:
+    slots: # You can also provide a list of slots
+      - mainhand
+      - 6
+      - helmet
+```

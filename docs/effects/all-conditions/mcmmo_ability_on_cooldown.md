@@ -2,14 +2,13 @@
 
 Requires an McMMO ability to be on cooldown
 
-> [!warning] Requires McMMO
+**Requires McMMO**
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: mcmmo_ability_on_cooldown
->   args:
->     abilities: 
-> 	  - serrated_strikes # The ID of the ability
-> 	  - super_breaker
-> ```
+# Example Config
+```yaml
+- id: mcmmo_ability_on_cooldown
+  args:
+    abilities: 
+	  - serrated_strikes # The ID of the ability
+	  - super_breaker
+```

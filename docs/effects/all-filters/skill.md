@@ -2,12 +2,12 @@
 
 Require a certain skill
 
-> [!warning] Requires EcoSkills or McMMO
+**Requires EcoSkills or McMMO**
 
-> [!example]
-> ```yaml
-> filters:
->   skill:
->     - combat
->     - mining
-> ```
+# Example Config
+```yaml
+filters:
+  skill:
+    - combat
+    - mining
+```

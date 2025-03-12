@@ -1,11 +1,9 @@
 # `keep_level`
+#### Permanent Effect
 
 Makes the player keep their XP level on death
 
-> [!hint] Permanent Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: keep_level
-> ```
+# Example Config
+```yaml
+- id: keep_level
+```

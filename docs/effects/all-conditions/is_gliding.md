@@ -2,8 +2,7 @@
 
 Requires a player to be gliding with an elytra
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: is_gliding
-> ```
+# Example Config
+```yaml
+- id: is_gliding
+```

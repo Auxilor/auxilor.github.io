@@ -2,12 +2,12 @@
 
 Require a certain magic type
 
-> [!warning] Requires EcoSkills
+**Requires EcoSkills**
 
-> [!example]
-> ```yaml
-> filters:
->   magic_type:
->     - mana
->     - flux
-> ```
+# Example Config
+```yaml
+filters:
+  magic_type:
+    - mana
+    - flux
+```

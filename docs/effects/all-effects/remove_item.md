@@ -1,14 +1,12 @@
 # `remove_item`
+#### Triggered Effect
 
 Removes an item from the player's inventory
 
-> [!danger] Triggered Effect
-
-> [!Example]
-> ```yaml
-> effects:
-> - id: remove_item
->   args:
->     item: diamond # The item to remove
->   ...other config (eg triggers, filters, mutators, etc)
-> ```
+# Example Config
+```yaml
+- id: remove_item
+  args:
+    item: diamond # The item to remove
+  ...other config (eg triggers, filters, mutators, etc)
+```

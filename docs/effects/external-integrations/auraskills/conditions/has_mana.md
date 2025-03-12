@@ -2,12 +2,11 @@
 
 Requires a player to have amount of mana
 
-> [!warning] Requires AuraSkills
+**Requires AuraSkills**
 
-> [!example]
-> ```yaml
-> conditions:
-> - id: has_mana
->   args:
->     amount: 200 # The amount of mana
-> ```
+# Example Config
+```yaml
+- id: has_mana
+  args:
+    amount: 200 # The amount of mana
+```

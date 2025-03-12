@@ -2,8 +2,8 @@
 
 Requires a certain expression to be true
 
-> [!example]
-> ```yaml
-> filters:
->   is_expression_true: "%level% > %victim_health%"
-> ```
+# Example Config
+```yaml
+filters:
+  is_expression_true: "%level% > %victim_health%"
+```
