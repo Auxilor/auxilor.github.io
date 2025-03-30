@@ -1,5 +1,6 @@
 # `add_damage`
-:::danger[#### Triggered Effect]:::
+:::danger[Triggered Effect]
+:::
 
 Adds incoming or outgoing damage from any damage trigger
 
