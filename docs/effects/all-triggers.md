@@ -27,10 +27,12 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `change_armor`                  | Triggered when changing armor                                                                                     | 1                                             |
 | `change_chunk`                  | Triggered when changing chunk                                                                                     | 1                                             |
 | `change_world`                  | Triggered when changing world                                                                                     | 1                                             |
+| `claim_battlepass_reward`       | Triggered when claiming a battlepass reward **Requires xBattlepass**                                              | 1                                             |
 | `click_block`                   | Triggered when right-clicking on a block                                                                          | 1                                             |
 | `click_entity`                  | Triggered when right-clicking on an entity                                                                        | 1                                             |
 | `collect_envoy`                 | Triggered when collecting an envoy crate **Requires AxEnvoy**                                                     | 1                                             |
 | `complete_advancement`          | Triggered when completing an advancement                                                                          | 1                                             |
+| `complete_battlepass_task`      | Triggered when completing a battlepass task **Requires xBattlepass**                                              | 1                                             |
 | `complete_quest`                | Triggered when completing a quest **Requires EcoQuests**                                                          | 1                                             |
 | `complete_task`                 | Triggered when completing a task **Requires EcoQuests**                                                           | 1                                             |
 | `consume`                       | Triggered on item consumption                                                                                     | 1                                             |
@@ -59,6 +61,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `entity_teleport`               | Triggered when an entity teleports                                                                                | 1                                             |
 | `fall_damage`                   | Triggered when taking fall damage                                                                                 | The damage taken                              |
 | `fill_bucket`                   | Triggered when filling a bucket                                                                                   | 1                                             |
+| `gain_battlepass_xp`            | Triggered when gaining battlepass XP **Requires xBattlepass**                                                     | The experience gained                         |
 | `gain_hunger`                   | Triggered when gaining hunger points                                                                              | The hunger gained                             |
 | `gain_job_xp`                   | Triggered when gaining job experience points **Requires EcoJobs**                                                 | The experience gained                         |
 | `gain_mcmmo_xp`                 | Triggered when gaining McMMO xp **Requires McMMO**                                                                | The xp gained                                 |
@@ -127,6 +130,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `take_entity_damage`            | Triggered when taking damage from an entity or player                                                             | The damage taken                              |
 | `tame_animal`                   | Triggered when taming an animal                                                                                   | 1                                             |
 | `teleport`                      | Triggered when teleporting                                                                                        | 1                                             |
+| `tier_up_battlepass`            | Triggered when tiering up the battlepass **Requires xBattlepass**                                                 | The new level                                 |
 | `toggle_flight`                 | Triggered when changing the flight state                                                                          | 1                                             |
 | `toggle_sneak`                  | Triggered when changing the sneak state                                                                           | 1                                             |
 | `toggle_sprint`                 | Triggered when changing the sprint state                                                                          | 1                                             |
