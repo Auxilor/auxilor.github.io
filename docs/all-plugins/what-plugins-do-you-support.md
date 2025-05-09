@@ -83,3 +83,5 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - NuVotifier
 - AxEnvoy
 - xBattlepass
+- CustomCrops
+- CustomFishing

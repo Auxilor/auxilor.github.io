@@ -15,6 +15,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `beacon_effect`                 | Triggered when a player gains effects from a beacon **Requires Paper**                                            | 1                                             |
 | `bite`                          | Triggered when a fish bites on your rod                                                                           | 1                                             |
 | `block_item_drop`               | Triggered when a mined block drops loot                                                                           | The amount of items dropped                   |
+| `bonemeal_custom_crop`          | Triggered when applying bonemeal to custom crops **Requires CustomCrops**                                         | 1                                             |
 | `bow_attack`                    | Triggered when shooting an entity with a bow and arrow (or crossbow)                                              | The damage dealt                              |
 | `breed`                         | Triggered when breeding entities together                                                                         | The experience received                       |
 | `brew`                          | Triggered when brewing a potion in a brewing stand                                                                | 1                                             |
@@ -70,6 +71,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `gain_task_xp`                  | Triggered when gaining task XP **Requires EcoQuests**                                                             | The experience gained                         |
 | `gain_xp`                       | Triggered when gaining experience points                                                                          | The xp gained                                 |
 | `global_static_%interval%`      | Run every x ticks for the server, eg `global_static_20` would run every second                                    | 1                                             |
+| `harvest_custom_crop`           | Triggered when harvesting a custom crop **Requires CustomCrops**                                                  | 1                                             |
 | `headshot`                      | Triggered when hitting an enemy with a projectile in the head                                                     | The damage dealt                              |
 | `heal`                          | Triggered when regaining health                                                                                   | The health regained                           |
 | `hold_item`                     | Triggered when changing your held item                                                                            | 1                                             |
@@ -104,6 +106,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `move`                          | Triggered on all movement: looking around, walking                                                                | The distance moved                            |
 | `pick_up_item`                  | Triggered when picking up an item                                                                                 | The amount of items                           |
 | `place_block`                   | Triggered when placing a block                                                                                    | 1                                             |
+| `plant_custom_crop`             | Triggered when planting a custom crop **Requires CustomCrops**                                                    | 1                                             |
 | `potion_effect`                 | Triggered when gaining a potion effect                                                                            | 1                                             |
 | `projectile_hit`                | Triggered when hitting a block or an entity with a projectile (arrow, trident, splash potion, egg, snowball)      | 1                                             |
 | `projectile_launch`             | Triggered when launching a projectile (arrow, trident, splash potion, egg, snowball)                              | 1                                             |
@@ -136,5 +139,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `toggle_sprint`                 | Triggered when changing the sprint state                                                                          | 1                                             |
 | `trident_attack`                | Triggered on injuring an entity with a thrown trident **Requires Paper**                                          | The damage dealt                              |
 | `try_inscribe`                  | Triggered when attempting to inscribe a scroll **Requires EcoScrolls**                                            | 1                                             |
+| `use_fertilizer`                | Triggered when using fertilizer **Requires CustomCrops**                                                          | 1                                             |
+| `use_watering_can`              | Triggered when using a watering can **Requires CustomCrops**                                                      | 1                                             |
 | `villager_trade`                | Triggered when trading with a villager **Requires Paper**                                                         | The experience the villager gains             |
 | `win_raid`                      | Triggered when a player wins a raid                                                                               | The level of bad omen                         |
