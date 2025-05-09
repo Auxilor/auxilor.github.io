@@ -7,9 +7,14 @@ sidebar_position: 3
 
 Permission: `ecobits.command.reload`
 
+## `/<currency>` (Access to the commands related to the currency)
+
+Permission: `ecobits.command.<currency>`
+
 ## `/<currency> pay` (Pay a player)
 
 Permission: `ecobits.command.pay`
+
 
 ## `/<currency> balance` (Get your balance)
 
