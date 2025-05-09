@@ -9,8 +9,8 @@ is active
 Triggered effects also produce a value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders),
 and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 
-| ID                | Description                            | Value Provided         |
-| ----------------- | -------------------------------------- | ---------------------- |
-| `catch_fish`      | Triggered when catching a fish         | The experience dropped |
-| `catch_fish_fail` | Triggered when failing to catch a fish | 1                      |
+| ID                | Description                            | Value Provided |
+| ----------------- | -------------------------------------- | -------------- |
+| `catch_fish`      | Triggered when catching a fish         | 1              |
+| `catch_fish_fail` | Triggered when failing to catch a fish | 1              |
 
