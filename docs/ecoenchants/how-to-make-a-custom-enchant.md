@@ -17,7 +17,8 @@ ID's must be lowercase letters, numbers, and underscores only.
 
 ```yaml
 display-name: "Example" # The name of the enchantment in-game
-description: "Gives a &a%placeholder%%&8 bonus to damage" # The description of the enchantment
+description: 
+  - "Gives a &a%placeholder%%&8 bonus to damage" # The description of the enchantment
 placeholder: "%level% * 20" # The placeholder to show in the enchantment description
 placeholders: # [Optional] You can also create multiple placeholders to show in the enchantment description
   example: "%level% * 800"
