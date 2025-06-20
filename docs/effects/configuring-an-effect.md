@@ -215,27 +215,26 @@ If the victim is a player, you can supply any placeholder prefixed with `victim
 
 There are also extra placeholders passed in that you can use:
 
-| Placeholder           | Value                                                                                                                           | Aliases                                                        |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| `%trigger_value%`     | The value passed by the trigger (e.g. the amount of damage dealt; see [here](https://plugins.auxilor.io/effects/all-triggers)). | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%` |
-| `%player%`            | The player's name                                                                                                               |                                                                |
-| `%player_uuid%`       | The player's UUID                                                                                                               |                                                                |
-| `%victim_health%`     | The victim's health                                                                                                             |                                                                |
-| `%victim_max_health%` | The victim's max health                                                                                                         |                                                                |
-| `%distance%`          | The distance between the player and the victim                                                                                  |                                                                |
-| `%victim_level%`      | The victim's level (**Requires LevelledMobs**)                                                                                  |                                                                |
-| `%hits%`              | The amount of times the player has hit the victim                                                                               |                                                                |
-| `%text%`              | The message text from the trigger, for example a chat message                                                                   | `%string%`, `%message%`                                        |
-| `%location_x%`        | The X coordinate of the location                                                                                                | `%loc_x%`, `%x%`                                               |
-| `%location_y%`        | The Y coordinate of the location                                                                                                | `%loc_y%`, `%y%`                                               |
-| `%location_z%`        | The Z coordinate of the location                                                                                                | `%loc_z%`, `%z%`                                               |
-| `%location_block_x%`  | The X coordinate of the block location                                                                                          | `%loc_b_x%`, `%block_x%`, `%bx%`                               |
-| `%location_block_y%`  | The Y coordinate of the block location                                                                                          | `%loc_b_y%`, `%block_y%`, `%by%`                               |
-| `%location_block_z%`  | The Z coordinate of the block location                                                                                          | `%loc_b_z%`, `%block_z%`, `%bz%`                               |
-| `%location_world%`    | The world name of the location                                                                                                  | `%loc_w%`, `%world%`                                           |
+| Placeholder           | Value                                                                                                                               | Aliases                                                                    |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| `%trigger_value%`     | The value passed by the trigger (e.g. the amount of damage dealt; see [here](https://plugins.auxilor.io/effects/all-triggers)).     | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%`             |
+| `%alt_trigger_value%` | The alt-value passed by the trigger (e.g. the amount of damage dealt; see [here](https://plugins.auxilor.io/effects/all-triggers)). | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
+| `%player%`            | The player's name                                                                                                                   |                                                                            |
+| `%player_uuid%`       | The player's UUID                                                                                                                   |                                                                            |
+| `%victim_health%`     | The victim's health                                                                                                                 |                                                                            |
+| `%victim_max_health%` | The victim's max health                                                                                                             |                                                                            |
+| `%distance%`          | The distance between the player and the victim                                                                                      |                                                                            |
+| `%victim_level%`      | The victim's level (**Requires LevelledMobs**)                                                                                      |                                                                            |
+| `%hits%`              | The amount of times the player has hit the victim                                                                                   |                                                                            |
+| `%text%`              | The message text from the trigger, for example a chat message                                                                       | `%string%`, `%message%`                                                    |
+| `%location_x%`        | The X coordinate of the location                                                                                                    | `%loc_x%`, `%x%`                                                           |
+| `%location_y%`        | The Y coordinate of the location                                                                                                    | `%loc_y%`, `%y%`                                                           |
+| `%location_z%`        | The Z coordinate of the location                                                                                                    | `%loc_z%`, `%z%`                                                           |
+| `%location_block_x%`  | The X coordinate of the block location                                                                                              | `%loc_b_x%`, `%block_x%`, `%bx%`                                           |
+| `%location_block_y%`  | The Y coordinate of the block location                                                                                              | `%loc_b_y%`, `%block_y%`, `%by%`                                           |
+| `%location_block_z%`  | The Z coordinate of the block location                                                                                              | `%loc_b_z%`, `%block_z%`, `%bz%`                                           |
+| `%location_world%`    | The world name of the location                                                                                                      | `%loc_w%`, `%world%`                                                       |
 ## Load Weight
 
 All configs are loaded alphabetically by default. However, if you have a config that depends on
-another one, for example an EcoItems item that's crafted with another EcoItems item, you can add
-`load-weight: <weight>`. All configs have a default load weight of 100, and it's loaded in ascending
-order, so a config with a load weight of 10 is loaded before a load weight of 20.
+another one, for example an EcoItems item that's crafted with another EcoItems item, you can add `load-weight: <weight>`. All configs have a default load weight of 100, and it's loaded in ascending order, so a config with a load weight of 10 is loaded before a load weight of 20.
