@@ -83,5 +83,8 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - Model Engine
 - NuVotifier
 - AxEnvoy
+- xBattlepass
+- CustomCrops
+- CustomFishing
 - AxTrade
 - xBattlepass
