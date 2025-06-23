@@ -3,8 +3,7 @@ title: "All Triggers"
 sidebar_position: 7
 ---
 
-Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect
-is active
+Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect is active
 
 Triggered effects also produce a value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders),
 and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
@@ -15,6 +14,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `beacon_effect`                 | Triggered when a player gains effects from a beacon **Requires Paper**                                            | 1                                             |
 | `bite`                          | Triggered when a fish bites on your rod                                                                           | 1                                             |
 | `block_item_drop`               | Triggered when a mined block drops loot                                                                           | The amount of items dropped                   |
+| `bonemeal_crop`                 | Triggered when using bonemeal on a crop                                                                           | 1                                             |
 | `bow_attack`                    | Triggered when shooting an entity with a bow and arrow (or crossbow)                                              | The damage dealt                              |
 | `breed`                         | Triggered when breeding entities together                                                                         | The experience received                       |
 | `brew`                          | Triggered when brewing a potion in a brewing stand                                                                | 1                                             |
@@ -112,14 +112,17 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `move`                          | Triggered on all movement: looking around, walking                                                                | The distance moved                            |
 | `pick_up_item`                  | Triggered when picking up an item                                                                                 | The amount of items                           |
 | `place_block`                   | Triggered when placing a block                                                                                    | 1                                             |
+| `player_trade`                  | Triggered when trading with a player **Required AxTrade**                                                         | The total amount of items traded              |
 | `potion_effect`                 | Triggered when gaining a potion effect                                                                            | 1                                             |
 | `projectile_hit`                | Triggered when hitting a block or an entity with a projectile (arrow, trident, splash potion, egg, snowball)      | 1                                             |
 | `projectile_launch`             | Triggered when launching a projectile (arrow, trident, splash potion, egg, snowball)                              | 1                                             |
 | `reel_in`                       | Triggered when reeling in a fishing rod                                                                           | 1                                             |
 | `regen_magic`                   | Triggered when regenerating magic **Requires EcoSkills**                                                          | 1                                             |
 | `register_vote`                 | Triggered when a player votes for the server **Requires NuVotifier**                                              | 1                                             |
+| `rename_entity`                 | Triggered when a player renames an entity using a name tag **Requires Paper**                                     | 1                                             |
 | `respawn`                       | Triggered when respawning                                                                                         | 1                                             |
 | `right_click_npc`               | Triggered when right-clicking an NPC **Requires Citizens \|\| FancyNpcs**                                         | 1                                             |
+| `ring_bell`                     | Triggered when ringing a bell                                                                                     | 1                                             |
 | `run_command`                   | Triggered when running a command                                                                                  | 1                                             |
 | `scyther_auto_collect`          | Triggered when autocollecting crops with a scyther hoe **Requires Scyther**                                       | 1                                             |
 | `scyther_auto_sell`             | Triggered when autoselling crops with a scyther hoe **Requires Scyther**                                          | 1                                             |
@@ -145,5 +148,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `trident_attack`                | Triggered on injuring an entity with a thrown trident **Requires Paper**                                          | The damage dealt                              |
 | `try_inscribe`                  | Triggered when attempting to inscribe a scroll **Requires EcoScrolls**                                            | 1                                             |
 | `unclaim_land`                  | Triggered when unclaiming land **Requires HuskTowns \|\| HuskClaims**                                             | 1                                             |
+| `unleash_entity`                | Triggered when unleashing an entity                                                                               | 1                                             |
+| `use_flower_pot`                | Triggered when a player insets or extracts a plant from a flower pot **Requires Paper**                           | 1                                             |
 | `villager_trade`                | Triggered when trading with a villager **Requires Paper**                                                         | The experience the villager gains             |
 | `win_raid`                      | Triggered when a player wins a raid                                                                               | The level of bad omen                         |
