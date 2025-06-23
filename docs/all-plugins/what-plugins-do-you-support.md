@@ -61,6 +61,7 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 ## Economy
 - Vault
 - Flare Mobcoins
+- UltimateMobCoins
 
 ## Custom Terrain
 - Terra
@@ -85,3 +86,5 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - xBattlepass
 - CustomCrops
 - CustomFishing
+- AxTrade
+- xBattlepass
