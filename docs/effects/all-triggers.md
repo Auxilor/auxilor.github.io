@@ -28,8 +28,8 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `change_chunk`                  | Triggered when changing chunk                                                                                     | 1                                             |
 | `change_town_role`              | Triggered when changing town role **Requires HuskTowns**                                                          | 1                                             |
 | `change_world`                  | Triggered when changing world                                                                                     | 1                                             |
+| `claim`                         | Triggered when claiming an area **Requires HuskTowns \|\|   HuskClaims \|\| Lands**                               | 1                                             |
 | `claim_battlepass_reward`       | Triggered when claiming a battlepass reward **Requires xBattlepass**                                              | 1                                             |
-| `claim_land`                    | Triggered when claiming land **Requires HuskTowns \|\| HuskClaims**                                               | 1                                             |
 | `click_block`                   | Triggered when right-clicking on a block                                                                          | 1                                             |
 | `click_entity`                  | Triggered when right-clicking on an entity                                                                        | 1                                             |
 | `collect_envoy`                 | Triggered when collecting an envoy crate **Requires AxEnvoy**                                                     | 1                                             |
@@ -52,7 +52,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `enchant_<type>`                | Triggered when enchanting an item with a certain type of enchantment **Requires EcoEnchants**                     | The xp cost                                   |
 | `enchant_item`                  | Triggered when enchanting an item                                                                                 | The xp cost                                   |
 | `enter_bed`                     | Triggered when entering a bed                                                                                     | 1                                             |
-| `enter_claimed_land`            | Triggered when entering claimed land **Requires HuskTowns \|\| HuskClaims**                                       | 1                                             |
+| `enter_claim`                   | Triggered when entering a claimed area **Requires HuskTowns \|\| HuskClaims**                                     | 1                                             |
 | `enter_region`                  | Triggered when entering a region **Requires WorldGuard**                                                          | 1                                             |
 | `entity_break_door`             | Triggered when an entity breaks a door                                                                            | 1                                             |
 | `entity_catch_fire_from_block`  | Triggered when an entity catches fire from a block                                                                | 1                                             |
@@ -64,6 +64,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `entity_spawn`                  | Triggered when an entity spawns                                                                                   | 1                                             |
 | `entity_target`                 | Triggered when an entity targets another entity                                                                   | 1                                             |
 | `entity_teleport`               | Triggered when an entity teleports                                                                                | 1                                             |
+| `exit_claim`                    | Triggered when exiting a claimed area **Requires HuskTowns \|\|   HuskClaims \|\| Lands**                         | 1                                             |
 | `fall_damage`                   | Triggered when taking fall damage                                                                                 | The damage taken                              |
 | `fill_bucket`                   | Triggered when filling a bucket                                                                                   | 1                                             |
 | `gain_battlepass_xp`            | Triggered when gaining battlepass XP **Requires xBattlepass**                                                     | The experience gained                         |
@@ -91,7 +92,6 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `leash_entity`                  | Triggered when leashing an entity                                                                                 | 1                                             |
 | `leave`                         | Triggered when leaving the server                                                                                 | 1                                             |
 | `leave_bed`                     | Triggered when leaving a bed                                                                                      | 1                                             |
-| `leave_claimed_land`            | Triggered when leaving claimed land **Requires HuskTowns \|\| HuskClaims**                                        | 1                                             |
 | `leave_job`                     | Triggered when leaving a job **Requires EcoJobs**                                                                 | The job level                                 |
 | `leave_region`                  | Triggered when leaving a region **Requires WorldGuard**                                                           | 1                                             |
 | `leave_town`                    | Triggered when leaving a Town **Requires HuskTowns**                                                              | 1                                             |
@@ -149,7 +149,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `toggle_sprint`                 | Triggered when changing the sprint state                                                                          | 1                                             |
 | `trident_attack`                | Triggered on injuring an entity with a thrown trident **Requires Paper**                                          | The damage dealt                              |
 | `try_inscribe`                  | Triggered when attempting to inscribe a scroll **Requires EcoScrolls**                                            | 1                                             |
-| `unclaim_land`                  | Triggered when unclaiming land **Requires HuskTowns \|\| HuskClaims**                                             | 1                                             |
+| `unclaim`                       | Triggered when unclaiming an area **Requires HuskTowns \|\| HuskClaims**                                          | 1                                             |
 | `unleash_entity`                | Triggered when unleashing an entity                                                                               | 1                                             |
 | `use_fertilizer`                | Triggered when using fertilizer **Requires CustomCrops**                                                          | 1                                             |
 | `use_flower_pot`                | Triggered when a player insets or extracts a plant from a flower pot **Requires Paper**                           | 1                                             |
