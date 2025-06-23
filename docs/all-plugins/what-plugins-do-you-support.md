@@ -80,6 +80,8 @@ If a plugin isn't on this list, it doesn't mean it wont work, it just means that
 - MultiverseInventories
 - Essentials
 - CustomCrafting
+- CustomFishing
+- CustomCrops
 - Model Engine
 - NuVotifier
 - AxEnvoy
