@@ -6,7 +6,7 @@ The list of [potion effects](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit
 # Example Config
 ```yaml
 filters:
-  potion_effect:
-    - confusion
+  potion_effect: # The list of potion effects
+    - blindness
     - wither
 ```
