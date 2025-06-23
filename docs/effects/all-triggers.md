@@ -14,7 +14,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `beacon_effect`                 | Triggered when a player gains effects from a beacon **Requires Paper**                                            | 1                                             |
 | `bite`                          | Triggered when a fish bites on your rod                                                                           | 1                                             |
 | `block_item_drop`               | Triggered when a mined block drops loot                                                                           | The amount of items dropped                   |
-| `bonemeal_crop`                 | Triggered when using bonemeal on a crop                                                                           | 1                                             |
+| `bonemeal_crop`                 | Triggered when using bonemeal on a crop **Supports CustomCrops**                                                  | 1                                             |
 | `bow_attack`                    | Triggered when shooting an entity with a bow and arrow (or crossbow)                                              | The damage dealt                              |
 | `breed`                         | Triggered when breeding entities together                                                                         | The experience received                       |
 | `brew`                          | Triggered when brewing a potion in a brewing stand                                                                | 1                                             |
@@ -26,8 +26,10 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `catch_fish_fail`               | Triggered when failing to catch a fish                                                                            | 1                                             |
 | `change_armor`                  | Triggered when changing armor                                                                                     | 1                                             |
 | `change_chunk`                  | Triggered when changing chunk                                                                                     | 1                                             |
+| `change_town_role`              | Triggered when changing town role **Requires HuskTowns**                                                          | 1                                             |
 | `change_world`                  | Triggered when changing world                                                                                     | 1                                             |
 | `claim_battlepass_reward`       | Triggered when claiming a battlepass reward **Requires xBattlepass**                                              | 1                                             |
+| `claim_land`                    | Triggered when claiming land **Requires HuskTowns \|\| HuskClaims**                                               | 1                                             |
 | `click_block`                   | Triggered when right-clicking on a block                                                                          | 1                                             |
 | `click_entity`                  | Triggered when right-clicking on an entity                                                                        | 1                                             |
 | `collect_envoy`                 | Triggered when collecting an envoy crate **Requires AxEnvoy**                                                     | 1                                             |
@@ -37,10 +39,12 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `complete_task`                 | Triggered when completing a task **Requires EcoQuests**                                                           | 1                                             |
 | `consume`                       | Triggered on item consumption                                                                                     | 1                                             |
 | `craft`                         | Triggered when crafting an item                                                                                   | The amount of items crafted                   |
+| `create_town`                   | Triggered when creating a Town **Requires HuskTowns**                                                             | 1                                             |
 | `damage_item`                   | Triggered when damaging an item                                                                                   | The damage                                    |
 | `death`                         | Triggered on death from any sources                                                                               | 1                                             |
 | `deploy_elytra`                 | Triggered when the player starts elytra gliding                                                                   | 1                                             |
 | `disable`                       | Triggered when an item / enchant / etc disables                                                                   | 1                                             |
+| `disband_town`                  | Triggered when disbanding a Town **Requires HuskTowns**                                                           | 1                                             |
 | `drop_item`                     | Triggered when dropping an item                                                                                   | The amount of items                           |
 | `elytra_boost`                  | Triggered when a player boosts an elytra **Requires Paper**                                                       | 1                                             |
 | `empty_bucket`                  | Triggered when emptying a bucket                                                                                  | 1                                             |
@@ -48,6 +52,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `enchant_<type>`                | Triggered when enchanting an item with a certain type of enchantment **Requires EcoEnchants**                     | The xp cost                                   |
 | `enchant_item`                  | Triggered when enchanting an item                                                                                 | The xp cost                                   |
 | `enter_bed`                     | Triggered when entering a bed                                                                                     | 1                                             |
+| `enter_claimed_land`            | Triggered when entering claimed land **Requires HuskTowns \|\| HuskClaims**                                       | 1                                             |
 | `enter_region`                  | Triggered when entering a region **Requires WorldGuard**                                                          | 1                                             |
 | `entity_break_door`             | Triggered when an entity breaks a door                                                                            | 1                                             |
 | `entity_catch_fire_from_block`  | Triggered when an entity catches fire from a block                                                                | 1                                             |
@@ -70,6 +75,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `gain_task_xp`                  | Triggered when gaining task XP **Requires EcoQuests**                                                             | The experience gained                         |
 | `gain_xp`                       | Triggered when gaining experience points                                                                          | The xp gained                                 |
 | `global_static_%interval%`      | Run every x ticks for the server, eg `global_static_20` would run every second                                    | 1                                             |
+| `harvest_custom_crop`           | Triggered when harvesting a custom crop **Requires CustomCrops**                                                  | 1                                             |
 | `headshot`                      | Triggered when hitting an enemy with a projectile in the head                                                     | The damage dealt                              |
 | `heal`                          | Triggered when regaining health                                                                                   | The health regained                           |
 | `hold_item`                     | Triggered when changing your held item                                                                            | 1                                             |
@@ -79,13 +85,16 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `jobs_level_up`                 | Triggered when levelling up a job **Requires Jobs Reborn**                                                        | The new level                                 |
 | `join`                          | Triggered when joining the server                                                                                 | 1                                             |
 | `join_job`                      | Triggered when joining a job **Requires EcoJobs**                                                                 | The job level                                 |
+| `join_town`                     | Triggered when joining a Town **Requires HuskTowns**                                                              | 1                                             |
 | `jump`                          | Triggered when Jumping (pressing space)                                                                           | 1                                             |
 | `kill`                          | Triggered when a player kills a player or entity                                                                  | The victim's max health                       |
 | `leash_entity`                  | Triggered when leashing an entity                                                                                 | 1                                             |
 | `leave`                         | Triggered when leaving the server                                                                                 | 1                                             |
 | `leave_bed`                     | Triggered when leaving a bed                                                                                      | 1                                             |
+| `leave_claimed_land`            | Triggered when leaving claimed land **Requires HuskTowns \|\| HuskClaims**                                        | 1                                             |
 | `leave_job`                     | Triggered when leaving a job **Requires EcoJobs**                                                                 | The job level                                 |
 | `leave_region`                  | Triggered when leaving a region **Requires WorldGuard**                                                           | 1                                             |
+| `leave_town`                    | Triggered when leaving a Town **Requires HuskTowns**                                                              | 1                                             |
 | `left_click_npc`                | Triggered when left-clicking an NPC **Requires Citizens \|\| FancyNpcs**                                          | 1                                             |
 | `level_down_mcmmo`              | Triggered when levelling down McMMO skill **Requires McMMO**                                                      | The new level                                 |
 | `level_up_item`                 | Triggered when levelling up an item                                                                               | The new item level                            |
@@ -104,6 +113,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `move`                          | Triggered on all movement: looking around, walking                                                                | The distance moved                            |
 | `pick_up_item`                  | Triggered when picking up an item                                                                                 | The amount of items                           |
 | `place_block`                   | Triggered when placing a block                                                                                    | 1                                             |
+| `plant_custom_crop`             | Triggered when planting a custom crop **Requires CustomCrops**                                                    | 1                                             |
 | `player_trade`                  | Triggered when trading with a player **Required AxTrade**                                                         | The total amount of items traded              |
 | `potion_effect`                 | Triggered when gaining a potion effect                                                                            | 1                                             |
 | `projectile_hit`                | Triggered when hitting a block or an entity with a projectile (arrow, trident, splash potion, egg, snowball)      | 1                                             |
@@ -139,7 +149,10 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `toggle_sprint`                 | Triggered when changing the sprint state                                                                          | 1                                             |
 | `trident_attack`                | Triggered on injuring an entity with a thrown trident **Requires Paper**                                          | The damage dealt                              |
 | `try_inscribe`                  | Triggered when attempting to inscribe a scroll **Requires EcoScrolls**                                            | 1                                             |
+| `unclaim_land`                  | Triggered when unclaiming land **Requires HuskTowns \|\| HuskClaims**                                             | 1                                             |
 | `unleash_entity`                | Triggered when unleashing an entity                                                                               | 1                                             |
+| `use_fertilizer`                | Triggered when using fertilizer **Requires CustomCrops**                                                          | 1                                             |
 | `use_flower_pot`                | Triggered when a player insets or extracts a plant from a flower pot **Requires Paper**                           | 1                                             |
+| `use_watering_can`              | Triggered when using a watering can **Requires CustomCrops**                                                      | 1                                             |
 | `villager_trade`                | Triggered when trading with a villager **Requires Paper**                                                         | The experience the villager gains             |
 | `win_raid`                      | Triggered when a player wins a raid                                                                               | The level of bad omen                         |
