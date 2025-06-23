@@ -3,8 +3,7 @@ title: "All Triggers"
 sidebar_position: 7
 ---
 
-Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect
-is active
+Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect is active
 
 Triggered effects also produce a value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders),
 and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
@@ -105,6 +104,7 @@ and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 | `move`                          | Triggered on all movement: looking around, walking                                                                | The distance moved                            |
 | `pick_up_item`                  | Triggered when picking up an item                                                                                 | The amount of items                           |
 | `place_block`                   | Triggered when placing a block                                                                                    | 1                                             |
+| `player_trade`                  | Triggered when trading with a player **Required AxTrade**                                                         | The total amount of items traded              |
 | `potion_effect`                 | Triggered when gaining a potion effect                                                                            | 1                                             |
 | `projectile_hit`                | Triggered when hitting a block or an entity with a projectile (arrow, trident, splash potion, egg, snowball)      | 1                                             |
 | `projectile_launch`             | Triggered when launching a projectile (arrow, trident, splash potion, egg, snowball)                              | 1                                             |

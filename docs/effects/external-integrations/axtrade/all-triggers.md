@@ -8,8 +8,7 @@ Triggered effects require a trigger, permanent effects do not support triggers a
 Triggered effects also produce a value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders),
 and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 
-| ID                | Description                          | Value Provided |
-| ----------------- | ------------------------------------ | -------------- |
-| `left_click_npc`  | Triggered when left-clicking an NPC  | 1              |
-| `right_click_npc` | Triggered when right-clicking an NPC | 1              |
+| ID             | Description                          | Value Provided               |
+| -------------- | ------------------------------------ | ---------------------------- |
+| `player_trade` | Triggered when trading with a player | Total number of items traded |
 
