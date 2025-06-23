@@ -1,12 +1,12 @@
 # `permanent_potion_effect`
 #### Permanent Effect
 
-Gives a permanent potion effect
+Gives a permanent [potion effect](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
 
 # Example Config
 ```yaml
 - id: permanent_potion_effect
   args:
-    effect: confusion # The effect to give (https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
+    effect: blindness # The effect to give
     level: 2 # The effect level to give
 ```
