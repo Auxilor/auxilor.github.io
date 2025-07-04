@@ -19,27 +19,29 @@ ID's must be lowercase letters, numbers, and underscores only.
 name: "&6Tiger" # The display name of the pet
 description: "&8&oLevel up by dealing melee damage" # The description of the pet
 
-# The xp requirements for each pet level - add new levels by adding more to this list
-level-xp-requirements:
-  - 50
-  - 125
-  - 200
-  - 300
-  - 500
-  - 750
-  - 1000
-  - 1500
-  - 2000
-  - 3500
-  - 5000
-  - 7500
-  - 10000
-  - 15000
-  - 20000
-  - 30000
-  - 50000
-  - 75000
-  - 100000
+# There are two ways to specify level XP requirements:  
+# 1. A formula to calculate for infinite levels  
+# 2. A list of XP requirements for each level  
+  
+# Formula  
+# xp-formula: (2 ^ %level%) * 25  
+# max-level: 100 # (Optional) The max level, if not specified, there is no max level  
+  
+# List  
+xp-requirements:  
+- 50  
+- 125  
+- 200  
+- 300  
+- 500  
+- 750  
+- 1000  
+- 1500  
+- 2000  
+- 3500  
+- 5000  
+- 7500  
+- 10000
 
 # An XP gain method takes a trigger, a multiplier, conditions, and filters.
 # The 'multiplier' takes the value produced by the trigger and multiplies it
@@ -76,12 +78,19 @@ level-up-messages:
     - "&8» &8Gives a &a+%damage_multiplier%%&8 bonus to"
     - "   &8melee damage"
 
-# Commands to be sent on levelup, can be formatted two ways:
-# level:command (e.g. 10:eco give %player% 1000), which would execute that command for level 10
-# command (e.g. eco give %player% 5000), which would execute that command for all levels
-level-commands:
-	- 1:eco give %player% 1000 # Runs the command at level 1
-	- eco give %player% 1000 # Runs the command at every level up
+# Effects to run when the pet levels up  
+# %level% is the level the pet leveled up to.  
+# If you want to restrict this to certain levels, you can use  
+# require: %level% = 20, or require: %level% < 50, etc.  
+# If you want a reward to run every x levels, you can use  
+# every: 1, or every: 12, etc  
+level-up-effects:  
+  - id: give_item  
+    args:  
+      items:  
+        - diamond  
+      every: 5 # Gives the reward every 5 levels  
+      require: "%level% = 5" # Requires level 5 before receiving rewards
 
 # The effects for the pet, has %level% as a placeholder
 effects:
@@ -112,7 +121,7 @@ spawn-egg:
     - "&8&ounlock the &r&6Tiger&8&o pet!"
   craftable: false
   recipe: [ ]
-  # recipe-permission: ecopets.craft.tiger
+  recipe-permission: ecopets.craft.tiger
 ```
 
 ## Understanding all the sections
@@ -128,6 +137,10 @@ xp-requirements:
   - 125
   - 200
 ```
+
+**xp-formula:** A formula to calculate XP requirements for each level.
+
+**max-level:** The maximum level for the pet (Optional).
 
 **xp-gain-methods:** The trigger, multiplier/value, conditions and filters that will award pet XP.
 

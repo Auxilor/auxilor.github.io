@@ -180,6 +180,10 @@ xp-requirements:
   - 200
 ```
 
+**xp-formula:** A formula to calculate XP requirements for each level.
+
+**max-level:** The maximum level for the job (Optional).
+
 **xp-gain-methods:** The trigger, multiplier/value, conditions and filters that will award job XP.
 
 **level-placeholders:** Custom placeholders to be used in descriptions.
