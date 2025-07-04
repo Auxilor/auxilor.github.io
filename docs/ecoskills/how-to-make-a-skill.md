@@ -81,14 +81,6 @@ xp-requirements:
   - 5000
   - 7500
   - 10000
-  - 15000
-  - 20000
-  - 30000
-  - 50000
-  - 75000
-  - 100000
-  - 200000
-  - 300000
 
 # The rewards given on level up
 # You specify a reward (either a stat or an effect),
