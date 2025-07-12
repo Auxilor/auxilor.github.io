@@ -74,6 +74,7 @@ When using exact item NBT, you can't use `?`. `||`, or other modifiers.
 Items can  have modifiers applied to them. For example, lets say you're configuring the GUI for EcoSkills. You want it to be a player head with a texture, but you're not sure how to do that, because it looks like you have to just specify a material. Actually, in all eco plugins, wherever it asks for a material, it's actually doing a lookup. You can specify any of the following modifiers to it:
 
 - **Enchantments:** You can specify an enchantment with `<enchantment>:<level>`
+- Stack Quantity: You can specify a stack quantity by using the amount, e.g. `iron_ingot 32`
 - **Skull Texture:** If the material is a player head, you can specify the texture with `texture:<base64>`. A list of skulls and textures can be found [here](https://minecraft-heads.com/).
 - **Player Head:** If the material is a player head, you can specify a player using `head:<name>`. You can also use placeholders, e.g. `head:%player%`
 - **Reforge:** You can specify the reforge by adding `reforge:<id>` to the key.
@@ -97,17 +98,17 @@ So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weap
 
 ## Using items in eco plugins
 
-| Plugin       | Item Lookup Key                                                                                                     |
-| ------------ | ------------------------------------------------------------------------------------------------------------------- |
-| EcoArmor     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:upgrade_crystal_<id>` |
-| EcoCrates    | `ecocrates:<crate>_key`                                                                                             |
-| EcoItems     | `ecoitems:<id>`                                                                                                     |
-| EcoMobs      | `ecomobs:<id>_spawn_egg`                                                                                            |
-| EcoPets      | `ecopets:<id>_spawn_egg`                                                                                            |
-| EcoScrolls   | `ecoscrolls:scroll_<id>`                                                                                            |
-| Reforges     | `reforges:stone_<id>`                                                                                               |
-| StatTrackers | `stattrackers:<id>`                                                                                                 |
-| Talismans    | `talismans:<id>`                                                                                                    |
+| Plugin       | Item Lookup Key                                                                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------------- |
+| EcoArmor     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:crystal_<id>` |
+| EcoCrates    | `ecocrates:<crate>_key`                                                                                     |
+| EcoItems     | `ecoitems:<id>`                                                                                             |
+| EcoMobs      | `ecomobs:<id>_spawn_egg`                                                                                    |
+| EcoPets      | `ecopets:<id>_spawn_egg`                                                                                    |
+| EcoScrolls   | `ecoscrolls:scroll_<id>`                                                                                    |
+| Reforges     | `reforges:stone_<id>`                                                                                       |
+| StatTrackers | `stattrackers:<id>`                                                                                         |
+| Talismans    | `talismans:<id>`                                                                                            |
 
 ## Using item tags in eco plugins
 
@@ -143,7 +144,7 @@ Sometimes custom item IDs are namespaced. In order to make this work, you have t
 | Plugin     | Item Lookup Key                                                                                                                                      |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ItemsAdder | `itemsadder:<namespace>__<key>`, example below.                                                                                                      |
-| Oraxen     | `oraxen:<id>`, eg: `oraxen:alumite_pickaxe`                                                                                                          |
+| Oraxen     | `oraxen:<id>`, e.g. `oraxen:alumite_pickaxe`                                                                                                         |
 | ItemBridge | `itembridge:saved__<id>` for items you've saved within ItemBridge. You can use `itembridge:<prefix>__<id>` for plugin items supported in ItemBridge. |
 
 ### ItemsAdder
