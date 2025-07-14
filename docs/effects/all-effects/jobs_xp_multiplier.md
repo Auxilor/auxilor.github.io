@@ -6,7 +6,7 @@ This effect is permanent and does not require a trigger.
 Multiplies xp gain from jobs
 
 
-:::dangerRequires:
+:::infoRequires:
 Jobs Reborn
 :::
 

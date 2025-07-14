@@ -2,7 +2,7 @@
 
 Requires a player to be in rain
 
-:::dangerRequires:
+:::infoRequires:
 Paper
 :::
 

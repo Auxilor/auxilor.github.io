@@ -2,7 +2,7 @@
 
 Requires a player to have a job active
 
-:::dangerRequires:
+:::infoRequires:
 EcoJobs
 :::
 

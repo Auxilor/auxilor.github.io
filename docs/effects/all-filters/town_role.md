@@ -2,7 +2,7 @@
 
 The list of town roles the effect should activate on
 
-:::dangerRequires:
+:::infoRequires:
 HuskTowns
 :::
 # Filter Syntax

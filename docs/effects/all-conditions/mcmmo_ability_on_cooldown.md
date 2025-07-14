@@ -2,7 +2,7 @@
 
 Requires an McMMO ability to be on cooldown
 
-:::dangerRequires:
+:::infoRequires:
 McMMO
 :::
 

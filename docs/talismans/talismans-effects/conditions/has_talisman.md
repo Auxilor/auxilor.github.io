@@ -3,7 +3,7 @@
 Requires a player to have a certain talisman active
 
 
-:::dangerRequires:
+:::infoRequires:
 Talismans
 :::
 

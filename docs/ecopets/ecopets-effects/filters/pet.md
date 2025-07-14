@@ -2,7 +2,7 @@
 
 Require a certain pet
 
-:::dangerRequires:
+:::infoRequires:
 EcoJobs
 :::
 

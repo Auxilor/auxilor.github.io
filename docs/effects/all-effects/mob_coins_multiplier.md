@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies mob coin drops
 
-:::dangerRequires:
+:::infoRequires:
 Flare Mobcoins
 :::
 

@@ -2,7 +2,7 @@
 
 Requires the player is in a declared war with the victim
 
-:::dangerRequires:
+:::infoRequires:
 Lands
 :::
 # Filter Syntax

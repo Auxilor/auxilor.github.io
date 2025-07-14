@@ -8,7 +8,7 @@ Triggered effects require a trigger, permanent effects do not support triggers a
 Triggered effects also produce a value, and some product an alt-value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders), and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 
 | ID                              | Description                                                                                                       | Value                                         | Alt-Value       |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | --------------- |
+| ------------------------------- |-------------------------------------------------------------------------------------------------------------------| --------------------------------------------- | --------------- |
 | `alt_click`                     | Triggered when using Right Click on most items, Left Click on those that have a default right click functionality | 1                                             | -               |
 | `beacon_effect`                 | Triggered when a player gains effects from a beacon **Requires Paper**                                            | 1                                             | -               |
 | `bite`                          | Triggered when a fish bites on your rod                                                                           | 1                                             | -               |
@@ -31,9 +31,7 @@ Triggered effects also produce a value, and some product an alt-value, which can
 | `claim_battlepass_reward`       | Triggered when claiming a battlepass reward **Requires xBattlepass**                                              | 1                                             | -               |
 | `click_block`                   | Triggered when right-clicking on a block                                                                          | 1                                             | -               |
 | `click_entity`                  | Triggered when right-clicking on an entity                                                                        | 1                                             | -               |
-| `collect_envoy`                 | Triggered when collecting an envoy crate :::dangerRequires:
-AxEnvoy
-:::                                                     | 1                                             | -               |
+| `collect_envoy`                 | Triggered when collecting an envoy crate **Requires AxEnvoy**                                                     | 1                                             | -               |
 | `complete_advancement`          | Triggered when completing an advancement                                                                          | 1                                             | -               |
 | `complete_battlepass_task`      | Triggered when completing a battlepass task **Requires xBattlepass**                                              | 1                                             | -               |
 | `complete_quest`                | Triggered when completing a quest **Requires EcoQuests**                                                          | 1                                             | -               |

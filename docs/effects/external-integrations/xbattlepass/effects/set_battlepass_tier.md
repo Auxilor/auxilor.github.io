@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Set the player's battlepass tier
 
-:::dangerRequires:
+:::infoRequires:
 xBattlepass
 :::
 # Example Config

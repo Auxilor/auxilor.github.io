@@ -2,7 +2,7 @@
 
 The list of battlepass rewards the effect should activate on
 
-:::dangerRequires:
+:::infoRequires:
 xBattlepass
 :::
 # Filter Syntax

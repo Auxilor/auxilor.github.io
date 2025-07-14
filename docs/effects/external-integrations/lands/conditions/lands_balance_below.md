@@ -2,7 +2,7 @@
 
 Requires the Land's bank balance to be below a value
 
-:::dangerRequires:
+:::infoRequires:
 Lands
 :::
 # Example Config

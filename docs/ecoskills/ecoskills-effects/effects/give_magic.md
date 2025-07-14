@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Add / subtract magic
 
-:::dangerRequires:
+:::infoRequires:
 EcoSkills
 :::
 

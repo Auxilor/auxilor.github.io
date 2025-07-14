@@ -2,7 +2,7 @@
 
 Require a certain NPC
 
-:::dangerRequires:
+:::infoRequires:
 Citizens || FancyNpcs
 :::
 

@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies how long an entity is on fire after being ignited
 
-:::dangerRequires:
+:::infoRequires:
 Server Version 1.21+
 :::
 

@@ -2,7 +2,7 @@
 
 Requires a player to have a certain role in a town
 
-:::dangerRequires:
+:::infoRequires:
 HuskTowns
 :::
 # Condition Syntax

@@ -2,7 +2,7 @@
 
 The list of crop types the effect should activate on
 
-:::dangerRequires:
+:::infoRequires:
 CustomCrops
 :::
 # Example Config

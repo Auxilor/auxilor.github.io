@@ -2,7 +2,7 @@
 
 Allows a mob to teleport around randomly
 
-:::dangerRequires:
+:::infoRequires:
 EcoMobs
 :::
 

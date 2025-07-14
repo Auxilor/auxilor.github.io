@@ -2,7 +2,7 @@
 
 Requires a player to have the premium battlepass
 
-:::dangerRequires:
+:::infoRequires:
 xBattlepass
 :::
 # Condition Syntax

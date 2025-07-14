@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies job xp gain
 
-:::dangerRequires:
+:::infoRequires:
 EcoJobs
 :::
 

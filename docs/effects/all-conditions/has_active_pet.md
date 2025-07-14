@@ -2,7 +2,7 @@
 
 Requires a player to have a pet active
 
-:::dangerRequires:
+:::infoRequires:
 EcoPets
 :::
 

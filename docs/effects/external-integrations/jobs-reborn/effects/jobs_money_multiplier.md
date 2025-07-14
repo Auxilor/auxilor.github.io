@@ -6,7 +6,7 @@ This effect is permanent and does not require a trigger.
 Multiplies money gain from jobs
 
 
-:::dangerRequires:
+:::infoRequires:
 Jobs Reborn
 :::
 

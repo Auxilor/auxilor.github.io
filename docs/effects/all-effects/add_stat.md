@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Adds a value to a specific stat
 
-:::dangerRequires:
+:::infoRequires:
 EcoSkills / AuraSkills
 :::
 

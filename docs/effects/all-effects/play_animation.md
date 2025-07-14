@@ -6,7 +6,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 Plays a Model Engine animation (The entity must have a custom model active)
 
 
-:::dangerRequires:
+:::infoRequires:
 Model Engine
 :::
 
