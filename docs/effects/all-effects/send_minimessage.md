@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Sends the player a minimessage message, supports clickable components, etc.
 
-:::dangerRequires:
+:::infoRequires:
 Paper
 :::
 

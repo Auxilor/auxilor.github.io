@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies movement speed through difficult terrain
 
-:::dangerRequires:
+:::infoRequires:
 Server Version 1.21+
 :::
 

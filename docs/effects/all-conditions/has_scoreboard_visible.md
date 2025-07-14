@@ -2,7 +2,7 @@
 
 Requires a player to have the TAB scoreboard shown to them
 
-:::dangerRequires:
+:::infoRequires:
 TAB
 :::
 

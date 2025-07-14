@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Adds mining efficiency (mining speed when using the correct tool)
 
-:::dangerRequires:
+:::infoRequires:
 Server Version 1.21+
 :::
 

@@ -2,7 +2,7 @@
 
 Requires a player to have a certain battlepass tier
 
-:::dangerRequires:
+:::infoRequires:
 xBattlepass
 :::
 # Condition Syntax

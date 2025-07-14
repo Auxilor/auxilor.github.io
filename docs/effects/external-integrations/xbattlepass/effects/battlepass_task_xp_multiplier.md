@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies incoming battlepass task xp gain
 
-:::dangerRequires:
+:::infoRequires:
 xBattlepass
 :::
 # Example Config

@@ -2,7 +2,7 @@
 
 The list of fish types the effect should activate on
 
-:::dangerRequires:
+:::infoRequires:
 CustomFishing
 :::
 # Example Config

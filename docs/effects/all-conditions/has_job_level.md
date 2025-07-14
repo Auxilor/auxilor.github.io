@@ -2,7 +2,7 @@
 
 Requires a player to have a certain job level
 
-:::dangerRequires:
+:::infoRequires:
 EcoJobs
 :::
 

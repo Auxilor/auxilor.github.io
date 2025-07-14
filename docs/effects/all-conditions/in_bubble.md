@@ -2,7 +2,7 @@
 
 Requires a player to be in a bubble column
 
-:::dangerRequires:
+:::infoRequires:
 Paper
 :::
 

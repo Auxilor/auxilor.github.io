@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Takes money from the player
 
-:::dangerRequires:
+:::infoRequires:
 Vault
 :::
 

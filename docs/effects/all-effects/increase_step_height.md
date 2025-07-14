@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Increases the amount of blocks you can walk over without jumping
 
-:::dangerRequires:
+:::infoRequires:
 Server Version 1.21+
 :::
 

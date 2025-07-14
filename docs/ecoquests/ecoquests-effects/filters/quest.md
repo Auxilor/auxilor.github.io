@@ -2,7 +2,7 @@
 
 Require a certain quest
 
-:::dangerRequires:
+:::infoRequires:
 EcoQuests
 :::
 

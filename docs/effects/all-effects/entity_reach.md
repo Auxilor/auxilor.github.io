@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Adds reach for interacting with entities
 
-:::dangerRequires:
+:::infoRequires:
 Server Version 1.21+
 :::
 

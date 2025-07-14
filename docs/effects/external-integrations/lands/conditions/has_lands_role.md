@@ -2,7 +2,7 @@
 
 Requires a player to have a certain role in the Land
 
-:::dangerRequires:
+:::infoRequires:
 Lands
 :::
 # Example Config

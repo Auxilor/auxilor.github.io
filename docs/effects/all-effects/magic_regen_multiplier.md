@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies magic regeneration
 
-:::dangerRequires:
+:::infoRequires:
 EcoSkills
 :::
 

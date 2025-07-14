@@ -2,7 +2,7 @@
 
 Requires a player to have a certain McMMO skill level
 
-:::dangerRequires:
+:::infoRequires:
 McMMO
 :::
 

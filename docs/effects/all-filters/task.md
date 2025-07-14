@@ -2,7 +2,7 @@
 
 Require a certain task
 
-:::dangerRequires:
+:::infoRequires:
 EcoQuests
 :::
 
