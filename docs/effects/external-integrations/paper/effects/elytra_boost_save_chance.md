@@ -1,5 +1,5 @@
 # `elytra_boost_save_chance`
-:::infoPermanent Effect
+:::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 

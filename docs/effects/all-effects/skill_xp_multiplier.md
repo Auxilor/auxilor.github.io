@@ -1,5 +1,5 @@
 # `skill_xp_multiplier`
-:::infoPermanent Effect
+:::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 

@@ -1,5 +1,5 @@
 # `multiply_all_stats`
-:::infoPermanent Effect
+:::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 

@@ -1,5 +1,5 @@
 # `rapid_bows`
-:::infoPermanent Effect
+:::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 

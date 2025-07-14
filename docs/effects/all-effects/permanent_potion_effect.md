@@ -1,5 +1,5 @@
 # `permanent_potion_effect`
-:::infoPermanent Effect
+:::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 

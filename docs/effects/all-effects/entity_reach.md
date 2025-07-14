@@ -1,5 +1,5 @@
 # `entity_reach`
-:::infoPermanent Effect
+:::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
