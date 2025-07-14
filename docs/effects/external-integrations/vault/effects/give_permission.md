@@ -1,6 +1,5 @@
 # `give_permission`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Gives a permission while active
 

@@ -1,6 +1,5 @@
 # `remove_item_data`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Remove item data
 

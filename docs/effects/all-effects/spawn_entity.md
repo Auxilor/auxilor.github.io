@@ -1,6 +1,5 @@
 # `spawn_entity`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Spawns an [entity](https://plugins.auxilor.io/all-plugins/the-entity-lookup-system)
 

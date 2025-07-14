@@ -1,5 +1,5 @@
 # `multiply_global_points`
-:::dangerTriggered Effect
+:::danger[Triggered Effect]
 :::
 
 Multiply global points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)

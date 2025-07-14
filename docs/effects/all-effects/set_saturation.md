@@ -1,6 +1,5 @@
 # `set_saturation`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Sets the player's saturation
 

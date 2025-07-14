@@ -1,6 +1,5 @@
 # `gravity_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies gravity
 

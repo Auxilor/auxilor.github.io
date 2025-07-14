@@ -1,7 +1,6 @@
 # `create_hologram`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Creates a hologram temporarily (Requires a hologram plugin to be installed)
 

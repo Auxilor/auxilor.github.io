@@ -1,6 +1,5 @@
 # `autosmelt`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Autosmelts drops (requires a drop trigger)
 

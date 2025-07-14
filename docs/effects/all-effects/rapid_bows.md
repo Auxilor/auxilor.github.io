@@ -1,6 +1,5 @@
 # `rapid_bows`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Allows bows to be shot at full speed without pulling back as far
 

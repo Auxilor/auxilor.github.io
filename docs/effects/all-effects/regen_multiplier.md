@@ -1,6 +1,5 @@
 # `regen_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies regen speed
 

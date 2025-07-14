@@ -1,7 +1,6 @@
 # `open_crafting`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Opens a crafting table for the player
 

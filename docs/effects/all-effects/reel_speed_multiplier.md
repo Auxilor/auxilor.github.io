@@ -1,6 +1,5 @@
 # `reel_speed_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies the speed at which you pull in entities and drops with fishing rods
 

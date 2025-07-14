@@ -1,6 +1,5 @@
 # `make_skill_crit`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Deal a crit hit
 

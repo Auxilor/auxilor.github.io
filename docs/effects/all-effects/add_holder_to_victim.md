@@ -1,6 +1,5 @@
 # `add_holder_to_victim`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Gives a custom holder temporarily to your victim (they must be a player) for a given period of time
 

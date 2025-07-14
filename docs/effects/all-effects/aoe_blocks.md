@@ -1,7 +1,6 @@
 # `aoe_blocks`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Runs effects for all blocks within an area of effect
 

@@ -1,6 +1,5 @@
 # `smite`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Strikes lightning on a victim
 

@@ -1,6 +1,5 @@
 # `run_player_command`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Runs a command as a player
 

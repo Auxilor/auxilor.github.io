@@ -1,6 +1,5 @@
 # `give_skill_xp_naturally`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Gives naturally-gained experience points for a certain skill
 

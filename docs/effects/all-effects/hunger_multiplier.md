@@ -1,6 +1,5 @@
 # `hunger_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies hunger loss
 

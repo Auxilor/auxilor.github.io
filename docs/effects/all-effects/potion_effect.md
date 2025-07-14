@@ -1,6 +1,5 @@
 # `potion_effect`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Gives a [potion](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html) effect
 

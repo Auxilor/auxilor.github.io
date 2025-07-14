@@ -1,6 +1,5 @@
 # `burning_time_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies how long an entity is on fire after being ignited
 

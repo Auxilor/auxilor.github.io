@@ -1,6 +1,5 @@
 # `pull_to_location`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Get pulled to a location
 

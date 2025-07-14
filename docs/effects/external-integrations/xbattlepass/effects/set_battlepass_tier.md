@@ -1,6 +1,5 @@
 # `set_battlepass_tier`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Set the player's battlepass tier
 

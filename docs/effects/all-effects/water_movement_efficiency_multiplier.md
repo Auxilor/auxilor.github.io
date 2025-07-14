@@ -1,6 +1,5 @@
 # `water_movement_efficiency_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies water movement efficiency
 

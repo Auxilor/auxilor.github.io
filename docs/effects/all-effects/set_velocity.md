@@ -1,6 +1,5 @@
 # `set_velocity`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Sets your velocity
 

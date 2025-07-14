@@ -1,6 +1,5 @@
 # `sell_items`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Sells dropped items / item from trigger
 

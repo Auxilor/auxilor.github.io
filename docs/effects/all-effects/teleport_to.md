@@ -1,6 +1,5 @@
 # `teleport_to`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Teleport a player to a specific location
 

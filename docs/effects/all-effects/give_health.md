@@ -1,6 +1,5 @@
 # `give_health`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Gives the player health
 

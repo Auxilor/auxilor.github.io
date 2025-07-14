@@ -1,7 +1,6 @@
 # `start_quest`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Starts a quest for the player
 

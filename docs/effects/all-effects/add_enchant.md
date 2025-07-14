@@ -1,6 +1,5 @@
 # `add_enchant`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Adds an enchant to the item
 

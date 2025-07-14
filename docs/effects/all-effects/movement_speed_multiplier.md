@@ -1,6 +1,5 @@
 # `movement_speed_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies movement speed
 

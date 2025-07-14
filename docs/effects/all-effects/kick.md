@@ -1,6 +1,5 @@
 # `kick`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Kicks the player
 

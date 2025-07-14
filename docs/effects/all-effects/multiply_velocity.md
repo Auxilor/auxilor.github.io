@@ -1,6 +1,5 @@
 # `multiply_velocity`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Multiplies a players velocity
 

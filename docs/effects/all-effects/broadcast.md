@@ -1,6 +1,5 @@
 # `broadcast`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Send a message to everyone online
 

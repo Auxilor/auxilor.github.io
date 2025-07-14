@@ -1,6 +1,5 @@
 # `add_stat`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Adds a value to a specific stat
 

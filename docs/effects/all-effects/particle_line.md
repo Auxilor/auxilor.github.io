@@ -1,6 +1,5 @@
 # `particle_line`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Spawns a line of particles between you and the target location
 

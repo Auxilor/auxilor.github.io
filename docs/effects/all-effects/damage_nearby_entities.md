@@ -1,6 +1,5 @@
 # `damage_nearby_entities`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Damage entities near a location
 

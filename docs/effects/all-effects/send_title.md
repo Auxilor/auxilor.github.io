@@ -1,6 +1,5 @@
 # `send_title`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Send a title/subtitle to the player
 

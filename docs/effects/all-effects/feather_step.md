@@ -1,6 +1,5 @@
 # `feather_step`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Prevents trampling crops
 

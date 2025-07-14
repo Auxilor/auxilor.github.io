@@ -1,6 +1,5 @@
 # `rotate_victim`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Spin the victim around
 

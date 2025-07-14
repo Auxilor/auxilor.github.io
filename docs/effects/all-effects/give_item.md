@@ -1,6 +1,5 @@
 # `give_item`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Gives a player an item
 

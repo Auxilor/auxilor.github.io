@@ -1,6 +1,5 @@
 # `skill_xp_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies skill xp gain
 

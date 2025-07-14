@@ -1,6 +1,5 @@
 # `add_permanent_holder_in_radius`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Gives a custom holder to people within a certain radius of you.
 

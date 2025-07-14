@@ -1,6 +1,5 @@
 # `knock_away`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Knock the victim away from the player
 

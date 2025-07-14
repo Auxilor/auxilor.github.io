@@ -1,6 +1,5 @@
 # `play_animation`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Plays a Model Engine animation (The entity must have a custom model active)
 

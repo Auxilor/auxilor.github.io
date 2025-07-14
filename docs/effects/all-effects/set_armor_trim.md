@@ -1,6 +1,5 @@
 # `set_armor_trim`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Sets item armor trim
 
