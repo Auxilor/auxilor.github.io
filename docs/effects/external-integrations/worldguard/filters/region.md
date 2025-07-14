@@ -3,7 +3,7 @@
 Require a certain region
 
 
-:::warningRequires:
+:::dangerRequires:
 WorldGuard
 :::
 

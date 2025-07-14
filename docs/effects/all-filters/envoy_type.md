@@ -2,7 +2,7 @@
 
 The list of envoy types that the effect should activate against
 
-:::warningRequires:
+:::dangerRequires:
 AxEnvoy
 :::
 

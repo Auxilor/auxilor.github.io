@@ -2,7 +2,7 @@
 
 Requires a player to have amount of mana
 
-:::warningRequires:
+:::dangerRequires:
 AuraSkills
 :::
 

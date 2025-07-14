@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Gains experience points for a task in a quest, including multipliers.
 
-:::warningRequires:
+:::dangerRequires:
 EcoQuests
 :::
 

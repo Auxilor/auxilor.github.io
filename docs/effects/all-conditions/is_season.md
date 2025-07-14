@@ -2,7 +2,7 @@
 
 Requires it to be a certain season
 
-:::warningRequires:
+:::dangerRequires:
 CustomCrops
 :::
 # Condition Syntax

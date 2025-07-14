@@ -2,7 +2,7 @@
 
 Require a certain job
 
-:::warningRequires:
+:::dangerRequires:
 EcoJobs
 :::
 

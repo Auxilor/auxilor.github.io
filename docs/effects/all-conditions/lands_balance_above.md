@@ -2,7 +2,7 @@
 
 Requires the Land's bank balance to be above a value
 
-:::warningRequires:
+:::dangerRequires:
 Lands
 :::
 # Condition Syntax

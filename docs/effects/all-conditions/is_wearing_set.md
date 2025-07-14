@@ -2,7 +2,7 @@
 
 Requires a player to be wearing a certain EcoArmor set
 
-:::warningRequires:
+:::dangerRequires:
 EcoArmor
 :::
 

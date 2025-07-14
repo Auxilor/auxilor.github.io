@@ -6,7 +6,7 @@ This effect is permanent and does not require a trigger.
 Multiplies the chance of mobcoins being dropped
 
 
-:::warningRequires:
+:::dangerRequires:
 UltimateMobCoins
 :::
 

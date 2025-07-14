@@ -3,7 +3,7 @@
 The list of vote services that the effect should activate on
 
 
-:::warningRequires:
+:::dangerRequires:
 Votifier
 :::
 

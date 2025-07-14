@@ -2,7 +2,7 @@
 
 Require a certain magic type
 
-:::warningRequires:
+:::dangerRequires:
 EcoSkills
 :::
 

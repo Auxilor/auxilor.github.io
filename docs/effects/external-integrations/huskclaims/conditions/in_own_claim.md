@@ -2,7 +2,7 @@
 
 Requires the player to be in their own claim
 
-:::warningRequires:
+:::dangerRequires:
 HuskClaims || HuskTowns || Lands
 :::
 # Example Config

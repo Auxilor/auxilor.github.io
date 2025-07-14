@@ -2,7 +2,7 @@
 
 Require a certain pet
 
-:::warningRequires:
+:::dangerRequires:
 EcoPets
 :::
 

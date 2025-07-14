@@ -2,7 +2,7 @@
 
 The list of crop stages the effect should activate on
 
-:::warningRequires:
+:::dangerRequires:
 CustomCrops
 :::
 # Filter Syntax

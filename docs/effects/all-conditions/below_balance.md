@@ -2,7 +2,7 @@
 
 Requires a player to have below a certain amount of money
 
-:::warningRequires:
+:::dangerRequires:
 Vault
 :::
 

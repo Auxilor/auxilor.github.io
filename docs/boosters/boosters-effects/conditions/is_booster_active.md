@@ -2,7 +2,7 @@
 
 Requires a certain booster to be active on the server
 
-:::warningRequires:
+:::dangerRequires:
 Boosters
 :::
 

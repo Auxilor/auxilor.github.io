@@ -2,7 +2,7 @@
 
 Require a certain skill
 
-:::warningRequires:
+:::dangerRequires:
 EcoSkills
 :::
 

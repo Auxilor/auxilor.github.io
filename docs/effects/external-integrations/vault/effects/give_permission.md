@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Gives a permission while active
 
-:::warningRequires:
+:::dangerRequires:
 Vault
 :::
 

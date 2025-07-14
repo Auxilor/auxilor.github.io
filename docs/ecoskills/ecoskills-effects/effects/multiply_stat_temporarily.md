@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Multiplies a stat by a specific value
 
-:::warningRequires:
+:::dangerRequires:
 EcoSkills
 :::
 

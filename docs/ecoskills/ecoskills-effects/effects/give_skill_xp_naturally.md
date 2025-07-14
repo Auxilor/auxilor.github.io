@@ -7,7 +7,7 @@ Gives naturally-gained experience points for a certain skill
 
 This will send a message to a player and will include multipliers.
 
-:::warningRequires:
+:::dangerRequires:
 EcoSkills
 :::
 

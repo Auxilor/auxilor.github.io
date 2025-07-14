@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Give money to a Land's bank balance
 
-:::warningRequires:
+:::dangerRequires:
 Lands
 :::
 

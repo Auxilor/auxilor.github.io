@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Increase the max durability of an item
 
-:::warningRequires:
+:::dangerRequires:
 Server Version 1.21+
 :::
 

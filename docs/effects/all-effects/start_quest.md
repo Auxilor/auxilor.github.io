@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Starts a quest for the player
 
-:::warningRequires:
+:::dangerRequires:
 EcoQuests
 :::
 

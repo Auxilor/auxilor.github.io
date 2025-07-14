@@ -2,7 +2,7 @@
 
 Requires a player to have the TAB boss bar shown to them
 
-:::warningRequires:
+:::dangerRequires:
 TAB
 :::
 
