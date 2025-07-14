@@ -14,7 +14,7 @@ Runs effects for all entities within an area of effect (aoe)
 | `scan_in_front` | Scan for entities in the direction you're looking, and affect the first ones found | `radius` The radius of the scan <br /> `max_distance` The maximum distance to scan                                                                                                                       |
 | `beam`          | A beam in the direction you're looking                                             | `radius` The radius of the beam <br /> `distance` The length of the beam <br /> `pierce_blocks` If the beam should pass through blocks <br /> `pierce_entities` If the beam should pass through entities |
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: aoe

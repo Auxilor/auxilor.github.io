@@ -3,7 +3,7 @@
 
 Multiplies knockback resistance
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: knockback_resistance_multiplier
   args:

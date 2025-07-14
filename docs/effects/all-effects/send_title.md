@@ -3,7 +3,7 @@
 
 Send a title/subtitle to the player
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: send_title
   args:

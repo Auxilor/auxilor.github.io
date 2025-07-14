@@ -2,7 +2,7 @@
 
 Requires a certain expression to be true
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   is_expression_true: "%level% > %victim_health%"

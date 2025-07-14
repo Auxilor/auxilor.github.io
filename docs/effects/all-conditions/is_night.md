@@ -2,7 +2,7 @@
 
 Requires night
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_night
 ```

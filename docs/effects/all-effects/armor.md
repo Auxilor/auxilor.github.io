@@ -3,7 +3,7 @@
 
 Gives armor points
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: armor
   args:

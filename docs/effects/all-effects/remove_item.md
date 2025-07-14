@@ -3,7 +3,7 @@
 
 Removes an item from the player's inventory
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: remove_item
   args:

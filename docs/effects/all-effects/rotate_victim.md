@@ -3,7 +3,7 @@
 
 Spin the victim around
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: rotate_victim
   args:

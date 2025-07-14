@@ -2,7 +2,7 @@
 
 Requires a player to have an item as their boots
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: wearing_boots
   args:

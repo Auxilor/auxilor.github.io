@@ -4,7 +4,7 @@ Requires a certain booster to be active on the server
 
 **Requires Boosters**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_booster_active
   args:

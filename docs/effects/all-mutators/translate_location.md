@@ -2,7 +2,7 @@
 
 Translate the location by specified x, y, and z values
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: translate_location
   args:

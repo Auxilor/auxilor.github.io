@@ -2,7 +2,7 @@
 
 Requires a player to be in a specific biome
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_biome
   args:

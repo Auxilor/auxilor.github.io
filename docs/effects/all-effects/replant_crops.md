@@ -3,7 +3,7 @@
 
 Automatically replants crops
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: replant_crops
   args:

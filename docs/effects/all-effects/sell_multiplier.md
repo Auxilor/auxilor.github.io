@@ -5,7 +5,7 @@ Multiplies money gained from selling items
 
 **Supports ShopGUIPlus, DeluxeSellwands, EconomyShopGUI, zShop**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: sell_multiplier
   args:

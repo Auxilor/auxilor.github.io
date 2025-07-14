@@ -2,7 +2,7 @@
 
 If the entity should / should not be from a spawner
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   from_spawner: true

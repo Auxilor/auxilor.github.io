@@ -3,7 +3,7 @@
 
 Shoots an arrow
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: shoot_arrow
   args:

@@ -15,7 +15,7 @@ Plays a particle animation
 | `double_helix`  | Draw a double helix of particles            | `height` The height to draw the helix <br/> `duration` The time taken to draw the helix, in ticks <br/> `speed` The speed at which to draw the helix <br/> `radius` The radius of the helix                                                              |
 | `twirl`         | Twirl particles (double expanding spiral)   | `small-radius` The small radius <br/> `large-radius` The large radius <br/> `duration` The animation duration, in ticks <br/> `start-height` The start height <br/> `end-height` The end height <br/> `speed` The speed at which to draw the animation   |
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: particle_animation

@@ -2,7 +2,7 @@
 
 Requires a player to be sprinting
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_sprinting
 ```

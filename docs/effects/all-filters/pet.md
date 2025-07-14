@@ -4,7 +4,7 @@ Require a certain pet
 
 **Requires EcoPets**
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   pet:

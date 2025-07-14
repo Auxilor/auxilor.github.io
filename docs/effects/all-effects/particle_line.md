@@ -3,7 +3,7 @@
 
 Spawns a line of particles between you and the target location
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: particle_line
   args:

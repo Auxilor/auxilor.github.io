@@ -3,7 +3,7 @@
 
 Mine blocks behind the initial mined block
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: drill
   args:

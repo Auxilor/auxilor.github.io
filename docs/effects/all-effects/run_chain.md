@@ -3,7 +3,7 @@
 
 Execute an effect chain
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: run_chain
   args:

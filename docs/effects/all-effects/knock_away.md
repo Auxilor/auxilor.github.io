@@ -3,7 +3,7 @@
 
 Knock the victim away from the player
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: knock_away
   args:

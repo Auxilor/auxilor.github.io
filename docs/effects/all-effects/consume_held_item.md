@@ -3,7 +3,7 @@
 
 Consume items held in the player's main hand
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: consume_held_item
   args:

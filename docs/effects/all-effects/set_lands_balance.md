@@ -6,7 +6,7 @@ Set the Land bank's balance
 
 **Requires Lands**
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: set_lands_balance

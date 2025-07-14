@@ -2,7 +2,7 @@
 
 Requires a placeholder to contain a certain value
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: placeholder_contains
   args:

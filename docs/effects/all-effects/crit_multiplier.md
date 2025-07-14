@@ -3,7 +3,7 @@
 
 Multiplies critical (falling) hit damage
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: crit_multiplier
   args:

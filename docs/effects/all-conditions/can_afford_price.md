@@ -2,7 +2,7 @@
 
 Requires a player to be able to afford a certain [price](https://plugins.auxilor.io/all-plugins/prices)
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: can_afford_price
   args:

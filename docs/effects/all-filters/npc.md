@@ -4,7 +4,7 @@ Require a certain NPC
 
 **Requires Citizens || FancyNpcs**
 
-# Example Config
+# Filter Syntax
 
 **Citizens**
 ```yaml

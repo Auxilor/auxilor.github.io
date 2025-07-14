@@ -7,7 +7,7 @@ This is useful if you want one holder to have different effects depending on the
 The options for slot are mainhand, offhand, hands, helmet, chestplate,
 leggings, boots, armor, any, or a number from 0-40 (to specify an exact slot).
 
-# Example Configs
+# Condition Syntaxs
 ```yaml
 - id: in_slot
   args:

@@ -5,7 +5,7 @@ Deal a crit hit
 
 **Requires EcoSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: make_skill_crit
   args:

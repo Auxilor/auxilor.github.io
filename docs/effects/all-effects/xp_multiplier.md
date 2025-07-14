@@ -3,7 +3,7 @@
 
 Multiplies incoming xp gain
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: xp_multiplier
   args:

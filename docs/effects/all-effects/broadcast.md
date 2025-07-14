@@ -3,7 +3,7 @@
 
 Send a message to everyone online
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: broadcast
   args:

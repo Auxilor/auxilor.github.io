@@ -3,7 +3,7 @@
 
 Spawns [mobs](https://plugins.auxilor.io/all-plugins/the-entity-lookup-system) to help you
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: spawn_mobs
   args:

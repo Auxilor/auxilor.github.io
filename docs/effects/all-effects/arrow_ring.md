@@ -3,7 +3,7 @@
 
 Spawns a ring of arrows around a location
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: arrow_ring
   args:

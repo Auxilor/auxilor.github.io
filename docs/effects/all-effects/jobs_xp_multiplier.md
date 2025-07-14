@@ -5,7 +5,7 @@ Multiplies xp gain from jobs
 
 **Requires Jobs Reborn**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: jobs_xp_multiplier
   args:

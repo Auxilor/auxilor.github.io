@@ -3,7 +3,7 @@
 
 Removes an enchant from the item
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: remove_enchant
   args:

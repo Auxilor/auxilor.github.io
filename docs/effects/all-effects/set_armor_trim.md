@@ -3,7 +3,7 @@
 
 Sets item armor trim
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: set_armor_trim
   args:

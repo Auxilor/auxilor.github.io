@@ -3,7 +3,7 @@
 
 Mines a square radius around a block, but only one block deep
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: mine_radius_one_deep
   args:

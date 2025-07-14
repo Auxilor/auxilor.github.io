@@ -2,7 +2,7 @@
 
 Requires a player to have a [potion effect](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html) active
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_potion_effect
   args:

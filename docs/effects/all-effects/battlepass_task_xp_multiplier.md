@@ -4,7 +4,7 @@
 Multiplies incoming battlepass task xp gain
 
 **Requires xBattlepass**
-# Example Config
+# Effect Syntax
 ```yaml
 - id: battlepass_task_xp_multiplier
   args:

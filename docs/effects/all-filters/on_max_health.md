@@ -2,7 +2,7 @@
 
 If the victim must be on max health
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   on_max_health: true

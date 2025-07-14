@@ -2,7 +2,7 @@
 
 Requires a player to be in a certain world
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_world
   args:

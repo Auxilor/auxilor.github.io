@@ -3,7 +3,7 @@
 
 Runs a command from console
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: run_command
   args:

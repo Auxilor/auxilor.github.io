@@ -3,7 +3,7 @@
 
 Makes the player keep their XP level on death
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: keep_level
 ```

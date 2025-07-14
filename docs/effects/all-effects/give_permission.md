@@ -5,7 +5,7 @@ Gives a permission while active
 
 **Requires Vault**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_permission
   args:

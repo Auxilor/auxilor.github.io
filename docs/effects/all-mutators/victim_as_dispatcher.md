@@ -4,7 +4,7 @@ Set the player / entity / etc that triggered the effect to be the victim.
 
 Use this if you want to make a victim run a chain.
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: victim_as_dispatcher
 ```

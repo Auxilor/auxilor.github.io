@@ -2,7 +2,7 @@
 
 Check conditions against the victim
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   victim_conditions: # List of conditions to check

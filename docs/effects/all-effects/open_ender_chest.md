@@ -4,7 +4,7 @@
 
 Opens the player's ender chest
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: open_ender_chest

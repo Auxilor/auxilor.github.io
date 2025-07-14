@@ -6,7 +6,7 @@ Drops an item that runs a chain on pickup
 
 **Requires Paper**
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: drop_pickup_item

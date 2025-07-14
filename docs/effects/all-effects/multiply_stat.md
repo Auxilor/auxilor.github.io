@@ -5,7 +5,7 @@ Multiplies a stat by a specific value
 
 **Requires EcoSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: multiply_stat
   args:

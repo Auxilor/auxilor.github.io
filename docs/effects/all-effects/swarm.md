@@ -4,7 +4,7 @@
 
 Makes nearby monsters in a certain radius attack the victim
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: swarm

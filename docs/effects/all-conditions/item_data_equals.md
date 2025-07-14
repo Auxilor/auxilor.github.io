@@ -2,7 +2,7 @@
 
 Requires an item to have a certain data value
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: item_data_equals
   args:

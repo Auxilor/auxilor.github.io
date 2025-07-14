@@ -2,7 +2,7 @@
 
 If the victim must be above a certain percentage of their health 
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   above_health_percent: 50

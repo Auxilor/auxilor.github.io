@@ -2,7 +2,7 @@
 
 Requires the server to have a below an amount of points
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: below_global_points
   args:

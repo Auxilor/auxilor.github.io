@@ -5,7 +5,7 @@ Multiplies water movement efficiency
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: water_movement_efficiency_multiplier
   args:

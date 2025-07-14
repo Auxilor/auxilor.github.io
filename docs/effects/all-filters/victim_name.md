@@ -2,7 +2,7 @@
 
 Require the victim to have a certain name
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   victim_name: 

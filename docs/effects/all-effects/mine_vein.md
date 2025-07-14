@@ -4,7 +4,7 @@
 
 Mines a vein of blocks
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: mine_vein

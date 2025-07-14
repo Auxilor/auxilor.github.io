@@ -2,7 +2,7 @@
 
 Requires the player to be above a certain xp level
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: above_xp_level
   args:

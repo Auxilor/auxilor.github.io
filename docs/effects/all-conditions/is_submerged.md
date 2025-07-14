@@ -2,7 +2,7 @@
 
 Requires a player to be fully submerged in liquid
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_submerged
 ```

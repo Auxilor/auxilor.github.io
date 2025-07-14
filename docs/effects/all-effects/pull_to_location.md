@@ -3,7 +3,7 @@
 
 Get pulled to a location
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: pull_to_location
   args:

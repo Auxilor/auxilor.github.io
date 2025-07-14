@@ -4,7 +4,7 @@ Requires a player to have the TAB boss bar shown to them
 
 **Requires TAB**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_boss_bar_visible
 ```

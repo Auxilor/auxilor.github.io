@@ -3,7 +3,7 @@
 
 Gives extra health
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: bonus_health
   args:

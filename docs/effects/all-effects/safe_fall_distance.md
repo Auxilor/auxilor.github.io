@@ -5,7 +5,7 @@ Increases/decreases the distance you can fall without taking damage
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: safe_fall_distance
   args:

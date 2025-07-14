@@ -3,7 +3,7 @@
 
 Creates a boss bar and shows it to the player
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: create_boss_bar
   args:

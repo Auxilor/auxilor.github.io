@@ -3,7 +3,7 @@
 
 Drops a random item at a location, with weighting for different items
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: drop_weighted_random_item
   args:

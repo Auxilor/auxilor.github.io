@@ -1,7 +1,7 @@
 # `has_enchant`
 
 Requires a player to have certain enchant(s)
-# Example Configs
+# Condition Syntaxs
 ```yaml
 - id: has_enchant
   args:

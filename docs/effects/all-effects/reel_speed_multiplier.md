@@ -3,7 +3,7 @@
 
 Multiplies the speed at which you pull in entities and drops with fishing rods
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: reel_speed_multiplier
   args:

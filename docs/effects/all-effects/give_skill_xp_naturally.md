@@ -7,7 +7,7 @@ This will send a message to a player and will include multipliers.
 
 **Requires EcoSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_skill_xp_naturally
   args:

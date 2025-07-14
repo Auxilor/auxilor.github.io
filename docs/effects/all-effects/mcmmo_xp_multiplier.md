@@ -5,7 +5,7 @@ Multiplies mcMMO skill xp gain
 
 **Requires mcMMO**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: mcmmo_xp_multiplier
   args:

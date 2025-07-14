@@ -3,7 +3,7 @@
 
 Runs effects for all players on the server
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: all_players
   args:

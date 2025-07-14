@@ -3,7 +3,7 @@
 
 Multiplies the duration of brewed potions
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: potion_duration_multiplier
   args:

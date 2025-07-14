@@ -4,7 +4,7 @@ The list of vote services that the effect should activate on
 
 **Requires NuVotifier**
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   vote_service:

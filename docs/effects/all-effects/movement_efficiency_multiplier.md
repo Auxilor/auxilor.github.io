@@ -5,7 +5,7 @@ Multiplies movement speed through difficult terrain
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: movement_efficiency_multiplier
   args:

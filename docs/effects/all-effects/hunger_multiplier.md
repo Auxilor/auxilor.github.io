@@ -3,7 +3,7 @@
 
 Multiplies hunger loss
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: hunger_multiplier
   args:

@@ -2,7 +2,7 @@
 
 Requires a player to have an item in their inventory
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_item
   args:

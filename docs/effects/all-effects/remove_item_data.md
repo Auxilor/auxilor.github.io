@@ -3,7 +3,7 @@
 
 Remove item data
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: remove_item_data
   args:

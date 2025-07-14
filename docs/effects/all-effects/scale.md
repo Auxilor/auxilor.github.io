@@ -4,7 +4,7 @@
 Multiplies scale
 
 **Requires 1.21+**
-# Example Config
+# Effect Syntax
 ```yaml
 - id: scale
   args:

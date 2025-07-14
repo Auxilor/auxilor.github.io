@@ -3,7 +3,7 @@
 
 Removes a potion effect
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: remove_potion_effect
   args:

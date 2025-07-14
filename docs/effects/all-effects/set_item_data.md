@@ -3,7 +3,7 @@
 
 Set item data
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: set_item_data
   args:

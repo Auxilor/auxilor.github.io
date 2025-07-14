@@ -4,7 +4,7 @@ Require a certain task
 
 **Requires EcoQuests**
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   task:

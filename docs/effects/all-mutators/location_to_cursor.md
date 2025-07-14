@@ -2,7 +2,7 @@
 
 Move the location to where you or the victim are looking
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: location_to_cursor
   args:

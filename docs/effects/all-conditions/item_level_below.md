@@ -2,7 +2,7 @@
 
 Requires an item to be below a certain level
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: item_level_below
   args:

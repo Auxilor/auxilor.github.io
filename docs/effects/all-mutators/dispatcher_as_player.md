@@ -2,7 +2,7 @@
 
 Set the player to be whoever dispatched (triggered) the effect.
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: dispatcher_as_player
 ```

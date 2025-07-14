@@ -3,7 +3,7 @@
 
 Grants flight
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: flight
 ```

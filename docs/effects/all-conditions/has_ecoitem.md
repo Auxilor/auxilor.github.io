@@ -4,7 +4,7 @@ Requires a player to have a certain EcoItem active
 
 **Requires EcoItems**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_ecoitem
   args:

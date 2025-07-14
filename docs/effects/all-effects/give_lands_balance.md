@@ -6,7 +6,7 @@ Give money to a Land's bank balance
 
 **Requires Lands**
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: give_lands_balance

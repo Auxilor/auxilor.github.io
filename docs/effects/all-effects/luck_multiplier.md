@@ -3,7 +3,7 @@
 
 Multiplies luck
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: luck_multiplier
   args:

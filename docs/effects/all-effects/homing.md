@@ -4,7 +4,7 @@
 
 Makes projectiles hone in onto entities (homing arrows / tridents)
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: homing

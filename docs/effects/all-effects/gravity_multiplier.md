@@ -5,7 +5,7 @@ Multiplies gravity
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: gravity_multiplier
   args:

@@ -3,7 +3,7 @@
 
 Gives the player food
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_food
   args:

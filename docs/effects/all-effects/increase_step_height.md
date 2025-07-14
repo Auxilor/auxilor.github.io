@@ -5,7 +5,7 @@ Increases the amount of blocks you can walk over without jumping
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: increase_step_height
   args:

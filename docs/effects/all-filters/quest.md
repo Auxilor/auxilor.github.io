@@ -4,7 +4,7 @@ Require a certain quest
 
 **Requires EcoQuests**
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   quest:

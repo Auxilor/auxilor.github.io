@@ -2,7 +2,7 @@
 
 Requires a player to be swimming
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_swimming
 ```

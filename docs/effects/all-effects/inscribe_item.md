@@ -6,7 +6,7 @@ Inscribes an item with a scroll
 
 **Requires EcoScrolls**
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: inscribe_item

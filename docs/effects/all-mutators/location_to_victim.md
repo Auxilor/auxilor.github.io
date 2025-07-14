@@ -2,7 +2,7 @@
 
 Move the location to the victim's location
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: location_to_victim
 ```

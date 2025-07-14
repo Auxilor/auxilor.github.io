@@ -10,7 +10,7 @@ Plays an animation
 | ----------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `spin_item` | Spin items around in a ring | `item` The item <br/> `amount` The amount of items <br/> `duration` The duration of the animation <br/> `radius` The radius of the ring <br/> `speed` The speed at which the items spin |
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: animation

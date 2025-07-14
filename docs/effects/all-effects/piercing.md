@@ -4,7 +4,7 @@
 
 Makes projectiles pass through other entities (collaterals), like the Piercing enchantment.
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: piercing

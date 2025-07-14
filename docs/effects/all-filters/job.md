@@ -4,7 +4,7 @@ Require a certain job
 
 **Requires EcoJobs**
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   job:

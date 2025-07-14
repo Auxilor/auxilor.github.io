@@ -2,7 +2,7 @@
 
 Marks the player as the victim, useful to have negative effects
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: player_as_victim
 ```

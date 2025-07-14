@@ -3,7 +3,7 @@
 
 Runs effects for a random player on the server
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: random_player
   args:

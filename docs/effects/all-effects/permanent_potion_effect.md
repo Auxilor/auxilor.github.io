@@ -3,7 +3,7 @@
 
 Gives a permanent [potion effect](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: permanent_potion_effect
   args:

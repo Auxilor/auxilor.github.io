@@ -5,7 +5,7 @@ Increase the max durability of an item
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: add_durability
   args:

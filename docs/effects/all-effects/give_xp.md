@@ -3,7 +3,7 @@
 
 Gives experience points
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_xp
   args:

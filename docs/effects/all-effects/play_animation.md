@@ -5,7 +5,7 @@ Plays a Model Engine animation (The entity must have a custom model active)
 
 **Requires Model Engine**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: play_animation
   args:

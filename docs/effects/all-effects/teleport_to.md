@@ -3,7 +3,7 @@
 
 Teleport a player to a specific location
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: teleport_to
   args:

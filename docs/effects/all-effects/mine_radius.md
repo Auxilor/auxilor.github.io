@@ -3,7 +3,7 @@
 
 Mines a square radius around a block
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: mine_radius
   args:

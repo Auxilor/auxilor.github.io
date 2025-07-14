@@ -4,7 +4,7 @@ Requires a player to have a certain pet
 
 **Requires EcoPets**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_pet
   args:

@@ -3,7 +3,7 @@
 
 Make nearby blocks of a certain type glow a certain color
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: glow_nearby_blocks
   args:

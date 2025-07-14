@@ -6,7 +6,7 @@ Multiplies all incoming or outgoing damage from any damage trigger
 This effect **always** runs at the **end** of the run-order. This allows you to multiply other damage effects, such as damage added by the `add_damage` effect, as well as damage added by other plugins.
 
 Warning: This effect can lead to dealing big damage, in most cases you probably only want to use [`damage_multiplier`](https://plugins.auxilor.io/effects/all-effects/damage_multiplier)
-# Example Config
+# Effect Syntax
 ```yaml
 - id: total_damage_multiplier
   args:

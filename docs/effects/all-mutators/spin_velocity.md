@@ -2,7 +2,7 @@
 
 Rotate a velocity around the y axis
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: spin_velocity
   args:

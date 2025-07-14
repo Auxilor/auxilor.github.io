@@ -3,7 +3,7 @@
 
 Multiplies movement speed
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: movement_speed_multiplier
   args:

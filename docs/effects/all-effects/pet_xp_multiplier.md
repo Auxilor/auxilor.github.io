@@ -5,7 +5,7 @@ Multiplies pet xp gain
 
 **Requires EcoPets**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: pet_xp_multiplier
   args:

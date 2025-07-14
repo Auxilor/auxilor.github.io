@@ -4,7 +4,7 @@ Requires a player to have a certain reforge active
 
 **Requires Reforges**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_reforge
   args:

@@ -3,7 +3,7 @@
 
 Damage entities near a location
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: damage_nearby_entities
   args:

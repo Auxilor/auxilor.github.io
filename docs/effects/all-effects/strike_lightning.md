@@ -3,7 +3,7 @@
 
 Strikes lightning at a point
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: strike_lightning
   args:

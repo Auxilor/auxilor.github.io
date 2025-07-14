@@ -3,7 +3,7 @@
 Requires a player to have a certain role in a town
 
 **Requires HuskTowns**
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_town_role
   args:

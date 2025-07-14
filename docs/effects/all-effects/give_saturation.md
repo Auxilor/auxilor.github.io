@@ -3,7 +3,7 @@
 
 Gives the player saturation
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_saturation
   args:

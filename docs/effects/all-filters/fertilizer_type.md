@@ -3,7 +3,7 @@
 The list of fertilizers the effect should activate on
 
 **Requires CustomCrops**
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   fertilizer_type: 

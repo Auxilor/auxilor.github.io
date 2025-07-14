@@ -5,7 +5,7 @@ Multiplies the chance of mobcoins being dropped
 
 **Requires UltimateMobCoins**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: mob_coins_chance_multiplier
   args:

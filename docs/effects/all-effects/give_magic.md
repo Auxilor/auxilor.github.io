@@ -5,7 +5,7 @@ Add / subtract magic
 
 **Requires EcoSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_magic
   args:

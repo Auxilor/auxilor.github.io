@@ -2,7 +2,7 @@
 
 Requires at least a certain mount of a certain list of conditions to be met
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: at_least_of
   args:

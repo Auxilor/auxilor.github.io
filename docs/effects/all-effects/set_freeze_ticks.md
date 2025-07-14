@@ -3,7 +3,7 @@
 
 Sets the victims freeze ticks (frost / powdered snow effect)
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: set_freeze_ticks
   args:

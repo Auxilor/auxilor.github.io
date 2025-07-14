@@ -5,7 +5,7 @@ Gives a custom holder to people within a certain radius of you.
 
 A holder is anything with effects and conditions, in plugins typically a Talisman, Armor Set, etc.
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: add_permanent_holder_in_radius
   args:

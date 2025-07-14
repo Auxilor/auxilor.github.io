@@ -4,7 +4,7 @@
 Gives experience points for a task in a quest, excluding multipliers.
 
 **Requires xBattlepass**
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_battlepass_task_xp
   args:

@@ -3,7 +3,7 @@
 
 Adds incoming or outgoing damage from any damage trigger
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: add_damage
   args:

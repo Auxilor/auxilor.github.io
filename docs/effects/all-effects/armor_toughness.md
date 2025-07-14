@@ -3,7 +3,7 @@
 
 Gives armor toughness
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: armor_toughness
   args:

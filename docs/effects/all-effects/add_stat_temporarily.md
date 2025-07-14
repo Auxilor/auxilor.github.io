@@ -5,7 +5,7 @@ Adds a value to a specific stat
 
 **Requires EcoSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: add_stat_temporarily
   args:

@@ -3,7 +3,7 @@
 
 Drops a random item at a location
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: drop_random_item
   args:

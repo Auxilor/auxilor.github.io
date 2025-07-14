@@ -2,7 +2,7 @@
 
 Requires the sheep to be a certain color
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   sheep_color:

@@ -3,7 +3,7 @@
 
 Damage a victim's mainhand item
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: damage_mainhand
   args:
