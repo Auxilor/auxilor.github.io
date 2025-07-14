@@ -1,10 +1,9 @@
 # `fertilizer_type`
-
-The list of fertilizers the effect should activate on
-
 :::infoRequires:
 CustomCrops
 :::
+
+The list of fertilizers the effect should activate on
 # Filter Syntax
 ```yaml
 filters:

@@ -1,10 +1,9 @@
 # `in_lava`
-
-Requires a player to be in lava
-
 :::infoRequires:
 Paper
 :::
+
+Requires a player to be in lava
 # Example Config
 ```yaml
 - id: in_lava

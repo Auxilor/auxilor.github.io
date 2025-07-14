@@ -1,10 +1,9 @@
 # `lands_balance_below`
-
-Requires the Land's bank balance to be below a value
-
 :::infoRequires:
 Lands
 :::
+
+Requires the Land's bank balance to be below a value
 # Example Config
 ```yaml
 - id: lands_balance_below

@@ -1,11 +1,9 @@
 # `has_talisman`
-
-Requires a player to have a certain talisman active
-
-
 :::infoRequires:
 Talismans
 :::
+
+Requires a player to have a certain talisman active
 # Condition Syntax
 ```yaml
 - id: has_talisman

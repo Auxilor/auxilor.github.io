@@ -1,10 +1,9 @@
 # `below_magic`
-
-Requires a player to have less than a certain amount of magic
-
 :::infoRequires:
 EcoSkills
 :::
+
+Requires a player to have less than a certain amount of magic
 # Condition Syntax
 ```yaml
 - id: below_magic

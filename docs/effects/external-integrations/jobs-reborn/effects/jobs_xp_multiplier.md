@@ -1,14 +1,13 @@
 # `jobs_xp_multiplier`
+:::infoRequires:
+Jobs Reborn
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Multiplies xp gain from jobs
-
-
-:::infoRequires:
-Jobs Reborn
-:::
 # Example Config
 ```yaml
 - id: jobs_xp_multiplier

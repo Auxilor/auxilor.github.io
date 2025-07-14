@@ -1,10 +1,9 @@
 # `shop_item`
-
-Require a certain shop item
-
 :::infoRequires:
 EcoShop
 :::
+
+Require a certain shop item
 # Filter Syntax
 ```yaml
 filters:

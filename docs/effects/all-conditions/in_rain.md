@@ -1,10 +1,9 @@
 # `in_rain`
-
-Requires a player to be in rain
-
 :::infoRequires:
 Paper
 :::
+
+Requires a player to be in rain
 # Condition Syntax
 ```yaml
 - id: in_rain

@@ -1,10 +1,9 @@
 # `custom_crop_type`
-
-The list of crop types the effect should activate on
-
 :::infoRequires:
 CustomCrops
 :::
+
+The list of crop types the effect should activate on
 # Filter Syntax
 ```yaml
 filters:

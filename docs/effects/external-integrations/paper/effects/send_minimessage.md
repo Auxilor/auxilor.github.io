@@ -1,13 +1,13 @@
 # `send_minimessage`
+:::infoRequires:
+Paper
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Sends the player a minimessage message, supports clickable components, etc.
-
-:::infoRequires:
-Paper
-:::
 # Example Config
 ```yaml
 - id: send_minimessage

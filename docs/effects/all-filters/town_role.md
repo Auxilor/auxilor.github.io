@@ -1,10 +1,9 @@
 # `town_role`
-
-The list of town roles the effect should activate on
-
 :::infoRequires:
 HuskTowns
 :::
+
+The list of town roles the effect should activate on
 # Filter Syntax
 ```yaml
 filters:

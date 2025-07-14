@@ -1,13 +1,13 @@
 # `block_reach`
+:::infoRequires:
+Server Version 1.21+
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Adds reach for interacting with blocks
-
-:::infoRequires:
-Server Version 1.21+
-:::
 # Effect Syntax
 ```yaml
 - id: block_reach

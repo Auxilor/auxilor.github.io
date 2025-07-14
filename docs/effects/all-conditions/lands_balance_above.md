@@ -1,10 +1,9 @@
 # `lands_balance_above`
-
-Requires the Land's bank balance to be above a value
-
 :::infoRequires:
 Lands
 :::
+
+Requires the Land's bank balance to be above a value
 # Condition Syntax
 ```yaml
 - id: lands_balance_above

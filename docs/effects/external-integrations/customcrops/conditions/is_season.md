@@ -1,10 +1,9 @@
 # `is_season`
-
-Requires it to be a certain season
-
 :::infoRequires:
 CustomCrops
 :::
+
+Requires it to be a certain season
 # Example Config
 ```yaml
 - id: is_season

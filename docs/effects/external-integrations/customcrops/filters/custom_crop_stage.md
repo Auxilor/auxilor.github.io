@@ -1,10 +1,9 @@
 # `custom_crop_stage`
-
-The list of crop stages the effect should activate on
-
 :::infoRequires:
 CustomCrops
 :::
+
+The list of crop stages the effect should activate on
 # Example Config
 ```yaml
 filters:

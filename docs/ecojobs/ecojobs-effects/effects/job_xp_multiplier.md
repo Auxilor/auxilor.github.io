@@ -1,13 +1,13 @@
 # `job_xp_multiplier`
+:::infoRequires:
+EcoJobs
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Multiplies job xp gain
-
-:::infoRequires:
-EcoJobs
-:::
 # Effect Syntax
 ```yaml
 - id: job_xp_multiplier

@@ -1,13 +1,13 @@
 # `give_lands_balance`
+:::infoRequires:
+Lands
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Give money to a Land's bank balance
-
-:::infoRequires:
-Lands
-:::
 # Example Config
 
 ```yaml

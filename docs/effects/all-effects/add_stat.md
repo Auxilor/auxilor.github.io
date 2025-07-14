@@ -1,13 +1,13 @@
 # `add_stat`
+:::infoRequires:
+EcoSkills / AuraSkills
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Adds a value to a specific stat
-
-:::infoRequires:
-EcoSkills / AuraSkills
-:::
 # Effect Syntax
 ```yaml
 - id: add_stat

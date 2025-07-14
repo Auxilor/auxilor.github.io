@@ -1,13 +1,13 @@
 # `gain_task_xp`
+:::infoRequires:
+EcoQuests
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Gains experience points for a task in a quest, including multipliers.
-
-:::infoRequires:
-EcoQuests
-:::
 # Effect Syntax
 
 ```yaml

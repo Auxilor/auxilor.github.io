@@ -1,10 +1,9 @@
 # `stat_above`
-
-Requires a player to have at least a certain stat level
-
 :::infoRequires:
 EcoSkills
 :::
+
+Requires a player to have at least a certain stat level
 # Condition Syntax
 
 ```yaml

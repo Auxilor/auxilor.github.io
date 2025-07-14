@@ -1,10 +1,9 @@
 # `has_pet_level`
-
-Requires a player to have a certain pet level
-
 :::infoRequires:
 EcoPets
 :::
+
+Requires a player to have a certain pet level
 # Condition Syntax
 ```yaml
 - id: has_pet_level

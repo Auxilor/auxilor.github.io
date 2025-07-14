@@ -1,13 +1,13 @@
 # `explosion_knockback_resistance_multiplier`
+:::infoRequires:
+Server Version 1.21+
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Multiplies explosion resistance
-
-:::infoRequires:
-Server Version 1.21+
-:::
 # Effect Syntax
 ```yaml
 - id: explosion_knockback_resistance_multiplier

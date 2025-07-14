@@ -1,13 +1,13 @@
 # `give_money`
+:::infoRequires:
+Vault
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Gives a player money
-
-:::infoRequires:
-Vault
-:::
 # Effect Syntax
 ```yaml
 - id: give_money

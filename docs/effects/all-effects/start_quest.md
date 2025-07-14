@@ -1,13 +1,13 @@
 # `start_quest`
+:::infoRequires:
+EcoQuests
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Starts a quest for the player
-
-:::infoRequires:
-EcoQuests
-:::
 # Effect Syntax
 
 ```yaml

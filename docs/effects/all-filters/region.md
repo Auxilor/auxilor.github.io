@@ -1,11 +1,9 @@
 # `region`
-
-Require a certain region
-
-
 :::infoRequires:
 WorldGuard
 :::
+
+Require a certain region
 # Filter Syntax
 ```yaml
 filters:

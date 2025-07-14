@@ -1,14 +1,13 @@
 # `mob_coins_drop_multiplier`
+:::infoRequires:
+UltimateMobCoins
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Multiplies the mobcoins dropped
-
-
-:::infoRequires:
-UltimateMobCoins
-:::
 # Example Config
 ```yaml
 - id: mob_coins_drop_multiplier

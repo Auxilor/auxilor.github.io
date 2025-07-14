@@ -1,10 +1,9 @@
 # `has_town_role`
-
-Requires a player to have a certain role in a town
-
 :::infoRequires:
 HuskTowns
 :::
+
+Requires a player to have a certain role in a town
 # Condition Syntax
 ```yaml
 - id: has_town_role

@@ -1,10 +1,9 @@
 # `below_balance`
-
-Requires a player to have below a certain amount of money
-
 :::infoRequires:
 Vault
 :::
+
+Requires a player to have below a certain amount of money
 # Condition Syntax
 ```yaml
 - id: below_balance
