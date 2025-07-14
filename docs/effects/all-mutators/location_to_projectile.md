@@ -2,7 +2,7 @@
 
 Move the location to the projectile's location
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: location_to_projectile
 ```

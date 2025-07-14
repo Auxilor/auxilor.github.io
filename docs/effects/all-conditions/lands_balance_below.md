@@ -3,7 +3,7 @@
 Requires the Land's bank balance to be below a value
 
 **Requires Lands**
-# Example Config
+# Condition Syntax
 ```yaml
 - id: lands_balance_below
   args:

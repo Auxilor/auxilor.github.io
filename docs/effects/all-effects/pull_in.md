@@ -3,7 +3,7 @@
 
 Pull the victim towards the player
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: pull_in
   args:

@@ -2,7 +2,7 @@
 
 If the victim is a tamed animal, set the victim to be the owner of the animal
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: victim_to_owner
 ```

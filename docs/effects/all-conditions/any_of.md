@@ -2,7 +2,7 @@
 
 Requires any of a certain list of conditions to be matched
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: any_of
   args:

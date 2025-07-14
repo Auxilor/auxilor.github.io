@@ -2,7 +2,7 @@
 
 Requires a placeholder to be greater than or equal to a certain value
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: placeholder_greater_than
   args:

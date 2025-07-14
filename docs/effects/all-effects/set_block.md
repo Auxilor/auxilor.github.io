@@ -4,7 +4,7 @@
 
 Set a block
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: set_block

@@ -3,7 +3,7 @@
 
 Repairs the item
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: repair_item
   args:

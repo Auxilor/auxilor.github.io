@@ -3,7 +3,7 @@
 
 Prevents consuming lapis when enchanting items
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: dont_consume_lapis_chance
   args:

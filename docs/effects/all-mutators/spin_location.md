@@ -2,7 +2,7 @@
 
 Spin a location a certain angle with a radius away from its current position - for example spinning the location 90 degrees at a distance of 1 block
 
-# Example Config
+# Mutator Syntax
 ```yaml
 - id: spin_location
   args:

@@ -4,7 +4,7 @@
 
 Opens a crafting table for the player
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: open_crafting

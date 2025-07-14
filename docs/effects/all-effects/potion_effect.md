@@ -3,7 +3,7 @@
 
 Gives a [potion](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html) effect
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: potion_effect
   args:

@@ -2,7 +2,7 @@
 
 Requires the player to be alive
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_alive
 ```

@@ -5,7 +5,7 @@ Multiplies mining speed
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: mining_speed_multiplier
   args:

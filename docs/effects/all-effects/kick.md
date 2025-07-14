@@ -3,7 +3,7 @@
 
 Kicks the player
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: kick
   args:

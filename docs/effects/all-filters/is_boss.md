@@ -2,7 +2,7 @@
 
 If the entity must be a boss
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   is_boss: true

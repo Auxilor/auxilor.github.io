@@ -2,7 +2,7 @@
 
 Requires a player to have a certain permission
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_permission
   args:

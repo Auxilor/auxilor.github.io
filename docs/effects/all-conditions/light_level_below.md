@@ -2,7 +2,7 @@
 
 Requires the light level to be less than or equal to certain level
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: light_level_below
   args:

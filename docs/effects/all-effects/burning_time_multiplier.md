@@ -5,7 +5,7 @@ Multiplies how long an entity is on fire after being ignited
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: burning_time_multiplier
   args:

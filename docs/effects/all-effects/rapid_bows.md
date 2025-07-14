@@ -3,7 +3,7 @@
 
 Allows bows to be shot at full speed without pulling back as far
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: rapid_bows
   args:

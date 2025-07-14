@@ -2,7 +2,7 @@
 
 Requires a player to have an item in their offhand
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_offhand
   args:

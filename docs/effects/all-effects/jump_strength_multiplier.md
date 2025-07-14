@@ -5,7 +5,7 @@ Multiplies jump strength
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: jump_strength_multiplier
   args:

@@ -3,7 +3,7 @@
 
 Autosmelts drops (requires a drop trigger)
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: autosmelt
   args:

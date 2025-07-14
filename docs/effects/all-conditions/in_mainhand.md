@@ -2,7 +2,7 @@
 
 Requires a player to have an item in their main hand
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_mainhand
   args:

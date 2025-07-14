@@ -3,7 +3,7 @@
 Requires a player to have a certain role in the Land
 
 **Requires Lands**
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_lands_role
   args:

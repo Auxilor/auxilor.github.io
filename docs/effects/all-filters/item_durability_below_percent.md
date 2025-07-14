@@ -2,7 +2,7 @@
 
 Requires the item durability to be less than or equal to a certain percentage
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   item_durability_below_percent: 10

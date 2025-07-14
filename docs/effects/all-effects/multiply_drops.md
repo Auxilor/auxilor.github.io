@@ -3,7 +3,7 @@
 
 Multiplies drops (requires a drop trigger)
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: multiply_drops
   args:
@@ -15,4 +15,8 @@ Multiplies drops (requires a drop trigger)
   ...other config (eg triggers, filters, mutators, etc)
 ```
 
+:::tip  
+  
 If you're experiencing drops not being multiplied, you may need to change the anti-duplication settings in [config.yml](https://github.com/Auxilor/libreforge/blob/master/core/common/src/main/resources/config.yml) and add blocks to the whitelist.
+
+:::

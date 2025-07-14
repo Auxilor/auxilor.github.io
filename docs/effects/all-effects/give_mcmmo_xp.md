@@ -5,7 +5,7 @@ Gives experience points for a certain skill
 
 **Requires mcMMO**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_mcmmo_xp
   args:

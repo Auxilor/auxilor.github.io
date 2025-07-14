@@ -3,7 +3,7 @@
 
 Sets your velocity
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: set_velocity
   args:

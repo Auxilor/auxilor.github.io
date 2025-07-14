@@ -3,7 +3,7 @@
 
 Drops an item at a location
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: drop_item
   args:

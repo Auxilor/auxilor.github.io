@@ -2,7 +2,7 @@
 
 Requires a player to be within a certain radius of an entity
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: near_entity
   args:

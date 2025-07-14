@@ -3,7 +3,7 @@
 
 Go back to a previous position
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: traceback
   args:

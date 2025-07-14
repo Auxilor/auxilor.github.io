@@ -3,7 +3,7 @@
 
 Extinguish the player
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: extinguish
   ...other config (eg triggers, filters, mutators, etc)

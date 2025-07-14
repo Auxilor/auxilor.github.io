@@ -3,7 +3,7 @@
 
 Shuffle your victim's hotbar
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: shuffle_hotbar
   ...other config (eg triggers, filters, mutators, etc)

@@ -3,7 +3,7 @@
 
 Multiplies food gain from eating
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: food_multiplier
   args:

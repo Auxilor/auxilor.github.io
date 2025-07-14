@@ -3,7 +3,7 @@
 
 Set the display name of an entity
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: name_entity
   args:

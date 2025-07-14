@@ -2,7 +2,7 @@
 
 Require the player to be behind their victim
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   is_behind_victim: true

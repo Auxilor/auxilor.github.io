@@ -5,7 +5,7 @@ Gives experience points for a certain job
 
 **Requires EcoJobs**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_job_xp
   args:

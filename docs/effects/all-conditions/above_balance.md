@@ -4,7 +4,7 @@ Requires a player to have a certain amount of money
 
 **Requires Vault**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: above_balance
   args:

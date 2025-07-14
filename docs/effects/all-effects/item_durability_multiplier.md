@@ -5,7 +5,7 @@ Multiplies item durability (only works if holders are items, e.g. in EcoEnchants
 
 Item durability cannot actually be changed, so this functions like unbreaking where items will instead lose durability more quickly / slowly.
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: item_durability_multiplier
   args:

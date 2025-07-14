@@ -2,7 +2,7 @@
 
 Requires a player to be gliding with an elytra
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_gliding
 ```

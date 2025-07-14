@@ -3,7 +3,7 @@
 
 Gives a player an item
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_item
   args:

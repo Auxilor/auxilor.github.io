@@ -4,7 +4,7 @@
 Set the player's battlepass tier
 
 **Requires xBattlepass**
-# Example Config
+# Effect Syntax
 ```yaml
 - id: set_battlepass_tier
   args:

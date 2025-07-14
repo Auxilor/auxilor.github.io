@@ -2,7 +2,7 @@
 
 Requires a player to be standing on a block
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: standing_on_block
   args:

@@ -2,7 +2,7 @@
 
 Requires a player to be in the air
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_air
 ```

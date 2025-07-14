@@ -3,7 +3,7 @@
 The list of battlepass rewards the effect should activate on
 
 **Requires xBattlepass**
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   battlepass_reward: 

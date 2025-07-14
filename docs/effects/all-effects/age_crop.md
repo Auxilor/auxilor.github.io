@@ -3,7 +3,7 @@
 
 If the block is a crop, age it by a certain amount
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: age_crop
   args:

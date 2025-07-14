@@ -4,7 +4,7 @@ Requires a player to have less than a certain amount of magic
 
 **Requires EcoSkills**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: below_magic
   args:

@@ -4,7 +4,7 @@ Requires a player to have a certain talisman active
 
 **Requires Talismans**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_talisman
   args:

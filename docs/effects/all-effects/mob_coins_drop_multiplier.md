@@ -5,7 +5,7 @@ Multiplies the mobcoins dropped
 
 **Requires UltimateMobCoins**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: mob_coins_drop_multiplier
   args:

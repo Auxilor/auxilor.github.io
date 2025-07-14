@@ -5,7 +5,7 @@ Multiplies skill xp gain
 
 **Requires EcoSkills / AuraSkills*
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: skill_xp_multiplier
   args:

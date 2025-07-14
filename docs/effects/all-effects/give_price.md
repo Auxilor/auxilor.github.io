@@ -3,7 +3,7 @@
 
 Pay a [price](https://plugins.auxilor.io/all-plugins/prices) to a player
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_price
   args:

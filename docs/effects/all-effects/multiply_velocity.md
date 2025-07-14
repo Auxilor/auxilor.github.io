@@ -3,7 +3,7 @@
 
 Multiplies a players velocity
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: multiply_velocity
   args:

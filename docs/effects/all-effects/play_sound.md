@@ -3,7 +3,7 @@
 
 Plays a sound to the player
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: play_sound
   args:

@@ -3,7 +3,7 @@
 
 Spawns a [particle](https://plugins.auxilor.io/all-plugins/the-particle-lookup-system)
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: spawn_particle
   args:

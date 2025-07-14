@@ -3,7 +3,7 @@
 
 Gain item XP for a certain level
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: level_item
   args:

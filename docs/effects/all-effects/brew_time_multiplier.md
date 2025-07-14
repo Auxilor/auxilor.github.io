@@ -3,7 +3,7 @@
 
 Multiplies the time taken to brew potions
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: brew_time_multiplier
   args:

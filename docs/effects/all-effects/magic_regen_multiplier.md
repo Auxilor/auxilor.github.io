@@ -5,7 +5,7 @@ Multiplies magic regeneration
 
 **Requires EcoSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: magic_regen_multiplier
   args:

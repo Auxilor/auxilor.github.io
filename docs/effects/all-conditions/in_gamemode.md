@@ -2,7 +2,7 @@
 
 Requires a player to be in specified gamemode
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_gamemode
   args:

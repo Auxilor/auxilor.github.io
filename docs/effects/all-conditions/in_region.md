@@ -4,7 +4,7 @@ Requires a player to be in a certain region
 
 **Requires WorldGuard**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_region
   args:

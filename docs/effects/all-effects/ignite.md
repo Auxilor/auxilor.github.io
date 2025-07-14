@@ -3,7 +3,7 @@
 
 Lights the victim on fire
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: ignite
   args:

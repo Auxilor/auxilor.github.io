@@ -3,7 +3,7 @@
 
 Teleports to a location
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: teleport
   ...other config (eg triggers, filters, mutators, etc)

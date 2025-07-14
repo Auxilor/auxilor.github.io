@@ -3,7 +3,7 @@
 
 Set item points (check the points wiki page if you don't know what these are)
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: set_item_points
   args:

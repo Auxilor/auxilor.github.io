@@ -3,7 +3,7 @@
 
 Multiplies regen speed
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: regen_multiplier
   args:

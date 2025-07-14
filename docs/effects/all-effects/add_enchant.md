@@ -3,7 +3,7 @@
 
 Adds an enchant to the item
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: add_enchant
   args:

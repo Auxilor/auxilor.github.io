@@ -3,7 +3,7 @@
 
 Sells dropped items / item from trigger
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: sell_items
   args:

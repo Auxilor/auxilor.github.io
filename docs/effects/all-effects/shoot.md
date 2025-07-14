@@ -3,7 +3,7 @@
 
 Shoots a [projectile](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Projectile.html)
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: shoot
   args:

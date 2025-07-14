@@ -6,7 +6,7 @@ Runs effects for all blocks within an area of effect
 
 The list of shapes is found [here](https://plugins.auxilor.io/effects/all-effects/aoe#list-of-shapes)
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: aoe

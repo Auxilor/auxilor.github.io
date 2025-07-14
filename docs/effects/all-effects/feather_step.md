@@ -3,7 +3,7 @@
 
 Prevents trampling crops
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: feather_step
 ```

@@ -2,7 +2,7 @@
 
 Requires a player to be in a storm
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_storm
 ```

@@ -3,7 +3,7 @@
 
 Damage a victim's armor
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: damage_armor
   args:

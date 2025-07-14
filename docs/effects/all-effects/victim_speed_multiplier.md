@@ -3,7 +3,7 @@
 
 Temporarily multiplies victim movement speed
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: victim_speed_multiplier
   args:

@@ -3,7 +3,7 @@
 
 Makes your victim bleed, damaging them repeatedly
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: bleed
   args:

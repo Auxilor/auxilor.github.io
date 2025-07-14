@@ -3,7 +3,7 @@
 
 Teleports all drops to the player's inventory
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: telekinesis
 ```

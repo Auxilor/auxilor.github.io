@@ -2,7 +2,7 @@
 
 Requires a player to be sneaking
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_sneaking
 ```

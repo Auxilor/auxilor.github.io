@@ -2,7 +2,7 @@
 
 Requires a player to be within a certain radius of a location
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: within_radius_of
   args:

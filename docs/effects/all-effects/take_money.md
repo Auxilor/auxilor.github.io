@@ -5,7 +5,7 @@ Takes money from the player
 
 **Requires Vault economy**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: take_money
   args:

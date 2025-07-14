@@ -2,7 +2,7 @@
 
 Require the attack to be fully charged (works with melee and bow attacks)
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   fully_charged: true

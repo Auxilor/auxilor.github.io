@@ -2,7 +2,7 @@
 
 Requires a player to be above a certain % of their max health
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: above_health_percent
   args:

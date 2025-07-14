@@ -3,7 +3,7 @@
 
 Strips a mob's AI temporarily
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: strip_ai
   args:

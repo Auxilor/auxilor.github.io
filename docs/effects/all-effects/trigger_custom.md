@@ -3,7 +3,7 @@
 
 Call a custom trigger
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: trigger_custom
   args:

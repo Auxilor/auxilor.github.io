@@ -3,7 +3,7 @@
 
 Spawns an [entity](https://plugins.auxilor.io/all-plugins/the-entity-lookup-system)
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: spawn_entity
   args:

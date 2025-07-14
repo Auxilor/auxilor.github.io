@@ -5,7 +5,7 @@ Gives a player money
 
 **Requires Vault economy**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_money
   args:

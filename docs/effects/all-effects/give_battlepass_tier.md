@@ -4,7 +4,7 @@
 Give battlepass tiers to the player.
 
 **Requires xBattlepass**
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_battlepass_tier
   args:

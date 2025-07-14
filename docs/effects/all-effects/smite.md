@@ -3,7 +3,7 @@
 
 Strikes lightning on a victim
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: smite
   args:

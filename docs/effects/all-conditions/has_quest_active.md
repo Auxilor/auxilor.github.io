@@ -4,7 +4,7 @@ Requires a player to have a quest active
 
 **Requires EcoQuests**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_quest_active
   args:

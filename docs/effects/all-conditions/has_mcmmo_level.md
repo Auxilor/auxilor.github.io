@@ -4,7 +4,7 @@ Requires a player to have a certain McMMO skill level
 
 **Requires McMMO**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_mcmmo_level
   args:

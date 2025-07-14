@@ -3,7 +3,7 @@
 
 Creates an explosion
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: create_explosion
   args:

@@ -4,7 +4,7 @@ Require a certain magic type
 
 **Requires EcoSkills**
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   magic_type:

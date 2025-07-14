@@ -2,7 +2,7 @@
 
 Requires a player to be riding a certain entity
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: riding_entity
   args:

@@ -5,7 +5,7 @@ Adds reach for interacting with entities
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: entity_reach
   args:

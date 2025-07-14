@@ -3,7 +3,7 @@
 
 Gives the player health
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_health
   args:

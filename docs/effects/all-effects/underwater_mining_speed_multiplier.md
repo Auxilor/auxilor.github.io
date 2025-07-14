@@ -5,7 +5,7 @@ Multiplies underwater mining speed
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: underwater_mining_speed_multiplier
   args:

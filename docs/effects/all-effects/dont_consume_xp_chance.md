@@ -3,7 +3,7 @@
 
 Prevents consuming xp when enchanting items
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: dont_consume_xp_chance
   args:

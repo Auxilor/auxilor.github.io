@@ -3,7 +3,7 @@
 
 Drops items from the player's inventory
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: drop_item_slot
   args:

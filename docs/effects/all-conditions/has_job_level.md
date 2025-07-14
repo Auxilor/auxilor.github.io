@@ -4,7 +4,7 @@ Requires a player to have a certain job level
 
 **Requires EcoJobs**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_job_level
   args:

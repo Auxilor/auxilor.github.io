@@ -4,7 +4,7 @@
 
 Makes the victim target the player (requires the victim to be a monster)
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: target_player

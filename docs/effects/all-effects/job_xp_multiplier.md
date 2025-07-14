@@ -5,7 +5,7 @@ Multiplies job xp gain
 
 **Requires EcoJobs**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: job_xp_multiplier
   args:

@@ -2,7 +2,7 @@
 
 Require the trigger alt-value to be less than a certain amount
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   alt_value_below: 0.5

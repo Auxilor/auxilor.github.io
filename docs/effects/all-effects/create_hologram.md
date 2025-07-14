@@ -4,7 +4,7 @@
 
 Creates a hologram temporarily (Requires a hologram plugin to be installed)
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: create_hologram

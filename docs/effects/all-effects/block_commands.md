@@ -3,7 +3,7 @@
 
 Prevents the execution of certain commands
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: block_commands
   args:

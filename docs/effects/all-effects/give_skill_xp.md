@@ -5,7 +5,7 @@ Gives experience points for a certain skill
 
 **Requires EcoSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_skill_xp
   args:

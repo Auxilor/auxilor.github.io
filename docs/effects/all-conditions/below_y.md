@@ -2,7 +2,7 @@
 
 Requires a player to be below a certain y level
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: below_y
   args:

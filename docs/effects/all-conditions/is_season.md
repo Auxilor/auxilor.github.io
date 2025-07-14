@@ -3,7 +3,7 @@
 Requires it to be a certain season
 
 **Requires CustomCrops**
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_season
   args:

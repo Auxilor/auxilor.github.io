@@ -4,7 +4,7 @@ Requires a player to have exactly a certain stat level
 
 **Requires EcoSkills**
 
-# Example Config
+# Condition Syntax
 
 ```yaml
 - id: stat_equals

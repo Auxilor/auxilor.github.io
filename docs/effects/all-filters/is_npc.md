@@ -2,7 +2,7 @@
 
 Require the victim to be an NPC
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   is_npc: true

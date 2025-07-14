@@ -4,7 +4,7 @@ The list of envoy types that the effect should activate against
 
 **Requires AxEnvoy**
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   envoy_type:

@@ -2,7 +2,7 @@
 
 Requires a player to have an item as their helmet
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: wearing_helmet
   args:

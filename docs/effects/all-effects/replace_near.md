@@ -3,7 +3,7 @@
 
 Replaces nearby blocks with other blocks
 
-# Example Configs
+# Effect Syntaxs
 ```yaml
 - id: replace_near
   args:

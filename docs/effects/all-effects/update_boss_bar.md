@@ -3,7 +3,7 @@
 
 Updates a boss bar
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: update_boss_bar
   args:

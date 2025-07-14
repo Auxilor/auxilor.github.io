@@ -5,7 +5,7 @@ Adds reach for interacting with blocks
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: block_reach
   args:

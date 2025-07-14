@@ -5,7 +5,7 @@ Sends the player a minimessage message, supports clickable components, etc.
 
 **Requires Paper**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: send_minimessage
   args:

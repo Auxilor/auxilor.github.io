@@ -3,7 +3,7 @@
 
 Runs a command as a player
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: run_player_command
   args:

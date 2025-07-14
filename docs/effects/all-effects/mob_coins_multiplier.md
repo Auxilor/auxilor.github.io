@@ -5,7 +5,7 @@ Multiplies mob coin drops
 
 **Requires Flare Mobcoins**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: mob_coins_multiplier
   args:

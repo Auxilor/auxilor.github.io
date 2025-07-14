@@ -4,7 +4,7 @@ Require a certain scroll
 
 **Requires EcoScrolls**
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   scroll:

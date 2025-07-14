@@ -6,7 +6,7 @@ Starts a quest for the player
 
 **Requires EcoQuests**
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: start_quest

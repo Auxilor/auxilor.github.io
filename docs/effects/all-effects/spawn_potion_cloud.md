@@ -3,7 +3,7 @@
 
 Spawns a [potion](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html) cloud
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: spawn_potion_cloud
   args:

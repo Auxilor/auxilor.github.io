@@ -3,7 +3,7 @@
 
 Sets the player's food
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: set_food
   args:

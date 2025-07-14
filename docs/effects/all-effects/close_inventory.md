@@ -3,7 +3,7 @@
 
 Closes the player's inventory
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: close_inventory
   ...other config (eg triggers, filters, mutators, etc)

@@ -6,7 +6,7 @@ Gives experience points for a task in a quest, excluding multipliers.
 
 **Requires EcoQuests**
 
-# Example Config
+# Effect Syntax
 
 ```yaml
 - id: give_task_xp

@@ -4,7 +4,7 @@
 Give battlepass experience points
 
 **Requires xBattlepass**
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_battlepass_xp
   args:

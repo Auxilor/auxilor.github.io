@@ -3,7 +3,7 @@
 
 Give a player oxygen
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_oxygen
   args:

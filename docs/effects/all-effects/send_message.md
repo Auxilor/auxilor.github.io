@@ -3,7 +3,7 @@
 
 Sends the player a message
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: send_message
   args:

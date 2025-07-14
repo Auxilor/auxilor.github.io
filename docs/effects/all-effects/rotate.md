@@ -3,7 +3,7 @@
 
 Spin around
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: rotate
   args:

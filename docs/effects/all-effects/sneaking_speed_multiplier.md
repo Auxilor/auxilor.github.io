@@ -5,7 +5,7 @@ Multiplies sneaking speed
 
 **Requires 1.21+**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: sneaking_speed_multiplier
   args:

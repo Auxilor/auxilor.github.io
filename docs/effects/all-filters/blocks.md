@@ -2,7 +2,7 @@
 
 The list of materials (block types) that the effect should activate on
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   blocks: 

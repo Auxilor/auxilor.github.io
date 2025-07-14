@@ -4,7 +4,7 @@ Requires a player to have a certain scroll active
 
 **Requires EcoScrolls**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_scroll
   args:

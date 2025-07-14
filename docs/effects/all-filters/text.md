@@ -2,7 +2,7 @@
 
 The list of text that the trigger has to match at least one of
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   text: 

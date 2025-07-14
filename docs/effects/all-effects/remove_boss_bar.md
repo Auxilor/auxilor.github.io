@@ -3,7 +3,7 @@
 
 Removes a boss bar
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: remove_boss_bar
   args:

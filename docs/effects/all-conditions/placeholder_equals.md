@@ -2,7 +2,7 @@
 
 Requires a placeholder to equal a certain value
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: placeholder_equals
   args:

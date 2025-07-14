@@ -3,7 +3,7 @@
 
 Breaks a block instantly
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: break_block
   args:

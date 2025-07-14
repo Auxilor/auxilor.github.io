@@ -2,7 +2,7 @@
 
 If the block must be (or must not be) placed by a player
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   player_placed: false

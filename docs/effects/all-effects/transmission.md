@@ -3,7 +3,7 @@
 
 Teleport a player forward in the direction they're facing (Like AotE)
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: transmission
   args:

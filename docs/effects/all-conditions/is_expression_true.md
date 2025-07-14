@@ -2,7 +2,7 @@
 
 Requires a certain expression to be true
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_expression_true
   args:

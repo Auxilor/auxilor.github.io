@@ -3,7 +3,7 @@
 
 Damages the item
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: damage_item
   args:

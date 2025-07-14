@@ -5,7 +5,7 @@ Multiplies all stats by a specific value
 
 **Requires EcoSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: multiply_all_stats
   args:

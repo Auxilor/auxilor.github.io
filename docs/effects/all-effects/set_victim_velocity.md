@@ -3,7 +3,7 @@
 
 Sets the victim's velocity
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: set_victim_velocity
   args:

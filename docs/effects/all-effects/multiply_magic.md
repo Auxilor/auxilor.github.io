@@ -5,7 +5,7 @@ Multiply magic
 
 **Requires EcoSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: multiply_magic
   args:

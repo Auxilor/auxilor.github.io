@@ -4,7 +4,7 @@ Require a certain shop item
 
 **Requires EcoShop**
 
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   shop_item:

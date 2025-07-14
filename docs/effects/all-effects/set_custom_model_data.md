@@ -3,7 +3,7 @@
 
 Set the item's custom model data
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: set_custom_model_data
   args:

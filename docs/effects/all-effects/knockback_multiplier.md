@@ -3,7 +3,7 @@
 
 Multiplies attack knockback
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: knockback_multiplier
   args:

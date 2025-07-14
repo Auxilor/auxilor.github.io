@@ -4,7 +4,7 @@ Requires a player to be wearing a certain EcoArmor set
 
 **Requires EcoArmor**
 
-# Example Config
+# Condition Syntax
 ```yaml
 - id: is_wearing_set
   args:

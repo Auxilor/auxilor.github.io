@@ -3,7 +3,7 @@
 
 Multiplies attack speed
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: attack_speed_multiplier
   args:
