@@ -1,6 +1,5 @@
 # `extinguish`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Extinguish the player
 

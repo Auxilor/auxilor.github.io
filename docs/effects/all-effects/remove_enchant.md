@@ -1,6 +1,5 @@
 # `remove_enchant`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Removes an enchant from the item
 

@@ -1,6 +1,5 @@
 # `strip_ai`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Strips a mob's AI temporarily
 

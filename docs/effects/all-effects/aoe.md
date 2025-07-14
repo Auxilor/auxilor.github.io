@@ -1,7 +1,6 @@
 # `aoe`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Runs effects for all entities within an area of effect (aoe)
 

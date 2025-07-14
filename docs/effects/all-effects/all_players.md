@@ -1,6 +1,5 @@
 # `all_players`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Runs effects for all players on the server
 

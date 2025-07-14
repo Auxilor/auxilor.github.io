@@ -1,7 +1,6 @@
 # `particle_animation`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Plays a particle animation
 

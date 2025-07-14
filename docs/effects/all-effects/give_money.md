@@ -1,6 +1,5 @@
 # `give_money`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Gives a player money
 

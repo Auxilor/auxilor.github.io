@@ -1,6 +1,5 @@
 # `jobs_money_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies money gain from jobs
 

@@ -1,6 +1,5 @@
 # `shuffle_hotbar`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Shuffle your victim's hotbar
 

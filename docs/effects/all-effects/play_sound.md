@@ -1,6 +1,5 @@
 # `play_sound`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Plays a sound to the player
 

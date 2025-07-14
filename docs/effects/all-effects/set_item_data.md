@@ -1,6 +1,5 @@
 # `set_item_data`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Set item data
 

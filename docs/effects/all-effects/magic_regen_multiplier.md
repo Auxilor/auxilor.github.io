@@ -1,6 +1,5 @@
 # `magic_regen_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies magic regeneration
 

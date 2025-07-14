@@ -1,6 +1,5 @@
 # `armor`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Gives armor points
 

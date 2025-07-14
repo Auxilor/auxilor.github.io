@@ -1,6 +1,5 @@
 # `set_item_points`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Set item points (check the points wiki page if you don't know what these are)
 

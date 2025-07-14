@@ -1,7 +1,6 @@
 # `drop_pickup_item`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Drops an item that runs a chain on pickup
 

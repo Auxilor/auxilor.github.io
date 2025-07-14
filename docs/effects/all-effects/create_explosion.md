@@ -1,6 +1,5 @@
 # `create_explosion`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Creates an explosion
 

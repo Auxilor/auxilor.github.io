@@ -1,6 +1,5 @@
 # `remove_potion_effect`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Removes a potion effect
 

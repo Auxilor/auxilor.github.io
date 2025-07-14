@@ -1,6 +1,5 @@
 # `trigger_custom`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Call a custom trigger
 

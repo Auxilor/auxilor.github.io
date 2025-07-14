@@ -1,6 +1,5 @@
 # `give_magic`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Add / subtract magic
 

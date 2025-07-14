@@ -1,6 +1,5 @@
 # `close_inventory`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Closes the player's inventory
 

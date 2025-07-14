@@ -1,6 +1,5 @@
 # `dont_consume_lapis_chance`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Prevents consuming lapis when enchanting items
 

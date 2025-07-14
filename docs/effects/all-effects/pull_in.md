@@ -1,6 +1,5 @@
 # `pull_in`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Pull the victim towards the player
 

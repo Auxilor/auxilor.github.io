@@ -1,6 +1,5 @@
 # `transmission`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Teleport a player forward in the direction they're facing (Like AotE)
 

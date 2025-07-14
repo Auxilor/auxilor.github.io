@@ -1,6 +1,5 @@
 # `age_crop`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 If the block is a crop, age it by a certain amount
 

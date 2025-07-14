@@ -1,6 +1,5 @@
 # `drill`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Mine blocks behind the initial mined block
 

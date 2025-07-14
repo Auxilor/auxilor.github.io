@@ -1,6 +1,5 @@
 # `flight`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Grants flight
 

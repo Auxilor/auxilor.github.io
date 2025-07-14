@@ -1,6 +1,5 @@
 # `keep_inventory`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Gives the player keep inventory
 

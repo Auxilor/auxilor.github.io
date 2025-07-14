@@ -1,7 +1,6 @@
 # `swarm`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Makes nearby monsters in a certain radius attack the victim
 

@@ -1,6 +1,5 @@
 # `spawn_mobs`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Spawns [mobs](https://plugins.auxilor.io/all-plugins/the-entity-lookup-system) to help you
 

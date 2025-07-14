@@ -1,6 +1,5 @@
 # `mining_efficiency`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Adds mining efficiency (mining speed when using the correct tool)
 

@@ -1,7 +1,6 @@
 # `homing`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Makes projectiles hone in onto entities (homing arrows / tridents)
 

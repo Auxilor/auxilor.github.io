@@ -1,6 +1,5 @@
 # `damage_victim`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Damage the victim
 

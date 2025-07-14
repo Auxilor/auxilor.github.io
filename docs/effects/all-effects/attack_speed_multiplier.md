@@ -1,6 +1,5 @@
 # `attack_speed_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies attack speed
 

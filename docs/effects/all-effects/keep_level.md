@@ -1,6 +1,5 @@
 # `keep_level`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Makes the player keep their XP level on death
 

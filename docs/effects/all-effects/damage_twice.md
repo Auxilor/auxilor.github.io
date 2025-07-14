@@ -1,6 +1,5 @@
 # `damage_twice`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Deals an extra hit to the victim
 

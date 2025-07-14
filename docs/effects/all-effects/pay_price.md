@@ -1,6 +1,5 @@
 # `pay_price`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Pay a [price](https://plugins.auxilor.io/all-plugins/prices)
 

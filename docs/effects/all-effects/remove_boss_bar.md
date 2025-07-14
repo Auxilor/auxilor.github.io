@@ -1,6 +1,5 @@
 # `remove_boss_bar`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Removes a boss bar
 

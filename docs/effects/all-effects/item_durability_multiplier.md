@@ -1,6 +1,5 @@
 # `item_durability_multiplier`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Multiplies item durability (only works if holders are items, e.g. in EcoEnchants, EcoItems, etc.)
 

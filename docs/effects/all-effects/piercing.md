@@ -1,7 +1,6 @@
 # `piercing`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Makes projectiles pass through other entities (collaterals), like the Piercing enchantment.
 

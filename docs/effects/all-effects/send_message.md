@@ -1,6 +1,5 @@
 # `send_message`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Sends the player a message
 

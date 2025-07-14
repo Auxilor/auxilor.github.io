@@ -1,7 +1,6 @@
 # `animation`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Plays an animation
 

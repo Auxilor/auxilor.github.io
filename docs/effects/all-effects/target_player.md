@@ -1,7 +1,6 @@
 # `target_player`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Makes the victim target the player (requires the victim to be a monster)
 

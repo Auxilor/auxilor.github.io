@@ -1,6 +1,5 @@
 # `give_xp`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Gives experience points
 

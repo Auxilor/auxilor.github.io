@@ -1,6 +1,5 @@
 # `battlepass_xp_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies incoming battlepass xp gain
 

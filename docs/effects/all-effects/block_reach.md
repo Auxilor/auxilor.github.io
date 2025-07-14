@@ -1,6 +1,5 @@
 # `block_reach`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Adds reach for interacting with blocks
 

@@ -1,6 +1,5 @@
 # `repair_item`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Repairs the item
 

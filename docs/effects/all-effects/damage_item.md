@@ -1,6 +1,5 @@
 # `damage_item`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Damages the item
 

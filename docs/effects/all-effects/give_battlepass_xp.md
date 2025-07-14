@@ -1,6 +1,5 @@
 # `give_battlepass_xp`
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Give battlepass experience points
 

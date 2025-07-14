@@ -1,7 +1,6 @@
 # `inscribe_item`
 
-:::dangerTriggered Effect
-:::
+#### Triggered Effect
 
 Inscribes an item with a scroll
 

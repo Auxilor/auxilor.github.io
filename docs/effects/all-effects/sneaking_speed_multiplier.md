@@ -1,6 +1,5 @@
 # `sneaking_speed_multiplier`
-:::infoPermanent Effect
-:::
+#### Permanent Effect
 
 Multiplies sneaking speed
 
