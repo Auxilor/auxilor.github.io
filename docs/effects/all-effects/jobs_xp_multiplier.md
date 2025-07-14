@@ -9,7 +9,6 @@ Multiplies xp gain from jobs
 :::infoRequires:
 Jobs Reborn
 :::
-
 # Effect Syntax
 ```yaml
 - id: jobs_xp_multiplier

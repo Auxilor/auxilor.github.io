@@ -8,7 +8,6 @@ Multiplies jump strength
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: jump_strength_multiplier

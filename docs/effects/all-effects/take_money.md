@@ -8,7 +8,6 @@ Takes money from the player
 :::infoRequires:
 Vault
 :::
-
 # Effect Syntax
 ```yaml
 - id: take_money

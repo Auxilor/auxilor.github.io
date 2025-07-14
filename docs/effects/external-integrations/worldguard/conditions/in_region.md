@@ -6,7 +6,6 @@ Requires a player to be in a certain region
 :::infoRequires:
 WorldGuard
 :::
-
 # Example Config
 ```yaml
 - id: in_region

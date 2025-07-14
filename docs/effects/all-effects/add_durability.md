@@ -8,7 +8,6 @@ Increase the max durability of an item
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: add_durability

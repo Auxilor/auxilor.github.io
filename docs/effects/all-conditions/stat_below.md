@@ -5,7 +5,6 @@ Requires a player to have less than a certain stat level
 :::infoRequires:
 EcoSkills
 :::
-
 # Condition Syntax
 
 ```yaml

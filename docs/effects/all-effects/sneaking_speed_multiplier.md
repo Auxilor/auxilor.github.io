@@ -8,7 +8,6 @@ Multiplies sneaking speed
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: sneaking_speed_multiplier

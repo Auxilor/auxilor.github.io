@@ -8,7 +8,6 @@ Multiplies underwater mining speed
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: underwater_mining_speed_multiplier

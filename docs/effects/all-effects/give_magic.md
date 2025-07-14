@@ -8,7 +8,6 @@ Add / subtract magic
 :::infoRequires:
 EcoSkills
 :::
-
 # Effect Syntax
 ```yaml
 - id: give_magic

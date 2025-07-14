@@ -8,8 +8,7 @@ Multiplies quest xp gain
 :::infoRequires:
 EcoQuests
 :::
-
-# Example Config
+# Effect Syntax
 ```yaml
 - id: quest_xp_multiplier
   args:

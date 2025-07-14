@@ -8,7 +8,6 @@ Multiplies gravity
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: gravity_multiplier

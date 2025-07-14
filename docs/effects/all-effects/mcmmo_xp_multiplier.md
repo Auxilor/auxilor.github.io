@@ -8,7 +8,6 @@ Multiplies mcMMO skill xp gain
 :::infoRequires:
 McMMO
 :::
-
 # Effect Syntax
 ```yaml
 - id: mcmmo_xp_multiplier

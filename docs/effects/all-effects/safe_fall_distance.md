@@ -8,7 +8,6 @@ Increases/decreases the distance you can fall without taking damage
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: safe_fall_distance

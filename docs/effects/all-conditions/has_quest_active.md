@@ -5,7 +5,6 @@ Requires a player to have a quest active
 :::infoRequires:
 EcoQuests
 :::
-
 # Condition Syntax
 ```yaml
 - id: has_quest_active

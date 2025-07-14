@@ -8,7 +8,6 @@ Gives a player money
 :::infoRequires:
 Vault
 :::
-
 # Effect Syntax
 ```yaml
 - id: give_money

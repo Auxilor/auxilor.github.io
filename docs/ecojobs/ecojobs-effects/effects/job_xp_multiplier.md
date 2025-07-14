@@ -8,8 +8,7 @@ Multiplies job xp gain
 :::infoRequires:
 EcoJobs
 :::
-
-# Example Config
+# Effect Syntax
 ```yaml
 - id: job_xp_multiplier
   args:

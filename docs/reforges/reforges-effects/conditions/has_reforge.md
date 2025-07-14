@@ -6,8 +6,7 @@ Requires a player to have a certain reforge active
 :::infoRequires:
 Reforges
 :::
-
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_reforge
   args:

@@ -8,7 +8,6 @@ Gives a permission while active
 :::infoRequires:
 Vault
 :::
-
 # Effect Syntax
 ```yaml
 - id: give_permission

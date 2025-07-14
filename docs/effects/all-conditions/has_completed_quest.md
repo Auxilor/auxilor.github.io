@@ -5,7 +5,6 @@ Requires a player to have completed a quest
 :::infoRequires:
 EcoQuests
 :::
-
 # Condition Syntax
 ```yaml
 - id: has_completed_quest

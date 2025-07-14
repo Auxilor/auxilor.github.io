@@ -5,8 +5,7 @@ Requires a player to have completed task for a quest
 :::infoRequires:
 EcoQuests
 :::
-
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_completed_task
   args:

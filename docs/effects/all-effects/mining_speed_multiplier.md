@@ -8,7 +8,6 @@ Multiplies mining speed
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: mining_speed_multiplier

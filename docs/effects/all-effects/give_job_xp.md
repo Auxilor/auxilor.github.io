@@ -8,7 +8,6 @@ Gives experience points for a certain job
 :::infoRequires:
 EcoJobs
 :::
-
 # Effect Syntax
 ```yaml
 - id: give_job_xp

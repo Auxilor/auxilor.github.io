@@ -8,7 +8,6 @@ Gives experience points for a certain pet
 :::infoRequires:
 EcoPets
 :::
-
 # Effect Syntax
 ```yaml
 - id: give_pet_xp

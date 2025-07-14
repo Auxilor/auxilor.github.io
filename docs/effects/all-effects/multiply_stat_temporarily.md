@@ -8,7 +8,6 @@ Multiplies a stat by a specific value
 :::infoRequires:
 EcoSkills
 :::
-
 # Effect Syntax
 ```yaml
 - id: multiply_stat_temporarily

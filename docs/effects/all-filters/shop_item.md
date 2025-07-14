@@ -5,7 +5,6 @@ Require a certain shop item
 :::infoRequires:
 EcoShop
 :::
-
 # Filter Syntax
 ```yaml
 filters:

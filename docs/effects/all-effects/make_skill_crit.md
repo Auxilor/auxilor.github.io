@@ -8,7 +8,6 @@ Deal a crit hit
 :::infoRequires:
 EcoSkills
 :::
-
 # Effect Syntax
 ```yaml
 - id: make_skill_crit

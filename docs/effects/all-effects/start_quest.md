@@ -8,7 +8,6 @@ Starts a quest for the player
 :::infoRequires:
 EcoQuests
 :::
-
 # Effect Syntax
 
 ```yaml

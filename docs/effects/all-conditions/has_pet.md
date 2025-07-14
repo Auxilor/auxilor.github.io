@@ -5,7 +5,6 @@ Requires a player to have a certain pet
 :::infoRequires:
 EcoPets
 :::
-
 # Condition Syntax
 ```yaml
 - id: has_pet

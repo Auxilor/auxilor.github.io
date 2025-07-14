@@ -8,9 +8,7 @@ Gains experience points for a task in a quest, including multipliers.
 :::infoRequires:
 EcoQuests
 :::
-
-# Example Config
-
+# Effect Syntax
 ```yaml
 - id: gain_task_xp
   args:

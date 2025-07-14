@@ -8,7 +8,6 @@ Adds reach for interacting with blocks
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: block_reach

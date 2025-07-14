@@ -5,8 +5,7 @@ Require a certain skill
 :::infoRequires:
 EcoSkills
 :::
-
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   skill:

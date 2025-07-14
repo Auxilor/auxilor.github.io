@@ -8,7 +8,6 @@ Give money to a Land's bank balance
 :::infoRequires:
 Lands
 :::
-
 # Example Config
 
 ```yaml

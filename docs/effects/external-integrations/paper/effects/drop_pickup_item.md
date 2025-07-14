@@ -8,7 +8,6 @@ Drops an item that runs a chain on pickup
 :::infoRequires:
 Paper
 :::
-
 # Example Config
 
 ```yaml

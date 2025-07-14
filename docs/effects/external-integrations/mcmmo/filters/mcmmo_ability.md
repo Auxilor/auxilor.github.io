@@ -5,7 +5,6 @@ The list of [entities](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entit
 :::infoRequires:
 Lands
 :::
-
 # Example Config
 ```yaml
 filters:

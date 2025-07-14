@@ -8,7 +8,6 @@ Multiplies skill xp gain
 :::infoRequires:
 EcoSkills || AuraSkills
 :::
-
 # Example Config
 ```yaml
 - id: skill_xp_multiplier

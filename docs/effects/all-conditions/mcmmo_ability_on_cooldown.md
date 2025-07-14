@@ -5,7 +5,6 @@ Requires an McMMO ability to be on cooldown
 :::infoRequires:
 McMMO
 :::
-
 # Condition Syntax
 ```yaml
 - id: mcmmo_ability_on_cooldown

@@ -5,8 +5,7 @@ Requires a player to have a certain amount of magic
 :::infoRequires:
 EcoSkills
 :::
-
-# Example Config
+# Condition Syntax
 ```yaml
 - id: above_magic
   args:

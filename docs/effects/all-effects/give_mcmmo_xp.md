@@ -8,7 +8,6 @@ Gives experience points for a certain skill
 :::infoRequires:
 McMMO
 :::
-
 # Effect Syntax
 ```yaml
 - id: give_mcmmo_xp

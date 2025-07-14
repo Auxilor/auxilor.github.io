@@ -8,9 +8,7 @@ Starts a quest for the player
 :::infoRequires:
 EcoQuests
 :::
-
-# Example Config
-
+# Effect Syntax
 ```yaml
 - id: start_quest
   args:

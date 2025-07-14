@@ -5,8 +5,7 @@ Require a certain magic type
 :::infoRequires:
 EcoSkills
 :::
-
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   magic_type:

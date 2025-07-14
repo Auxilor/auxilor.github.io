@@ -8,7 +8,6 @@ Multiplies mob coin drops
 :::infoRequires:
 Flare Mobcoins
 :::
-
 # Effect Syntax
 ```yaml
 - id: mob_coins_multiplier

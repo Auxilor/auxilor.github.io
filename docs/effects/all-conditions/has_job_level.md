@@ -5,7 +5,6 @@ Requires a player to have a certain job level
 :::infoRequires:
 EcoJobs
 :::
-
 # Condition Syntax
 ```yaml
 - id: has_job_level

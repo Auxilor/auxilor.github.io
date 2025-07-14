@@ -5,8 +5,7 @@ Requires a player to have at least a certain stat level
 :::infoRequires:
 EcoSkills
 :::
-
-# Example Config
+# Condition Syntax
 
 ```yaml
 - id: stat_above

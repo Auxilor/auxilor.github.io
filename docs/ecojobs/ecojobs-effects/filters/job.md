@@ -5,8 +5,7 @@ Require a certain job
 :::infoRequires:
 EcoJobs
 :::
-
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   job:

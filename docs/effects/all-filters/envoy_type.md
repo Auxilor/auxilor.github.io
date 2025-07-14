@@ -5,7 +5,6 @@ The list of envoy types that the effect should activate against
 :::infoRequires:
 AxEnvoy
 :::
-
 # Filter Syntax
 ```yaml
 filters:

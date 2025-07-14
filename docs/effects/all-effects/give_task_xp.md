@@ -8,7 +8,6 @@ Gives experience points for a task in a quest, excluding multipliers.
 :::infoRequires:
 EcoQuests
 :::
-
 # Effect Syntax
 
 ```yaml
