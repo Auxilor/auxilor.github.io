@@ -1,5 +1,6 @@
 # `telekinesis`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Teleports all drops to the player's inventory
 

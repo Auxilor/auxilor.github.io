@@ -1,5 +1,6 @@
 # `send_minimessage`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Sends the player a minimessage message, supports clickable components, etc.
 

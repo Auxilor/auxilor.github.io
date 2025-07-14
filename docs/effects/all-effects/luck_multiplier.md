@@ -1,5 +1,6 @@
 # `luck_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies luck
 

@@ -1,5 +1,6 @@
 # `damage_offhand`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Damage a victim's offhand item
 

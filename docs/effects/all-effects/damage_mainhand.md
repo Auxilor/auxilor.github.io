@@ -1,5 +1,6 @@
 # `damage_mainhand`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Damage a victim's mainhand item
 

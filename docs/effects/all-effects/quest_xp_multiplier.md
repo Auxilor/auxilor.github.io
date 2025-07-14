@@ -1,5 +1,6 @@
 # `quest_xp_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies quest xp gain
 

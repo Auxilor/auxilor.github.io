@@ -1,5 +1,6 @@
 # `underwater_mining_speed_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies underwater mining speed
 

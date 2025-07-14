@@ -1,5 +1,6 @@
 # `total_damage_multiplier`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Multiplies all incoming or outgoing damage from any damage trigger
 

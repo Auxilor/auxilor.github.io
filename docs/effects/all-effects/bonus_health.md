@@ -1,5 +1,6 @@
 # `bonus_health`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Gives extra health
 

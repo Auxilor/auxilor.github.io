@@ -1,5 +1,6 @@
 # `give_battlepass_tier`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Give battlepass tiers to the player.
 

@@ -1,5 +1,6 @@
 # `shoot_arrow`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Shoots an arrow
 

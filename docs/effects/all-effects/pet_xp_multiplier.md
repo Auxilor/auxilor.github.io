@@ -1,5 +1,6 @@
 # `pet_xp_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies pet xp gain
 

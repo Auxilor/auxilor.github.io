@@ -1,5 +1,6 @@
 # `give_oxygen`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Give a player oxygen
 

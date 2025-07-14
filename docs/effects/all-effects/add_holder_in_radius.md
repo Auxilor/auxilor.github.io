@@ -1,5 +1,6 @@
 # `add_holder_in_radius`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Gives a custom holder temporarily for a given period of time
 

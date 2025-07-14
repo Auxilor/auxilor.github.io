@@ -1,5 +1,6 @@
 # `knockback_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies attack knockback
 

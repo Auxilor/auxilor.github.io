@@ -1,5 +1,6 @@
 # `spawn_potion_cloud`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Spawns a [potion](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html) cloud
 

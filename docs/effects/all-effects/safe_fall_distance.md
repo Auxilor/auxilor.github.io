@@ -1,5 +1,6 @@
 # `safe_fall_distance`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Increases/decreases the distance you can fall without taking damage
 

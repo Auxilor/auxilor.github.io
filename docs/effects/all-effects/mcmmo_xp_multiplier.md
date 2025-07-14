@@ -1,5 +1,6 @@
 # `mcmmo_xp_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies mcMMO skill xp gain
 

@@ -1,5 +1,6 @@
 # `set_custom_model_data`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Set the item's custom model data
 

@@ -1,5 +1,6 @@
 # `damage_multiplier`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Multiplies incoming or outgoing damage from any damage trigger
 
