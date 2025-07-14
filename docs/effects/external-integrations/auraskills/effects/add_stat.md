@@ -1,11 +1,11 @@
 # `add_stat`
-:::infoPermanent Effect
+:::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Adds a value to a specific stat
 
-:::warningRequirements:
+:::infoRequires:
 EcoSkills || AuraSkills
 :::
 

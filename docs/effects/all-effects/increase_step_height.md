@@ -1,5 +1,5 @@
 # `increase_step_height`
-:::infoPermanent Effect
+:::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
