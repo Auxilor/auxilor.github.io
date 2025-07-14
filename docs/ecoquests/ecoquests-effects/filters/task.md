@@ -2,7 +2,9 @@
 
 Require a certain task
 
-**Requires EcoQuests**
+:::warningRequires:
+EcoQuests
+:::
 
 # Example Config
 ```yaml

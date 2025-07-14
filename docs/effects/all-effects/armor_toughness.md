@@ -1,5 +1,6 @@
 # `armor_toughness`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Gives armor toughness

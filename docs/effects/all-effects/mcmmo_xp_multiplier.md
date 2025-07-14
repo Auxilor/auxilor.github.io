@@ -1,10 +1,13 @@
 # `mcmmo_xp_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies mcMMO skill xp gain
 
-**Requires mcMMO**
+:::warningRequires:
+McMMO
+:::
 
 # Effect Syntax
 ```yaml

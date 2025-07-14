@@ -1,5 +1,6 @@
 # `potion_effect`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Gives a [potion](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html) effect

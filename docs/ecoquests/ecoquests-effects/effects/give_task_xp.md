@@ -1,10 +1,13 @@
 # `give_task_xp`
-
-#### Triggered Effect
+:::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
+:::
 
 Gives experience points for a task in a quest, excluding multipliers.
 
-**Requires EcoQuests**
+:::warningRequires:
+EcoQuests
+:::
 
 # Example Config
 

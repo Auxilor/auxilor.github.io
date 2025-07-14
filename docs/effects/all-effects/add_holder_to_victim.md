@@ -1,5 +1,6 @@
 # `add_holder_to_victim`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Gives a custom holder temporarily to your victim (they must be a player) for a given period of time

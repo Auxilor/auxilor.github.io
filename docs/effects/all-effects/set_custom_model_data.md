@@ -1,5 +1,6 @@
 # `set_custom_model_data`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Set the item's custom model data

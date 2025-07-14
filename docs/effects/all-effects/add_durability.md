@@ -1,10 +1,13 @@
 # `add_durability`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Increase the max durability of an item
 
-**Requires 1.21+**
+:::warningRequires:
+Server Version 1.21+
+:::
 
 # Effect Syntax
 ```yaml

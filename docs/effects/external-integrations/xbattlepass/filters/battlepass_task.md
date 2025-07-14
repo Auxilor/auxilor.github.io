@@ -2,7 +2,9 @@
 
 The list of battlepass rewards the effect should activate on
 
-**Requires xBattlepass**
+:::warningRequires:
+xBattlepass
+:::
 # Example Config
 ```yaml
 filters:

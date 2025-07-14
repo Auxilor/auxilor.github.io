@@ -1,5 +1,6 @@
 # `damage_twice`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Deals an extra hit to the victim

@@ -2,7 +2,9 @@
 
 Requires a player to have a certain skill level
 
-**Requires EcoSkills or AuraSkills**
+:::warningRequires:
+EcoSkills / AuraSkills
+:::
 
 # Condition Syntax
 ```yaml

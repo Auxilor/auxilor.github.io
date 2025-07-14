@@ -1,9 +1,13 @@
 # `multiply_all_stats`
-#### Permanent Effect
+:::infoPermanent Effect
+This effect is permanent and does not require a trigger.
+:::
 
 Multiplies all stats by a specific value
 
-**Requires EcoSkills**
+:::warningRequires:
+EcoSkills
+:::
 
 # Example Config
 ```yaml

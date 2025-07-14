@@ -2,7 +2,9 @@
 
 Require a certain quest
 
-**Requires EcoQuests**
+:::warningRequires:
+EcoQuests
+:::
 
 # Example Config
 ```yaml

@@ -2,7 +2,10 @@
 
 Requires a player to be in a certain region
 
-**Requires WorldGuard**
+
+:::warningRequires:
+WorldGuard
+:::
 
 # Example Config
 ```yaml

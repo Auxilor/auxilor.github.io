@@ -2,7 +2,9 @@
 
 Requires a player to have a certain role in the Land
 
-**Requires Lands**
+:::warningRequires:
+Lands
+:::
 # Example Config
 ```yaml
 - id: has_lands_role

@@ -1,10 +1,13 @@
 # `mining_efficiency`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Adds mining efficiency (mining speed when using the correct tool)
 
-**Requires 1.21+**
+:::warningRequires:
+Server Version 1.21+
+:::
 
 # Effect Syntax
 ```yaml

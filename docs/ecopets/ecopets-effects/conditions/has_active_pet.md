@@ -2,7 +2,9 @@
 
 Requires a player to have a pet active
 
-**Requires EcoPets**
+:::warningRequires:
+EcoPets
+:::
 
 # Example Config
 ```yaml

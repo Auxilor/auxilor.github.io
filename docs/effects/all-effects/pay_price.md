@@ -1,5 +1,6 @@
 # `pay_price`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Pay a [price](https://plugins.auxilor.io/all-plugins/prices)

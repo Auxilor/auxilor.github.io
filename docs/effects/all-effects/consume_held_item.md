@@ -1,5 +1,6 @@
 # `consume_held_item`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Consume items held in the player's main hand

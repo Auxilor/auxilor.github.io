@@ -2,7 +2,9 @@
 
 Requires a player to have a certain pet level
 
-**Requires EcoPets**
+:::warningRequires:
+EcoPets
+:::
 
 # Condition Syntax
 ```yaml

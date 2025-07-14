@@ -1,5 +1,6 @@
 # `set_global_points`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Set global points (check the points wiki page if you don't know what these are)

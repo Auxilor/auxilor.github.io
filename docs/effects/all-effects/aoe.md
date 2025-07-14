@@ -1,6 +1,6 @@
 # `aoe`
-
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Runs effects for all entities within an area of effect (aoe)

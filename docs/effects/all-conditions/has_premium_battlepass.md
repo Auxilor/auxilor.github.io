@@ -2,7 +2,9 @@
 
 Requires a player to have the premium battlepass
 
-**Requires xBattlepass**
+:::warningRequires:
+xBattlepass
+:::
 # Condition Syntax
 ```yaml
 - id: has_premium_battlepass

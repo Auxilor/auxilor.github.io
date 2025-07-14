@@ -2,7 +2,9 @@
 
 Requires a player to have less than a certain stat level
 
-**Requires EcoSkills**
+:::warningRequires:
+EcoSkills
+:::
 
 # Condition Syntax
 

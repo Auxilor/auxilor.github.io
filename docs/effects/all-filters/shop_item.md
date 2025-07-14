@@ -2,7 +2,9 @@
 
 Require a certain shop item
 
-**Requires EcoShop**
+:::warningRequires:
+EcoShop
+:::
 
 # Filter Syntax
 ```yaml

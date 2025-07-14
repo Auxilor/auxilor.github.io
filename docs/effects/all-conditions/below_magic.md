@@ -2,7 +2,9 @@
 
 Requires a player to have less than a certain amount of magic
 
-**Requires EcoSkills**
+:::warningRequires:
+EcoSkills
+:::
 
 # Condition Syntax
 ```yaml

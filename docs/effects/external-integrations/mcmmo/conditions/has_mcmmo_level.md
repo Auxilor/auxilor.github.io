@@ -2,7 +2,9 @@
 
 Requires a player to have a certain McMMO skill level
 
-**Requires McMMO**
+:::warningRequires:
+McMMO
+:::
 
 # Example Config
 ```yaml

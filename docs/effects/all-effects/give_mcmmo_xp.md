@@ -1,10 +1,13 @@
 # `give_mcmmo_xp`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Gives experience points for a certain skill
 
-**Requires mcMMO**
+:::warningRequires:
+McMMO
+:::
 
 # Effect Syntax
 ```yaml

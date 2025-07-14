@@ -1,5 +1,6 @@
 # `reel_speed_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies the speed at which you pull in entities and drops with fishing rods

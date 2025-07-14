@@ -2,7 +2,9 @@
 
 Requires a certain booster to be active on the server
 
-**Requires Boosters**
+:::warningRequires:
+Boosters
+:::
 
 # Example Config
 ```yaml

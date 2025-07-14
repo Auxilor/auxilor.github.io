@@ -2,7 +2,9 @@
 
 Requires the player is in a declared war with the victim
 
-**Requires Lands**
+:::warningRequires:
+Lands
+:::
 # Filter Syntax
 ```yaml
 filters:

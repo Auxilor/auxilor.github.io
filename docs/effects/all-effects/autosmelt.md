@@ -1,5 +1,6 @@
 # `autosmelt`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Autosmelts drops (requires a drop trigger)

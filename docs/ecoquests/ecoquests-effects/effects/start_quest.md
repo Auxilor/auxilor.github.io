@@ -1,10 +1,13 @@
 # `start_quest`
-
-#### Triggered Effect
+:::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
+:::
 
 Starts a quest for the player
 
-**Requires EcoQuests**
+:::warningRequires:
+EcoQuests
+:::
 
 # Example Config
 

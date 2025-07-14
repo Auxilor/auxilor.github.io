@@ -1,6 +1,6 @@
 # `mine_vein`
-
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Mines a vein of blocks

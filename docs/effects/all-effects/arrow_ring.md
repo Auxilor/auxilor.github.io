@@ -1,5 +1,6 @@
 # `arrow_ring`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Spawns a ring of arrows around a location

@@ -2,7 +2,9 @@
 
 Requires a player to have a job active
 
-**Requires EcoJobs**
+:::warningRequires:
+EcoJobs
+:::
 
 # Example Config
 ```yaml

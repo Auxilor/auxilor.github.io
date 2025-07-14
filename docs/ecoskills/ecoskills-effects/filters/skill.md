@@ -2,7 +2,9 @@
 
 Require a certain skill
 
-**Requires EcoSkills**
+:::warningRequires:
+EcoSkills
+:::
 
 # Example Config
 ```yaml

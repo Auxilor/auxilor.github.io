@@ -1,10 +1,13 @@
 # `give_battlepass_xp`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Give battlepass experience points
 
-**Requires xBattlepass**
+:::warningRequires:
+xBattlepass
+:::
 # Example Config
 ```yaml
 - id: give_battlepass_xp

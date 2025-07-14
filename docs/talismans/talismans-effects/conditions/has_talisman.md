@@ -2,7 +2,10 @@
 
 Requires a player to have a certain talisman active
 
-**Requires Talismans**
+
+:::warningRequires:
+Talismans
+:::
 
 # Example Config
 ```yaml

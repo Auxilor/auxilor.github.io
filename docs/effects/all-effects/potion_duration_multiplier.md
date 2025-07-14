@@ -1,5 +1,6 @@
 # `potion_duration_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies the duration of brewed potions

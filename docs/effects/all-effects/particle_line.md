@@ -1,5 +1,6 @@
 # `particle_line`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Spawns a line of particles between you and the target location

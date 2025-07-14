@@ -1,10 +1,13 @@
 # `multiply_stat`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies a stat by a specific value
 
-**Requires EcoSkills**
+:::warningRequires:
+EcoSkills
+:::
 
 # Effect Syntax
 ```yaml

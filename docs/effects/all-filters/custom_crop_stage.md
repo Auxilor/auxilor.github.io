@@ -2,7 +2,9 @@
 
 The list of crop stages the effect should activate on
 
-**Requires CustomCrops**
+:::warningRequires:
+CustomCrops
+:::
 # Filter Syntax
 ```yaml
 filters:

@@ -1,11 +1,13 @@
 # `set_lands_balance`
-
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Set the Land bank's balance
 
-**Requires Lands**
+:::warningRequires:
+Lands
+:::
 
 # Example Config
 

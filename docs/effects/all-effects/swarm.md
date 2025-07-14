@@ -1,6 +1,6 @@
 # `swarm`
-
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Makes nearby monsters in a certain radius attack the victim

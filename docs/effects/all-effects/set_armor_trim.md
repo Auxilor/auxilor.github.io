@@ -1,5 +1,6 @@
 # `set_armor_trim`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Sets item armor trim

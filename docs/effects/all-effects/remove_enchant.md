@@ -1,5 +1,6 @@
 # `remove_enchant`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Removes an enchant from the item

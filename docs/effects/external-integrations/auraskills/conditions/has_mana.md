@@ -2,7 +2,9 @@
 
 Requires a player to have amount of mana
 
-**Requires AuraSkills**
+:::warningRequires:
+AuraSkills
+:::
 
 # Example Config
 ```yaml

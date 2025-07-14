@@ -1,5 +1,6 @@
 # `traceback`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Go back to a previous position

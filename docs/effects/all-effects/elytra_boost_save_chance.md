@@ -1,5 +1,6 @@
 # `elytra_boost_save_chance`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Prevents consuming fireworks when boosting with an elytra

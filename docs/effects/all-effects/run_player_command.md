@@ -1,5 +1,6 @@
 # `run_player_command`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Runs a command as a player

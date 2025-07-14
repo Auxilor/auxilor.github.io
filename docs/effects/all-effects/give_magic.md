@@ -1,10 +1,13 @@
 # `give_magic`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Add / subtract magic
 
-**Requires EcoSkills**
+:::warningRequires:
+EcoSkills
+:::
 
 # Effect Syntax
 ```yaml

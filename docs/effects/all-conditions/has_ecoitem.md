@@ -2,7 +2,9 @@
 
 Requires a player to have a certain EcoItem active
 
-**Requires EcoItems**
+:::warningRequires:
+EcoItems
+:::
 
 # Condition Syntax
 ```yaml

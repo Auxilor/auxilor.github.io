@@ -1,9 +1,13 @@
 # `give_job_xp`
-#### Triggered Effect
+:::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
+:::
 
 Gives experience points for a certain job
 
-**Requires EcoJobs**
+:::warningRequires:
+EcoJobs
+:::
 
 # Example Config
 ```yaml

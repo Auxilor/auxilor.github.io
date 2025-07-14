@@ -1,10 +1,14 @@
 # `jobs_xp_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies xp gain from jobs
 
-**Requires Jobs Reborn**
+
+:::warningRequires:
+Jobs Reborn
+:::
 
 # Effect Syntax
 ```yaml

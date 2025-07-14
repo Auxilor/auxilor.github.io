@@ -1,5 +1,6 @@
 # `age_crop`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 If the block is a crop, age it by a certain amount

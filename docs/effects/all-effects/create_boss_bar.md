@@ -1,5 +1,6 @@
 # `create_boss_bar`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Creates a boss bar and shows it to the player

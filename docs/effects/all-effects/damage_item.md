@@ -1,5 +1,6 @@
 # `damage_item`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Damages the item

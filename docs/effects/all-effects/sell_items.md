@@ -1,5 +1,6 @@
 # `sell_items`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Sells dropped items / item from trigger

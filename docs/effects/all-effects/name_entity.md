@@ -1,5 +1,6 @@
 # `name_entity`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Set the display name of an entity

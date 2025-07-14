@@ -1,6 +1,6 @@
 # `piercing`
-
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Makes projectiles pass through other entities (collaterals), like the Piercing enchantment.

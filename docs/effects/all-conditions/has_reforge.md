@@ -2,7 +2,10 @@
 
 Requires a player to have a certain reforge active
 
-**Requires Reforges**
+
+:::warningRequires:
+Reforges
+:::
 
 # Condition Syntax
 ```yaml

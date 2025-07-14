@@ -1,5 +1,6 @@
 # `drop_random_item`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Drops a random item at a location

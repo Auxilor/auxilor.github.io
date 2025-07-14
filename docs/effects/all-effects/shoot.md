@@ -1,5 +1,6 @@
 # `shoot`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Shoots a [projectile](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Projectile.html)

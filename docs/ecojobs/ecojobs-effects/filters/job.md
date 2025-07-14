@@ -2,7 +2,9 @@
 
 Require a certain job
 
-**Requires EcoJobs**
+:::warningRequires:
+EcoJobs
+:::
 
 # Example Config
 ```yaml

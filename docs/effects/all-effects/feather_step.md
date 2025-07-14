@@ -1,5 +1,6 @@
 # `feather_step`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Prevents trampling crops

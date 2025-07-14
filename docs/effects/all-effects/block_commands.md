@@ -1,5 +1,6 @@
 # `block_commands`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Prevents the execution of certain commands

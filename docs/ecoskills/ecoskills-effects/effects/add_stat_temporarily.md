@@ -1,9 +1,13 @@
 # `add_stat_temporarily`
-#### Triggered Effect
+:::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
+:::
 
 Adds a value to a specific stat
 
-**Requires EcoSkills**
+:::warningRequires:
+EcoSkills
+:::
 
 # Example Config
 ```yaml

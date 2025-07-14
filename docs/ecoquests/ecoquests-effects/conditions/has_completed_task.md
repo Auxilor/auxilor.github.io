@@ -2,7 +2,9 @@
 
 Requires a player to have completed task for a quest
 
-**Requires EcoQuests**
+:::warningRequires:
+EcoQuests
+:::
 
 # Example Config
 ```yaml

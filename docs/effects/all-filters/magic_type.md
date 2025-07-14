@@ -2,7 +2,9 @@
 
 Require a certain magic type
 
-**Requires EcoSkills**
+:::warningRequires:
+EcoSkills
+:::
 
 # Filter Syntax
 ```yaml

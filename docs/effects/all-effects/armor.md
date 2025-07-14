@@ -1,5 +1,6 @@
 # `armor`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Gives armor points

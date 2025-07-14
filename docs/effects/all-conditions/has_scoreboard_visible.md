@@ -2,7 +2,9 @@
 
 Requires a player to have the TAB scoreboard shown to them
 
-**Requires TAB**
+:::warningRequires:
+TAB
+:::
 
 # Condition Syntax
 ```yaml

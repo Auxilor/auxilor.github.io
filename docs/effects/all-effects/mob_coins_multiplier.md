@@ -1,10 +1,13 @@
 # `mob_coins_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies mob coin drops
 
-**Requires Flare Mobcoins**
+:::warningRequires:
+Flare Mobcoins
+:::
 
 # Effect Syntax
 ```yaml
