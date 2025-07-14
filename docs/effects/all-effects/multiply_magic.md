@@ -1,5 +1,5 @@
 # `multiply_magic`
-#### Triggered Effect
+:::dangerTriggered Effect:::
 
 Multiply magic
 
