@@ -1,13 +1,13 @@
 # `magic_regen_multiplier`
+:::infoRequires:
+EcoSkills
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Multiplies magic regeneration
-
-:::infoRequires:
-EcoSkills
-:::
 # Effect Syntax
 ```yaml
 - id: magic_regen_multiplier

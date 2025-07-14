@@ -1,10 +1,9 @@
 # `battlepass_reward`
-
-The list of battlepass rewards the effect should activate on
-
 :::infoRequires:
 xBattlepass
 :::
+
+The list of battlepass rewards the effect should activate on
 # Filter Syntax
 ```yaml
 filters:

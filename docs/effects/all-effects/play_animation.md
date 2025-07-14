@@ -1,14 +1,13 @@
 # `play_animation`
+:::infoRequires:
+Model Engine
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Plays a Model Engine animation (The entity must have a custom model active)
-
-
-:::infoRequires:
-Model Engine
-:::
 # Effect Syntax
 ```yaml
 - id: play_animation

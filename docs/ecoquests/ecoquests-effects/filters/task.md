@@ -1,10 +1,9 @@
 # `task`
-
-Require a certain task
-
 :::infoRequires:
 EcoQuests
 :::
+
+Require a certain task
 # Filter Syntax
 ```yaml
 filters:

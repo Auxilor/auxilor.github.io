@@ -1,13 +1,13 @@
 # `entity_reach`
+:::infoRequires:
+Server Version 1.21+
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Adds reach for interacting with entities
-
-:::infoRequires:
-Server Version 1.21+
-:::
 # Effect Syntax
 ```yaml
 - id: entity_reach

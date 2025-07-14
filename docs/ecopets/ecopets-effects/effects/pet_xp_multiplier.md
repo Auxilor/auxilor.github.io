@@ -1,13 +1,13 @@
 # `pet_xp_multiplier`
+:::infoRequires:
+EcoPets
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Multiplies pet xp gain
-
-:::infoRequires:
-EcoPets
-:::
 # Effect Syntax
 ```yaml
 - id: pet_xp_multiplier

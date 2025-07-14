@@ -1,10 +1,9 @@
 # `has_lands_role`
-
-Requires a player to have a certain role in the Land
-
 :::infoRequires:
 Lands
 :::
+
+Requires a player to have a certain role in the Land
 # Example Config
 ```yaml
 - id: has_lands_role

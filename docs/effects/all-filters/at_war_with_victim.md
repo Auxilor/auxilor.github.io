@@ -1,10 +1,9 @@
 # `at_war_with_victim`
-
-Requires the player is in a declared war with the victim
-
 :::infoRequires:
 Lands
 :::
+
+Requires the player is in a declared war with the victim
 # Filter Syntax
 ```yaml
 filters:

@@ -1,10 +1,9 @@
 # `has_skill_level`
-
-Requires a player to have a certain skill level
-
 :::infoRequires:
 EcoSkills || AuraSkills
 :::
+
+Requires a player to have a certain skill level
 # Example Config
 ```yaml
 - id: has_skill_level

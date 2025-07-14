@@ -1,10 +1,9 @@
 # `has_scroll`
-
-Requires a player to have a certain scroll active
-
 :::infoRequires:
 EcoScrolls
 :::
+
+Requires a player to have a certain scroll active
 # Condition Syntax
 ```yaml
 - id: has_scroll

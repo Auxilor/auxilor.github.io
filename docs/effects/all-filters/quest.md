@@ -1,10 +1,9 @@
 # `quest`
-
-Require a certain quest
-
 :::infoRequires:
 EcoQuests
 :::
+
+Require a certain quest
 # Filter Syntax
 ```yaml
 filters:

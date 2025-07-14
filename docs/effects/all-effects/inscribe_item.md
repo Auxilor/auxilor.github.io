@@ -1,13 +1,13 @@
 # `inscribe_item`
+:::infoRequires:
+EcoScrolls
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Inscribes an item with a scroll
-
-:::infoRequires:
-EcoScrolls
-:::
 # Effect Syntax
 
 ```yaml

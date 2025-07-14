@@ -1,10 +1,9 @@
 # `magic_type`
-
-Require a certain magic type
-
 :::infoRequires:
 EcoSkills
 :::
+
+Require a certain magic type
 # Filter Syntax
 ```yaml
 filters:

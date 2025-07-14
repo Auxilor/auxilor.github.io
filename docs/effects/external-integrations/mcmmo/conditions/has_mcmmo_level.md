@@ -1,10 +1,9 @@
 # `has_mcmmo_level`
-
-Requires a player to have a certain McMMO skill level
-
 :::infoRequires:
 McMMO
 :::
+
+Requires a player to have a certain McMMO skill level
 # Example Config
 ```yaml
 - id: has_mcmmo_level

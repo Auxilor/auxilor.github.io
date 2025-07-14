@@ -1,10 +1,9 @@
 # `has_ecoitem`
-
-Requires a player to have a certain EcoItem active
-
 :::infoRequires:
 EcoItems
 :::
+
+Requires a player to have a certain EcoItem active
 # Condition Syntax
 ```yaml
 - id: has_ecoitem

@@ -1,11 +1,9 @@
 # `vote_service`
-
-The list of vote services that the effect should activate on
-
-
 :::infoRequires:
 Votifier
 :::
+
+The list of vote services that the effect should activate on
 # Example Config
 ```yaml
 filters:

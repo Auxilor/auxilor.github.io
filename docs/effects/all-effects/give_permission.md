@@ -1,13 +1,13 @@
 # `give_permission`
+:::infoRequires:
+Vault
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Gives a permission while active
-
-:::infoRequires:
-Vault
-:::
 # Effect Syntax
 ```yaml
 - id: give_permission

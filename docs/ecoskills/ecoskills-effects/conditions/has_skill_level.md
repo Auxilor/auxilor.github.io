@@ -1,10 +1,9 @@
 # `has_skill_level`
-
-Requires a player to have a certain skill level
-
 :::infoRequires:
 EcoSkills
 :::
+
+Requires a player to have a certain skill level
 # Condition Syntax
 ```yaml
 - id: has_skill_level

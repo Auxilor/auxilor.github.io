@@ -1,13 +1,13 @@
 # `give_pet_xp`
+:::infoRequires:
+EcoPets
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Gives experience points for a certain pet
-
-:::infoRequires:
-EcoPets
-:::
 # Effect Syntax
 ```yaml
 - id: give_pet_xp

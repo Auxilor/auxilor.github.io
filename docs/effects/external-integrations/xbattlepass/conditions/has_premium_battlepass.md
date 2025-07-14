@@ -1,10 +1,9 @@
 # `has_premium_battlepass`
-
-Requires a player to have the premium battlepass
-
 :::infoRequires:
 xBattlepass
 :::
+
+Requires a player to have the premium battlepass
 # Example Config
 ```yaml
 - id: has_premium_battlepass

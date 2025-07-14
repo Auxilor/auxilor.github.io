@@ -1,11 +1,9 @@
 # `in_region`
-
-Requires a player to be in a certain region
-
-
 :::infoRequires:
 WorldGuard
 :::
+
+Requires a player to be in a certain region
 # Condition Syntax
 ```yaml
 - id: in_region

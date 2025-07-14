@@ -1,10 +1,9 @@
 # `custom_fish_type`
-
-The list of fish types the effect should activate on
-
 :::infoRequires:
 CustomFishing
 :::
+
+The list of fish types the effect should activate on
 # Filter Syntax
 ```yaml
 filters:

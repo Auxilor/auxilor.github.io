@@ -1,10 +1,9 @@
 # `in_bubble`
-
-Requires a player to be in a bubble column
-
 :::infoRequires:
 Paper
 :::
+
+Requires a player to be in a bubble column
 # Example Config
 ```yaml
 - id: in_bubble

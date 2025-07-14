@@ -1,13 +1,13 @@
 # `quest_xp_multiplier`
+:::infoRequires:
+EcoQuests
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Multiplies quest xp gain
-
-:::infoRequires:
-EcoQuests
-:::
 # Effect Syntax
 ```yaml
 - id: quest_xp_multiplier

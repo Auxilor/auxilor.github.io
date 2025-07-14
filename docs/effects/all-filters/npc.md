@@ -1,10 +1,9 @@
 # `npc`
-
-Require a certain NPC
-
 :::infoRequires:
 Citizens || FancyNpcs
 :::
+
+Require a certain NPC
 # Filter Syntax
 
 **Citizens**

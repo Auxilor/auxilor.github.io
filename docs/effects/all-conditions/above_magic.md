@@ -1,10 +1,9 @@
 # `above_magic`
-
-Requires a player to have a certain amount of magic
-
 :::infoRequires:
 EcoSkills
 :::
+
+Requires a player to have a certain amount of magic
 # Condition Syntax
 ```yaml
 - id: above_magic

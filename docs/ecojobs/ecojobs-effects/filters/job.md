@@ -1,10 +1,9 @@
 # `job`
-
-Require a certain job
-
 :::infoRequires:
 EcoJobs
 :::
+
+Require a certain job
 # Filter Syntax
 ```yaml
 filters:

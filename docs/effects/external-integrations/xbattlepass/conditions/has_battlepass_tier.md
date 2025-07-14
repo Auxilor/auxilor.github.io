@@ -1,10 +1,9 @@
 # `has_battlepass_tier`
-
-Requires a player to have a certain battlepass tier
-
 :::infoRequires:
 xBattlepass
 :::
+
+Requires a player to have a certain battlepass tier
 # Example Config
 ```yaml
 - id: has_battlepass_tier

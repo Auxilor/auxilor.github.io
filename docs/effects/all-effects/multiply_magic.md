@@ -1,13 +1,13 @@
 # `multiply_magic`
+:::infoRequires:
+EcoSkills
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Multiply magic
-
-:::infoRequires:
-EcoSkills
-:::
 # Effect Syntax
 ```yaml
 - id: multiply_magic

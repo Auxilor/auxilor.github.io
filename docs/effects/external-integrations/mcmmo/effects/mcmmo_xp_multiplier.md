@@ -1,13 +1,13 @@
 # `mcmmo_xp_multiplier`
+:::infoRequires:
+McMMO
+:::
+
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
 Multiplies mcMMO skill xp gain
-
-:::infoRequires:
-McMMO
-:::
 # Example Config
 ```yaml
 - id: mcmmo_xp_multiplier

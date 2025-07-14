@@ -1,13 +1,13 @@
 # `multiply_stat_temporarily`
+:::infoRequires:
+EcoSkills
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Multiplies a stat by a specific value
-
-:::infoRequires:
-EcoSkills
-:::
 # Effect Syntax
 ```yaml
 - id: multiply_stat_temporarily

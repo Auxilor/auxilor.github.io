@@ -1,10 +1,9 @@
 # `stat_equals`
-
-Requires a player to have exactly a certain stat level
-
 :::infoRequires:
 EcoSkills
 :::
+
+Requires a player to have exactly a certain stat level
 # Condition Syntax
 
 ```yaml

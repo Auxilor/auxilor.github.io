@@ -1,10 +1,9 @@
 # `skill`
-
-Require a certain skill
-
 :::infoRequires:
 EcoSkills || McMMO
 :::
+
+Require a certain skill
 # Filter Syntax
 ```yaml
 filters:

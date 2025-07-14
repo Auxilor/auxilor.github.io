@@ -1,10 +1,9 @@
 # `mcmmo_ability_on_cooldown`
-
-Requires an McMMO ability to be on cooldown
-
 :::infoRequires:
 McMMO
 :::
+
+Requires an McMMO ability to be on cooldown
 # Example Config
 ```yaml
 - id: mcmmo_ability_on_cooldown

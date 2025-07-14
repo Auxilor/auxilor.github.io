@@ -1,10 +1,9 @@
 # `is_booster_active`
-
-Requires a certain booster to be active on the server
-
 :::infoRequires:
 Boosters
 :::
+
+Requires a certain booster to be active on the server
 # Condition Syntax
 ```yaml
 - id: is_booster_active

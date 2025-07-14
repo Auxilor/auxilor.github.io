@@ -1,10 +1,9 @@
 # `has_active_job`
-
-Requires a player to have a job active
-
 :::infoRequires:
 EcoJobs
 :::
+
+Requires a player to have a job active
 # Condition Syntax
 ```yaml
 - id: has_active_job

@@ -1,13 +1,13 @@
 # `give_battlepass_tier`
+:::infoRequires:
+xBattlepass
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Give battlepass tiers to the player.
-
-:::infoRequires:
-xBattlepass
-:::
 # Example Config
 ```yaml
 - id: give_battlepass_tier

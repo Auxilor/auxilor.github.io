@@ -1,10 +1,9 @@
 # `ecomobs:random_teleport`
-
-Allows a mob to teleport around randomly
-
 :::infoRequires:
 EcoMobs
 :::
+
+Allows a mob to teleport around randomly
 # Example Config
 ```yaml
 - key: ecomobs:random_teleport

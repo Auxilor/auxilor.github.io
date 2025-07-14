@@ -1,10 +1,9 @@
 # `lands_balance_equal`
-
-Requires the Land's bank balance to be equal to a value
-
 :::infoRequires:
 Lands
 :::
+
+Requires the Land's bank balance to be equal to a value
 # Condition Syntax
 ```yaml
 - id: lands_balance_equal

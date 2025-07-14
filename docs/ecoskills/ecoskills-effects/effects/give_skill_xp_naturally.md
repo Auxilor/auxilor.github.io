@@ -1,4 +1,8 @@
 # `give_skill_xp_naturally`
+:::infoRequires:
+EcoSkills
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
@@ -6,10 +10,6 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 Gives naturally-gained experience points for a certain skill
 
 This will send a message to a player and will include multipliers.
-
-:::infoRequires:
-EcoSkills
-:::
 # Effect Syntax
 ```yaml
 - id: give_skill_xp_naturally

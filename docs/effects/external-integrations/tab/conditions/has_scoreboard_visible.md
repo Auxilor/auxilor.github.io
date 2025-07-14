@@ -1,10 +1,9 @@
 # `has_scoreboard_visible`
-
-Requires a player to have the TAB scoreboard shown to them
-
 :::infoRequires:
 TAB
 :::
+
+Requires a player to have the TAB scoreboard shown to them
 # Example Config
 ```yaml
 - id: has_scoreboard_visible

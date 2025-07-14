@@ -1,13 +1,13 @@
 # `make_skill_crit`
+:::infoRequires:
+EcoSkills
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Deal a crit hit
-
-:::infoRequires:
-EcoSkills
-:::
 # Effect Syntax
 ```yaml
 - id: make_skill_crit
