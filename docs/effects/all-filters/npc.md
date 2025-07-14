@@ -5,7 +5,6 @@ Require a certain NPC
 :::infoRequires:
 Citizens || FancyNpcs
 :::
-
 # Filter Syntax
 
 **Citizens**

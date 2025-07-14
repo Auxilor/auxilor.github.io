@@ -8,7 +8,6 @@ Multiply magic
 :::infoRequires:
 EcoSkills
 :::
-
 # Effect Syntax
 ```yaml
 - id: multiply_magic

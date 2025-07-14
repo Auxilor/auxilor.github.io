@@ -5,7 +5,6 @@ Requires a player to have a certain McMMO skill level
 :::infoRequires:
 McMMO
 :::
-
 # Condition Syntax
 ```yaml
 - id: has_mcmmo_level

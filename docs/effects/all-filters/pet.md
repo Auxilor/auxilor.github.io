@@ -5,7 +5,6 @@ Require a certain pet
 :::infoRequires:
 EcoPets
 :::
-
 # Filter Syntax
 ```yaml
 filters:

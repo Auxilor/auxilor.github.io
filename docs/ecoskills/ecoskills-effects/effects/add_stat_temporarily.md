@@ -8,8 +8,7 @@ Adds a value to a specific stat
 :::infoRequires:
 EcoSkills
 :::
-
-# Example Config
+# Effect Syntax
 ```yaml
 - id: add_stat_temporarily
   args:

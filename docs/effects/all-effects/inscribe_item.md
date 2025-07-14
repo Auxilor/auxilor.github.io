@@ -8,7 +8,6 @@ Inscribes an item with a scroll
 :::infoRequires:
 EcoScrolls
 :::
-
 # Effect Syntax
 
 ```yaml

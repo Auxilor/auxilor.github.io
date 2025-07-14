@@ -8,7 +8,6 @@ Multiplies magic regeneration
 :::infoRequires:
 EcoSkills
 :::
-
 # Effect Syntax
 ```yaml
 - id: magic_regen_multiplier

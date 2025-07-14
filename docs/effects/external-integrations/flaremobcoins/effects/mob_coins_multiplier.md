@@ -8,7 +8,6 @@ Multiplies mob coin drops
 :::infoRequires:
 Flare Mobcoins
 :::
-
 # Example Config
 ```yaml
 - id: mob_coins_multiplier

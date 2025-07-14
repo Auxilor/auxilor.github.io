@@ -9,7 +9,6 @@ Multiplies the chance of mobcoins being dropped
 :::infoRequires:
 UltimateMobCoins
 :::
-
 # Example Config
 ```yaml
 - id: mob_coins_chance_multiplier

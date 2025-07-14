@@ -9,7 +9,6 @@ Multiplies the chance of mobcoins being dropped
 :::infoRequires:
 UltimateMobCoins
 :::
-
 # Effect Syntax
 ```yaml
 - id: mob_coins_chance_multiplier

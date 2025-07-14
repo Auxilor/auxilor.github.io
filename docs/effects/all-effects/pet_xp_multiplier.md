@@ -8,7 +8,6 @@ Multiplies pet xp gain
 :::infoRequires:
 EcoPets
 :::
-
 # Effect Syntax
 ```yaml
 - id: pet_xp_multiplier

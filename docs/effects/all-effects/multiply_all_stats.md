@@ -8,7 +8,6 @@ Multiplies all stats by a specific value
 :::infoRequires:
 EcoSkills
 :::
-
 # Effect Syntax
 ```yaml
 - id: multiply_all_stats

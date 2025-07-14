@@ -8,7 +8,6 @@ Adds reach for interacting with entities
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: entity_reach

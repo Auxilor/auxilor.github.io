@@ -8,7 +8,6 @@ Multiplies how long an entity is on fire after being ignited
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: burning_time_multiplier

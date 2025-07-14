@@ -5,7 +5,6 @@ Requires a player to have a certain amount of money
 :::infoRequires:
 Vault
 :::
-
 # Condition Syntax
 ```yaml
 - id: above_balance

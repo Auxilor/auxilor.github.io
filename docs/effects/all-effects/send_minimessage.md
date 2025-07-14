@@ -8,7 +8,6 @@ Sends the player a minimessage message, supports clickable components, etc.
 :::infoRequires:
 Paper
 :::
-
 # Effect Syntax
 ```yaml
 - id: send_minimessage

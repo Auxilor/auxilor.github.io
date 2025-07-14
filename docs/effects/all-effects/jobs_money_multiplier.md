@@ -9,7 +9,6 @@ Multiplies money gain from jobs
 :::infoRequires:
 Jobs Reborn
 :::
-
 # Effect Syntax
 ```yaml
 - id: jobs_money_multiplier

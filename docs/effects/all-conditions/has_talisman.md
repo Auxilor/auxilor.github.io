@@ -6,7 +6,6 @@ Requires a player to have a certain talisman active
 :::infoRequires:
 Talismans
 :::
-
 # Condition Syntax
 ```yaml
 - id: has_talisman

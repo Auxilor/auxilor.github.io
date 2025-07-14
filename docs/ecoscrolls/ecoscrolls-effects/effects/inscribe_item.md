@@ -8,9 +8,7 @@ Inscribes an item with a scroll
 :::infoRequires:
 EcoScrolls
 :::
-
-# Example Config
-
+# Effect Syntax
 ```yaml
 - id: inscribe_item
   args:

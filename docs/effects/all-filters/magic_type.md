@@ -5,7 +5,6 @@ Require a certain magic type
 :::infoRequires:
 EcoSkills
 :::
-
 # Filter Syntax
 ```yaml
 filters:

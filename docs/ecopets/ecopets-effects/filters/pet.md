@@ -3,11 +3,9 @@
 Require a certain pet
 
 :::infoRequires:
-EcoJobs
+EcoPets
 :::
-
-
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   pet:

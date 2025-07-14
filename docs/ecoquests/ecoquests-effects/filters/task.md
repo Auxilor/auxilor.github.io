@@ -5,8 +5,7 @@ Require a certain task
 :::infoRequires:
 EcoQuests
 :::
-
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   task:

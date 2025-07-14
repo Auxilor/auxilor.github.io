@@ -9,7 +9,6 @@ Multiplies the mobcoins dropped
 :::infoRequires:
 UltimateMobCoins
 :::
-
 # Effect Syntax
 ```yaml
 - id: mob_coins_drop_multiplier

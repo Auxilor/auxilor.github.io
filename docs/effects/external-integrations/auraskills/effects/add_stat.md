@@ -8,7 +8,6 @@ Adds a value to a specific stat
 :::infoRequires:
 EcoSkills || AuraSkills
 :::
-
 # Example Config
 ```yaml
 - id: add_stat

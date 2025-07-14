@@ -5,7 +5,6 @@ Requires a player to be wearing a certain EcoArmor set
 :::infoRequires:
 EcoArmor
 :::
-
 # Condition Syntax
 ```yaml
 - id: is_wearing_set

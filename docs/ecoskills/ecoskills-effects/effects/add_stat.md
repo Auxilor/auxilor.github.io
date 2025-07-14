@@ -7,7 +7,7 @@ Adds a value to a specific stat
 
 **Requires EcoSkills / AuraSkills**
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: add_stat
   args:

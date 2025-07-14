@@ -5,8 +5,7 @@ Requires a player to have a job active
 :::infoRequires:
 EcoJobs
 :::
-
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_active_job
   args:

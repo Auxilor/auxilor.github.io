@@ -8,7 +8,6 @@ Multiplies movement speed through difficult terrain
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: movement_efficiency_multiplier

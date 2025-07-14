@@ -9,7 +9,6 @@ Multiplies money gain from jobs
 :::infoRequires:
 Jobs Reborn
 :::
-
 # Example Config
 ```yaml
 - id: jobs_money_multiplier

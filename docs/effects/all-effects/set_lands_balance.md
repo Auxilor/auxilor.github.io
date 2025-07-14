@@ -8,7 +8,6 @@ Set the Land bank's balance
 :::infoRequires:
 Lands
 :::
-
 # Effect Syntax
 
 ```yaml

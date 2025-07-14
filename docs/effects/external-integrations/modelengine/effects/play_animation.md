@@ -9,7 +9,6 @@ Plays a Model Engine animation (The entity must have a custom model active)
 :::infoRequires:
 Model Engine
 :::
-
 # Example Config
 ```yaml
 - id: play_animation

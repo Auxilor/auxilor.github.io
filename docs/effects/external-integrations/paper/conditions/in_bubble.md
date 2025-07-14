@@ -5,7 +5,6 @@ Requires a player to be in a bubble column
 :::infoRequires:
 Paper
 :::
-
 # Example Config
 ```yaml
 - id: in_bubble

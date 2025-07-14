@@ -8,7 +8,6 @@ Multiplies explosion resistance
 :::infoRequires:
 Server Version 1.21+
 :::
-
 # Effect Syntax
 ```yaml
 - id: explosion_knockback_resistance_multiplier

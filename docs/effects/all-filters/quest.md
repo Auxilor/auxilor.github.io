@@ -5,7 +5,6 @@ Require a certain quest
 :::infoRequires:
 EcoQuests
 :::
-
 # Filter Syntax
 ```yaml
 filters:

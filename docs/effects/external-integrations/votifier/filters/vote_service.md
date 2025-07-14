@@ -6,7 +6,6 @@ The list of vote services that the effect should activate on
 :::infoRequires:
 Votifier
 :::
-
 # Example Config
 ```yaml
 filters:

@@ -8,8 +8,7 @@ Gives experience points for a certain skill
 :::infoRequires:
 EcoSkills
 :::
-
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_skill_xp
   args:

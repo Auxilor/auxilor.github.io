@@ -8,7 +8,6 @@ Gains experience points for a task in a quest, including multipliers.
 :::infoRequires:
 EcoQuests
 :::
-
 # Effect Syntax
 
 ```yaml

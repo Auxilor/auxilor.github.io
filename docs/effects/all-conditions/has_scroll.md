@@ -5,7 +5,6 @@ Requires a player to have a certain scroll active
 :::infoRequires:
 EcoScrolls
 :::
-
 # Condition Syntax
 ```yaml
 - id: has_scroll

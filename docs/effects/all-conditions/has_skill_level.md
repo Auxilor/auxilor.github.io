@@ -5,7 +5,6 @@ Requires a player to have a certain skill level
 :::infoRequires:
 EcoSkills / AuraSkills
 :::
-
 # Condition Syntax
 ```yaml
 - id: has_skill_level

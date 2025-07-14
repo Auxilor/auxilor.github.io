@@ -5,8 +5,7 @@ Requires a player to have a pet active
 :::infoRequires:
 EcoPets
 :::
-
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_active_pet
   args:

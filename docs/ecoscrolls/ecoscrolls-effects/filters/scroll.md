@@ -5,8 +5,7 @@ Require a certain scroll
 :::infoRequires:
 EcoScrolls
 :::
-
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   scroll:
