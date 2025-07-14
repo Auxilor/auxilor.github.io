@@ -1,5 +1,6 @@
 # `entity_reach`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Adds reach for interacting with entities
 

@@ -1,5 +1,6 @@
 # `give_job_xp`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Gives experience points for a certain job
 

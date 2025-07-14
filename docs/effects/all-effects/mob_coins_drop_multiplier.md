@@ -1,5 +1,6 @@
 # `mob_coins_drop_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies the mobcoins dropped
 

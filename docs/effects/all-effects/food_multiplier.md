@@ -1,5 +1,6 @@
 # `food_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies food gain from eating
 

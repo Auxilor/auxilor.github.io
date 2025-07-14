@@ -1,5 +1,6 @@
 # `mob_coins_chance_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies the chance of mobcoins being dropped
 

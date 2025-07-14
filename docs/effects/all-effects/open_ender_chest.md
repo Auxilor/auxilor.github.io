@@ -1,6 +1,7 @@
 # `open_ender_chest`
 
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Opens the player's ender chest
 

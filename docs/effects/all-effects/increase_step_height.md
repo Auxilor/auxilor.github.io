@@ -1,5 +1,6 @@
 # `increase_step_height`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Increases the amount of blocks you can walk over without jumping
 

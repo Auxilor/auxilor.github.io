@@ -1,5 +1,6 @@
 # `give_pet_xp`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Gives experience points for a certain pet
 

@@ -1,5 +1,6 @@
 # `brew_time_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies the time taken to brew potions
 

@@ -1,5 +1,6 @@
 # `set_freeze_ticks`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Sets the victims freeze ticks (frost / powdered snow effect)
 

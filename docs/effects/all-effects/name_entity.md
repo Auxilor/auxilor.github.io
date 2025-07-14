@@ -1,5 +1,6 @@
 # `name_entity`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Set the display name of an entity
 

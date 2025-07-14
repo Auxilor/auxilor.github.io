@@ -1,5 +1,6 @@
 # `add_durability`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Increase the max durability of an item
 

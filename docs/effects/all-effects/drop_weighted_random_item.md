@@ -1,5 +1,6 @@
 # `drop_weighted_random_item`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Drops a random item at a location, with weighting for different items
 

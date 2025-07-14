@@ -1,5 +1,6 @@
 # `add_stat_temporarily`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Adds a value to a specific stat
 

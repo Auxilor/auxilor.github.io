@@ -1,5 +1,6 @@
 # `battlepass_task_xp_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies incoming battlepass task xp gain
 

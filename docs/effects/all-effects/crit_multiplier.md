@@ -1,5 +1,6 @@
 # `crit_multiplier`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Multiplies critical (falling) hit damage
 

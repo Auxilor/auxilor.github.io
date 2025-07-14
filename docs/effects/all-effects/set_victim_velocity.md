@@ -1,5 +1,6 @@
 # `set_victim_velocity`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Sets the victim's velocity
 

@@ -1,6 +1,7 @@
 # `give_lands_balance`
 
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Give money to a Land's bank balance
 

@@ -1,6 +1,7 @@
 # `set_lands_balance`
 
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Set the Land bank's balance
 
