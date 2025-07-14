@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies mcMMO skill xp gain
 
-:::warningRequires:
+:::dangerRequires:
 McMMO
 :::
 

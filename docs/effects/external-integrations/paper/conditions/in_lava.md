@@ -2,7 +2,7 @@
 
 Requires a player to be in lava
 
-:::warningRequires:
+:::dangerRequires:
 Paper
 :::
 

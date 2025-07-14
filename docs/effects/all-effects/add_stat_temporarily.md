@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Adds a value to a specific stat
 
-:::warningRequires:
+:::dangerRequires:
 EcoSkills
 :::
 

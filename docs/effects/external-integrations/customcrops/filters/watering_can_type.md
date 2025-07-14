@@ -2,7 +2,7 @@
 
 The list of watering cans the effect should activate on
 
-:::warningRequires:
+:::dangerRequires:
 CustomCrops
 :::
 # Example Config

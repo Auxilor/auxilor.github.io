@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies underwater mining speed
 
-:::warningRequires:
+:::dangerRequires:
 Server Version 1.21+
 :::
 

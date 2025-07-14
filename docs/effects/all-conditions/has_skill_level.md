@@ -2,7 +2,7 @@
 
 Requires a player to have a certain skill level
 
-:::warningRequires:
+:::dangerRequires:
 EcoSkills / AuraSkills
 :::
 

@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies explosion resistance
 
-:::warningRequires:
+:::dangerRequires:
 Server Version 1.21+
 :::
 

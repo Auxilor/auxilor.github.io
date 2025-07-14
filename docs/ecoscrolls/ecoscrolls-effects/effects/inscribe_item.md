@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Inscribes an item with a scroll
 
-:::warningRequires:
+:::dangerRequires:
 EcoScrolls
 :::
 

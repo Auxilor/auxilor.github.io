@@ -2,7 +2,7 @@
 
 Requires a player to have a quest active
 
-:::warningRequires:
+:::dangerRequires:
 EcoQuests
 :::
 

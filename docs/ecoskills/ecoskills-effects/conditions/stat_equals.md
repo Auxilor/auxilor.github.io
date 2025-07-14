@@ -2,7 +2,7 @@
 
 Requires a player to have exactly a certain stat level
 
-:::warningRequires:
+:::dangerRequires:
 EcoSkills
 :::
 

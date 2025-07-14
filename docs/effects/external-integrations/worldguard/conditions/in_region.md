@@ -3,7 +3,7 @@
 Requires a player to be in a certain region
 
 
-:::warningRequires:
+:::dangerRequires:
 WorldGuard
 :::
 

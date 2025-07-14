@@ -2,7 +2,7 @@
 
 The list of fertilizers the effect should activate on
 
-:::warningRequires:
+:::dangerRequires:
 CustomCrops
 :::
 # Filter Syntax

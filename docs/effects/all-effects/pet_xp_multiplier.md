@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies pet xp gain
 
-:::warningRequires:
+:::dangerRequires:
 EcoPets
 :::
 

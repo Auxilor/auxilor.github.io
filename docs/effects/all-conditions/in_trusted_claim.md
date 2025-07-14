@@ -2,7 +2,7 @@
 
 Requires the player to be in a claim they're trusted in
 
-:::warningRequires:
+:::dangerRequires:
 Lands
 :::
 # Condition Syntax

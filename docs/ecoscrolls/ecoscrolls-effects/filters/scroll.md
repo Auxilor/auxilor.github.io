@@ -2,7 +2,7 @@
 
 Require a certain scroll
 
-:::warningRequires:
+:::dangerRequires:
 EcoScrolls
 :::
 

@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies skill xp gain
 
-:::warningRequires:
+:::dangerRequires:
 EcoSkills || AuraSkills
 :::
 

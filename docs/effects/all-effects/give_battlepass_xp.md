@@ -5,7 +5,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 
 Give battlepass experience points
 
-:::warningRequires:
+:::dangerRequires:
 xBattlepass
 :::
 # Effect Syntax

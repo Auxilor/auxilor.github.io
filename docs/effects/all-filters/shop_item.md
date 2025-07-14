@@ -2,7 +2,7 @@
 
 Require a certain shop item
 
-:::warningRequires:
+:::dangerRequires:
 EcoShop
 :::
 

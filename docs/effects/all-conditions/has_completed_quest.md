@@ -2,7 +2,7 @@
 
 Requires a player to have completed a quest
 
-:::warningRequires:
+:::dangerRequires:
 EcoQuests
 :::
 

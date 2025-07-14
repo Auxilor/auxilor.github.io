@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Multiplies all stats by a specific value
 
-:::warningRequires:
+:::dangerRequires:
 EcoSkills
 :::
 
