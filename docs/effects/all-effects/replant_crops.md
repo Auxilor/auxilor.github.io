@@ -1,5 +1,6 @@
 # `replant_crops`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Automatically replants crops

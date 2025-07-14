@@ -1,5 +1,6 @@
 # `teleport_to`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Teleport a player to a specific location

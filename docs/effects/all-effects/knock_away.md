@@ -1,5 +1,6 @@
 # `knock_away`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Knock the victim away from the player

@@ -2,7 +2,9 @@
 
 The list of envoy types that the effect should activate against
 
-**Requires AxEnvoy**
+:::warningRequires:
+AxEnvoy
+:::
 
 # Example Config
 ```yaml

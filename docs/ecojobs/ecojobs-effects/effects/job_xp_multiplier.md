@@ -1,9 +1,13 @@
 # `job_xp_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+This effect is permanent and does not require a trigger.
+:::
 
 Multiplies job xp gain
 
-**Requires EcoJobs**
+:::warningRequires:
+EcoJobs
+:::
 
 # Example Config
 ```yaml

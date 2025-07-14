@@ -1,5 +1,6 @@
 # `run_chain`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Execute an effect chain

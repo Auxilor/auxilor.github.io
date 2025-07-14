@@ -1,10 +1,13 @@
 # `increase_step_height`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Increases the amount of blocks you can walk over without jumping
 
-**Requires 1.21+**
+:::warningRequires:
+Server Version 1.21+
+:::
 
 # Effect Syntax
 ```yaml

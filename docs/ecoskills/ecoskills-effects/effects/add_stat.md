@@ -1,5 +1,7 @@
 # `add_stat`
-#### Permanent Effect
+:::infoPermanent Effect
+This effect is permanent and does not require a trigger.
+:::
 
 Adds a value to a specific stat
 

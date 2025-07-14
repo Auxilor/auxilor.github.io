@@ -1,5 +1,6 @@
 # `regen_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies regen speed

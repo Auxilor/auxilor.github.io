@@ -1,5 +1,6 @@
 # `send_message`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Sends the player a message

@@ -1,5 +1,6 @@
 # `pull_to_location`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Get pulled to a location

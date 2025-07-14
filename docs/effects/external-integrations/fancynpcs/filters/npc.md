@@ -2,7 +2,9 @@
 
 Require a certain NPC
 
-**Requires Citizens || FancyNpcs**
+:::warningRequires:
+Citizens || FancyNpcs
+:::
 
 # Example Config
 

@@ -1,5 +1,6 @@
 # `mine_radius_one_deep`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Mines a square radius around a block, but only one block deep

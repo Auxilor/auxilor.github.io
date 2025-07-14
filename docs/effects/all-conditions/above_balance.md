@@ -2,7 +2,9 @@
 
 Requires a player to have a certain amount of money
 
-**Requires Vault**
+:::warningRequires:
+Vault
+:::
 
 # Condition Syntax
 ```yaml

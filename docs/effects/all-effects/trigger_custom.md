@@ -1,5 +1,6 @@
 # `trigger_custom`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Call a custom trigger

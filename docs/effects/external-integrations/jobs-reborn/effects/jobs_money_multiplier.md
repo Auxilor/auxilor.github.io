@@ -1,10 +1,14 @@
 # `jobs_money_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies money gain from jobs
 
-**Requires Jobs Reborn**
+
+:::warningRequires:
+Jobs Reborn
+:::
 
 # Example Config
 ```yaml

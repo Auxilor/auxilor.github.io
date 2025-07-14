@@ -2,7 +2,9 @@
 
 Requires an McMMO ability to be on cooldown
 
-**Requires McMMO**
+:::warningRequires:
+McMMO
+:::
 
 # Example Config
 ```yaml

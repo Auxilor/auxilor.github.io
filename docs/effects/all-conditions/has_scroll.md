@@ -2,7 +2,9 @@
 
 Requires a player to have a certain scroll active
 
-**Requires EcoScrolls**
+:::warningRequires:
+EcoScrolls
+:::
 
 # Condition Syntax
 ```yaml

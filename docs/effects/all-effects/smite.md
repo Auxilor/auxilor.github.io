@@ -1,5 +1,6 @@
 # `smite`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Strikes lightning on a victim

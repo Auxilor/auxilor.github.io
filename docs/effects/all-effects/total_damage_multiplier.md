@@ -1,5 +1,6 @@
 # `total_damage_multiplier`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Multiplies all incoming or outgoing damage from any damage trigger

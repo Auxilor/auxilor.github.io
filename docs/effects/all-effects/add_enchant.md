@@ -1,5 +1,6 @@
 # `add_enchant`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Adds an enchant to the item

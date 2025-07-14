@@ -2,7 +2,9 @@
 
 Requires a player to have completed a quest
 
-**Requires EcoQuests**
+:::warningRequires:
+EcoQuests
+:::
 
 # Condition Syntax
 ```yaml

@@ -1,5 +1,6 @@
 # `shoot_arrow`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Shoots an arrow

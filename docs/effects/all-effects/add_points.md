@@ -1,5 +1,6 @@
 # `add_points`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Add / subtract points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)

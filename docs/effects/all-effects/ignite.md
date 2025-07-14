@@ -1,5 +1,6 @@
 # `ignite`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Lights the victim on fire

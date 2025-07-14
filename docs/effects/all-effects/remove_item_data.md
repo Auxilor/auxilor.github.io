@@ -1,5 +1,6 @@
 # `remove_item_data`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Remove item data

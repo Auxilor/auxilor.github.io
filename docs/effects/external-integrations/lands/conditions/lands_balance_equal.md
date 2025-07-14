@@ -2,7 +2,9 @@
 
 Requires the Land's bank balance to be equal to a value
 
-**Requires Lands**
+:::warningRequires:
+Lands
+:::
 # Example Config
 ```yaml
 - id: lands_balance_equal

@@ -1,5 +1,6 @@
 # `give_oxygen`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Give a player oxygen

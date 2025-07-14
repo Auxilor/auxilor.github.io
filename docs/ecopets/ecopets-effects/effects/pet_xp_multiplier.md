@@ -1,9 +1,13 @@
 # `pet_xp_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+This effect is permanent and does not require a trigger.
+:::
 
 Multiplies pet xp gain
 
-**Requires EcoPets**
+:::warningRequires:
+EcoPets
+:::
 
 # Example Config
 ```yaml

@@ -1,5 +1,6 @@
 # `transmission`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Teleport a player forward in the direction they're facing (Like AotE)

@@ -1,10 +1,13 @@
 # `inscribe_item`
-
-#### Triggered Effect
+:::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
+:::
 
 Inscribes an item with a scroll
 
-**Requires EcoScrolls**
+:::warningRequires:
+EcoScrolls
+:::
 
 # Example Config
 

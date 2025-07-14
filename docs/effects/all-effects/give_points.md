@@ -1,5 +1,6 @@
 # `give_points`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Add / subtract points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)

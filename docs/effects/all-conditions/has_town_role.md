@@ -2,7 +2,9 @@
 
 Requires a player to have a certain role in a town
 
-**Requires HuskTowns**
+:::warningRequires:
+HuskTowns
+:::
 # Condition Syntax
 ```yaml
 - id: has_town_role

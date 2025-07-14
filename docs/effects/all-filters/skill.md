@@ -2,7 +2,9 @@
 
 Require a certain skill
 
-**Requires EcoSkills or McMMO**
+:::warningRequires:
+EcoSkills || McMMO
+:::
 
 # Filter Syntax
 ```yaml

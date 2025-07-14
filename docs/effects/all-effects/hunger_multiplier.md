@@ -1,5 +1,6 @@
 # `hunger_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies hunger loss

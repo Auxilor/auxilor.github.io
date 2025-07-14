@@ -2,7 +2,9 @@
 
 Requires a player to have a certain job level
 
-**Requires EcoJobs**
+:::warningRequires:
+EcoJobs
+:::
 
 # Condition Syntax
 ```yaml

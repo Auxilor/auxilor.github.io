@@ -2,7 +2,9 @@
 
 The list of fish types the effect should activate on
 
-**Requires CustomFishing**
+:::warningRequires:
+CustomFishing
+:::
 # Example Config
 ```yaml
 filters:

@@ -2,7 +2,9 @@
 
 Require a certain pet
 
-**Requires EcoPets**
+:::warningRequires:
+EcoPets
+:::
 
 # Filter Syntax
 ```yaml

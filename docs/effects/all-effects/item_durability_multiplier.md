@@ -1,5 +1,6 @@
 # `item_durability_multiplier`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Multiplies item durability (only works if holders are items, e.g. in EcoEnchants, EcoItems, etc.)

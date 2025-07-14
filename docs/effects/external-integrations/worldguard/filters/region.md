@@ -2,7 +2,10 @@
 
 Require a certain region
 
-**Requires WorldGuard**
+
+:::warningRequires:
+WorldGuard
+:::
 
 # Example Config
 ```yaml

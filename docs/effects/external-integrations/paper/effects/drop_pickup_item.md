@@ -1,11 +1,13 @@
 # `drop_pickup_item`
-
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Drops an item that runs a chain on pickup
 
-**Requires Paper**
+:::warningRequires:
+Paper
+:::
 
 # Example Config
 

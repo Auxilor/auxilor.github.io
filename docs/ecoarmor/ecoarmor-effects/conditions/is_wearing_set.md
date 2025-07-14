@@ -2,7 +2,9 @@
 
 Requires a player to be wearing a certain EcoArmor set
 
-**Requires EcoArmor**
+:::warningRequires:
+EcoArmor
+:::
 
 # Example Config
 ```yaml

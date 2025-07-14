@@ -1,10 +1,13 @@
 # `give_permission`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Gives a permission while active
 
-**Requires Vault**
+:::warningRequires:
+Vault
+:::
 
 # Example Config
 ```yaml

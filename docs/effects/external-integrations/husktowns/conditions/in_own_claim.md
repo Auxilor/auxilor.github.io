@@ -2,7 +2,9 @@
 
 Requires the player to be in their own claim
 
-**Requires HuskClaims or HuskTowns**
+:::warningRequires:
+HuskClaims || HuskTowns || Lands
+:::
 # Example Config
 ```yaml
 - id: in_own_claim

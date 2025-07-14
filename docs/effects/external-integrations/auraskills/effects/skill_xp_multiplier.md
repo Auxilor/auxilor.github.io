@@ -1,10 +1,13 @@
 # `skill_xp_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies skill xp gain
 
-**Requires EcoSkills / AuraSkills**
+:::warningRequires:
+EcoSkills || AuraSkills
+:::
 
 # Example Config
 ```yaml

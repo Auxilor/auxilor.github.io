@@ -1,5 +1,6 @@
 # `drill`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Mine blocks behind the initial mined block

@@ -1,5 +1,6 @@
 # `damage_mainhand`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Damage a victim's mainhand item

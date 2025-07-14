@@ -1,6 +1,6 @@
 # `create_hologram`
-
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Creates a hologram temporarily (Requires a hologram plugin to be installed)

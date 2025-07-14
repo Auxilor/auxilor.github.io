@@ -2,7 +2,9 @@
 
 Requires a player to have exactly a certain stat level
 
-**Requires EcoSkills**
+:::warningRequires:
+EcoSkills
+:::
 
 # Example Config
 

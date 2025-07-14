@@ -2,7 +2,9 @@
 
 Requires a player to be in rain
 
-**Requires Paper**
+:::warningRequires:
+Paper
+:::
 
 # Example Config
 ```yaml

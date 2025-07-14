@@ -1,5 +1,6 @@
 # `bonus_health`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Gives extra health

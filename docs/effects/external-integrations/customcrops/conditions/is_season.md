@@ -2,7 +2,9 @@
 
 Requires it to be a certain season
 
-**Requires CustomCrops**
+:::warningRequires:
+CustomCrops
+:::
 # Example Config
 ```yaml
 - id: is_season

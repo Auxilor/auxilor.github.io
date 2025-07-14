@@ -1,5 +1,6 @@
 # `teleport_to_ground`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Teleports to the ground

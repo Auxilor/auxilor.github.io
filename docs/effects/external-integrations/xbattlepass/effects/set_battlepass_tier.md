@@ -1,10 +1,13 @@
 # `set_battlepass_tier`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Set the player's battlepass tier
 
-**Requires xBattlepass**
+:::warningRequires:
+xBattlepass
+:::
 # Example Config
 ```yaml
 - id: set_battlepass_tier

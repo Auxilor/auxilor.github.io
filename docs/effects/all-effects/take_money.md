@@ -1,10 +1,13 @@
 # `take_money`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Takes money from the player
 
-**Requires Vault economy**
+:::warningRequires:
+Vault
+:::
 
 # Effect Syntax
 ```yaml

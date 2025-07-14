@@ -2,7 +2,9 @@
 
 The list of town roles the effect should activate on
 
-**Requires HuskTowns**
+:::warningRequires:
+HuskTowns
+:::
 # Example Config
 ```yaml
 filters:

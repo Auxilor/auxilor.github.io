@@ -1,6 +1,6 @@
 # `open_crafting`
-
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Opens a crafting table for the player

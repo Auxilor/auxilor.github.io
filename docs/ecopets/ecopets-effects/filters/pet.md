@@ -2,7 +2,10 @@
 
 Require a certain pet
 
-**Requires EcoPets**
+:::warningRequires:
+EcoJobs
+:::
+
 
 # Example Config
 ```yaml

@@ -1,5 +1,6 @@
 # `set_freeze_ticks`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Sets the victims freeze ticks (frost / powdered snow effect)

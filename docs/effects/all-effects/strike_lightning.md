@@ -1,5 +1,6 @@
 # `strike_lightning`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Strikes lightning at a point

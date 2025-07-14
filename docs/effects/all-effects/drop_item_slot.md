@@ -1,5 +1,6 @@
 # `drop_item_slot`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Drops items from the player's inventory

@@ -1,10 +1,13 @@
 # `entity_reach`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Adds reach for interacting with entities
 
-**Requires 1.21+**
+:::warningRequires:
+Server Version 1.21+
+:::
 
 # Effect Syntax
 ```yaml

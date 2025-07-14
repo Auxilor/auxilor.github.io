@@ -1,5 +1,6 @@
 # `knockback_resistance_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies knockback resistance

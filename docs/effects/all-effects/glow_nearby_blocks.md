@@ -1,5 +1,6 @@
 # `glow_nearby_blocks`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Make nearby blocks of a certain type glow a certain color

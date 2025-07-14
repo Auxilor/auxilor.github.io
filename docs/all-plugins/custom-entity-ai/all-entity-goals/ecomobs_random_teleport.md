@@ -2,7 +2,9 @@
 
 Allows a mob to teleport around randomly
 
-**Requires EcoMobs**
+:::warningRequires:
+EcoMobs
+:::
 
 # Example Config
 ```yaml

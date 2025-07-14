@@ -1,5 +1,6 @@
 # `add_holder_in_radius`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Gives a custom holder temporarily for a given period of time

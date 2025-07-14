@@ -1,10 +1,13 @@
 # `battlepass_xp_multiplier`
 :::infoPermanent Effect
+This effect is permanent and does not require a trigger.
 :::
 
 Multiplies incoming battlepass xp gain
 
-**Requires xBattlepass**
+:::warningRequires:
+xBattlepass
+:::
 # Example Config
 ```yaml
 - id: battlepassxp_multiplier

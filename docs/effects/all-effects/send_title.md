@@ -1,5 +1,6 @@
 # `send_title`
 :::dangerTriggered Effect
+This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
 Send a title/subtitle to the player

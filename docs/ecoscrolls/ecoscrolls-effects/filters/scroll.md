@@ -2,7 +2,9 @@
 
 Require a certain scroll
 
-**Requires EcoScrolls**
+:::warningRequires:
+EcoScrolls
+:::
 
 # Example Config
 ```yaml
