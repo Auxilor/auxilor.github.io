@@ -1,9 +1,6 @@
 # `multiply_drops`
 :::danger[Triggered Effect]:::
 
-:::danger[Triggered Effect]
-:::
-
 Multiplies drops (requires a drop trigger)
 
 # Effect Syntax
