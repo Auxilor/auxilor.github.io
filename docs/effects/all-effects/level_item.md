@@ -1,5 +1,6 @@
 # `level_item`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Gain item XP for a certain level
 

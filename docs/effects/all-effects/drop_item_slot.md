@@ -1,5 +1,6 @@
 # `drop_item_slot`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Drops items from the player's inventory
 

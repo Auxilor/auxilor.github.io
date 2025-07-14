@@ -1,5 +1,6 @@
 # `glow_nearby_blocks`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Make nearby blocks of a certain type glow a certain color
 

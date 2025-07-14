@@ -1,5 +1,6 @@
 # `run_command`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Runs a command from console
 

@@ -1,5 +1,6 @@
 # `block_commands`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Prevents the execution of certain commands
 

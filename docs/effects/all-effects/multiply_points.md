@@ -1,5 +1,6 @@
 # `multiply_points`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Multiply points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)
 

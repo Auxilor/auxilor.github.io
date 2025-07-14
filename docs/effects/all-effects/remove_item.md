@@ -1,5 +1,6 @@
 # `remove_item`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Removes an item from the player's inventory
 

@@ -1,5 +1,6 @@
 # `multiply_stat_temporarily`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Multiplies a stat by a specific value
 

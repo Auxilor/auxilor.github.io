@@ -1,5 +1,6 @@
 # `arrow_ring`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Spawns a ring of arrows around a location
 

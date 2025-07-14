@@ -1,5 +1,6 @@
 # `dont_consume_xp_chance`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Prevents consuming xp when enchanting items
 

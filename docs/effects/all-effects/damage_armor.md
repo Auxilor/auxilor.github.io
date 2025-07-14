@@ -1,5 +1,6 @@
 # `damage_armor`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Damage a victim's armor
 

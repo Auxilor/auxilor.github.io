@@ -1,5 +1,6 @@
 # `scale`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies scale
 

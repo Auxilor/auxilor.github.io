@@ -1,5 +1,6 @@
 # `consume_held_item`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Consume items held in the player's main hand
 

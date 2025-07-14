@@ -1,5 +1,6 @@
 # `mine_radius`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Mines a square radius around a block
 

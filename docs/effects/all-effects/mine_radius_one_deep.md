@@ -1,5 +1,6 @@
 # `mine_radius_one_deep`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Mines a square radius around a block, but only one block deep
 

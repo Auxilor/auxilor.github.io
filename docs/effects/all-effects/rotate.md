@@ -1,5 +1,6 @@
 # `rotate`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Spin around
 

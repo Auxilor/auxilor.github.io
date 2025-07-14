@@ -1,5 +1,6 @@
 # `random_player`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Runs effects for a random player on the server
 

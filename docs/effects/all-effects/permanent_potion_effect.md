@@ -1,5 +1,6 @@
 # `permanent_potion_effect`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Gives a permanent [potion effect](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/potion/PotionEffectType.html)
 

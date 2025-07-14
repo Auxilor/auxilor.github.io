@@ -1,5 +1,6 @@
 # `cancel_event`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Cancel the event that fired the trigger
 

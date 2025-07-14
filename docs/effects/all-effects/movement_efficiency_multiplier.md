@@ -1,5 +1,6 @@
 # `movement_efficiency_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies movement speed through difficult terrain
 

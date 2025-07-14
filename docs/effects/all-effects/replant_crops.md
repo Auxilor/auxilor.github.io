@@ -1,5 +1,6 @@
 # `replant_crops`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Automatically replants crops
 

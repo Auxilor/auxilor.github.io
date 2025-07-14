@@ -1,5 +1,6 @@
 # `teleport`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Teleports to a location
 

@@ -1,5 +1,6 @@
 # `job_xp_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies job xp gain
 

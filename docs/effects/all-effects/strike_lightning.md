@@ -1,5 +1,6 @@
 # `strike_lightning`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Strikes lightning at a point
 

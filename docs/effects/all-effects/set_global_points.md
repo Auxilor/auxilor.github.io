@@ -1,5 +1,6 @@
 # `set_global_points`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Set global points (check the points wiki page if you don't know what these are)
 

@@ -1,5 +1,6 @@
 # `traceback`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Go back to a previous position
 

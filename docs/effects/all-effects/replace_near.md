@@ -1,5 +1,6 @@
 # `replace_near`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Replaces nearby blocks with other blocks
 

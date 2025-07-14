@@ -1,5 +1,6 @@
 # `knockback_resistance_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies knockback resistance
 

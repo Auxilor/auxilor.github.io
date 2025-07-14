@@ -1,5 +1,6 @@
 # `set_food`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Sets the player's food
 

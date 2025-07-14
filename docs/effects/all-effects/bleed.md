@@ -1,5 +1,6 @@
 # `bleed`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Makes your victim bleed, damaging them repeatedly
 

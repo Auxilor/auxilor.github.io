@@ -1,5 +1,6 @@
 # `jump_strength_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies jump strength
 
