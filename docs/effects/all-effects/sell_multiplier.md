@@ -1,5 +1,6 @@
 # `sell_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies money gained from selling items
 

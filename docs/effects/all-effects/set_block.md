@@ -1,6 +1,7 @@
 # `set_block`
 
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Set a block
 

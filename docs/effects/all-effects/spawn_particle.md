@@ -1,5 +1,6 @@
 # `spawn_particle`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Spawns a [particle](https://plugins.auxilor.io/all-plugins/the-particle-lookup-system)
 

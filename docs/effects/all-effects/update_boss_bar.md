@@ -1,5 +1,6 @@
 # `update_boss_bar`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Updates a boss bar
 

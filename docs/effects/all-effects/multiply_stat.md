@@ -1,5 +1,6 @@
 # `multiply_stat`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies a stat by a specific value
 

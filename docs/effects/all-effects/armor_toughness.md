@@ -1,5 +1,6 @@
 # `armor_toughness`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Gives armor toughness
 

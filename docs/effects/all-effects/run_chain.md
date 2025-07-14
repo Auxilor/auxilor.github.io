@@ -1,5 +1,6 @@
 # `run_chain`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Execute an effect chain
 

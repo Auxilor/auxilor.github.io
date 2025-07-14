@@ -1,5 +1,6 @@
 # `give_food`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Gives the player food
 

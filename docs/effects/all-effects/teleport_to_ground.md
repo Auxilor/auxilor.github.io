@@ -1,5 +1,6 @@
 # `teleport_to_ground`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Teleports to the ground
 

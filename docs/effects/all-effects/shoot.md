@@ -1,5 +1,6 @@
 # `shoot`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Shoots a [projectile](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/Projectile.html)
 

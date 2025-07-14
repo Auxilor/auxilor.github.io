@@ -1,5 +1,6 @@
 # `create_boss_bar`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Creates a boss bar and shows it to the player
 

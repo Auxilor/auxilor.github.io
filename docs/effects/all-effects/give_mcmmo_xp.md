@@ -1,5 +1,6 @@
 # `give_mcmmo_xp`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Gives experience points for a certain skill
 

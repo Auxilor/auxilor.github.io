@@ -1,5 +1,6 @@
 # `xp_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies incoming xp gain
 

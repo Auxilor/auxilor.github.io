@@ -1,5 +1,6 @@
 # `add_global_points`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Add / subtract global points (check the [points](https://plugins.auxilor.io/effects/points) wiki page if you don't know what these are)
 

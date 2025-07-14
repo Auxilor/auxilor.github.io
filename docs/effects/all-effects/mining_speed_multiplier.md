@@ -1,5 +1,6 @@
 # `mining_speed_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies mining speed
 

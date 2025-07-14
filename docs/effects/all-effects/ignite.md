@@ -1,5 +1,6 @@
 # `ignite`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Lights the victim on fire
 

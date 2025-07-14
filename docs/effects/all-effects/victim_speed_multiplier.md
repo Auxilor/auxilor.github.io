@@ -1,5 +1,6 @@
 # `victim_speed_multiplier`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Temporarily multiplies victim movement speed
 

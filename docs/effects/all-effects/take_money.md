@@ -1,5 +1,6 @@
 # `take_money`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Takes money from the player
 

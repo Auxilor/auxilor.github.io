@@ -1,6 +1,7 @@
 # `mine_vein`
 
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Mines a vein of blocks
 

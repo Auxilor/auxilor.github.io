@@ -1,6 +1,7 @@
 # `gain_task_xp`
 
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Gains experience points for a task in a quest, including multipliers.
 

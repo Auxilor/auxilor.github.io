@@ -1,5 +1,6 @@
 # `break_block`
-#### Triggered Effect
+:::dangerTriggered Effect
+:::
 
 Breaks a block instantly
 

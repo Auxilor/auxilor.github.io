@@ -1,5 +1,6 @@
 # `explosion_knockback_resistance_multiplier`
-#### Permanent Effect
+:::infoPermanent Effect
+:::
 
 Multiplies explosion resistance
 
