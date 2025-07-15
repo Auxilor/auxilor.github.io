@@ -4,7 +4,7 @@ CustomCrops
 :::
 
 The list of crop types the effect should activate on
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   custom_crop_type: 

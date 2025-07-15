@@ -8,8 +8,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 :::
 
 Set the Land bank's balance
-# Example Config
-
+# Effect Syntax
 ```yaml
 - id: set_lands_balance
   args:

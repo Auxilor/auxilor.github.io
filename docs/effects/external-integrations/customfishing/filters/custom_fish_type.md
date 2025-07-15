@@ -4,7 +4,7 @@ CustomFishing
 :::
 
 The list of fish types the effect should activate on
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   custom_fish_type: 

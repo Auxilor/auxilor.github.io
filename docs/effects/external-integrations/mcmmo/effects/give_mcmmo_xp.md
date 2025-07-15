@@ -8,7 +8,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 :::
 
 Gives experience points for a certain skill
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_mcmmo_xp
   args:

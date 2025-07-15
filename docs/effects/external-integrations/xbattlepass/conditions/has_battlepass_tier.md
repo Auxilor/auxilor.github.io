@@ -4,7 +4,7 @@ xBattlepass
 :::
 
 Requires a player to have a certain battlepass tier
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_battlepass_tier
   args:

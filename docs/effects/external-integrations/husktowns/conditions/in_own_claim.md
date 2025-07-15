@@ -4,7 +4,7 @@ HuskClaims || HuskTowns || Lands
 :::
 
 Requires the player to be in their own claim
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_own_claim
 ```

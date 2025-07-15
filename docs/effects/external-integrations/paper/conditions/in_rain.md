@@ -4,7 +4,7 @@ Paper
 :::
 
 Requires a player to be in rain
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_rain
 ```

@@ -4,7 +4,7 @@ CustomCrops
 :::
 
 The list of watering cans the effect should activate on
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   watering_can_type: 

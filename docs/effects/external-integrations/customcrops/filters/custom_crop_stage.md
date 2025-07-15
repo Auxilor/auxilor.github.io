@@ -4,7 +4,7 @@ CustomCrops
 :::
 
 The list of crop stages the effect should activate on
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   custom_crop_stage: 

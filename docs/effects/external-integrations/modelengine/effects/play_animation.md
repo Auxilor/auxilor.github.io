@@ -8,7 +8,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 :::
 
 Plays a Model Engine animation (The entity must have a custom model active)
-# Example Config
+# Effect Syntax
 ```yaml
 - id: play_animation
   args:

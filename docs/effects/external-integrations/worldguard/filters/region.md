@@ -4,7 +4,7 @@ WorldGuard
 :::
 
 Require a certain region
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   region:

@@ -4,7 +4,7 @@ xBattlepass
 :::
 
 The list of battlepass rewards the effect should activate on
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   battlepass_task: 

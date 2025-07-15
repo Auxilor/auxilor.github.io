@@ -4,7 +4,7 @@ Paper
 :::
 
 Requires a player to be in a bubble column
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_bubble
 ```

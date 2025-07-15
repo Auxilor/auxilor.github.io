@@ -8,8 +8,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 :::
 
 Drops an item that runs a chain on pickup
-# Example Config
-
+# Effect Syntax
 ```yaml
 - id: drop_pickup_item
   args:

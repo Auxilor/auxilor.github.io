@@ -8,7 +8,7 @@ This effect is permanent and does not require a trigger.
 :::
 
 Gives a permission while active
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_permission
   args:
