@@ -2,14 +2,19 @@
 title: Triggers
 sidebar_position: 4
 ---
+Triggered effects require a trigger, these are the events/actions that cause the effects to run.
 
-Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect is active
+Triggers can also produce a `value`, and some produce an `alt-value`, you can reference these using their to scale multipliers, level up EcoSkills/Jobs/Pets, or send messages in chat.
 
-Triggered effects also produce a value, and some product an alt-value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders), and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
+| Placeholder           | Value                               | Aliases                                                                    |
+| --------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
+| `%trigger_value%`     | The value passed by the trigger     | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%`             |
+| `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
+## Triggers
 
-| ID               | Description                                              | Value                 | Alt-Value |
-| ---------------- | -------------------------------------------------------- | --------------------- | --------- |
-| `complete_quest` | Triggered when completing a quest **Requires EcoQuests** | 1                     | -         |
-| `complete_task`  | Triggered when completing a task **Requires EcoQuests**  | 1                     | -         |
-| `gain_task_xp`   | Triggered when gaining task XP **Requires EcoQuests**    | The experience gained | -         |
-| `start_quest`    | Triggered when starting a quest **Requires EcoQuests**   | 1                     | -         |
+| ID               | Description                       | Value(s)                       |
+| ---------------- | --------------------------------- | ------------------------------ |
+| `complete_task`  | Triggered when completing a task  | `value: 1`                     |
+| `complete_quest` | Triggered when completing a quest | `value: 1`                     |
+| `gain_task_xp`   | Triggered when gaining task XP    | `value: The experience gained` |
+| `start_quest`    | Triggered when starting a quest   | `value: 1`                     |

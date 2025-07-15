@@ -3,12 +3,18 @@ title: Triggers
 sidebar_position: 4
 ---
 
-Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect is active
+Triggered effects require a trigger, these are the events/actions that cause the effects to run.
 
-Triggered effects also produce a value, and some product an alt-value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders), and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
+Triggers can also produce a `value`, and some produce an `alt-value`, you can reference these using their to scale multipliers, level up EcoSkills/Jobs/Pets, or send messages in chat.
 
-| ID               | Description                                                           | Value                 | Alt-Value |
-| ---------------- | --------------------------------------------------------------------- | --------------------- | --------- |
-| `gain_skill_xp`  | Triggered when gaining skill experience points **Requires EcoSkills** | The experience gained | -         |
-| `level_up_skill` | Triggered when levelling up **Requires EcoSkills**                    | The new level         | -         |
-| `regen_magic`    | Triggered when regenerating magic **Requires EcoSkills**              | 1                     | -         |
+| Placeholder           | Value                               | Aliases                                                                    |
+| --------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
+| `%trigger_value%`     | The value passed by the trigger     | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%`             |
+| `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
+## Triggers
+
+| ID               | Description                                    | Value(s)                       |
+| ---------------- | ---------------------------------------------- | ------------------------------ |
+| `gain_skill_xp`  | Triggered when gaining skill experience points | `value: The experience gained` |
+| `level_up_skill` | Triggered when levelling up                    | `value: The new level`         |
+| `regen_magic`    | Triggered when regenerating magic              | `value: 1`                     |

@@ -2,17 +2,20 @@
 title: Triggers
 sidebar_position: 4
 ---
+Triggered effects require a trigger, these are the events/actions that cause the effects to run.
 
-Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect is active
+Triggers can also produce a `value`, and some produce an `alt-value`, you can reference these using their to scale multipliers, level up EcoSkills/Jobs/Pets, or send messages in chat.
 
-Triggered effects also produce a value, and some product an alt-value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders),
-and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
+| Placeholder           | Value                               | Aliases                                                                    |
+| --------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
+| `%trigger_value%`     | The value passed by the trigger     | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%`             |
+| `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
+## Triggers
 
-| ID                         | Description                                    | Value         | Alt-Value |
-| -------------------------- | ---------------------------------------------- | ------------- | --------- |
-| `gain_mcmmo_xp`            | Triggered when gaining McMMO xp                | The xp gained | -         |
-| `level_down_mcmmo`         | Triggered when levelling down McMMO skill      | The new level | -         |
-| `level_up_mcmmo`           | Triggered when levelling up McMMO skill        | The new level | -         |
-| `mcmmo_ability_activate`   | Triggered when an McMMO ability is activated   | 1             | -         |
-| `mcmmo_ability_deactivate` | Triggered when an McMMO ability is deactivated | 1             | -         |
-
+| ID                         | Description                                    | Value(s)               |
+| -------------------------- | ---------------------------------------------- | ---------------------- |
+| `gain_mcmmo_xp`            | Triggered when gaining McMMO xp                | `value: The xp gained` |
+| `level_down_mcmmo`         | Triggered when levelling down McMMO skill      | `value: The new level` |
+| `level_up_mcmmo`           | Triggered when levelling up McMMO skill        | `value: The new level` |
+| `mcmmo_ability_activate`   | Triggered when an McMMO ability is activated   | `value: 1`             |
+| `mcmmo_ability_deactivate` | Triggered when an McMMO ability is deactivated | `value: 1`             |
