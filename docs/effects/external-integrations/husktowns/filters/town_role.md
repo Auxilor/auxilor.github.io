@@ -4,7 +4,7 @@ HuskTowns
 :::
 
 The list of town roles the effect should activate on
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   town_role: 

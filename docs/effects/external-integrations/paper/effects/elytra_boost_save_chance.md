@@ -5,7 +5,7 @@ This effect is permanent and does not require a trigger.
 
 Prevents consuming fireworks when boosting with an elytra
 
-# Example Config
+# Effect Syntax
 ```yaml
 - id: elytra_boost_save_chance
   args:

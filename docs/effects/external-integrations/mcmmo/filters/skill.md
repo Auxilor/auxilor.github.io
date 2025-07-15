@@ -4,7 +4,7 @@ EcoSkills || McMMO
 :::
 
 Require a certain skill
-# Example Config
+# Filter Syntax
 ```yaml
 filters:
   skill:

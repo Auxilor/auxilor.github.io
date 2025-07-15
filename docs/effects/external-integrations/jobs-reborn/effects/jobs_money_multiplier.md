@@ -8,7 +8,7 @@ This effect is permanent and does not require a trigger.
 :::
 
 Multiplies money gain from jobs
-# Example Config
+# Effect Syntax
 ```yaml
 - id: jobs_money_multiplier
   args:

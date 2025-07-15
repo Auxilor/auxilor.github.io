@@ -4,7 +4,7 @@ xBattlepass
 :::
 
 Requires a player to have the premium battlepass
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_premium_battlepass
   args:

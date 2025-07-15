@@ -4,7 +4,7 @@ Paper
 :::
 
 Requires a player to be in lava
-# Example Config
+# Condition Syntax
 ```yaml
 - id: in_lava
 ```

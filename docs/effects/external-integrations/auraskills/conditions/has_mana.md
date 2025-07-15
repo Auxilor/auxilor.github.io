@@ -4,7 +4,7 @@ AuraSkills
 :::
 
 Requires a player to have amount of mana
-# Example Config
+# Condition Syntax
 ```yaml
 - id: has_mana
   args:

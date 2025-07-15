@@ -4,7 +4,7 @@ McMMO
 :::
 
 Requires an McMMO ability to be on cooldown
-# Example Config
+# Condition Syntax
 ```yaml
 - id: mcmmo_ability_on_cooldown
   args:

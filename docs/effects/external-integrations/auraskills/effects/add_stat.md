@@ -8,7 +8,7 @@ This effect is permanent and does not require a trigger.
 :::
 
 Adds a value to a specific stat
-# Example Config
+# Effect Syntax
 ```yaml
 - id: add_stat
   args:

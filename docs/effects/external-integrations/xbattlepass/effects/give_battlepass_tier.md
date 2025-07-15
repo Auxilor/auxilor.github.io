@@ -8,7 +8,7 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 :::
 
 Give battlepass tiers to the player.
-# Example Config
+# Effect Syntax
 ```yaml
 - id: give_battlepass_tier
   args:

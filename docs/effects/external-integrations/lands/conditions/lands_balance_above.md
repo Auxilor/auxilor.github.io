@@ -4,7 +4,7 @@ Lands
 :::
 
 Requires the Land's bank balance to be above a value
-# Example Config
+# Conditions Syntax
 ```yaml
 - id: lands_balance_above
   args:

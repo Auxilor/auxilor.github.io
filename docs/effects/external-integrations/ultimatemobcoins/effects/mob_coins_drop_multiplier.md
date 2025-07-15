@@ -8,7 +8,7 @@ This effect is permanent and does not require a trigger.
 :::
 
 Multiplies the mobcoins dropped
-# Example Config
+# Effect Syntax
 ```yaml
 - id: mob_coins_drop_multiplier
   args:

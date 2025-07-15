@@ -8,7 +8,7 @@ This effect is permanent and does not require a trigger.
 :::
 
 Multiplies xp gain from jobs
-# Example Config
+# Effect Syntax
 ```yaml
 - id: jobs_xp_multiplier
   args:
