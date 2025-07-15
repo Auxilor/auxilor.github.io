@@ -2,17 +2,15 @@
 title: Triggers
 sidebar_position: 4
 ---
-Triggered effects require a trigger, these are the events/actions that cause the effects to run.
 
-Triggers can also produce a `value`, and some produce an `alt-value`, you can reference these using their to scale multipliers, level up EcoSkills/Jobs/Pets, or send messages in chat.
+Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect
+is active
 
-| Placeholder           | Value                               | Aliases                                                                    |
-| --------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
-| `%trigger_value%`     | The value passed by the trigger     | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%`             |
-| `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
-## Triggers
+Triggered effects also produce a value, and some product an alt-value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders),
+and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
 
-| ID                | Description                            | Value(s)   |
-| ----------------- | -------------------------------------- | ---------- |
-| `catch_fish`      | Triggered when catching a fish         | `value: 1` |
-| `catch_fish_fail` | Triggered when failing to catch a fish | `value: 1` |
+| ID                | Description                            | Value | Alt-Value |
+| ----------------- | -------------------------------------- | ----- | --------- |
+| `catch_fish`      | Triggered when catching a fish         | 1     | -         |
+| `catch_fish_fail` | Triggered when failing to catch a fish | 1     | -         |
+
