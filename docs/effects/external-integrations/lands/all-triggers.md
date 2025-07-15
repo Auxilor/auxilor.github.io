@@ -2,20 +2,22 @@
 title: Triggers
 sidebar_position: 4
 ---
+Triggered effects require a trigger, these are the events/actions that cause the effects to run.
 
-Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect is active
+Triggers can also produce a `value`, and some produce an `alt-value`, you can reference these using their to scale multipliers, level up EcoSkills/Jobs/Pets, or send messages in chat.
 
-Triggered effects also produce a value, and some product an alt-value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders),
-and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
+| Placeholder           | Value                               | Aliases                                                                    |
+| --------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
+| `%trigger_value%`     | The value passed by the trigger     | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%`             |
+| `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
+## Triggers
 
-| ID                     | Description                                    | Value               | AltValue        |
-| ---------------------- | ---------------------------------------------- | ------------------- | --------------- |
-| `claim`                | Triggered when claiming an area                | 1                   | -               |
-| `enter_claim`          | Triggered when entering a claimed area         | 1                   | -               |
-| `exit_claim`           | Triggered when exiting a claimed area          | 1                   | -               |
-| `join_land`            | Triggered when joining a Town                  | 1                   | -               |
-| `lands_bank_deposit`   | Triggered when depositing into the Lands bank  | The value deposited | The new balance |
-| `lands_bank_withdraw`  | Triggered when withdrawing from the Lands bank | The value withdrawn | The new balance |
-| `lands_spawn_teleport` | Triggered when teleporting to Lands spawn      | 1                   | -               |
-| `leave_land`           | Triggered when leaving a Town                  | 1                   | -               |
-| `unclaim`              | Triggered when unclaiming an area              | 1                   | -               |
+| ID                     | Description                                    | Value(s)                                                     |
+| ---------------------- | ---------------------------------------------- | ------------------------------------------------------------ |
+| `join_land`            | Triggered when joining a Land                  | `value: 1`                                                   |
+| `lands_bank_deposit`   | Triggered when depositing into the Lands bank  | `value: The value deposited`<br/>`alt-value: The new balance` |
+| `lands_bank_withdraw`  | Triggered when withdrawing from the Lands bank | `value: The value withdrawn`<br/>`alt-value: The new balance` |
+| `lands_spawn_teleport` | Triggered when teleporting to Lands spawn      | `value: 1`                                                   |
+| `claim`                | Triggered when claiming an area                | `value: 1`                                                   |
+| `exit_claim`           | Triggered when exiting a claimed area          | `value: 1`                                                   |
+| `unclaim`              | Triggered when unclaiming an area              | `value: 1`                                                   |

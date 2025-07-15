@@ -2,15 +2,20 @@
 title: Triggers
 sidebar_position: 4
 ---
+Triggered effects require a trigger, these are the events/actions that cause the effects to run.
 
-Triggered effects require a trigger, permanent effects do not support triggers and instead always apply when the effect is active
+Triggers can also produce a `value`, and some produce an `alt-value`, you can reference these using their to scale multipliers, level up EcoSkills/Jobs/Pets, or send messages in chat.
 
-Triggered effects also produce a value, and some product an alt-value, which can be referenced with [their placeholders](https://plugins.auxilor.io/effects/configuring-an-effect#placeholders), and are used in plugins like EcoSkills, EcoPets, EcoJobs (etc) for levelling.
+| Placeholder           | Value                               | Aliases                                                                    |
+| --------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
+| `%trigger_value%`     | The value passed by the trigger     | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%`             |
+| `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
+## Triggers
 
-| ID                    | Description                                      | Value | Alt-Value |
-| --------------------- | ------------------------------------------------ | ----- | --------- |
-| `bonemeal_crop`       | Triggered when applying bonemeal to custom crops | 1     | -         |
-| `harvest_custom_crop` | Triggered when harvesting a custom crop          | 1     | -         |
-| `plant_custom_crop`   | Triggered when planting a custom crop            | 1     | -         |
-| `use_fertilizer`      | Triggered when using fertilizer                  | 1     | -         |
-| `use_watering_can`    | Triggered when using a watering can              | 1     | -         |
+| ID                    | Description                             | Value(s)   |
+| --------------------- | --------------------------------------- | ---------- |
+| `bonemeal_crop`       | Triggered when using bonemeal on a crop | `value: 1` |
+| `harvest_custom_crop` | Triggered when harvesting a custom crop | `value: 1` |
+| `plant_custom_crop`   | Triggered when planting a custom crop   | `value: 1` |
+| `use_fertilizer`      | Triggered when using fertilizer         | `value: 1` |
+| `use_watering_can`    | Triggered when using a watering can     | `value: 1` |
