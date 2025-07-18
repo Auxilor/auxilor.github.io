@@ -45,6 +45,7 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `elytra_boost`                  | Triggered when a player boosts an elytra **Requires Paper**                                                       | `value: 1`                                             |
 | `empty_bucket`                  | Triggered when emptying a bucket                                                                                  | `value: 1`                                             |
 | `enable`                        | Triggered when an item / enchant / etc enables                                                                    | `value: 1`                                             |
+| `enchant_item`                  | Triggered when enchanting an item in an enchanting table                                                          | `value: The xp cost`                                   |
 | `enter_bed`                     | Triggered when entering a bed                                                                                     | `value: 1`                                             |
 | `entity_break_door`             | Triggered when an entity breaks a door                                                                            | `value: 1`                                             |
 | `entity_catch_fire_from_block`  | Triggered when an entity catches fire from a block                                                                | `value: 1`                                             |

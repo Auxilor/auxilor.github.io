@@ -268,8 +268,8 @@ effects:
       - melee_attack
       - bow_attack
       - trident_attack
-      -
-        # The effects of the set (i.e. the functionality)
+      
+      # The effects of the set (i.e. the functionality)
       # See here: https://plugins.auxilor.io/effects/configuring-an-effect
 advancedEffects:
   - id: damage_multiplier
