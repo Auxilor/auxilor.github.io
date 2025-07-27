@@ -41,7 +41,7 @@ tracker:
     - "&8to display the amount of damage dealt with Tridents"
     - "&8whilst in water"
   craftable: true # If the tracker can be crafted
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
     - iron_sword
     - iron_sword
     - iron_sword
@@ -73,4 +73,4 @@ tracker:
 
 **craftable:** If the item should be craftable (true/false).
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes)

@@ -15,6 +15,20 @@
   --ifm-color-primary-lightest: #3c99ad;
 }
 
+/* Style for the active sidebar link and dropdown headers in light mode */
+.theme-doc-sidebar-container .menu__link--active,
+.theme-doc-sidebar-container .menu__list-item-collapsible--active,
+.theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) {
+  background-color: #82a6da; /* Light blue background for light mode */
+  color: #2d4764; /* Dark muted blue text for light mode */
+}
+
+/* Ensure text in dropdown headers (e.g., button or link) uses the same color in light mode */
+.theme-doc-sidebar-container .menu__list-item-collapsible--active a,
+.theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) a {
+  color: #2d4764; /* Dark muted blue text for light mode */
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #259ac1;
@@ -26,6 +40,20 @@
   --ifm-color-primary-lightest: #4eb9dd;
 }
 
+/* Style for the active sidebar link and dropdown headers in dark mode */
+[data-theme='dark'] .theme-doc-sidebar-container .menu__link--active,
+[data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible--active,
+[data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) {
+  background-color: #2d4764; /* Dark muted blue background for dark mode */
+  color: #82a6da; /* Light blue text for dark mode */
+}
+
+/* Ensure text in dropdown headers (e.g., button or link) uses the same color in dark mode */
+[data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible--active a,
+[data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) a {
+  color: #82a6da; /* Light blue text for dark mode */
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.1);
   display: block;
@@ -35,4 +63,26 @@
 
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Add solid left border to active sidebar items */
+.theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist),
+.theme-doc-sidebar-container .menu__list-item-collapsible--active > .menu__link,
+.theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) > .menu__link {
+  border-left: 3px solid #2d4764 !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist),
+[data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible--active > .menu__link,
+[data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) > .menu__link {
+  border-left: 3px solid #82a6da !important;
+}
+
+/* Prevent double border on collapsible parent items */
+.menu__list-item-collapsible--active,
+.menu__list-item-collapsible:has(.menu__link--active) {
+  border-left: none !important;
 }

@@ -11,9 +11,16 @@ In each string is the key for an entity. A key looks one of two ways:
 - A vanilla minecraft entity: (eg `husk`)
 - An entity from another plugin: (eg `ecomobs:tarantula`)
 
-You may also have noticed the ? in some of the keys. This means 'try to use the first entity, but if it doesn't exist, use the second entity' You can chain these together, but they're actually only useful for me to provide integrations in default configs without breaking things for people who don't use all my plugins together.
+### Using entities from other plugins
 
-You can also use || . This means 'spawn the first entity, or the second entity'. These can also be chained together: in tests, this means any of the entities can pass, and in specifying the types of entities, this means that a random entity out of the options will be spawned on each call.
+| Plugin     | Item Lookup Key  |
+|------------|------------------|
+| EcoMobs    | `ecomobs:<id>`   |
+| MythicMobs | `mythicmobs:<id>` |
+
+#### Extra syntax
+- `?` between two entities means 'try to spawn the first entity, but if it doesn't exist, spawn the second entity'. You can chain these together.
+- `||` groups two entities, allowing either one of them to be spawned, at random. You can chain these together to create further randomness on spawns.
 
 ## Modifiers
 Entities can have modifiers applied to them in the key. For example, lets say you're configuring a mob in EcoMobs. You want it to be a massive slime, a baby zombie, or a charged creeper, but you're not sure how to do that, because it looks like you have to just specify an entity type. Actually, in all of my plugins, wherever it asks for an entity, it's actually doing a lookup. You can specify any of the following modifiers to it:

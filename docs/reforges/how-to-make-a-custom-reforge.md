@@ -39,7 +39,7 @@ stone:
   item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM0YTY1YzY4OWIyZDM2NDA5MTAwYTYwYzJhYjhkM2QwYTY3Y2U5NGVlYTNjMWY3YWM5NzRmZDg5MzU2OGI1ZCJ9fX0=
   craftable: true # If the reforge stone should be craftable
 
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
     - ""
     - ecoitems:blank_reforge_stone ? air
     - ""
@@ -94,7 +94,7 @@ on-reforge-effects: [ ]
 
 **craftable:** If the stone should be craftable (true/false).
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes)
 
 ### Effects & Conditions
 

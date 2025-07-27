@@ -55,7 +55,7 @@ gui:
           - "211111112"  
           - "222222222"  
   
-      # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots  
+      # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/pages#custom-gui-slots  
       custom-slots: [ ]  
   
 # The items for your players to buy or sell, read here for more info: https://plugins.auxilor.io/ecoshop/how-to-make-an-item  
@@ -141,7 +141,7 @@ items:
 
 To configure a pattern and mask, read here for more info: [Pages](https://plugins.auxilor.io/all-plugins/pages)
 
-**custom-slots:** Any non-shop items for the GUI (eg. info items), read here for more info: [Custom GUI Slots](https://plugins.auxilor.io/all-plugins/custom-gui-slots).
+**custom-slots:** Any non-shop items for the GUI (eg. info items), read here for more info: [Custom GUI Slots](https://plugins.auxilor.io/all-plugins/pages#custom-gui-slots).
 
 ### Items
 

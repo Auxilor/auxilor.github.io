@@ -29,7 +29,7 @@ crystal:
     - ''
     - "&8&oRequires the armor to already have Diamond tier"
   craftable: true # If the armor piece is craftable
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
     - air
     - netherite_ingot
     - air
@@ -108,7 +108,7 @@ The "Netherite" Tier can only be applied to armor pieces that have the "Diamond"
 
 **craftable:** If the item should be craftable (true/false).
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes)
 
 **giveAmount:** The amount of items to give when crafted.
 

@@ -84,7 +84,7 @@ pages: # All the pages in the preview GUI. You can add as many pages as you want
         row: 4
         column: 6
 
-    # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
+    # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/pages#custom-gui-slots
     custom-slots: [ ]
 ```
 

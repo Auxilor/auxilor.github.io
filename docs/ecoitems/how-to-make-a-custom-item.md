@@ -27,7 +27,7 @@ item:
     - "&8» &#f953c6Deal 50% more damage in the nether"
   craftable: true # If the item can be crafted
   crafting-permission: "ecoitems.craft.example" # (Optional) The permission required to craft this recipe.
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
     - ""
     - ecoitems:mithril 2
     - ""
@@ -83,7 +83,7 @@ conditions:
 
 **crafting-permission:** (Optional) The permission required to craft the recipe.
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes). You can create additional recipes, read here for more: [How to add additional recipes](https://plugins.auxilor.io/ecoitems/additional-configuration-options#how-to-add-additonal-recipes).
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes). You can create additional recipes, read here for more: [How to add additional recipes](https://plugins.auxilor.io/ecoitems/additional-configuration-options#how-to-add-additonal-recipes).
 
 **recipe-give-amount:** The amount of items to give when crafted.
 

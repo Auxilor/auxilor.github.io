@@ -74,7 +74,7 @@ shard:
     - "&8to make it <GRADIENT:f12711>Advanced</GRADIENT:f5af19>."
   craftable: false # If the shard is craftable
   crafting-permission: "permission" # (Optional) The permission required to craft this recipe.
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
     - prismarine_shard
     - ecoarmor:set_reaper_helmet
     - prismarine_shard
@@ -100,7 +100,7 @@ helmet:
     - "&8&oUpgrade with an Upgrade Crystal"
   craftable: true # If the armor piece is craftable
   crafting-permission: "permission" # (Optional) The permission required to craft this recipe.
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
     - ecoitems:armor_core ? air
     - nether_star
     - ecoitems:armor_core ? air
@@ -335,7 +335,7 @@ shard:
     - "&8to make it <GRADIENT:f12711>Advanced</GRADIENT:f5af19>."
   craftable: false # If the shard is craftable
   crafting-permission: "permission" # (Optional) The permission required to craft this recipe.
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
     - prismarine_shard
     - ecoarmor:set_reaper_helmet
     - prismarine_shard
@@ -361,7 +361,7 @@ shard:
 
 **crafting-permission:** (Optional) The permission required to craft the recipe.
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes)
 
 ## Individual Armor Piece Config
 
@@ -381,7 +381,7 @@ helmet:
     - "&8&oUpgrade with an Upgrade Crystal"
   craftable: true # If the armor piece is craftable
   crafting-permission: "permission" # (Optional) The permission required to craft this recipe.
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
     - ecoitems:armor_core ? air
     - nether_star
     - ecoitems:armor_core ? air
@@ -425,7 +425,7 @@ helmet:
 
 **crafting-permission:** (Optional) The permission required to craft the recipe.
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes)
 
 **defaultTier:** The default tier of the armor piece. Tiers are found in `/ecoarmor/tiers`, read here for more: [How to make a custom tier](https://plugins.auxilor.io/ecoarmor/how-to-make-a-custom-tier).
 

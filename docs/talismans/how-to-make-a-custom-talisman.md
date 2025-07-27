@@ -22,7 +22,7 @@ description: # The item lore
 higherLevelOf: [] # If the Talisman is higher level of another Talisman - Useful for only having the highest level Talisman active
 item: player_head texture:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDBmOGRmYTVlZmM3NTYzMGNlMGRmNDBhNDliOGY1OWJjMjIyMTRkZTk3ZTNmYjQ0YjNjNTZlOGE5YzhhNTZiNiJ9fX0=" # The item in-game: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
 craftable: true # If the item can be crafted
-recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
   - bow
   - crossbow
   - bow
@@ -60,7 +60,7 @@ conditions: []
 
 **craftable:** If the talisman should be craftable (true/false).
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes)
 
 ### Effects & Conditions
 

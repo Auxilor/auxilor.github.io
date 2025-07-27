@@ -1,14 +1,11 @@
 ---
 title: Information (Read First)
 slug: /
-sidebar_position: 1
+sidebar_position: 0
 ---
 
 ## Where should I buy the plugins?
 All plugins are available on [Spigot](https://www.spigotmc.org/resources/authors/auxilor.507394/) and [Polymart](https://polymart.org/user/auxilor.1107), and you can buy plugins at a 25% discount in a bundle, too - [click here to get them!](https://polymart.org/bundle/eco-pack.110)
-
-## Where can I get support or ask questions?
-[Join the discord here!](https://discord.gg/ZcwpSsE)
 
 ## Check out our partners! (Click to visit)
 
