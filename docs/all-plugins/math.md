@@ -25,6 +25,6 @@ These are the most commonly used mathematical expressions within eco plugins. To
 | `max`             | Returns the highest value (`min(10,2 * 10)` returns `20`)               |
 ## Examples
 
-In EcoSkills, you might want to provide players with a mining speed multiplier, capping it at 3.0x: `multiplier: 'max(3, (%level% * 0.1))'`. This ensures that the player gains a 0.10x mining speed boost per level, up to a maximum of 3.0x.
+In EcoSkills, you might want to provide players with a mining speed multiplier, capping it at 3.0x: `multiplier: 'min(3, (%level% * 0.1))'`. This ensures that the player gains a 0.10x mining speed boost per level, up to a maximum of 3.0x.
 
 In EcoQuests, you might want players to collect a random amount of Coal Ore to complete the task: `xp: 'random(32,128)'` would randomise the task requirements between 32 ores and 128 ores.

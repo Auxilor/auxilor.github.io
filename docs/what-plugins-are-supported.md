@@ -1,6 +1,6 @@
 ---
-title: What plugins do you support?
-sidebar_position: 2
+title: What plugins are supported?
+sidebar_position: 1
 ---
 
 Compatibility is a huge part of eco plugins, so naturally we support a large range of plugins. If a plugin you love isn't found here, feel free to ask on the discord to get support added for it!

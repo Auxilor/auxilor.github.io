@@ -142,7 +142,7 @@ For more advanced users or setups, you can configure chains in this section to s
 
 **crafting-permission:** (Optional) The permission required to craft the recipe.
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes)
 
 ### Inscription
 

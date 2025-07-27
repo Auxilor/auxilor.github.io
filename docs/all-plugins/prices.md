@@ -1,5 +1,5 @@
 ---
-title: Prices
+title: The Price System
 sidebar_position: 7
 ---
 

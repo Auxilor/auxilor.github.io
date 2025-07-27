@@ -172,7 +172,7 @@ xp-requirements:
 
 **craftable:** If the item should be craftable (true/false).
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes).
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes).
 
 **recipe-permission:** (Optional) The permission required to craft the recipe.
 

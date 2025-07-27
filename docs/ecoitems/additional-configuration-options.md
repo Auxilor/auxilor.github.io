@@ -14,7 +14,7 @@ Additional recipes can be used for EcoItems but also for items from other plugin
 ```yaml
 result: ecoitems:enchanted_emerald 9 # The item to give, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
 
-recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
   - ""
   - emerald_block 32
   - ""
@@ -32,7 +32,7 @@ permission: "ecoitems.craft.enchanted_emerald_block_craft" # (Optional) The perm
 
 **result:** The item(s) being crafted, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
 
-**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes)
+**recipe:** The recipe, read here for more info: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes)
 
 **permission:** (Optional) The permission required to craft the recipe.
 

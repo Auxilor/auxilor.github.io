@@ -45,11 +45,16 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            href: 'https://github.com/Auxilor/auxilor.github.io/',
-            label: 'Help improve the docs!',
-            position: 'right',
-          },
+            {
+              href: 'https://discord.gg/ZcwpSsE',
+              label: 'Support Discord',
+              position: 'right',
+            },
+            {
+              href: 'https://github.com/Auxilor',
+              label: 'Contribute on GitHub',
+              position: 'right',
+            }
         ],
       },
       prism: {
