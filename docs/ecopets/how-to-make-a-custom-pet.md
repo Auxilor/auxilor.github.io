@@ -154,7 +154,7 @@ xp-requirements:
 
 **level-commands:** Commands to be executed when levelling the pet.
 
-**entity-texture:** The texture of the pet that follows you around. Use `modelengine:<id>` if you're using Model Engine
+**entity-texture:** The texture of the pet that follows you around. Use `modelengine:<id>` if you're using Model Engine.
 
 **modelengine-animation:** If you're using Model Engine, you can supply an animation here
 
@@ -186,7 +186,9 @@ For more advanced users or setups, you can configure chains in this section to s
 
 ## Internal Placeholders
 
-| Placeholder       | Value                                                       |
-| ----------------- | ----------------------------------------------------------- |
-| `%level%`         | The player's pet level. Useful for creating scaling effects |
-| `%level_numeral%` | The player's pet level shown in Roman Numerals              |
+| Placeholder         | Value                                                                    |
+|---------------------|--------------------------------------------------------------------------|
+| `%level%`           | The player's pet level. Useful for creating scaling effects              |
+| `%level_numeral%`   | The player's pet level shown as Numerals                                 |
+| `%level_x%`         | The player's pet level, +/- a value. eg. `%level_-1%` is current level-1 |
+| `%level_x_numeral%` | The player's pet level, +/- a value, shown as Numerals                   |

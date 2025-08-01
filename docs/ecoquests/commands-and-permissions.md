@@ -24,3 +24,9 @@ General Usage: `/ecoquests reset <player> <quest>`
 Permission: `ecoquests.command.start`
 
 General Usage: `/ecoquests start <player> <quest>`
+
+## `/ecoquests addexp (Add quest experience)`
+
+Permission: `ecoquests.command.addexp`
+
+General Usage: `/ecoquests addexp <player> <quest> <task> <amount>`
