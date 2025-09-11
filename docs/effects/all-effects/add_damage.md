@@ -12,3 +12,9 @@ Adds incoming or outgoing damage from any damage trigger
     damage: 2 # The damage to add (or subtract)
   ...other config (eg triggers, filters, mutators, etc)
 ```
+
+:::tip
+
+To modify MythicMobs damage, use the `take_mythic_damage` trigger.
+
+:::

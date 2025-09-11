@@ -12,6 +12,8 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
 ## Triggers
 
-| ID             | Description                           | Value(s)                                                                                      |
-| -------------- |---------------------------------------|-----------------------------------------------------------------------------------------------|
-| `player_trade` | Triggered when trading with a player (player = initiator, victim = recipricant) | `value: The total amount of items traded`<br/>`alt-value: The total amount of currency traded` |
+| ID             | Description                                                 | Value(s)                      |
+|----------------|-------------------------------------------------------------|-------------------------------|
+| `anvil_modify` | Triggered when a player takes a modified item from an anvil | `value: The experience cost`  |
+| `grind_item`   | Triggered when a player grinds an item in the grindstone    | `value: The experience gained` |
+

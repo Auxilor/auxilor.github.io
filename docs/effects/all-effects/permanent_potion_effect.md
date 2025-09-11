@@ -11,4 +11,6 @@ Gives a permanent [potion effect](https://hub.spigotmc.org/javadocs/bukkit/org/b
   args:
     effect: blindness # The effect to give
     level: 2 # The effect level to give
+    particles: true # (Optional) If the effect should show particles
+    icon: false # (Optional) If the effect should show the icon in the top corner
 ```
