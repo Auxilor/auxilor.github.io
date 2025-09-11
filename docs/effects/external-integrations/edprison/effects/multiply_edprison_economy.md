@@ -1,4 +1,4 @@
-# `multiply_edprison_economy`
+# `edprison_economy_multiplier`
 :::infoRequires:
 EdPrison
 :::
@@ -7,10 +7,10 @@ EdPrison
 This effect is permanent and does not require a trigger.
 :::
 
-Multiplies incomming EdPrison economy.
+Multiplies incoming EdPrison economy.
 # Effect Syntax
 ```yaml
-- id: multiply_edprison_economy
+- id: edprison_economy_multiplier
   args:
     multiplier: 1.5 # The xp multiplier
     economies: # The economy types to multiply
