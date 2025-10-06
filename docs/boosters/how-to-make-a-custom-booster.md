@@ -33,6 +33,7 @@ conditions: [ ]
 commands:
   activation: [ ] # Commands to run when the booster is activated.
   expiry: [ ] # Commands to run when the booster expires.
+  increment: [ ] # Commands to run when the booster is incremented (i.e. player activates another one).
   
 messages:
   activation: # Broadcast message when the booster is activated.
@@ -45,7 +46,11 @@ messages:
     - " &fThe &a2x Sell Multiplier Booster&f has ended"
     - " &fGet another one here: &ahttps://store.ecomc.net/package/756888"
     - ""
-    - 
+  increment: # Broadcast message when the booster is incremented (i.e. player activates another one).
+    - ""
+    - " %player%&f has extended the &a2x Sell Multiplier Booster&f!"
+    - " &fThis booster will now last another hour, be sure to thank them!"
+    - ""
 gui:
   item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBhN2I5NGM0ZTU4MWI2OTkxNTlkNDg4NDZlYzA5MTM5MjUwNjIzN2M4OWE5N2M5MzI0OGEwZDhhYmM5MTZkNSJ9fX0= # The GUI item: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
   name: "&d2x Sell Multiplier" # The name of the Booster in the GUI.
@@ -73,9 +78,9 @@ gui:
 
 **duration:** The duration of the Booster (in ticks).
 
-**commands:** Commands to be run when the Booster is activated or expires.
+**commands:** Commands to be run when the Booster is activated, expires, or incremented.
 
-**messages:** Broadcast messages to be sent when the Booster is activated or expires.
+**messages:** Broadcast messages to be sent when the Booster is activated, expires, or incremented.
 
 #### GUI
 
