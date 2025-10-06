@@ -38,7 +38,7 @@ default configs for performance reasons.
 
 Item tags are groups of items. A list of vanilla tags can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Tag.html), and you can use them with `#tag`, e.g. `#signs`. These are especially useful in filters and recipes where you may use the same lists of items in different places.
 
-You can create your own tags in [tags.yml](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#item-tags) too, use `libreforge:#<tag_id>` to reference these.
+You can create your own tags in [tags.yml](https://plugins.auxilor.io/all-plugins/the-item-lookup-system#item-tags) too, use `#libreforge:<tag_id>` to reference these.
 ```yaml
 tags:
   - id: example_tag # The ID, used in the item-lookup-system.
