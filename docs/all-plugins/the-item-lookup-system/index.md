@@ -66,10 +66,11 @@ tags:
 Sometimes custom item IDs are namespaced. In order to make this work, you have to specify them like `plugin:namespace__key`, where **two underscores** denote where the `:` would normally go.
 
 | Plugin     | Item Lookup Key                                                                                                                                      |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+|------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ItemsAdder | `itemsadder:<namespace>__<key>`, example below.                                                                                                      |
 | Oraxen     | `oraxen:<id>`, e.g. `oraxen:alumite_pickaxe`                                                                                                         |
 | ItemBridge | `itembridge:saved__<id>` for items you've saved within ItemBridge. You can use `itembridge:<prefix>__<id>` for plugin items supported in ItemBridge. |
+| Nexo       | `nexo:<id>`                                                                                                                                          |                                                                                                                                         |
 
 #### ItemsAdder
 
@@ -88,26 +89,26 @@ ItemsAdder items are namespaced, so for example, the above would be `itemsadder:
 
 Items can  have modifiers applied to them. For example, lets say you're configuring the GUI for EcoSkills. You want it to be a player head with a texture, but you're not sure how to do that, because it looks like you have to just specify a material. Actually, in all eco plugins, wherever it asks for a material, it's actually doing a lookup. You can specify any of the following modifiers to it:
 
-- **Enchantments:** You can specify an enchantment with `<enchantment>:<level>`
-- **Stack Quantity:** You can specify a stack quantity by using the amount, e.g. `iron_ingot 32`
-- **Skull Texture:** If the material is a player head, you can specify the texture with `texture:<base64>`. A list of skulls and textures can be found [here](https://minecraft-heads.com/).
-- **Player Head:** If the material is a player head, you can specify a player using `head:<name>`. You can also use placeholders, e.g. `head:%player%`
-- **Reforge:** You can specify the reforge by adding `reforge:<id>` to the key.
 - **Name:** You can specify the display name of an item with `name:<name>`. You can have multiple words by surrounding the name with quotes: `name:"Long Name"`
+- **Enchantments:** You can specify an enchantment with `<enchantment>:<level>`
+- **Enchantment Glint:** You can give an enchantment glint with `glint`
 - **Item Flags:** You can specify flags for the item to have, by dropping in any of [these values](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemFlag.html) (not case sensitive)
 - **Unbreakable:** You can make an item unbreakable by having the word `unbreakable` in the flags
 - **Custom Model Data:** You can specify custom model data with `custom_model_data:<id>`
-- **Spawner Entity:** You can specify the spawner entity with `entity:<id>`
-- **Leather Armor Color:** You can specify the leather armor color with `color:#hex`, e.g. `color:#303030`
-
-These modifiers are only available on **Paper 1.21+**:
-
-- **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
-- **Fire Resistance:** You can make an item fire resistant with `fire_resistant`
-- **Enchantment Glint:** You can give an enchantment glint with `glint`
-- **Item Name:** You can set the item name (different to display name) with `item_name:<name>`
+- **Stack Quantity:** You can specify a stack quantity by using the amount, e.g. `iron_ingot 32`
+- **Max Stack Size:** You can set the max stack size with `max_stack_size:<size>`
 - **Durability:** You can set the item durability with `max_damage:<durability>`
-- **Stack Size:** You can set the max stack size with `max_stack_size:<size>`
+- **Leather Armor Color:** You can specify the leather armor color with `color:#hex`, e.g. `color:#303030`
+- **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
+- **Fire Resistance:** You can make an item fire-resistant with `fire_resistant`
+- **Player Head:** If the material is a player head, you can specify a player using `head:<name>`. You can also use placeholders, e.g. `head:%player%`
+- **Skull Texture:** If the material is a player head, you can specify the texture with `texture:<base64>`. A list of skulls and textures can be found [here](https://minecraft-heads.com/).
+- **Reforge:** You can specify the reforge by adding `reforge:<id>` to the key.
+- **Spawner Entity:** You can specify the spawner entity with `entity:<id>`
+- **Glider:** You can make any chestplate slot item a glider (work like an elytra) with `glider`
+- **Item Model:** You can set the item model (different to custom-model-data) with `item_model:<namespace>:<id>`, e.g. `item_model:nexo:dragon_helmet`. For minecraft items, you can skip the namespace
+- **Tooltip Style:** You can set the tooltip style with `tooltip_style:<namespace>:<id>`, e.g. `tooltip_style:nexo:epic_tooltip`.
+- **Item Name:** You can set the item name (different to display name) with `item_name:<name>`
 
 So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weapon with extra modifiers already applied. Without the Item Lookup system, this wouldn't be possible, but thanks to it, you can just do this: `ecoitems:enlightened_blade razor:4 unbreaking:3 criticals:2 fire_aspect:2 reforge:mighty unbreakable hide_attributes custom_model_data:2`
 
