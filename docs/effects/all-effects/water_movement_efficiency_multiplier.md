@@ -1,7 +1,4 @@
 # `water_movement_efficiency_multiplier`
-:::infoRequires:
-Server Version 1.21+
-:::
 
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.

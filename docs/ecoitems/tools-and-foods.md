@@ -3,8 +3,6 @@ title: Tools + Foods
 sidebar_position: 2
 ---
 
-#### Everything in this page requires Paper 1.21+
-
 1.21 added Item Components, allowing you to make custom tools and foods. EcoItems provides support for this, where you can add an extra section to your config to make an item into a tool or a food.
 
 ### Example Tool Config
@@ -59,8 +57,6 @@ tool:
 
 ### Example Food Config
 ```yaml
-# An example food item (requires Paper 1.21+)
-
 item:
   item: cooked_beef glint item_name:"Enchanted Steak"
   lore: [ ]
