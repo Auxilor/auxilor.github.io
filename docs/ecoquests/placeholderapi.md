@@ -5,7 +5,7 @@ sidebar_position: 4
 
 | Placeholder                                         | Description                                                 |
 | --------------------------------------------------- | ----------------------------------------------------------- |
-| `%ecoquests_amount%`                                | The total amount of quests on the server                    |
+| `%ecoquests_quests_amount%`                         | The total amount of quests on the server                    |
 | `%ecoquests_quests_completed%`                      | The amount of quests the player has completed               |
 | `%ecoquests_quests_active%`                         | The amount of quests the player has active                  |
 | `%ecoquests_quests_percent_completed%`              | The percentage of quests the player has completed           |
