@@ -11,5 +11,5 @@ something you've wanted from a shop plugin, EcoShop has it.
 
 ## Check out our partners! (Click to visit)
 
-[![GamerSupps](https://i.imgur.com/7mFhlQO.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](https://i.imgur.com/x9aeH38.png)](https://dedimc.promo/Auxilor)
+[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
+[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)

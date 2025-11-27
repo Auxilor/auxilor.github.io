@@ -38,6 +38,18 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+    //  announcementBar: {
+    //    id: 'announcement',
+    //    content: 'Announcement Goes Here',
+    //    backgroundColor: '#82a6da',
+    //    textColor: '#000000',
+    //    isCloseable: true,
+    //  },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
         title: 'Auxilor Plugins',
         logo: {
@@ -45,10 +57,15 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+            //{
+            //  to: '/purchase',
+            //  position: 'left',
+            //  label: 'Purchase',
+            //},
             {
               href: 'https://discord.gg/ZcwpSsE',
               label: 'Support Discord',
-              position: 'right',
+              position: 'left',
             },
             {
               href: 'https://github.com/Auxilor',
@@ -64,8 +81,8 @@ const config = {
       algolia: {
         apiKey: 'f04c51915432c1fada99e882da164ecc',
         indexName: 'auxilor',
-        appId: 'MZ2URUJP31', // Optional, if you run the DocSearch crawler on your own
-        algoliaOptions: {} // Optional, if provided by Algolia
+        appId: 'MZ2URUJP31',
+        algoliaOptions: {}
       },
     }),
 };
