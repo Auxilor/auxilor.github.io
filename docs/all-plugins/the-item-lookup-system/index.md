@@ -18,6 +18,15 @@ In each string is the key for an item. A key looks one of a few ways
 - An exact item NBT tag: (e.g. `{id:"stone",Count:3,tag:{Name:"your name"}}`)
 - An item tag: (e.g. `#talismans:talisman` or `#items_axes`)
 
+#### NBT String Creator
+
+When configuring items in YAML files, you need to escape NBT strings to prevent syntax errors.   
+This tool converts raw Minecraft NBT strings into properly escaped format for eco-compatible config files.
+
+import NbtEscaper from '@site/src/components/NbtEscaper';
+
+<NbtEscaper />
+
 #### Extra syntax
 
 - `?` between two items means 'try to use the first item, but if it doesn't exist, use the second item'. You can chain these together.
