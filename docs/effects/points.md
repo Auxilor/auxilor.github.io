@@ -18,9 +18,13 @@ A point can hold any numeric value, including negatives and decimals, but of cou
 | Item Points   | `%libreforge_item_points_<point>%`   | A point that is tied to a specific item and tracks data on the item. Useful for making tools with custom durability's or per-item stats (e.g zombies killed using this sword.)                                                                      |
 
 ## Commands
-## `/libreforge points set/give/get/take`
-
-Usage: `/libreforge points give <player> <point> <value>`
+| Command                                               | Description                            | Permission                        |
+|-------------------------------------------------------|----------------------------------------|-----------------------------------|
+| `/libreforge points set <player> <point_id> <value>`  | Set points value for the player/global | `libreforge.command.points.set`   |
+| `/libreforge points give <player> <point_id> <value>` | Give points to the player/global       | `libreforge.command.points.give`  |
+| `/libreforge points take <player> <point_id> <value>` | Take points from the player/global     | `libreforge.command.points.take`  |
+| `/libreforge points get <player> <point_id>`          | Get's the balance/value of points      | `libreforge.command.points.get`   |
+| `/libreforge points reset <player> <point_id>`        | Reset the point value back to 0        | `libreforge.command.points.reset` |
 
 To change global points, pass `global` as the player name.
 

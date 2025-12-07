@@ -12,3 +12,9 @@ Multiplies incoming or outgoing damage from any damage trigger
     multiplier: 0.5 # The multiplier
   ...other config (eg triggers, filters, mutators, etc)
 ```
+
+:::tip
+
+To modify MythicMobs damage, use the `take_mythic_damage` trigger.
+
+:::

@@ -267,7 +267,9 @@ For more advanced users or setups, you can configure chains in this section to s
 
 ## Internal Placeholders
 
-| Placeholder       | Value                                                         |
-| ----------------- | ------------------------------------------------------------- |
-| `%level%`         | The player's skill level. Useful for creating scaling effects |
-| `%level_numeral%` | The player's skill level shown in Roman Numerals              |
+| Placeholder       | Value                                                                      |
+| ----------------- |----------------------------------------------------------------------------|
+| `%level%`         | The player's skill level. Useful for creating scaling effects              |
+| `%level_numeral%` | The player's skill level shown in Roman Numerals                           |
+| `%level_x%`         | The player's skill level, +/- a value. eg. `%level_-1%` is current level-1 |
+| `%level_x_numeral%` | The player's skill level, +/- a value, shown as Numerals                   |

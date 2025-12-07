@@ -1,20 +1,18 @@
-# `add_damage`
+# `give_edprison_economy`
+:::infoRequires:
+EdPrison
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
-Adds incoming or outgoing damage from any damage trigger
-
+Gives the player EdPrison economy.
 # Effect Syntax
 ```yaml
-- id: add_damage
+- id: give_edprison_economy
   args:
-    damage: 2 # The damage to add (or subtract)
+    amount: 100 # The amount of economy to give
+    type: blocks # The ID of the economy type
   ...other config (eg triggers, filters, mutators, etc)
 ```
-
-:::tip
-
-To modify MythicMobs damage, use the `take_mythic_damage` trigger.
-
-:::

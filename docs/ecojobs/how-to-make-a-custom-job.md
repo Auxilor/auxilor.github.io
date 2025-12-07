@@ -208,7 +208,9 @@ For more advanced users or setups, you can configure chains in this section to s
 
 ## Internal Placeholders
 
-| Placeholder       | Value                                                       |
-| ----------------- | ----------------------------------------------------------- |
-| `%level%`         | The player's job level. Useful for creating scaling effects |
-| `%level_numeral%` | The player's job level shown in Roman Numerals              |
+| Placeholder       | Value                                                                    |
+| ----------------- |--------------------------------------------------------------------------|
+| `%level%`         | The player's job level. Useful for creating scaling effects              |
+| `%level_numeral%` | The player's job level shown in Roman Numerals                           |
+| `%level_x%`         | The player's job level, +/- a value. eg. `%level_-1%` is current level-1 |
+| `%level_x_numeral%` | The player's job level, +/- a value, shown as Numerals                   |

@@ -1,20 +1,18 @@
-# `add_damage`
+# `give_edprison_pouch`
+:::infoRequires:
+EdPrison
+:::
+
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
-Adds incoming or outgoing damage from any damage trigger
-
+Gives the player an EdPrison pouch.
 # Effect Syntax
 ```yaml
-- id: add_damage
+- id: give_edprison_pouch
   args:
-    damage: 2 # The damage to add (or subtract)
+    type: blocks # the ID of the pouch type
+    unlocked: true # Whether the pouch is unlocked
   ...other config (eg triggers, filters, mutators, etc)
 ```
-
-:::tip
-
-To modify MythicMobs damage, use the `take_mythic_damage` trigger.
-
-:::

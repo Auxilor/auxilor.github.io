@@ -50,59 +50,8 @@ to use a unique ID for every item in all of your shops. This is used in commands
 
 **row/column/page:** The location of this item in the shop
 
-### Command Items
 
-Sometimes you want to run a command when a player buys an item, such as giving permissions/ranks/items from other plugins not currently supported in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
-
-Of course, you can't sell a command, so they're buy-only.
-
-```yaml
-- id: iron_rank
-  command:
-    - lp user %player% parent set iron
-  buy:
-    value: "%ecomc_iron_price%"
-    type: crystals
-    display: "&b%value% Crystals ❖"
-	limit: 1
-  gui:
-    display:
-      item: diamond_chestplate name:"&aIron Rank"
-      lore:
-        - "&fBuy &7&lIRON&r&f rank to get"
-        - "&fthe following benefits:"
-        - " &8»&f &eExample Perk"
-      bottom-lore: # You can also add lore to be put under other lore (e.g. price, quick buy/sell info, etc.)
-        - ""
-        - "&e&oLeft click to buy with money,"
-        - "&e&oRight click to buy with &bCrystals ❖&e&o!"
-    column: 5 # The column.
-    row: 3 # The row.
-    page: 2 # The page.
-```
-
-### Understanding all the sections
-
-**id:** This is the internal ID of the item. Players don't see this, but it's important
-to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
-
-**command:** This is the command to be run when a player buys this item. You can use `%player%` and `%amount%` as placeholders.
-#### Buy
-
-**type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
-
-**limit:** (Optional) The max amount of times a player can buy this item.
-#### GUI
-
-**display.item:** This is the item shown in the GUI, read here for more info: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system). 
-
-**display.lore:** This is the lore shown on the item.
-
-**display.bottom-lore:** Lore shown under other lore, such as displaying prices.
-
-**row/column/page:** The location of this item in the shop
-
-### Effect Items
+## Buy Effect Items
 
 Instead of just using commands, EcoShop also has full access to the
 [effects system](https://plugins.auxilor.io/effects/configuring-an-effect), so you can run effects when a player buys an item, or even just put effects themselves in the shop.
@@ -111,7 +60,10 @@ Like commands, these are unsellable.
 
 ```yaml
 - id: my_effect_item
-  effects: [ ]
+  buy-effects:
+    - id: run_command
+      args:
+        command: "say %player% just bought this item!"
   buy:
     value: 65
     type: crystals
@@ -133,7 +85,7 @@ Like commands, these are unsellable.
 **id:** This is the internal ID of the item. Players don't see this, but it's important
 to use a unique ID for every item in all of your shops. This is used in commands, placeholders and referencing the item
 
-**effects:** These are the effects that are ran when the player buys the item. Read here for more info: [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect). **Only Triggered Effects**.
+**buy-effects:** These are the effects that are ran when the player buys the item. Read here for more info: [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect). **Only Triggered Effects**.
 #### Buy
 
 **type/value/display:** This is standard configuration of prices, read here for more info: [Prices](https://plugins.auxilor.io/all-plugins/prices). Prices are configured per-item.
