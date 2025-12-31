@@ -45,6 +45,7 @@ If a plugin isn't on this list, it doesn't mean it won't work, it just means tha
 - ItemBridge
 - ItemsAdder
 - Oraxen
+- Nexo
 
 ### Integration from eco plugins
 - MythicMobs (eco -> MythicMobs)
@@ -59,9 +60,11 @@ If a plugin isn't on this list, it doesn't mean it won't work, it just means tha
 - CMI
 - DecentHolograms
 - HolographicDisplays
-- 
+
 ## Economy
 - Vault
+- UltraEconomy
+- CoinsEngine
 
 ## Custom Terrain
 - Terra

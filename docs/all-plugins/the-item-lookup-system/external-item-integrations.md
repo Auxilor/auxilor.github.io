@@ -20,6 +20,10 @@ To use external items within The Item Lookup System, you need to use the relevan
 | Oraxen          | `oraxen:<id>`                                                                                                              |
 | Nexo            | `nexo:<id>`                                                                                                                |
 
+:::tipOther Plugins
+Remember, you can use NBT data for any other items where there is not direct plugin integration. Check out our [NBT converter](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/nbt-string-creator).
+:::
+
 #### ItemsAdder Usage
 
 ```yaml

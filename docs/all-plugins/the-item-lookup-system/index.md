@@ -15,18 +15,9 @@ In each string is the key for an item. A key looks one of a few ways
 
 - A vanilla minecraft material ID: (e.g. `golden_apple`)
 - An item from another eco plugin: (e.g. `ecoitems:packmaster_tear`) 
-- An item from an external plugin: (e.g. `oraxen:alumite_pickaxe`), See [External Integrations](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/external-integrations) for more info
-- An exact item NBT tag: (e.g. `{id:"stone",Count:3,tag:{Name:"your name"}}`)
+- An item from an external plugin: (e.g. `oraxen:alumite_pickaxe`), See [External Integrations](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/external-item-integrations) for more info
 - An item tag: (e.g. `#talismans:talisman` or `#items_axes`)
-
-#### NBT String Creator
-
-When configuring items in YAML files, you need to escape NBT strings to prevent syntax errors.   
-This tool converts raw Minecraft NBT strings into properly escaped format for eco-compatible config files.
-
-import NbtEscaper from '@site/src/components/NbtEscaper';
-
-<NbtEscaper />
+- An exact item NBT tag: (e.g. `{id:"stone",Count:3,tag:{Name:"your name"}}`), see [here](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/nbt-string-creator) for more info on NBT.
 
 #### Extra syntax
 
@@ -59,21 +50,46 @@ tags:
 
 ### Using items from eco plugins
 
-| Plugin       | Item Lookup Key                                                                                             | Item Tag                              |
-| ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| EcoArmor     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:crystal_<id>` |                                       |
-| EcoCrates    | `ecocrates:<crate>_key`                                                                                     |                                       |
-| EcoItems     | `ecoitems:<id>`                                                                                             | `#ecoitems:item`                      |
-| EcoMobs      | `ecomobs:<id>_spawn_egg`                                                                                    |                                       |
-| EcoPets      | `ecopets:<id>_spawn_egg`                                                                                    |                                       |
-| EcoScrolls   | `ecoscrolls:scroll_<id>`                                                                                    | `#ecoscrolls:scroll`                  |
+| Plugin       | Item Lookup Key                                                                                             | Item Tag                                   |
+|--------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------|
+| EcoArmor     | `ecoarmor:set_<set>_<slot>` (Optional: `_advanced`) <br/>`ecoarmor:shard_<set>`<br/>`ecoarmor:crystal_<id>` |                                            |
+| EcoCrates    | `ecocrates:<crate>_key`                                                                                     |                                            |
+| EcoItems     | `ecoitems:<id>`                                                                                             | `#ecoitems:item`                           |
+| EcoMobs      | `ecomobs:<id>_spawn_egg`                                                                                    |                                            |
+| EcoPets      | `ecopets:<id>_spawn_egg`                                                                                    |                                            |
+| EcoScrolls   | `ecoscrolls:scroll_<id>`                                                                                    | `#ecoscrolls:scroll`                       |
 | Reforges     | `reforges:stone_<id>`                                                                                       | `#reforges:stone`<br/>`#reforges:reforged` |
-| StatTrackers | `stattrackers:<id>`                                                                                         |                                       |
-| Talismans    | `talismans:<id>`                                                                                            | `#talismans:talisman`                 |
+| StatTrackers | `stattrackers:<id>`                                                                                         |                                            |
+| Talismans    | `talismans:<id>`                                                                                            | `#talismans:talisman`                      |
 
 ### Using items from third-party plugins
 
 Visit the [External Item Integrations](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/external-integrations) page for more information on how to use items from third-party plugins.
+
+## Potions & Fireworks
+- **Potion Builder:** You can create potions to use in your item section with `potion_effect:<potion_type>:<level>:<duration>`. <br/>
+  e.g. `splash_potion potion_effect:swiftness:5:3600`. This would be a splash potion with Swiftness 5 for 3 minutes (3600 ticks)
+
+  This works for `potion`, `splash_potion`, `lingering_potion` and `tipped_arrow`. <br/>
+  Optionally, you can add the `color` modifier, e.g. `color:#ff0000`.
+
+- **Firework Builder:** You can also create custom fireworks using `firework_effect:<index>:<type>:<colors>:<fadeColors>:<trail>:<flicker>`. <br/>
+  It may look complicated at first, but it’s easy once you know the parts:
+
+  | Part           | Description                                                                    |
+  |----------------|--------------------------------------------------------------------------------|
+  | `<index>`      | Explosion number (0-2) – controls the order of explosions.                     |
+  | `<type>`       | Shape of the explosion (`BALL`, `BALL_LARGE`, `STAR`, `CREEPER`, `BURST`)      |
+  | `<colors>`     | Main colors in **hex** format (`#RRGGBB`). Multiple colors separated by commas |
+  | `<fadeColors>` | Colors it fades to after the explosion. Use `false` if no fade                 |
+  | `<trail>`      | `true` or `false` – whether it leaves a trail                                  |
+  | `<flicker>`    | `true` or `false` – whether it flickers                                        |
+
+  e.g. `firework_rocket firework_effect:0:CREEPER:#FF0000:#0000FF:true:true` would produce a firework with a red creeper that fades into blue, with trails and flicker.
+
+  Fireworks can support up to 3 explosions, you can string these along in one lookup string, e.g. `firework_rocket firework_effect:0:... firework_effect:1:... firework_effect:2:...`
+
+  Optionally, you can add the `firework_power` modifier, e.g. `firework_power:1`. Firework Power: 1 = short, 2 = medium, 3 = long.
 
 ## Modifiers
 
@@ -88,7 +104,7 @@ Items can  have modifiers applied to them. For example, lets say you're configur
 - **Stack Quantity:** You can specify a stack quantity by using the amount, e.g. `iron_ingot 32`
 - **Max Stack Size:** You can set the max stack size with `max_stack_size:<size>`
 - **Durability:** You can set the item durability with `max_damage:<durability>`
-- **Leather Armor Color:** You can specify the leather armor color with `color:#hex`, e.g. `color:#303030`
+- **Leather Armor & Potion Color:** You can specify the leather armor or potion color with `color:#hex`, e.g. `color:#303030`
 - **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
 - **Fire Resistance:** You can make an item fire-resistant with `fire_resistant`
 - **Player Head:** If the material is a player head, you can specify a player using `head:<name>`. You can also use placeholders, e.g. `head:%player%`
