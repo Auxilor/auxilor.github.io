@@ -55,6 +55,7 @@ If a plugin isn't on this list, it doesn't mean it won't work, it just means tha
 - EconomyShopGUI
 - ShopGUIPlus
 - zShop
+- ExcellentShop
 
 ## Holograms
 - CMI

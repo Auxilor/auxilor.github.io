@@ -9,6 +9,7 @@ Lots of servers have lots of different types of economies. Maybe you have a stan
 
 To simplify this, there's a unified way to handle all of this: the price system.
 For price values, you can use [math](https://plugins.auxilor.io/all-plugins/math) to create adaptive/versatile pricing systems.
+
 ## Types
 Below are the different Price types you can use.
 
@@ -24,6 +25,7 @@ Below are the different Price types you can use.
 | UltraEconomy (External)                                                | `<currency_id>`                                                                                  |
 | CoinsEngine (External)                                                 | `<currency_id>`                                                                                  |
 | [Items](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) | Use the [item-lookup-system](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) here |
+
 ## Effects System
 Prices are seamlessly integrated into the effects system. Below, you'll find a list of all available effects and conditions.
 
@@ -32,6 +34,7 @@ Prices are seamlessly integrated into the effects system. Below, you'll find a l
 | `give_price`       | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/give_price)          |
 | `pay_price`        | Effect    | [Link](https://plugins.auxilor.io/effects/all-effects/pay_price)           |
 | `can_afford_price` | Condition | [Link](https://plugins.auxilor.io/effects/all-conditions/can_afford_price) |
+
 ## Display Names
 
 You can specify display names for each price individually, however this might be quite
@@ -58,6 +61,7 @@ This will override any per-price formatting, which should make your life much ea
 between different prices.
 
 You can display prices in two ways, using `%value%` which will return the number unformatted (e.g.  `$1234567.89`), or you can use `%value_commas%` to format the price with commas (e.g. `$1,234,567.89`).
+
 ## Config Examples
 
 ```yaml

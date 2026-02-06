@@ -16,7 +16,8 @@ To use external items within The Item Lookup System, you need to use the relevan
 | ExecutableItems | `executableitems:<id>`                                                                                                     |
 | HeadDatabase    | `headdb:<id>`                                                                                                              |
 | ItemBridge      | `itembridge:saved__<id>` for items you've saved.<br/>`itembridge:<prefix>__<id>` for plugin items supported in ItemBridge. |
-| ItemsAdder      | `itemsadder:<namespace__key>` ItemsAdder items are namespaced, example below. **There is a double underscore! `__`**       |
+| ItemsAdder      | `itemsadder:<namespace>__<key>` ItemsAdder items are namespaced, example below. **There is a double underscore! `__`**     |
+| CraftEngine     | `craftengine:<namespace>__<key>` CraftEngine items are namespaced. **There is a double underscore! `__`**                  |
 | Oraxen          | `oraxen:<id>`                                                                                                              |
 | Nexo            | `nexo:<id>`                                                                                                                |
 
