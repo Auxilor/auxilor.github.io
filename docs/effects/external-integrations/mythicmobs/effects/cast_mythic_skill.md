@@ -1,4 +1,4 @@
-# `add_stat`
+# `cast_mythic_skill`
 :::infoRequires:
 MythicMobs
 :::
