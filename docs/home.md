@@ -20,8 +20,4 @@ All plugins are available on [Spigot](https://www.spigotmc.org/resources/authors
 The contents of this documentation is for the latest versions of eco and all plugins. If you're using an older version, some features or options may not be available or supported.
 :::
 
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)
+ 

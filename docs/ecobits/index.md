@@ -9,8 +9,4 @@ as many currencies as you want, and then use them in plugins like EcoShop, EcoSk
 else that you use. It has dynamic currency commands that let you access each currency with its own
 command, instead of making your players do `/ecobits`, and it's been designed from the ground up to
 be the perfect tool to monetize your server.
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)
+ 

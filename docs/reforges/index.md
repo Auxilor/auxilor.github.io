@@ -9,8 +9,4 @@ Reforges are modifers that are applied to your item with the reforge menu! If yo
 ## Why this plugin?
 
 Put simply, it's the single most powerful plugin to ever do anything similar to reforges. It's not just a pre-determined set of reforges that you're stuck with - the magic of Reforges is that you can create your own in config in seconds, with no coding knowledge at all. You can shape the plugin to fit your exact choices. It also supports making reforges to hook into your stats plugin of choice: with built-in integrations for EcoSkills, AuraSkills, or UltimateSkills. It even supports reforging Talismans (if you have it installed).
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)
+ 

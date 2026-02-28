@@ -9,8 +9,4 @@ Boosters are rewards purchased by a player, and then activated to give rewards t
 You can make your own boosters in config, or use the boosters that come with the plugin. Every single aspect of the plugin is completely customisable for you to play with - if you think a booster that does something should exist, you can make it in minutes.
 
 A player can activate a booster by opening the GUI with `/boosters`
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)
+ 

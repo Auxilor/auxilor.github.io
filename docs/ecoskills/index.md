@@ -15,8 +15,4 @@ It works on bungee / velocity with MySQL!
 EcoSkills is the most configurable skills plugin ever released. You can create your own skills, stats, effects, magic
 types, you can redesign every GUI, change literally every aspect of anything that exists in the default config.
 It's also completely Plug-and-Play, so if you don't want to configure everything, you don't have to!
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)
+ 

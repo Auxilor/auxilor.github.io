@@ -9,8 +9,4 @@ full effect / condition system support, and everything else you could ever want!
 and literally every part of EcoQuests can be customised to your liking..
 
 It works on bungee / velocity with MySQL!
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)
+ 

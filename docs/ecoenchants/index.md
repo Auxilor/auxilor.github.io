@@ -15,8 +15,4 @@ On top of that, **you can create your own custom enchantments with zero coding k
 EcoEnchants is also completely open-source. Many *other* enchantment plugins have extremely poor code and tend to obfuscate their plugins and try to prevent you from actually owning the plugin, instead treating you like you're borrowing it from them, with license checkers and enterprise licenses that restrict your freedom to use things how you want. **EcoEnchants will never have licenses, obfuscation, or anything like that.** The source code is public and open, and you can find it on [GitHub](https://github.com/Auxilor/EcoEnchants).
 
 EcoEnchants also doesn't fill your server with random clutter that you don't want. It was built out of frustration at the state of the most popular plugins at the time, filled with meaningless features and built around 1.8 PvP servers - this leads to bad performance, a bad user experience, and a bad developer experience too. Because it's built to feel like an extension of vanilla rather than a whole new system with the same name, your players will immediately understand it.
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)
+ 

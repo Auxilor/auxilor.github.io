@@ -42,8 +42,3 @@ You can make your own progression in config, this exists purely as an example.
 Advancement is an upgrade that must be applied to all items in the set before the bonus effects kick in. These can be more powerful versions of the base effects, or entirely new effects and potion effects altogether. For example, in the default config, **Reaper Armor** gives 1.25x attack damage, whereas **Advanced Reaper Armor** gives 1.5x attack damage and a 10% incoming damage reduction bonus.
 
 Advancement can be applied with **Advancement Shards**. You can rename this however you want, like everything else in the plugin, but once again I'm using the default config as an example. Just like upgrade crystals, these can be dragged and dropped in the inventory, by clicking an advancement shard onto a piece of armor.
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)

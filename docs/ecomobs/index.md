@@ -11,8 +11,4 @@ have them spawn naturally in the world, set effects and properties, rewards, com
 It's incredibly easy to configure your own mobs. No more spending hours writing and
 debugging complex systems or paying people to make them for you, no subscription model
 or overpriced extras - once you buy it, it's yours forever.
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](/img/gamersupps.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](/img/dedimc.png)](https://dedimc.promo/Auxilor)
+ 
