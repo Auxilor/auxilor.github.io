@@ -73,29 +73,52 @@ conditions: [ ]
 ```yaml
 name: "2x Sell Multiplier" # The display name of the Booster.
 duration: 72000 # The duration (in ticks) of the Booster. (e.g. 6000 = 5 minutes)
-
-commands:
-  activation: [ ] # Commands to run when the booster is activated.
-  expiry: [ ] # Commands to run when the booster expires.
-  increment: [ ] # Commands to run when the booster is incremented (i.e. another one is activated whilst one is already active).
-  
-messages:
-  activation: # Broadcast message when the booster is activated.
-    - ""
-    - " %player%&f has activated a &a2x Sell Multiplier Booster&f!"
-    - " &fThis booster will last an hour, be sure to thank them!"
-    - ""
-  expiry: # Broadcast message when the booster expires.
-    - ""
-    - " &fThe &a2x Sell Multiplier Booster&f has ended"
-    - " &fGet another one here: &ahttps://store.ecomc.net/package/756888"
-    - ""
-  increment: # Broadcast message when the booster is incremented (i.e. player activates another one).
-    - ""
-    - " %player%&f has extended the &a2x Sell Multiplier Booster&f!"
-    - " &fThis booster will now last another hour, be sure to thank them!"
-    - ""
 ```
+
+### The Start, Increment and Expiry Section
+```yaml
+# Effects to be run when the Booster is activated (applies to all players)
+# %activator% - The player who activated the booster
+# %player% - The player receiving the message/effect
+activation-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " %activator%&f has activated a &a1.5x Sell Multiplier Booster&f!"
+        - " &fThis booster will last an hour, be sure to thank them!"
+        - ""
+
+# Effects to be run when the Booster is incremented (applies to all players)
+increment-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " %activator%&f has increased the &a1.5x Sell Multiplier Booster's duration&f!"
+        - " &fThis booster will last another hour, be sure to thank them!"
+        - ""
+
+# Effects to be run when the Booster expires (applies to all players)
+expiry-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " &fThe &a1.5x Sell Multiplier Booster&f has ended"
+        - " &fGet another one here: &ahttps://store.ecomc.net/package/756887"
+        - ""
+```
+
+The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
 
 ### The Booster GUI Section
 ```yaml
@@ -131,7 +154,6 @@ effects:
 # The conditions required for the effects to activate
 conditions: [ ]
 ```
-
 The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is active.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
@@ -140,9 +162,11 @@ For more advanced users or setups, you can configure chains in this section to s
 
 ## Internal Placeholders
 
-| Placeholder | Value                                    |
-|-------------|------------------------------------------|
-| `%amount%`  | The amount of the booster the player has |
+| Placeholder   | Value                                                      |
+|---------------|------------------------------------------------------------|
+| `%amount%`    | The amount of the booster the player has (For use in GUI)  |
+| `%activator%` | The player who activated the booster (For use in messages) |
+
 
 <hr/>
 
