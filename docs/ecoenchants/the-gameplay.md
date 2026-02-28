@@ -19,9 +19,7 @@ You can create as many enchantment types as you want, but by default, EcoEnchant
 
 Rarity is mostly hidden from the player, and functions more as a way for you to choose how each enchantment can be obtained. A rarity consists of several values. The minimum xp level required to get the enchantment from an enchanting table - should they be level 1, level 15, level 30? Something else altogether? The percentage chance for the enchantment to be applied to an item every time it is enchanted above that minimum level, the percentage chance for a villager to spawn with a trade for that enchantment, and the percentage chance for an item in a loot chest to spawn with that enchantment. All values are completely configurable, and you can create, edit, and delete as many rarities as you want.
 
-Check out rarity.yml here:
-
-[GitHub](https://github.com/Auxilor/EcoEnchants/blob/master/eco-core/core-plugin/src/main/resources/rarity.yml)
+[Check out rarity.yml here](https://github.com/Auxilor/EcoEnchants/blob/master/eco-core/core-plugin/src/main/resources/rarity.yml)
 
 ## Means of obtaining
 
@@ -37,7 +35,5 @@ Some enchantment types (special by default) are set up with a bias to make it ex
 
 Targets are the items that can be enchanted by any given enchantment. These are things like melee weapons, tools, armor pieces, elytra, fishing rods, etc. You can create your own targets (for example if you want diamond and netherite items to have exclusive enchantments) and edit and delete as many targets as you want.
 
-Check out targets.yml here:
-
-[GitHub](https://github.com/Auxilor/EcoEnchants/blob/master/eco-core/core-plugin/src/main/resources/targets.yml)
+[Check out targets.yml here](https://github.com/Auxilor/EcoEnchants/blob/master/eco-core/core-plugin/src/main/resources/targets.yml)
 
