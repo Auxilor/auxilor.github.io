@@ -21,6 +21,8 @@ effects:
       - bow_attack
       - trident_attack
 
+amount_for_set: 4
+
 advancedEffects:
   - id: damage_multiplier
     args:
@@ -35,28 +37,28 @@ advancedEffects:
     triggers:
       - take_damage
 
-sounds:
-  equip:
-    enabled: false 
-    sound: "" 
-    volume: 1
-    pitch: 1
-  advancedEquip:
-    enabled: false 
-    sound: "" 
-    volume: 1
-    pitch: 1
-  unequip:
-    enabled: false 
-    sound: "" 
-    volume: 1
-    pitch: 1
-
 advancedLore: 
   - ''
   - "<gradient:f12711>&lADVANCED BONUS</gradient:f5af19>"
   - "&8» &6Take 10% less damage"
   - "&8&oRequires full set to be worn"
+ 
+sounds:
+  equip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+  advancedEquip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
+  unequip:
+    enabled: false
+    sound: ""
+    volume: 1
+    pitch: 1
  
 shard:
   item: prismarine_shard unbreaking:1 hide_enchants 
@@ -236,9 +238,9 @@ boots:
 ```
 
 ## Understanding all the sections:
-### The Armor Set Section
+### The Set Effects Section
 
-This is the config section that applies to all items in the set, such as set effects, advanced effects, sounds and lore.
+This is the config section for the set effects, which are the effects that apply when the full set is worn.
 
 ```yaml
 # The effects of the set (i.e. the functionality)
@@ -251,7 +253,13 @@ effects:
       - melee_attack
       - bow_attack
       - trident_attack
-      
+
+amount_for_set: 4 # The amount of pieces required to be wearing for the set effects to activate.
+```
+
+### The Advanced Effects and Lore Section
+
+```yaml
 # The advanced effects of the set (i.e. the functionality) - additional effects that only apply when the set is advanced.
 # See here: https://plugins.auxilor.io/effects/configuring-an-effect
 advancedEffects:
@@ -268,6 +276,21 @@ advancedEffects:
     triggers:
       - take_damage
 
+advancedLore: # Lore to be added to the armor piece when it has been advanced.
+  - ''
+  - "<gradient:f12711>&lADVANCED BONUS</gradient:f5af19>"
+  - "&8» &6Take 10% less damage"
+  - "&8&oRequires full set to be worn"
+```
+
+The effects section is the core functionality of the armor set. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the set is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+### The Additional Set Options Section
+```yaml
 sounds:
   equip:
     enabled: false # If a sound should play when armor is equipped.
@@ -284,19 +307,7 @@ sounds:
     sound: "" # The sound to play, sounds: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
     volume: 1
     pitch: 1
-
-advancedLore: # Lore to be added to the armor piece when it has been advanced.
-  - ''
-  - "<gradient:f12711>&lADVANCED BONUS</gradient:f5af19>"
-  - "&8» &6Take 10% less damage"
-  - "&8&oRequires full set to be worn"
 ```
-
-The effects section is the core functionality of the armor set. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the set is active.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ### The Advancement Shard Section
 
