@@ -14,56 +14,30 @@ Quests are made up of specific [tasks](https://plugins.auxilor.io/ecoquests/how-
 ## Example Quest Config
 
 ```yaml
-name: "Traveller" # The name of the task
-description: "&7Stretch your legs! Walk around Lumoria and find new places to explore."
-
-# How many minutes between this quest being reset (set to -1 to disable)
-# 1 Day: 1440
-# 1 Week: 10080
-# 1 Month: 43200
+name: "Traveller"
+description: "&7Stretch your legs! Walk around The Nether and find new places to explore."
 reset-time: -1
 
-# A list of tasks and their XP requirements to complete this quest.
-# If the task is one action, set XP to 1.
-# XP requirements can use placeholder math, for example %ecoskills_combat% * 100
 tasks:
   - task: move
     xp: 1000
-
-# (For resettable tasks) The amount of tasks to select from the list above.
-# Set to -1 to use all tasks.
 task-amount: -1
 
-# The messages for the %rewards% placeholder in icons, messages, etc.
 reward-messages:
   - " &8» &r&f+2 %ecoskills_defense_name%"
-
-# A list of effects to run when the quest is completed.
-# Read https://plugins.auxilor.io/effects/configuring-an-effect
 rewards: []
 
-# If the player should be told when they have started the quest.
 announce-start: false
-
-# A list of effects to run when the quest is started.
-# Read https://plugins.auxilor.io/effects/configuring-an-effect
 start-effects: []
-
-# A list of conditions required to start the quest.
-# The quest will be automatically started when these conditions are met.
-# Read https://plugins.auxilor.io/conditions/configuring-a-condition
-# If gui.always is true, then not-met-lines will show up on the GUI icon!
-start-conditions: []
-
-# If the quest should auto start when all conditions are met
-# If this is set to false, the quest can only be started with /ecoquests start
+start-conditions:
+  - id: in_world
+    args:
+      world: world_nether
 auto-start: true
 
-# Options for the /quests GUI
 gui:
-  enabled: true # If the quest should be shown in the GUI
-  always: false # If the quest should always be in the GUI, even if it's not started
-  # The item to show in the GUI, read https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  enabled: true
+  always: false
   item: paper
 ```
 
@@ -95,9 +69,6 @@ tasks:
 task-amount: -1
 ```
 
-
-
-
 ### The Rewards Section
 ```yaml
 # The messages for the %rewards% placeholder in icons, messages, etc.
@@ -119,38 +90,41 @@ Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
+### The Quest Start Section
+```yaml
+# If the player should be told when they have started the quest.
+announce-start: false
 
+# A list of effects to run when the quest is started.
+# Read https://plugins.auxilor.io/effects/configuring-an-effect
+start-effects: []
 
+# A list of conditions required to start the quest.
+# The quest will be automatically started when these conditions are met.
+# Read https://plugins.auxilor.io/conditions/configuring-a-condition
+# If gui.always is true, then not-met-lines will show up on the GUI icon!
+start-conditions: []
 
+# If the quest should auto start when all conditions are met
+# If this is set to false, the quest can only be started with /ecoquests start
+auto-start: true
+```
 
-
-**reward-messages:** The message for the `%rewards%` placeholder in icons, messages, etc.
-
-**rewards:** Effects to be run when the quest is completed (Supports triggered effects). See [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
-
-**announce-start:** If the player should be told the quest has started (true/false)
-
-**start-effects:** Effects to be run when the quest is started (Supports triggered effects). See [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
-
-**start-conditions:** Conditions that must be met for the quest to start. See [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-condition).
-
-**auto-start:** If the quest should start automatically when the conditions are met.
-
-### GUI
-
-**enabled:** If the quest should appear in /quests
-
-**always:** If the quest should always appear in /quests, even when not started
-
-**item:** The item to show in /quests, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system)
-
-### Effects & Conditions
-
-The quest rewards uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the quest is started or as rewards.
+You can use the effects system when the quest starts, allowing you to give players items, permissions, execute commands, and much more as soon as they start the quest. Using conditions you can also make it so players can only start the quest when they meet certain requirements, such as being in a certain world, having a certain item, or even having completed another quest.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+### The GUI Section
+```yaml
+# Options for the /quests GUI
+gui:
+  enabled: true # If the quest should be shown in the GUI
+  always: false # If the quest should always be in the GUI, even if it's not started
+  # The item to show in the GUI, read https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  item: paper
+```
 
 <hr/>
 
