@@ -21,14 +21,12 @@ ID's must be lowercase letters, numbers, and underscores only.
     weight:
       permission-multipliers: false
       actual: 10
-      display: 25
     display:
       name: "&a$1000"
       item: paper 1 unbreaking:1 hide_enchants
       dont-keep-lore: false
       lore:
-        - "&fDisplay Chance: &a%chance%%"
-        - "&fActual Chance: &a%actual_chance%%"
+        - "&fWin Chance: &a%chance%%"
 ```
 
 ## Understanding all the sections
@@ -45,7 +43,7 @@ ID's must be lowercase letters, numbers, and underscores only.
     - paper 1 name:"&a$1000" glint
   # Messages to be sent to the player when they win
   messages:
-    - "Congratulations, you won $1000!"
+    - "&7Congratulations, you won &a$1000!"
   max-wins: -1 # The max amount of times a player can win this reward, set to -1 to disable
 ```
 
@@ -55,8 +53,8 @@ ID's must be lowercase letters, numbers, and underscores only.
 weight:
   permission-multipliers: false # If permission chance multipliers should apply to this reward. Configure these in config.yml
   actual: 10 # The actual chance of winning the reward
-  display: 25 # The chance of the reward showing up in crate animations
 ```
+The reward's win chance is calculated as `<weight of element> / <sum of all weights>`.
 
 ### The Reward Display Section
 
@@ -67,16 +65,14 @@ display:
   item: paper 1 glint
   dont-keep-lore: false # (Optional) Set to true to only show custom lore
   lore: # The custom lore to show in the display
-    - "&fDisplay Chance: &a%chance%%"
-    - "&fActual Chance: &a%actual_chance%%"
+    - "&fWin Chance: &a%chance%%"
 ```
 
 ## Internal Placeholders
 
-| Placeholder       | Value                       |
-| ----------------- | --------------------------- |
-| `%chance%`        | The reward's display chance |
-| `%actual_chance%` | The reward's actual chance  |
+| Placeholder | Value                   |
+|-------------|-------------------------|
+| `%chance%`  | The reward's win chance |
 
 <hr/>
 

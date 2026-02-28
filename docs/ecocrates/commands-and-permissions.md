@@ -15,10 +15,10 @@ All crates commands can be either `/crates`, `/crate`, or `/ecocrates`
 | `/ecocrates take <player> <crate> [physical/physical] [amount]` | Takes a key from a player                     | `ecocrates.command.take`             |
 | `/ecocrates keys`                                               | View your keys                                | `ecocrates.command.keys`             |
 | `/ecocrates preview <crate>`                                    | Open the preview for a crate                  | `ecocrates.command.preview`          |
-| `/ecocrates open <crate> [player]`                                 | Opens a crate virtually                       | `ecocrates.command.open`             |
-| `/ecocrates forceopen <crate>`                                     | Force-opens a crate without a key             | `ecocrates.command.forceopen`        |
-| `/ecocrates forceopen <crate> [player]`                            | Force-opens a crate for another player        | `ecocrates.command.forceopen.others` |
-| `/ecocrates resetwins <player/all>`                                | Resets the wins for a reward                  | `ecocrates.command.resetwins`        |
+| `/ecocrates open <crate> [player]`                              | Opens a crate virtually                       | `ecocrates.command.open`             |
+| `/ecocrates forceopen <crate>`                                  | Force-opens a crate without a key             | `ecocrates.command.forceopen`        |
+| `/ecocrates forceopen <crate> [player]`                         | Force-opens a crate for another player        | `ecocrates.command.forceopen.others` |
+| `/ecocrates resetwins <player/all>`                             | Resets the wins for a reward                  | `ecocrates.command.resetwins`        |
 
 ### Additional Permissions
 
