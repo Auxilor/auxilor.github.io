@@ -1,13 +1,13 @@
-# `luck_multiplier`
+# `add_luck`
 :::dangerPermanent Effect
 This effect is permanent and does not require a trigger.
 :::
 
-Multiplies luck
+Adds luck
 
 # Effect Syntax
 ```yaml
-- id: luck_multiplier
+- id: add_luck
   args:
-    multiplier: 1.5 # The multiplier for the luck attribute
+    amount: 1.5 # The amount of luck to add
 ```

@@ -15,7 +15,7 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 ## Internal Triggers
 
 | ID                              | Description                                                                                                       | Value(s)                                                         |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | `alt_click`                     | Triggered when using Right Click on most items, Left Click on those that have a default right click functionality | `value: 1`                                                       |
 | `anvil_modify`                  | Triggered when a player takes a modified item from an anvil **Requires Purpur**                                   | `value: The experience cost`                                     |
 | `beacon_effect`                 | Triggered when a player gains effects from a beacon **Requires Paper**                                            | `value: 1`                                                       |
@@ -94,6 +94,7 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `reel_in`                       | Triggered when reeling in a fishing rod                                                                           | `value: 1`                                                       |
 | `rename_entity`                 | Triggered when a player renames an entity using a name tag **Requires Paper**                                     | `value: 1`                                                       |
 | `respawn`                       | Triggered when respawning                                                                                         | `value: 1`                                                       |
+| `resurrect`                     | Triggered when a Totem activates                                                                                  | `value: 1`                                                       |
 | `ring_bell`                     | Triggered when ringing a bell                                                                                     | `value: 1`                                                       |
 | `run_command`                   | Triggered when running a command                                                                                  | `value: 1`                                                       |
 | `sell_item`                     | Triggered when selling an item in a shop                                                                          | `value: The price`                                               |
