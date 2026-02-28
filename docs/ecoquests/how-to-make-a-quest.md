@@ -3,10 +3,6 @@ title: How to make a Quest
 sidebar_position: 1
 ---
 
-## Default configs
-The default configs can be found [here](https://github.com/Auxilor/EcoQuests/tree/master/eco-core/core-plugin/src/main/resources/quests).
-You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
-
 ## How to add quests
 Each quest is its own config file, placed in the `/quests/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
@@ -73,20 +69,60 @@ gui:
 
 ## Understanding all the sections
 
-**name**: The item name in-game.
-
-**description**: The item lore shown in-game. Set to `description: []` to remove all lore lines.
-
-**reset-time:** The time (in ticks) between being reset
-
-**tasks:** The list of tasks and their XP requirements.
+### The Quest Info Section
 ```yaml
-tasks:
-  - task: move # The ID of the task (from /ecoquests/tasks/id.yml)
-    xp: 1000 # The amount of XP required to complete the task
+name: "Traveller" # The name of the task
+description: "&7Stretch your legs! Walk around The Nether and find new places to explore."
+
+# How many minutes between this quest being reset (set to -1 to disable)
+# 1 Day: 1440
+# 1 Week: 10080
+# 1 Month: 43200
+reset-time: -1
 ```
 
-**task-amount:** The amount of tasks to be completed. These are selected from the list at random. Set to `-1` to use all tasks.
+### The Tasks Section
+```yaml
+# A list of tasks and their XP requirements to complete this quest.
+# If the task is one action, set XP to 1.
+# XP requirements can use placeholder math, for example %ecoskills_combat% * 100, or random values, like random(min,max)
+tasks:
+  - task: move
+    xp: 1000
+
+# (For resettable tasks) The amount of tasks to select from the list above.
+# Set to -1 to use all tasks.
+task-amount: -1
+```
+
+
+
+
+### The Rewards Section
+```yaml
+# The messages for the %rewards% placeholder in icons, messages, etc.
+reward-messages:
+  - " &8» &r&f+2 %ecoskills_defense_name%"
+
+# A list of effects to run when the quest is completed.
+# Read https://plugins.auxilor.io/effects/configuring-an-effect
+rewards:
+  - id: give_item
+    args:
+      items:
+        - emerald 5
+```
+
+The quest rewards uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the quest is completed.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+
+
+
+
 
 **reward-messages:** The message for the `%rewards%` placeholder in icons, messages, etc.
 
@@ -115,3 +151,9 @@ The quest rewards uses the effects system. You can configure effects, conditions
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+<hr/>
+
+## Default configs
+The default configs can be found [here](https://github.com/Auxilor/EcoQuests/tree/master/eco-core/core-plugin/src/main/resources/quests). <br/>
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).

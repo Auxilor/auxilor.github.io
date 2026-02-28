@@ -239,5 +239,5 @@ spawn-egg:
 <hr/>
 
 ## Default configs
-The default configs can be found [here](https://github.com/Auxilor/EcoPets/tree/master/eco-core/core-plugin/src/main/resources/pets).
+The default configs can be found [here](https://github.com/Auxilor/EcoPets/tree/master/eco-core/core-plugin/src/main/resources/pets). <br/>
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).

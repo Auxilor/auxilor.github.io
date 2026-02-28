@@ -3,30 +3,12 @@ title: "Commands and Permissions"
 sidebar_position: 5
 ---
 
-## `/quests, /quest, /q` (Open the main menu)
-
-Permission: `ecoquests.command.quests`
-
-## `/ecoquests reset (Reset a quest)`
-
-Permission: `ecoquests.command.reset`
-
-General Usage: `/ecoquests reset <quest>`
-
-## `/ecoquests resetplayer (Reset a quest for a player)`
-
-Permission: `ecoquests.command.resetplayer`
-
-General Usage: `/ecoquests reset <player> <quest>`
-
-## `/ecoquests start (Start a quest for a player)`
-
-Permission: `ecoquests.command.start`
-
-General Usage: `/ecoquests start <player> <quest>`
-
-## `/ecoquests addexp (Add quest experience)`
-
-Permission: `ecoquests.command.addexp`
-
-General Usage: `/ecoquests addexp <player> <quest> <task> <amount>`
+| Command                                              | Description                                            | Permission                      |
+|------------------------------------------------------|--------------------------------------------------------|---------------------------------|
+| `/quests, /quest, /q`                                | Open the main menu                                     | `ecoquests.command.quests`      |
+| `/ecoquests reset <quest>`                           | Reset a quest                                          | `ecoquests.command.reset`       |
+| `/ecoquests resetplayer <player> <quest>`            | Reset a quest for a player                             | `ecoquests.command.resetplayer` |
+| `/ecoquests start <player> <quest>`                  | Start a quest for a player                             | `ecoquests.command.start`       |
+| `/ecoquests addexp <player> <quest> <task> <amount>` | Add quest experience for a player                      | `ecoquests.command.addexp`      |
+| `/ecoquests import <id>`                             | Import a quest from [lrcdb](https://lrcdb.auxilor.io/) | `ecoquests.command.import`      |
+| `/ecoquests export <id>`                             | Export a quest to [lrcdb](https://lrcdb.auxilor.io/)   | `ecoquests.command.export`      |

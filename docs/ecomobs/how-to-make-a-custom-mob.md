@@ -362,5 +362,5 @@ For more information on recipes, check out the [Crafting Recipes](https://plugin
 <hr/>
 
 ## Default configs
-The default configs can be found [here](https://github.com/Auxilor/EcoMobs/tree/master/eco-core/core-plugin/src/main/resources/mobs).
+The default configs can be found [here](https://github.com/Auxilor/EcoMobs/tree/master/eco-core/core-plugin/src/main/resources/mobs). <br/>
 You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
