@@ -12,6 +12,7 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | --------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
 | `%trigger_value%`     | The value passed by the trigger     | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%`             |
 | `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
+
 ## Internal Triggers
 
 | ID                              | Description                                                                                                       | Value(s)                                                         |
@@ -123,7 +124,7 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 ## EcoPlugin Triggers
 
 | ID               | Description                                                          | Plugin      | Value(s)                       |
-| ---------------- | -------------------------------------------------------------------- | ----------- | ------------------------------ |
+|------------------|----------------------------------------------------------------------|-------------|--------------------------------|
 | `enchant_<type>` | Triggered when enchanting an item with a certain type of enchantment | EcoEnchants | `value: The xp cost`           |
 | `gain_job_xp`    | Triggered when gaining job experience points                         | EcoJobs     | `value: The experience gained` |
 | `join_job`       | Triggered when joining a job                                         | EcoJobs     | `value: The job level`         |
@@ -141,10 +142,11 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `gain_skill_xp`  | Triggered when gaining skill experience points                       | EcoSkills   | `value: The experience gained` |
 | `level_up_skill` | Triggered when levelling up                                          | EcoSkills   | `value: The new level`         |
 | `regen_magic`    | Triggered when regenerating magic                                    | EcoSkills   | `value: 1`                     |
+
 ## External Integration Triggers
 
 | ID                         | Description                                                                     | Plugin                             | Value(s)                                                                                       |
-| -------------------------- | ------------------------------------------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------- |
+|----------------------------|---------------------------------------------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------|
 | `collect_envoy`            | Triggered when collecting an envoy crate                                        | AxEnvoy                            | `value: 1`                                                                                     |
 | `player_trade`             | Triggered when trading with a player (player = initiator, victim = recipricant) | AxTrade                            | `value: The total amount of items traded`<br/>`alt-value: The total amount of currency traded` |
 | `left_click_npc`           | Triggered when left-clicking an NPC                                             | Citizens<br/>FancyNpcs             | `value: 1`                                                                                     |
