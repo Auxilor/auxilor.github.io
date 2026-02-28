@@ -196,7 +196,7 @@ xp-requirements: # The XP required to reach each level, from Level 1. The length
 - 7500  
 - 10000
 ```
-#### XP Gain and Level Up
+#### XP Gain Methods
 
 ```yaml
 # An XP gain method takes a trigger, a multiplier, conditions, and filters.
@@ -214,7 +214,11 @@ xp-gain-methods:
         - "*golden_pickaxe"
         - "*diamond_pickaxe"
         - "*netherite_pickaxe"
+```
 
+### The Additional Options Section
+
+```yaml
 # Custom placeholders to be used in descriptions,
 # Don't add % to the IDs, this is done automatically
 # The value takes a %level% placeholder and is a mathematical expression
@@ -238,7 +242,6 @@ rewards-description:
 ```
 
 ### The Level Up Section
-
 ```yaml
 # The message sent when the player levels up
 level-up-messages:
@@ -261,7 +264,6 @@ level-up-effects:
 ```
 
 ### The Effects Section
-
 ```yaml
 # The effects for the job (i.e. the functionality)
 # See here: https://plugins.auxilor.io/effects/configuring-an-effect

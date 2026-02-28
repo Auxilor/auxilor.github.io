@@ -3,60 +3,24 @@ title: "Commands and Permissions"
 sidebar_position: 4
 ---
 
-## `/ecopets give` (Give a pet)
-Permission: `ecopets.command.give`
+| Command                                   | Description                                          | Permission                   |
+|-------------------------------------------|------------------------------------------------------|------------------------------|
+| `/ecopets give <player> <pet>`            | Give a pet                                           | `ecopets.command.give`       |
+| `/ecopets giveegg <player> <pet>`         | Give a pet egg                                       | `ecopets.command.give`       |
+| `/ecopets reset <player> <pet>`           | Reset a pet                                          | `ecopets.command.reset`      |
+| `/ecopets givexp <player> <pet> <amount>` | Give xp to a pet                                     | `ecopets.command.givexp`     |
+| `/pets`                                   | Open the pets menu                                   | `ecopets.command.pets`       |
+| `/pets activate <pet>`                    | Activate a pet                                       | `ecopets.command.activate`   |
+| `/pets deactivate`                        | Deactivate a pet                                     | `ecopets.command.deactivate` |
+| `/ecopets import <id>`                    | Import a pet from [lrcdb](https://lrcdb.auxilor.io/) | `ecopets.command.import`     |
+| `/ecopets export <id>`                    | Export a pet to [lrcdb](https://lrcdb.auxilor.io/)   | `ecopets.command.export`     |
 
-Usage: `/ecopets give <player> <pet>`
+### Additional Permissions
 
-## `/ecopets giveegg` (Give a pet egg)
-Permission: `ecopets.command.give`
-
-Usage: `/ecopets giveegg <player> <pet>`
-
-## `/ecopets reset` (Reset a pet)
-Permission: `ecopets.command.reset`
-
-Usage: `/ecopets reset <player> <pet>`
-
-## `/ecopets givexp` (Give xp to a pet)
-Permission: `ecopets.command.givexp`
-
-Usage: `/ecopets givexp <player> <pet> <amount>`
-
-## `/pets` (Open the pets menu)
-Permission: `ecopets.command.pets`
-
-## `/pets activate` (Activate a pet)
-Permission: `ecopets.command.activate`
-
-Usage: `/pets activate <pet>`
-
-## `/pets deactivate` (Deactivate a pet)
-Permission: `ecopets.command.deactivate`
-
-Usage: `/pets deactivate`
-
-## `/ecopets import` (Import a pet from [lrcdb](https://lrcdb.auxilor.io/))
-Permission: `ecopets.command.import`
-
-General Usage: `/ecopets import <id>`
-
-Find pets on [lrcdb](https://lrcdb.auxilor.io/)
-
-## `/ecopets export` (Export a pet to [lrcdb](https://lrcdb.auxilor.io/))
-Permission: `ecopets.command.export`
-
-General Usage: `/ecopets export <id>`
-
-### XP multiplier permission
-
-Permission: `ecopets.xpmultiplier.<%increase>`
-
-General Usage: `ecopets.xpmultiplier.200` would give 200% more skill XP (3x) to anyone with the permission. The backend math is `1 + (<%increase> / 100)` so 
-
-Permission: `ecopets.xpmultiplier.50percent
-Permission: `ecopets.xpmultiplier.double`
-Permission: `ecopets.xpmultiplier.triple`
-Permission: `ecopets.xpmultiplier.quadruple`
-
-General Usage: `ecopets.xpmultiplier.50percent` would give 50% more skill XP (1.5x)
+| Permission                         | Description                                                                                         |
+|------------------------------------|-----------------------------------------------------------------------------------------------------|
+| `ecopets.xpmultiplier.<%increase>` | Multiply pet XP gain. The math is `1 + (<%increase> / 100)`. Example: `200` = 3x XP, `50` = 1.5x XP |
+| `ecopets.xpmultiplier.50percent`   | Gives 50% more pet XP (1.5x multiplier)                                                             |
+| `ecopets.xpmultiplier.double`      | Gives double pet XP (2x multiplier)                                                                 |
+| `ecopets.xpmultiplier.triple`      | Gives triple pet XP (3x multiplier)                                                                 |
+| `ecopets.xpmultiplier.quadruple`   | Gives quadruple pet XP (4x multiplier)                                                              |

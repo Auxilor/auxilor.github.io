@@ -130,6 +130,7 @@ crystal:
     - air
   giveAmount: 1 # Optional, set the amount of items to give in the recipe
 ```
+For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes) documentation.
 
 ### The Armor Properties Section
 

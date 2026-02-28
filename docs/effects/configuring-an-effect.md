@@ -211,7 +211,7 @@ args:
 For example, you can specify the chance to be dependent on your y level: as in `chance: 100 - %player_y%` - permanent effects will evaluate the expression on activation, and triggered effects will evaluate it on each trigger. 
 Make sure you only use placeholders with numeric values, as you will get weird behaviour otherwise.
 
-If the victim is a player, you can supply any placeholder prefixed with `victim_` (e.g. `%victim_player_y%`) as well.
+If the victim is a player, you can supply any placeholder prefixed with `victim_` (e.g. `%victim_player_y%`) as well.
 
 There are also extra placeholders passed in that you can use:
 
