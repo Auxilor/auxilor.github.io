@@ -292,6 +292,12 @@ advancedLore: # Lore to be added to the armor piece when it has been advanced.
   - "&8&oRequires full set to be worn"
 ```
 
+The effects section is the core functionality of the armor set. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the set is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
 ### The Advancement Shard Section
 
 This is the config section for the Advancement Shard, which is used to upgrade the armor set to its advanced version.
@@ -319,6 +325,8 @@ shard:
     - ecoarmor:set_reaper_boots
     - prismarine_shard
 ```
+
+For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes) documentation.
 
 ### The Individual Armor Piece Section
 
@@ -369,6 +377,9 @@ helmet:
   # The conditions required for the effects to activate
   conditions: [] # The conditions for the effects to be run
 ```
+
+For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes) documentation.
+
 :::dangerFrequently Asked Questions:
 **Why do I get a piece of stone?** <br/>
 - This is because an armor piece is missing, or configured incorrectly. In most cases, users remove the elytra section.

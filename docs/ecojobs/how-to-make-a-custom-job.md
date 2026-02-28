@@ -169,20 +169,21 @@ leave-lore:
 ```
 
 ### The Progression Section
+#### XP Requirements
+
+There are two ways to specify level XP requirements:  
+1. A formula to calculate for infinite levels  
 
 ```yaml
-# There are two ways to specify level XP requirements:  
-# 1. A formula to calculate for infinite levels  
-# 2. A list of XP requirements for each level  
-  
-# Formula  
-# xp-formula: (2 ^ %level%) * 25  
-# max-level: 100 # (Optional) The max level, if not specified, there is no max level  
-  
-# List  
-xp-requirements:  
-- 50  
-- 125  
+xp-formula: (2 ^ %level%) * 25 # The formula to calculate XP requirements for each level, where %level% is the level to calculate for. See here for math https://plugins.auxilor.io/all-plugins/math
+max-level: 100 # (Optional) The max level, if not specified, there is no max level  
+```
+
+2. A list of XP requirements for each level
+```yaml
+xp-requirements: # The XP required to reach each level, from Level 1. The length of the list is the max level.
+- 50 # XP required to reach level 1
+- 125 # XP required to reach level 2
 - 200  
 - 300  
 - 500  
@@ -194,7 +195,10 @@ xp-requirements:
 - 5000  
 - 7500  
 - 10000
+```
+#### XP Gain and Level Up
 
+```yaml
 # An XP gain method takes a trigger, a multiplier, conditions, and filters.
 # The 'multiplier' takes the value produced by the trigger and multiplies it
 # Alternatively, you can use 'value' to count a specific number and not a multiplier
@@ -281,11 +285,11 @@ effects:
 conditions: [ ]
 ```
 
-The effects section is the core functionality of the Item. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchant is active.
+The effects section is the core functionality of the job. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the job is active.
 
-Check out Configuring an Effect to understand how to configure this section correctly.
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out Configuring an Effect Chain for more info.
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ## Internal Placeholders
 

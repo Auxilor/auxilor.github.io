@@ -89,7 +89,7 @@ effects:
 conditions: [ ]
 ```
 
-The effects section is the core functionality of the Enchantment. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchant is active.
+The effects section is the core functionality of the enchantment. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchant is active.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
