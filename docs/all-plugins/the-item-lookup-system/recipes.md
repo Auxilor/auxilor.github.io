@@ -55,6 +55,9 @@ In all recipe locations, you can disable crafting. Just set `enabled: false` and
 If you want to require a permission to craft the item, you can set this option to the permission you want to require. Players without this permission will not be able to craft the item.
 Please note: In some plugins, this may be called `crafting-permission` or something similar, but the functionality is the same. This is because plugins were created at different times and to remain backward compatible. Check the _example.yml for the correct key.
 
+## `recipe-give-amount: 2` (EcoItems only)
+This option allows you to set how many of the item the recipe gives when crafted.
+
 ## A Complete Recipe Example
 
 Below is a complete, 9 item, shapeless recipe example with all the options included:
@@ -62,6 +65,7 @@ Below is a complete, 9 item, shapeless recipe example with all the options inclu
 enabled: true
 shapeless: true
 recipe-permission: myplugin.craft.example_item
+recipe-give-amount: 2
 recipe:
   - "diamond"
   - "emerald"
