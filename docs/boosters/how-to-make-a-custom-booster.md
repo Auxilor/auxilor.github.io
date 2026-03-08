@@ -14,38 +14,53 @@ ID's must be lowercase letters, numbers, and underscores only.
 ## Example Booster Config
 
 ```yaml
-name: "2x Sell Multiplier"
-duration: 72000
+name: "1.5x Sell Multiplier" 
+duration: 72000 
 
-commands:
-  activation: [ ]
-  expiry: [ ]
-  increment: [ ]
-  
-messages:
-  activation:
-    - ""
-    - " %player%&f has activated a &a2x Sell Multiplier Booster&f!"
-    - " &fThis booster will last an hour, be sure to thank them!"
-    - ""
-  expiry:
-    - ""
-    - " &fThe &a2x Sell Multiplier Booster&f has ended"
-    - " &fGet another one here: &ahttps://store.ecomc.net/package/756888"
-    - ""
-  increment:
-    - ""
-    - " %player%&f has extended the &a2x Sell Multiplier Booster&f!"
-    - " &fThis booster will now last another hour, be sure to thank them!"
-    - ""
+effects:
+  - id: sell_multiplier
+    args:
+      multiplier: 1.5
+
+conditions: []
+
+activation-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " %activator%&f has activated a &a1.5x Sell Multiplier Booster&f!"
+        - " &fThis booster will last an hour, be sure to thank them!"
+        - ""
+
+increment-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " %activator%&f has increased the &a1.5x Sell Multiplier Booster's duration&f!"
+        - " &fThis booster will last another hour, be sure to thank them!"
+        - ""
+
+expiry-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " &fThe &a1.5x Sell Multiplier Booster&f has ended"
+        - " &fGet another one here: &ahttps://store.ecomc.net/package/756887"
+        - ""
 
 gui:
-  item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjBhN2I5NGM0ZTU4MWI2OTkxNTlkNDg4NDZlYzA5MTM5MjUwNjIzN2M4OWE5N2M5MzI0OGEwZDhhYmM5MTZkNSJ9fX0=
-  name: "&d2x Sell Multiplier"
+  item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM0YjI3YmZjYzhmOWI5NjQ1OTRiNjE4YjExNDZhZjY5ZGUyNzhjZTVlMmUzMDEyY2I0NzFhOWEzY2YzODcxIn19fQ==
+  name: "&d1.5x Sell Multiplier"
   lore:
     - ""
     - "&fGives everyone online a"
-    - "&a2x Sell Multiplier"
+    - "&a1.5x Sell Multiplier"
     - "&fto make money faster!"
     - ""
     - "&fDuration: &a1 Hour"
@@ -57,14 +72,7 @@ gui:
     - ""
   position:
     row: 2
-    column: 5
-
-effects:
-  - id: sell_multiplier
-    args:
-      multiplier: 2
-
-conditions: [ ]
+    column: 2
 ```
 
 ## Understanding all the sections
@@ -75,7 +83,7 @@ name: "2x Sell Multiplier" # The display name of the Booster.
 duration: 72000 # The duration (in ticks) of the Booster. (e.g. 6000 = 5 minutes)
 ```
 
-### The Start, Increment and Expiry Section
+### The Activation, Increment and Expiry Section
 ```yaml
 # Effects to be run when the Booster is activated (applies to all players)
 # %activator% - The player who activated the booster
