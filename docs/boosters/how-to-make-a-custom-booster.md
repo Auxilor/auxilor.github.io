@@ -16,13 +16,14 @@ ID's must be lowercase letters, numbers, and underscores only.
 ```yaml
 name: "1.5x Sell Multiplier" 
 duration: 72000 
+category: "sell_multipliers"
+merge-tag: "sell_multiplier_1.5x"
 
-effects:
-  - id: sell_multiplier
-    args:
-      multiplier: 1.5
-
-conditions: []
+bossbar:
+  enabled: true
+  name: "&a1.5x Sell Multiplier &7(%time_remaining%)"
+  color: GREEN
+  style: SOLID
 
 activation-effects:
   - id: send_message
@@ -54,6 +55,14 @@ expiry-effects:
         - " &fGet another one here: &ahttps://store.ecomc.net/package/756887"
         - ""
 
+
+effects:
+  - id: sell_multiplier
+    args:
+      multiplier: 1.5
+
+conditions: []
+
 gui:
   item: player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM0YjI3YmZjYzhmOWI5NjQ1OTRiNjE4YjExNDZhZjY5ZGUyNzhjZTVlMmUzMDEyY2I0NzFhOWEzY2YzODcxIn19fQ==
   name: "&d1.5x Sell Multiplier"
@@ -81,6 +90,19 @@ gui:
 ```yaml
 name: "2x Sell Multiplier" # The display name of the Booster.
 duration: 72000 # The duration (in ticks) of the Booster. (e.g. 6000 = 5 minutes)
+category: "sell_multipliers" # (Optional) The category of the booster, used for queueing and preventing boosters of the same category from being active at the same time.
+merge-tag: "sell_multiplier_1.5x" # (Optional) The tag used to identify boosters that can be merged together to increase duration instead of activating a new booster.
+```
+
+### The Bossbar Section
+```yaml
+# Optional per-booster bossbar settings.
+# The bossbar progress tracks remaining duration and updates if the booster is incremented.
+bossbar:
+  enabled: true
+  name: "&a1.5x Sell Multiplier" # Defaults to booster "name" if omitted. You can use %time_remaining% here to show the remaining time on the bossbar.
+  color: GREEN # Valid colors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+  style: SOLID # Valid styles: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
 ```
 
 ### The Activation, Increment and Expiry Section
@@ -127,6 +149,22 @@ Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
+### The Effects Section
+```yaml
+# The effects whilst the Booster is active (i.e. the functionality)
+effects:
+  - id: sell_multiplier
+    args:
+      multiplier: 2
+
+# The conditions required for the effects to activate
+conditions: [ ]
+```
+The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ### The Booster GUI Section
 ```yaml
@@ -151,29 +189,13 @@ gui:
     column: 5 # 1-9
 ```
 
-### The Effects Section
-```yaml
-# The effects whilst the Booster is active (i.e. the functionality)
-effects:
-  - id: sell_multiplier
-    args:
-      multiplier: 2
-
-# The conditions required for the effects to activate
-conditions: [ ]
-```
-The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is active.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
-
 ## Internal Placeholders
 
-| Placeholder   | Value                                                      |
-|---------------|------------------------------------------------------------|
-| `%amount%`    | The amount of the booster the player has (For use in GUI)  |
-| `%activator%` | The player who activated the booster (For use in messages) |
+| Placeholder        | Value                                                      |
+|--------------------|------------------------------------------------------------|
+| `%amount%`         | The amount of the booster the player has (For use in GUI)  |
+| `%activator%`      | The player who activated the booster (For use in messages) |
+| `%time_remaining%` | The time remaining on the booster                          |
 
 
 <hr/>
