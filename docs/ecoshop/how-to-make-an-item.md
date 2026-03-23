@@ -150,6 +150,25 @@ sell:
         permission: group.iron
 ```
 
+### `limit`
+
+The max times a player can sell this item.
+
+```yaml
+sell:
+  limit: 1
+```
+
+### `global-limit`
+
+The max times all players can sell this item.
+
+```yaml
+sell:
+  global-limit: 1
+```
+
+
 ### `sell-effects`
 Sell effects are effects that run when the item is sold. Read here for more info: [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect).
 ```yaml
@@ -171,12 +190,16 @@ sell:
 
 ## Internal Placeholders
 
-| Placeholder      | Value                                                       |
-| ---------------- | ----------------------------------------------------------- |
-| `%amount%`       | The amount of items the player bought                       |
-| `%value%`        | The buy/sell value, to use in price display                 |
-| `%value_commas%` | The comma separated buy/sell value, to use in price display |
-| `%playerlimit%`  | The per-player purchase limit for the item                  |
-| `%playerbuys%`   | The amount of times the player has bought this item         |
-| `%globallimit%`  | The global purchase limit for the item                      |
-| `%globalbuys%`   | The amount of times the item has been bought globally       |
+| Placeholder         | Value                                                       |
+|---------------------|-------------------------------------------------------------|
+| `%amount%`          | The amount of items the player bought                       |
+| `%value%`           | The buy/sell value, to use in price display                 |
+| `%value_commas%`    | The comma separated buy/sell value, to use in price display |
+| `%playerlimit%`     | The per-player purchase limit for the item                  |
+| `%playerbuys%`      | The amount of times the player has bought this item         |
+| `%globallimit%`     | The global purchase limit for the item                      |
+| `%globalbuys%`      | The amount of times the item has been bought globally       |
+| `%playerselllimit%` | The per-player sell limit for the item                      |
+| `%playersells%`     | The amount of times the player has sold this item           |
+| `%globalselllimit%` | The global sell limit for the item                          |
+| `%globalsells%`     | The amount of times the item has been sold globally         |
