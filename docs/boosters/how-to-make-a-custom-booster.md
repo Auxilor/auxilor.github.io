@@ -45,6 +45,26 @@ increment-effects:
         - " &fThis booster will last another hour, be sure to thank them!"
         - ""
 
+queue-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " %activator%&f has queued a &a1.5x Sell Multiplier Booster&f!"
+        - " &fThis booster will last %time%, when its time comes!"
+        - ""
+
+queue-increment-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " %activator%&f has increased a &a1.5x Sell Multiplier Booster&f in the queue!"
+        - " &fThis booster will now last %time%, when its time comes!"
+        - ""
+
 expiry-effects:
   - id: send_message
     args:
@@ -131,6 +151,29 @@ increment-effects:
         - " &fThis booster will last another hour, be sure to thank them!"
         - ""
 
+# Effects to be run when the Booster is queued (applies to all players)
+queue-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " %activator%&f has queued a &a1.5x Sell Multiplier Booster&f!"
+        - " &fThis booster will last %time%, when its time comes!"
+        - ""
+
+
+# Effects to be run when the Booster is incremented in the queue (applies to all players)
+queue-increment-effects:
+  - id: send_message
+    args:
+      action_bar: false
+      messages:
+        - ""
+        - " %activator%&f has increased a &a1.5x Sell Multiplier Booster&f in the queue!"
+        - " &fThis booster will now last %time%, when its time comes!"
+        - ""
+
 # Effects to be run when the Booster expires (applies to all players)
 expiry-effects:
   - id: send_message
@@ -143,7 +186,7 @@ expiry-effects:
         - ""
 ```
 
-The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is active.
+The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is activated/incremented/expires.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
@@ -195,7 +238,8 @@ gui:
 |--------------------|------------------------------------------------------------|
 | `%amount%`         | The amount of the booster the player has (For use in GUI)  |
 | `%activator%`      | The player who activated the booster (For use in messages) |
-| `%time_remaining%` | The time remaining on the booster                          |
+| `%time%`           | The time the booster is activated/incremented for          |
+| `%time_remaining%` | The time remaining on the booster (for use in Bossbar)     |
 
 
 <hr/>
