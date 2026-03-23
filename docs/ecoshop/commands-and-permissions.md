@@ -3,14 +3,15 @@ title: "Commands and Permissions"
 sidebar_position: 5
 ---
 
-| Command                            | Description                                           | Permission                     |
-|------------------------------------|-------------------------------------------------------|--------------------------------|
-| `/ecoshop reload`                  | Reloads the plugin                                    | `ecoshop.command.reload`       |
-| `/ecoshop resetbuys <player> <id>` | Resets how many times a player has bought an item     | `ecoshop.command.resetbuys`    |
-| `/sell`                            | Opens the Sell GUI                                    | `ecoshop.command.sell`         |
-| `/sell hand`                       | Sells items in the player's hand                      | `ecoshop.command.sell.hand`    |
-| `/sell all`                        | Sells all sellable items in the player's inventory    | `ecoshop.command.sell.all`     |
-| `/sell handall`                    | Sells items in hand and all sellable items (combined) | `ecoshop.command.sell.handall` |
+| Command                                    | Description                                           | Permission                     |
+|--------------------------------------------|-------------------------------------------------------|--------------------------------|
+| `/ecoshop reload`                          | Reloads the plugin                                    | `ecoshop.command.reload`       |
+| `/ecoshop resetbuys <player/all> <id/all>` | Resets how many times a player has bought an item     | `ecoshop.command.resetbuys`    |
+| `/ecoshop resetsells <player/all> <id/all> | Resets how many times a player has sold an item       | `ecoshop.command.resetsells`   |
+| `/sell`                                    | Opens the Sell GUI                                    | `ecoshop.command.sell`         |
+| `/sell hand`                               | Sells items in the player's hand                      | `ecoshop.command.sell.hand`    |
+| `/sell all`                                | Sells all sellable items in the player's inventory    | `ecoshop.command.sell.all`     |
+| `/sell handall`                            | Sells items in hand and all sellable items (combined) | `ecoshop.command.sell.handall` |
 
 ### Additional Permissions
 
