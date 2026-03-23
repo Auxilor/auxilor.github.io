@@ -30,6 +30,8 @@ integrations:
     can-level: true
   model-engine:
     id: ""
+  better-model:
+    id: ""
   libs-disguises:
     id: ""
 
@@ -160,6 +162,10 @@ integrations:
   # Options for ModelEngine
   model-engine:
     id: ""
+
+  # Options for BetterModel
+  better-model:
+    id: ""    
 
   # Options for LibsDisguises
   libs-disguises:
