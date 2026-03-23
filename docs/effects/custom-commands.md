@@ -3,9 +3,15 @@ title: "Custom Commands"
 sidebar_position: 11
 ---
 
-Within libreforge you can create custom commands that can run effects.
+## Creating a Custom Command
 
-You can configure these in /plugins/libreforge/commands.yml, and look like this:
+Each command goes into the `commands.yml` file, and you can add or remove them as you please.
+
+Commands require an ID, this is specified in the command config, and is used in permissions and to differentiate between commands.
+
+ID's must be lowercase letters, numbers, and underscores only.
+
+## Example Command Config
 
 ```yaml
 commands:
