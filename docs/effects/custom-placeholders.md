@@ -6,7 +6,7 @@ sidebar_position: 10
 You can create custom placeholders to reuse mathematical expressions or to have global
 data shared between plugins.
 
-These are in libreforge's config.yml, and look like this:
+You can configure these in /plugins/libreforge/placeholders.yml, and look like this:
 
 ```yaml
 placeholders:
@@ -19,20 +19,18 @@ placeholders:
     - id: "conditional_placeholder"
       default: 5 # (Optional) Specify a default value if no conditions are true
       values:
-          - conditions: # Full condition system support!
-                - id: has_permission
-                  args:
-                      permission: "ecomc.rank.netherite"
-            value: 20
-
-          - conditions:
-                - id: has_permission
-                  args:
-                      permission: "ecomc.rank.diamond"
-            value: 10
+        - conditions: # Full condition system support!
+            - id: has_permission
+              args:
+                permission: "ecomc.rank.netherite"
+          value: 20
+        - conditions:
+            - id: has_permission
+              args:
+                permission: "ecomc.rank.diamond"
+          value: 10
 ```
 
 You can create as many placeholders as you want by adding to the list.
 
 Placeholders can be referenced with `%libreforge_<id>%`, and are fully supported with PlaceholderAPI.
-    
