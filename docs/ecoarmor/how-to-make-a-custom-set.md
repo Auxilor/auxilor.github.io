@@ -23,6 +23,30 @@ effects:
 
 amount_for_set: 4
 
+partialEffects:
+  enabled: true
+  stacked: false
+  disabledByFull: false
+  amounts:
+    2:
+      effects:
+        - id: damage_multiplier
+          args:
+            multiplier: 1.15
+          triggers:
+            - melee_attack
+            - bow_attack
+            - trident_attack
+    3:
+      effects:
+        - id: damage_multiplier
+          args:
+            multiplier: 1.20
+          triggers:
+            - melee_attack
+            - bow_attack
+            - trident_attack
+
 advancedEffects:
   - id: damage_multiplier
     args:
@@ -255,6 +279,24 @@ effects:
       - trident_attack
 
 amount_for_set: 4 # The amount of pieces required to be wearing for the set effects to activate.
+```
+
+### The Partial Set Effects Section
+```yaml
+partialEffects:
+  enabled: true # If partial set effects are enabled. These are the effects that apply when only part of the set is worn.
+  stacked: false # If true, the effects will stack with each piece of armor. If false, the effects will not stack and only the highest amount's effects will apply.
+  disabledByFull: false # If true, the partial effects will be disabled when the full set is worn. If false, the partial effects will still apply even when the full set is worn.
+  amounts: 
+    2: # The amount of pieces required to be wearing for these effects to activate.
+      effects:
+        - id: damage_multiplier
+          args:
+            multiplier: 1.15
+          triggers:
+            - melee_attack
+            - bow_attack
+            - trident_attack
 ```
 
 ### The Advanced Effects and Lore Section
