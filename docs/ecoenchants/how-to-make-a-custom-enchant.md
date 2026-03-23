@@ -24,6 +24,8 @@ targets:
   - sword
 conflicts:   
   - sharpness
+required:
+  - unbreaking
 rarity: common 
 max-level: 4 
 tradeable: true 
@@ -59,6 +61,8 @@ targets: # The items that the enchantment can be applied to, see targets.yml
   - sword
 conflicts: # The enchantments that conflict with this
   - sharpness
+required: # The enchantments that must already be present to apply this enchantment
+  - unbreaking
 rarity: common # The rarity of the enchantment, see rarity.yml
 max-level: 4 # The max level of the enchantment
 ```
