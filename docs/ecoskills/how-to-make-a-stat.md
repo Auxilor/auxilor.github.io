@@ -6,24 +6,7 @@ sidebar_position: 2
 ## Stats
 Stats are the base values that lie at the core of EcoSkills. Think of them like attributes in vanilla, but they're shown to the player.
 
-## Default configs
-The default configs can be found [here](https://github.com/Auxilor/EcoSkills/tree/master/eco-core/core-plugin/src/main/resources/stats).
-You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
-
-## Default Stats
-
-| Stat         | Description                                         |
-|--------------|-----------------------------------------------------|
-| Defense      | Reduces Incoming Damage                             |
-| Strength     | Increases Outgoing Damage                           |
-| Crit Chance  | Increases the chance to deal a crit                 |
-| Crit Damage  | Increases crit damage                               |
-| Speed        | Increases movement speed                            |
-| Wisdom       | Increases experience gained (and max mana if using) |
-| Health       | Increases max health                                |
-| Ferocity     | Chance to hit twice                                 |
-| Attack Speed | Increases your attack speed                         |
-## How to add skills
+## How to add stats
 Each stat is its own config file, placed in the `/stats/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
 The ID of the Stat is the file name. This is what you use in commands, effects and placeholders.
@@ -59,21 +42,46 @@ conditions: [ ]
 
 ## Understanding all the sections
 
-**name:** The name of the stat in-game.
+### The Stat Info Section
 
-**placeholder:** The placeholder to be shown in the description.
+```yaml
+name: "&#f5aa42🍖 Saturation" # The name shown to players
+placeholder: "%level% / 3" # Value used in the description
+description: "&8Lose &a%placeholder%%&8 less hunger" # Lore/message description
+```
 
-**description:** The description of the stat.
+### The GUI Section
 
-### GUI
+```yaml
+# Options for the /stats GUI
+gui:
+  enabled: false # If this stat should show in /stats
+  # Icon format: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  icon: player_head texture:"..."
+  position:
+    row: 5
+    column: 5
+```
 
-**enabled:** If the stat should show in /stats.
-**icon:** The item to show in /stats, read here for more: [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
-**position:** The location of the icon in /stats, using row and column numbers.
+### The Effects Section
 
-### Effects & Conditions
+```yaml
+# The functionality of the stat.
+# %level% is the level of this stat.
+effects:
+  - id: hunger_multiplier
+    args:
+      multiplier: "1 - (%level% / 300)"
+```
 
-You can configure effects, conditions, filters, and mutators in this section to run whilst this stat is levelled and active.
+### The Conditions Section
+
+```yaml
+# Conditions that must be met for this stat to activate.
+conditions: [ ]
+```
+
+The effects section is the core functionality of the stat. You can configure effects, conditions, filters, and mutators in this section to run while this stat is levelled and active.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
@@ -84,4 +92,28 @@ For more advanced users or setups, you can configure chains in this section to s
 | Placeholder       | Value                                                        |
 | ----------------- | ------------------------------------------------------------ |
 | `%level%`         | The player's stat level. Useful for creating scaling effects |
-| `%level_numeral%` | The player's skill level shown in Roman Numerals             |
+| `%level_numeral%` | The player's stat level shown in Roman Numerals              |
+| `%level_x%`       | The player's stat level, +/- a value. eg. `%level_-1%`      |
+| `%level_x_numeral%` | The player's stat level, +/- a value, shown as Numerals    |
+
+<hr/>
+
+## Default configs
+The default configs can be found [here](https://github.com/Auxilor/EcoSkills/tree/master/eco-core/core-plugin/src/main/resources/stats). <br/>
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
+
+<hr/>
+
+## Default Stats
+
+| Stat         | Description                                         |
+|--------------|-----------------------------------------------------|
+| Defense      | Reduces Incoming Damage                             |
+| Strength     | Increases Outgoing Damage                           |
+| Crit Chance  | Increases the chance to deal a crit                 |
+| Crit Damage  | Increases crit damage                               |
+| Speed        | Increases movement speed                            |
+| Wisdom       | Increases experience gained (and max mana if using) |
+| Health       | Increases max health                                |
+| Ferocity     | Chance to hit twice                                 |
+| Attack Speed | Increases your attack speed                         |
