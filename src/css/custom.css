@@ -86,3 +86,421 @@
 .menu__list-item-collapsible:has(.menu__link--active) {
   border-left: none !important;
 }
+
+/* Add small icons next to plugin category sidebar links. */
+/* Handle both trailing-slash and non-trailing variants and collapsible parent links. */
+/* Also insert a non-clickable header above the Actions entry. */
+
+/* Non-clickable header 'Plugin Docs' above the actions sidebar item */
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions"]),
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions/"]) {
+  /* reserve space for the header pseudo-element */
+}
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions"])::before,
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions/"])::before {
+  content: "Plugin Docs";
+  display: block;
+  font-weight: 700;
+  padding: 8px 12px 4px;
+  margin-top: 6px;
+  color: var(--ifm-color-primary);
+}
+
+/* Default sizing/placement for icon pseudo-elements */
+.theme-doc-sidebar-container a.menu__link::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Uniform per-plugin rules (alphabetical) */
+
+/* actions */
+.theme-doc-sidebar-container a.menu__link[href$="/actions"],
+.theme-doc-sidebar-container a.menu__link[href$="/actions/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/actions"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/actions/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/actions"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/actions/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/actions"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/actions/"]::before {
+  background-image: url('/img/actions.png');
+}
+
+/* boosters */
+.theme-doc-sidebar-container a.menu__link[href$="/boosters"],
+.theme-doc-sidebar-container a.menu__link[href$="/boosters/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/boosters"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/boosters/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/boosters"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/boosters/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/boosters"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/boosters/"]::before {
+  background-image: url('/img/boosters.png');
+}
+
+/* ecoarmor */
+.theme-doc-sidebar-container a.menu__link[href$="/ecoarmor"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecoarmor/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoarmor"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoarmor/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecoarmor"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecoarmor/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoarmor"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoarmor/"]::before {
+  background-image: url('/img/ecoarmor.png');
+}
+
+/* ecobattlepass */
+.theme-doc-sidebar-container a.menu__link[href$="/ecobattlepass"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecobattlepass/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecobattlepass"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecobattlepass/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass/"]::before {
+  background-image: url('/img/ecobattlepass.png');
+}
+
+/* ecobits */
+.theme-doc-sidebar-container a.menu__link[href$="/ecobits"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecobits/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobits"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobits/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecobits"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecobits/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobits"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobits/"]::before {
+  background-image: url('/img/ecobits.png');
+}
+
+/* ecocrates */
+.theme-doc-sidebar-container a.menu__link[href$="/ecocrates"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecocrates/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocrates"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocrates/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecocrates"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecocrates/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocrates"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocrates/"]::before {
+  background-image: url('/img/ecocrates.png');
+}
+
+/* ecoenchants */
+.theme-doc-sidebar-container a.menu__link[href$="/ecoenchants"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecoenchants/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoenchants"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoenchants/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecoenchants"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecoenchants/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoenchants"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoenchants/"]::before {
+  background-image: url('/img/ecoenchants_icon.png');
+}
+
+/* ecoitems */
+.theme-doc-sidebar-container a.menu__link[href$="/ecoitems"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecoitems/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoitems"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoitems/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecoitems"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecoitems/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoitems"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoitems/"]::before {
+  background-image: url('/img/ecoitems.png');
+}
+
+/* ecojobs */
+.theme-doc-sidebar-container a.menu__link[href$="/ecojobs"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecojobs/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecojobs"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecojobs/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecojobs"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecojobs/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecojobs"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecojobs/"]::before {
+  background-image: url('/img/ecojobs.png');
+}
+
+/* ecomobs */
+.theme-doc-sidebar-container a.menu__link[href$="/ecomobs"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecomobs/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecomobs"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecomobs/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs/"]::before {
+  background-image: url('/img/ecomobs.png');
+}
+
+/* ecopets */
+.theme-doc-sidebar-container a.menu__link[href$="/ecopets"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecopets/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecopets"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecopets/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets/"]::before {
+  background-image: url('/img/ecopets.png');
+}
+
+/* ecoquests */
+.theme-doc-sidebar-container a.menu__link[href$="/ecoquests"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecoquests/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecoquests"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecoquests/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests/"]::before {
+  background-image: url('/img/ecoquests.png');
+}
+
+/* ecoscrolls */
+.theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"]::before {
+  background-image: url('/img/ecoscrolls.jpg');
+}
+
+/* ecoshop */
+.theme-doc-sidebar-container a.menu__link[href$="/ecoshop"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecoshop/"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecoshop"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecoshop/"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"]::before {
+  background-image: url('/img/ecoshop.png');
+}
+
+/* ecoskills */
+.theme-doc-sidebar-container a.menu__link[href$="/ecoskills"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecoskills/"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecoskills"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecoskills/"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"]::before {
+  background-image: url('/img/ecoskills.png');
+}
+
+/* reforges */
+.theme-doc-sidebar-container a.menu__link[href$="/reforges"],
+.theme-doc-sidebar-container a.menu__link[href$="/reforges/"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/reforges"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/reforges/"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"]::before {
+  background-image: url('/img/reforges.png');
+}
+
+/* stattrackers */
+.theme-doc-sidebar-container a.menu__link[href$="/stattrackers"],
+.theme-doc-sidebar-container a.menu__link[href$="/stattrackers/"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/stattrackers"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/stattrackers/"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"]::before {
+  background-image: url('/img/stattrackers.png');
+}
+
+/* talismans */
+.theme-doc-sidebar-container a.menu__link[href$="/talismans"],
+.theme-doc-sidebar-container a.menu__link[href$="/talismans/"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/talismans"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/talismans/"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"]::before {
+  background-image: url('/img/talismans.png');
+}
+
+/* Styles for the Where to Purchase page */
+.purchase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.purchase-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  text-decoration: none;
+  color: inherit;
+  min-height: 140px;
+}
+
+.purchase-card img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.purchase-card h3 {
+  margin: 0.25rem 0 0.5rem;
+}
+
+.purchase-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.purchase-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Brand color accents (light mode) */
+.purchase-card.spigot {
+  background: linear-gradient(180deg, #fff 0%, #fbfbfb 100%);
+  border: 1px solid rgba(45,71,100,0.06);
+}
+.purchase-card.polymart {
+  background: linear-gradient(180deg, #fff 0%, #fbfbfb 100%);
+  border: 1px solid rgba(37,154,193,0.06);
+}
+.purchase-card.builtbybit {
+  background: linear-gradient(180deg, #fff 0%, #fbfbfb 100%);
+  border: 1px solid rgba(38,120,170,0.06);
+}
+
+/* Dark mode variants */
+[data-theme='dark'] .purchase-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.01) 100%);
+  box-shadow: none;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+[data-theme='dark'] .purchase-card.spigot {
+  border-color: rgba(130,166,218,0.06);
+}
+[data-theme='dark'] .purchase-card.polymart {
+  border-color: rgba(37,154,193,0.06);
+}
+[data-theme='dark'] .purchase-card.builtbybit {
+  border-color: rgba(38,120,170,0.06);
+}
+
+/* Small tweak to ensure button-like navbar items look neat */
+.navbar .button.button--secondary {
+  margin-right: 0.5rem;
+}
+
+/* Purchase buttons layout (image-only) */
+.purchase-buttons {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.purchase-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+}
+
+.purchase-btn img {
+  display: block;
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 640px) {
+  .purchase-buttons {
+    justify-content: space-between;
+  }
+  .purchase-btn img {
+    height: 36px;
+  }
+}

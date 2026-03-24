@@ -1,5 +1,5 @@
 ---
-title: Configuring a Quest
+title: Configuring a Task
 sidebar_position: 3
 ---
 
