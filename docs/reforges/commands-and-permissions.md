@@ -3,33 +3,12 @@ title: "Commands and Permissions"
 sidebar_position: 4
 ---
 
-## `/reforge, /reforges open <player>`
-Permission to open for yourself: `reforges.command.reforge`
-
-Permission to open for someone else: `reforges.command.open`
-
-## `/reforges give (Give a player a reforge stone)`
-
-Permission: `reforges.command.give`
-
-General usage: `/reforges give <player> <stone> [amount]`
-
-For example, to give a player 2 Lavish reforge stones: `/reforges give <player> lavish 2`
-
-## `/reforges apply (Apply a reforge to a held item)`
-
-Permission: `reforges.command.apply`
-
-General usage: `/reforges apply <reforge> [player]`
-
-## `/reforges import` (Import a reforge from [lrcdb](https://lrcdb.auxilor.io/))
-Permission: `reforges.command.import`
-
-General Usage: `/reforges import <id>`
-
-Find reforges on [lrcdb](https://lrcdb.auxilor.io/)
-
-## `/reforges export` (Export a reforge to [lrcdb](https://lrcdb.auxilor.io/))
-Permission: `reforges.command.export`
-
-General Usage: `/reforges export <id>`
+| Command                                    | Description                                                                   | Permission                 |
+|--------------------------------------------|-------------------------------------------------------------------------------|----------------------------|
+| `/reforge`                                 | Open the reforge menu for yourself                                            | `reforges.command.reforge` |
+| `/reforges apply <reforge> [player]`       | Apply a reforge to the item you're holding (optionally target another player) | `reforges.command.apply`   |
+| `/reforges give <player> <stone> [amount]` | Give a player a reforge stone (e.g. `/reforges give <player> lavish 2`)       | `reforges.command.give`    |
+| `/reforges open <player>`                  | Open the reforge menu for another player                                      | `reforges.command.open`    |
+| `/reforges reload`                         | Reload the plugin                                                             | `reforges.command.reload`  |
+| `/reforges import <id>`                    | Import a reforge from [lrcdb](https://lrcdb.auxilor.io/)                      | `reforges.command.import`  |
+| `/reforges export <id>`                    | Export a reforge to [lrcdb](https://lrcdb.auxilor.io/)                        | `reforges.command.export`  |
