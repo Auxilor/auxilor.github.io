@@ -1,18 +1,20 @@
-# `give_battlepass_tier`
+# `give_battlepass_xp`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
-Give battlepass tiers to the player.
-# Effect Syntax
+Gives battlepass experience points
+
+## Example Config
+
 ```yaml
-- id: give_battlepass_tier
+- id: give_battlepass_xp
   args:
-    amount: 2 # The amount of tiers to give
+    amount: 100 # The amount of xp to give
     battlepass: example # The battlepass ID
   ...other config (eg triggers, filters, mutators, etc)
 ```

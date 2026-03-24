@@ -1,10 +1,12 @@
 # `has_premium_battlepass`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 Requires a player to have the premium battlepass
-# Condition Syntax
+
+## Example Config
+
 ```yaml
 - id: has_premium_battlepass
   args:

@@ -1,6 +1,6 @@
 # `has_battlepass_tier`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 Requires a player to have a certain battlepass tier

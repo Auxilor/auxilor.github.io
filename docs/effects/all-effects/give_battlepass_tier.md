@@ -1,6 +1,6 @@
 # `give_battlepass_tier`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 :::dangerTriggered Effect

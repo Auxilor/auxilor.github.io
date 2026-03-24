@@ -1,6 +1,6 @@
 # `has_premium_battlepass`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 Requires a player to have the premium battlepass

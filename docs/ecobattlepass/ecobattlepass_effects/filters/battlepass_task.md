@@ -1,10 +1,12 @@
 # `battlepass_task`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
-The list of battlepass rewards the effect should activate on
-# Filter Syntax
+The list of battlepass tasks the effect should activate on
+
+## Example Config
+
 ```yaml
 filters:
   battlepass_task: 

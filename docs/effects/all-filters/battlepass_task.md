@@ -1,6 +1,6 @@
 # `battlepass_task`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 The list of battlepass rewards the effect should activate on

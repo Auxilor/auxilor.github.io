@@ -1,6 +1,6 @@
 # `set_battlepass_tier`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 :::dangerTriggered Effect
@@ -8,7 +8,9 @@ This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers
 :::
 
 Set the player's battlepass tier
-# Effect Syntax
+
+## Example Config
+
 ```yaml
 - id: set_battlepass_tier
   args:

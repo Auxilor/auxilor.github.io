@@ -12,9 +12,9 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
 ## Triggers
 
-| ID                         | Description                                 | Value(s)                       |
-| -------------------------- | ------------------------------------------- | ------------------------------ |
-| `claim_battlepass_reward`  | Triggered when claiming a battlepass reward | `value: 1`                     |
-| `complete_battlepass_task` | Triggered when completing a battlepass task | `value: 1`                     |
-| `gain_battlepass_xp`       | Triggered when gaining battlepass XP        | `value: The experience gained` |
-| `tier_up_battlepass`       | Triggered when tiering up the battlepass    | `value: The new level`         |
+| ID                         | Description                                         | Value Provided        |
+| -------------------------- | --------------------------------------------------- | --------------------- |
+| `gain_battlepass_xp`       | Triggered when gaining battlepass experience points | The experience gained |
+| `tier_up_battlepass`       | Triggered when tiering up the battlepass            | The new level         |
+| `complete_battlepass_task` | Triggered when completing a battlepass task         | 1                     |
+| `claim_battlepass_reward`  | Triggered when claiming a battlepass reward         | 1                     |
