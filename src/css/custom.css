@@ -393,50 +393,6 @@
   background-image: url('/img/talismans.png');
 }
 
-/* Styles for the Where to Purchase page */
-.purchase-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.purchase-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-  transition: transform 0.12s ease, box-shadow 0.12s ease;
-  text-decoration: none;
-  color: inherit;
-  min-height: 140px;
-}
-
-.purchase-card img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
-}
-
-.purchase-card h3 {
-  margin: 0.25rem 0 0.5rem;
-}
-
-.purchase-card p {
-  margin: 0;
-  font-size: 0.95rem;
-  opacity: 0.9;
-}
-
-.purchase-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-}
-
 /* Brand color accents (light mode) */
 .purchase-card.spigot {
   background: linear-gradient(180deg, #fff 0%, #fbfbfb 100%);
