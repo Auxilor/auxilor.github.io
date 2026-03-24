@@ -46,6 +46,7 @@ If a plugin isn't on this list, it doesn't mean it won't work, it just means tha
 - ItemsAdder
 - Oraxen
 - Nexo
+- CraftEngine
 
 ### Integration from eco plugins
 - MythicMobs (eco -> MythicMobs)
@@ -65,7 +66,8 @@ If a plugin isn't on this list, it doesn't mean it won't work, it just means tha
 ## Economy
 - Vault
 - UltraEconomy
-- CoinsEngine
+- ExcellentEconomy
+- PlayerPoints
 
 ## Custom Terrain
 - Terra
@@ -73,7 +75,6 @@ If a plugin isn't on this list, it doesn't mean it won't work, it just means tha
 
 ## Skills
 - AuraSkills (v2)
-- Aurelium Skills (v1)
 - McMMO
 
 ## NPCs
@@ -82,7 +83,8 @@ If a plugin isn't on this list, it doesn't mean it won't work, it just means tha
 
 ## Misc
 - Essentials
-- Model Engine
+- ModelEngine
+- BetterModel
 - MultiverseInventories
 
 ## Effects System
@@ -91,7 +93,6 @@ If a plugin isn't on this list, it doesn't mean it won't work, it just means tha
 - CustomCrops
 - CustomFishing
 - NuVotifier
-- xBattlepass
 - Flare Mobcoins
 - UltimateMobCoins
 - Scyther

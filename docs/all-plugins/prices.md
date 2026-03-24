@@ -23,7 +23,7 @@ Below are the different Price types you can use.
 | Player Points (External)                                               | `p_points`, `player_points`                                                                      |
 | [EcoBits](https://plugins.auxilor.io/ecobits)                          | `<ecobits_id>`                                                                                   |
 | UltraEconomy (External)                                                | `<currency_id>`                                                                                  |
-| CoinsEngine (External)                                                 | `<currency_id>`                                                                                  |
+| ExcellentEconomy (External)                                            | `<currency_id>`                                                                                  |
 | [Items](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) | Use the [item-lookup-system](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) here |
 
 ## Effects System
