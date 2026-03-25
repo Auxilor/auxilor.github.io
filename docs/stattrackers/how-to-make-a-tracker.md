@@ -6,7 +6,7 @@ sidebar_position: 1
 ## How to add stat trackers
 Each stat tracker is its own config file, placed in the `/stats/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-The ID of the Stat Tracker is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+The ID of the Stat Tracker is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
 ## Example Tracker Config
@@ -95,7 +95,7 @@ counters:
 ```yaml
 # Options for the physical tracker item
 tracker:
-  # The item, read here for options: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  # The item, read here for options: https://plugins.auxilor.io/the-item-lookup-system
   item: compass max_stack_size:1
 
   # The display name of the tracker
@@ -109,7 +109,7 @@ tracker:
   craftable: true # If the tracker should be craftable
   recipe-permission: stattrackers.craft.example_tracker # (Optional) The permission required to craft the tracker
   shapeless: false # (Optional) Whether the recipe is shapeless, default is false
-  recipe: # The tracker recipe, read here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system#crafting-recipes
+  recipe: # The tracker recipe, read here: https://plugins.auxilor.io/the-item-lookup-system#crafting-recipes
     - iron_sword
     - iron_sword
     - iron_sword

@@ -6,7 +6,7 @@ sidebar_position: 1
 ## How to add talismans
 Each talisman is its own config file, placed in the `/talismans/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-The ID of the Talisman is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+The ID of the Talisman is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
 ## Example Talisman Config
@@ -59,7 +59,7 @@ item: "player_head texture:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0d
 craftable: true # If the talisman is craftable
 recipe-permission: talismans.craft.archery_1 # (Optional) The permission required to craft this talisman
 shapeless: false # (Optional) Whether the crafting recipe is shapeless, default is false
-recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
+recipe: # The recipe, read here for more: https://plugins.auxilor.io/the-item-lookup-system/recipes
   - bow
   - crossbow
   - bow

@@ -122,7 +122,7 @@ For more advanced users or setups, you can configure chains in this section to s
 gui:
   enabled: true # If the quest should be shown in the GUI
   always: false # If the quest should always be in the GUI, even if it's not started
-  # The item to show in the GUI, read https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  # The item to show in the GUI, read https://plugins.auxilor.io/the-item-lookup-system
   item: paper
 ```
 

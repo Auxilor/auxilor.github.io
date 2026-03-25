@@ -6,7 +6,7 @@ sidebar_position: 1
 ## How to add mobs
 Each mob is its own config file, placed in the `/mobs/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-The ID of the mob is the file name. This is what you use in commands, effects, the [Entity Lookup System](https://plugins.auxilor.io/all-plugins/the-entity-lookup-system) and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+The ID of the mob is the file name. This is what you use in commands, effects, the [Entity Lookup System](https://plugins.auxilor.io/the-entity-lookup-system) and in the [Item Lookup System](https://plugins.auxilor.io/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
 ## Example Mob Config
@@ -121,7 +121,7 @@ You **must** configure a category for the mob. This controls the natural spawnin
 
 ```yaml
 # A base mob and modifiers
-# View an explanation for this system here: https://plugins.auxilor.io/all-plugins/the-entity-lookup-system
+# View an explanation for this system here: https://plugins.auxilor.io/the-entity-lookup-system
 mob: zombie attack-damage:90 movement-speed:1.5 follow-range:16 health:1200
 
 # The ID of the mob category, handles spawning.
@@ -351,7 +351,7 @@ spawn:
       - netherite_block
       - iron_block
 ```
-For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes) documentation.
+For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) documentation.
 
 ### Internal Placeholders
 

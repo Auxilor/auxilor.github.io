@@ -7,7 +7,7 @@ sidebar_position: 2
 
 With EcoItems, you can create additional recipes for your items.
 
-You can do this for other EcoItems, Vanilla Items, items from other EcoPlugins, or items from other plugins. See [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) for more info on this.
+You can do this for other EcoItems, Vanilla Items, items from other EcoPlugins, or items from other plugins. See [Item Lookup System](https://plugins.auxilor.io/the-item-lookup-system) for more info on this.
 
 Each additional recipe is its own config file, placed in the `/recipes/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
@@ -31,4 +31,4 @@ recipe:
 
 permission: "ecoitems.craft.enchanted_emerald_block_craft"
 ```
-You can read more about recipes here: [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes)
+You can read more about recipes here: [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes)

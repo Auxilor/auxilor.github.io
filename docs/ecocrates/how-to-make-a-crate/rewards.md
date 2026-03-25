@@ -38,7 +38,7 @@ ID's must be lowercase letters, numbers, and underscores only.
   # Commands to be run when the reward is won, use %player% for the player name
   commands:
     - "eco give %player% 1000"
-  # The reward item, read more here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  # The reward item, read more here: https://plugins.auxilor.io/the-item-lookup-system
   items:
     - paper 1 name:"&a$1000" glint
   # Messages to be sent to the player when they win
@@ -61,7 +61,7 @@ The reward's win chance is calculated as `<weight of element> / <sum of all weig
 ```yaml
 display:
   name: "&a$1000" # The display name of the reward
-  # The reward display item, read more here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  # The reward display item, read more here: https://plugins.auxilor.io/the-item-lookup-system
   item: paper 1 glint
   dont-keep-lore: false # (Optional) Set to true to only show custom lore
   lore: # The custom lore to show in the display

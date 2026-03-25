@@ -6,7 +6,7 @@ sidebar_position: 1
 ## How to add items
 Each item is its own config file, placed in the `/items/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-The ID of the EcoItem is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+The ID of the EcoItem is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
 ## Example Item Config
@@ -61,7 +61,7 @@ conditions:
 
 ```yaml
 item:
-  item: iron_sword hide_attributes # The item in-game: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  item: iron_sword hide_attributes # The item in-game: https://plugins.auxilor.io/the-item-lookup-system
   display-name: "<g:#f953c6>Mithril Sword</g:#b91d73>" # The display name of the item
   lore: # The item lore
     - "&7Damage: &c12❤"
@@ -71,7 +71,7 @@ item:
     - "&8» &#f953c6Deal 50% more damage in the nether"
   craftable: true # If the item can be crafted
   crafting-permission: "ecoitems.craft.example" # (Optional) The permission required to craft this recipe.
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/the-item-lookup-system/recipes
     - ""
     - ecoitems:mithril 2
     - ""
@@ -83,7 +83,7 @@ item:
     - ""
   recipe-give-amount: 1 # Optional, set the amount of items to give in the recipe
 ```
-For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes) documentation.
+For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) documentation.
 
 ### The Attributes Section
 

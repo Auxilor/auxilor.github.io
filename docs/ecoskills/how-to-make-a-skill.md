@@ -148,7 +148,7 @@ hide-before-level-1: true # Show this as "Unknown" before level 1
 # Options for the /skills GUI
 gui:
   enabled: true # If this skill should show in /skills
-  # Icon format: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  # Icon format: https://plugins.auxilor.io/the-item-lookup-system
   icon: player_head texture:"..."
   lore:
     - "&fImproves Stats:"

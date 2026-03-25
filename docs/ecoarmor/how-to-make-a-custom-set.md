@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Creating an Armor Set
 Each set is its own config file, placed in the `/sets/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
-The ID of the Armor Set is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+The ID of the Armor Set is the file name. This is what you use in commands and in the [Item Lookup System](https://plugins.auxilor.io/the-item-lookup-system).
 ID's must be lowercase letters, numbers, and underscores only.
 
 ## Example Armor Set Config
@@ -357,7 +357,7 @@ This is the config section for the Advancement Shard, which is used to upgrade t
 
 ```yaml
 shard:
-  # The shard item, read more here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  # The shard item, read more here: https://plugins.auxilor.io/the-item-lookup-system
   item: prismarine_shard unbreaking:1 hide_enchants
   name: "<GRADIENT:f12711>Advancement Shard:</GRADIENT:f5af19> &cReaper" # The in-game name of the shard.
   lore: # The lore shown in-game on the shard. Set to `lore: []` to remove lore.
@@ -365,7 +365,7 @@ shard:
     - "&8to make it <GRADIENT:f12711>Advanced</GRADIENT:f5af19>."
   craftable: false # If the shard is craftable
   crafting-permission: "permission" # (Optional) The permission required to craft this recipe.
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/the-item-lookup-system/recipes
     - prismarine_shard
     - ecoarmor:set_reaper_helmet
     - prismarine_shard
@@ -379,7 +379,7 @@ shard:
     - prismarine_shard
 ```
 
-For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes) documentation.
+For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) documentation.
 
 ### The Individual Armor Piece Section
 
@@ -388,7 +388,7 @@ The below example is just for the helmet, but it is the same for the chestplate,
 
 ```yaml
 helmet:
-  # The armor item, read more here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  # The armor item, read more here: https://plugins.auxilor.io/the-item-lookup-system
   item: leather_helmet color:#303030 hide_dye
   name: "&cReaper Helmet" # The name shown in-game.
   advancedName: "<GRADIENT:f12711>Advanced</GRADIENT:f5af19>&c Reaper Helmet" # The advanced name shown in-game.
@@ -401,7 +401,7 @@ helmet:
     - "&8&oUpgrade with an Upgrade Crystal"
   craftable: true # If the armor piece is craftable
   crafting-permission: "permission" # (Optional) The permission required to craft this recipe.
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/the-item-lookup-system/recipes
     - ecoitems:armor_core ? air
     - nether_star
     - ecoitems:armor_core ? air
@@ -431,7 +431,7 @@ helmet:
   conditions: [] # The conditions for the effects to be run
 ```
 
-For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes) documentation.
+For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) documentation.
 
 :::dangerFrequently Asked Questions:
 **Why do I get a piece of stone?** <br/>

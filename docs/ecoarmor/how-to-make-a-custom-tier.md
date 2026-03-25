@@ -106,7 +106,7 @@ This is the section for the upgrade crystal, which is used to apply the tier to 
 
 ```yaml
 crystal:
-  # The crystal item, read more here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  # The crystal item, read more here: https://plugins.auxilor.io/the-item-lookup-system
   item: end_crystal
   name: "&cNetherite Upgrade Crystal" # The name shown in-game.
   lore: # The lore shown in-game. Set to `lore: []` to remove lore.
@@ -116,7 +116,7 @@ crystal:
     - ''
     - "&8&oRequires the armor to already have Diamond tier"
   craftable: true # If the armor piece is craftable
-  recipe: # The recipe, read here for more: https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes
+  recipe: # The recipe, read here for more: https://plugins.auxilor.io/the-item-lookup-system/recipes
     - air
     - netherite_ingot
     - air
@@ -130,7 +130,7 @@ crystal:
     - air
   giveAmount: 1 # Optional, set the amount of items to give in the recipe
 ```
-For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/all-plugins/the-item-lookup-system/recipes) documentation.
+For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) documentation.
 
 ### The Armor Properties Section
 

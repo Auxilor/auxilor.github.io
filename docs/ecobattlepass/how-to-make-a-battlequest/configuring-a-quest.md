@@ -36,7 +36,7 @@ task-amount: 1
 ```yaml
 display:
   # The item to show in the GUI. Read here for more: 
-  # https://plugins.auxilor.io/all-plugins/the-item-lookup-system.
+  # https://plugins.auxilor.io/the-item-lookup-system.
   item: player_head texture:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU4ZjNlYTQ2NzM1YWQwYzEwNmM1NDljY2I2Y2Q0ODljOTdhNDFlNzNkMDkyNDk3ZWU0MjRiZWNkOWRmZDI5YyJ9fX0="
   # The display name and description of the Quest.
   display-name: Chickens
@@ -44,7 +44,7 @@ display:
     - "Kill animals to earn points"
 ```
 
-[Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system).
+[Item Lookup System](https://plugins.auxilor.io/the-item-lookup-system).
 
 #### The Config Section
 

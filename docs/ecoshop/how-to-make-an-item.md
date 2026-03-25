@@ -15,7 +15,7 @@ Let's start with a really simple shop item - if you're making a standard buy-sel
 
 ```yaml
 - id: cooked_mutton # The internal ID of the item, used in commands and placeholders.
-  item: cooked_mutton # The item shown in the shop, read here for more info: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  item: cooked_mutton # The item shown in the shop, read here for more info: https://plugins.auxilor.io/the-item-lookup-system
   buy: # The buy options, read below for more info.
     type: coins # The currency type, read here for more info: https://plugins.auxilor.io/all-plugins/prices
     value: 20 # The price, read here for more info: https://plugins.auxilor.io/all-plugins/prices
@@ -51,7 +51,7 @@ With effect items, you could have an item that gives the player a potion effect 
     display: "&b%value% Crystals ❖"
   gui: 
     display: # Effects are not items, so you need to configure a display item here.
-      item: nether_star name:"&fCool Effect Item" # The item shown in the shop, read here for more info: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+      item: nether_star name:"&fCool Effect Item" # The item shown in the shop, read here for more info: https://plugins.auxilor.io/the-item-lookup-system
       lore: # The lore of the item shown in the shop.
         - "&fBuy me to do something cool!"
     column: 6

@@ -89,16 +89,20 @@
 
 /* Add small icons next to plugin category sidebar links. */
 /* Handle both trailing-slash and non-trailing variants and collapsible parent links. */
-/* Also insert a non-clickable header above the Actions entry. */
+/* Also insert non-clickable headers above certain sidebar entries. */
 
-/* Non-clickable header 'The Effects System' above the actions sidebar item */
-.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/effects"]),
-.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/effects/"]) {
+/* Non-clickable header 'Lookup Systems' above the item-lookup sidebar item */
+.theme-doc-sidebar-container .menu__list-item:has(> .menu__list-item-collapsible > .menu__link[href$="/the-item-lookup-system"]),
+.theme-doc-sidebar-container .menu__list-item:has(> .menu__list-item-collapsible > .menu__link[href$="/the-item-lookup-system/"]),
+.theme-doc-sidebar-container .menu__list-item:has(> a.menu__link[href$="/the-item-lookup-system"]),
+.theme-doc-sidebar-container .menu__list-item:has(> a.menu__link[href$="/the-item-lookup-system/"]) {
   /* reserve space for the header pseudo-element */
 }
-.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/effects"])::before,
-.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/effects/"])::before {
-  content: "The Effects System";
+.theme-doc-sidebar-container .menu__list-item:has(> .menu__list-item-collapsible > .menu__link[href$="/the-item-lookup-system"])::before,
+.theme-doc-sidebar-container .menu__list-item:has(> .menu__list-item-collapsible > .menu__link[href$="/the-item-lookup-system/"])::before,
+.theme-doc-sidebar-container .menu__list-item:has(> a.menu__link[href$="/the-item-lookup-system"])::before,
+.theme-doc-sidebar-container .menu__list-item:has(> a.menu__link[href$="/the-item-lookup-system/"])::before {
+  content: "Lookup Systems";
   display: block;
   font-weight: 700;
   padding: 8px 12px 4px;
@@ -284,7 +288,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecomobs"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecomobs/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs/"]::before {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs/"]::before {
   background-image: url('/img/plugin_icons/ecomobs.png');
 }
 
@@ -299,7 +303,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecopets"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecopets/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets/"]::before {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets/"]::before {
   background-image: url('/img/plugin_icons/ecopets.png');
 }
 
@@ -314,7 +318,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecoquests"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecoquests/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests/"]::before {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests/"]::before {
   background-image: url('/img/plugin_icons/ecoquests.png');
 }
 
@@ -322,89 +326,89 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls"],
 .theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls/"],
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"] {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"]::before {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"]::before {
   background-image: url('/img/plugin_icons/ecoscrolls.jpg');
 }
 
 /* ecoshop */
 .theme-doc-sidebar-container a.menu__link[href$="/ecoshop"],
 .theme-doc-sidebar-container a.menu__link[href$="/ecoshop/"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"] {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/ecoshop"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecoshop/"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"]::before {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"]::before {
   background-image: url('/img/plugin_icons/ecoshop.png');
 }
 
 /* ecoskills */
 .theme-doc-sidebar-container a.menu__link[href$="/ecoskills"],
 .theme-doc-sidebar-container a.menu__link[href$="/ecoskills/"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"] {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/ecoskills"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecoskills/"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"]::before {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"]::before {
   background-image: url('/img/plugin_icons/ecoskills.png');
 }
 
 /* reforges */
 .theme-doc-sidebar-container a.menu__link[href$="/reforges"],
 .theme-doc-sidebar-container a.menu__link[href$="/reforges/"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"] {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/reforges"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/reforges/"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"]::before {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"]::before {
   background-image: url('/img/plugin_icons/reforges.png');
 }
 
 /* stattrackers */
 .theme-doc-sidebar-container a.menu__link[href$="/stattrackers"],
 .theme-doc-sidebar-container a.menu__link[href$="/stattrackers/"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"] {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/stattrackers"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/stattrackers/"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"]::before {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"]::before {
   background-image: url('/img/plugin_icons/stattrackers.png');
 }
 
 /* talismans */
 .theme-doc-sidebar-container a.menu__link[href$="/talismans"],
 .theme-doc-sidebar-container a.menu__link[href$="/talismans/"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"],
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"] {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"],
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/talismans"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/talismans/"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"]::before,
-.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"]::before {
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"]::before,
+.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"]::before {
   background-image: url('/img/plugin_icons/talismans.png');
 }
 

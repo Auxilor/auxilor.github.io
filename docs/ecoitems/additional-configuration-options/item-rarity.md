@@ -25,7 +25,7 @@ lore:
 weight: 1
 
 # The items that have this rarity
-# Read here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+# Read here: https://plugins.auxilor.io/the-item-lookup-system
 # EcoItems items should specify the rarity in their config rather than here
 items:
   - diamond
@@ -43,7 +43,7 @@ lore:
 weight: 1
 
 # The items that have this rarity
-# Read here: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+# Read here: https://plugins.auxilor.io/the-item-lookup-system
 # EcoItems items should specify the rarity in their config rather than here
 items:
   - diamond

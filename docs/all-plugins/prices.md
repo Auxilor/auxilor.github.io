@@ -24,7 +24,7 @@ Below are the different Price types you can use.
 | [EcoBits](https://plugins.auxilor.io/ecobits)                          | `<ecobits_id>`                                                                                   |
 | UltraEconomy (External)                                                | `<currency_id>`                                                                                  |
 | ExcellentEconomy (External)                                            | `<currency_id>`                                                                                  |
-| [Items](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) | Use the [item-lookup-system](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) here |
+| [Items](https://plugins.auxilor.io/the-item-lookup-system) | Use the [item-lookup-system](https://plugins.auxilor.io/the-item-lookup-system) here |
 
 ## Effects System
 Prices are seamlessly integrated into the effects system. Below, you'll find a list of all available effects and conditions.

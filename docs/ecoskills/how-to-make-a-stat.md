@@ -56,7 +56,7 @@ description: "&8Lose &a%placeholder%%&8 less hunger" # Lore/message description
 # Options for the /stats GUI
 gui:
   enabled: false # If this stat should show in /stats
-  # Icon format: https://plugins.auxilor.io/all-plugins/the-item-lookup-system
+  # Icon format: https://plugins.auxilor.io/the-item-lookup-system
   icon: player_head texture:"..."
   position:
     row: 5
