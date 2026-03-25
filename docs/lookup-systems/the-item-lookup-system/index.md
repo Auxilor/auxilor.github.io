@@ -65,7 +65,7 @@ tags:
 
 ### Using items from third-party plugins
 
-Visit the [External Item Integrations](https://plugins.auxilor.io/the-item-lookup-system/external-integrations) page for more information on how to use items from third-party plugins.
+Visit the [External Item Integrations](https://plugins.auxilor.io/the-item-lookup-system/external-item-integrations) page for more information on how to use items from third-party plugins.
 
 ## Potions & Fireworks
 - **Potion Builder:** You can create potions to use in your item section with `potion_effect:<potion_type>:<level>:<duration>`. <br/>
@@ -121,5 +121,5 @@ So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weap
 
 ## Using eco plugin items in other plugins
 
-Visit the [External Item Integrations](https://plugins.auxilor.io/the-item-lookup-system/external-integrations) page for more information on how to use items within third-party plugins.
+Visit the [External Item Integrations](https://plugins.auxilor.io/the-item-lookup-system/external-item-integrations) page for more information on how to use items within third-party plugins.
 
