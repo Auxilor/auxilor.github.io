@@ -91,6 +91,21 @@
 /* Handle both trailing-slash and non-trailing variants and collapsible parent links. */
 /* Also insert a non-clickable header above the Actions entry. */
 
+/* Non-clickable header 'The Effects System' above the actions sidebar item */
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/effects"]),
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/effects/"]) {
+  /* reserve space for the header pseudo-element */
+}
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/effects"])::before,
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/effects/"])::before {
+  content: "The Effects System";
+  display: block;
+  font-weight: 700;
+  padding: 8px 12px 4px;
+  margin-top: 6px;
+  color: var(--ifm-color-primary);
+}
+
 /* Non-clickable header 'Plugin Docs' above the actions sidebar item */
 .theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions"]),
 .theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions/"]) {
@@ -135,7 +150,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/actions/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/actions"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/actions/"]::before {
-  background-image: url('/img/actions.png');
+  background-image: url('/img/plugin_icons/actions.png');
 }
 
 /* boosters */
@@ -150,7 +165,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/boosters/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/boosters"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/boosters/"]::before {
-  background-image: url('/img/boosters.png');
+  background-image: url('/img/plugin_icons/boosters.png');
 }
 
 /* ecoarmor */
@@ -165,7 +180,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecoarmor/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoarmor"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoarmor/"]::before {
-  background-image: url('/img/ecoarmor.png');
+  background-image: url('/img/plugin_icons/ecoarmor.png');
 }
 
 /* ecobattlepass */
@@ -180,7 +195,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecobattlepass/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass/"]::before {
-  background-image: url('/img/ecobattlepass.png');
+  background-image: url('/img/plugin_icons/ecobattlepass.png');
 }
 
 /* ecobits */
@@ -195,7 +210,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecobits/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobits"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobits/"]::before {
-  background-image: url('/img/ecobits.png');
+  background-image: url('/img/plugin_icons/ecobits.png');
 }
 
 /* ecocrates */
@@ -210,7 +225,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecocrates/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocrates"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocrates/"]::before {
-  background-image: url('/img/ecocrates.png');
+  background-image: url('/img/plugin_icons/ecocrates.png');
 }
 
 /* ecoenchants */
@@ -225,7 +240,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecoenchants/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoenchants"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoenchants/"]::before {
-  background-image: url('/img/ecoenchants_icon.png');
+  background-image: url('/img/plugin_icons/ecoenchants_icon.png');
 }
 
 /* ecoitems */
@@ -240,7 +255,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecoitems/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoitems"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoitems/"]::before {
-  background-image: url('/img/ecoitems.png');
+  background-image: url('/img/plugin_icons/ecoitems.png');
 }
 
 /* ecojobs */
@@ -255,7 +270,7 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecojobs/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecojobs"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecojobs/"]::before {
-  background-image: url('/img/ecojobs.png');
+  background-image: url('/img/plugin_icons/ecojobs.png');
 }
 
 /* ecomobs */
@@ -269,8 +284,8 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecomobs"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecomobs/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs/"]::before {
-  background-image: url('/img/ecomobs.png');
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomobs/"]::before {
+  background-image: url('/img/plugin_icons/ecomobs.png');
 }
 
 /* ecopets */
@@ -284,8 +299,8 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecopets"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecopets/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets/"]::before {
-  background-image: url('/img/ecopets.png');
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecopets/"]::before {
+  background-image: url('/img/plugin_icons/ecopets.png');
 }
 
 /* ecoquests */
@@ -299,98 +314,98 @@
 .theme-doc-sidebar-container a.menu__link[href$="/ecoquests"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecoquests/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests/"]::before {
-  background-image: url('/img/ecoquests.png');
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoquests/"]::before {
+  background-image: url('/img/plugin_icons/ecoquests.png');
 }
 
 /* ecoscrolls */
 .theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls"],
 .theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls/"],
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"] {
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecoscrolls/"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"]::before {
-  background-image: url('/img/ecoscrolls.jpg');
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoscrolls/"]::before {
+  background-image: url('/img/plugin_icons/ecoscrolls.jpg');
 }
 
 /* ecoshop */
 .theme-doc-sidebar-container a.menu__link[href$="/ecoshop"],
 .theme-doc-sidebar-container a.menu__link[href$="/ecoshop/"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"] {
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/ecoshop"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecoshop/"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"]::before {
-  background-image: url('/img/ecoshop.png');
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoshop/"]::before {
+  background-image: url('/img/plugin_icons/ecoshop.png');
 }
 
 /* ecoskills */
 .theme-doc-sidebar-container a.menu__link[href$="/ecoskills"],
 .theme-doc-sidebar-container a.menu__link[href$="/ecoskills/"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"] {
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/ecoskills"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/ecoskills/"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"]::before {
-  background-image: url('/img/ecoskills.png');
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecoskills/"]::before {
+  background-image: url('/img/plugin_icons/ecoskills.png');
 }
 
 /* reforges */
 .theme-doc-sidebar-container a.menu__link[href$="/reforges"],
 .theme-doc-sidebar-container a.menu__link[href$="/reforges/"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"] {
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/reforges"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/reforges/"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"]::before {
-  background-image: url('/img/reforges.png');
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/reforges/"]::before {
+  background-image: url('/img/plugin_icons/reforges.png');
 }
 
 /* stattrackers */
 .theme-doc-sidebar-container a.menu__link[href$="/stattrackers"],
 .theme-doc-sidebar-container a.menu__link[href$="/stattrackers/"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"] {
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/stattrackers"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/stattrackers/"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"]::before {
-  background-image: url('/img/stattrackers.png');
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/stattrackers/"]::before {
+  background-image: url('/img/plugin_icons/stattrackers.png');
 }
 
 /* talismans */
 .theme-doc-sidebar-container a.menu__link[href$="/talismans"],
 .theme-doc-sidebar-container a.menu__link[href$="/talismans/"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"],
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"] {
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"] {
   padding-left: 32px;
   position: relative;
 }
 .theme-doc-sidebar-container a.menu__link[href$="/talismans"]::before,
 .theme-doc-sidebar-container a.menu__link[href$="/talismans/"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"]::before,
-.theme-doc_sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"]::before {
-  background-image: url('/img/talismans.png');
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/talismans/"]::before {
+  background-image: url('/img/plugin_icons/talismans.png');
 }
 
 /* Brand color accents (light mode) */
