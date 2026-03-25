@@ -91,25 +91,6 @@
 /* Handle both trailing-slash and non-trailing variants and collapsible parent links. */
 /* Also insert non-clickable headers above certain sidebar entries. */
 
-/* Non-clickable header 'Lookup Systems' above the item-lookup sidebar item */
-.theme-doc-sidebar-container .menu__list-item:has(> .menu__list-item-collapsible > .menu__link[href$="/the-item-lookup-system"]),
-.theme-doc-sidebar-container .menu__list-item:has(> .menu__list-item-collapsible > .menu__link[href$="/the-item-lookup-system/"]),
-.theme-doc-sidebar-container .menu__list-item:has(> a.menu__link[href$="/the-item-lookup-system"]),
-.theme-doc-sidebar-container .menu__list-item:has(> a.menu__link[href$="/the-item-lookup-system/"]) {
-  /* reserve space for the header pseudo-element */
-}
-.theme-doc-sidebar-container .menu__list-item:has(> .menu__list-item-collapsible > .menu__link[href$="/the-item-lookup-system"])::before,
-.theme-doc-sidebar-container .menu__list-item:has(> .menu__list-item-collapsible > .menu__link[href$="/the-item-lookup-system/"])::before,
-.theme-doc-sidebar-container .menu__list-item:has(> a.menu__link[href$="/the-item-lookup-system"])::before,
-.theme-doc-sidebar-container .menu__list-item:has(> a.menu__link[href$="/the-item-lookup-system/"])::before {
-  content: "Lookup Systems";
-  display: block;
-  font-weight: 700;
-  padding: 8px 12px 4px;
-  margin-top: 6px;
-  color: var(--ifm-color-primary);
-}
-
 /* Non-clickable header 'Plugin Docs' above the actions sidebar item */
 .theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions"]),
 .theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions/"]) {
