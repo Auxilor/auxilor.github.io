@@ -1,6 +1,6 @@
 ---
 title: 📋 Upcoming Changelog
-sidebar_position: 20
+sidebar_position: 25
 ---
 
 Below is a full list of all the changes that are planned for the next release. Please note that this list is subject to change.
