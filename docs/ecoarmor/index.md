@@ -1,5 +1,5 @@
 ---
-title: "Why EcoArmor?"
+title: "EcoArmor"
 ---
 
 ## What sets EcoArmor apart from other custom armor plugins?

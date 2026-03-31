@@ -27,7 +27,7 @@ By default, all enchantments are available from Enchanting Tables, Villagers, an
 
 Levels are calculated based on their cost. If you get an enchantment from 1 xp level or 1 emerald, it will probably be a level 1 enchantment. Of course, it is possible to get above this at a low cost but it is rare. This is designed to be as similar to vanilla as possible.
 
-Loot chests will generally contain higher level enchantments. This is also designed to be like vanilla, where enchantments in, for example, and end city will have a relatively high level.
+Loot chests will generally contain higher level enchantments. This is also designed to be like vanilla, where enchantments in, for example, an end city will have a relatively high level.
 
 Some enchantment types (special by default) are set up with a bias to make it extremely, extremely rare for them to generate or be obtained higher than at level 1 or 2. Like everything else, you can change this.
 

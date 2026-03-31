@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ### Step One: Open the GUI
 
-Run `/reforge` or go to an NPC that runs `/reforge open <player`.
+Run `/reforge` or go to an NPC that runs `/reforge open <player>`.
 
 This will open this GUI:
 
@@ -37,9 +37,9 @@ By default, all reforgable items will say so in their lore:
 
 But you can turn this off if you don't like it.
 
-If you try to place an unreforgable item in the gui, you will get this:
+If you try to place an unreforgeable item in the GUI, you will get this:
 
-![An unreforgable item in the GUI](https://1192817931-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXwJPPRqRpT7b0ZXxU13J%2Fuploads%2FH4hVtO52m9cH4HsDpEh5%2Fimage%20(4).png?alt=media&token=b7353bed-7a1b-4b50-ab76-cf741e0af2fd)
+![An unreforgeable item in the GUI](https://1192817931-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXwJPPRqRpT7b0ZXxU13J%2Fuploads%2FH4hVtO52m9cH4HsDpEh5%2Fimage%20(4).png?alt=media&token=b7353bed-7a1b-4b50-ab76-cf741e0af2fd)
 
 ### Step Three: Click the anvil
 

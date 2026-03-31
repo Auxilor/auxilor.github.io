@@ -4,7 +4,7 @@ title: "EcoEnchants"
 
 ## What is EcoEnchants?
 
-EcoEnchants adds hundreds custom enchantments to your server, and lets you make your own without any coding knowledge. It's built from the ground up to integrate fully with vanilla to provide a seamless and intuitive experience for your players. It supports the Enchanting Table, Villager Trading, Anvils, Grindstones, and even natural spawning around the world in structures like End Cities. It feels exactly like a part of the vanilla game.
+EcoEnchants adds hundreds of custom enchantments to your server, and lets you make your own without any coding knowledge. It's built from the ground up to integrate fully with vanilla to provide a seamless and intuitive experience for your players. It supports the Enchanting Table, Villager Trading, Anvils, Grindstones, and even natural spawning around the world in structures like End Cities. It feels exactly like a part of the vanilla game.
 
 ## What sets EcoEnchants apart from other custom enchantment plugins?
 
