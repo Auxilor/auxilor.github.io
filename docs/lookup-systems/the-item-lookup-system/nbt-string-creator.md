@@ -8,7 +8,7 @@ Using NBT data can be a great way to use items from any other plugin within eco,
 When configuring items in YAML files, you need to escape NBT strings to prevent syntax errors.   
 This tool converts raw Minecraft NBT strings into properly escaped format for eco-compatible config files.
 
-There's a few steps you need to take to make this work efficiently.
+There are a few steps you need to take to make this work efficiently.
 1. Give yourself the item you want to use.
    - This can be from another plugin, the creative menu, or via a custom item creation tool (eg: [Give Command Generator](https://www.gamergeeks.net/apps/minecraft/give-command-generator))
 2. Hold this item in your main hand. Avoid holding anything in your off-hand.

@@ -24,20 +24,20 @@ In each string is the key for an entity. A key looks one of two ways:
 - `||` groups two entities, allowing either one of them to be spawned, at random. You can chain these together to create further randomness on spawns.
 
 ## Modifiers
-Entities can have modifiers applied to them in the key. For example, lets say you're configuring a mob in EcoMobs. You want it to be a massive slime, a baby zombie, or a charged creeper, but you're not sure how to do that, because it looks like you have to just specify an entity type. Actually, in all of my plugins, wherever it asks for an entity, it's actually doing a lookup. You can specify any of the following modifiers to it:
+Entities can have modifiers applied to them in the key. For example, let's say you're configuring a mob in EcoMobs. You want it to be a massive slime, a baby zombie, or a charged creeper, but you're not sure how to do that, because it looks like you have to just specify an entity type. Actually, in all of my plugins, wherever it asks for an entity, it's actually doing a lookup. You can specify any of the following modifiers to it:
 - `adult` Force the entity to be an adult
-- `attack-damage` Set the entities attack damage
-- `attack-speed` Set the entities attack speed
+- `attack-damage` Set the entity's attack damage
+- `attack-speed` Set the entity's attack speed
 - `baby` Force the entity to be a baby
 - `charged` Set a creeper to be charged
 - `explosion-radius` Set a creepers explosion radius
-- `fly-speed` Set the entities fly speed
-- `follow-range` Set the entities follow range
-- `health` Set the entities health
+- `fly-speed` Set the entity's fly speed
+- `follow-range` Set the entity's follow range
+- `health` Set the entity's health
 - `jump-strength` Set a horses jump strength
-- `knockback` Set the entities attack knockback
-- `knockback-resistance` Set the entities knockback resistance
-- `name` Set the entities display name, use quotes (") for multi-word names
+- `knockback` Set the entity's attack knockback
+- `knockback-resistance` Set the entity's knockback resistance
+- `name` Set the entity's display name, use quotes (") for multi-word names
 - `no-ai` Set the entity to have no AI
 - `size` Set the size of a slime or phantom
 - `spawn-reinforcements` Set a zombie to spawn reinforcements
@@ -53,4 +53,3 @@ Entities can have modifiers applied to them in the key. For example, lets say yo
 
 You simply chain the modifiers together, for example:
 `phantom size:5 follow-range:25 speed:2 health:200 name:"&4Deadly Phantom" model-engine:dragon,flap`
-

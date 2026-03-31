@@ -5,7 +5,7 @@ sidebar_position: 1.3
 ---
 
 ## What is the Particle Lookup System?
-In minecraft, there are more particles than meet the eye. While there are the [default particles](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html), there are also colored particles. The particle lookup system exists to give a unified way of getting both default and these custom colored particles.
+In Minecraft, there are more particles than meet the eye. While there are the [default particles](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html), there are also colored particles. The particle lookup system exists to give a unified way of getting both default and these custom colored particles.
 
 ## Keys Explained
 Particle keys are much simpler than entity or item keys. There are no arguments, no modifiers, nothing like that. (After all, they're just particles). Instead, there are two ways of specifying a particle:

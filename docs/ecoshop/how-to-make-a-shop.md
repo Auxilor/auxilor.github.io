@@ -3,7 +3,7 @@ title: How to make a Shop
 sidebar_position: 1
 ---
 ## Shops
-Creating shops is easy if you follow the the basic rules: A shop requires [categories](https://plugins.auxilor.io/ecoshop/how-to-make-a-category), and categories require [items](https://plugins.auxilor.io/ecoshop/how-to-make-an-item).
+Creating shops is easy if you follow the basic rules: A shop requires [categories](https://plugins.auxilor.io/ecoshop/how-to-make-a-category), and categories require [items](https://plugins.auxilor.io/ecoshop/how-to-make-an-item).
 If you follow this guide in order, you will have a shop up and running in no time! If you want to skip ahead, use the links above or in the sidebar.
 
 ## How to add shops

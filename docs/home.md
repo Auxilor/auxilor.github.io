@@ -22,8 +22,8 @@ It's just like any other plugin on your server. Drop it into the /plugins/ folde
 
 You can save up to 30% on the Plugins by buying the Eco Pack bundle. Available on [Polymart](https://polymart.org/bundle/615/eco-pack) and [BuiltByBit](https://builtbybit.com/resources/bundle/ecopack.3418/).
 
-:::infoImportant
-The contents of this documentation is for the latest versions of eco and all plugins. If you're using an older version, some features or options may not be available or supported.
+:::info Important
+The contents of this documentation are for the latest versions of eco and all plugins. If you're using an older version, some features or options may not be available or supported.
 :::
 
  

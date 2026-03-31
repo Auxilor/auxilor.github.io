@@ -117,7 +117,7 @@ Items can  have modifiers applied to them. For example, lets say you're configur
 - **Tooltip Style:** You can set the tooltip style with `tooltip_style:<namespace>:<id>`, e.g. `tooltip_style:nexo:epic_tooltip`.
 - **Item Name:** You can set the item name (different to display name) with `item_name:<name>`
 
-So, lets say you have an EcoMobs mob, and you want it to drop a rare custom weapon with extra modifiers already applied. Without the Item Lookup system, this wouldn't be possible, but thanks to it, you can just do this: `ecoitems:enlightened_blade razor:4 unbreaking:3 criticals:2 fire_aspect:2 reforge:mighty unbreakable hide_attributes custom_model_data:2`
+So, let's say you have an EcoMobs mob, and you want it to drop a rare custom weapon with extra modifiers already applied. Without the Item Lookup system, this wouldn't be possible, but thanks to it, you can just do this: `ecoitems:enlightened_blade razor:4 unbreaking:3 criticals:2 fire_aspect:2 reforge:mighty unbreakable hide_attributes custom_model_data:2`
 
 ## Using eco plugin items in other plugins
 

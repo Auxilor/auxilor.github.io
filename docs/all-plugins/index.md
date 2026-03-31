@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "All Plugins"
 sidebar_label: "Stuff in all plugins"
 ---
 

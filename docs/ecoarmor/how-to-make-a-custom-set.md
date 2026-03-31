@@ -1,5 +1,5 @@
 ---
-title: How to make a Armor Set
+title: How to make an Armor Set
 sidebar_position: 2
 ---
 

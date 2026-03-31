@@ -21,7 +21,7 @@ All commands can be run with `/ecocrates`, `/crates`, `/crate`, `/key`, or `/key
 | `/ecocrates open <crate> <player>`                             | Opens a crate for another player                    | `ecocrates.command.open.others`      |
 | `/ecocrates forceopen <crate>`                                 | Force-opens a crate without a key                   | `ecocrates.command.forceopen`        |
 | `/ecocrates forceopen <crate> <player>`                        | Force-opens a crate for another player              | `ecocrates.command.forceopen.others` |
-| `/ecocrates resetwins <player/all>`                            | Resets tracked reward wins                          | `ecocrates.command.resetwins`        | `ecocrates.command.resetwins`        |
+| `/ecocrates resetwins <player/all>`                                | Resets tracked reward wins                          | `ecocrates.command.resetwins`        |
 | `/ecocrates convert <converter>`                               | Converts data from a supported crate plugin         | `ecocrates.command.convert`          |
 
 ### Additional Permissions

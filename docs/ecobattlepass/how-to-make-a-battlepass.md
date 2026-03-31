@@ -43,7 +43,7 @@ tiers:
 #### The BattlePass Configuration
 
 ```yml
-name: "&6Example Battlepass" # The name of the battlepass, to dsiplay in GUIs.
+name: "&6Example Battlepass" # The name of the battlepass, to display in GUIs.
 battlepass:
   # The formula to calculate the XP needed to reach the next tier.
   # You can use %level% here to create xp scaling.

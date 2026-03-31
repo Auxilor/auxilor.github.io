@@ -7,7 +7,7 @@ Rewards are what the players earn for tiering up the battlepass. Without rewards
 
 ## How to add rewards
 
-Each skill is its own config file, placed in the `/rewards/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
+Each reward is its own config file, placed in the `/rewards/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
 The ID of the Reward is the file name. This is what you use in your battlepass configs, and effect filters.\
 ID's must be lowercase letters, numbers, and underscores only.

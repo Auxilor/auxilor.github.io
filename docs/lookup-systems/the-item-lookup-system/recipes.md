@@ -40,7 +40,7 @@ recipe:
 
 Similar to above, you just create a list of items that you want to be in the crafting grid. The order does not matter for shapeless recipes.
 
-# Additonal Recipe Options
+# Additional Recipe Options
 
 When creating recipes, there are a few additional options you can use to customize the recipe further. 
 

@@ -19,7 +19,7 @@ Below are the different Price types you can use.
 | XP Points                                                              | `xp`, `exp`, `experience`                                                                        |
 | XP Levels                                                              | `l`, `levels`, `xplevels`                                                                        |
 | [Points](https://plugins.auxilor.io/effects/points)                    | `<point_id>`, eg `souls`                                                                         |
-| [Magic](https://plugins.auxilor.io/ecoskills/how-to-configure-magic)   | `<magic_id`, eg `mana`                                                                           |
+| [Magic](https://plugins.auxilor.io/ecoskills/how-to-configure-magic)   | `<magic_id>`, eg `mana`                                                                           |
 | Player Points (External)                                               | `p_points`, `player_points`                                                                      |
 | [EcoBits](https://plugins.auxilor.io/ecobits)                          | `<ecobits_id>`                                                                                   |
 | UltraEconomy (External)                                                | `<currency_id>`                                                                                  |
