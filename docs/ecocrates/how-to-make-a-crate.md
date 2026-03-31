@@ -127,6 +127,12 @@ finish-effects:
       message: "%player%&f won %reward%&f from the %crate%&f!"
 ```
 
+You can configure effects, conditions, filters, to run when the crate is opened or when the crate is finished rolling.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
 #### The Rewards List Section
 
 ```yaml
