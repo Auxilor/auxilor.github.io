@@ -47,11 +47,6 @@ item: tripwire_hook unbreaking:1 hide_enchants name:"&aDemo Key" # The physical 
 lore: # Lore applied to physical key items
   - "&fUse this key to open"
   - "&fdemonstration crates"
-```
-
-#### The Custom Item Section
-
-```yaml
 use-custom-item: false # Set to true to use an existing custom item (e.g. ecoitems:...) as the key.
                        # Lore will NOT be applied when use-custom-item is true.
 ```
