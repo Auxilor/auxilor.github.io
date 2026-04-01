@@ -116,6 +116,21 @@ Items can  have modifiers applied to them. For example, lets say you're configur
 - **Item Model:** You can set the item model (different to custom-model-data) with `item_model:<namespace>:<id>`, e.g. `item_model:nexo:dragon_helmet`. For minecraft items, you can skip the namespace
 - **Tooltip Style:** You can set the tooltip style with `tooltip_style:<namespace>:<id>`, e.g. `tooltip_style:nexo:epic_tooltip`.
 - **Item Name:** You can set the item name (different to display name) with `item_name:<name>`
+- **Attribute:** You can add an attribute modifier with `attribute:<attribute>:<operation>:<amount>:[slot]`. The `<slotGroup>` is optional and defaults to `any`.
+
+  | Part          | Description                                                                                                                                                  |
+  |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | `<attribute>` | The attribute to modify (e.g. `generic_attack_damage`, `generic_max_health`, `generic_movement_speed`)                                                       |
+  | `<operation>` | The operation type: `add_number`, `add_scalar`, or `multiply_scalar`                                                                                         |
+  | `<amount>`    | The numeric value for the modifier                                                                                                                           |
+  | `[slot]`      | *(Optional)* The slot group the modifier applies to <br/> (e.g. `mainhand`, `offhand`, `hands`, `helmet`, `chestplate`, `leggings`, `boots`, `armor`, `any`) |
+
+  [Visit the Minecraft Wiki to learn about Attributes](https://minecraft.wiki/w/Attribute)
+
+  Examples:
+  - `diamond_sword attribute:generic_attack_damage:add_number:5:mainhand` — adds +5 attack damage when held in the main hand
+  - `diamond_chestplate attribute:generic_max_health:add_number:10` — adds +10 max health (slot defaults to `any`)
+  - `leather_boots attribute:generic_movement_speed:add_scalar:0.1:feet` — adds +10% movement speed when worn on feet
 
 So, let's say you have an EcoMobs mob, and you want it to drop a rare custom weapon with extra modifiers already applied. Without the Item Lookup system, this wouldn't be possible, but thanks to it, you can just do this: `ecoitems:enlightened_blade razor:4 unbreaking:3 criticals:2 fire_aspect:2 reforge:mighty unbreakable hide_attributes custom_model_data:2`
 
