@@ -23,13 +23,13 @@ A point can hold any numeric value, including negatives and decimals, but of cou
 | `/libreforge points set <player> <point_id> <value>`  | Set points value for the player/global | `libreforge.command.points.set`   |
 | `/libreforge points give <player> <point_id> <value>` | Give points to the player/global       | `libreforge.command.points.give`  |
 | `/libreforge points take <player> <point_id> <value>` | Take points from the player/global     | `libreforge.command.points.take`  |
-| `/libreforge points get <player> <point_id>`          | Gets the balance/value of points      | `libreforge.command.points.get`   |
+| `/libreforge points get <player> <point_id>`          | Gets the balance/value of points       | `libreforge.command.points.get`   |
 | `/libreforge points reset <player> <point_id>`        | Reset the point value back to 0        | `libreforge.command.points.reset` |
 
 To change global points, pass `global` as the player name.
 
 ## Effects System
-Points are seamlessly integrated into the effects system. Below, you'll find a list of all available effects and conditions.
+Points are seamlessly integrated into the effects' system. Below, you'll find a list of all available effects and conditions.
 
 | Effect                   | Type      | Link                                                                          |
 | ------------------------ | --------- | ----------------------------------------------------------------------------- |
