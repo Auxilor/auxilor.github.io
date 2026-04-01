@@ -53,20 +53,3 @@ Entities can have modifiers applied to them in the key. For example, let's say y
 
 You simply chain the modifiers together, for example:
 `phantom size:5 follow-range:25 speed:2 health:200 name:"&4Deadly Phantom" model-engine:dragon,flap`
-
-## Custom Firework Entities
-- **Firework Builder:** You can also create custom fireworks using `firework_effect:<index>:<type>:<colors>:<fadeColors>:<trail>:<flicker>`. <br/>
-  It may look complicated at first, but it's easy once you know the parts:
-
-  | Part           | Description                                                                    |
-      |----------------|--------------------------------------------------------------------------------|
-  | `<index>`      | Explosion number (0-2) – controls the order of explosions.                     |
-  | `<type>`       | Shape of the explosion (`BALL`, `BALL_LARGE`, `STAR`, `CREEPER`, `BURST`)      |
-  | `<colors>`     | Main colors in **hex** format (`#RRGGBB`). Multiple colors separated by commas |
-  | `<fadeColors>` | Colors it fades to after the explosion. Use `false` if no fade                 |
-  | `<trail>`      | `true` or `false` – whether it leaves a trail                                  |
-  | `<flicker>`    | `true` or `false` – whether it flickers                                        |
-
-  e.g. `firework_rocket firework_effect:0:CREEPER:#FF0000:#0000FF:true:true` would produce a firework with a red creeper that fades into blue, with trails and flicker.
-
-  Fireworks can support up to 3 explosions, you can string these along in one lookup string, e.g. `firework_rocket firework_effect:0:... firework_effect:1:... firework_effect:2:...`
