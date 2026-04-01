@@ -109,7 +109,7 @@ Items can  have modifiers applied to them. For example, lets say you're configur
 - **Armor Trims:** You can specify armor trims with `trim:<material>:<pattern>`, e.g. `trim:emerald:snout`
 - **Fire Resistance:** You can make an item fire-resistant with `fire_resistant`
 - **Player Head:** If the material is a player head, you can specify a player using `head:<name>`. You can also use placeholders, e.g. `head:%player%`
-- **Skull Texture:** If the material is a player head, you can specify the texture with `texture:<base64>`. A list of skulls and textures can be found [here](https://minecraft-heads.com/).
+- **Skull Texture:** If the material is a player head, you can specify the texture with `texture:"<base64>"`. A list of skulls and textures can be found [here](https://minecraft-heads.com/).
 - **Reforge:** You can specify the reforge by adding `reforge:<id>` to the key.
 - **Spawner Entity:** You can specify the spawner entity with `entity:<id>`
 - **Glider:** You can make any chestplate slot item a glider (work like an elytra) with `glider`
