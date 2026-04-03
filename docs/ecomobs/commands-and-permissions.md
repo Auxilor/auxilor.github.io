@@ -3,19 +3,10 @@ title: "Commands and Permissions"
 sidebar_position: 3
 ---
 
-## `/ecomobs spawn` (Spawn a Mob)
-Permission: `ecomobs.command.spawn`
-
-### Spawning a mob
-
-General command usage: `/ecomobs spawn <mob> [x] [y] [z] [world]`
-
-If you're spawning a mob from console, you **must** specify the coordinates and the world, for example: `/ecomobs spawn dark_guardian 0 100 0 world_nether`
-
-If you're spawning a mob as a player, you can leave out the coordinates and world to use your current position, or specify relative coordinates like in vanilla (for example ~50 to mean my current coordinate + 50)
-
-## `/ecomobs give` (Gives a spawn egg)
-Permission: `ecomobs.command.give`
-
-## `/ecomobs reload` (Reloads the plugin)
-Permission: `ecomobs.command.reload`
+| Command                                    | Description                                          | Permission               |
+|--------------------------------------------|------------------------------------------------------|--------------------------|
+| `/ecomobs reload`                          | Reloads the plugin                                   | `ecomobs.command.reload` |
+| `/ecomobs spawn <mob> [x] [y] [z] [world]` | Spawns the EcoMobs                                   | `ecomobs.command.spawn`  |
+| `/ecomobs give <player> <mob>`             | Give the player an EcoMob spawn egg                   | `ecomobs.command.give`   |
+| `/ecomobs import <id>`                     | Import a mob from [lrcdb](https://lrcdb.auxilor.io/) | `ecomobs.command.import` |
+| `/ecomobs export <id>`                     | Export a mob to [lrcdb](https://lrcdb.auxilor.io/)   | `ecomobs.command.export` |

@@ -3,74 +3,19 @@ title: "Commands and Permissions"
 sidebar_position: 5
 ---
 
-## `/give` (Give a player an item)
+| Command                                                          | Description                                                             | Permission                               |
+|------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------|
+| `/ecoenchants reload`                                            | Reload the plugin configs (adding new enchantments requires re-logging) | `ecoenchants.command.reload`             |
+| `/enchant <enchant> <level>`                                     | Enchant the held item                                                   | `ecoenchants.command.enchant`            |
+| `/enchantinfo <enchant>`                                         | Open the enchant info GUI for the specified enchantment                 | `ecoenchants.command.enchantinfo`        |
+| `/ecoenchants gui`                                               | Open the enchantment GUI                                                | `ecoenchants.command.gui`                |
+| `/ecoenchants giverandombook <player> [type/rarity] [min] [max]` | Give a player a random enchanted book                                   | `ecoenchants.command.giverandombook`     |
+| `/ecoenchants import <id>`                                       | Import an enchant from [lrcdb](https://lrcdb.auxilor.io/)               | `ecoenchants.command.import`             |
+| `/ecoenchants export <id>`                                       | Export an enchant to [lrcdb](https://lrcdb.auxilor.io/)                 | `ecoenchants.command.export`             | 
+| `/ecoenchants toggledescriptions`                                | Let players toggle enchantment descriptions                             | `ecoenchants.command.toggledescriptions` |
 
-Because of how it's made, EcoEnchants doesn't need to have it's own commands for this. Why reinvent the wheel? Instead,
-it supports Essentials and CMI's `/give` command (as well as working in things like kits) - you don't
-have to do things the 'EcoEnchants way', just do it exactly like you already would.
+### Additional Permissions
 
-## `/enchant` (Give a player an enchant)
-
-There is however an `/enchant` command because of bugs with some server implementations.
-
-Permission: `ecoenchants.command.enchant`
-
-Usage as a player: `/enchant <enchant> <level>`
-
-Usage as console: `/enchant <player> <enchant> <level>`
-
-## `/enchantinfo` (Get information (description, max level, conflicts, etc) about an enchant)
-
-Permission: `ecoenchants.command.enchantinfo`
-
-## `/ecoenchants gui` (View all enchantments that can be applied on any item)
-
-Permission: `ecoenchants.command.gui`
-
-## `/ecoenchants giverandombook` (Give a player a random book)
-
-Permission: `ecoenchants.command.giverandombook`
-
-General Usage: `/ecoenchants giverandombook <player> [type/rarity] [minimum level] [maximum level]`
-
-For example, to give someone a random special book between level 2 and 3, you would
-do `/ecoenchants giverandombook %player% special 2 3`
-
-## `/ecoenchants import` (Import an enchant from [lrcdb](https://lrcdb.auxilor.io/))
-
-Permission: `ecoenchants.command.import`
-
-General Usage: `/ecoenchants import <id>`
-
-Find enchants on [lrcdb](https://lrcdb.auxilor.io/)
-
-## `/ecoenchants export` (Export an enchant to [lrcdb](https://lrcdb.auxilor.io/))
-
-Permission: `ecoenchants.command.export`
-
-General Usage: `/ecoenchants export <id>`
-
-## `/ecoenchants toggledescriptions` (Let players toggle enchantment descriptions)
-
-Permission: `ecoenchants.command.toggledescriptions`
-
-General Usage: `/ecoenchants toggledescriptions`
-
-Let players decide whether they want to see enchantment descriptions or not.
-This command only works when enchantment descriptions are enabled in the config.
-
-## Enchantment Permissions
-
-Want to make an enchantment only available through an enchanting table for certain players?
-
-The permission to make an enchantment available from an enchanting table is this:
-
-```yaml
-ecoenchants.fromtable.<id>
-```
-
-All enchantments are available by default, with all users having this permission by default:
-
-```yaml
-ecoenchants.fromtable.*
-```
+| Permission                   | Description                                                                                   |
+|------------------------------|-----------------------------------------------------------------------------------------------|
+| `ecoenchants.fromtable.<id>` | Permission to allow an enchantment to be obtained from an enchanting table (given by default) |

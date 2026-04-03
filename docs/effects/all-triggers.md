@@ -12,10 +12,11 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | --------------------- | ----------------------------------- | -------------------------------------------------------------------------- |
 | `%trigger_value%`     | The value passed by the trigger     | `%triggervalue%`, `%trigger%`, `%value%`, `%tv%`, `%v%`, `%t%`             |
 | `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
+
 ## Internal Triggers
 
 | ID                              | Description                                                                                                       | Value(s)                                                         |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
 | `alt_click`                     | Triggered when using Right Click on most items, Left Click on those that have a default right click functionality | `value: 1`                                                       |
 | `anvil_modify`                  | Triggered when a player takes a modified item from an anvil **Requires Purpur**                                   | `value: The experience cost`                                     |
 | `beacon_effect`                 | Triggered when a player gains effects from a beacon **Requires Paper**                                            | `value: 1`                                                       |
@@ -94,6 +95,7 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `reel_in`                       | Triggered when reeling in a fishing rod                                                                           | `value: 1`                                                       |
 | `rename_entity`                 | Triggered when a player renames an entity using a name tag **Requires Paper**                                     | `value: 1`                                                       |
 | `respawn`                       | Triggered when respawning                                                                                         | `value: 1`                                                       |
+| `resurrect`                     | Triggered when a Totem activates                                                                                  | `value: 1`                                                       |
 | `ring_bell`                     | Triggered when ringing a bell                                                                                     | `value: 1`                                                       |
 | `run_command`                   | Triggered when running a command                                                                                  | `value: 1`                                                       |
 | `sell_item`                     | Triggered when selling an item in a shop                                                                          | `value: The price`                                               |
@@ -122,7 +124,7 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 ## EcoPlugin Triggers
 
 | ID               | Description                                                          | Plugin      | Value(s)                       |
-| ---------------- | -------------------------------------------------------------------- | ----------- | ------------------------------ |
+|------------------|----------------------------------------------------------------------|-------------|--------------------------------|
 | `enchant_<type>` | Triggered when enchanting an item with a certain type of enchantment | EcoEnchants | `value: The xp cost`           |
 | `gain_job_xp`    | Triggered when gaining job experience points                         | EcoJobs     | `value: The experience gained` |
 | `join_job`       | Triggered when joining a job                                         | EcoJobs     | `value: The job level`         |
@@ -140,10 +142,11 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `gain_skill_xp`  | Triggered when gaining skill experience points                       | EcoSkills   | `value: The experience gained` |
 | `level_up_skill` | Triggered when levelling up                                          | EcoSkills   | `value: The new level`         |
 | `regen_magic`    | Triggered when regenerating magic                                    | EcoSkills   | `value: 1`                     |
+
 ## External Integration Triggers
 
 | ID                         | Description                                                                     | Plugin                             | Value(s)                                                                                       |
-| -------------------------- | ------------------------------------------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------- |
+|----------------------------|---------------------------------------------------------------------------------|------------------------------------|------------------------------------------------------------------------------------------------|
 | `collect_envoy`            | Triggered when collecting an envoy crate                                        | AxEnvoy                            | `value: 1`                                                                                     |
 | `player_trade`             | Triggered when trading with a player (player = initiator, victim = recipricant) | AxTrade                            | `value: The total amount of items traded`<br/>`alt-value: The total amount of currency traded` |
 | `left_click_npc`           | Triggered when left-clicking an NPC                                             | Citizens<br/>FancyNpcs             | `value: 1`                                                                                     |
@@ -178,7 +181,7 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `register_vote`            | Triggered when a player votes for the server                                    | Votifier                           | `value: 1`                                                                                     |
 | `enter_region`             | Triggered when entering a region                                                | WorldGuard                         | `value: 1`                                                                                     |
 | `leave_region`             | Triggered when leaving a region                                                 | WorldGuard                         | `value: 1`                                                                                     |
-| `claim_battlepass_reward`  | Triggered when claiming a battlepass reward                                     | xBattlepass                        | `value: 1`                                                                                     |
-| `complete_battlepass_task` | Triggered when completing a battlepass task                                     | xBattlepass                        | `value: 1`                                                                                     |
-| `gain_battlepass_xp`       | Triggered when gaining battlepass XP                                            | xBattlepass                        | `value: The experience gained`                                                                 |
-| `tier_up_battlepass`       | Triggered when tiering up the battlepass                                        | xBattlepass                        | `value: The new level`                                                                         |
+| `claim_battlepass_reward`  | Triggered when claiming a battlepass reward                                     | EcoBattlepass                        | `value: 1`                                                                                     |
+| `complete_battlepass_task` | Triggered when completing a battlepass task                                     | EcoBattlepass                        | `value: 1`                                                                                     |
+| `gain_battlepass_xp`       | Triggered when gaining battlepass XP                                            | EcoBattlepass                        | `value: The experience gained`                                                                 |
+| `tier_up_battlepass`       | Triggered when tiering up the battlepass                                        | EcoBattlepass                        | `value: The new level`                                                                         |

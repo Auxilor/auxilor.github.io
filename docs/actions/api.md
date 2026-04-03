@@ -5,7 +5,7 @@ sidebar_position: 4
 
 ## Source Code
 
-The source code can be found [here](https://github.com/Auxilor/Actions):
+The source code can be found [here](https://github.com/Auxilor/Actions).
 
 ## API
 

@@ -3,10 +3,6 @@ title: How to make a Task
 sidebar_position: 2
 ---
 
-## Default configs
-The default configs can be found [here](https://github.com/Auxilor/EcoQuests/tree/master/eco-core/core-plugin/src/main/resources/tasks).
-You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
-
 ## How to add tasks
 Each task is its own config file, placed in the `/tasks/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
@@ -18,22 +14,17 @@ Tasks are the goals that players must complete in order to complete [quests](htt
 ## Example Task Config
 
 ```yaml
-description: "&fBreak stone blocks (&a%xp%&8/&a%required-xp%&f)" # The description of the task.
+description: "&fBreak stone blocks (&a%xp%&8/&a%required-xp%&f)"
 
-# An XP gain method takes a trigger, a multiplier, conditions, and filters.
-# The 'multiplier' takes the value produced by the trigger and multiplies it
-# Alternatively, you can use 'value' to count a specific number and not a multiplier
 xp-gain-methods:
   - trigger: mine_block
-    multiplier: 0.5 # You can also use "value" here (see above comment)
-    args: # (Optional)
-	  chance: 50
-    filters: # (Optional)
+    multiplier: 0.5
+    args:
+      chance: 50
+    filters:
       blocks:
         - netherrack
 
-# An optional list of effects to run when a player completes the task
-# Read here: https://plugins.auxilor.io/effects/configuring-an-effect
 on-complete:
   - id: send_message
     args:
@@ -42,15 +33,36 @@ on-complete:
 
 ## Understanding all the sections
 
-**description:** The description of the quest. Shown in the quest lore in /quests
+### The Task Config Section
+```yaml
+description: "&fBreak stone blocks (&a%xp%&8/&a%required-xp%&f)" # The description of the task.
+```
 
-**xp-gain-methods:** The trigger, multiplier/value, conditions and filters that will award task XP
+### The XP Gain Methods Section
+```yaml
+# An XP gain method takes a trigger, a multiplier, conditions, and filters.
+# The 'multiplier' takes the value produced by the trigger and multiplies it
+# Alternatively, you can use 'value' to count a specific number and not a multiplier
+xp-gain-methods:
+  - trigger: move
+    multiplier: 0.5
+    conditions:
+      - id: in_world
+        args:
+          world: world_nether
+```
 
-**on-complete:** Effects to be run when the task is completed (Supports triggered effects). See [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect)
+### The On-Complete Effects Section
+```yaml
+# An optional list of effects to run when a player completes the task
+# Read here: https://plugins.auxilor.io/effects/configuring-an-effect
+on-complete:
+  - id: send_message
+    args:
+      message: "Task Completed!"
+```
 
-### Effects & Conditions
-
-The task rewards uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the quest is started or as rewards.
+The task rewards uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the task is completed.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
@@ -62,3 +74,9 @@ For more advanced users or setups, you can configure chains in this section to s
 | --------------- | ---------------------------------------------- |
 | `%xp%`          | The amount of XP the player has for the task   |
 | `%required-xp%` | The amount of XP required to complete the task |
+
+<hr/>
+
+## Default configs
+The default configs can be found [here](https://github.com/Auxilor/EcoQuests/tree/master/eco-core/core-plugin/src/main/resources/tasks). <br/>
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).

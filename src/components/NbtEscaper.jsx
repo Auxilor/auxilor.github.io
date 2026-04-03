@@ -37,7 +37,7 @@ export default function NbtEscaper() {
                 <label className={styles.label}>
                     NBT String
                     <span className={styles.hint}>
-            Example Input: {'{'}id:"minecraft:potion",Count:1b,tag:{'{'}Potion:"minecraft:night_vision"{'}'}{'}'}
+            Example Input: {'{'}id: "minecraft:potion", count: 1, components: {'{'}"minecraft:potion_contents": {'{'}potion: "minecraft:leaping"{'}'}{'}'}{'}'}
           </span>
                 </label>
                 <textarea

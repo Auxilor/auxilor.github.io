@@ -1,6 +1,6 @@
 ---
 title: "Migrating/Converting from other crate plugins"
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 Want to start using EcoCrates but do not have much time to convert all your configs from the old crate plugin?
@@ -28,6 +28,6 @@ EcoCrates will kindly do that for you with a single command!
 
   - Requires SpecializedCrates to be enabled as well!
 
-## Did not found your crates plugin in the list?
+## Did not find your crates plugin in the list?
 
 Feel free to request a converter for any crate plugin on our [GitHub issues section](https://github.com/Auxilor/EcoCrates/issues/new?assignees=&labels=enhancement&template=request-a-feature.md&title=)

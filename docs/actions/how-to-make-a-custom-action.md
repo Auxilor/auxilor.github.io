@@ -3,12 +3,9 @@ title: How to make Actions
 sidebar_position: 1
 ---
 
-## Default Configs
 
-The default configs can be found [here](https://github.com/Auxilor/Actions/blob/master/eco-core/core-plugin/src/main/resources/actions/).
-You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).
 
-## How to add actions
+## Creating a Custom Action
 
 Each action has its own config file, placed in the `/actions/` folder, and you can add or remove them as you please. There's an example config called `_example.yml` to help you out!
 
@@ -39,14 +36,9 @@ conditions: [ ]
 ```
 The example effect: Pay players for killing non-player entities at a rate of $0.25 per health point.
 
-## Understanding all the sections
+<hr/>
 
-**enabled:** If the action is enabled.
+## Default Configs
 
-### Effects & Conditions
-
-The effects section is the core functionality of the action. You can configure effects, conditions, filters, mutators and triggers in this section to run globally or individually.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+The default configs can be found [here](https://github.com/Auxilor/Actions/blob/master/eco-core/core-plugin/src/main/resources/actions/). <br/>
+You can find additional user-created configs on [lrcdb](https://lrcdb.auxilor.io/).

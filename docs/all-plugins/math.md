@@ -7,7 +7,7 @@ Throughout the eco plugins and effects system, you can use math expressions almo
 
 You can also use placeholders within math. Some eco plugins come with their own numerical placeholders, such as `%level%` which can be used to create scaling effects based on a job, skill, pet or enchantment level. External placeholders are also supported, as long as they provide a numerical result.
 ## Common Syntax
-These are the most commonly used mathematical expressions within eco plugins. To see all math syntax's available, visit [here](https://github.com/boxbeam/Crunch?tab=readme-ov-file#operations-and-syntax).
+These are the most commonly used mathematical expressions within eco plugins. To see all math syntaxes available, visit [here](https://github.com/boxbeam/Crunch?tab=readme-ov-file#operations-and-syntax).
 
 | Syntax            | Description                                                             |
 | ----------------- | ----------------------------------------------------------------------- |

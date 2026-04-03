@@ -19,7 +19,7 @@ So, working with an exponent of `1.02` and an original cost of `25`:
 cost = 25^1.02 + 1
 ```
 
-This is then **rounded up** to the nearest whole number, so the cost in this example would become **28. This formula ensures cost scaling stays fair, fun and consistent across all levels.
+This is then **rounded up** to the nearest whole number, so the cost in this example would become **28**. This formula ensures cost scaling stays fair, fun and consistent across all levels.
 #### Configuration Tips
 
 Set the `cost-exponent` in your config to control difficulty:

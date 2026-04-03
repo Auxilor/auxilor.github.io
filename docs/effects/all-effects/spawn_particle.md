@@ -3,7 +3,7 @@
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
-Spawns a [particle](https://plugins.auxilor.io/all-plugins/the-particle-lookup-system)
+Spawns a [particle](https://plugins.auxilor.io/the-particle-lookup-system)
 
 # Effect Syntax
 ```yaml

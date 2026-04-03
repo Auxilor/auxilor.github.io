@@ -1,6 +1,6 @@
 # `battlepass_task_xp_multiplier`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 :::dangerPermanent Effect

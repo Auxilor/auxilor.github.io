@@ -3,7 +3,7 @@
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
-Multiplies drops (requires a drop trigger)
+Multiplies drops
 
 # Effect Syntax
 ```yaml
@@ -19,6 +19,15 @@ Multiplies drops (requires a drop trigger)
 
 :::tip  
   
-If you're experiencing drops not being multiplied, you may need to change the anti-duplication settings in [config.yml](https://github.com/Auxilor/libreforge/blob/master/core/common/src/main/resources/config.yml) and add blocks to the whitelist.
+If you're experiencing drops not being multiplied, you may need to change the "prevent-duplication" settings in [libreforge/config.yml](https://github.com/Auxilor/libreforge/blob/master/core/common/src/main/resources/config.yml) and add blocks to the whitelist.
 
+:::
+
+:::info
+
+The `multiply_drops` effect works on certain triggers: 
+- `block_item_drop`, when a block drops an item <br/>
+- `entity_item_drop`, when an entity dies and drops items <br/>
+- `catch_fish`, when a player catches an item from fishing <br/>
+- `shear`, when a player shears an entity or block and drops items
 :::

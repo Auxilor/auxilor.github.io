@@ -11,14 +11,19 @@ eco is the development library that powers all eco plugins. It handles a wide ra
 
 It's just like any other plugin on your server. Drop it into the /plugins/ folder and restart the server. However, eco also needs ProtocolLib to function - if you don't already have it on your server, make sure to grab the latest version [here](https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/)
 
-Download the latest version of eco from [GitHub](https://github.com/Auxilor/eco/releases) or [Polymart](https://polymart.org/resource/1-16-1-17-eco.773)
+[![modrinth](/img/modrinth.png)](https://modrinth.com/plugin/eco-plugin)
+[![polymart](/img/polymart.png)](https://polymart.org/product/773/eco)
 
 ## Where should I buy the plugins?
-All plugins are available on [Spigot](https://www.spigotmc.org/resources/authors/auxilor.507394/) and [Polymart](https://polymart.org/user/auxilor.1107), and you can buy plugins at a 25% discount in a bundle, too - [click here to get them!](https://polymart.org/bundle/eco-pack.110)
 
-### All information in this documentation is for the latest plugin versions. Older versions may not contain all features and options shown.
+[![spigot](/img/spigot.png)](https://www.spigotmc.org/members/exanthiax.1580784/)
+[![polymart](/img/polymart.png)](https://polymart.org/user/14873/exanthiax)
+[![builtbybit](/img/builtbybit.png)](https://builtbybit.com/store/exanthiax.301/)
 
-## Check out our partners! (Click to visit)
+You can save up to 30% on the Plugins by buying the Eco Pack bundle. Available on [Polymart](https://polymart.org/bundle/615/eco-pack) and [BuiltByBit](https://builtbybit.com/resources/bundle/ecopack.3418/).
 
-[![GamerSupps](https://i.imgur.com/7mFhlQO.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](https://i.imgur.com/x9aeH38.png)](https://dedimc.promo/Auxilor)
+:::info Important
+The contents of this documentation are for the latest versions of eco and all plugins. If you're using an older version, some features or options may not be available or supported.
+:::
+
+ 

@@ -3,69 +3,25 @@ title: "Commands and Permissions"
 sidebar_position: 4
 ---
 
-## `/ecojobs unlock` (Unlock a job)
+| Command                                   | Description                                          | Permission               |
+|-------------------------------------------|------------------------------------------------------|--------------------------|
+| `/ecojobs reload`                         | Reloads the plugin                                   | `ecojobs.command.reload` |
+| `/ecojobs unlock <player> <job>`          | Unlocks a job for a player                           | `ecojobs.command.unlock` |
+| `/ecojobs reset <player/all> <job/all>`   | Reset the job for a player                           | `ecojobs.command.reset`  |
+| `/ecojobs givexp <player> <job> <amount>` | Give job xp for a player                             | `ecojobs.command.givexp` |
+| `/jobs`                                   | Opens the jobs GUI                                   | `ecojobs.command.jobs`   |
+| `/jobs join <job>`                        | Joins a job                                          | `ecojobs.command.join`   |
+| `/jobs leave <job>`                       | Leaves a job                                         | `ecojobs.command.leave`  |
+| `/ecojobs import <id>`                    | Import a job from [lrcdb](https://lrcdb.auxilor.io/) | `ecojobs.command.import` |
+| `/ecojobs export <id>`                    | Export a job to [lrcdb](https://lrcdb.auxilor.io/)   | `ecojobs.command.export` |
 
-Permission: `ecojobs.command.unlock`
+### Additional Permissions
 
-Usage: `/ecojobs unlock <player> <job>`
-
-## `/ecojobs reset` (Reset a job)
-
-Permission: `ecojobs.command.reset`
-
-Usage: `/ecojobs reset <player> <job>`
-
-You can also use `all` within the command to reset all players, all jobs, or both.
-
-## `/ecojobs givexp` (Give xp to a job)
-
-Permission: `ecojobs.command.givexp`
-
-Usage: `/ecojobs givexp <player> <job> <amount>`
-
-## `/jobs` (Open the jobs menu)
-
-Permission: `ecojobs.command.jobs`
-
-## `/jobs join` (Join a job)
-
-Permission: `ecojobs.command.join`
-
-Usage: `/jobs join <job>`
-
-## `/jobs leave` (Leave a job)
-
-Permission: `ecojobs.command.leave`
-
-Usage: `/jobs leave`
-
-## `/ecojobs import` (Import a job from [lrcdb](https://lrcdb.auxilor.io/))
-
-Permission: `ecojobs.command.import`
-
-General Usage: `/ecojobs import <id>`
-
-Find jobs on [lrcdb](https://lrcdb.auxilor.io/)
-
-## `/ecojobs export` (Export a job to [lrcdb](https://lrcdb.auxilor.io/))
-
-Permission: `ecojobs.command.export`
-
-General Usage: `/ecojobs export <id>`
-
-## `ecojobs.limit.<limit>`
-
-Sets the limit for the max amount of jobs the player can join at once
-
-### XP multiplier permission
-
-Permission: `ecojobs.xpmultiplier.<%increase>`
-
-General Usage: `ecojobs.xpmultiplier.200` would give 200% more skill XP (3x) to anyone with the permission. The backend math is `1 + (<%increase> / 100)` so 
-
-Permission: `ecojobs.xpmultiplier.50percent
-Permission: `ecojobs.xpmultiplier.double`
-Permission: `ecojobs.xpmultiplier.triple`
-Permission: `ecojobs.xpmultiplier.quadruple`
-
-General Usage: `ecojobs.xpmultiplier.50percent` would give 50% more skill XP (1.5x)
+| Permission                         | Description                                                                                         |
+|------------------------------------|-----------------------------------------------------------------------------------------------------|
+| `ecojobs.limit.<limit>`            | Limit the amount of jobs a player can join at once                                                  |
+| `ecojobs.xpmultiplier.<%increase>` | Multiply job XP gain. The math is `1 + (<%increase> / 100)`. Example: `200` = 3x XP, `50` = 1.5x XP |
+| `ecojobs.xpmultiplier.50percent`   | Gives 50% more job XP (1.5x multiplier)                                                             |
+| `ecojobs.xpmultiplier.double`      | Gives double job XP (2x multiplier)                                                                 |
+| `ecojobs.xpmultiplier.triple`      | Gives triple job XP (3x multiplier)                                                                 |
+| `ecojobs.xpmultiplier.quadruple`   | Gives quadruple job XP (4x multiplier)                                                              |

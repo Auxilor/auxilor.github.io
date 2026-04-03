@@ -7,8 +7,4 @@ Talismans are items that give players passive buffs while they're in the invento
 
 ## Is there a Talisman Bag?
 Yes! There's a talisman bag that lets you set the size per-player, it works exactly how you'd want and expect it to - you don't have to use it, but it's enabled by default.
-
-## Check out our partners! (Click to visit)
-
-[![GamerSupps](https://i.imgur.com/7mFhlQO.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](https://i.imgur.com/x9aeH38.png)](https://dedimc.promo/Auxilor)
+ 

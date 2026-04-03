@@ -5,7 +5,7 @@ sidebar_position: 6
 
 ## Source Code
 
-The source code can be found [here](https://github.com/Auxilor/EcoArmor):
+The source code can be found [here](https://github.com/Auxilor/EcoArmor).
 
 ## API
 

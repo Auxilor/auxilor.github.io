@@ -1,6 +1,6 @@
 # `give_battlepass_task_xp`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 :::dangerTriggered Effect

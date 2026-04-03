@@ -1,6 +1,6 @@
 # `give_battlepass_xp`
 :::infoRequires:
-xBattlepass
+EcoBattlepass
 :::
 
 :::dangerTriggered Effect

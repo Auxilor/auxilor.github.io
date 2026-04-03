@@ -3,7 +3,7 @@
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
 
-Spawns an [entity](https://plugins.auxilor.io/all-plugins/the-entity-lookup-system)
+Spawns an [entity](https://plugins.auxilor.io/the-entity-lookup-system)
 
 # Effect Syntax
 ```yaml

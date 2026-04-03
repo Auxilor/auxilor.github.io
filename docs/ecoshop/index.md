@@ -9,7 +9,11 @@ Multiple currencies support, custom item support, item economy support, single-p
 item buy limits, paged shops, multiple shops, multiple buy options - the list goes on. If there's ever
 something you've wanted from a shop plugin, EcoShop has it.
 
-## Check out our partners! (Click to visit)
+### Looking for premade shop designs?
+There are a wide number of EcoShop configurations available on Polymart, check out the official ones below!
 
-[![GamerSupps](https://i.imgur.com/7mFhlQO.png)](http://gamersupps.gg/discount/Auxilor?afmc=Auxilor)
-[![DedicatedMC](https://i.imgur.com/x9aeH38.png)](https://dedimc.promo/Auxilor)
+[![woodglass](/img/addons/ecoshop_glass.jpg)](https://polymart.org/product/9119/ecoshop-glass)
+[![vanilla](/img/addons/ecoshop_vanilla.jpg)](https://polymart.org/product/5678/ecoshop-custom-vanilla-gui)
+[![wood1](/img/addons/ecoshop_wood1.jpg)](https://polymart.org/product/5679/ecoshop-wooden-vol-1)
+[![wood2](/img/addons/ecoshop_wood2.jpg)](https://polymart.org/product/9177/ecoshop-wooden-vol-2)
+[![wood3](/img/addons/ecoshop_wood3.jpg)](https://polymart.org/product/9365/ecoshop-wooden-vol-3)

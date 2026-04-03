@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ### Step One: Open the GUI
 
-Run `/reforge` or go to an NPC that runs `/reforge open <player`.
+Run `/reforge` or go to an NPC that runs `/reforge open <player>`.
 
 This will open this GUI:
 
@@ -37,9 +37,9 @@ By default, all reforgable items will say so in their lore:
 
 But you can turn this off if you don't like it.
 
-If you try to place an unreforgable item in the gui, you will get this:
+If you try to place an unreforgeable item in the GUI, you will get this:
 
-![An unreforgable item in the GUI](https://1192817931-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXwJPPRqRpT7b0ZXxU13J%2Fuploads%2FH4hVtO52m9cH4HsDpEh5%2Fimage%20(4).png?alt=media&token=b7353bed-7a1b-4b50-ab76-cf741e0af2fd)
+![An unreforgeable item in the GUI](https://1192817931-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXwJPPRqRpT7b0ZXxU13J%2Fuploads%2FH4hVtO52m9cH4HsDpEh5%2Fimage%20(4).png?alt=media&token=b7353bed-7a1b-4b50-ab76-cf741e0af2fd)
 
 ### Step Three: Click the anvil
 
@@ -47,7 +47,7 @@ By default, the price increases by a factor of 1.15x every time the same item is
 
 ![Ready to reforge!](https://1192817931-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXwJPPRqRpT7b0ZXxU13J%2Fuploads%2FuoWrAAprorYkC4KPj4MG%2Fimage%20(5).png?alt=media&token=9839630b-6532-4a5c-8935-2c2d4faae642)
 
-If you have enough money, the reforge will successfully happen and you will get a message in chat and a sound specified in config.yml
+If you have enough money, the reforge will successfully happen, and you will get a message in chat and a sound specified in config.yml
 
 ![The reforged item](https://1192817931-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FXwJPPRqRpT7b0ZXxU13J%2Fuploads%2FVZbcZxSblGO9rWnOD8pL%2FScreenshot%202021-10-02%20at%2013.18.31.png?alt=media&token=1b2824e3-0ff4-468e-b978-a885a5e4eb44)
 

@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ## Source Code
 
-The source code can be found [here](https://github.com/Auxilor/Boosters):
+The source code can be found [here](https://github.com/Auxilor/Boosters).
 
 ## API
 

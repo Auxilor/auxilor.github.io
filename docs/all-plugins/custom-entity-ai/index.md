@@ -3,7 +3,7 @@ title: "AI Goals"
 ---
 
 ## What are AI goals?
-AI goals are how entities behave, how they interact with the world around them. There are two types of goals: entity goals, and target goals, where entity goals are how entities behave, and target goals is how they decide who to attack.
+AI goals are how entities behave, how they interact with the world around them. There are two types of goals: entity goals, and target goals, where entity goals are how entities behave, and target goals are how they decide who to attack.
 
 ## Configuring a goal
 A goal consists of a key, a priority, and some arguments (options) - for example:

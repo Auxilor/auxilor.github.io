@@ -16,7 +16,7 @@ Patterns use a simple format:
 `a-z` is the remaining 26 items.
 In total you could display 35 different items as "filler" items in your GUI.
 
-A mask is the items to be shown in the pattern layout, these work from the top down. You can use the [Item Lookup System](https://plugins.auxilor.io/all-plugins/the-item-lookup-system) here to add custom items, apply names or any other of the options.
+A mask is the items to be shown in the pattern layout, these work from the top down. You can use the [Item Lookup System](https://plugins.auxilor.io/the-item-lookup-system) here to add custom items, apply names or any other of the options.
 The first item in the list will represent `1` in the pattern, the second item in the list is `2`, etc..
 
 ### Example Page Config
@@ -35,7 +35,7 @@ The first item in the list will represent `1` in the pattern, the second item in
 
 This example has a surrounding layer of `gray_stained_glass_pane` and a center strip of `black_stained_glass_pane`.
 
-![Page](https://imgur.com/lyLo6pD)
+![Page](https://i.imgur.com/tQLXe3F.png)
 
 ## Custom GUI Slots
 ### What are custom GUI slots?
