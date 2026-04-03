@@ -25,6 +25,9 @@ If you're experiencing drops not being multiplied, you may need to change the "p
 
 :::info
 
-The `multiply_drops` effect requires a drop trigger, such as `block_item_drop` or `entity_item_drop`.
-
+The `multiply_drops` effect works on certain triggers: 
+- `block_item_drop`, when a block drops an item <br/>
+- `entity_item_drop`, when an entity dies and drops items <br/>
+- `catch_fish`, when a player catches an item from fishing <br/>
+- `shear`, when a player shears an entity or block and drops items
 :::
