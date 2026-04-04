@@ -55,7 +55,7 @@ Use custom mobs and entities from these plugins inside eco conditions, triggers,
 
 ### Integration into the Item Lookup System
 
-Items from these plugins can be used anywhere eco accepts an [Item Lookup](/the-item-lookup-system) — in recipes, loot tables, GUIs, and more.
+Items from these plugins can be used anywhere eco accepts an [Item Lookup](https://plugins.auxilor.io/the-item-lookup-system) — in recipes, loot tables, GUIs, and more.
 
 | Plugin | Plugin |
 | --- | --- |
@@ -146,7 +146,7 @@ General-purpose integrations.
 
 ## ⚡ Effects System
 
-These plugins provide **triggers and conditions** for the [Effects System](/effects/) only — allowing you to create powerful custom gameplay mechanics.
+These plugins provide **triggers and conditions** for the [Effects System](https://https://plugins.auxilor.io/effects/configuring-an-effect) only — allowing you to create powerful custom gameplay mechanics.
 
 | Plugin | Plugin |
 | --- | --- |
