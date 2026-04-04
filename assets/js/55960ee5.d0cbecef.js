@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkauxilor_docs=self.webpackChunkauxilor_docs||[]).push([[74121],{88070:function(s){s.exports=JSON.parse('[{"name":"triggers","permalink":"/tags/triggers","count":1}]')}}]);

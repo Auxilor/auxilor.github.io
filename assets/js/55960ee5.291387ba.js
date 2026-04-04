@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkauxilor_docs=globalThis.webpackChunkauxilor_docs||[]).push([[35151],{30350(s){s.exports=JSON.parse('[{"label":"triggers","permalink":"/tags/triggers","count":1}]')}}]);
