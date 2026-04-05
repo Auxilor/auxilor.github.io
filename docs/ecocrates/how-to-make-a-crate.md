@@ -24,6 +24,7 @@ key: demo_crate
 preview:
   title: Demo Crate
   rows: 6
+  custom-slots: []
   forwards-arrow:
     item: arrow name:"&fNext Page"
     row: 6
@@ -45,6 +46,7 @@ preview:
           - "211110112"
           - "211111112"
           - "222222222"
+      custom-slots: [ ]
       rewards:
         - id: diamond_sword
           row: 3
@@ -92,12 +94,22 @@ key: demo_crate # The ID of the key for this crate (configure in /keys/demo_crat
 preview:
   title: Demo Crate # The title of the preview GUI
   rows: 6 # The amount of rows for the gui, between 1 and 6
+  custom-slots: [ ] # Custom GUI slots shared across all preview pages; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
+  forwards-arrow: # The arrow for switching between pages. If on the last page, this will not show up.
+    item: arrow name:"&fNext Page"
+    row: 6
+    column: 6
+  backwards-arrow: # The arrow for switching between pages. If on the first page, this will not show up.
+    item: arrow name:"&fPrevious Page"
+    row: 6
+    column: 4
   pages:
     - page: 1
       mask: # Filler items for decoration
         items: # Add as many items as you want
           - gray_stained_glass_pane # Item 1
           - black_stained_glass_pane # Item 2
+      custom-slots: [ ] # Custom GUI slots for this page; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
       rewards:
         - id: diamond_sword # The reward ID
           row: 3 # The row

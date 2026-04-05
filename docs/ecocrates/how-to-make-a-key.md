@@ -35,7 +35,8 @@ keygui:
   right-click-previews: true
   left-click-opens: true
   shift-left-click-message:
-    - "Buy a key here! &astore.example.net"
+    - "Buy a key here! &astore.example.net" 
+  custom-slots: [ ]
 ```
 
 ## Understanding the Sections
@@ -61,6 +62,7 @@ keygui:
   column: 3 # Column in the GUI (1-indexed)
   right-click-previews: true # Right-click to open the crate preview
   left-click-opens: true # Left-click to open the crate using a virtual key
+  custom-slots: [ ] # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
 ```
 
 ## Internal Placeholders
