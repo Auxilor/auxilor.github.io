@@ -26,13 +26,13 @@ All commands can be run with `/ecocrates`, `/crates`, `/crate`, `/key`, or `/key
 
 ### Additional Permissions
 
-| Permission                  | Description                                                                                                  |
-|-----------------------------|--------------------------------------------------------------------------------------------------------------|
-| `ecocrates.open.<crate>`    | Permission to open a specific crate                                                                          |
-| `ecocrates.open.*`          | Permission to open all crates                                                                                |
-| `ecocrates.reroll.<crate>`  | Permission to re-roll the crate reward (if enabled). Given by default, negate permission to prevent re-rolls |
-| `ecocrates.reroll.*`        | Permission to re-roll all crates                                                                             |
-| `ecocrates.reward.<reward>` | Permission to be eligible for a specific reward                                                              |
+| Permission                   | Description                                                                                                  |
+|------------------------------|--------------------------------------------------------------------------------------------------------------|
+| `ecocrates.open.<crate>`     | Permission to open a specific crate                                                                          |
+| `ecocrates.open.*`           | Permission to open all crates                                                                                |
+| `ecocrates.reroll.<crate>`   | Permission to re-roll the crate reward (if enabled). Given by default, negate permission to prevent re-rolls |
+| `ecocrates.reroll.*`         | Permission to re-roll all crates                                                                             |
+| `ecocrates.rewards.<reward>` | Permission to be eligible for a specific reward (Use `ecocrates.rewards.*` for all rewards)                  |
 
 #### Chance multiplier permissions
 
