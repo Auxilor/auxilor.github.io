@@ -1,4 +1,4 @@
-# `firework`
+# `shoot_firework`
 :::dangerTriggered Effect
 This effect requires a [Trigger](https://plugins.auxilor.io/effects/all-triggers) to activate.
 :::
