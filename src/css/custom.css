@@ -187,6 +187,10 @@
 .theme-doc-sidebar-menu a.menu__link[href$="/ecojobs/"],
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecojobs"],
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecojobs/"],
+.theme-doc-sidebar-menu a.menu__link[href$="/ecomenus"],
+.theme-doc-sidebar-menu a.menu__link[href$="/ecomenus/"],
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecomenus"],
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecomenus/"],
 .theme-doc-sidebar-menu a.menu__link[href$="/ecomobs"],
 .theme-doc-sidebar-menu a.menu__link[href$="/ecomobs/"],
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecomobs"],
@@ -288,6 +292,13 @@
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecojobs"]::before,
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecojobs/"]::before {
   background-image: url('/img/plugin_icons/ecojobs.png');
+}
+
+.theme-doc-sidebar-menu a.menu__link[href$="/ecomenus"]::before,
+.theme-doc-sidebar-menu a.menu__link[href$="/ecomenus/"]::before,
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecomenus"]::before,
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecomenus/"]::before {
+  background-image: url('/img/plugin_icons/ecomenus.png');
 }
 
 .theme-doc-sidebar-menu a.menu__link[href$="/ecomobs"]::before,
@@ -488,6 +499,21 @@
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecojobs"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecojobs/"]::before {
   background-image: url('/img/plugin_icons/ecojobs.png');
+}
+
+/* ecomenus */
+.theme-doc-sidebar-container a.menu__link[href$="/ecomenus"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecomenus/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomenus"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomenus/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecomenus"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecomenus/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomenus"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecomenus/"]::before {
+  background-image: url('/img/plugin_icons/ecomenus.png');
 }
 
 /* ecomobs */
