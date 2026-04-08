@@ -60,6 +60,30 @@ pay-to-open:
   price: 5000
   type: coins
 
+placed:
+  random-reward:
+    enabled: true
+    height: 1.5
+    delay: 30
+    name: "&fYou could win: %reward%"
+  particles:
+    - particle: flame
+      animation: spiral
+  hologram:
+    height: 1.5
+    ticks: 200
+    frames:
+      - tick: 0
+        lines:
+          - "<g:#56ab2f>&lDEMO CRATE</g:#a8e063>"
+          - "&b&lLeft Click to Preview"
+          - '&a&lRight click to Open'
+      - tick: 100
+        lines:
+          - "<g:#56ab2f>&lDEMO CRATE</g:#a8e063>"
+          - "&a&lLeft Click to Preview"
+          - '&b&lRight click to Open'
+
 open-effects:
   - id: send_message
     args:
@@ -123,6 +147,34 @@ pay-to-open:
   enabled: false # If it should be allowed
   price: 5000 # The price to buy the crate
   type: coins # The type of currency to use
+```
+
+#### The Placed Crate Section
+
+```yaml
+placed: # Options for physically placed crates
+  random-reward: # The random reward hologram, shows an item
+    enabled: true # If the random reward should be shown
+    height: 1.5 # The height above the crate at which to show the reward
+    delay: 30 # The ticks between showing a new item
+    name: "&fYou could win: %reward%" # The text above the item - use %reward% for the reward name
+  particles: # The particle effects around the crate, add as many as you want
+    - particle: flame # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+      animation: spiral # spiral, double_spiral, circle, or twirl
+  hologram: # The text hologram, requires a hologram plugin to be installed
+    height: 1.5 # The height above the crate
+    ticks: 200 # The total ticks to cycle all frames
+    frames:
+      - tick: 0 # The starting tick to show this frame
+        lines:
+          - "<g:#56ab2f>&lDEMO CRATE</g:#a8e063>"
+          - "&b&lLeft Click to Preview"
+          - '&a&lRight click to Open'
+      - tick: 100
+        lines:
+          - "<g:#56ab2f>&lDEMO CRATE</g:#a8e063>"
+          - "&a&lLeft Click to Preview"
+          - '&b&lRight click to Open'
 ```
 
 #### The Open and Finish Effects Section
