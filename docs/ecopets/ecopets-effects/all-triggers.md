@@ -12,7 +12,9 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `%alt_trigger_value%` | The alt-value passed by the trigger | `%alttriggervalue%`, `%alttrigger%`, `%altvalue%`, `%atv%`, `%av%`, `%at%` |
 ## Triggers
 
-| ID             | Description                                  | Value(s)                       |
-| -------------- | -------------------------------------------- | ------------------------------ |
-| `gain_pet_xp`  | Triggered when gaining pet experience points | `value: The experience gained` |
-| `level_up_pet` | Triggered when levelling up a pet            | `value: The new level`         |
+| ID               | Description                                  | Value(s)                       |
+|------------------|----------------------------------------------|--------------------------------|
+| `gain_pet_xp`    | Triggered when gaining pet experience points | `value: The experience gained` |
+| `level_up_pet`   | Triggered when levelling up a pet            | `value: The new level`         |
+| `pet_activate`   | Triggered when activating a pet              | `value: 1`                     |
+| `pet_deactivate` | Triggered when deactivating a pet            | `value: 1`                     |
