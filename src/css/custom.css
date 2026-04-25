@@ -167,6 +167,10 @@
 .theme-doc-sidebar-menu a.menu__link[href$="/ecobattlepass/"],
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass"],
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass/"],
+.theme-doc-sidebar-menu a.menu__link[href$="/ecocollections"],
+.theme-doc-sidebar-menu a.menu__link[href$="/ecocollections/"],
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecocollections"],
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecocollections/"],
 .theme-doc-sidebar-menu a.menu__link[href$="/ecobits"],
 .theme-doc-sidebar-menu a.menu__link[href$="/ecobits/"],
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecobits"],
@@ -257,6 +261,13 @@
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass"]::before,
 .theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass/"]::before {
   background-image: url('/img/plugin_icons/ecobattlepass.png');
+}
+
+.theme-doc-sidebar-menu a.menu__link[href$="/ecocollections"]::before,
+.theme-doc-sidebar-menu a.menu__link[href$="/ecocollections/"]::before,
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecocollections"]::before,
+.theme-doc-sidebar-menu .menu__list-item-collapsible > .menu__link[href$="/ecocollections/"]::before {
+  background-image: url('/img/plugin_icons/ecocollections.png');
 }
 
 .theme-doc-sidebar-menu a.menu__link[href$="/ecobits"]::before,
@@ -424,6 +435,21 @@
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass"]::before,
 .theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecobattlepass/"]::before {
   background-image: url('/img/plugin_icons/ecobattlepass.png');
+}
+
+/* ecocollections */
+.theme-doc-sidebar-container a.menu__link[href$="/ecocollections"],
+.theme-doc-sidebar-container a.menu__link[href$="/ecocollections/"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocollections"],
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocollections/"] {
+  padding-left: 32px;
+  position: relative;
+}
+.theme-doc-sidebar-container a.menu__link[href$="/ecocollections"]::before,
+.theme-doc-sidebar-container a.menu__link[href$="/ecocollections/"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocollections"]::before,
+.theme-doc-sidebar-container .menu__list-item-collapsible > .menu__link[href$="/ecocollections/"]::before {
+  background-image: url('/img/plugin_icons/ecocollections.png');
 }
 
 /* ecobits */

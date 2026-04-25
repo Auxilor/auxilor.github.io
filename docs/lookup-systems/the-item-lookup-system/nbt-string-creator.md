@@ -3,9 +3,16 @@ title: NBT String Creator
 slug: /the-item-lookup-system/nbt-string-creator
 sidebar_position: 2
 ---
-Using NBT data can be a great way to use items from any other plugin within eco, even where there is no direct integration.
+Using NBT data can be a great way to use items from any other plugin within eco, even where there is no direct integration. When configuring items in YAML files, you need to escape NBT strings to prevent syntax errors.
 
-When configuring items in YAML files, you need to escape NBT strings to prevent syntax errors.   
+The simplest way to do this is to use the libreforge command to get the NBT data of an item in a slot.
+
+Once the command is run, you can click-to-copy the chat output, and paste into your configs. The NBT string will be properly escaped for use in YAML files, so you don't have to worry about syntax errors.
+
+Command: `/libreforge getitemdata <player> <slot>`
+
+Alternatively, you can also use the below converter tool to escape your NBT strings.
+
 This tool converts raw Minecraft NBT strings into properly escaped format for eco-compatible config files.
 
 There are a few steps you need to take to make this work efficiently.
@@ -20,4 +27,3 @@ There are a few steps you need to take to make this work efficiently.
 import NbtEscaper from '@site/src/components/NbtEscaper';
 
 <NbtEscaper />
-
