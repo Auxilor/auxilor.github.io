@@ -124,31 +124,34 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 
 ## EcoPlugin Triggers
 
-| ID                         | Description                                                          | Plugin        | Value(s)                       |
-|----------------------------|----------------------------------------------------------------------|---------------|--------------------------------|
-| `claim_battlepass_reward`  | Triggered when claiming a battlepass reward                          | EcoBattlepass | `value: 1`                     |
-| `complete_battlepass_task` | Triggered when completing a battlepass task                          | EcoBattlepass | `value: 1`                     |
-| `gain_battlepass_xp`       | Triggered when gaining battlepass XP                                 | EcoBattlepass | `value: The experience gained` |
-| `tier_up_battlepass`       | Triggered when tiering up the battlepass                             | EcoBattlepass | `value: The new level`         |
-| `enchant_<type>`           | Triggered when enchanting an item with a certain type of enchantment | EcoEnchants   | `value: The xp cost`           |
-| `gain_job_xp`              | Triggered when gaining job experience points                         | EcoJobs       | `value: The experience gained` |
-| `join_job`                 | Triggered when joining a job                                         | EcoJobs       | `value: The job level`         |
-| `leave_job`                | Triggered when leaving a job                                         | EcoJobs       | `value: The job level`         |
-| `level_up_job`             | Triggered when levelling up a job                                    | EcoJobs       | `value: The new level`         |
-| `gain_pet_xp`              | Triggered when gaining pet experience points                         | EcoPets       | `value: The experience gained` |
-| `level_up_pet`             | Triggered when levelling up a pet                                    | EcoPets       | `value: The new level`         |
-| `pet_activate`             | Triggered when activating a pet                                      | EcoPets       | `value: 1`                     |
-| `pet_deactivate`           | Triggered when deactivating a pet                                    | EcoPets       | `value: 1`                     |
-| `complete_quest`           | Triggered when completing a quest                                    | EcoQuests     | `value: 1`                     |
-| `complete_task`            | Triggered when completing a task                                     | EcoQuests     | `value: 1`                     |
-| `gain_task_xp`             | Triggered when gaining task XP                                       | EcoQuests     | `value: The experience gained` |
-| `start_quest`              | Triggered when starting a quest                                      | EcoQuests     | `value: 1`                     |
-| `inscribe`                 | Triggered when inscribing a scroll                                   | EcoScrolls    | `value: 1`                     |
-| `try_inscribe`             | Triggered when attempting to inscribe a scroll                       | EcoScrolls    | `value: 1`                     |
-| `buy_item`                 | Triggered when buying an item in a shop                              | EcoShop       | `value: The price`             |
-| `gain_skill_xp`            | Triggered when gaining skill experience points                       | EcoSkills     | `value: The experience gained` |
-| `level_up_skill`           | Triggered when levelling up                                          | EcoSkills     | `value: The new level`         |
-| `regen_magic`              | Triggered when regenerating magic                                    | EcoSkills     | `value: 1`                     |
+| ID                         | Description                                                          | Plugin         | Value(s)                       |
+|----------------------------|----------------------------------------------------------------------|----------------|--------------------------------|
+| `claim_battlepass_reward`  | Triggered when claiming a battlepass reward                          | EcoBattlepass  | `value: 1`                     |
+| `complete_battlepass_task` | Triggered when completing a battlepass task                          | EcoBattlepass  | `value: 1`                     |
+| `gain_battlepass_xp`       | Triggered when gaining battlepass XP                                 | EcoBattlepass  | `value: The experience gained` |
+| `tier_up_battlepass`       | Triggered when tiering up the battlepass                             | EcoBattlepass  | `value: The new level`         |
+| `complete_collection`      | Triggered when completing a collection                               | EcoCollections | `value: 1`                     |
+| `tier_up_collection`       | Triggered when tiering up a collection                               | EcoCollections | `value: The new tier`          |
+| `unlock_collection`        | Triggered when unlocking a collection                                | EcoCollections | `value: 1`                     |
+| `enchant_<type>`           | Triggered when enchanting an item with a certain type of enchantment | EcoEnchants    | `value: The xp cost`           |
+| `gain_job_xp`              | Triggered when gaining job experience points                         | EcoJobs        | `value: The experience gained` |
+| `join_job`                 | Triggered when joining a job                                         | EcoJobs        | `value: The job level`         |
+| `leave_job`                | Triggered when leaving a job                                         | EcoJobs        | `value: The job level`         |
+| `level_up_job`             | Triggered when levelling up a job                                    | EcoJobs        | `value: The new level`         |
+| `gain_pet_xp`              | Triggered when gaining pet experience points                         | EcoPets        | `value: The experience gained` |
+| `level_up_pet`             | Triggered when levelling up a pet                                    | EcoPets        | `value: The new level`         |
+| `pet_activate`             | Triggered when activating a pet                                      | EcoPets        | `value: 1`                     |
+| `pet_deactivate`           | Triggered when deactivating a pet                                    | EcoPets        | `value: 1`                     |
+| `complete_quest`           | Triggered when completing a quest                                    | EcoQuests      | `value: 1`                     |
+| `complete_task`            | Triggered when completing a task                                     | EcoQuests      | `value: 1`                     |
+| `gain_task_xp`             | Triggered when gaining task XP                                       | EcoQuests      | `value: The experience gained` |
+| `start_quest`              | Triggered when starting a quest                                      | EcoQuests      | `value: 1`                     |
+| `inscribe`                 | Triggered when inscribing a scroll                                   | EcoScrolls     | `value: 1`                     |
+| `try_inscribe`             | Triggered when attempting to inscribe a scroll                       | EcoScrolls     | `value: 1`                     |
+| `buy_item`                 | Triggered when buying an item in a shop                              | EcoShop        | `value: The price`             |
+| `gain_skill_xp`            | Triggered when gaining skill experience points                       | EcoSkills      | `value: The experience gained` |
+| `level_up_skill`           | Triggered when levelling up                                          | EcoSkills      | `value: The new level`         |
+| `regen_magic`              | Triggered when regenerating magic                                    | EcoSkills      | `value: 1`                     |
 
 ## External Integration Triggers
 
