@@ -152,6 +152,7 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `gain_skill_xp`            | Triggered when gaining skill experience points                       | EcoSkills      | `value: The experience gained` |
 | `level_up_skill`           | Triggered when levelling up                                          | EcoSkills      | `value: The new level`         |
 | `regen_magic`              | Triggered when regenerating magic                                    | EcoSkills      | `value: 1`                     |
+| `reforge_item`             | Triggered when reforging an item                                     | Reforges       | `value: The reforge cost`      |
 
 ## External Integration Triggers
 
