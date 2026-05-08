@@ -1,57 +1,83 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* --------------------------------------------------------------------------
+   Font
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
-/* You can override the default Infima variables here. */
+/* --------------------------------------------------------------------------
+   Light-mode tokens
+   -------------------------------------------------------------------------- */
 :root {
-  --ifm-color-primary: #2e7685;
-  --ifm-color-primary-dark: #296a78;
-  --ifm-color-primary-darker: #276471;
-  --ifm-color-primary-darkest: #20535d;
-  --ifm-color-primary-light: #338292;
-  --ifm-color-primary-lighter: #358899;
-  --ifm-color-primary-lightest: #3c99ad;
+  --ifm-color-primary: #1a6fa8;
+  --ifm-color-primary-dark: #186299;
+  --ifm-color-primary-darker: #165c90;
+  --ifm-color-primary-darkest: #124c77;
+  --ifm-color-primary-light: #1e7bb7;
+  --ifm-color-primary-lighter: #2082be;
+  --ifm-color-primary-lightest: #2b91d1;
+
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-heading-font-weight: 700;
+  --ifm-font-weight-semibold: 600;
+
+  --ifm-global-radius: 8px;
+  --ifm-code-border-radius: 5px;
+  --ifm-navbar-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+
+  --ifm-toc-border-color: rgba(0, 0, 0, 0.08);
+  --ifm-hr-border-color: rgba(0, 0, 0, 0.08);
 }
 
-/* Style for the active sidebar link and dropdown headers in light mode */
+/* Active sidebar link — light mode */
 .theme-doc-sidebar-container .menu__link--active,
 .theme-doc-sidebar-container .menu__list-item-collapsible--active,
 .theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) {
-  background-color: #82a6da; /* Light blue background for light mode */
-  color: #2d4764; /* Dark muted blue text for light mode */
+  background-color: #dbeafe;
+  color: #1e3a5f;
 }
 
-/* Ensure text in dropdown headers (e.g., button or link) uses the same color in light mode */
 .theme-doc-sidebar-container .menu__list-item-collapsible--active a,
 .theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) a {
-  color: #2d4764; /* Dark muted blue text for light mode */
+  color: #1e3a5f;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* --------------------------------------------------------------------------
+   Dark-mode tokens
+   -------------------------------------------------------------------------- */
 [data-theme='dark'] {
-  --ifm-color-primary: #259ac1;
-  --ifm-color-primary-dark: #218bae;
-  --ifm-color-primary-darker: #1f83a4;
-  --ifm-color-primary-darkest: #1a6c87;
-  --ifm-color-primary-light: #29a9d4;
-  --ifm-color-primary-lighter: #31aed8;
-  --ifm-color-primary-lightest: #4eb9dd;
+  --ifm-color-primary: #38bdf8;
+  --ifm-color-primary-dark: #1eb4f7;
+  --ifm-color-primary-darker: #0cadf6;
+  --ifm-color-primary-darkest: #0592d4;
+  --ifm-color-primary-light: #52c6f9;
+  --ifm-color-primary-lighter: #62cbf9;
+  --ifm-color-primary-lightest: #7dd3fb;
+
+  /* Deep navy background */
+  --ifm-background-color: #0d1117;
+  --ifm-background-surface-color: #161b22;
+  --ifm-navbar-background-color: #161b22;
+  --ifm-footer-background-color: #161b22;
+
+  --ifm-color-content: #e6edf3;
+  --ifm-color-content-secondary: #8b949e;
+
+  --ifm-toc-border-color: rgba(255, 255, 255, 0.07);
+  --ifm-hr-border-color: rgba(255, 255, 255, 0.07);
+  --ifm-color-emphasis-300: rgba(255, 255, 255, 0.1);
 }
 
-/* Style for the active sidebar link and dropdown headers in dark mode */
+/* Active sidebar link — dark mode */
 [data-theme='dark'] .theme-doc-sidebar-container .menu__link--active,
 [data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible--active,
 [data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) {
-  background-color: #2d4764; /* Dark muted blue background for dark mode */
-  color: #82a6da; /* Light blue text for dark mode */
+  background-color: #1c3350;
+  color: #7dd3fc;
 }
 
-/* Ensure text in dropdown headers (e.g., button or link) uses the same color in dark mode */
 [data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible--active a,
 [data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) a {
-  color: #82a6da; /* Light blue text for dark mode */
+  color: #7dd3fc;
 }
 
 .docusaurus-highlight-code-line {
@@ -65,11 +91,11 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Add solid left border to active sidebar items */
+/* Left accent border on active sidebar items */
 .theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist),
 .theme-doc-sidebar-container .menu__list-item-collapsible--active > .menu__link,
 .theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) > .menu__link {
-  border-left: 3px solid #2d4764 !important;
+  border-left: 3px solid #1a6fa8 !important;
   border-top: none !important;
   border-right: none !important;
   border-bottom: none !important;
@@ -78,7 +104,7 @@
 [data-theme='dark'] .theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist),
 [data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible--active > .menu__link,
 [data-theme='dark'] .theme-doc-sidebar-container .menu__list-item-collapsible:has(.menu__link--active) > .menu__link {
-  border-left: 3px solid #82a6da !important;
+  border-left: 3px solid #38bdf8 !important;
 }
 
 /* Prevent double border on collapsible parent items */
@@ -743,4 +769,190 @@
   .purchase-btn img {
     height: 36px;
   }
+}
+
+/* ==========================================================================
+   Design polish
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Navbar
+   -------------------------------------------------------------------------- */
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+[data-theme='dark'] .navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: none;
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar
+   -------------------------------------------------------------------------- */
+.theme-doc-sidebar-container {
+  border-right: 1px solid rgba(0, 0, 0, 0.07) !important;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  border-right: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Sidebar menu item hover */
+.menu__link:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.menu__link {
+  border-radius: 6px;
+  font-size: 0.875rem;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+/* Sidebar category label ("Plugin Docs") */
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions"])::before,
+.theme-doc-sidebar-container .menu__list-item:has(a.menu__link[href$="/actions/"])::before,
+.theme-doc-sidebar-menu .menu__list-item:has(a.menu__link[href$="/actions"])::before,
+.theme-doc-sidebar-menu .menu__list-item:has(a.menu__link[href$="/actions/"])::before {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* --------------------------------------------------------------------------
+   Typography — headings
+   -------------------------------------------------------------------------- */
+.markdown h1 {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid var(--ifm-color-primary);
+  margin-bottom: 1.25rem;
+}
+
+.markdown h2 {
+  font-size: 1.4rem;
+  letter-spacing: -0.01em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown h3 {
+  font-size: 1.1rem;
+  letter-spacing: -0.005em;
+  color: var(--ifm-color-primary);
+}
+
+/* --------------------------------------------------------------------------
+   Code blocks
+   -------------------------------------------------------------------------- */
+.prism-code {
+  border-radius: 8px !important;
+  font-size: 0.85rem !important;
+}
+
+/* Dracula has no entry for the `atrule` token type (used by Prism for YAML
+   keys and CSS at-rules). prism-react-renderer therefore sets no inline color,
+   so a CSS class rule fills the gap without fighting inline specificity. */
+[data-theme='dark'] .token.atrule {
+  color: #8be9fd;
+}
+
+/* Inline code */
+code {
+  border-radius: 4px;
+  font-size: 0.85em;
+  padding: 0.15em 0.4em;
+}
+
+[data-theme='dark'] code {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* --------------------------------------------------------------------------
+   Admonitions
+   -------------------------------------------------------------------------- */
+.admonition {
+  border-radius: 8px;
+  border-left-width: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Table of Contents
+   -------------------------------------------------------------------------- */
+.table-of-contents {
+  font-size: 0.825rem;
+}
+
+.table-of-contents__link {
+  color: var(--ifm-color-content-secondary);
+  transition: color 0.15s ease;
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+[data-theme='dark'] .footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* --------------------------------------------------------------------------
+   Pagination (prev/next)
+   -------------------------------------------------------------------------- */
+.pagination-nav__link {
+  border-radius: 8px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pagination-nav__link:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] .pagination-nav__link:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* --------------------------------------------------------------------------
+   Scrollbar (webkit)
+   -------------------------------------------------------------------------- */
+[data-theme='dark'] ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
