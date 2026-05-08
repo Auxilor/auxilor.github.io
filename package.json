@@ -32,6 +32,9 @@
   "overrides": {
     "undici": "5.x"
   },
+  "resolutions": {
+    "undici": "5.x"
+  },
   "browserslist": {
     "production": [
       ">0.5%",
