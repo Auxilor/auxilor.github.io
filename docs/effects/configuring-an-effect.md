@@ -102,13 +102,31 @@ Mutators modify the data passed to an effect before it runs. They allow you to c
 
 All of these are placed inside the `args` section of an effect.
 
-### Chance, Cost, and Activation
+### Chance
 
 ```yaml
 args:
   chance: 50 # (Optional) The chance of this effect activating, as a percentage (defaults to 100)
+```
+
+### Cost
+
+```yaml
+args:
   cost: 200 # (Optional) The cost required to activate this effect, requires Vault (defaults to 0)
+```
+
+### Every
+
+```yaml
+args:
   every: 3 # (Optional) The effect will activate every x times (defaults to always)
+```
+
+### Require
+
+```yaml
+args:
   require: '%ecobits_crystals% > 4' # (Optional) Require an expression to be true for the effect to run
 ```
 
@@ -135,11 +153,17 @@ args:
 
 For EcoSkills, you can use `<magic>_cost` (e.g. `mana_cost`) to specify a magic cost. (defaults to 0)
 
-### Delay and Repeat
+### Delay
 
 ```yaml
 args:
   delay: 20 # (Optional) The amount of ticks to wait before executing the effect (defaults to 0)
+```
+
+### Repeat
+
+```yaml
+args:
   repeat: # (Optional) The effect will activate repeatedly, delaying between each repeat if delay is set
     times: 5 # How many times the effect should be repeated
     start: -10 # The initial value of the %repeat_count% placeholder
