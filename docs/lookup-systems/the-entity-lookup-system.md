@@ -23,6 +23,12 @@ In each string is the key for an entity. A key looks one of two ways:
 - `?` between two entities means 'try to spawn the first entity, but if it doesn't exist, spawn the second entity'. You can chain these together.
 - `||` groups two entities, allowing either one of them to be spawned, at random. You can chain these together to create further randomness on spawns.
 
+### Entity Tags
+
+Entity tags are groups of entities. A list of vanilla tags can be found [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Tag.html), and you can use them with `#tag`, e.g. `#entity_types_aquatic`. These are especially useful in filters and conditions where you may use the same lists of entities in different places.
+
+You can create your own tags in [tags.yml](https://plugins.auxilor.io/the-item-lookup-system#item-tags) too, use `#libreforge:<tag_id>` to reference these.
+
 ## Modifiers
 Entities can have modifiers applied to them in the key. For example, let's say you're configuring a mob in EcoMobs. You want it to be a massive slime, a baby zombie, or a charged creeper, but you're not sure how to do that, because it looks like you have to just specify an entity type. Actually, in all of my plugins, wherever it asks for an entity, it's actually doing a lookup. You can specify any of the following modifiers to it:
 - `adult` Force the entity to be an adult
