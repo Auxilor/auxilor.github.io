@@ -18,6 +18,10 @@ title: "Store Menu"
 command: store
 rows: 6
 
+refresh:
+  enabled: false
+  interval: 20
+
 conditions: [ ]
 
 cannot-open-messages:
@@ -112,6 +116,10 @@ slots:
 title: "Store Menu" # GUI title.
 command: store # (Optional) Registers /store to open this menu.
 rows: 6 # Number of rows, between 1 and 6.
+
+refresh: # Whether to automatically refresh (re-render) this menu for viewers.
+  enabled: false
+  interval: 20 # The interval in ticks to refresh the menu, if enabled.
 ```
 
 ### The Open/Close Section
