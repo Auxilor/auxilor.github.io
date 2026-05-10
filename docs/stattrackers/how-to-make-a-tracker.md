@@ -121,6 +121,12 @@ tracker:
     - iron_sword
 ```
 
+:::tip
+
+We support shaped and shapeless recipes. Check out [Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) for more info on how to configure these.
+
+:::
+
 <hr/>
 
 ## Default configs

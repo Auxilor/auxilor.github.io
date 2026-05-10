@@ -235,7 +235,15 @@ reward-messages:
 ```
 
 ### The Level Up Section
+:::dangerEffects Section
 
+The effects section is the core functionality of the skill. You can configure effects, conditions, filters, and mutators in this section to run when the skill levels up.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # Effects that run when the skill levels up.
 # %level% is the level reached after levelling up.
@@ -245,12 +253,6 @@ level-up-effects: # Triggers are *not required* here, these effects run on level
       command: "give %player% diamond 1"
       require: "%level% < 10"
 ```
-
-The effects section is the core functionality of the skill. You can configure effects, conditions, filters, mutators in this section to run when the skill levels up.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ### The Global Conditions Section
 

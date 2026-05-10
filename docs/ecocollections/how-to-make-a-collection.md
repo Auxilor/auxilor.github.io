@@ -130,7 +130,15 @@ tier-requirements: # A list of the required counts to reach each tier.
 ```
 
 #### The Effects Section
+:::dangerEffects Section
 
+The effects section is the core functionality of the collection. You can configure effects, conditions, and filters to run when the collection is completed or the player tiers up.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # Effects run when a player tiers up. Use "all" to run on every tier, or a specific tier number.
 tier-up-effects:
@@ -146,12 +154,6 @@ completion-effects:
     args:
       message: "&6%player% &fhas maxed the &6Acacia &fcollection!"
 ```
-
-The effects section is the is the way you reward players. You can configure effects, conditions, filters, to run when the collection is completed, or the player tiers up.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 #### The Reward Messages Section
 

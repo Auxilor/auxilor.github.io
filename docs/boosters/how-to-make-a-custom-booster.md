@@ -126,6 +126,15 @@ bossbar:
 ```
 
 ### The Activation, Increment and Expiry Section
+:::dangerEffects Section
+
+The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run when the booster is activated, incremented, queued, or expires.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # Effects to be run when the Booster is activated (applies to all players)
 # %activator% - The player who activated the booster
@@ -186,13 +195,16 @@ expiry-effects:
         - ""
 ```
 
-The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is activated/incremented/expires.
+### The Effects Section
+:::dangerEffects Section
+
+The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is active.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
-### The Effects Section
+:::
 ```yaml
 # The effects whilst the Booster is active (i.e. the functionality)
 effects:
@@ -203,11 +215,6 @@ effects:
 # The conditions required for the effects to activate
 conditions: [ ]
 ```
-The effects section is the core functionality of the booster. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the booster is active.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ### The Booster GUI Section
 ```yaml

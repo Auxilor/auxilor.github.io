@@ -76,7 +76,15 @@ enchantable: true # If the enchantment can be obtained from enchanting tables
 ```
 
 ### The Effects Section
+:::dangerEffects Section
 
+The effects section is the core functionality of the enchantment. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchant is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # The effects of the enchantment (i.e. the functionality)
 # See here: https://plugins.auxilor.io/effects/configuring-an-effect
@@ -92,12 +100,6 @@ effects:
 # you can use %level% as a placeholder here too
 conditions: [ ]
 ```
-
-The effects section is the core functionality of the enchantment. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the enchant is active.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ## Internal Placeholders
 

@@ -72,6 +72,7 @@ effects:
       - melee_attack
 
 conditions: [ ]
+activate-conditions: [ ]
 
 spawn-egg:
   enabled: true
@@ -87,6 +88,8 @@ spawn-egg:
 ```
 
 ## Understanding all the sections
+
+Below is a breakdown of all the sections in the pet config, and what they do.
 
 ### The Pet Info Section
 
@@ -140,6 +143,12 @@ xp-gain-methods:
     multiplier: 0.5 # You can also use "value" here
     conditions: [ ]
 ```
+:::tip
+
+In xp-gain-methods, using `multiplier` means the XP gained is based on the value produced by the trigger. <br/>
+Alternatively, using `value` means the XP gained is a specific number, regardless of the trigger's value.
+
+:::
 
 ### The Additional Options Section
 
@@ -198,6 +207,15 @@ effects:
 ```
 
 ### The Effects Section
+:::dangerEffects Section
+
+The effects section is the core functionality of the pet. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the pet is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # The effects for the pet, has %level% as a placeholder
 effects:
@@ -209,7 +227,14 @@ effects:
 
 # The conditions for the pet, also has %level% as a placeholder
 conditions: [ ]
+# The conditions required to activate the pet.
+activate-conditions: [ ]
 ```
+:::tip
+
+You can configure if the pet should automatically deactivate when conditions aren't met in config.yml
+
+:::
 
 ### The Spawn Egg
 
@@ -226,7 +251,11 @@ spawn-egg:
   recipe: [ ]
   recipe-permission: ecopets.craft.tiger # (Optional) The permission required to craft this recipe.
 ```
+:::tip
 
+We support shaped and shapeless recipes. Check out [Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) for more info on how to configure these.
+
+:::
 ### Internal Placeholders
 
 | Placeholder         | Value                                                                    |

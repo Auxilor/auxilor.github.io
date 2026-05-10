@@ -266,6 +266,16 @@ boots:
 
 This is the config section for the set effects, which are the effects that apply when the full set is worn.
 
+:::dangerEffects Section
+
+The effects section is the core functionality of the armor set. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the set is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
+
 ```yaml
 # The effects of the set (i.e. the functionality)
 # See here: https://plugins.auxilor.io/effects/configuring-an-effect
@@ -325,12 +335,6 @@ advancedLore: # Lore to be added to the armor piece when it has been advanced.
   - "&8&oRequires full set to be worn"
 ```
 
-The effects section is the core functionality of the armor set. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the set is active.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
-
 ### The Additional Set Options Section
 ```yaml
 sounds:
@@ -379,7 +383,11 @@ shard:
     - prismarine_shard
 ```
 
-For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) documentation.
+:::tip
+
+We support shaped and shapeless recipes. Check out [Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) for more info on how to configure these.
+
+:::
 
 ### The Individual Armor Piece Section
 
@@ -431,7 +439,11 @@ helmet:
   conditions: [] # The conditions for the effects to be run
 ```
 
-For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) documentation.
+:::tip
+
+We support shaped and shapeless recipes. Check out [Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) for more info on how to configure these.
+
+:::
 
 :::dangerFrequently Asked Questions:
 **Why do I get a piece of stone?** <br/>

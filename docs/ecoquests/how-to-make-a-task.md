@@ -53,6 +53,15 @@ xp-gain-methods:
 ```
 
 ### The On-Complete Effects Section
+:::dangerEffects Section
+
+The effects section is the core functionality of the task. You can configure effects, conditions, filters, and mutators in this section to run when the task is completed.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # An optional list of effects to run when a player completes the task
 # Read here: https://plugins.auxilor.io/effects/configuring-an-effect
@@ -61,12 +70,6 @@ on-complete:
     args:
       message: "Task Completed!"
 ```
-
-The task rewards uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the task is completed.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ## Internal Placeholders
 

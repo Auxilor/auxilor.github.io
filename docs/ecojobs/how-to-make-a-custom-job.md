@@ -264,6 +264,15 @@ level-up-effects:
 ```
 
 ### The Effects Section
+:::dangerEffects Section
+
+The effects section is the core functionality of the job. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the job is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # The effects for the job (i.e. the functionality)
 # See here: https://plugins.auxilor.io/effects/configuring-an-effect
@@ -286,12 +295,6 @@ effects:
 # The conditions required for the effects to activate
 conditions: [ ]
 ```
-
-The effects section is the core functionality of the job. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the job is active.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ## Internal Placeholders
 

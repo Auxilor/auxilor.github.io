@@ -115,6 +115,15 @@ rows: 6 # Number of rows, between 1 and 6.
 ```
 
 ### The Open/Close Section
+:::dangerEffects Section
+
+The effects section is the core functionality of the menu. You can configure effects, conditions, and filters in this section to run when the menu is opened or closed.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # Conditions required to open the menu.
 conditions: [ ]
@@ -135,12 +144,6 @@ close-effects:
     args:
       message: "&7Closed Store Menu"
 ```
-
-The effects section is the core functionality of the menu. You can configure effects, conditions, and filters in this section to run when the menu is opened or closed.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ### The Page Navigation Section
 ```yaml
@@ -180,6 +183,15 @@ pages:
 ```
 
 ### The Slots Section
+:::dangerEffects Section
+
+The effects section is the core functionality of the menu. You can configure effects, conditions, and filters in this section to run when the slot is clicked.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 slots:
   - item: barrier name:"&cClose" # Item lookup: https://plugins.auxilor.io/the-item-lookup-system
@@ -207,12 +219,6 @@ slots:
         args:
           menu: another_menu
 ```
-
-The effects section is the core functionality of the menu. You can configure effects, conditions, and filters in this section to run when the slot is clicked.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ### Available slot actions
 | Action              | Description                                            |

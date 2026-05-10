@@ -83,7 +83,11 @@ item:
     - ""
   recipe-give-amount: 1 # Optional, set the amount of items to give in the recipe
 ```
-For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) documentation.
+:::tip
+
+We support shaped and shapeless recipes. Check out [Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) for more info on how to configure these.
+
+:::
 
 ### The Attributes Section
 
@@ -106,7 +110,15 @@ base-attack-speed: 1.5 # (Optional) The item base attack speed
 Visit the [Minecraft Wiki](https://minecraft.wiki/w/Damage#Dealing_damage) for default attack damage and speeds.
 
 ### The Effects Section
+:::dangerEffects Section
 
+The effects section is the core functionality of the item. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the item is active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # The effects of the item (i.e. the functionality)
 # See here: https://plugins.auxilor.io/effects/configuring-an-effect
@@ -123,12 +135,6 @@ conditions:
     args:
     world: world_the_nether
 ```
-
-The effects section is the core functionality of the item. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the item is active.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 :::dangerCustom Foods & Tools
 You can create custom Tools and Foods using EcoItems by adding a config section.

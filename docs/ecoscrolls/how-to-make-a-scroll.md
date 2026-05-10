@@ -106,6 +106,15 @@ placeholders:
 ```
 
 ### The Effects Section:
+:::dangerEffects Section
+
+The effects section is the core functionality of the scroll. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the scroll is applied and active.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 These are the effects that the scroll provides when applied and in use.
 ```yaml
 # Read https://plugins.auxilor.io/effects/configuring-an-effect
@@ -121,11 +130,6 @@ effects:
 # The conditions for the scroll to work
 conditions: [ ]
 ```
-The effects section is the core functionality of the scroll. You can configure effects, conditions, filters, mutators and triggers in this section to run whilst the scroll is applied and active.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ### The Scroll Item Section:
 ```yaml
@@ -141,7 +145,22 @@ item:
   recipe: [ ]
 ```
 
+:::tip
+
+We support shaped and shapeless recipes. Check out [Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) for more info on how to configure these.
+
+:::
+
 ### The Inscription Section:
+:::dangerEffects Section
+
+The inscription effects section is the core functionality for applying a scroll to an item. You can configure effects, conditions, filters, and mutators in this section to run when the scroll is applied.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # Options for inscribing items with the scroll
 inscription:
@@ -171,12 +190,6 @@ inscription:
       args:
         message: "&6You have inscribed the item with Example Scroll!"
 ```
-The inscription effects section is an important functionality of the scroll. You can configure effects, conditions, filters, mutators in this section to run when applying the scroll to an item.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
-
 ## Internal Placeholders
 
 | Placeholder   | Value                                            |

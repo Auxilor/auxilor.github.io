@@ -42,7 +42,15 @@ display:
 ## Understanding the Sections
 
 #### The Reward Basics Section
+:::dangerEffects Section
 
+The effects section is the core functionality of the crate reward. You can configure effects, conditions, and filters to run when the crate reward is won.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 name: "&bDiamond Sword" # The name of the reward
 
@@ -51,12 +59,6 @@ win-effects: # The effects to run when winning the reward
     args:
       item: diamond_sword sharpness:5 unbreaking:3
 ```
-
-The effects section is the core functionality of the crate reward. You can configure effects, conditions, filters, to run when the crate reward is won.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 #### The Weight and Win Limits Section
 

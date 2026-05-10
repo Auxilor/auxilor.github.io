@@ -70,6 +70,15 @@ task-amount: -1
 ```
 
 ### The Rewards Section
+:::dangerEffects Section
+
+The rewards section uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the quest is completed.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # The messages for the %rewards% placeholder in icons, messages, etc.
 reward-messages:
@@ -84,13 +93,16 @@ rewards:
         - emerald 5
 ```
 
-The quest rewards uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the quest is completed.
+### The Quest Start Section
+:::dangerEffects Section
+
+The start section uses the effects system. You can configure effects, conditions, filters, and mutators in this section to run when the quest is started.
 
 Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
 
 For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
-### The Quest Start Section
+:::
 ```yaml
 # If the player should be told when they have started the quest.
 announce-start: false
@@ -109,12 +121,6 @@ start-conditions: []
 # If this is set to false, the quest can only be started with /ecoquests start
 auto-start: true
 ```
-
-You can use the effects system when the quest starts, allowing you to give players items, permissions, execute commands, and much more as soon as they start the quest. Using conditions you can also make it so players can only start the quest when they meet certain requirements, such as being in a certain world, having a certain item, or even having completed another quest.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ### The GUI Section
 ```yaml

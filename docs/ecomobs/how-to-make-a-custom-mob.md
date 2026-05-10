@@ -189,7 +189,15 @@ custom-ai:
 ```
 
 ### The Effects & Conditions Section
+:::dangerEffects Section
 
+The effects section is the core functionality of the mob. You can configure effects, conditions, filters, mutators to activate on specific mob actions.
+
+Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
+
+For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
+
+:::
 ```yaml
 # Some effects are ran from the perspective of the entity, and others from the perspective
 # of the player - each section is marked with which perspective it is run from.
@@ -246,12 +254,6 @@ effects:
   # Ran from the perspective of the player
   kill: [ ]
 ```
-
-The effects section is the core functionality of the mob. You can configure effects, conditions, filters, mutators to activate on specific mob actions.
-
-Check out [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect) to understand how to configure this section correctly.
-
-For more advanced users or setups, you can configure chains in this section to string together different effects under one trigger. Check out [Configuring an Effect Chain](https://plugins.auxilor.io/effects/configuring-a-chain) for more info.
 
 ### The Defence Section
 
@@ -351,7 +353,11 @@ spawn:
       - netherite_block
       - iron_block
 ```
-For more information on recipes, check out the [Crafting Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) documentation.
+:::tip
+
+We support shaped and shapeless recipes. Check out [Recipes](https://plugins.auxilor.io/the-item-lookup-system/recipes) for more info on how to configure these.
+
+:::
 
 ### Internal Placeholders
 
