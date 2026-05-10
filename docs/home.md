@@ -7,6 +7,14 @@ sidebar_position: 0
 ## What is eco?
 eco is the development library that powers all eco plugins. It handles a wide range of backend features, and allows eco plugins to be as powerful as they are. However, it means that you have to install it as a separate plugin on your server.
 
+### What server versions are supported?
+
+We currently support 1.21.8 and above.
+
+For Minecraft 26.1, eco 7.5.0+ is required.
+
+We recommend that you use Paper for the best compatibility and stability. While eco works on Spigot and other server software, Paper's optimizations and additional features allow for a smoother experience. Get Paper [here](https://papermc.io/downloads).
+
 ### How do I install it?
 
 It's just like any other plugin on your server. Drop it into the /plugins/ folder and restart the server. However, eco also needs ProtocolLib to function - if you don't already have it on your server, make sure to grab the latest version [here](https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/)
