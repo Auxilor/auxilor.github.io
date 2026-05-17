@@ -23,7 +23,9 @@ max-uses: 1
 
 targets:
   - sword
-conflicts: [ ] 
+conflicts: [ ]
+
+type: combat
 
 requirements:
   - scroll: my_requirement_scroll
@@ -83,11 +85,29 @@ max-level: 1 # The max level of the scroll
 max-uses: 1 # The amount of times the scroll can be used
 ```
 
+### The Type Section:
+```yaml
+# (Optional) Assign this scroll to a type defined in types.yml.
+# Types group scrolls into categories and enforce a per-item limit on how many
+# different scrolls of that type can be inscribed on one item.
+# Leave out this field if the scroll should have no type restriction.
+type: combat
+```
+
+:::tip
+See [Scroll Types](https://plugins.auxilor.io/ecoscrolls/scroll-types) for how to create and configure types.
+:::
+
 ### The Requirements and Conflicts Section:
 ```yaml
 targets: # The items that the scroll can be applied to, see targets.yml
   - sword
 conflicts: [ ] # The conflicts that the scroll has with other scrolls
+
+# (Optional) The type of the scroll. Types are defined in types.yml and limit
+# how many different scrolls of the same type can be inscribed on a single item.
+# See: Scroll Types
+type: combat
 
 # The scroll(s) that must be applied to the item before this scroll can be applied
 requirements:

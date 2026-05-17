@@ -7,7 +7,7 @@ sidebar_position: 5
 |------------------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------|
 | `/ecoenchants reload`                                            | Reload the plugin configs (adding new enchantments requires re-logging) | `ecoenchants.command.reload`             |
 | `/enchant <enchant> <level>`                                     | Enchant the held item                                                   | `ecoenchants.command.enchant`            |
-| `/enchantinfo <enchant>`                                         | Open the enchant info GUI for the specified enchantment                 | `ecoenchants.command.enchantinfo`        |
+| `/enchantinfo <enchant> [level]`                                 | Open the enchant info GUI for the specified enchantment at an optional level | `ecoenchants.command.enchantinfo`   |
 | `/ecoenchants gui`                                               | Open the enchantment GUI                                                | `ecoenchants.command.gui`                |
 | `/ecoenchants giverandombook <player> [type/rarity] [min] [max]` | Give a player a random enchanted book                                   | `ecoenchants.command.giverandombook`     |
 | `/ecoenchants import <id>`                                       | Import an enchant from [lrcdb](https://lrcdb.auxilor.io/)               | `ecoenchants.command.import`             |

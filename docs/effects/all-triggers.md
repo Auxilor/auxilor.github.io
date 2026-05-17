@@ -139,6 +139,8 @@ Triggers can also produce a `value`, and some produce an `alt-value`, you can re
 | `tier_up_collection`       | Triggered when tiering up a collection                               | EcoCollections | `value: The new tier`          |
 | `unlock_collection`        | Triggered when unlocking a collection                                | EcoCollections | `value: 1`                     |
 | `enchant_<type>`           | Triggered when enchanting an item with a certain type of enchantment | EcoEnchants    | `value: The xp cost`           |
+| `advance_armor`            | Triggered when a player advances an armor set                        | EcoArmor       | `value: 1`                     |
+| `upgrade_armor_tier`       | Triggered when a player upgrades an armor tier                       | EcoArmor       | `value: The tier ID`           |
 | `gain_job_xp`              | Triggered when gaining job experience points                         | EcoJobs        | `value: The experience gained` |
 | `join_job`                 | Triggered when joining a job                                         | EcoJobs        | `value: The job level`         |
 | `leave_job`                | Triggered when leaving a job                                         | EcoJobs        | `value: The job level`         |

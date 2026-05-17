@@ -22,6 +22,11 @@ lore:
 
 use-custom-item: false
 
+craftable: false
+recipe-permission: ""
+shapeless: false
+recipe: []
+
 keygui:
   enabled: true
   crate: demo_crate
@@ -51,6 +56,28 @@ lore: # Lore applied to physical key items
 use-custom-item: false # Set to true to use an existing custom item (e.g. ecoitems:...) as the key.
                        # Lore will NOT be applied when use-custom-item is true.
 ```
+
+#### The Crafting Section
+
+Keys can be made craftable via a custom recipe.
+
+```yaml
+craftable: false # Whether this key should be craftable
+recipe-permission: "" # (Optional) The permission required to see/use the crafting recipe
+shapeless: false # (Optional) Whether the recipe is shapeless, defaults to false
+recipe: # The crafting recipe ingredients (3x3 grid, use "" for empty slots)
+  - "iron_ingot"
+  - "iron_ingot"
+  - "iron_ingot"
+  - "iron_ingot"
+  - "tripwire_hook"
+  - "iron_ingot"
+  - "iron_ingot"
+  - "iron_ingot"
+  - "iron_ingot"
+```
+
+Recipe ingredients follow the same item format as the rest of the plugin (e.g. `ecoitems:my_item`, `minecraft:diamond`). Set `shapeless: true` if slot positions don't matter.
 
 #### The Key GUI Section
 
