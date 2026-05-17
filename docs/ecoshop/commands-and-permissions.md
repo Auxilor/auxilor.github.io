@@ -8,6 +8,7 @@ sidebar_position: 5
 | `/ecoshop reload`                          | Reloads the plugin                                    | `ecoshop.command.reload`       |
 | `/ecoshop resetbuys <player/all> <id/all>` | Resets how many times a player has bought an item     | `ecoshop.command.resetbuys`    |
 | `/ecoshop resetsells <player/all> <id/all>` | Resets how many times a player has sold an item       | `ecoshop.command.resetsells`   |
+| `/ecoshop resetdynamicpricing <id/all>` | Resets the dynamic pricing counters for an item       | `ecoshop.command.resetdynamicpricing` |
 | `/sell`                                    | Opens the Sell GUI                                    | `ecoshop.command.sell`         |
 | `/sell hand`                               | Sells items in the player's hand                      | `ecoshop.command.sell.hand`    |
 | `/sell all`                                | Sells all sellable items in the player's inventory    | `ecoshop.command.sell.all`     |

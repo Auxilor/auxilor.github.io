@@ -18,16 +18,31 @@ One category can be in as many shops as you want! EcoShop is smart, it knows wha
 ## Example Category Config
 
 ```yaml
-item: diamond_sword name:"&fExample Category" # The item shown in the shop.
-lore: [ ] # The lore of the item shown in the shop.
-permission: ecoshop.category.permission1 # (Optional) The permission required to access/use the category.
+item: diamond_sword name:"&fExample Category"
+lore: [ ]
+permission: ecoshop.category.permission1
 
-# Options for the category GUI.
+dynamic-pricing:
+  enabled: false
+  max-increase: 1.5
+  max-decrease: 0.5
+  decay:
+    enabled: false
+    rate: 0.0
+    period: 1440
+  buy:
+    enabled: true
+    formula: "%base_price% * (1 + 0.0781 * log(1 + max(%buys% - %sells%, 0)) - 0.0781 * log(1 + max(%sells% - %buys%, 0)))"
+  alt-buy:
+    enabled: true
+    formula: "%base_price% * (1 + 0.0781 * log(1 + max(%buys% - %sells%, 0)) - 0.0781 * log(1 + max(%sells% - %buys%, 0)))"
+  sell:
+    enabled: true
+    formula: "%base_price% * (1 + 0.0781 * log(1 + max(%buys% - %sells%, 0)) - 0.0781 * log(1 + max(%sells% - %buys%, 0)))"
+
 gui:
-  rows: 6 # The amount of rows to have (1-6).
-  title: "Demo Category" # The title of the GUI.
-
-  # Navigation options, hidden if on the first/last page.
+  rows: 6
+  title: "Demo Category"
   forwards-arrow:
     item: arrow name:"&fNext Page"
     row: 6
@@ -36,26 +51,21 @@ gui:
     item: arrow name:"&fPrevious Page"
     row: 6
     column: 4
-
-  # Add as many pages as you want by appending to this list
   pages:
     - page: 1
       mask:
-        items: # The background material
+        items:
           - gray_stained_glass_pane
           - black_stained_glass_pane
-        pattern: # 0 for empty, 1 for the first item, 2 for the second item, etc
+        pattern:
           - "222222222"
           - "211111112"
           - "211111112"
           - "211111112"
           - "211111112"
           - "222222222"
-
-      # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
       custom-slots: [ ]
 
-# Your items go here! Read here for more info on creating your shop items: https://plugins.auxilor.io/ecoshop/how-to-make-an-item
 items: []
 ```
 
@@ -69,6 +79,36 @@ lore: # The lore of the item shown in the shop.
   - "&aBuy all the best gear here!"
 permission: ecoshop.category.permission1 # (Optional) The permission required to access/use the category.
 ```
+
+### The Dynamic Pricing Section
+
+Categories support dynamic pricing, where item prices fluctuate based on server-wide buy and sell activity.
+
+```yaml
+dynamic-pricing:
+  enabled: false # Whether dynamic pricing is active for this category.
+  max-increase: 1.5 # Cap at 150% of base price.
+  max-decrease: 0.5 # Floor at 50% of base price.
+
+  decay:
+    enabled: false # Whether price decay is active for this category.
+    rate: 0.1 # Percentage of counters removed per period (0.1 = 10%).
+    period: 1440 # Period in minutes (1440 = 24 hours).
+
+  buy:
+    enabled: true # Whether dynamic pricing applies to the buy price.
+    formula: "%base_price% * (1 + 0.0781 * log(1 + max(%buys% - %sells%, 0)) - 0.0781 * log(1 + max(%sells% - %buys%, 0)))"
+
+  alt-buy:
+    enabled: true
+    formula: "%base_price% * (1 + 0.0781 * log(1 + max(%buys% - %sells%, 0)) - 0.0781 * log(1 + max(%sells% - %buys%, 0)))"
+
+  sell:
+    enabled: true # Whether dynamic pricing applies to the sell price.
+    formula: "%base_price% * (1 + 0.0781 * log(1 + max(%buys% - %sells%, 0)) - 0.0781 * log(1 + max(%sells% - %buys%, 0)))"
+```
+
+Read here for more info: [Dynamic Pricing](https://plugins.auxilor.io/ecoshop/dynamic-pricing).
 
 ### The GUI Section
 Check out the [GUI Options](https://plugins.auxilor.io/all-plugins/pages) for more info on how to configure the GUI.
@@ -100,15 +140,15 @@ gui:
           - "211111112"
           - "211111112"
           - "211111112"
-          - "222222222"
+          - "222222222" 
 
-      # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
-      custom-slots: [ ]
+      custom-slots: [ ] # See here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
 ```
 
 ### The Items Section
 
 ```yaml
+# Your items go here! Read here for more info: https://plugins.auxilor.io/ecoshop/how-to-make-an-item
 items:
   - id: shop_item_id
     ...rest of item config

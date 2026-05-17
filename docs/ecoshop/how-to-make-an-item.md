@@ -61,6 +61,29 @@ With effect items, you could have an item that gives the player a potion effect 
 
 # Additional Config Options
 
+## General
+
+### `name`
+
+Overrides the display name of the item shown in the shop GUI. If not set, the name is inherited from the item itself.
+
+```yaml
+- id: cooked_mutton
+  item: cooked_mutton
+  name: "&6&lMutton Chop"
+```
+
+### `buy-effects`
+
+Effects to run when the item is bought. Can be added to any item alongside a regular `item:`, not just effect-only items. Read here for more info: [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect).
+
+```yaml
+buy-effects:
+  - id: broadcast
+    args:
+      message: "&f%player% just bought %item%!"
+```
+
 ## Buying (Applies to alt-buy too)
 
 ### Alt-Buy
@@ -100,6 +123,15 @@ buy:
         permission: group.iron  
 ```
 
+### `require`
+
+An expression that must evaluate to true for the player to be allowed to buy the item. Read here for more info: [Math](https://plugins.auxilor.io/all-plugins/math).
+
+```yaml
+buy:
+  require: "%player_level% >= 10"
+```
+
 ### `limit`
 
 The max times a player can buy this item.
@@ -136,6 +168,21 @@ buy:
   amount: 32
 ```
 
+### `dynamic-pricing`
+
+Override the category-level dynamic pricing settings for this item's buy price. Any field not set here inherits from the category `dynamic-pricing` block.
+
+```yaml
+buy:
+  dynamic-pricing:
+    enabled: true
+    max-increase: 3.0
+    max-decrease: 0.5
+    formula: "%base_price% * (1 + 0.0781 * log(1 + %buys%) - 0.0781 * log(1 + %sells%))"
+```
+
+Read here for more info: [Dynamic Pricing](https://plugins.auxilor.io/ecoshop/dynamic-pricing).
+
 ## Sell
 
 ### `conditions`
@@ -168,24 +215,64 @@ sell:
   global-limit: 1
 ```
 
+### `dynamic-pricing`
 
-### `sell-effects`
-Sell effects are effects that run when the item is sold. Read here for more info: [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect).
-```yaml
-sell-effects
-  - id: broadcast
-    args:
-      message: "&f%player%&r&f has sold &r%item%&r&ffor &b%value%❖&f!"
-```
-
-## GUI
-### `show-quick-buy-sell`
-
-By default, quick buy/sell lore is shown, disable it using `show-quick-buy-sell`
+Override the category-level dynamic pricing settings for this item's sell price. Any field not set here inherits from the category `dynamic-pricing` block.
 
 ```yaml
 sell:
-. show-quick-buy-sell: false
+  dynamic-pricing:
+    enabled: true
+    max-increase: 1.5
+    max-decrease: 0.3
+    formula: "%base_price% * (1 + 0.0781 * log(1 + %buys%) - 0.0781 * log(1 + %sells%))"
+```
+
+Read here for more info: [Dynamic Pricing](https://plugins.auxilor.io/ecoshop/dynamic-pricing).
+
+### `sell-effects`
+
+Effects that run when the item is sold. Read here for more info: [Configuring an Effect](https://plugins.auxilor.io/effects/configuring-an-effect).
+
+```yaml
+sell-effects:
+  - id: broadcast
+    args:
+      message: "&f%player%&r&f has sold &r%item%&r&f for &b%value%❖&f!"
+```
+
+## GUI
+
+### `show-quick-buy-sell`
+
+By default, quick buy/sell lore is shown on item slots. Set to `false` to hide it.
+
+```yaml
+gui:
+  show-quick-buy-sell: false
+```
+
+### `display`
+
+Overrides the item shown in the shop GUI slot without affecting the item given to the player on purchase. Useful for adding custom lore or a different icon to any item, not just effect items.
+
+```yaml
+gui:
+  display:
+    item: diamond name:"&bSpecial Diamond" # The item shown in the shop GUI
+    lore:
+      - "&7A very special diamond!"
+```
+
+### `display.bottom-lore`
+
+Lore appended below the price information on the shop slot. Rendered per-player, so placeholders are supported.
+
+```yaml
+gui:
+  display:
+    bottom-lore:
+      - "&7You have bought &e%playerbuys%&7 of these!"
 ```
 
 ## Internal Placeholders
