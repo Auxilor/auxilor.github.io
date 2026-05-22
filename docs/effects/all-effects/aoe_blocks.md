@@ -10,7 +10,7 @@ The list of shapes is found [here](https://plugins.auxilor.io/effects/all-effect
 # Effect Syntax
 
 ```yaml
-- id: aoe
+- id: aoe_blocks
   args:
     effects: # The effects to run for each block
       - id: break_block
