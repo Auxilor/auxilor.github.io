@@ -54,9 +54,7 @@ level-up-effects:
 
 ## Placeholders
 
-You can get the value of a point with the following placeholders:
-
-`%libreforge_item_points_<type>%`: The amount of points
+You can use the following placeholders for item levels:
 
 `%libreforge_item_xp_<level>%`: The current XP
 
