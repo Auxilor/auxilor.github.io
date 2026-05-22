@@ -152,8 +152,8 @@ These plugins provide **triggers and conditions** for the [Effects System](https
 | --- | --- |
 | AxEnvoy | Flare Mobcoins |
 | AxTrade | UltimateMobCoins |
-| CustomCrops | Scyther |
-| CustomFishing | |
+| CustomCrops | PyroFishingPro |
+| CustomFishing | Scyther |
 | NuVotifier | |
 
 ---
