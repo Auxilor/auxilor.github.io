@@ -101,6 +101,7 @@ Items can  have modifiers applied to them. For example, lets say you're configur
 - **Enchantment Glint:** You can give an enchantment glint with `glint`
 - **Item Flags:** You can specify flags for the item to have, by dropping in any of [these values](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/inventory/ItemFlag.html) (not case sensitive)
 - **Unbreakable:** You can make an item unbreakable by having the word `unbreakable` in the flags
+- **Unenchantable:** You can prevent an item from being enchanted (via enchanting table or anvil) by adding `unenchantable`
 - **Custom Model Data:** You can specify custom model data with `custom_model_data:<id>`
 - **Stack Quantity:** You can specify a stack quantity by using the amount, e.g. `iron_ingot 32`
 - **Max Stack Size:** You can set the max stack size with `max_stack_size:<size>`
