@@ -66,18 +66,37 @@ battlepass-gui:
 
     close:
       enabled: true
-      material: barrier
+      item: barrier
       name: "&cClose"
       location:
         row: 3
         column: 5
 
     # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
-    custom-slots: [ ]
+    custom-slots: []
 
 # GUI Configuration for the Tiers GUI (/battlepass tiers)
 tiers-gui:
-  title: "EcoBattlepass: Tiers"
+  # Supports %page% and %max_page% placeholders
+  title: "EcoBattlepass: Tiers (%page%/%max_page%)"
+
+  # Layout mode:
+  # "combined" - Original behavior, free and premium rewards shown on the same row.
+  # "split"    - Free rewards on one row, premium rewards on another (uses free-pattern/premium-pattern below).
+  layout: "combined"
+
+  # How to display tiers that have no rewards:
+  # "normal"              - Show with their real state (original behavior)
+  # "hidden"              - All empty tiers are invisible
+  # "hidden-behind-level" - Empty tiers at or below the player's level are hidden; others show normally
+  # "behind-level"        - Empty tiers at or below the player's level show as claimed; others show normally
+  # "all"                 - All empty tiers show as claimed regardless of level
+  empty-tier-display-mode: "normal"
+
+  # Whether to open the tiers GUI at the player's current tier page.
+  # Set to false to always open at page 1.
+  open-at-current-tier: true
+
   mask:
     # The way the mask works is by having a list of materials
     # And then a pattern to use those materials.
@@ -100,6 +119,7 @@ tiers-gui:
     progression-pattern:
       # To set the order of the pattern,
       # Use 1-9 and then a-z: a goes after 9.
+      # Used when layout is "combined" (default).
       - "109ab0jkl"
       - "2080c0i0m"
       - "3070d0h0n"
@@ -107,29 +127,67 @@ tiers-gui:
       - "00000000p"
       - "00000000q"
 
+  # Split layout configuration (only used when layout: split)
+  split:
+    free-pattern:
+      - "000000000"
+      - "123456789"
+      - "000000000"
+      - "000000000"
+      - "000000000"
+      - "000000000"
+    premium-pattern:
+      - "000000000"
+      - "000000000"
+      - "000000000"
+      - "123456789"
+      - "000000000"
+      - "000000000"
+
   buttons:
     # The amount of the item as a function of the level
     item-amount: "%level%"
     # For example, increasing every 10 levels would be "ceil((%level% + 1) / 10)"
     # The value is always rounded down.
 
+    # Maximum item stack size for tier items (1-99).
+    # Values above 64 require Paper 1.20.5+.
+    max-item-amount: 64
+
+    # Page changers support active/inactive states for when there are/aren't more pages.
+    # The "item" and "name" keys each accept "active" and "inactive" sub-keys.
+    # Legacy format (single material + name) is still supported for backward compatibility.
     prev-page:
-      material: orange_stained_glass_pane
-      name: "&aPrevious page"
+      item:
+        active: orange_stained_glass_pane
+        inactive: gray_stained_glass_pane
+      name:
+        active: "&aPrevious page"
+        inactive: "&7No more pages"
+      lore:
+        active: []
+        inactive: []
       location:
         row: 6
         column: 4
 
     next-page:
-      material: orange_stained_glass_pane
-      name: "&aNext Page"
+      item:
+        active: orange_stained_glass_pane
+        inactive: gray_stained_glass_pane
+      name:
+        active: "&aNext Page"
+        inactive: "&7No more pages"
+      lore:
+        active: []
+        inactive: []
       location:
         row: 6
         column: 6
 
     close:
       enabled: true
-      material: barrier
+      item: barrier
       name: "&cClose"
       location:
         row: 6
@@ -143,7 +201,7 @@ tiers-gui:
     claimed-premium-rewards-format: "&a&l✔ &6%reward%"
 
     # List of available placeholders:
-    # https://exanthiax.gitbook.io/ecobattlepass/useful/internal-placeholders#battlepass-tiers-gui
+    # https://plugins.auxilor.io/ecobattlepass/internalplaceholders#battlepass-tiers-gui
 
     # The different states a tier can be in
     # When only the free rewards are claimable.
@@ -226,8 +284,88 @@ tiers-gui:
         - ""
         - "&aCLAIMED"
 
+    # Split layout button configurations (only used when layout: split)
+    # These define the appearance of free and premium track buttons independently.
+    free-track:
+      unlocked:
+        item: lime_stained_glass_pane
+        name: "&aFree Tier %tier_numeral%"
+        lore:
+          - "&7Free Rewards:"
+          - "%free-rewards%"
+          - ""
+          - "&aCLAIM"
+      locked:
+        item: red_stained_glass_pane
+        name: "&cFree Tier %tier_numeral%"
+        lore:
+          - "&7Free Rewards:"
+          - "%free-rewards%"
+          - ""
+          - "&cLOCKED"
+      in-progress:
+        item: yellow_stained_glass_pane
+        name: "&eFree Tier %tier_numeral%"
+        lore:
+          - "&7Free Rewards:"
+          - "%free-rewards%"
+          - ""
+          - "&fProgress:"
+          - "&8» &e%percentage_progress%%"
+      claimed:
+        item: green_stained_glass_pane glint
+        name: "&aFree Tier %tier_numeral%"
+        lore:
+          - "&7Free Rewards:"
+          - "%claimed-free-rewards%"
+          - ""
+          - "&aCLAIMED"
+
+    premium-track:
+      unlocked:
+        item: cyan_stained_glass_pane
+        name: "&bPremium Tier %tier_numeral%"
+        lore:
+          - "&7Premium Rewards:"
+          - "%premium-rewards%"
+          - ""
+          - "&aCLAIM"
+      premium-required:
+        item: orange_stained_glass_pane
+        name: "&6Premium Tier %tier_numeral%"
+        lore:
+          - "&7Premium Rewards:"
+          - "%premium-rewards%"
+          - ""
+          - "&6PURCHASE THE BATTLEPASS TO CLAIM"
+      locked:
+        item: red_stained_glass_pane
+        name: "&cPremium Tier %tier_numeral%"
+        lore:
+          - "&7Premium Rewards:"
+          - "%premium-rewards%"
+          - ""
+          - "&cLOCKED"
+      in-progress:
+        item: yellow_stained_glass_pane
+        name: "&ePremium Tier %tier_numeral%"
+        lore:
+          - "&7Premium Rewards:"
+          - "%premium-rewards%"
+          - ""
+          - "&fProgress:"
+          - "&8» &e%percentage_progress%%"
+      claimed:
+        item: green_stained_glass_pane glint
+        name: "&aPremium Tier %tier_numeral%"
+        lore:
+          - "&7Premium Rewards:"
+          - "%claimed-premium-rewards%"
+          - ""
+          - "&aCLAIMED"
+
     # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
-    custom-slots: [ ]
+    custom-slots: []
 
 # GUI Configuration for the Categories GUI (/battlepass quests)
 categories-gui:
@@ -256,34 +394,40 @@ categories-gui:
   buttons:
     next-page:
       item:
-        active: orange_stained_glass_pane name:"&aNext page"
+        active: orange_stained_glass_pane
         inactive: gray_stained_glass_pane
+      name:
+        active: "&aNext page"
+        inactive: ""
       lore:
-        active: [ ]
-        inactive: [ ]
+        active: []
+        inactive: []
       row: 5
       column: 6
     prev-page:
       item:
-        active: orange_stained_glass_pane name:"&aPrevious page"
+        active: orange_stained_glass_pane
         inactive: gray_stained_glass_pane
+      name:
+        active: "&aPrevious page"
+        inactive: ""
       lore:
-        active: [ ]
-        inactive: [ ]
+        active: []
+        inactive: []
       row: 5
       column: 4
     close:
       enabled: true
-      material: barrier
+      item: barrier
       name: "&cClose"
       row: 5
       column: 5
 
     # List of available placeholders:
-    # https://exanthiax.gitbook.io/ecobattlepass/useful/internal-placeholders#battlepass-and-category-gui
+    # https://plugins.auxilor.io/ecobattlepass/internalplaceholders#battlepass-and-category-gui
 
     # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
-    custom-slots: [ ]
+    custom-slots: []
 
 # GUI Configuration for the Quests GUI
 quests-gui:
@@ -312,34 +456,40 @@ quests-gui:
   buttons:
     next-page:
       item:
-        active: orange_stained_glass_pane name:"&aNext page"
-        inactive: black_stained_glass_pane name:" "
+        active: orange_stained_glass_pane
+        inactive: black_stained_glass_pane
+      name:
+        active: "&aNext page"
+        inactive: " "
       lore:
-        active: [ ]
-        inactive: [ ]
+        active: []
+        inactive: []
       row: 5
       column: 6
     prev-page:
       item:
-        active: orange_stained_glass_pane name:"&aPrevious page"
-        inactive: black_stained_glass_pane name:" "
+        active: orange_stained_glass_pane
+        inactive: black_stained_glass_pane
+      name:
+        active: "&aPrevious page"
+        inactive: " "
       lore:
-        active: [ ]
-        inactive: [ ]
+        active: []
+        inactive: []
       row: 5
       column: 4
     close:
       enabled: true
-      material: barrier
+      item: barrier
       name: "&cClose"
       row: 5
       column: 5
 
     # List of available placeholders:
-    # https://exanthiax.gitbook.io/ecobattlepass/useful/internal-placeholders#quest-gui
+    # https://plugins.auxilor.io/ecobattlepass/internalplaceholders#quest-gui
 
     # Custom GUI slots; see here for a how-to: https://plugins.auxilor.io/all-plugins/custom-gui-slots
-    custom-slots: [ ]
+    custom-slots: []
 
 # GUI Configuration for the Quest Icon
 quests-icon:
