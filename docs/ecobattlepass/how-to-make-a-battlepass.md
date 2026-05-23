@@ -86,6 +86,59 @@ tiers:
         tier: premium
 ```
 
+#### Per-Tier Display Overrides
+
+Each tier can optionally override the button appearance configured in `config.yml` for specific states.
+These take priority over the defaults.
+
+```yaml
+tiers:
+  - tier: 1
+    rewards:
+      - id: diamond_block
+        tier: free
+    display:
+      # Generic override — applies in combined layout mode and as fallback in split mode.
+      # Available states: unlocked, locked, in-progress, claimed, unlocked-free, premium-required, hidden
+      unlocked:
+        item: diamond_block
+        name: "&6&lSPECIAL TIER"
+        lore:
+          - "&7Special rewards await!"
+          - "%free-rewards%"
+          - "%premium-rewards%"
+
+      claimed:
+        item: emerald_block
+        name: "&a&lSPECIAL TIER - CLAIMED"
+
+      # Split layout overrides — only used when layout: split in config.yml
+      free-track:
+        unlocked:
+          item: emerald_block
+          name: "&a&lFREE TIER - SPECIAL"
+          lore:
+            - "%free-rewards%"
+        claimed:
+          item: emerald
+          name: "&a&lCLAIMED FREE TIER"
+
+      premium-track:
+        unlocked:
+          item: diamond_block
+          name: "&b&lPREMIUM TIER - SPECIAL"
+          lore:
+            - "%premium-rewards%"
+        premium-required:
+          item: gold_block
+          name: "&6&lPREMIUM TIER - UPGRADE NEEDED"
+        claimed:
+          item: diamond
+          name: "&a&lCLAIMED PREMIUM TIER"
+```
+
+Override priority (highest to lowest): track-specific override → generic override → track-specific config.yml default → config.yml default.
+
 ## Internal Placeholders
 
 | Placeholder | Value                                             |

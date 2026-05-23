@@ -271,6 +271,8 @@ See [Configuring a Condition](https://plugins.auxilor.io/effects/configuring-a-c
 | `%level_numeral%` | The player's skill level shown in Roman Numerals                           |
 | `%level_x%`         | The player's skill level, +/- a value. eg. `%level_-1%` is current level-1 |
 | `%level_x_numeral%` | The player's skill level, +/- a value, shown as Numerals                   |
+| `%previous_level%` | The player's previous skill level                                          |
+| `%previous_level_numeral%` | The player's previous skill level shown in Roman Numerals          |
 
 <hr/>
 

@@ -42,6 +42,7 @@ rarity: rare
 
 base-damage: 12
 base-attack-speed: 1.5
+base-attack-range: 3.0
 
 effects:
   - id: damage_multiplier
@@ -105,6 +106,7 @@ rarity: rare
 
 base-damage: 12 # (Optional) The item base damage
 base-attack-speed: 1.5 # (Optional) The item base attack speed
+base-attack-range: 3.0 # (Optional) The item base attack range (entity interaction range, vanilla default 3.0)
 ```
 
 Visit the [Minecraft Wiki](https://minecraft.wiki/w/Damage#Dealing_damage) for default attack damage and speeds.

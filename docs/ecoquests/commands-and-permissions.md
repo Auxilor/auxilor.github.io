@@ -6,6 +6,7 @@ sidebar_position: 5
 | Command                                              | Description                                            | Permission                      |
 |------------------------------------------------------|--------------------------------------------------------|---------------------------------|
 | `/quests, /quest, /q`                                | Open the main menu                                     | `ecoquests.command.quests`      |
+| `/quests cancel <quest>`                             | Cancel an active quest, resetting all progress         | `ecoquests.command.quests.cancel` |
 | `/ecoquests reset <quest>`                           | Reset a quest                                          | `ecoquests.command.reset`       |
 | `/ecoquests resetplayer <player> <quest>`            | Reset a quest for a player                             | `ecoquests.command.resetplayer` |
 | `/ecoquests start <player> <quest>`                  | Start a quest for a player                             | `ecoquests.command.start`       |

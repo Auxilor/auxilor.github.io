@@ -29,10 +29,12 @@ Rather than cluttering the config.yml, this is a dedicated page for all the inte
 
 All the placeholders from BattlePass GUI work here. Additionally:
 
-| Placeholder         | Description                      | Options                                           |
-|---------------------|----------------------------------|---------------------------------------------------|
-| `%free-rewards%`    | The free rewards for the tier    | add `claimed-` prefix for claimed free rewards    |
-| `%premium-rewards%` | The premium rewards for the tier | add `claimed-` prefix for claimed premium rewards |
+| Placeholder                | Description                                                | Options                                           |
+|----------------------------|------------------------------------------------------------|---------------------------------------------------|
+| `%free-rewards%`           | The free rewards for the tier                              | add `claimed-` prefix for claimed free rewards    |
+| `%premium-rewards%`        | The premium rewards for the tier                           | add `claimed-` prefix for claimed premium rewards |
+| `%page%`                   | The current page number (usable in the tiers GUI title)    |                                                   |
+| `%max_page%`               | The total number of pages (usable in the tiers GUI title)  |                                                   |
 
 ## Quest GUI
 
