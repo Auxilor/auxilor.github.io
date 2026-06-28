@@ -38,13 +38,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-    //  announcementBar: {
-    //    id: 'announcement',
-    //    content: 'Announcement Goes Here',
-    //    backgroundColor: '#82a6da',
-    //    textColor: '#000000',
-    //    isCloseable: true,
-    //  },
+      announcementBar: {
+        id: 'moved_to_ecohub',
+        content: '⚠️ This wiki has moved to <a href="https://hub.auxilor.io" target="_blank" rel="noopener noreferrer"><strong>EcoHub</strong></a>. This site is no longer maintained.',
+        backgroundColor: '#f0a500',
+        textColor: '#000000',
+        isCloseable: false,
+      },
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
